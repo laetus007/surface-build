@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Node-related hook implementations.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function surface_preprocess_node(&$variables) {
+
+  // Apply custom date formatter to "date" field.
+  if (!empty($variables['date']) && !empty($variables['display_submitted']) && $variables['display_submitted'] === TRUE) {
+    $variables['date'] = \Drupal::service('date.formatter')->format($variables['node']->getCreatedTime(), 'surface_medium');
+  }
+
+  // Pass layout variable to template if content type is article in full view
+  // mode. This is then used in the template to create a BEM style CSS class to
+  // control the layout.
+  if ($variables['node']->bundle() === 'article' && $variables['view_mode'] === 'full') {
+    $variables['layout'] = 'content-narrow';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page title templates.
+ */
+function surface_preprocess_page_title(&$variables) {
+  // Since the title and the shortcut link are both block level elements,
+  // positioning them next to each other is much simpler with a wrapper div.
+  if (!empty($variables['title_suffix']['add_or_remove_shortcut']) && $variables['title']) {
+    // Add a wrapper div using the title_prefix and title_suffix render
+    // elements.
+    $variables['title_prefix']['shortcut_wrapper'] = [
+      '#markup' => '<div class="shortcut-wrapper">',
+      '#weight' => 100,
+    ];
+    $variables['title_suffix']['shortcut_wrapper'] = [
+      '#markup' => '</div>',
+      '#weight' => -99,
+    ];
+
+    // Make sure the shortcut link is the first item in title_suffix.
+    $variables['title_suffix']['add_or_remove_shortcut']['#weight'] = -100;
+  }
+
+  // Unset shortcut link on front page.
+  $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  if ($variables['is_front'] === TRUE) {
+    unset($variables['title_suffix']['add_or_remove_shortcut']);
+  }
+}

@@ -1,0 +1,12 @@
+/**
+ * @file
+ * Iframe element styles.
+ */
+
+:where(iframe) {
+  display: block;
+
+  @media print {
+    display: none;
+  }
+}

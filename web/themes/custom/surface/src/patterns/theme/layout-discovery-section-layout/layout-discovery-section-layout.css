@@ -1,0 +1,16 @@
+/*
+ * @file
+ * Provides default layout styles for all layout sections.
+ */
+
+.layout {
+  margin-block-end: var(--size-2);
+
+  @media (--md) {
+    margin-block-end: var(--size-4);
+  }
+
+  @media (--lg) {
+    margin-block-end: var(--size-6);
+  }
+}

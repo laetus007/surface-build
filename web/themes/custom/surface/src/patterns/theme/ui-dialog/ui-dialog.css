@@ -1,0 +1,129 @@
+/**
+ * @file
+ * Presentational styles for Drupal dialogs.
+ */
+
+.ui-dialog {
+  background-color: transparent;
+  border-radius: var(--size-05);
+  border: 0;
+  box-shadow: var(--shadow-2);
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1260;
+
+  &:focus {
+    box-shadow: var(--shadow-2-focus);
+    outline: 2px dotted transparent;
+  }
+
+  /* Pattern Lab */
+  .pl & {
+    margin-inline: auto;
+    position: relative;
+    width: 90%;
+  }
+}
+
+.ui-dialog-titlebar {
+  align-items: center;
+  background-color: hsl(0, 0%, 0%);
+  border-top-left-radius: var(--size-05);
+  border-top-right-radius: var(--size-05);
+  box-sizing: border-box;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  line-height: normal;
+  padding-block: 0;
+  padding-inline: var(--size-205);
+  position: relative;
+
+  &::before,
+  &::after {
+    content: none;
+  }
+}
+
+.ui-dialog-title {
+  font-family: var(--font-system);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-700);
+}
+
+.ui-dialog-titlebar-close {
+  background: none;
+  border-color: transparent;
+  border-radius: var(--radius-round);
+  border-style: solid;
+  border-width: var(--border-size-2);
+  box-sizing: border-box;
+  height: 28px;
+  margin-inline: var(--size-3);
+  padding: 0;
+  transition: all 0.1s;
+  width: 28px;
+
+  &:hover {
+    border-color: hsl(0, 0%, 100%);
+  }
+
+  &:focus {
+    border-color: hsl(var(--blue-9));
+    box-shadow: none;
+    outline: 2px dotted transparent;
+  }
+}
+
+.ui-icon-closethick {
+  background-image: url('../images/ui-close.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: block;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.ui-dialog-content {
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  overflow: auto;
+  padding-block: var(--size-2);
+  padding-inline: var(--size-3);
+  position: static;
+
+  .form-actions {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Off-canvas styles. */
+  .ui-dialog-off-canvas & {
+    background: none;
+  }
+}
+
+.ui-dialog-buttonpane {
+  background-color: hsl(var(--gray-1));
+  border-bottom-left-radius: var(--size-05);
+  border-bottom-right-radius: var(--size-05);
+  color: hsl(0, 0%, 0%);
+
+  .ui-button-text-only .ui-button-text {
+    padding: 0;
+  }
+}
+
+.ui-dialog-buttonset {
+  justify-content: flex-end;
+  margin-inline: var(--size-105);
+}
+
+.ui-widget-overlay {
+  background: hsl(0, 0%, 0%);
+  opacity: 0.7;
+  z-index: 1259;
+}

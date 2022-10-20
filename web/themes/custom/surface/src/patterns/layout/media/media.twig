@@ -1,0 +1,11 @@
+{% set classes = [
+  'media',
+  attributes ? attributes.class,
+]|join(' ')|trim %}
+
+<div class="{{ classes }}" {{ attributes ? attributes|without('class', 'id') }}>
+  {{ title_suffix.contextual_links }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

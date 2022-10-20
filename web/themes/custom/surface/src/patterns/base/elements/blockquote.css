@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Blockquote element styles.
+ */
+
+:where(blockquote) {
+  * + & {
+    margin-block-start: var(--size-5);
+  }
+
+  p {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+
+  cite {
+    padding-inline-start: 0;
+  }
+
+  @media print {
+    page-break-inside: avoid;
+  }
+}

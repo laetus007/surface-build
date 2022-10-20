@@ -1,0 +1,46 @@
+layout_option_definitions:
+  spacer:
+    title: 'Spacer'
+    description: ''
+    default: ''
+    multi: false
+    plugin: layout_options_class_select
+    inline: true
+    options:
+      spacer-1: 'xsmall'
+      spacer-2: 'small'
+      spacer-3: 'medium'
+      spacer-4: 'large'
+      spacer-5: 'xlarge'
+    layout: true
+    regions: false
+
+  contraints:
+    title: 'Contraints'
+    description: ''
+    default: ''
+    plugin: layout_options_class_checkboxes
+    inline: true
+    options:
+      is-full-width: 'Full Width'
+    layout: true
+    regions: false
+
+  display:
+    title: 'Display'
+    description: ''
+    default: ''
+    plugin: layout_options_class_checkboxes
+    inline: true
+    options:
+      display-as-columns: 'Columns'
+    layout: false
+    regions: true
+
+# Assign the layout options to a layout.
+layout_options:
+  global:
+    spacer: {}
+  one_column:
+    contraints: {}
+    display: {}

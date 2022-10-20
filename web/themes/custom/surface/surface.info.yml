@@ -1,0 +1,79 @@
+name: Surface
+type: theme
+description: 'A clean, accessible, and flexible Drupal front-end theme.'
+alt text: 'Screenshot of Surface, Drupal front-end theme.'
+package: Core
+core_version_requirement: ^8.9 || ^9 || ^10
+base theme: false
+dependencies:
+  - components
+  - twig_tweak
+  - twig_field_value
+
+libraries:
+  - surface/global
+
+libraries-override:
+  system/admin:
+    css:
+      theme:
+        css/system.admin.css: false
+
+  system/base:
+    css:
+      component:
+        css/components/ajax-progress.module.css: dist/css/ajax-progress.css
+        css/components/autocomplete-loading.module.css: dist/css/autocomplete.css
+
+  core/drupal.dialog:
+    css:
+      component:
+        assets/vendor/jquery.ui/themes/base/dialog.css: false
+        assets/vendor/jquery.ui/themes/base/button.css: false
+      theme:
+        assets/vendor/jquery.ui/themes/base/theme.css: false
+
+  claro/claro.drupal.dialog: false
+  gin/ajax: false
+  gin/dialog: false
+
+  layout_paragraphs/builder:
+    css:
+      layout:
+        css/builder.css: dist/css/builder.css
+
+  layout_paragraphs/layout_select:
+    css:
+      layout:
+        css/layout-select.css: dist/css/layout-select.css
+
+libraries-extend:
+  core/drupal.dialog:
+    - surface/dialog
+  core/drupal.message:
+    - surface/messages
+
+regions:
+  header: Header
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content_above: Content Above
+  content: Content
+  content_below: Content Below
+  footer: Footer
+
+ckeditor_stylesheets:
+  - dist/css/global.css
+  - dist/css/embedded-media.css
+  - dist/css/table.css
+  - dist/css/text-content.css
+  - dist/css/ckeditor-frame.css
+
+components:
+  namespaces:
+    surface: src/templates
+    images: dist/images
+    base: src/patterns/base
+    components: src/patterns/components
+    layout: src/patterns/layout
+    theme: src/patterns/theme

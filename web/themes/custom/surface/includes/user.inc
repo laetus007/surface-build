@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * User-related hook implementations.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_user(array &$variables) {
+  $variables['display_name'] = $variables['user']->getDisplayName();
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function surface_theme_suggestions_user_alter(&$suggestions, $variables) {
+  if (isset($variables['elements']['#view_mode'])) {
+    $suggestions[] = 'user__' . $variables['elements']['#view_mode'];
+  }
+}
+

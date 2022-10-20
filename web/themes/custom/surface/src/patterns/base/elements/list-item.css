@@ -1,0 +1,10 @@
+/**
+ * @file
+ * List item element styles.
+ */
+
+:where(li) {
+  @media print {
+    page-break-inside: avoid;
+  }
+}

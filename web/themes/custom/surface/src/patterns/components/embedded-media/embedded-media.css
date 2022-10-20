@@ -1,0 +1,65 @@
+/**
+ * @file
+ * Embedded Media.
+ */
+
+figure {
+  background: hsl(var(--gray-2));
+}
+
+figcaption {
+  background: hsl(var(--gray-2));
+  color: hsl(var(--gray-8));
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-style: italic;
+  line-height: var(--size-2);
+  padding-block: var(--size-1);
+  padding-inline: var(--size-1);
+
+  @media (--sm) {
+    padding-block: var(--size-2);
+    padding-inline: var(--size-2);
+  }
+}
+
+.align-right {
+  float: none; /* Override core's align.module.css. */
+  max-width: 100%;
+  margin-block: var(--size-6);
+  margin-inline: 0;
+
+  @media (--md) {
+    float: inline-end;
+    max-width: 50%;
+    margin-block: var(--size-2);
+    margin-inline-start: var(--size-2);
+    margin-inline-end: 0;
+  }
+}
+
+.align-left {
+  float: none; /* Override core's align.module.css. */
+  margin-block: var(--size-6);
+  margin-inline: 0;
+  max-width: 100%;
+
+  @media (--md) {
+    float: inline-start;
+    max-width: 50%;
+    margin-block: var(--size-2);
+    margin-inline-start: 0;
+    margin-inline-end: var(--size-4); /* Extra right margins in case of aligning next to lists. */
+  }
+}
+
+.align-center img,
+.align-center video,
+.align-center audio {
+  margin-inline: auto;
+}
+
+.media-oembed-content {
+  display: block;
+  max-width: 100%;
+}

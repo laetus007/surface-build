@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Feed icon styles.
+ */
+
+@import '../../base/mixins/svg-icon';
+
+.feed-icon {
+  align-items: center;
+  color: hsl(var(--gray-7));
+  display: flex;
+  text-decoration: none;
+
+  &:hover {
+    color: hsl(var(--blue-5));
+  }
+}
+
+.feed-icon__label {
+  flex-shrink: 0;
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-600);
+  letter-spacing: 0.08em;
+}
+
+.feed-icon__icon {
+  @include svg-icon('../images/rss.svg', 20px, 20px, white);
+  background-color: hsl(var(--blue-5));
+  margin-inline-start: var(--size-1);
+}

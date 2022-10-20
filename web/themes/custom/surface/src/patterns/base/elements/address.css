@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Address element styles.
+ */
+
+:where(address) {
+  font-style: normal;
+  line-height: inherit;
+  margin-block-end: var(--size-2);
+}

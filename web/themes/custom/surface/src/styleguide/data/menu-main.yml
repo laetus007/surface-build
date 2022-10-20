@@ -1,0 +1,50 @@
+---
+main_menu:
+  - title: 'About'
+    url: '#'
+    in_active_trail: false
+    below:
+      - title: 'DGIT'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'ISS'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'OHIA'
+        url: '#'
+        in_active_trail: false
+        below: false
+  - title: 'Support'
+    url: '#'
+    in_active_trail: false
+    below:
+      - title: 'Change My Password'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Device Security Toolkit'
+        url: '#'
+        in_active_trail: false
+        below: false
+  - title: 'Services'
+    url: '#'
+    in_active_trail: false
+    below: false
+  - title: 'Resources'
+    url: '#'
+    in_active_trail: false
+    below:
+      - title: 'Resources for Clinicians'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Resources for faculty'
+        url: '#'
+        in_active_trail: false
+        below: false
+  - title: 'News & Events'
+    url: '#'
+    in_active_trail: false
+    below: false

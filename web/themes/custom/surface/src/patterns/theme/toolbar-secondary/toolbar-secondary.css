@@ -1,0 +1,18 @@
+/**
+ * @file
+ * Secondary Toolbar.
+ */
+
+.gin-secondary-toolbar__layout-container {
+  margin-inline: auto;
+  max-width: var(--max-width);
+  padding-inline: var(--size-2);
+
+  @media (min-width: 976px) {
+    padding-inline: var(--size-4);
+
+    .gin--vertical-toolbar & {
+      padding-inline-start: calc(var(--size-4) + 60px);
+    }
+  }
+}

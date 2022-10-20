@@ -1,0 +1,20 @@
+/**
+ * @file
+ * Body element styles.
+ */
+
+:where(body) {
+  margin-block: 0;
+  margin-inline: 0;
+  min-block-size: 100%;
+  padding-block: 0;
+  padding-inline: 0;
+  scrollbar-gutter: stable both-edges;
+  word-wrap: break-word;
+
+  &.is-fixed {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Navigation-related hook implementations.
+ */
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for menu.
+ */
+function surface_theme_suggestions_menu_alter(&$suggestions, array $variables) {
+  if (isset($variables['attributes']['region'])) {
+    $suggestions[] = 'menu__' . $variables['attributes']['region'];
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_menu(&$variables) {
+  if (isset($variables['attributes']['region'])) {
+    unset($variables['attributes']['region']);
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for menu-local-tasks templates.
+ */
+function surface_preprocess_menu_local_tasks(&$variables) {
+  foreach (Element::children($variables['primary']) as $key) {
+    $variables['primary'][$key]['#level'] = 'primary';
+  }
+  foreach (Element::children($variables['secondary']) as $key) {
+    $variables['secondary'][$key]['#level'] = 'secondary';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for menu-local-task templates.
+ */
+function surface_preprocess_menu_local_task(&$variables) {
+  $variables['link']['#options']['attributes']['class'][] = 'tabs__link';
+  $variables['link']['#options']['attributes']['class'][] = 'js-tabs-link';
+
+  // Ensure is-active class is set when the tab is active. The generic active
+  // link handler applies stricter comparison rules than what is necessary for tabs.
+  if (isset($variables['is_active']) && $variables['is_active'] === TRUE) {
+    $variables['link']['#options']['attributes']['class'][] = 'is-active';
+  }
+
+  if (isset($variables['element']['#level'])) {
+    $variables['level'] = $variables['element']['#level'];
+  }
+}

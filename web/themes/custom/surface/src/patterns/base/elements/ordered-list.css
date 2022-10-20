@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Ordered list element styles.
+ */
+
+:where(ol) {
+  margin: 0;
+  padding-inline-start: var(--size-4);
+}

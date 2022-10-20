@@ -1,0 +1,42 @@
+/**
+ * @file
+ * Layout select styles.
+ */
+
+.layout-select {
+  display: grid;
+  gap: var(--size-05);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.layout-select__item {
+  display: flex;
+  flex-basis: 150px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin-inline-end: 10px;
+
+  label.option {
+    display: flex;
+    outline: 1px solid hsl(0, 0%, 80%);
+    padding-block: 10px;
+    padding-inline: 10px;
+    width: fit-content;
+  }
+
+  input:checked + label.option {
+    font-weight: bold;
+    outline: 2px solid hsl(240, 100%, 50%);
+    transition: 0.1s all;
+  }
+}
+
+.layout-select__item-icon {
+  flex-shrink: 0;
+  margin-inline-end: 10px;
+
+  svg {
+    display: block;
+    max-inline-size: fit-content;
+  }
+}

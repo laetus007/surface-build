@@ -1,0 +1,71 @@
+/**
+ * @file
+ * Input element styles.
+ */
+
+[type='color'],
+[type='date'],
+[type='datetime-local'],
+[type='email'],
+[type='file'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
+textarea {
+  appearance: none;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: var(--radius-1);
+  border: 1px solid hsl(var(--gray-5));
+  color: hsl(var(--gray-9));
+  font-family: inherit;
+  font-size: inherit;
+  max-width: 100%;
+  min-height: var(--size-6);
+  padding: 0 var(--size-2);
+
+  &:focus {
+    border: solid 1px hsl(var(--blue-5));
+    outline: solid 1px hsl(var(--blue-5));
+  }
+
+  &[disabled] {
+    color: hsl(var(--gray-5));
+    background-color: hsl(var(--gray-3));
+  }
+
+  &.error {
+    border: solid 2px hsl(var(--red-7));
+
+    &:focus {
+      outline-color: hsl(var(--red-7));
+      outline-offset: -2px;
+    }
+  }
+
+  &.form-element--small {
+    min-height: var(--size-5);
+  }
+
+  @media (--sm) {
+    width: auto;
+  }
+}
+
+[type='date'] {
+  &::-webkit-datetime-edit-fields-wrapper {
+    padding-block: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+  }
+}
+
+[type='file'] {
+  height: auto;
+  padding-block: var(--size-105);
+}

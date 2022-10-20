@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Video element styles.
+ */
+
+:where(video) {
+  block-size: auto;
+  display: block;
+  max-inline-size: 100%;
+
+  &:not([controls]) {
+    display: none;
+    height: 0;
+  }
+}

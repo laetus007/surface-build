@@ -1,0 +1,127 @@
+/**
+ * @file
+ * Site header.
+ */
+
+.site-header {
+  min-height: 72px;
+  position: relative;
+
+  /* Take into account vertical toolbar */
+  .gin--vertical-toolbar & {
+    min-height: 120px;
+  }
+
+  /* Take into account horizontal toolbar */
+  .gin--horizontal-toolbar & {
+    min-height: 104px;
+  }
+
+  @media (--sm) {
+    min-height: 72px;
+
+    /* Take into account horizontal toolbar */
+    .gin--horizontal-toolbar & {
+      min-height: 120px;
+    }
+  }
+
+  @media (--md) {
+    min-height: 85px;
+
+    /* Take into account vertical toolbar */
+    .gin--vertical-toolbar & {
+      min-height: 152px;
+    }
+
+    /* Take into account horizontal toolbar */
+    .gin--horizontal-toolbar & {
+      min-height: 152px;
+    }
+  }
+
+  @media (--lg) {
+    min-height: 104px;
+
+    /* Take into account vertical toolbar */
+    .gin--vertical-toolbar & {
+      min-height: 164px;
+    }
+
+    /* Take into account horizontal toolbar */
+    .gin--horizontal-toolbar & {
+      min-height: 188px;
+    }
+  }
+}
+
+.site-header__fixable {
+  align-items: flex-end;
+  display: flex;
+  transition: all 0.5s;
+  width: 100%;
+
+  &.is-fixed {
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    position: fixed;
+    z-index: 102;
+
+    /* Take into account pattern lab */
+    .pl & {
+      position: absolute;
+    }
+  }
+}
+
+/* Take into account horiztonal toolbar */
+.gin--horizontal-toolbar.toolbar-horizontal {
+  .site-header__fixable {
+    inset-block-start: 113px;
+  }
+}
+
+/* Take into account either toolbar orientation */
+.gin--horizontal-toolbar.toolbar-vertical,
+.gin--vertical-toolbar.toolbar-vertical {
+  .site-header__fixable {
+    inset-block-start: 87px;
+  }
+}
+
+/* Take into account vertical toolbar */
+.gin--vertical-toolbar.toolbar-horizontal {
+  .site-header__fixable {
+    inset-block-start: 60px;
+  }
+}
+
+.site-header__inner {
+  background: hsl(0, 0%, 100%);
+  box-shadow: -36px 1px 36px hsla(0, 0%, 0%, 8%);
+  flex-grow: 1;
+  transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  z-index: 1;
+}
+
+.site-header__inner__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-header__secondary {
+  display: flex;
+  margin-block: var(--size-4);
+
+  @media (--xl) {
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  & > * {
+    display: flex;
+    margin-block-end: 0;
+  }
+}

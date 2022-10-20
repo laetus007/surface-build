@@ -1,0 +1,47 @@
+/**
+ * @file
+ * Styles for content moderation toolbar.
+ */
+
+.entity-moderation-form {
+  background-color: hsl(var(--gray-2));
+  border: 1px solid hsl(var(--gray-1));
+  flex-direction: column;
+  padding-inline: var(--size-1);
+
+  & select,
+  & input:not([type='submit']) {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  @media (--md) {
+    flex-direction: row;
+  }
+}
+
+.entity-moderation-form__item {
+  flex-basis: 0;
+  margin-inline-end: var(--size-1);
+
+  &:last-child {
+    align-self: flex-start;
+    margin-inline-end: 0;
+
+    @media (--md) {
+      align-self: flex-end;
+    }
+  }
+}
+
+.l-grid--narrow,
+.l-grid--narrow > *,
+.l-grid--medium > * {
+  & .entity-moderation-form {
+    margin-inline-start: 0;
+    width: 100%;
+
+    @supports (width: max-content) {
+      width: max-content;
+    }
+  }
+}

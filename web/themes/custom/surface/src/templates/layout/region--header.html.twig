@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Surface's theme override to display the header region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+
+{% if content %}
+  {% embed '@layout/site-header/site-header.twig' %}
+    {% block branding %}
+      {{ drupal_entity('block', 'surface_site_branding') }}
+    {% endblock %}
+
+    {% block search_narrow %}
+      {{ drupal_entity('block', 'surface_search_form_narrow') }}
+    {% endblock %}
+
+    {% block primary %}
+      {{ drupal_entity('block', 'surface_main_menu') }}
+    {% endblock %}
+
+    {% block search_wide %}
+      {{ drupal_entity('block', 'surface_search_form_wide') }}
+    {% endblock %}
+
+    {% block secondary %}
+      {{ drupal_entity('block', 'surface_account_menu') }}
+    {% endblock %}
+  {% endembed %}
+{% endif %}

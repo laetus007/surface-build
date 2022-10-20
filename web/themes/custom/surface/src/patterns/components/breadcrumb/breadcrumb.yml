@@ -1,0 +1,14 @@
+---
+heading: ''
+breadcrumb:
+  -
+    url: '#'
+    text: 'Home'
+  -
+    url: '#'
+    text: 'About'
+  -
+    url: '#'
+    text: 'Support'
+  -
+    text: 'Current item'

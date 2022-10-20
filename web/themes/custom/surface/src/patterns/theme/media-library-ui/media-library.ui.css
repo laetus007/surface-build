@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Styles for the Media Library UI.
+ */
+
+.media-library-selected-count {
+  font-family: var(--font-system);
+  margin: 0 1.5rem;
+}

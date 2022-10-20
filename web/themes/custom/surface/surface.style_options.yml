@@ -1,0 +1,283 @@
+# The "options" section defines all available options.
+options:
+  orientation:
+    plugin: css_class
+    label: 'Orientation'
+    multiple: false
+    options:
+      -
+        label: Stacked
+      -
+        label: Horizontal
+        class: is-horizontal
+  direction:
+    plugin: css_class
+    label: 'Direction'
+    multiple: false
+    options:
+      -
+        label: Normal
+      -
+        label: Reversed
+        class: is-reversed
+  spacer:
+    plugin: css_class
+    label: 'Spacer'
+    multiple: false
+    options:
+      -
+        label: None
+      -
+        label: xsmall
+        class: spacer-1
+      -
+        label: small
+        class: spacer-2
+      -
+        label: medium
+        class: spacer-3
+      -
+        label: large
+        class: spacer-4
+      -
+        label: xlarge
+        class: spacer-5
+  link_type:
+    plugin: css_class
+    label: 'Link style'
+    multiple: false
+    options:
+      -
+        label: Unstyled
+      -
+        label: Call to action
+        class: is-cta
+  hero_type:
+    plugin: css_class
+    label: 'Hero style'
+    multiple: false
+    options:
+      -
+        label: None
+      -
+        label: Banner
+        class: hero--banner
+      -
+        label: Video
+        class: hero--video
+  callout_type:
+    plugin: css_class
+    label: 'Callout style'
+    multiple: false
+    options:
+      -
+        label: Normal
+      -
+        label: Quote
+        class: callout--quote
+      -
+        label: Focus
+        class: callout--focus
+  overlay:
+    plugin: css_class
+    label: 'Overlay'
+    multiple: false
+    options:
+      -
+        label: No
+      -
+        label: Yes
+        class: has-overlay
+  placement:
+    plugin: css_class
+    label: 'Placement'
+    multiple: false
+    options:
+      -
+        label: None
+      -
+        label: Top
+        class: is-top
+      -
+        label: Bottom
+        class: is-bottom
+  alert_type:
+    plugin: css_class
+    label: 'Alert type'
+    multiple: false
+    options:
+      -
+        label: None
+      -
+        label: Error
+        class: alert--error
+      -
+        label: Warning
+        class: alert--warning
+      -
+        label: Success
+        class: alert--success
+      -
+        label: Secondary
+        class: alert--secondary
+  text_color:
+    plugin: css_class
+    label: 'Text color'
+    multiple: false
+    options:
+      -
+        label: UCLA Blue
+        class: text-blue
+      -
+        label: Midnight at Joshua Tree
+        class: text-tree
+      -
+        label: Silver Lake Reservoir
+        class: text-reservoir
+      -
+        label: South Bay Waves
+        class: text-waves
+      -
+        label: Venice Canal
+        class: text-canal
+      -
+        label: Midnight at the Observatory
+        class: text-midnight
+      -
+        label: Malibu Dolphin
+        class: text-dolphin
+  border_radius:
+    plugin: css_class
+    label: 'Border radius'
+    multiple: false
+    options:
+      -
+        label: None
+      -
+        label: Square
+        class: radius-1
+      -
+        label: Round
+        class: radius-round
+  border_size:
+    plugin: css_class
+    label: 'Border size'
+    multiple: false
+    options:
+      -
+        label: None
+      -
+        label: 1
+        class: border-size-1
+      -
+        label: 2
+        class: border-size-2
+      -
+        label: 3
+        class: border-size-3
+      -
+        label: 4
+        class: border-size-4
+      -
+        label: 5
+        class: border-size-5
+  octagon:
+    plugin: css_class
+    label: 'Octagon style'
+    multiple: false
+    options:
+      -
+        label: None
+      -
+        label: Solid
+        class: has-octagon-solid
+      -
+        label: Outline
+        class: has-octagon-outline
+contexts:
+  paragraphs:
+    sf_accordion:
+      options:
+        spacer: true
+    sf_alert:
+      options:
+        alert_type: true
+        spacer: true
+    sf_block_embed:
+      options:
+        spacer: true
+    sf_breadcrumb:
+      options:
+        spacer: true
+    sf_call_to_action:
+      options:
+        spacer: true
+    sf_callout:
+      options:
+        callout_type: true
+        orientation: true
+        direction: true
+        spacer: true
+    sf_carousel:
+      options:
+        overlay: true
+        placement: true
+        spacer: true
+    sf_form_embed:
+      options:
+        spacer: true
+    sf_hero:
+      options:
+        hero_type: true
+        spacer: true
+    sf_highlight:
+      options:
+        orientation: true
+        direction: true
+        spacer: true
+    sf_icon:
+      options:
+        text_color: true
+        border_radius: true
+        border_size: true
+        spacer: true
+    sf_image:
+      options:
+        spacer: true
+    sf_media_callout:
+      options:
+        spacer: true
+    sf_media_quote:
+      options:
+        spacer: true
+    sf_menu_embed:
+      options:
+        spacer: true
+    sf_metric:
+      options:
+        spacer: true
+    sf_page_title:
+      options:
+        octagon: true
+        spacer: true
+    sf_quote:
+      options:
+        spacer: true
+    sf_slider:
+      options:
+        spacer: true
+    sf_table:
+      options:
+        spacer: true
+    sf_tabs:
+      options:
+        spacer: true
+    sf_text:
+      options:
+        spacer: true
+    sf_video:
+      options:
+        spacer: true
+    sf_view_embed:
+      options:
+        spacer: true

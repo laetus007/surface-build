@@ -1,0 +1,15 @@
+/**
+ * @file
+ * Audio element styles.
+ */
+
+:where(audio) {
+  display: block;
+  height: auto;
+  max-width: 100%;
+
+  &:not([controls]) {
+    display: none;
+    height: 0;
+  }
+}

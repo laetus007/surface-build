@@ -1,0 +1,16 @@
+{{ attach_library('surface/feed') }}
+
+{% set classes = [
+  'feed-icon',
+  modifier ? modifier : '',
+  attributes ? attributes.class,
+]|join(' ')|trim %}
+
+{% if title is empty %}
+  {% set title = 'RSS Feed'|t %}
+{% endif %}
+
+<a href="{{ url }}"class="{{ classes }}" {{ attributes ? attributes|without('class','id') }}>
+  <span class="feed-icon__label">{{ title }}</span>
+  <span class="feed-icon__icon" aria-hidden="true"></span>
+</a>

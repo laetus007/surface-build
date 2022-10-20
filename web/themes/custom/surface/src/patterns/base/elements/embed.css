@@ -1,0 +1,8 @@
+/**
+ * @file
+ * Embed element styles.
+ */
+
+:where(embed) {
+  display: block;
+}

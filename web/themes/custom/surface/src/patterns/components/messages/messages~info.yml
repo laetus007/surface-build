@@ -1,0 +1,5 @@
+---
+type: 'info'
+heading: 'Info message'
+messages:
+  - 'This is a info message about <em class="placeholder">something</em> that has been updated. <a href="#">This is a link</a>.'

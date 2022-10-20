@@ -1,0 +1,24 @@
+/**
+ * @file
+ * Styles for action links.
+*/
+
+.action-links {
+  list-style: none;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+
+  & li {
+    display: inline-block;
+
+    & a {
+      color: hsl(var(--blue-9));
+    }
+  }
+}
+
+.action-links-item {
+  display: inline-block;
+}

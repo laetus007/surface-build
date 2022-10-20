@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Universal styles.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  @media print {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: hsl(0, 0%, 0%) !important;
+    text-shadow: none !important;
+  }
+}
+
+::selection {
+  background-color: hsl(var(--blue-9));
+  color: hsl(0, 0%, 100%);
+}
+
+::placeholder {
+  color: hsl(var(--gray-5));
+}
+
+:where(:focus-visible) {
+  outline: solid 2px currentcolor;
+  outline-offset: 2px;
+}
+
+:where([tabindex]:not([tabindex*='-'])) {
+  cursor: pointer;
+  touch-action: manipulation;
+}

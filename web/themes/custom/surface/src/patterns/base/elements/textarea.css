@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Textarea element styles.
+ */
+
+:where(textarea) {
+  background-color: hsl(var(--gray-2));
+  border-radius: var(--radius-2);
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  font: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  min-height: var(--size-18);
+  padding-block: var(--size-1);
+  padding-inline: var(--size-2);
+  resize: block;
+  touch-action: manipulation;
+  width: 100%;
+}

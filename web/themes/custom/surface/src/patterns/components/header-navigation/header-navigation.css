@@ -1,0 +1,97 @@
+/**
+ * @file
+ * Navigation in header.
+ */
+
+.header-nav {
+  background-color: hsl(0, 0%, 100%);
+  border-block-start: solid hsl(0, 0%, 100%) var(--size-11);
+  box-shadow: 0 0 72px hsl(0, 0%, 0%, 10%);
+  flex-basis: 0;
+  flex-grow: 1;
+  height: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 100%;
+  max-width: 500px;
+  overflow: auto;
+  padding-block: 0 var(--size-2);
+  padding-inline: var(--size-2);
+  position: fixed;
+  transition: visibility 0.2s, transform 0.2s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 105;
+
+  &.is-active {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+
+  /* Take into account admin toolbar and orientations */
+  .gin--vertical-toolbar.toolbar-horizontal & {
+    border-top-width: calc(var(--size-13) + 60px);
+  }
+
+  /* Take into account admin toolbar and orientations */
+  .gin--vertical-toolbar.toolbar-vertical &,
+  .gin--horizontal-toolbar.toolbar-vertical & {
+    border-top-width: calc(var(--size-12) + 87px);
+  }
+
+  @supports (flex-basis: max-content) {
+    flex-basis: max-content;
+  }
+
+  @media (--md) {
+    border-top-width: var(--size-13);
+    padding-block-end: var(--size-6);
+    padding-inline-start: var(--size-6);
+
+    /* Take into account admin toolbar and orientations */
+    .gin--horizontal-toolbar.toolbar-horizontal &,
+    .gin--horizontal-toolbar.toolbar-vertical & {
+      border-top-width: calc(var(--size-13) + 113px);
+    }
+
+    /* Take into account admin toolbar and orientations */
+    .gin--vertical-toolbar.toolbar-vertical & {
+      border-top-width: calc(var(--size-10) + 87px);
+    }
+  }
+
+  @media (--xl) {
+    align-items: center;
+    border-block-start: 0;
+    box-shadow: none;
+    display: flex;
+    justify-content: flex-end;
+    max-width: none;
+    overflow: visible;
+    padding-block: 0;
+    padding-inline: 0;
+    position: static;
+    transform: none;
+    transition: transform 0.2s;
+    visibility: visible;
+  }
+}
+
+.header-nav-overlay {
+  background: hsl(var(--blue-9));
+  display: none;
+  height: 100vh;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  opacity: 0.2;
+  position: fixed;
+  width: 100%;
+  z-index: 101;
+
+  @media (forced-colors: active) {
+    background: canvastext;
+  }
+
+  .is-overlay-active & {
+    display: block;
+  }
+}

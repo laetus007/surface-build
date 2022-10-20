@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Layout paragraphs builder overrides..
+ */
+
+.lpb-formatter:hover,
+.lpb-formatter:focus-within {
+  outline: 1px dashed hsl(0, 0%, 84%);
+  outline-offset: 1px;
+}

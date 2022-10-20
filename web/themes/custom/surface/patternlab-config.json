@@ -1,0 +1,147 @@
+{
+  "cacheBust": true,
+  "cleanPublic": true,
+  "defaultPattern": "all",
+  "defaultShowPatternInfo": false,
+  "ishControlsHide": {
+    "s": false,
+    "m": false,
+    "l": false,
+    "full": false,
+    "random": false,
+    "disco": false,
+    "hay": true,
+    "mqs": false,
+    "find": false,
+    "views-all": false,
+    "views-annotations": false,
+    "views-code": false,
+    "views-new": false,
+    "tools-all": false,
+    "tools-docs": false
+  },
+  "ishViewportRange": {
+    "s": [240, 500],
+    "m": [500, 800],
+    "l": [800, 2600]
+  },
+  "logLevel": "error",
+  "outputFileSuffixes": {
+    "rendered": ".rendered",
+    "rawTemplate": "",
+    "markupOnly": ".markup-only"
+  },
+  "paths": {
+    "source": {
+      "root": "./src/",
+      "patterns": "./src/patterns/",
+      "data": "./src/styleguide/data/",
+      "meta": "./src/styleguide/meta/",
+      "annotations": "./src/styleguide/annotations/",
+      "styleguide": "./dist/",
+      "patternlabFiles": {
+        "general-header": "views/partials/general-header.mustache",
+        "general-footer": "views/partials/general-footer.mustache",
+        "patternSection": "views/partials/patternSection.mustache",
+        "patternSectionSubgroup": "views/partials/patternSectionSubgroup.mustache",
+        "viewall": "views/viewall.mustache"
+      },
+      "css": "./dist/css",
+      "fonts": "./dist/fonts",
+      "images": "./dist/images",
+      "js": "./dist/js"
+    },
+    "public": {
+      "root": "./patternlab/",
+      "patterns": "./patternlab/patterns/",
+      "data": "./patternlab/styleguide/data/",
+      "annotations": "./patternlab/annotations/",
+      "styleguide": "./patternlab/styleguide/",
+      "css": "./patternlab/dist/css",
+      "fonts": "./patternlab/dist/fonts",
+      "images": "./patternlab/dist/images",
+      "js": "./patternlab/dist/js"
+    }
+  },
+  "patternExtension": "twig",
+  "patternStateCascade": ["inprogress", "inreview", "complete"],
+  "patternExportDirectory": "./pattern_exports/",
+  "patternExportPatternPartials": [],
+  "plugins": {
+    "@pattern-lab/plugin-tab": {
+      "enabled": true,
+      "initialized": false,
+      "options": {
+        "tabsToAdd": ["css", "js", "yml"]
+      }
+    }
+  },
+  "serverOptions": {
+    "wait": 1000,
+    "file": "index.html"
+  },
+  "starterkitSubDir": "dist",
+  "styleGuideExcludes": [],
+  "theme": {
+    "color": "dark",
+    "density": "compact",
+    "layout": "horizontal",
+    "noViewAll": false,
+    "logo": {
+      "text": "Surface",
+      "altText": "Surface Logo",
+      "url": "/",
+      "srcLight": "./dist/images/logo.svg",
+      "srcDark": "./dist/images/logo.svg"
+    }
+  },
+  "uikits": [
+    {
+      "package": "@pattern-lab/uikit-workshop",
+      "outputDir": "",
+      "enabled": true,
+      "excludedPatternStates": [],
+      "excludedTags": []
+    }
+  ],
+  "engines": {
+    "twig": {
+      "namespaces": [
+        {
+          "id": "uikit",
+          "recursive": true,
+          "paths": [
+            "./node_modules/@pattern-lab/uikit-workshop/views-twig"
+          ]
+        },
+        {
+          "id": "base",
+          "recursive": true,
+          "paths": [
+            "./src/patterns/base"
+          ]
+        },
+        {
+          "id": "layout",
+          "recursive": true,
+          "paths": [
+            "./src/patterns/layout"
+          ]
+        },
+        {
+          "id": "components",
+          "recursive": true,
+          "paths": [
+            "./src/patterns/components"
+          ]
+        }
+      ],
+      "alterTwigEnv": [
+        {
+          "file": "./src/styleguide/drupal-twig/alter-twig.php",
+          "functions": ["twig_extensions"]
+        }
+      ]
+    }
+  }
+}

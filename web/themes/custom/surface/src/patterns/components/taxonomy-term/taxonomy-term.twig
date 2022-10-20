@@ -1,0 +1,19 @@
+{% set classes = [
+  'taxonomy-term',
+  'l-container',
+  'l-grid',
+  'l-grid--medium',
+  attributes ? attributes.class
+]|join(' ')|trim %}
+
+<div class="{{ classes }}" {{ attributes ? attributes|without('class') }}>
+  {{ title_prefix }}
+  {% if name and not page %}
+    <h2><a href="{{ url }}">{{ name }}</a></h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  <div class="content">
+    {{ content }}
+  </div>
+</div>

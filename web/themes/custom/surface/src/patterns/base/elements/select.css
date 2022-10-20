@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Select element styles.
+ */
+
+:where(select) {
+  background-color: hsl(var(--gray-2));
+  border-radius: var(--radius-2);
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  padding-block: 0.75ch;
+  padding-inline: 1.25ch 0;
+  touch-action: manipulation;
+}

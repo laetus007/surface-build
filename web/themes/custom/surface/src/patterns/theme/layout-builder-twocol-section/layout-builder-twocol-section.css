@@ -1,0 +1,82 @@
+/*
+ * @file
+ * Provides the layout styles for two-column layout section.
+ */
+
+.layout--twocol-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > .layout__region {
+    flex: 1 0 100%;
+    margin-block-end: 1.125rem;
+
+    @media (--md) {
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-block-end: 0;
+    }
+  }
+}
+
+@media (--md) {
+  .layout--twocol-section--50-50 {
+    & > .layout__region--first {
+      flex-basis: calc(50% - 1.125rem);
+      margin-inline-end: 1.125rem;
+    }
+
+    & > .layout__region--second {
+      flex-basis: calc(50% - 1.125rem);
+      margin-inline-start: 1.125rem;
+    }
+  }
+
+  .layout--twocol-section--33-67 {
+    & > .layout__region--first {
+      flex-basis: calc(33.33% - 0.7499rem);
+      margin-inline-end: 0.7499rem;
+    }
+
+    & > .layout__region--second {
+      flex-basis: calc(66.66% - 1.4998rem);
+      margin-inline-start: 1.4998rem;
+    }
+  }
+
+  .layout--twocol-section--67-33 {
+    & > .layout__region--first {
+      flex-basis: calc(66.66% - 1.4998rem);
+      margin-inline-end: 1.4998rem;
+    }
+
+    & > .layout__region--second {
+      flex-basis: calc(33.33% - 0.7499rem);
+      margin-inline-start: 0.7499rem;
+    }
+  }
+
+  .layout--twocol-section--25-75 {
+    & > .layout__region--first {
+      flex-basis: calc(25% - 0.5625rem);
+      margin-inline-end: 0.5625rem;
+    }
+
+    & > .layout__region--second {
+      flex-basis: calc(75% - 1.6875rem);
+      margin-inline-start: 1.6875rem;
+    }
+  }
+
+  .layout--twocol-section--75-25 {
+    & > .layout__region--first {
+      flex-basis: calc(75% - 1.6875rem);
+      margin-inline-end: 1.6875rem;
+    }
+
+    & > .layout__region--second {
+      flex-basis: calc(25% - 0.5625rem);
+      margin-inline-start: 0.5625rem;
+    }
+  }
+}
