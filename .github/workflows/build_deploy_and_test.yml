@@ -197,6 +197,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          git config --global --add safe.directory "*"
           echo "$SSH_PRIVATE_KEY" > ../private.key
           chmod 600 ../private.key
           eval `ssh-agent -s`
