@@ -1,5 +1,9 @@
 name: Build, deploy and test
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
 defaults:
   run:
     shell: bash
