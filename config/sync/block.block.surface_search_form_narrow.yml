@@ -1,0 +1,23 @@
+uuid: 0ac801cc-c7a3-4f00-bd89-a203434368ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - surface
+_core:
+  default_config_hash: 66419O5uPsT6-H2kVIYlkJce36S3kE0GpgbW7QkWGj0
+id: surface_search_form_narrow
+theme: surface
+region: header
+weight: 3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

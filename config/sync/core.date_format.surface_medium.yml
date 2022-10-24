@@ -1,0 +1,13 @@
+uuid: 59e6ffea-f9c1-4883-9995-1d7b6b5c3047
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - surface
+_core:
+  default_config_hash: Wr5IdA3Sz-e-WXXKQ5_tSzbWgTZ8F6xuhWtNJFSRZOo
+id: surface_medium
+label: 'Surface Medium'
+locked: false
+pattern: 'j  F,  Y'

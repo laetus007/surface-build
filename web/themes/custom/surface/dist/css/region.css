@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Region styles.
+ */
+
+.region > * {
+  -webkit-margin-after: var(--size-2);
+          margin-block-end: var(--size-2);
+}
+
+@media (min-width: 768px) {
+
+.region > * {
+    -webkit-margin-after: var(--size-4);
+            margin-block-end: var(--size-4)
+}
+  }
+
+@media (min-width: 992px) {
+
+.region > * {
+    -webkit-margin-after: var(--size-6);
+            margin-block-end: var(--size-6)
+}
+  }

@@ -1,0 +1,27 @@
+uuid: 1c2026d2-0a21-44d1-826c-89a6c46e767b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - surface
+_core:
+  default_config_hash: guLj-iCVYo6AONnY5RGD_x4Be32ZwWE7UJGesk73Pao
+id: surface_account_menu
+theme: surface
+region: header
+weight: 2
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

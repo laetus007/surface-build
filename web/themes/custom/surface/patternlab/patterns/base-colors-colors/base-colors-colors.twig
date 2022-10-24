@@ -1,0 +1,14 @@
+<section class="pl-colors">
+  {% for title, list in colors %}
+    <div class="just-for-gap">
+      <h3>{{ title }}</h3>
+      <article class="color-demo">
+        {% for item in list %}
+          <div style="background-color: hsla({{ item.value }})">
+            <span>{{ item.name }}</span>
+          </div>
+        {% endfor %}
+      </article>
+    </div>
+  {% endfor %}
+</section>

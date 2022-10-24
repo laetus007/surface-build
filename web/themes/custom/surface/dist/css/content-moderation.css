@@ -1,0 +1,56 @@
+/**
+ * @file
+ * Styles for content moderation toolbar.
+ */
+
+.entity-moderation-form {
+  background-color: hsl(var(--gray-2));
+  border: 1px solid hsl(var(--gray-1));
+  flex-direction: column;
+  padding-inline: var(--size-1);
+}
+
+.entity-moderation-form select,
+  .entity-moderation-form input:not([type='submit']) {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+@media (min-width: 768px) {
+
+.entity-moderation-form {
+    flex-direction: row
+}
+  }
+
+.entity-moderation-form__item {
+  flex-basis: 0;
+  -webkit-margin-end: var(--size-1);
+          margin-inline-end: var(--size-1);
+}
+
+.entity-moderation-form__item:last-child {
+    align-self: flex-start;
+    -webkit-margin-end: 0;
+            margin-inline-end: 0;
+  }
+
+@media (min-width: 768px) {
+
+.entity-moderation-form__item:last-child {
+      align-self: flex-end
+  }
+    }
+
+.l-grid--narrow .entity-moderation-form, .l-grid--narrow > * .entity-moderation-form, .l-grid--medium > * .entity-moderation-form {
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+    width: 100%;
+  }
+
+@supports ((width: -moz-max-content) or (width: max-content)) {
+
+.l-grid--narrow .entity-moderation-form, .l-grid--narrow > * .entity-moderation-form, .l-grid--medium > * .entity-moderation-form {
+      width: -moz-max-content;
+      width: max-content
+  }
+    }

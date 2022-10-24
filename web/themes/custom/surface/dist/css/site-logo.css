@@ -1,0 +1,29 @@
+/**
+ * @file
+ * Site logo styles.
+ */
+
+.site-logo {
+  flex-shrink: 0;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.site-logo img {
+    max-width: 100%;
+    width: 30px;
+  }
+
+@media (min-width: 768px) {
+
+.site-logo img {
+      width: 40px
+  }
+    }
+
+@media (min-width: 992px) {
+
+.site-logo img {
+      width: 50px
+  }
+    }

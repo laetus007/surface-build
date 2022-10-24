@@ -1,0 +1,431 @@
+/**
+ * @file
+ * Main menu styling.
+ */
+
+.menu-main {
+  flex-wrap: wrap;
+  list-style: none;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+@media (min-width: 1200px) {
+
+.menu-main {
+    align-items: stretch;
+    display: flex;
+    -webkit-margin-end: 1.125rem;
+            margin-inline-end: 1.125rem
+}
+  }
+
+.menu-main .menu__item {
+    list-style-type: none;
+    -webkit-margin-after: 0.5625rem;
+            margin-block-end: 0.5625rem;
+  }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__item:not(:last-child) {
+        -webkit-margin-end: 2.25rem;
+                margin-inline-end: 2.25rem
+    }
+      }
+
+.menu-main .menu__item:last-child {
+      -webkit-margin-after: 0;
+              margin-block-end: 0;
+    }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__item {
+      align-items: center;
+      display: flex;
+      flex-wrap: nowrap; /* Ensure that sub navigation toggle button doesn't wrap underneath link. */
+      margin-block: 0;
+      margin-inline: 0;
+      max-width: 12.5rem;
+      position: relative; /* Anchor secondary menu */
+      width: -moz-max-content;
+      width: max-content
+  }
+    }
+
+.menu-main .menu__item--has-children {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.menu-main .menu__item--has-children .menu__link--link,
+    .menu-main .menu__item--has-children .menu__link--nolink {
+      flex-basis: calc(100% - 3.375rem);
+    }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__item--has-children .menu__link--link,
+    .menu-main .menu__item--has-children .menu__link--nolink {
+        flex-basis: auto
+    }
+      }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__item--has-children .menu__link .menu__link-inner--level-1::after {
+            content: none
+        }
+          }
+
+.menu-main .menu__link {
+    color: hsl(197, 21%, 6%);
+    display: flex;
+    flex-grow: 1;
+    font-size: 1.75rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 2.25rem;
+    position: relative;
+    text-decoration: none;
+  }
+
+.menu-main .menu__link:hover {
+      color: inherit;
+    }
+
+.menu-main .menu__link:hover .menu__link-inner::after {
+          transform: scaleX(1);
+        }
+
+.menu-main .menu__link:focus {
+      outline: auto 2px hsl(203, 72%, 50%);
+      outline-offset: 2px;
+    }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link:focus {
+        outline: 0;
+        position: relative
+    }
+      }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link:focus::before {
+          border-radius: 0.25rem;
+          border: solid 2px hsl(203, 72%, 50%);
+          content: '';
+          height: 3.375rem;
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: calc(100% + 1.125rem)
+      }
+        }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link {
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      line-height: 1.6875rem
+  }
+    }
+
+.menu-main .menu__link--nolink {
+    color: hsl(195, 2%, 44%);
+    font-weight: normal;
+    padding-block: 0.5625rem;
+    padding-inline: 0;
+  }
+
+.menu-main .menu__link--button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding-block: 0;
+    padding-inline: 0;
+    position: relative;
+    text-align: left;
+  }
+
+.menu-main .menu__link--button.menu__link--has-children {
+      -webkit-padding-end: 3.375rem;
+              padding-inline-end: 3.375rem;
+    }
+
+.menu-main .menu__link--button.menu__link--has-children::before,
+      .menu-main .menu__link--button.menu__link--has-children::after {
+        border-top: solid 3px hsl(203, 72%, 50%);
+        content: '';
+        height: 0;
+        position: absolute;
+        right: 0.5625rem;
+        top: 1.625rem; /* Visually align button with menu link text. */
+        width: 1.125rem;
+      }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link--button.menu__link--has-children::before {
+          content: none
+      }
+        }
+
+.menu-main .menu__link--button.menu__link--has-children::after {
+        transition: opacity 0.2s;
+        transform: rotate(90deg);
+      }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link--button.menu__link--has-children::after {
+          border-bottom: solid 2px currentcolor;
+          border-right: solid 2px currentcolor;
+          border-top: 0;
+          height: 0.5rem;
+          left: calc(100% - 0.1875rem);
+          -webkit-margin-before: -2px;
+                  margin-block-start: -2px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%) rotate(45deg);
+          width: 0.5rem
+      }
+        }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link--button.menu__link--has-children:focus::before {
+            content: '';
+            width: calc(100% + 1.6875rem)
+        }
+          }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link--button.menu__link--has-children {
+        overflow: visible;
+        -webkit-padding-end: 0.5625rem;
+                padding-inline-end: 0.5625rem
+    }
+      }
+
+.menu-main .menu__link--button.menu__link--has-children[aria-expanded='true']::after {
+        opacity: 0;
+      }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link--button.menu__link--has-children[aria-expanded='true']::after {
+          opacity: 1
+      }
+        }
+
+.menu-main .menu__link-inner {
+    align-items: center;
+    display: inline-flex;
+    padding-block: 0.5625rem;
+    padding-inline: 0;
+    position: relative;
+  }
+
+.menu-main .menu__link-inner::after {
+      border-top: solid 5px hsl(203, 72%, 50%);
+      bottom: 0;
+      content: '';
+      height: 0;
+      left: 0;
+      position: absolute;
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.2s;
+      width: 100%;
+    }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link-inner::after {
+        border-top-width: 9px;
+        transform-origin: center
+    }
+      }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu__link-inner {
+      padding-block: 2.25rem;
+      padding-inline: 0
+  }
+    }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu-main--1 {
+      border-bottom: solid 10px hsl(203, 72%, 50%);
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent;
+      height: 0;
+      left: 50%;
+      opacity: 0;
+      position: absolute;
+      top: calc(100% - 1.125rem);
+      transform: translate(-50%, -1.25rem);
+      transition: visibility 0.2s, transform 0.2s, opacity 0.2s;
+      visibility: hidden;
+      width: 0;
+      z-index: 105 /* Match level 2 menus. */
+  }
+    }
+
+@media (min-width: 1200px) {
+
+.menu-main .menu-main--1.is-active-menu-parent {
+        opacity: 1;
+        transform: translate(-50%, 0);
+        visibility: visible
+    }
+      }
+
+/*
+  Secondary menu specific styles.
+*/
+
+.menu-main--level-2 {
+  border-left: solid 18px hsl(203, 72%, 50%);
+  flex-basis: 100%;
+  margin-block: 0;
+  -webkit-margin-start: -1.125rem;
+          margin-inline-start: -1.125rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-padding-start: 2.8125rem;
+          padding-inline-start: 2.8125rem;
+  transition: opacity 0.2s, visibility 0.2s, max-height 0.2s;
+  visibility: hidden;
+}
+
+@media (min-width: 1200px) {
+
+.menu-main--level-2 {
+    background: hsl(0, 0%, 100%);
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent;
+    border-radius: 0 0 2px 2px;
+    border-right: solid 1px transparent; /* Transparent borders useful for Windows High Contrast mode. */
+    border-top: solid hsl(203, 72%, 50%) 9px;
+    box-shadow: 0 1px 36px rgba(0, 0, 0, 0.08);
+    left: 50%;
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    max-height: calc(100vh - 7.875rem);
+    opacity: 0;
+    overflow: hidden;
+    padding-block: 3.375rem;
+    padding-inline: 2.25rem;
+    position: absolute;
+    top: calc(100% - 0.5625rem);
+    transform: translate(-50%, -1.25rem);
+    transition: visibility 0.2s, transform 0.2s, opacity 0.2s;
+    visibility: hidden;
+    width: 15.625rem;
+    z-index: 105 /* Appear above search container. */
+}
+  }
+
+.menu-main--level-2.is-active-menu-parent {
+    -webkit-margin-before: 1.6875rem;
+            margin-block-start: 1.6875rem;
+    max-height: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+@media (min-width: 1200px) {
+
+.menu-main--level-2.is-active-menu-parent {
+      -webkit-margin-before: 0;
+              margin-block-start: 0;
+      opacity: 1;
+      transform: translate(-50%, 0);
+      visibility: visible
+  }
+    }
+
+.menu-main--level-2 .menu__item--has-children {
+    display: block;
+  }
+
+.menu-main--level-2 .menu__item--level-2 {
+    width: 100%;
+  }
+
+.menu-main--level-2 .menu__link--level-2 {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.125rem;
+  }
+
+.menu-main--level-2 .menu__link--level-2:hover {
+      color: inherit;
+    }
+
+.menu-main--level-2 .menu__link--level-2:hover .menu__link-inner--level-2::after {
+          transform: scaleX(1);
+        }
+
+@media (min-width: 1200px) {
+
+.menu-main--level-2 .menu__link--level-2:focus::before {
+          height: 100%;
+          left: -0.5625rem;
+          top: 0;
+          transform: none
+      }
+        }
+
+@media (min-width: 1200px) {
+
+.menu-main--level-2 .menu__link--level-2 {
+      display: block
+  }
+    }
+
+.menu-main--level-2 .menu__link-inner--level-2::after {
+      border-top: solid 5px hsl(203, 72%, 50%);
+      bottom: 0;
+      content: '';
+      height: 0;
+      left: 0;
+      position: absolute;
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.2s;
+      width: 100%;
+    }
+
+@media (min-width: 1200px) {
+
+.menu-main--level-2 .menu__link-inner--level-2::after {
+        border-top-width: 3px;
+        transform-origin: left
+    }
+      }
+
+@media (min-width: 1200px) {
+
+.menu-main--level-2 .menu__link-inner--level-2 {
+      padding-block: 0.5625rem;
+      padding-inline: 0
+  }
+    }

@@ -1,0 +1,59 @@
+<header id="header" class="site-header" data-drupal-selector="site-header" role="banner">
+  <div class="site-header__fixable is-fixed is-expanded" data-drupal-selector="site-header-fixable">
+    <div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
+      <div class="site-header__inner__container l-container">
+        {% block branding %}
+          {% include '@layout/site-branding/site-branding.twig' with {
+            'site_logo': '/dist/images/logo.svg',
+            'site_name': 'Surface'
+          } %}
+        {% endblock %}
+
+        <div class="header-nav-overlay" data-drupal-selector="header-nav-overlay"></div>
+        {% include '@components/mobile-nav/mobile-nav.twig' %}
+
+        <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
+          {% block search_narrow %}
+            {% include '@components/search-narrow/search-narrow.twig' %}
+          {% endblock %}
+
+          {% block primary %}
+            {% embed '@layout/nav/nav.twig' with {
+              'heading_id': 'block-surface-main-menu',
+              'label': 'Main navigation'
+            } %}
+              {% block content %}
+                {% include '@components/menu-main/menu-main.twig' with {
+                  'menu_name': 'main',
+                  'is_demo': true,
+                  'items': main_menu
+                } %}
+              {% endblock %}
+            {% endembed %}
+          {% endblock %}
+
+          <div class="site-header__secondary">
+            {% block search_wide %}
+              {% include '@components/search-wide/search-wide.twig' %}
+            {% endblock %}
+
+            {% block secondary %}
+              {% embed '@layout/nav/nav.twig' with {
+                'heading_id': 'block-surface-account-menu',
+                'label': 'User account menu'
+              } %}
+                {% block content %}
+                  {% include '@components/menu-account/menu-account.twig' with {
+                    'menu_name': 'account',
+                    'is_demo': true,
+                    'items': account_menu
+                  } %}
+                {% endblock %}
+              {% endembed %}
+            </div>
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

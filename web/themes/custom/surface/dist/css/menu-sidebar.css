@@ -1,0 +1,54 @@
+/**
+ * @file
+ * Styles for menu placed in sidebar region.
+ */
+
+.menu--sidebar {
+  list-style: none;
+}
+
+.menu--sidebar .menu {
+    list-style: none;
+  }
+
+.menu--sidebar .menu--level-1 {
+    margin: 0;
+  }
+
+.menu--sidebar .menu__link {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 18px;
+    padding-block: var(--size-1);
+    padding-inline: 0;
+    position: relative;
+  }
+
+/* Bottom divider line. */
+
+.menu--sidebar .menu__link::after {
+      -webkit-border-before: solid 2px hsl(var(--gray-1));
+              border-block-start: solid 2px hsl(var(--gray-1));
+      content: '';
+      height: 0;
+      inset-block-end: 0;
+      inset-inline-start: 0;
+      position: absolute;
+      width: var(--size-8);
+    }
+
+.menu--sidebar .menu__link--link {
+    color: hsl(var(--gray-9));
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+.menu--sidebar .menu__link--link:hover {
+      color: hsl(var(--blue-5));
+    }
+
+/* No bottom divider line for last menu item. */
+
+.menu--sidebar .menu__item--level-1:last-child > .menu__link:last-child::after, .menu--sidebar .menu__item--level-1:last-child > .menu__item--level-2:last-child > .menu__link:last-child::after {
+      content: none;
+    }

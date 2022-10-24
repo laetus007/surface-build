@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Main content Layout.
+ */
+
+.l-main {
+  scroll-margin-top: 100px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+
+.l-main {
+    scroll-margin-top: 100px
+}
+  }

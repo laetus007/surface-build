@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Links component.
+ */
+
+.links.inline {
+  list-style: none;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.links.inline > * {
+    display: inline;
+  }
+
+.links.inline > *:not(:last-child) {
+      -webkit-padding-end: 1em;
+              padding-inline-end: 1em;
+    }

@@ -1,0 +1,22 @@
+uuid: a4bbbb05-1f3e-4a00-b6c4-ff2bafe78286
+langcode: en
+status: true
+dependencies:
+  theme:
+    - surface
+_core:
+  default_config_hash: faAACv5n2YMjKPzNMqcjBHMW-bQFIamMDPgS2Pp2l9s
+id: surface_secondary_local_tasks
+theme: surface
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

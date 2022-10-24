@@ -1,0 +1,171 @@
+_core:
+  default_config_hash: CXhei_vpaZk-3f_Mj2cH0YmpK-ZpKHoSzVA3yZrDq0g
+definitions:
+  contact__site_page:
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  standard__front_page:
+    menu_name: main
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: false
+  entity__field_storage_config__collection:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_reports
+    expanded: false
+    weight: 0
+  'admin_toolbar_tools__extra_links:views_ui__field_list':
+    enabled: false
+    menu_name: admin
+    parent: entity.field_storage_config.collection
+    weight: 0
+    expanded: false
+  dblog__access_denied:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+  dblog__page_not_found:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+  dblog__search:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+  views_ui__reports_plugins:
+    enabled: false
+    menu_name: admin
+    parent: system.admin_reports
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:user__role_add':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.collection'
+    expanded: false
+    weight: -50
+  'admin_toolbar_tools__extra_links:entity__user_role__edit_form__anonymous':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.collection'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__edit_permissions_form__anonymous':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.edit_form.anonymous'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__edit_form__authenticated':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.collection'
+    weight: 1
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__edit_permissions_form__authenticated':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.edit_form.authenticated'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__edit_form__content_editor':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.collection'
+    weight: 2
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__delete_form__content_editor':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.edit_form.content_editor'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__edit_permissions_form__content_editor':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.edit_form.content_editor'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__edit_form__administrator':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.collection'
+    weight: 3
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__delete_form__administrator':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.edit_form.administrator'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__user_role__edit_permissions_form__administrator':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.user_role.edit_form.administrator'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:update__theme_install':
+    enabled: false
+    menu_name: admin
+    parent: system.themes_page
+    expanded: false
+    weight: 0
+  'admin_toolbar_tools__extra_links:system__theme_settings':
+    enabled: false
+    menu_name: admin
+    parent: system.themes_page
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:system__theme_settings_theme__claro':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:system.theme_settings'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:system__theme_settings_theme__gin':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:system.theme_settings'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:system__theme_settings_theme__surface':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:system.theme_settings'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:update__theme_update':
+    enabled: false
+    menu_name: admin
+    parent: system.themes_page
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:update__module_install':
+    enabled: false
+    menu_name: admin
+    parent: system.modules_list
+    weight: 0
+    expanded: false
+  system__modules_uninstall:
+    enabled: false
+    menu_name: admin
+    parent: system.modules_list
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:update__module_update':
+    enabled: false
+    menu_name: admin
+    parent: system.modules_list
+    weight: 0
+    expanded: false

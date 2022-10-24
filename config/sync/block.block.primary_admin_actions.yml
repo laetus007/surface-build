@@ -1,0 +1,20 @@
+uuid: 1eeffa14-177f-46d2-9077-fa59551db891
+langcode: en
+status: true
+dependencies:
+  theme:
+    - surface
+_core:
+  default_config_hash: fmnY7_ZX4rhZ5FPuqnjrwa73qzIwEzzOvMk-tzRFm7Q
+id: primary_admin_actions
+theme: surface
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

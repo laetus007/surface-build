@@ -1,0 +1,23 @@
+uuid: 253ba1f3-34a6-4e2b-97df-11ddac6ddc92
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - surface
+_core:
+  default_config_hash: yfHKESi1mpDN1Di4_VZqX_M-JMStWxbvPIj1D-b02AI
+id: surface_search_form_wide
+theme: surface
+region: header
+weight: 4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

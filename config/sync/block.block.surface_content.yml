@@ -1,0 +1,22 @@
+uuid: 0380f7b9-3fba-4cae-80d3-3119d650e6bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - surface
+_core:
+  default_config_hash: BQcHCZ7jOt_p9Av5qvL6xDi2F_PhfS7p0UOy1xnX19M
+id: surface_content
+theme: surface
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

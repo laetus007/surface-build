@@ -1,0 +1,121 @@
+/**
+ * @file
+ * User generated tables.
+ */
+
+.text-content table,
+.views-table,
+.draggable-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  color: hsl(var(--gray-8));
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: var(--size-3);
+  margin-block: var(--size-4);
+}
+
+.text-content table caption, .views-table caption, .draggable-table caption {
+    color: hsl(var(--gray-8));
+    font-family: var(--font-serif);
+    font-size: 14px;
+    font-style: italic;
+    line-height: var(--size-2);
+    -webkit-margin-after: var(--size-2);
+            margin-block-end: var(--size-2);
+    text-align: start;
+  }
+
+.text-content table tr:last-child td, .views-table tr:last-child td, .draggable-table tr:last-child td {
+        -webkit-border-after: 0;
+                border-block-end: 0;
+      }
+
+.text-content table td,
+  .text-content table th,
+  .views-table td,
+  .views-table th,
+  .draggable-table td,
+  .draggable-table th {
+    padding-block: var(--size-2);
+    -webkit-padding-end: var(--size-2);
+            padding-inline-end: var(--size-2);
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    vertical-align: top;
+  }
+
+.text-content table th, .views-table th, .draggable-table th {
+    -webkit-border-after: 2px solid hsl(var(--blue-5));
+            border-block-end: 2px solid hsl(var(--blue-5));
+    color: hsl(var(--gray-9));
+    font-family: var(--font-sans);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: var(--size-2);
+    margin-block: 0;
+    margin-inline: 0;
+    text-align: start;
+  }
+
+/**
+    * Fixes for styles injected by CKEditor
+    */
+
+.text-content table th.text-align-left, .views-table th.text-align-left, .draggable-table th.text-align-left {
+      text-align: start;
+    }
+
+.text-content table th.text-align-right, .views-table th.text-align-right, .draggable-table th.text-align-right {
+      text-align: end;
+    }
+
+.text-content table th.text-align-center, .views-table th.text-align-center, .draggable-table th.text-align-center {
+      text-align: center;
+    }
+
+.text-content table th.text-align-justify, .views-table th.text-align-justify, .draggable-table th.text-align-justify {
+      text-align: justify;
+    }
+
+.text-content table td, .views-table td, .draggable-table td {
+    -webkit-border-after: 2px solid hsl(var(--gray-4));
+            border-block-end: 2px solid hsl(var(--gray-4));
+    white-space: normal;
+  }
+
+.text-content table th.checkbox,
+  .text-content table td.checkbox,
+  .views-table th.checkbox,
+  .views-table td.checkbox,
+  .draggable-table th.checkbox,
+  .draggable-table td.checkbox {
+    text-align: center;
+  }
+
+.draggable-table {
+  width: 100%;
+}
+
+.draggable-table .form-item {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+}
+
+.tablesort {
+  vertical-align: middle;
+}
+
+.sticky-header {
+  -webkit-border-after: 4px solid hsl(var(--blue-5));
+          border-block-end: 4px solid hsl(var(--blue-5));
+  margin: 0;
+  z-index: 0;
+}
+
+/* Properly align VBO checkboxes. */
+
+.views-field-node-bulk-form .form-item {
+  margin: 0;
+}

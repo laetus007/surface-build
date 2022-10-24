@@ -1,0 +1,22 @@
+uuid: 0757cfde-dce6-4535-ae57-b3ea18dc2a39
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - surface
+_core:
+  default_config_hash: AU5TihPVAlbSw9JrhepPTDJiTVz87NU9swm2yBTX684
+id: surface_breadcrumbs
+theme: surface
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

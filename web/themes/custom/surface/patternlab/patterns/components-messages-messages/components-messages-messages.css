@@ -1,0 +1,126 @@
+/**
+ * @file
+ * Messages styles.
+ */
+
+@import '../../base/mixins/svg-icon';
+
+:root {
+  --messages-icon-size: 32px;
+}
+
+.messages {
+  background-color: hsl(var(--gray-9));
+  color: hsl(0, 0%, 100%);
+  margin-block: var(--size-2);
+  min-height: calc(var(--messages-icon-size) + 2 * var(--size-2));
+  outline: solid 1px transparent;
+  padding-block: var(--size-2);
+  padding-inline: var(--size-3);
+
+  & * {
+    color: inherit;
+  }
+}
+
+.messages__container {
+  display: flex;
+}
+
+.messages__header {
+  flex-shrink: 0;
+  margin-inline-end: var(--size-2);
+
+  &.no-icon {
+    margin-inline-end: 0;
+  }
+}
+
+.messages__content {
+  flex: 1;
+  overflow: auto;
+  padding-block-start: 3px;
+}
+
+.messages--error {
+  $message-error-color: hsl(var(--red-5));
+
+  .messages__icon {
+    @include svg-icon('../images/error.svg', 32px, 32px, $message-error-color);
+  }
+}
+
+.messages--warning {
+  $message-warning-color: hsl(var(--yellow-5));
+
+  .messages__icon {
+    @include svg-icon('../images/warning.svg', 32px, 32px, $message-warning-color);
+  }
+}
+
+.messages--status {
+  $message-status-color: hsl(var(--green-5));
+
+  .messages__icon {
+    @include svg-icon('../images/status.svg', 32px, 32px, $message-status-color);
+  }
+}
+
+.messages--info {
+  $message-info-color: hsl(var(--blue-5));
+
+  .messages__icon {
+    @include svg-icon('../images/info.svg', 32px, 32px, $message-info-color);
+  }
+}
+
+.messages__button {
+  flex-shrink: 0;
+  margin-inline-start: var(--size-2);
+  padding-block-start: 3px;
+}
+
+.messages__close {
+  appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 25px;
+  padding-block: 0;
+  padding-inline: 0;
+  position: relative;
+  vertical-align: top;
+  width: 25px;
+
+  &::before,
+  &::after {
+    border-top: solid 2px hsl(var(--gray-5));
+    content: '';
+    display: block;
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 33px;
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      border-color: hsl(0, 0%, 100%);
+    }
+  }
+
+  &:focus {
+    outline: 2px solid hsl(var(--blue-5));
+    outline-offset: 2px;
+  }
+}

@@ -1,0 +1,47 @@
+/**
+ * @file
+ * Layout select styles.
+ */
+
+.layout-select {
+  display: grid;
+  grid-gap: var(--size-05);
+  gap: var(--size-05);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.layout-select__item {
+  display: flex;
+  flex-basis: 150px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.layout-select__item label.option {
+    display: flex;
+    outline: 1px solid hsl(0, 0%, 80%);
+    padding-block: 10px;
+    padding-inline: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
+.layout-select__item input:checked + label.option {
+    font-weight: bold;
+    outline: 2px solid hsl(240, 100%, 50%);
+    transition: 0.1s all;
+  }
+
+.layout-select__item-icon {
+  flex-shrink: 0;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.layout-select__item-icon svg {
+    display: block;
+    max-inline-size: -moz-fit-content;
+    max-inline-size: fit-content;
+  }

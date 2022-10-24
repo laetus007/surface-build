@@ -1,0 +1,171 @@
+/**
+ * @file
+ * Messages styles.
+ */
+
+/**
+ * @file
+ * Mixin SVG icon
+ */
+
+:root {
+  --messages-icon-size: 32px;
+}
+
+.messages {
+  background-color: hsl(var(--gray-9));
+  color: hsl(0, 0%, 100%);
+  margin-block: var(--size-2);
+  min-height: calc(32px + 2 * var(--size-2));
+  min-height: calc(var(--messages-icon-size) + 2 * var(--size-2));
+  outline: solid 1px transparent;
+  padding-block: var(--size-2);
+  padding-inline: var(--size-3);
+}
+
+.messages * {
+    color: inherit;
+  }
+
+.messages__container {
+  display: flex;
+}
+
+.messages__header {
+  flex-shrink: 0;
+  -webkit-margin-end: var(--size-2);
+          margin-inline-end: var(--size-2);
+}
+
+.messages__header.no-icon {
+    -webkit-margin-end: 0;
+            margin-inline-end: 0;
+  }
+
+.messages__content {
+  flex: 1;
+  overflow: auto;
+  -webkit-padding-before: 3px;
+          padding-block-start: 3px;
+}
+
+.messages--error .messages__icon {
+  background-color: hsl(var(--red-5));
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  height: 32px;
+  -webkit-mask-image: url('../images/error.svg');
+          mask-image: url('../images/error.svg');
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  width: 32px;
+  }
+
+.messages--warning .messages__icon {
+  background-color: hsl(var(--yellow-5));
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  height: 32px;
+  -webkit-mask-image: url('../images/warning.svg');
+          mask-image: url('../images/warning.svg');
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  width: 32px;
+  }
+
+.messages--status .messages__icon {
+  background-color: hsl(var(--green-5));
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  height: 32px;
+  -webkit-mask-image: url('../images/status.svg');
+          mask-image: url('../images/status.svg');
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  width: 32px;
+  }
+
+.messages--info .messages__icon {
+  background-color: hsl(var(--blue-5));
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  height: 32px;
+  -webkit-mask-image: url('../images/info.svg');
+          mask-image: url('../images/info.svg');
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  width: 32px;
+  }
+
+.messages__button {
+  flex-shrink: 0;
+  -webkit-margin-start: var(--size-2);
+          margin-inline-start: var(--size-2);
+  -webkit-padding-before: 3px;
+          padding-block-start: 3px;
+}
+
+.messages__close {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 25px;
+  padding-block: 0;
+  padding-inline: 0;
+  position: relative;
+  vertical-align: top;
+  width: 25px;
+}
+
+.messages__close::before,
+  .messages__close::after {
+    border-top: solid 2px hsl(var(--gray-5));
+    content: '';
+    display: block;
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 33px;
+  }
+
+.messages__close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+.messages__close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+.messages__close:hover::before,
+    .messages__close:hover::after {
+      border-color: hsl(0, 0%, 100%);
+    }
+
+.messages__close:focus {
+    outline: 2px solid hsl(var(--blue-5));
+    outline-offset: 2px;
+  }

@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Nav styles.
+ */
+
+.nav {
+  display: flex;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}

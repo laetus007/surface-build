@@ -1,0 +1,121 @@
+/**
+ * @file
+ * Button that expands second level nav when clicked.
+ */
+
+.primary-nav__button-toggle {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  height: var(--size-4);
+  -webkit-margin-before: var(--size-1);
+          margin-block-start: var(--size-1); /* Visually align button with menu link text. */
+  overflow: hidden;
+  padding-block: 0;
+  padding-inline: 0;
+  position: relative;
+  text-indent: -999px;
+  width: var(--size-4);
+}
+
+.primary-nav__button-toggle:focus {
+    outline: auto 2px hsl(var(--blue-5));
+    outline-offset: 2px;
+  }
+
+.primary-nav__button-toggle .icon--menu-toggle {
+    border-radius: 2px;
+    height: 16px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.2s;
+    width: 16px;
+  }
+
+.primary-nav__button-toggle .icon--menu-toggle::before,
+    .primary-nav__button-toggle .icon--menu-toggle::after {
+      border-top: solid 3px hsl(var(--blue-5));
+      content: '';
+      height: 0;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: var(--size-2);
+    }
+
+.primary-nav__button-toggle .icon--menu-toggle::after {
+      transition: opacity 0.2s;
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+.primary-nav__button-toggle[aria-expanded='true'] .icon--menu-toggle::after {
+    opacity: 0;
+  }
+
+/* aria-hidden attribute is removed by JS. Button is non-functional  until JS is enabled. */
+
+.primary-nav__button-toggle[aria-hidden='true'] {
+    pointer-events: none;
+  }
+
+@media (min-width: 1200px) {
+  .primary-nav__button-toggle {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: auto;
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-end: calc(var(--size-4) * -1);
+            margin-inline-end: calc(var(--size-4) * -1);
+    width: calc(var(--size-4) + 8px);
+  }
+
+    .primary-nav__button-toggle:focus {
+      border: 0;
+      outline: 0;
+    }
+
+      .primary-nav__button-toggle:focus .icon--menu-toggle {
+        border: solid 2px hsl(var(--blue-9));
+      }
+
+    .primary-nav__button-toggle:active {
+      color: currentcolor;
+    }
+
+    .primary-nav__button-toggle[aria-expanded='true'] .icon--menu-toggle::after {
+      opacity: 0.8;
+    }
+
+    .primary-nav__button-toggle .icon--menu-toggle {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 4px;
+      inset-inline-start: 3px;
+      transform: translateY(-50%);
+      width: 18px;
+    }
+
+      .primary-nav__button-toggle .icon--menu-toggle::before {
+        content: none;
+      }
+
+      .primary-nav__button-toggle .icon--menu-toggle::after {
+        background: transparent;
+        border-bottom: solid 2px currentcolor;
+        border-right: solid 2px currentcolor;
+        border-top: none;
+        content: '';
+        height: 8px;
+        left: 3px;
+        opacity: 0.8;
+        top: calc(50% - 2px);
+        transform: translateY(-50%) rotate(45deg);
+        width: 8px;
+      }
+}

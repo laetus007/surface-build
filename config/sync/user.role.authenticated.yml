@@ -1,0 +1,22 @@
+uuid: dc8eadd0-0eaa-423f-8bd4-4334b9d3ecdd
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - filter
+    - media
+    - search
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'use text format basic_html'
+  - 'view media'

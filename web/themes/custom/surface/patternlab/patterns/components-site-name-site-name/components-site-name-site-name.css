@@ -1,0 +1,37 @@
+/**
+ * @file
+ * Site name styles.
+ */
+
+.site-name {
+  color: hsl(0, 0%, 100%);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-700);
+
+  .site-branding--bg-gray & {
+    color: hsl(var(--blue-5));
+  }
+
+  .site-branding--bg-white & {
+    color: hsl(var(--blue-5));
+  }
+
+  & a {
+    color: inherit;
+    display: flex;
+    line-height: 1;
+    padding-block-start: var(--size-05);
+    text-decoration: none;
+  }
+
+  @media (--md) {
+    font-size: var(--font-size-6);
+    line-height: var(--font-lineheight-1);
+  }
+
+  @media (--xl) {
+    letter-spacing: 0.02em;
+    font-size: var(--font-size-7);
+    line-height: var(--font-lineheight-2);
+  }
+}

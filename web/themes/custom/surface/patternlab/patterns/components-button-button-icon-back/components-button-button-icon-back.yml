@@ -1,0 +1,6 @@
+---
+modifier: 'button--icon-back'
+button: true
+disabled: false
+url: '#'
+text: 'Button icon back'

@@ -1,0 +1,31 @@
+/**
+ * @file
+ * Grid system definition for the footer top and footer bottom layouts.
+ */
+
+.region--footer__inner > * {
+    -webkit-margin-after: var(--size-4);
+            margin-block-end: var(--size-4);
+  }
+
+@media (min-width: 768px) {
+
+.region--footer__inner > * {
+      flex: 1;
+      -webkit-margin-after: 0;
+              margin-block-end: 0
+  }
+
+      .region--footer__inner > *:not(:last-child) {
+        -webkit-margin-end: var(--size-4);
+                margin-inline-end: var(--size-4);
+      }
+    }
+
+@media (min-width: 768px) {
+
+.region--footer__inner {
+    display: flex;
+    flex-wrap: wrap
+}
+  }
