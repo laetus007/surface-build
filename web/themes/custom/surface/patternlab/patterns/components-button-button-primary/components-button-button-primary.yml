@@ -1,6 +1,0 @@
----
-modifier: 'button--primary'
-button: true
-disabled: false
-url: '#'
-text: 'Button Primary'

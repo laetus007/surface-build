@@ -1,5 +1,0 @@
----
-type: 'error'
-heading: 'Error message'
-messages:
-  - 'This is a error message about <em class="placeholder">something</em> that has been updated. <a href="#">This is a link</a>.'

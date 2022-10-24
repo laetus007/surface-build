@@ -1,8 +1,0 @@
-/**
- * @file
- * Page title styles.
-*/
-
-.page-title {
-  display: inline; /* Necessary to properly display the star icon from core's shortcut module. */
-}

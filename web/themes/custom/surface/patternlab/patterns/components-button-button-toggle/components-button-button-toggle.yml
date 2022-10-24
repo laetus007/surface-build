@@ -1,6 +1,0 @@
----
-modifier: 'button--secondary button--toggle'
-button: true
-disabled: false
-url: '#'
-text: 'Dropdown button'
