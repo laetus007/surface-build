@@ -1,0 +1,24 @@
+From 84f72bc65815e3e0ec320db83b32eec40b7daa14 Mon Sep 17 00:00:00 2001
+From: laetus007 <pbabin@mednet.ucla.edu>
+Date: Mon, 22 Aug 2022 12:05:30 -0700
+Subject: [PATCH] add a wrapper selector to response
+
+---
+ src/Form/LayoutParagraphsBuilderForm.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/Form/LayoutParagraphsBuilderForm.php b/src/Form/LayoutParagraphsBuilderForm.php
+index 53241a4..c0d50f3 100644
+--- a/src/Form/LayoutParagraphsBuilderForm.php
++++ b/src/Form/LayoutParagraphsBuilderForm.php
+@@ -180,7 +180,7 @@ class LayoutParagraphsBuilderForm extends FormBase {
+       '@type' => $entity->getEntityType()->getLabel(),
+       '%title' => $entity->label(),
+     ];
+-    $response->addCommand(new MessageCommand($this->t('@type %title has been updated.', $t_args)));
++    $response->addCommand(new MessageCommand($this->t('@type %title has been updated.', $t_args), '.block-system-messages-block'));
+     $response->addCommand(new ReplaceCommand('[data-lpb-form-id="' . $form['#attributes']['data-lpb-form-id'] . '"]', $form));
+     return $response;
+   }
+--
+GitLab
