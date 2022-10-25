@@ -1,0 +1,30 @@
+uuid: 907842ed-0eeb-49aa-8a93-a4973e9ae0b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sf_paragraph_page.field_sf_content
+    - node.type.sf_paragraph_page
+  module:
+    - layout_paragraphs
+    - user
+id: node.sf_paragraph_page.default
+targetEntityType: node
+bundle: sf_paragraph_page
+mode: default
+content:
+  field_sf_content:
+    type: layout_paragraphs_builder
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+      preview_view_mode: default
+      nesting_depth: 1
+      require_layouts: 1
+      empty_message: 'You haven''t created any Content yet'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true

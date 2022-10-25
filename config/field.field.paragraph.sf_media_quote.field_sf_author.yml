@@ -1,0 +1,19 @@
+uuid: cde2697c-c0b1-44f7-989b-a9d95488981e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_author
+    - paragraphs.paragraphs_type.sf_media_quote
+id: paragraph.sf_media_quote.field_sf_author
+field_name: field_sf_author
+entity_type: paragraph
+bundle: sf_media_quote
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

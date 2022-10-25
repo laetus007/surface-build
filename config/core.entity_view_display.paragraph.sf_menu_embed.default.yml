@@ -1,0 +1,22 @@
+uuid: abf5c91f-4412-436e-8b90-3f653adb36c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_menu_embed.field_sf_menu
+    - paragraphs.paragraphs_type.sf_menu_embed
+  module:
+    - block_field
+id: paragraph.sf_menu_embed.default
+targetEntityType: paragraph
+bundle: sf_menu_embed
+mode: default
+content:
+  field_sf_menu:
+    type: block_field
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

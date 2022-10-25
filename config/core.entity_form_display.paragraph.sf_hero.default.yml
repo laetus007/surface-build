@@ -1,0 +1,60 @@
+uuid: 24cd2f06-96a5-4fa2-9bd3-e9d2ba62ee35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_hero.field_sf_image
+    - field.field.paragraph.sf_hero.field_sf_link
+    - field.field.paragraph.sf_hero.field_sf_subtitle
+    - field.field.paragraph.sf_hero.field_sf_title
+    - field.field.paragraph.sf_hero.field_sf_video
+    - paragraphs.paragraphs_type.sf_hero
+  module:
+    - link
+    - media_library
+id: paragraph.sf_hero.default
+targetEntityType: paragraph
+bundle: sf_hero
+mode: default
+content:
+  field_sf_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_sf_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_sf_subtitle:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sf_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sf_video:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

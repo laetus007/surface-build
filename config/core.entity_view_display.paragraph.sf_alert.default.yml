@@ -1,0 +1,22 @@
+uuid: 5919c893-f7fb-4b67-91e7-328d1c0ba133
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_alert.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_alert
+  module:
+    - text
+id: paragraph.sf_alert.default
+targetEntityType: paragraph
+bundle: sf_alert
+mode: default
+content:
+  field_sf_wysiwyg:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

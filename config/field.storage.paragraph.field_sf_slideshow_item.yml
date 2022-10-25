@@ -1,0 +1,20 @@
+uuid: 8a4b8cc7-8445-4633-b0db-bfe9c008bc42
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+id: paragraph.field_sf_slideshow_item
+field_name: field_sf_slideshow_item
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

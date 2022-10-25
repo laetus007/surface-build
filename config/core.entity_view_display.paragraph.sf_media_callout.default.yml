@@ -1,0 +1,49 @@
+uuid: 5dbe5e47-46ab-4a68-a479-25f1880fa8c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_media_callout.field_sf_image
+    - field.field.paragraph.sf_media_callout.field_sf_teaser
+    - field.field.paragraph.sf_media_callout.field_sf_title
+    - field.field.paragraph.sf_media_callout.field_sf_video
+    - paragraphs.paragraphs_type.sf_media_callout
+id: paragraph.sf_media_callout.default
+targetEntityType: paragraph
+bundle: sf_media_callout
+mode: default
+content:
+  field_sf_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sf_teaser:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sf_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

@@ -1,0 +1,34 @@
+uuid: 1beddc65-372d-4ab2-b97a-692cc6f183b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_call_to_action.field_sf_link
+    - field.field.paragraph.sf_call_to_action.field_sf_title
+    - paragraphs.paragraphs_type.sf_call_to_action
+  module:
+    - link
+id: paragraph.sf_call_to_action.default
+targetEntityType: paragraph
+bundle: sf_call_to_action
+mode: default
+content:
+  field_sf_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_sf_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

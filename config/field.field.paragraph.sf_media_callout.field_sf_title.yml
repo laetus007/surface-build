@@ -1,0 +1,19 @@
+uuid: 8a0307bf-5041-4301-bdc7-30f49e699597
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_title
+    - paragraphs.paragraphs_type.sf_media_callout
+id: paragraph.sf_media_callout.field_sf_title
+field_name: field_sf_title
+entity_type: paragraph
+bundle: sf_media_callout
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

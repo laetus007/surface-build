@@ -1,0 +1,21 @@
+uuid: 416c7941-fc96-4530-92fe-1a93c7fe8a2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_icon
+    - paragraphs.paragraphs_type.sf_icon
+  module:
+    - options
+id: paragraph.sf_icon.field_sf_icon
+field_name: field_sf_icon
+entity_type: paragraph
+bundle: sf_icon
+label: Icon
+description: 'Please select an icon. A list of icons can be found <a href="https://fonts.google.com/icons" target="_blank">here</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

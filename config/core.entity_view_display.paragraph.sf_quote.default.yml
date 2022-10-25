@@ -1,0 +1,31 @@
+uuid: aa3cbafd-0671-4209-ab3f-2cf1a0678e8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_quote.field_sf_author
+    - field.field.paragraph.sf_quote.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_quote
+  module:
+    - text
+id: paragraph.sf_quote.default
+targetEntityType: paragraph
+bundle: sf_quote
+mode: default
+content:
+  field_sf_author:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sf_wysiwyg:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

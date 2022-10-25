@@ -1,0 +1,21 @@
+uuid: 0d8644a6-7bd0-4b90-9ce8-2a69e66e65bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_button_placement
+    - paragraphs.paragraphs_type.sf_slider_item
+  module:
+    - options
+id: paragraph.sf_slider_item.field_sf_button_placement
+field_name: field_sf_button_placement
+entity_type: paragraph
+bundle: sf_slider_item
+label: 'Button placement'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

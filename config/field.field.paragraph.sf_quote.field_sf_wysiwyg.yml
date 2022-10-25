@@ -1,0 +1,21 @@
+uuid: 0fc5bf31-3c90-41f0-bde0-deb11fd3d803
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_quote
+  module:
+    - text
+id: paragraph.sf_quote.field_sf_wysiwyg
+field_name: field_sf_wysiwyg
+entity_type: paragraph
+bundle: sf_quote
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

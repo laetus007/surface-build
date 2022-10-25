@@ -1,0 +1,43 @@
+uuid: 0e01e2ab-2bb2-4e1f-9385-0ba05c24157c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_metric.field_sf_subtitle
+    - field.field.paragraph.sf_metric.field_sf_title
+    - field.field.paragraph.sf_metric.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_metric
+  module:
+    - text
+id: paragraph.sf_metric.default
+targetEntityType: paragraph
+bundle: sf_metric
+mode: default
+content:
+  field_sf_subtitle:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sf_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sf_wysiwyg:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

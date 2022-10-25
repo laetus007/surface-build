@@ -1,0 +1,25 @@
+uuid: f87d016e-11d4-4ef3-bc9a-54200164d6a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_alert.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_alert
+  module:
+    - text
+id: paragraph.sf_alert.default
+targetEntityType: paragraph
+bundle: sf_alert
+mode: default
+content:
+  field_sf_wysiwyg:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

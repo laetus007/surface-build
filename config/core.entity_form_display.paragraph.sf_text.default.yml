@@ -1,0 +1,25 @@
+uuid: 980d22a4-6f5d-45ea-a143-46b14a83e0e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_text.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_text
+  module:
+    - text
+id: paragraph.sf_text.default
+targetEntityType: paragraph
+bundle: sf_text
+mode: default
+content:
+  field_sf_wysiwyg:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

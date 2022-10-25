@@ -1,0 +1,55 @@
+uuid: bfd591b7-555c-4c61-9479-f95c253ee9c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_carousel.field_sf_images
+    - field.field.paragraph.sf_carousel.field_sf_link
+    - field.field.paragraph.sf_carousel.field_sf_title
+    - field.field.paragraph.sf_carousel.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_carousel
+  module:
+    - link
+    - text
+id: paragraph.sf_carousel.default
+targetEntityType: paragraph
+bundle: sf_carousel
+mode: default
+content:
+  field_sf_images:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_sf_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sf_wysiwyg:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: a9f6e240-4f2a-4236-afa2-ac8c27efad64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_subtitle
+    - paragraphs.paragraphs_type.sf_hero
+id: paragraph.sf_hero.field_sf_subtitle
+field_name: field_sf_subtitle
+entity_type: paragraph
+bundle: sf_hero
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

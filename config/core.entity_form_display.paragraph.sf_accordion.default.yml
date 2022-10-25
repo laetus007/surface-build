@@ -1,0 +1,34 @@
+uuid: bd7bb92f-216d-42c2-a928-5b29205cf5fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_accordion.field_sf_title
+    - field.field.paragraph.sf_accordion.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_accordion
+  module:
+    - text
+id: paragraph.sf_accordion.default
+targetEntityType: paragraph
+bundle: sf_accordion
+mode: default
+content:
+  field_sf_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sf_wysiwyg:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

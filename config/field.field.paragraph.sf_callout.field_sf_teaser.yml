@@ -1,0 +1,19 @@
+uuid: 1fb9b6c6-7cdb-4e99-bd4d-e350c3439aae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_teaser
+    - paragraphs.paragraphs_type.sf_callout
+id: paragraph.sf_callout.field_sf_teaser
+field_name: field_sf_teaser
+entity_type: paragraph
+bundle: sf_callout
+label: Teaser
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,21 @@
+uuid: 9eb02332-f547-48f4-90e7-45ff62711b8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_accordion
+  module:
+    - text
+id: paragraph.sf_accordion.field_sf_wysiwyg
+field_name: field_sf_wysiwyg
+entity_type: paragraph
+bundle: sf_accordion
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

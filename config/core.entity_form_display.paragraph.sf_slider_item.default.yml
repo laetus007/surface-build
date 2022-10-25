@@ -1,0 +1,86 @@
+uuid: 123d8d88-dec9-45dd-807a-7ffafe4f9517
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_slider_item.field_sf_button_placement
+    - field.field.paragraph.sf_slider_item.field_sf_image
+    - field.field.paragraph.sf_slider_item.field_sf_image_overlay
+    - field.field.paragraph.sf_slider_item.field_sf_link
+    - field.field.paragraph.sf_slider_item.field_sf_title
+    - field.field.paragraph.sf_slider_item.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_slider_item
+  module:
+    - field_group
+    - link
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_layout_options:
+      children:
+        - field_sf_image_overlay
+        - field_sf_button_placement
+      label: 'Layout options'
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+id: paragraph.sf_slider_item.default
+targetEntityType: paragraph
+bundle: sf_slider_item
+mode: default
+content:
+  field_sf_button_placement:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sf_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_sf_image_overlay:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sf_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_sf_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sf_wysiwyg:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+uuid: 1f24e291-00a5-43a3-87da-14ba3130dadf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_slider_item
+  module:
+    - text
+id: paragraph.sf_slider_item.field_sf_wysiwyg
+field_name: field_sf_wysiwyg
+entity_type: paragraph
+bundle: sf_slider_item
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

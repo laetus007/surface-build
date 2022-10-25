@@ -1,0 +1,22 @@
+uuid: e2d69cb9-2c30-4e07-af84-c31186cca796
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_video.field_sf_video
+    - paragraphs.paragraphs_type.sf_video
+id: paragraph.sf_video.default
+targetEntityType: paragraph
+bundle: sf_video
+mode: default
+content:
+  field_sf_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

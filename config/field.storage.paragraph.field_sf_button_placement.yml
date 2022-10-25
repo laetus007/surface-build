@@ -1,0 +1,27 @@
+uuid: dce1ab1e-e4a6-4352-a189-acbd169533fb
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_sf_button_placement
+field_name: field_sf_button_placement
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: is-top
+      label: Top
+    -
+      value: is-bottom
+      label: Bottom
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

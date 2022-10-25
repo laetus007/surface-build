@@ -1,0 +1,19 @@
+uuid: bcf03890-7865-48a3-ad41-2176abb9e6c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_title
+    - paragraphs.paragraphs_type.sf_call_to_action
+id: paragraph.sf_call_to_action.field_sf_title
+field_name: field_sf_title
+entity_type: paragraph
+bundle: sf_call_to_action
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

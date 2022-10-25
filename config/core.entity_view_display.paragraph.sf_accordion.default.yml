@@ -1,0 +1,31 @@
+uuid: fd686e73-060d-4c98-b653-7a2accc756be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_accordion.field_sf_title
+    - field.field.paragraph.sf_accordion.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_accordion
+  module:
+    - text
+id: paragraph.sf_accordion.default
+targetEntityType: paragraph
+bundle: sf_accordion
+mode: default
+content:
+  field_sf_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_wysiwyg:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

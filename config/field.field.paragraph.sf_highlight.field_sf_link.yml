@@ -1,0 +1,23 @@
+uuid: 81d84838-099e-440d-add3-b940eccdc513
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_link
+    - paragraphs.paragraphs_type.sf_highlight
+  module:
+    - link
+id: paragraph.sf_highlight.field_sf_link
+field_name: field_sf_link
+entity_type: paragraph
+bundle: sf_highlight
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

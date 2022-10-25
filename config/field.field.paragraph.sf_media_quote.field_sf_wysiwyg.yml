@@ -1,0 +1,21 @@
+uuid: 6024ae4a-4bb7-4c98-aadd-b1b0fbd805a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_media_quote
+  module:
+    - text
+id: paragraph.sf_media_quote.field_sf_wysiwyg
+field_name: field_sf_wysiwyg
+entity_type: paragraph
+bundle: sf_media_quote
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

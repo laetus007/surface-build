@@ -1,0 +1,29 @@
+uuid: fdec380b-8935-4b2f-b0b4-e5a88e9003c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_video
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.sf_hero
+id: paragraph.sf_hero.field_sf_video
+field_name: field_sf_video
+entity_type: paragraph
+bundle: sf_hero
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

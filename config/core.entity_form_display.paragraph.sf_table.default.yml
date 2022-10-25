@@ -1,0 +1,24 @@
+uuid: 0f60e14a-f66e-4c6b-ad9e-bcdff6ccd6ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_table.field_sf_table
+    - paragraphs.paragraphs_type.sf_table
+  module:
+    - tablefield
+id: paragraph.sf_table.default
+targetEntityType: paragraph
+bundle: sf_table
+mode: default
+content:
+  field_sf_table:
+    type: tablefield
+    weight: 0
+    region: content
+    settings:
+      input_type: textfield
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

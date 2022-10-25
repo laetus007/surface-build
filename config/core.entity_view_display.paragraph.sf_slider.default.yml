@@ -1,0 +1,24 @@
+uuid: ef0ef7a2-6486-4597-af96-632f6aca0921
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_slider.field_sf_slideshow_item
+    - paragraphs.paragraphs_type.sf_slider
+  module:
+    - entity_reference_revisions
+id: paragraph.sf_slider.default
+targetEntityType: paragraph
+bundle: sf_slider
+mode: default
+content:
+  field_sf_slideshow_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

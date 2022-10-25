@@ -1,0 +1,10 @@
+uuid: 77f17c89-2ba6-4f34-928b-04183eca622b
+langcode: en
+status: true
+dependencies: {  }
+id: sf_tab
+label: Tab
+icon_uuid: null
+icon_default: null
+description: 'The tab component is a sub-component of tabs, allowing users to access a Title and Text for each tab item.'
+behavior_plugins: {  }

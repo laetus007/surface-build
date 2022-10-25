@@ -1,0 +1,24 @@
+uuid: ddd4558a-71ac-4a89-8378-6cfa1da42bbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_image.field_sf_image
+    - paragraphs.paragraphs_type.sf_image
+  module:
+    - media_library
+id: paragraph.sf_image.default
+targetEntityType: paragraph
+bundle: sf_image
+mode: default
+content:
+  field_sf_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

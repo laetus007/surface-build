@@ -2,6 +2,8 @@ uuid: 4a91b747-3a37-4459-9e50-eaebae9ebd3f
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - surface
 _core:
@@ -17,4 +19,8 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/user\r\n/user/*"

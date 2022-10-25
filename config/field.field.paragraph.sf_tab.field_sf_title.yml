@@ -1,0 +1,19 @@
+uuid: a4fd333d-ad7e-4c3c-b5ca-3bfe60e147c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_title
+    - paragraphs.paragraphs_type.sf_tab
+id: paragraph.sf_tab.field_sf_title
+field_name: field_sf_title
+entity_type: paragraph
+bundle: sf_tab
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,41 @@
+uuid: 6d7314bf-fb66-40e4-bc4e-1bb574796a65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_icon.field_sf_icon
+    - field.field.paragraph.sf_icon.field_sf_link
+    - field.field.paragraph.sf_icon.field_sf_teaser
+    - paragraphs.paragraphs_type.sf_icon
+  module:
+    - link
+id: paragraph.sf_icon.default
+targetEntityType: paragraph
+bundle: sf_icon
+mode: default
+content:
+  field_sf_icon:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sf_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_sf_teaser:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

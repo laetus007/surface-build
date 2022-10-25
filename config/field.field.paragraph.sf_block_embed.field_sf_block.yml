@@ -1,0 +1,29 @@
+uuid: 61101b87-75b8-473b-86a0-061d418dcddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_block
+    - paragraphs.paragraphs_type.sf_block_embed
+  module:
+    - block_field
+id: paragraph.sf_block_embed.field_sf_block
+field_name: field_sf_block
+entity_type: paragraph
+bundle: sf_block_embed
+label: Block
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: categories
+  selection_settings:
+    categories:
+      Block: Block
+      core: '0'
+      Forms: '0'
+      Menus: '0'
+      System: '0'
+field_type: block_field

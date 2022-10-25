@@ -1,0 +1,29 @@
+uuid: 8335e7cb-da9c-46c8-9ced-225db9d7ca25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_images
+    - media.type.image
+    - paragraphs.paragraphs_type.sf_carousel
+id: paragraph.sf_carousel.field_sf_images
+field_name: field_sf_images
+entity_type: paragraph
+bundle: sf_carousel
+label: Images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

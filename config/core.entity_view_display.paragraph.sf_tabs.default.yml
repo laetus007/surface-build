@@ -1,0 +1,24 @@
+uuid: 7d4d32ff-2638-4bb0-ab1c-8e6147fc1518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_tabs.field_sf_tab
+    - paragraphs.paragraphs_type.sf_tabs
+  module:
+    - entity_reference_revisions
+id: paragraph.sf_tabs.default
+targetEntityType: paragraph
+bundle: sf_tabs
+mode: default
+content:
+  field_sf_tab:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

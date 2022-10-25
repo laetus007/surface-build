@@ -1,0 +1,26 @@
+uuid: e00c8910-e8b0-4bec-a955-327ed54cce04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_breadcrumb.field_sf_breadcrumb
+    - paragraphs.paragraphs_type.sf_breadcrumb
+  module:
+    - block_field
+id: paragraph.sf_breadcrumb.default
+targetEntityType: paragraph
+bundle: sf_breadcrumb
+mode: default
+content:
+  field_sf_breadcrumb:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

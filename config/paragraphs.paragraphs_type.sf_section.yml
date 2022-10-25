@@ -1,0 +1,27 @@
+uuid: ffa39205-c915-4553-9478-84c510477147
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:8e1fee57-3622-4cba-9783-c0d4730a9ed3'
+  module:
+    - layout_paragraphs
+id: sf_section
+label: Section
+icon_uuid: 8e1fee57-3622-4cba-9783-c0d4730a9ed3
+icon_default: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTcgNTE3Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6IzBkMGQwZDt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9IkxheWVyXzEtMiI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNTE3LDUxN0gwVjBINTE3VjUxN1pNMjAuOTksNDk1SDQ5NVYyMUgyMVY0OTVaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTQsMTcySDUwN3YyMkgxNHYtMjJaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTI5LDEwaDIyVjE4MmgtMjJWMTBaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzY1LDEwaDIyVjE4MmgtMjJWMTBaIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMzAxLDE4M2gyMlY1MDRoLTIyVjE4M1oiLz48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0xNCwzMzNIMzEydjIySDE0di0yMloiLz48L2c+PC9zdmc+'
+description: 'The section component allows users to choose various layouts for other components to be placed within.'
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      one_column: 'One column [1]'
+      two_column: 'Two column [1:1]'
+      two_column_30_70: 'Two column [1:2]'
+      two_column_70_30: 'Two column [2:1]'
+      three_column: 'Three column [1:1:1]'
+      three_column_25_50_25: 'Three column [1:2:1]'
+      three_column_25_25_50: 'Three column [1:1:2]'
+      three_column_50_25_25: 'Three column [2:1:1]'
+      four_column: 'Four column [1:1:1:1]'
+      six_column: 'Six column [1:1:1:1:1:1]'

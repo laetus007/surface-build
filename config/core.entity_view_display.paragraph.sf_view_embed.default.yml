@@ -1,0 +1,25 @@
+uuid: 63339de3-e7ed-430b-adc5-e86ea44da89f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_view_embed.field_sf_view
+    - paragraphs.paragraphs_type.sf_view_embed
+  module:
+    - viewfield
+id: paragraph.sf_view_embed.default
+targetEntityType: paragraph
+bundle: sf_view_embed
+mode: default
+content:
+  field_sf_view:
+    type: viewfield_default
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: true
+      empty_view_title: hidden
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

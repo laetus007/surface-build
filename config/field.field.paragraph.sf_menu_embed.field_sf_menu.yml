@@ -1,0 +1,29 @@
+uuid: 9c6612b0-e4b7-4961-a07c-a6df2c0a7841
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_menu
+    - paragraphs.paragraphs_type.sf_menu_embed
+  module:
+    - block_field
+id: paragraph.sf_menu_embed.field_sf_menu
+field_name: field_sf_menu
+entity_type: paragraph
+bundle: sf_menu_embed
+label: Menu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: categories
+  selection_settings:
+    categories:
+      Menus: Menus
+      Block: '0'
+      core: '0'
+      Forms: '0'
+      System: '0'
+field_type: block_field

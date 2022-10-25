@@ -1,0 +1,41 @@
+uuid: 12237528-f296-4e27-8894-356c3307ad18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_media_quote.field_sf_author
+    - field.field.paragraph.sf_media_quote.field_sf_image
+    - field.field.paragraph.sf_media_quote.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_media_quote
+  module:
+    - text
+id: paragraph.sf_media_quote.default
+targetEntityType: paragraph
+bundle: sf_media_quote
+mode: default
+content:
+  field_sf_author:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sf_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sf_wysiwyg:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

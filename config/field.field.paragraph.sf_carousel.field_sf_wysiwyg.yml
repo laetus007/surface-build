@@ -1,0 +1,21 @@
+uuid: 04d25b5a-0bb4-4692-bcc4-98dfe6a6b5d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_carousel
+  module:
+    - text
+id: paragraph.sf_carousel.field_sf_wysiwyg
+field_name: field_sf_wysiwyg
+entity_type: paragraph
+bundle: sf_carousel
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

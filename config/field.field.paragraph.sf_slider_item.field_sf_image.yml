@@ -1,0 +1,29 @@
+uuid: b66f1442-e784-4022-b946-a88748732196
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_image
+    - media.type.image
+    - paragraphs.paragraphs_type.sf_slider_item
+id: paragraph.sf_slider_item.field_sf_image
+field_name: field_sf_image
+entity_type: paragraph
+bundle: sf_slider_item
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

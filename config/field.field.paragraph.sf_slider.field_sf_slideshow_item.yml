@@ -1,0 +1,94 @@
+uuid: 32d1301a-221b-4bfa-9506-37c30ea9c3e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_slideshow_item
+    - paragraphs.paragraphs_type.sf_slider
+    - paragraphs.paragraphs_type.sf_slider_item
+  module:
+    - entity_reference_revisions
+id: paragraph.sf_slider.field_sf_slideshow_item
+field_name: field_sf_slideshow_item
+entity_type: paragraph
+bundle: sf_slider
+label: 'Slideshow item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      sf_slider_item: sf_slider_item
+    negate: 0
+    target_bundles_drag_drop:
+      from_library:
+        weight: 23
+        enabled: false
+      sf_accordion:
+        weight: 24
+        enabled: false
+      sf_alert:
+        weight: 25
+        enabled: false
+      sf_block_embed:
+        weight: 26
+        enabled: false
+      sf_breadcrumb:
+        weight: 27
+        enabled: false
+      sf_call_to_action:
+        weight: 29
+        enabled: false
+      sf_callout:
+        weight: 28
+        enabled: false
+      sf_carousel:
+        weight: 30
+        enabled: false
+      sf_hero:
+        weight: 31
+        enabled: false
+      sf_highlight:
+        weight: 32
+        enabled: false
+      sf_icon:
+        weight: 33
+        enabled: false
+      sf_image:
+        weight: 34
+        enabled: false
+      sf_media_callout:
+        weight: 35
+        enabled: false
+      sf_media_quote:
+        weight: 36
+        enabled: false
+      sf_menu_embed:
+        weight: 37
+        enabled: false
+      sf_metric:
+        weight: 38
+        enabled: false
+      sf_page_title:
+        weight: 39
+        enabled: false
+      sf_quote:
+        weight: 40
+        enabled: false
+      sf_section:
+        weight: 41
+        enabled: false
+      sf_slider:
+        weight: 42
+        enabled: false
+      sf_slider_item:
+        weight: 43
+        enabled: true
+      sf_tab:
+        weight: 44
+        enabled: false
+field_type: entity_reference_revisions

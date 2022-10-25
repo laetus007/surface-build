@@ -1,0 +1,19 @@
+uuid: 918a7807-c063-4eab-8393-56339f52d841
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_title
+    - paragraphs.paragraphs_type.sf_carousel
+id: paragraph.sf_carousel.field_sf_title
+field_name: field_sf_title
+entity_type: paragraph
+bundle: sf_carousel
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

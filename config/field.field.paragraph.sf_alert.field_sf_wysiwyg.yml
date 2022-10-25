@@ -1,0 +1,21 @@
+uuid: 0c8d0bf8-d8b5-4e5f-bada-5c53445e3cd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_alert
+  module:
+    - text
+id: paragraph.sf_alert.field_sf_wysiwyg
+field_name: field_sf_wysiwyg
+entity_type: paragraph
+bundle: sf_alert
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

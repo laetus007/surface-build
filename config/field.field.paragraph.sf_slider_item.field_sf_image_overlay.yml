@@ -1,0 +1,21 @@
+uuid: ad98e95f-8c4e-416f-979f-8e2d7c54c794
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_image_overlay
+    - paragraphs.paragraphs_type.sf_slider_item
+  module:
+    - options
+id: paragraph.sf_slider_item.field_sf_image_overlay
+field_name: field_sf_image_overlay
+entity_type: paragraph
+bundle: sf_slider_item
+label: 'Image overlay'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

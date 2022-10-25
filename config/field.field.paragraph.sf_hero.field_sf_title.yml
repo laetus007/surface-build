@@ -1,0 +1,19 @@
+uuid: e1312d08-282f-477a-87a5-d4c6b713c6fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_title
+    - paragraphs.paragraphs_type.sf_hero
+id: paragraph.sf_hero.field_sf_title
+field_name: field_sf_title
+entity_type: paragraph
+bundle: sf_hero
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

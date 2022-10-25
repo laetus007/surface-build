@@ -1,0 +1,19 @@
+uuid: ba227839-a65e-4e75-b2c2-c659f48a3277
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_subtitle
+    - paragraphs.paragraphs_type.sf_metric
+id: paragraph.sf_metric.field_sf_subtitle
+field_name: field_sf_subtitle
+entity_type: paragraph
+bundle: sf_metric
+label: Subtitle
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

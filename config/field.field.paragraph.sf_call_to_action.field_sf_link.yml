@@ -1,0 +1,23 @@
+uuid: 86d0a7c3-a545-45ef-a647-a39d3edb7c29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_link
+    - paragraphs.paragraphs_type.sf_call_to_action
+  module:
+    - link
+id: paragraph.sf_call_to_action.field_sf_link
+field_name: field_sf_link
+entity_type: paragraph
+bundle: sf_call_to_action
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

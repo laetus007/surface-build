@@ -1,0 +1,7665 @@
+uuid: a683a9c7-1d96-4416-8331-ac80a76fef08
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_sf_icon
+field_name: field_sf_icon
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 10k
+      label: 10K
+    -
+      value: 10mp
+      label: 10Mp
+    -
+      value: 11mp
+      label: 11Mp
+    -
+      value: '123'
+      label: '123'
+    -
+      value: 12mp
+      label: 12Mp
+    -
+      value: 13mp
+      label: 13Mp
+    -
+      value: 14mp
+      label: 14Mp
+    -
+      value: 15mp
+      label: 15Mp
+    -
+      value: 16mp
+      label: 16Mp
+    -
+      value: 17mp
+      label: 17Mp
+    -
+      value: 18_up_rating
+      label: '18 Up Rating'
+    -
+      value: 18mp
+      label: 18Mp
+    -
+      value: 19mp
+      label: 19Mp
+    -
+      value: 1k
+      label: 1K
+    -
+      value: 1k_plus
+      label: '1K Plus'
+    -
+      value: 1x_mobiledata
+      label: '1X Mobiledata'
+    -
+      value: 20mp
+      label: 20Mp
+    -
+      value: 21mp
+      label: 21Mp
+    -
+      value: 22mp
+      label: 22Mp
+    -
+      value: 23mp
+      label: 23Mp
+    -
+      value: 24mp
+      label: 24Mp
+    -
+      value: 2k
+      label: 2K
+    -
+      value: 2k_plus
+      label: '2K Plus'
+    -
+      value: 2mp
+      label: 2Mp
+    -
+      value: 30fps
+      label: 30Fps
+    -
+      value: 30fps_select
+      label: '30Fps Select'
+    -
+      value: '360'
+      label: '360'
+    -
+      value: 3d_rotation
+      label: '3D Rotation'
+    -
+      value: 3g_mobiledata
+      label: '3G Mobiledata'
+    -
+      value: 3k
+      label: 3K
+    -
+      value: 3k_plus
+      label: '3K Plus'
+    -
+      value: 3mp
+      label: 3Mp
+    -
+      value: 3p
+      label: 3P
+    -
+      value: 4g_mobiledata
+      label: '4G Mobiledata'
+    -
+      value: 4g_plus_mobiledata
+      label: '4G Plus Mobiledata'
+    -
+      value: 4k
+      label: 4K
+    -
+      value: 4k_plus
+      label: '4K Plus'
+    -
+      value: 4mp
+      label: 4Mp
+    -
+      value: 5g
+      label: 5G
+    -
+      value: 5k
+      label: 5K
+    -
+      value: 5k_plus
+      label: '5K Plus'
+    -
+      value: 5mp
+      label: 5Mp
+    -
+      value: 60fps
+      label: 60Fps
+    -
+      value: 60fps_select
+      label: '60Fps Select'
+    -
+      value: 6_ft_apart
+      label: '6 Ft Apart'
+    -
+      value: 6k
+      label: 6K
+    -
+      value: 6k_plus
+      label: '6K Plus'
+    -
+      value: 6mp
+      label: 6Mp
+    -
+      value: 7k
+      label: 7K
+    -
+      value: 7k_plus
+      label: '7K Plus'
+    -
+      value: 7mp
+      label: 7Mp
+    -
+      value: 8k
+      label: 8K
+    -
+      value: 8k_plus
+      label: '8K Plus'
+    -
+      value: 8mp
+      label: 8Mp
+    -
+      value: 9k
+      label: 9K
+    -
+      value: 9k_plus
+      label: '9K Plus'
+    -
+      value: 9mp
+      label: 9Mp
+    -
+      value: abc
+      label: Abc
+    -
+      value: ac_unit
+      label: 'Ac Unit'
+    -
+      value: access_alarm
+      label: 'Access Alarm'
+    -
+      value: access_alarms
+      label: 'Access Alarms'
+    -
+      value: access_time
+      label: 'Access Time'
+    -
+      value: access_time_filled
+      label: 'Access Time Filled'
+    -
+      value: accessibility
+      label: Accessibility
+    -
+      value: accessibility_new
+      label: 'Accessibility New'
+    -
+      value: accessible
+      label: Accessible
+    -
+      value: accessible_forward
+      label: 'Accessible Forward'
+    -
+      value: account_balance
+      label: 'Account Balance'
+    -
+      value: account_balance_wallet
+      label: 'Account Balance Wallet'
+    -
+      value: account_box
+      label: 'Account Box'
+    -
+      value: account_circle
+      label: 'Account Circle'
+    -
+      value: account_circle_full
+      label: 'Account Circle Full'
+    -
+      value: account_tree
+      label: 'Account Tree'
+    -
+      value: activity_zone
+      label: 'Activity Zone'
+    -
+      value: ad_units
+      label: 'Ad Units'
+    -
+      value: adb
+      label: Adb
+    -
+      value: add
+      label: Add
+    -
+      value: add_a_photo
+      label: 'Add A Photo'
+    -
+      value: add_alarm
+      label: 'Add Alarm'
+    -
+      value: add_alert
+      label: 'Add Alert'
+    -
+      value: add_box
+      label: 'Add Box'
+    -
+      value: add_business
+      label: 'Add Business'
+    -
+      value: add_call
+      label: 'Add Call'
+    -
+      value: add_card
+      label: 'Add Card'
+    -
+      value: add_chart
+      label: 'Add Chart'
+    -
+      value: add_circle
+      label: 'Add Circle'
+    -
+      value: add_circle_outline
+      label: 'Add Circle Outline'
+    -
+      value: add_comment
+      label: 'Add Comment'
+    -
+      value: add_home
+      label: 'Add Home'
+    -
+      value: add_home_work
+      label: 'Add Home Work'
+    -
+      value: add_ic_call
+      label: 'Add Ic Call'
+    -
+      value: add_link
+      label: 'Add Link'
+    -
+      value: add_location
+      label: 'Add Location'
+    -
+      value: add_location_alt
+      label: 'Add Location Alt'
+    -
+      value: add_moderator
+      label: 'Add Moderator'
+    -
+      value: add_photo_alternate
+      label: 'Add Photo Alternate'
+    -
+      value: add_reaction
+      label: 'Add Reaction'
+    -
+      value: add_road
+      label: 'Add Road'
+    -
+      value: add_shopping_cart
+      label: 'Add Shopping Cart'
+    -
+      value: add_shortcut_to_drive
+      label: 'Add Shortcut To Drive'
+    -
+      value: add_task
+      label: 'Add Task'
+    -
+      value: add_to_drive
+      label: 'Add To Drive'
+    -
+      value: add_to_home_screen
+      label: 'Add To Home Screen'
+    -
+      value: add_to_photos
+      label: 'Add To Photos'
+    -
+      value: add_to_queue
+      label: 'Add To Queue'
+    -
+      value: addchart
+      label: Addchart
+    -
+      value: adf_scanner
+      label: 'Adf Scanner'
+    -
+      value: adjust
+      label: Adjust
+    -
+      value: admin_panel_settings
+      label: 'Admin Panel Settings'
+    -
+      value: ads_click
+      label: 'Ads Click'
+    -
+      value: agender
+      label: Agender
+    -
+      value: agriculture
+      label: Agriculture
+    -
+      value: air
+      label: Air
+    -
+      value: air_freshener
+      label: 'Air Freshener'
+    -
+      value: air_purifier_gen
+      label: 'Air Purifier Gen'
+    -
+      value: airline_seat_flat
+      label: 'Airline Seat Flat'
+    -
+      value: airline_seat_flat_angled
+      label: 'Airline Seat Flat Angled'
+    -
+      value: airline_seat_individual_suite
+      label: 'Airline Seat Individual Suite'
+    -
+      value: airline_seat_legroom_extra
+      label: 'Airline Seat Legroom Extra'
+    -
+      value: airline_seat_legroom_normal
+      label: 'Airline Seat Legroom Normal'
+    -
+      value: airline_seat_legroom_reduced
+      label: 'Airline Seat Legroom Reduced'
+    -
+      value: airline_seat_recline_extra
+      label: 'Airline Seat Recline Extra'
+    -
+      value: airline_seat_recline_normal
+      label: 'Airline Seat Recline Normal'
+    -
+      value: airline_stops
+      label: 'Airline Stops'
+    -
+      value: airlines
+      label: Airlines
+    -
+      value: airplane_ticket
+      label: 'Airplane Ticket'
+    -
+      value: airplanemode_active
+      label: 'Airplanemode Active'
+    -
+      value: airplanemode_inactive
+      label: 'Airplanemode Inactive'
+    -
+      value: airplay
+      label: Airplay
+    -
+      value: airport_shuttle
+      label: 'Airport Shuttle'
+    -
+      value: airware
+      label: Airware
+    -
+      value: airwave
+      label: Airwave
+    -
+      value: alarm
+      label: Alarm
+    -
+      value: alarm_add
+      label: 'Alarm Add'
+    -
+      value: alarm_off
+      label: 'Alarm Off'
+    -
+      value: alarm_on
+      label: 'Alarm On'
+    -
+      value: album
+      label: Album
+    -
+      value: align_horizontal_center
+      label: 'Align Horizontal Center'
+    -
+      value: align_horizontal_left
+      label: 'Align Horizontal Left'
+    -
+      value: align_horizontal_right
+      label: 'Align Horizontal Right'
+    -
+      value: align_vertical_bottom
+      label: 'Align Vertical Bottom'
+    -
+      value: align_vertical_center
+      label: 'Align Vertical Center'
+    -
+      value: align_vertical_top
+      label: 'Align Vertical Top'
+    -
+      value: all_inbox
+      label: 'All Inbox'
+    -
+      value: all_inclusive
+      label: 'All Inclusive'
+    -
+      value: all_out
+      label: 'All Out'
+    -
+      value: alt_route
+      label: 'Alt Route'
+    -
+      value: alternate_email
+      label: 'Alternate Email'
+    -
+      value: amp_error
+      label: 'Amp Error'
+    -
+      value: amp_stories
+      label: 'Amp Stories'
+    -
+      value: analytics
+      label: Analytics
+    -
+      value: anchor
+      label: Anchor
+    -
+      value: android
+      label: Android
+    -
+      value: animation
+      label: Animation
+    -
+      value: announcement
+      label: Announcement
+    -
+      value: aod
+      label: Aod
+    -
+      value: aod_tablet
+      label: 'Aod Tablet'
+    -
+      value: apartment
+      label: Apartment
+    -
+      value: api
+      label: Api
+    -
+      value: apk_document
+      label: 'Apk Document'
+    -
+      value: apk_install
+      label: 'Apk Install'
+    -
+      value: app_blocking
+      label: 'App Blocking'
+    -
+      value: app_registration
+      label: 'App Registration'
+    -
+      value: app_settings_alt
+      label: 'App Settings Alt'
+    -
+      value: app_shortcut
+      label: 'App Shortcut'
+    -
+      value: approval
+      label: Approval
+    -
+      value: apps
+      label: Apps
+    -
+      value: apps_outage
+      label: 'Apps Outage'
+    -
+      value: architecture
+      label: Architecture
+    -
+      value: archive
+      label: Archive
+    -
+      value: area_chart
+      label: 'Area Chart'
+    -
+      value: arming_countdown
+      label: 'Arming Countdown'
+    -
+      value: arrow_back
+      label: 'Arrow Back'
+    -
+      value: arrow_back_ios
+      label: 'Arrow Back Ios'
+    -
+      value: arrow_back_ios_new
+      label: 'Arrow Back Ios New'
+    -
+      value: arrow_circle_down
+      label: 'Arrow Circle Down'
+    -
+      value: arrow_circle_left
+      label: 'Arrow Circle Left'
+    -
+      value: arrow_circle_right
+      label: 'Arrow Circle Right'
+    -
+      value: arrow_circle_up
+      label: 'Arrow Circle Up'
+    -
+      value: arrow_downward
+      label: 'Arrow Downward'
+    -
+      value: arrow_drop_down
+      label: 'Arrow Drop Down'
+    -
+      value: arrow_drop_down_circle
+      label: 'Arrow Drop Down Circle'
+    -
+      value: arrow_drop_up
+      label: 'Arrow Drop Up'
+    -
+      value: arrow_forward
+      label: 'Arrow Forward'
+    -
+      value: arrow_forward_ios
+      label: 'Arrow Forward Ios'
+    -
+      value: arrow_left
+      label: 'Arrow Left'
+    -
+      value: arrow_outward
+      label: 'Arrow Outward'
+    -
+      value: arrow_right
+      label: 'Arrow Right'
+    -
+      value: arrow_right_alt
+      label: 'Arrow Right Alt'
+    -
+      value: arrow_upward
+      label: 'Arrow Upward'
+    -
+      value: arrows_more_down
+      label: 'Arrows More Down'
+    -
+      value: arrows_more_up
+      label: 'Arrows More Up'
+    -
+      value: art_track
+      label: 'Art Track'
+    -
+      value: article
+      label: Article
+    -
+      value: aspect_ratio
+      label: 'Aspect Ratio'
+    -
+      value: assessment
+      label: Assessment
+    -
+      value: assignment
+      label: Assignment
+    -
+      value: assignment_ind
+      label: 'Assignment Ind'
+    -
+      value: assignment_late
+      label: 'Assignment Late'
+    -
+      value: assignment_return
+      label: 'Assignment Return'
+    -
+      value: assignment_returned
+      label: 'Assignment Returned'
+    -
+      value: assignment_turned_in
+      label: 'Assignment Turned In'
+    -
+      value: assist_walker
+      label: 'Assist Walker'
+    -
+      value: assistant
+      label: Assistant
+    -
+      value: assistant_direction
+      label: 'Assistant Direction'
+    -
+      value: assistant_navigation
+      label: 'Assistant Navigation'
+    -
+      value: assistant_photo
+      label: 'Assistant Photo'
+    -
+      value: assured_workload
+      label: 'Assured Workload'
+    -
+      value: astrophotography_auto
+      label: 'Astrophotography Auto'
+    -
+      value: astrophotography_off
+      label: 'Astrophotography Off'
+    -
+      value: atm
+      label: Atm
+    -
+      value: atr
+      label: Atr
+    -
+      value: attach_email
+      label: 'Attach Email'
+    -
+      value: attach_file
+      label: 'Attach File'
+    -
+      value: attach_money
+      label: 'Attach Money'
+    -
+      value: attachment
+      label: Attachment
+    -
+      value: attractions
+      label: Attractions
+    -
+      value: attribution
+      label: Attribution
+    -
+      value: audio_file
+      label: 'Audio File'
+    -
+      value: audiotrack
+      label: Audiotrack
+    -
+      value: auto_activity_zone
+      label: 'Auto Activity Zone'
+    -
+      value: auto_awesome
+      label: 'Auto Awesome'
+    -
+      value: auto_awesome_mosaic
+      label: 'Auto Awesome Mosaic'
+    -
+      value: auto_awesome_motion
+      label: 'Auto Awesome Motion'
+    -
+      value: auto_delete
+      label: 'Auto Delete'
+    -
+      value: auto_fix_high
+      label: 'Auto Fix High'
+    -
+      value: auto_fix_normal
+      label: 'Auto Fix Normal'
+    -
+      value: auto_fix_off
+      label: 'Auto Fix Off'
+    -
+      value: auto_graph
+      label: 'Auto Graph'
+    -
+      value: auto_mode
+      label: 'Auto Mode'
+    -
+      value: auto_read_pause
+      label: 'Auto Read Pause'
+    -
+      value: auto_read_play
+      label: 'Auto Read Play'
+    -
+      value: auto_schedule
+      label: 'Auto Schedule'
+    -
+      value: auto_stories
+      label: 'Auto Stories'
+    -
+      value: autofps_select
+      label: 'Autofps Select'
+    -
+      value: autorenew
+      label: Autorenew
+    -
+      value: av_timer
+      label: 'Av Timer'
+    -
+      value: baby_changing_station
+      label: 'Baby Changing Station'
+    -
+      value: back_hand
+      label: 'Back Hand'
+    -
+      value: background_replace
+      label: 'Background Replace'
+    -
+      value: backpack
+      label: Backpack
+    -
+      value: backspace
+      label: Backspace
+    -
+      value: backup
+      label: Backup
+    -
+      value: backup_table
+      label: 'Backup Table'
+    -
+      value: badge
+      label: Badge
+    -
+      value: badge_critical_battery
+      label: 'Badge Critical Battery'
+    -
+      value: bakery_dining
+      label: 'Bakery Dining'
+    -
+      value: balance
+      label: Balance
+    -
+      value: balcony
+      label: Balcony
+    -
+      value: ballot
+      label: Ballot
+    -
+      value: bar_chart
+      label: 'Bar Chart'
+    -
+      value: barcode
+      label: Barcode
+    -
+      value: barcode_scanner
+      label: 'Barcode Scanner'
+    -
+      value: batch_prediction
+      label: 'Batch Prediction'
+    -
+      value: bathroom
+      label: Bathroom
+    -
+      value: bathtub
+      label: Bathtub
+    -
+      value: battery_0_bar
+      label: 'Battery 0 Bar'
+    -
+      value: battery_1_bar
+      label: 'Battery 1 Bar'
+    -
+      value: battery_20
+      label: 'Battery 20'
+    -
+      value: battery_2_bar
+      label: 'Battery 2 Bar'
+    -
+      value: battery_30
+      label: 'Battery 30'
+    -
+      value: battery_3_bar
+      label: 'Battery 3 Bar'
+    -
+      value: battery_4_bar
+      label: 'Battery 4 Bar'
+    -
+      value: battery_50
+      label: 'Battery 50'
+    -
+      value: battery_5_bar
+      label: 'Battery 5 Bar'
+    -
+      value: battery_60
+      label: 'Battery 60'
+    -
+      value: battery_6_bar
+      label: 'Battery 6 Bar'
+    -
+      value: battery_80
+      label: 'Battery 80'
+    -
+      value: battery_90
+      label: 'Battery 90'
+    -
+      value: battery_alert
+      label: 'Battery Alert'
+    -
+      value: battery_charging_20
+      label: 'Battery Charging 20'
+    -
+      value: battery_charging_30
+      label: 'Battery Charging 30'
+    -
+      value: battery_charging_50
+      label: 'Battery Charging 50'
+    -
+      value: battery_charging_60
+      label: 'Battery Charging 60'
+    -
+      value: battery_charging_80
+      label: 'Battery Charging 80'
+    -
+      value: battery_charging_90
+      label: 'Battery Charging 90'
+    -
+      value: battery_charging_full
+      label: 'Battery Charging Full'
+    -
+      value: battery_full
+      label: 'Battery Full'
+    -
+      value: battery_full_alt
+      label: 'Battery Full Alt'
+    -
+      value: battery_horiz_000
+      label: 'Battery Horiz 000'
+    -
+      value: battery_horiz_050
+      label: 'Battery Horiz 050'
+    -
+      value: battery_horiz_075
+      label: 'Battery Horiz 075'
+    -
+      value: battery_low
+      label: 'Battery Low'
+    -
+      value: battery_profile
+      label: 'Battery Profile'
+    -
+      value: battery_saver
+      label: 'Battery Saver'
+    -
+      value: battery_std
+      label: 'Battery Std'
+    -
+      value: battery_unknown
+      label: 'Battery Unknown'
+    -
+      value: battery_vert_005
+      label: 'Battery Vert 005'
+    -
+      value: battery_vert_020
+      label: 'Battery Vert 020'
+    -
+      value: battery_vert_050
+      label: 'Battery Vert 050'
+    -
+      value: battery_very_low
+      label: 'Battery Very Low'
+    -
+      value: beach_access
+      label: 'Beach Access'
+    -
+      value: bed
+      label: Bed
+    -
+      value: bedroom_baby
+      label: 'Bedroom Baby'
+    -
+      value: bedroom_child
+      label: 'Bedroom Child'
+    -
+      value: bedroom_parent
+      label: 'Bedroom Parent'
+    -
+      value: bedtime
+      label: Bedtime
+    -
+      value: bedtime_off
+      label: 'Bedtime Off'
+    -
+      value: beenhere
+      label: Beenhere
+    -
+      value: bento
+      label: Bento
+    -
+      value: bike_scooter
+      label: 'Bike Scooter'
+    -
+      value: biotech
+      label: Biotech
+    -
+      value: blanket
+      label: Blanket
+    -
+      value: blender
+      label: Blender
+    -
+      value: blind
+      label: Blind
+    -
+      value: blinds
+      label: Blinds
+    -
+      value: blinds_closed
+      label: 'Blinds Closed'
+    -
+      value: block
+      label: Block
+    -
+      value: block_flipped
+      label: 'Block Flipped'
+    -
+      value: bloodtype
+      label: Bloodtype
+    -
+      value: bluenote
+      label: Bluenote
+    -
+      value: bluetooth
+      label: Bluetooth
+    -
+      value: bluetooth_audio
+      label: 'Bluetooth Audio'
+    -
+      value: bluetooth_connected
+      label: 'Bluetooth Connected'
+    -
+      value: bluetooth_disabled
+      label: 'Bluetooth Disabled'
+    -
+      value: bluetooth_drive
+      label: 'Bluetooth Drive'
+    -
+      value: bluetooth_searching
+      label: 'Bluetooth Searching'
+    -
+      value: blur_circular
+      label: 'Blur Circular'
+    -
+      value: blur_linear
+      label: 'Blur Linear'
+    -
+      value: blur_medium
+      label: 'Blur Medium'
+    -
+      value: blur_off
+      label: 'Blur Off'
+    -
+      value: blur_on
+      label: 'Blur On'
+    -
+      value: blur_short
+      label: 'Blur Short'
+    -
+      value: bnagent
+      label: Bnagent
+    -
+      value: bolt
+      label: Bolt
+    -
+      value: book
+      label: Book
+    -
+      value: book_online
+      label: 'Book Online'
+    -
+      value: bookmark
+      label: Bookmark
+    -
+      value: bookmark_add
+      label: 'Bookmark Add'
+    -
+      value: bookmark_added
+      label: 'Bookmark Added'
+    -
+      value: bookmark_border
+      label: 'Bookmark Border'
+    -
+      value: bookmark_remove
+      label: 'Bookmark Remove'
+    -
+      value: bookmarks
+      label: Bookmarks
+    -
+      value: border_all
+      label: 'Border All'
+    -
+      value: border_bottom
+      label: 'Border Bottom'
+    -
+      value: border_clear
+      label: 'Border Clear'
+    -
+      value: border_color
+      label: 'Border Color'
+    -
+      value: border_horizontal
+      label: 'Border Horizontal'
+    -
+      value: border_inner
+      label: 'Border Inner'
+    -
+      value: border_left
+      label: 'Border Left'
+    -
+      value: border_outer
+      label: 'Border Outer'
+    -
+      value: border_right
+      label: 'Border Right'
+    -
+      value: border_style
+      label: 'Border Style'
+    -
+      value: border_top
+      label: 'Border Top'
+    -
+      value: border_vertical
+      label: 'Border Vertical'
+    -
+      value: boy
+      label: Boy
+    -
+      value: branding_watermark
+      label: 'Branding Watermark'
+    -
+      value: breakfast_dining
+      label: 'Breakfast Dining'
+    -
+      value: breaking_news_alt_1
+      label: 'Breaking News Alt 1'
+    -
+      value: brightness_1
+      label: 'Brightness 1'
+    -
+      value: brightness_2
+      label: 'Brightness 2'
+    -
+      value: brightness_3
+      label: 'Brightness 3'
+    -
+      value: brightness_4
+      label: 'Brightness 4'
+    -
+      value: brightness_5
+      label: 'Brightness 5'
+    -
+      value: brightness_6
+      label: 'Brightness 6'
+    -
+      value: brightness_7
+      label: 'Brightness 7'
+    -
+      value: brightness_auto
+      label: 'Brightness Auto'
+    -
+      value: brightness_high
+      label: 'Brightness High'
+    -
+      value: brightness_low
+      label: 'Brightness Low'
+    -
+      value: brightness_medium
+      label: 'Brightness Medium'
+    -
+      value: bring_your_own_ip
+      label: 'Bring Your Own Ip'
+    -
+      value: broadcast_on_home
+      label: 'Broadcast On Home'
+    -
+      value: broadcast_on_personal
+      label: 'Broadcast On Personal'
+    -
+      value: broken_image
+      label: 'Broken Image'
+    -
+      value: browse_activity
+      label: 'Browse Activity'
+    -
+      value: browse_gallery
+      label: 'Browse Gallery'
+    -
+      value: browser_not_supported
+      label: 'Browser Not Supported'
+    -
+      value: browser_updated
+      label: 'Browser Updated'
+    -
+      value: brunch_dining
+      label: 'Brunch Dining'
+    -
+      value: brush
+      label: Brush
+    -
+      value: bubble_chart
+      label: 'Bubble Chart'
+    -
+      value: bug_report
+      label: 'Bug Report'
+    -
+      value: build
+      label: Build
+    -
+      value: build_circle
+      label: 'Build Circle'
+    -
+      value: bungalow
+      label: Bungalow
+    -
+      value: burst_mode
+      label: 'Burst Mode'
+    -
+      value: bus_alert
+      label: 'Bus Alert'
+    -
+      value: business
+      label: Business
+    -
+      value: business_center
+      label: 'Business Center'
+    -
+      value: cabin
+      label: Cabin
+    -
+      value: cable
+      label: Cable
+    -
+      value: cached
+      label: Cached
+    -
+      value: cake
+      label: Cake
+    -
+      value: calculate
+      label: Calculate
+    -
+      value: calendar_add_on
+      label: 'Calendar Add On'
+    -
+      value: calendar_apps_script
+      label: 'Calendar Apps Script'
+    -
+      value: calendar_month
+      label: 'Calendar Month'
+    -
+      value: calendar_today
+      label: 'Calendar Today'
+    -
+      value: calendar_view_day
+      label: 'Calendar View Day'
+    -
+      value: calendar_view_month
+      label: 'Calendar View Month'
+    -
+      value: calendar_view_week
+      label: 'Calendar View Week'
+    -
+      value: call
+      label: Call
+    -
+      value: call_end
+      label: 'Call End'
+    -
+      value: call_made
+      label: 'Call Made'
+    -
+      value: call_merge
+      label: 'Call Merge'
+    -
+      value: call_missed
+      label: 'Call Missed'
+    -
+      value: call_missed_outgoing
+      label: 'Call Missed Outgoing'
+    -
+      value: call_received
+      label: 'Call Received'
+    -
+      value: call_split
+      label: 'Call Split'
+    -
+      value: call_to_action
+      label: 'Call To Action'
+    -
+      value: camera
+      label: Camera
+    -
+      value: camera_alt
+      label: 'Camera Alt'
+    -
+      value: camera_enhance
+      label: 'Camera Enhance'
+    -
+      value: camera_front
+      label: 'Camera Front'
+    -
+      value: camera_indoor
+      label: 'Camera Indoor'
+    -
+      value: camera_outdoor
+      label: 'Camera Outdoor'
+    -
+      value: camera_rear
+      label: 'Camera Rear'
+    -
+      value: camera_roll
+      label: 'Camera Roll'
+    -
+      value: cameraswitch
+      label: Cameraswitch
+    -
+      value: campaign
+      label: Campaign
+    -
+      value: camping
+      label: Camping
+    -
+      value: cancel
+      label: Cancel
+    -
+      value: cancel_presentation
+      label: 'Cancel Presentation'
+    -
+      value: cancel_schedule_send
+      label: 'Cancel Schedule Send'
+    -
+      value: candlestick_chart
+      label: 'Candlestick Chart'
+    -
+      value: car_crash
+      label: 'Car Crash'
+    -
+      value: car_rental
+      label: 'Car Rental'
+    -
+      value: car_repair
+      label: 'Car Repair'
+    -
+      value: card_giftcard
+      label: 'Card Giftcard'
+    -
+      value: card_membership
+      label: 'Card Membership'
+    -
+      value: card_travel
+      label: 'Card Travel'
+    -
+      value: carpenter
+      label: Carpenter
+    -
+      value: cases
+      label: Cases
+    -
+      value: casino
+      label: Casino
+    -
+      value: cast
+      label: Cast
+    -
+      value: cast_connected
+      label: 'Cast Connected'
+    -
+      value: cast_for_education
+      label: 'Cast For Education'
+    -
+      value: castle
+      label: Castle
+    -
+      value: catching_pokemon
+      label: 'Catching Pokemon'
+    -
+      value: category
+      label: Category
+    -
+      value: celebration
+      label: Celebration
+    -
+      value: cell_tower
+      label: 'Cell Tower'
+    -
+      value: cell_wifi
+      label: 'Cell Wifi'
+    -
+      value: center_focus_strong
+      label: 'Center Focus Strong'
+    -
+      value: center_focus_weak
+      label: 'Center Focus Weak'
+    -
+      value: chair
+      label: Chair
+    -
+      value: chair_alt
+      label: 'Chair Alt'
+    -
+      value: chalet
+      label: Chalet
+    -
+      value: change_circle
+      label: 'Change Circle'
+    -
+      value: change_history
+      label: 'Change History'
+    -
+      value: charger
+      label: Charger
+    -
+      value: charging_station
+      label: 'Charging Station'
+    -
+      value: chat
+      label: Chat
+    -
+      value: chat_add_on
+      label: 'Chat Add On'
+    -
+      value: chat_apps_script
+      label: 'Chat Apps Script'
+    -
+      value: chat_bubble
+      label: 'Chat Bubble'
+    -
+      value: chat_bubble_outline
+      label: 'Chat Bubble Outline'
+    -
+      value: check
+      label: Check
+    -
+      value: check_box
+      label: 'Check Box'
+    -
+      value: check_box_outline_blank
+      label: 'Check Box Outline Blank'
+    -
+      value: check_circle
+      label: 'Check Circle'
+    -
+      value: check_circle_outline
+      label: 'Check Circle Outline'
+    -
+      value: check_indeterminate_small
+      label: 'Check Indeterminate Small'
+    -
+      value: check_small
+      label: 'Check Small'
+    -
+      value: checklist
+      label: Checklist
+    -
+      value: checklist_rtl
+      label: 'Checklist Rtl'
+    -
+      value: checkroom
+      label: Checkroom
+    -
+      value: chevron_left
+      label: 'Chevron Left'
+    -
+      value: chevron_right
+      label: 'Chevron Right'
+    -
+      value: child_care
+      label: 'Child Care'
+    -
+      value: child_friendly
+      label: 'Child Friendly'
+    -
+      value: chrome_reader_mode
+      label: 'Chrome Reader Mode'
+    -
+      value: chromecast_2
+      label: 'Chromecast 2'
+    -
+      value: chromecast_device
+      label: 'Chromecast Device'
+    -
+      value: church
+      label: Church
+    -
+      value: circle
+      label: Circle
+    -
+      value: circle_notifications
+      label: 'Circle Notifications'
+    -
+      value: clarify
+      label: Clarify
+    -
+      value: class
+      label: Class
+    -
+      value: clean_hands
+      label: 'Clean Hands'
+    -
+      value: cleaning_bucket
+      label: 'Cleaning Bucket'
+    -
+      value: cleaning_services
+      label: 'Cleaning Services'
+    -
+      value: clear
+      label: Clear
+    -
+      value: clear_all
+      label: 'Clear All'
+    -
+      value: clear_day
+      label: 'Clear Day'
+    -
+      value: clear_night
+      label: 'Clear Night'
+    -
+      value: climate_mini_split
+      label: 'Climate Mini Split'
+    -
+      value: close
+      label: Close
+    -
+      value: close_fullscreen
+      label: 'Close Fullscreen'
+    -
+      value: closed_caption
+      label: 'Closed Caption'
+    -
+      value: closed_caption_disabled
+      label: 'Closed Caption Disabled'
+    -
+      value: closed_caption_off
+      label: 'Closed Caption Off'
+    -
+      value: cloud
+      label: Cloud
+    -
+      value: cloud_circle
+      label: 'Cloud Circle'
+    -
+      value: cloud_domains
+      label: 'Cloud Domains'
+    -
+      value: cloud_done
+      label: 'Cloud Done'
+    -
+      value: cloud_download
+      label: 'Cloud Download'
+    -
+      value: cloud_off
+      label: 'Cloud Off'
+    -
+      value: cloud_queue
+      label: 'Cloud Queue'
+    -
+      value: cloud_sync
+      label: 'Cloud Sync'
+    -
+      value: cloud_upload
+      label: 'Cloud Upload'
+    -
+      value: cloudbuild
+      label: Cloudbuild
+    -
+      value: cloudy
+      label: Cloudy
+    -
+      value: cloudy_filled
+      label: 'Cloudy Filled'
+    -
+      value: cloudy_snowing
+      label: 'Cloudy Snowing'
+    -
+      value: co2
+      label: Co2
+    -
+      value: co_present
+      label: 'Co Present'
+    -
+      value: code
+      label: Code
+    -
+      value: code_off
+      label: 'Code Off'
+    -
+      value: coffee
+      label: Coffee
+    -
+      value: coffee_maker
+      label: 'Coffee Maker'
+    -
+      value: collections
+      label: Collections
+    -
+      value: collections_bookmark
+      label: 'Collections Bookmark'
+    -
+      value: color_lens
+      label: 'Color Lens'
+    -
+      value: colorize
+      label: Colorize
+    -
+      value: comment
+      label: Comment
+    -
+      value: comment_bank
+      label: 'Comment Bank'
+    -
+      value: comments_disabled
+      label: 'Comments Disabled'
+    -
+      value: commit
+      label: Commit
+    -
+      value: communication
+      label: Communication
+    -
+      value: commute
+      label: Commute
+    -
+      value: compare
+      label: Compare
+    -
+      value: compare_arrows
+      label: 'Compare Arrows'
+    -
+      value: compass_calibration
+      label: 'Compass Calibration'
+    -
+      value: component_exchange
+      label: 'Component Exchange'
+    -
+      value: compost
+      label: Compost
+    -
+      value: compress
+      label: Compress
+    -
+      value: computer
+      label: Computer
+    -
+      value: confirmation_number
+      label: 'Confirmation Number'
+    -
+      value: connect_without_contact
+      label: 'Connect Without Contact'
+    -
+      value: connected_tv
+      label: 'Connected Tv'
+    -
+      value: connecting_airports
+      label: 'Connecting Airports'
+    -
+      value: construction
+      label: Construction
+    -
+      value: contact_emergency
+      label: 'Contact Emergency'
+    -
+      value: contact_mail
+      label: 'Contact Mail'
+    -
+      value: contact_page
+      label: 'Contact Page'
+    -
+      value: contact_phone
+      label: 'Contact Phone'
+    -
+      value: contact_support
+      label: 'Contact Support'
+    -
+      value: contactless
+      label: Contactless
+    -
+      value: contacts
+      label: Contacts
+    -
+      value: content_copy
+      label: 'Content Copy'
+    -
+      value: content_cut
+      label: 'Content Cut'
+    -
+      value: content_paste
+      label: 'Content Paste'
+    -
+      value: content_paste_go
+      label: 'Content Paste Go'
+    -
+      value: content_paste_off
+      label: 'Content Paste Off'
+    -
+      value: content_paste_search
+      label: 'Content Paste Search'
+    -
+      value: contrast
+      label: Contrast
+    -
+      value: control_camera
+      label: 'Control Camera'
+    -
+      value: control_point
+      label: 'Control Point'
+    -
+      value: control_point_duplicate
+      label: 'Control Point Duplicate'
+    -
+      value: controller_gen
+      label: 'Controller Gen'
+    -
+      value: conversion_path
+      label: 'Conversion Path'
+    -
+      value: cookie
+      label: Cookie
+    -
+      value: cooking
+      label: Cooking
+    -
+      value: cool_to_dry
+      label: 'Cool To Dry'
+    -
+      value: copy_all
+      label: 'Copy All'
+    -
+      value: copyright
+      label: Copyright
+    -
+      value: coronavirus
+      label: Coronavirus
+    -
+      value: corporate_fare
+      label: 'Corporate Fare'
+    -
+      value: cottage
+      label: Cottage
+    -
+      value: countertops
+      label: Countertops
+    -
+      value: create
+      label: Create
+    -
+      value: create_new_folder
+      label: 'Create New Folder'
+    -
+      value: credit_card
+      label: 'Credit Card'
+    -
+      value: credit_card_off
+      label: 'Credit Card Off'
+    -
+      value: credit_score
+      label: 'Credit Score'
+    -
+      value: crib
+      label: Crib
+    -
+      value: crisis_alert
+      label: 'Crisis Alert'
+    -
+      value: crop
+      label: Crop
+    -
+      value: crop_16_9
+      label: 'Crop 16 9'
+    -
+      value: crop_3_2
+      label: 'Crop 3 2'
+    -
+      value: crop_5_4
+      label: 'Crop 5 4'
+    -
+      value: crop_7_5
+      label: 'Crop 7 5'
+    -
+      value: crop_din
+      label: 'Crop Din'
+    -
+      value: crop_free
+      label: 'Crop Free'
+    -
+      value: crop_landscape
+      label: 'Crop Landscape'
+    -
+      value: crop_original
+      label: 'Crop Original'
+    -
+      value: crop_portrait
+      label: 'Crop Portrait'
+    -
+      value: crop_rotate
+      label: 'Crop Rotate'
+    -
+      value: crop_square
+      label: 'Crop Square'
+    -
+      value: cruelty_free
+      label: 'Cruelty Free'
+    -
+      value: css
+      label: Css
+    -
+      value: currency_bitcoin
+      label: 'Currency Bitcoin'
+    -
+      value: currency_exchange
+      label: 'Currency Exchange'
+    -
+      value: currency_franc
+      label: 'Currency Franc'
+    -
+      value: currency_lira
+      label: 'Currency Lira'
+    -
+      value: currency_pound
+      label: 'Currency Pound'
+    -
+      value: currency_ruble
+      label: 'Currency Ruble'
+    -
+      value: currency_rupee
+      label: 'Currency Rupee'
+    -
+      value: currency_yen
+      label: 'Currency Yen'
+    -
+      value: currency_yuan
+      label: 'Currency Yuan'
+    -
+      value: curtains
+      label: Curtains
+    -
+      value: curtains_closed
+      label: 'Curtains Closed'
+    -
+      value: cut
+      label: Cut
+    -
+      value: cyclone
+      label: Cyclone
+    -
+      value: dangerous
+      label: Dangerous
+    -
+      value: dark_mode
+      label: 'Dark Mode'
+    -
+      value: dashboard
+      label: Dashboard
+    -
+      value: dashboard_customize
+      label: 'Dashboard Customize'
+    -
+      value: data_array
+      label: 'Data Array'
+    -
+      value: data_exploration
+      label: 'Data Exploration'
+    -
+      value: data_object
+      label: 'Data Object'
+    -
+      value: data_saver_off
+      label: 'Data Saver Off'
+    -
+      value: data_saver_on
+      label: 'Data Saver On'
+    -
+      value: data_thresholding
+      label: 'Data Thresholding'
+    -
+      value: data_usage
+      label: 'Data Usage'
+    -
+      value: database
+      label: Database
+    -
+      value: dataset
+      label: Dataset
+    -
+      value: dataset_linked
+      label: 'Dataset Linked'
+    -
+      value: date_range
+      label: 'Date Range'
+    -
+      value: deblur
+      label: Deblur
+    -
+      value: deck
+      label: Deck
+    -
+      value: dehaze
+      label: Dehaze
+    -
+      value: delete
+      label: Delete
+    -
+      value: delete_forever
+      label: 'Delete Forever'
+    -
+      value: delete_outline
+      label: 'Delete Outline'
+    -
+      value: delete_sweep
+      label: 'Delete Sweep'
+    -
+      value: delivery_dining
+      label: 'Delivery Dining'
+    -
+      value: density_large
+      label: 'Density Large'
+    -
+      value: density_medium
+      label: 'Density Medium'
+    -
+      value: density_small
+      label: 'Density Small'
+    -
+      value: dentistry
+      label: Dentistry
+    -
+      value: departure_board
+      label: 'Departure Board'
+    -
+      value: description
+      label: Description
+    -
+      value: deselect
+      label: Deselect
+    -
+      value: design_services
+      label: 'Design Services'
+    -
+      value: desk
+      label: Desk
+    -
+      value: desktop_access_disabled
+      label: 'Desktop Access Disabled'
+    -
+      value: desktop_mac
+      label: 'Desktop Mac'
+    -
+      value: desktop_windows
+      label: 'Desktop Windows'
+    -
+      value: details
+      label: Details
+    -
+      value: detection_and_zone
+      label: 'Detection And Zone'
+    -
+      value: detector
+      label: Detector
+    -
+      value: detector_alarm
+      label: 'Detector Alarm'
+    -
+      value: detector_battery
+      label: 'Detector Battery'
+    -
+      value: detector_co
+      label: 'Detector Co'
+    -
+      value: detector_offline
+      label: 'Detector Offline'
+    -
+      value: detector_smoke
+      label: 'Detector Smoke'
+    -
+      value: detector_status
+      label: 'Detector Status'
+    -
+      value: developer_board
+      label: 'Developer Board'
+    -
+      value: developer_board_off
+      label: 'Developer Board Off'
+    -
+      value: developer_mode
+      label: 'Developer Mode'
+    -
+      value: device_hub
+      label: 'Device Hub'
+    -
+      value: device_reset
+      label: 'Device Reset'
+    -
+      value: device_thermostat
+      label: 'Device Thermostat'
+    -
+      value: device_unknown
+      label: 'Device Unknown'
+    -
+      value: devices
+      label: Devices
+    -
+      value: devices_fold
+      label: 'Devices Fold'
+    -
+      value: devices_other
+      label: 'Devices Other'
+    -
+      value: dew_point
+      label: 'Dew Point'
+    -
+      value: dialer_sip
+      label: 'Dialer Sip'
+    -
+      value: dialpad
+      label: Dialpad
+    -
+      value: diamond
+      label: Diamond
+    -
+      value: difference
+      label: Difference
+    -
+      value: digital_out_of_home
+      label: 'Digital Out Of Home'
+    -
+      value: dining
+      label: Dining
+    -
+      value: dinner_dining
+      label: 'Dinner Dining'
+    -
+      value: directions
+      label: Directions
+    -
+      value: directions_alt
+      label: 'Directions Alt'
+    -
+      value: directions_alt_off
+      label: 'Directions Alt Off'
+    -
+      value: directions_bike
+      label: 'Directions Bike'
+    -
+      value: directions_boat
+      label: 'Directions Boat'
+    -
+      value: directions_boat_filled
+      label: 'Directions Boat Filled'
+    -
+      value: directions_bus
+      label: 'Directions Bus'
+    -
+      value: directions_bus_filled
+      label: 'Directions Bus Filled'
+    -
+      value: directions_car
+      label: 'Directions Car'
+    -
+      value: directions_car_filled
+      label: 'Directions Car Filled'
+    -
+      value: directions_off
+      label: 'Directions Off'
+    -
+      value: directions_railway
+      label: 'Directions Railway'
+    -
+      value: directions_railway_filled
+      label: 'Directions Railway Filled'
+    -
+      value: directions_run
+      label: 'Directions Run'
+    -
+      value: directions_subway
+      label: 'Directions Subway'
+    -
+      value: directions_subway_filled
+      label: 'Directions Subway Filled'
+    -
+      value: directions_transit
+      label: 'Directions Transit'
+    -
+      value: directions_transit_filled
+      label: 'Directions Transit Filled'
+    -
+      value: directions_walk
+      label: 'Directions Walk'
+    -
+      value: dirty_lens
+      label: 'Dirty Lens'
+    -
+      value: disabled_by_default
+      label: 'Disabled By Default'
+    -
+      value: disabled_visible
+      label: 'Disabled Visible'
+    -
+      value: disc_full
+      label: 'Disc Full'
+    -
+      value: discount
+      label: Discount
+    -
+      value: discover_tune
+      label: 'Discover Tune'
+    -
+      value: dishwasher_gen
+      label: 'Dishwasher Gen'
+    -
+      value: display_settings
+      label: 'Display Settings'
+    -
+      value: diversity_1
+      label: 'Diversity 1'
+    -
+      value: diversity_2
+      label: 'Diversity 2'
+    -
+      value: diversity_3
+      label: 'Diversity 3'
+    -
+      value: diversity_4
+      label: 'Diversity 4'
+    -
+      value: dns
+      label: Dns
+    -
+      value: do_disturb
+      label: 'Do Disturb'
+    -
+      value: do_disturb_alt
+      label: 'Do Disturb Alt'
+    -
+      value: do_disturb_off
+      label: 'Do Disturb Off'
+    -
+      value: do_disturb_on
+      label: 'Do Disturb On'
+    -
+      value: do_not_disturb
+      label: 'Do Not Disturb'
+    -
+      value: do_not_disturb_alt
+      label: 'Do Not Disturb Alt'
+    -
+      value: do_not_disturb_off
+      label: 'Do Not Disturb Off'
+    -
+      value: do_not_disturb_on
+      label: 'Do Not Disturb On'
+    -
+      value: do_not_disturb_on_total_silence
+      label: 'Do Not Disturb On Total Silence'
+    -
+      value: do_not_step
+      label: 'Do Not Step'
+    -
+      value: do_not_touch
+      label: 'Do Not Touch'
+    -
+      value: dock
+      label: Dock
+    -
+      value: docs_add_on
+      label: 'Docs Add On'
+    -
+      value: docs_apps_script
+      label: 'Docs Apps Script'
+    -
+      value: document_scanner
+      label: 'Document Scanner'
+    -
+      value: domain
+      label: Domain
+    -
+      value: domain_add
+      label: 'Domain Add'
+    -
+      value: domain_disabled
+      label: 'Domain Disabled'
+    -
+      value: domain_verification
+      label: 'Domain Verification'
+    -
+      value: done
+      label: Done
+    -
+      value: done_all
+      label: 'Done All'
+    -
+      value: done_outline
+      label: 'Done Outline'
+    -
+      value: donut_large
+      label: 'Donut Large'
+    -
+      value: donut_small
+      label: 'Donut Small'
+    -
+      value: door_back
+      label: 'Door Back'
+    -
+      value: door_front
+      label: 'Door Front'
+    -
+      value: door_open
+      label: 'Door Open'
+    -
+      value: door_sensor
+      label: 'Door Sensor'
+    -
+      value: door_sliding
+      label: 'Door Sliding'
+    -
+      value: doorbell
+      label: Doorbell
+    -
+      value: doorbell_3p
+      label: 'Doorbell 3P'
+    -
+      value: doorbell_chime
+      label: 'Doorbell Chime'
+    -
+      value: double_arrow
+      label: 'Double Arrow'
+    -
+      value: downhill_skiing
+      label: 'Downhill Skiing'
+    -
+      value: download
+      label: Download
+    -
+      value: download_done
+      label: 'Download Done'
+    -
+      value: download_for_offline
+      label: 'Download For Offline'
+    -
+      value: downloading
+      label: Downloading
+    -
+      value: draft
+      label: Draft
+    -
+      value: drafts
+      label: Drafts
+    -
+      value: drag_handle
+      label: 'Drag Handle'
+    -
+      value: drag_indicator
+      label: 'Drag Indicator'
+    -
+      value: draw
+      label: Draw
+    -
+      value: dresser
+      label: Dresser
+    -
+      value: drive_eta
+      label: 'Drive Eta'
+    -
+      value: drive_file_move
+      label: 'Drive File Move'
+    -
+      value: drive_file_move_outline
+      label: 'Drive File Move Outline'
+    -
+      value: drive_file_move_rtl
+      label: 'Drive File Move Rtl'
+    -
+      value: drive_file_rename_outline
+      label: 'Drive File Rename Outline'
+    -
+      value: drive_folder_upload
+      label: 'Drive Folder Upload'
+    -
+      value: drive_shortcut
+      label: 'Drive Shortcut'
+    -
+      value: dry
+      label: Dry
+    -
+      value: dry_cleaning
+      label: 'Dry Cleaning'
+    -
+      value: duo
+      label: Duo
+    -
+      value: dvr
+      label: Dvr
+    -
+      value: dynamic_feed
+      label: 'Dynamic Feed'
+    -
+      value: dynamic_form
+      label: 'Dynamic Form'
+    -
+      value: e911_avatar
+      label: 'E911 Avatar'
+    -
+      value: e911_emergency
+      label: 'E911 Emergency'
+    -
+      value: e_mobiledata
+      label: 'E Mobiledata'
+    -
+      value: earbuds
+      label: Earbuds
+    -
+      value: earbuds_battery
+      label: 'Earbuds Battery'
+    -
+      value: early_on
+      label: 'Early On'
+    -
+      value: east
+      label: East
+    -
+      value: eco
+      label: Eco
+    -
+      value: edgesensor_high
+      label: 'Edgesensor High'
+    -
+      value: edgesensor_low
+      label: 'Edgesensor Low'
+    -
+      value: edit
+      label: Edit
+    -
+      value: edit_attributes
+      label: 'Edit Attributes'
+    -
+      value: edit_calendar
+      label: 'Edit Calendar'
+    -
+      value: edit_document
+      label: 'Edit Document'
+    -
+      value: edit_location
+      label: 'Edit Location'
+    -
+      value: edit_location_alt
+      label: 'Edit Location Alt'
+    -
+      value: edit_note
+      label: 'Edit Note'
+    -
+      value: edit_notifications
+      label: 'Edit Notifications'
+    -
+      value: edit_off
+      label: 'Edit Off'
+    -
+      value: edit_road
+      label: 'Edit Road'
+    -
+      value: edit_square
+      label: 'Edit Square'
+    -
+      value: egg
+      label: Egg
+    -
+      value: egg_alt
+      label: 'Egg Alt'
+    -
+      value: eject
+      label: Eject
+    -
+      value: elderly
+      label: Elderly
+    -
+      value: elderly_woman
+      label: 'Elderly Woman'
+    -
+      value: electric_bike
+      label: 'Electric Bike'
+    -
+      value: electric_bolt
+      label: 'Electric Bolt'
+    -
+      value: electric_car
+      label: 'Electric Car'
+    -
+      value: electric_meter
+      label: 'Electric Meter'
+    -
+      value: electric_moped
+      label: 'Electric Moped'
+    -
+      value: electric_rickshaw
+      label: 'Electric Rickshaw'
+    -
+      value: electric_scooter
+      label: 'Electric Scooter'
+    -
+      value: electrical_services
+      label: 'Electrical Services'
+    -
+      value: elevator
+      label: Elevator
+    -
+      value: email
+      label: Email
+    -
+      value: emergency
+      label: Emergency
+    -
+      value: emergency_heat
+      label: 'Emergency Heat'
+    -
+      value: emergency_home
+      label: 'Emergency Home'
+    -
+      value: emergency_recording
+      label: 'Emergency Recording'
+    -
+      value: emergency_share
+      label: 'Emergency Share'
+    -
+      value: emoji_emotions
+      label: 'Emoji Emotions'
+    -
+      value: emoji_events
+      label: 'Emoji Events'
+    -
+      value: emoji_flags
+      label: 'Emoji Flags'
+    -
+      value: emoji_food_beverage
+      label: 'Emoji Food Beverage'
+    -
+      value: emoji_nature
+      label: 'Emoji Nature'
+    -
+      value: emoji_objects
+      label: 'Emoji Objects'
+    -
+      value: emoji_people
+      label: 'Emoji People'
+    -
+      value: emoji_symbols
+      label: 'Emoji Symbols'
+    -
+      value: emoji_transportation
+      label: 'Emoji Transportation'
+    -
+      value: enable
+      label: Enable
+    -
+      value: energy_program_saving
+      label: 'Energy Program Saving'
+    -
+      value: energy_program_time_used
+      label: 'Energy Program Time Used'
+    -
+      value: energy_savings_leaf
+      label: 'Energy Savings Leaf'
+    -
+      value: engineering
+      label: Engineering
+    -
+      value: enhanced_encryption
+      label: 'Enhanced Encryption'
+    -
+      value: equalizer
+      label: Equalizer
+    -
+      value: error
+      label: Error
+    -
+      value: error_circle_rounded
+      label: 'Error Circle Rounded'
+    -
+      value: error_outline
+      label: 'Error Outline'
+    -
+      value: escalator
+      label: Escalator
+    -
+      value: escalator_warning
+      label: 'Escalator Warning'
+    -
+      value: euro
+      label: Euro
+    -
+      value: euro_symbol
+      label: 'Euro Symbol'
+    -
+      value: ev_charger
+      label: 'Ev Charger'
+    -
+      value: ev_shadow
+      label: 'Ev Shadow'
+    -
+      value: ev_station
+      label: 'Ev Station'
+    -
+      value: event
+      label: Event
+    -
+      value: event_available
+      label: 'Event Available'
+    -
+      value: event_busy
+      label: 'Event Busy'
+    -
+      value: event_note
+      label: 'Event Note'
+    -
+      value: event_repeat
+      label: 'Event Repeat'
+    -
+      value: event_seat
+      label: 'Event Seat'
+    -
+      value: event_upcoming
+      label: 'Event Upcoming'
+    -
+      value: exclamation
+      label: Exclamation
+    -
+      value: exit_to_app
+      label: 'Exit To App'
+    -
+      value: expand
+      label: Expand
+    -
+      value: expand_circle_down
+      label: 'Expand Circle Down'
+    -
+      value: expand_less
+      label: 'Expand Less'
+    -
+      value: expand_more
+      label: 'Expand More'
+    -
+      value: explicit
+      label: Explicit
+    -
+      value: explore
+      label: Explore
+    -
+      value: explore_off
+      label: 'Explore Off'
+    -
+      value: exposure
+      label: Exposure
+    -
+      value: exposure_neg_1
+      label: 'Exposure Neg 1'
+    -
+      value: exposure_neg_2
+      label: 'Exposure Neg 2'
+    -
+      value: exposure_plus_1
+      label: 'Exposure Plus 1'
+    -
+      value: exposure_plus_2
+      label: 'Exposure Plus 2'
+    -
+      value: exposure_zero
+      label: 'Exposure Zero'
+    -
+      value: extension
+      label: Extension
+    -
+      value: extension_off
+      label: 'Extension Off'
+    -
+      value: face
+      label: Face
+    -
+      value: face_2
+      label: 'Face 2'
+    -
+      value: face_3
+      label: 'Face 3'
+    -
+      value: face_4
+      label: 'Face 4'
+    -
+      value: face_5
+      label: 'Face 5'
+    -
+      value: face_6
+      label: 'Face 6'
+    -
+      value: face_retouching_natural
+      label: 'Face Retouching Natural'
+    -
+      value: face_retouching_off
+      label: 'Face Retouching Off'
+    -
+      value: face_unlock
+      label: 'Face Unlock'
+    -
+      value: fact_check
+      label: 'Fact Check'
+    -
+      value: factory
+      label: Factory
+    -
+      value: familiar_face_and_zone
+      label: 'Familiar Face And Zone'
+    -
+      value: family_restroom
+      label: 'Family Restroom'
+    -
+      value: fast_forward
+      label: 'Fast Forward'
+    -
+      value: fast_rewind
+      label: 'Fast Rewind'
+    -
+      value: fastfood
+      label: Fastfood
+    -
+      value: faucet
+      label: Faucet
+    -
+      value: favorite
+      label: Favorite
+    -
+      value: favorite_border
+      label: 'Favorite Border'
+    -
+      value: fax
+      label: Fax
+    -
+      value: featured_play_list
+      label: 'Featured Play List'
+    -
+      value: featured_video
+      label: 'Featured Video'
+    -
+      value: feed
+      label: Feed
+    -
+      value: feedback
+      label: Feedback
+    -
+      value: female
+      label: Female
+    -
+      value: femur
+      label: Femur
+    -
+      value: femur_alt
+      label: 'Femur Alt'
+    -
+      value: fence
+      label: Fence
+    -
+      value: festival
+      label: Festival
+    -
+      value: fiber_dvr
+      label: 'Fiber Dvr'
+    -
+      value: fiber_manual_record
+      label: 'Fiber Manual Record'
+    -
+      value: fiber_new
+      label: 'Fiber New'
+    -
+      value: fiber_pin
+      label: 'Fiber Pin'
+    -
+      value: fiber_smart_record
+      label: 'Fiber Smart Record'
+    -
+      value: file_copy
+      label: 'File Copy'
+    -
+      value: file_download
+      label: 'File Download'
+    -
+      value: file_download_done
+      label: 'File Download Done'
+    -
+      value: file_download_off
+      label: 'File Download Off'
+    -
+      value: file_open
+      label: 'File Open'
+    -
+      value: file_present
+      label: 'File Present'
+    -
+      value: file_upload
+      label: 'File Upload'
+    -
+      value: file_upload_off
+      label: 'File Upload Off'
+    -
+      value: filter
+      label: Filter
+    -
+      value: filter_1
+      label: 'Filter 1'
+    -
+      value: filter_2
+      label: 'Filter 2'
+    -
+      value: filter_3
+      label: 'Filter 3'
+    -
+      value: filter_4
+      label: 'Filter 4'
+    -
+      value: filter_5
+      label: 'Filter 5'
+    -
+      value: filter_6
+      label: 'Filter 6'
+    -
+      value: filter_7
+      label: 'Filter 7'
+    -
+      value: filter_8
+      label: 'Filter 8'
+    -
+      value: filter_9
+      label: 'Filter 9'
+    -
+      value: filter_9_plus
+      label: 'Filter 9 Plus'
+    -
+      value: filter_alt
+      label: 'Filter Alt'
+    -
+      value: filter_alt_off
+      label: 'Filter Alt Off'
+    -
+      value: filter_b_and_w
+      label: 'Filter B And W'
+    -
+      value: filter_center_focus
+      label: 'Filter Center Focus'
+    -
+      value: filter_drama
+      label: 'Filter Drama'
+    -
+      value: filter_frames
+      label: 'Filter Frames'
+    -
+      value: filter_hdr
+      label: 'Filter Hdr'
+    -
+      value: filter_list
+      label: 'Filter List'
+    -
+      value: filter_list_alt
+      label: 'Filter List Alt'
+    -
+      value: filter_list_off
+      label: 'Filter List Off'
+    -
+      value: filter_none
+      label: 'Filter None'
+    -
+      value: filter_tilt_shift
+      label: 'Filter Tilt Shift'
+    -
+      value: filter_vintage
+      label: 'Filter Vintage'
+    -
+      value: find_in_page
+      label: 'Find In Page'
+    -
+      value: find_replace
+      label: 'Find Replace'
+    -
+      value: fingerprint
+      label: Fingerprint
+    -
+      value: fire_extinguisher
+      label: 'Fire Extinguisher'
+    -
+      value: fire_hydrant
+      label: 'Fire Hydrant'
+    -
+      value: fire_hydrant_alt
+      label: 'Fire Hydrant Alt'
+    -
+      value: fire_truck
+      label: 'Fire Truck'
+    -
+      value: fireplace
+      label: Fireplace
+    -
+      value: first_page
+      label: 'First Page'
+    -
+      value: fishfood
+      label: Fishfood
+    -
+      value: fit_screen
+      label: 'Fit Screen'
+    -
+      value: fitbit
+      label: Fitbit
+    -
+      value: fitness_center
+      label: 'Fitness Center'
+    -
+      value: flag
+      label: Flag
+    -
+      value: flag_circle
+      label: 'Flag Circle'
+    -
+      value: flaky
+      label: Flaky
+    -
+      value: flare
+      label: Flare
+    -
+      value: flash_auto
+      label: 'Flash Auto'
+    -
+      value: flash_off
+      label: 'Flash Off'
+    -
+      value: flash_on
+      label: 'Flash On'
+    -
+      value: flashlight_off
+      label: 'Flashlight Off'
+    -
+      value: flashlight_on
+      label: 'Flashlight On'
+    -
+      value: flatware
+      label: Flatware
+    -
+      value: flight
+      label: Flight
+    -
+      value: flight_class
+      label: 'Flight Class'
+    -
+      value: flight_land
+      label: 'Flight Land'
+    -
+      value: flight_takeoff
+      label: 'Flight Takeoff'
+    -
+      value: flip
+      label: Flip
+    -
+      value: flip_camera_android
+      label: 'Flip Camera Android'
+    -
+      value: flip_camera_ios
+      label: 'Flip Camera Ios'
+    -
+      value: flip_to_back
+      label: 'Flip To Back'
+    -
+      value: flip_to_front
+      label: 'Flip To Front'
+    -
+      value: flood
+      label: Flood
+    -
+      value: floor_lamp
+      label: 'Floor Lamp'
+    -
+      value: flourescent
+      label: Flourescent
+    -
+      value: fluorescent
+      label: Fluorescent
+    -
+      value: flutter
+      label: Flutter
+    -
+      value: flutter_dash
+      label: 'Flutter Dash'
+    -
+      value: fmd_bad
+      label: 'Fmd Bad'
+    -
+      value: fmd_good
+      label: 'Fmd Good'
+    -
+      value: foggy
+      label: Foggy
+    -
+      value: folder
+      label: Folder
+    -
+      value: folder_copy
+      label: 'Folder Copy'
+    -
+      value: folder_delete
+      label: 'Folder Delete'
+    -
+      value: folder_off
+      label: 'Folder Off'
+    -
+      value: folder_open
+      label: 'Folder Open'
+    -
+      value: folder_shared
+      label: 'Folder Shared'
+    -
+      value: folder_special
+      label: 'Folder Special'
+    -
+      value: folder_zip
+      label: 'Folder Zip'
+    -
+      value: follow_the_signs
+      label: 'Follow The Signs'
+    -
+      value: font_download
+      label: 'Font Download'
+    -
+      value: font_download_off
+      label: 'Font Download Off'
+    -
+      value: food_bank
+      label: 'Food Bank'
+    -
+      value: foot_bones
+      label: 'Foot Bones'
+    -
+      value: forest
+      label: Forest
+    -
+      value: fork_left
+      label: 'Fork Left'
+    -
+      value: fork_right
+      label: 'Fork Right'
+    -
+      value: format_align_center
+      label: 'Format Align Center'
+    -
+      value: format_align_justify
+      label: 'Format Align Justify'
+    -
+      value: format_align_left
+      label: 'Format Align Left'
+    -
+      value: format_align_right
+      label: 'Format Align Right'
+    -
+      value: format_bold
+      label: 'Format Bold'
+    -
+      value: format_clear
+      label: 'Format Clear'
+    -
+      value: format_color_fill
+      label: 'Format Color Fill'
+    -
+      value: format_color_reset
+      label: 'Format Color Reset'
+    -
+      value: format_color_text
+      label: 'Format Color Text'
+    -
+      value: format_indent_decrease
+      label: 'Format Indent Decrease'
+    -
+      value: format_indent_increase
+      label: 'Format Indent Increase'
+    -
+      value: format_italic
+      label: 'Format Italic'
+    -
+      value: format_line_spacing
+      label: 'Format Line Spacing'
+    -
+      value: format_list_bulleted
+      label: 'Format List Bulleted'
+    -
+      value: format_list_numbered
+      label: 'Format List Numbered'
+    -
+      value: format_list_numbered_rtl
+      label: 'Format List Numbered Rtl'
+    -
+      value: format_overline
+      label: 'Format Overline'
+    -
+      value: format_paint
+      label: 'Format Paint'
+    -
+      value: format_quote
+      label: 'Format Quote'
+    -
+      value: format_shapes
+      label: 'Format Shapes'
+    -
+      value: format_size
+      label: 'Format Size'
+    -
+      value: format_strikethrough
+      label: 'Format Strikethrough'
+    -
+      value: format_textdirection_l_to_r
+      label: 'Format Textdirection L To R'
+    -
+      value: format_textdirection_r_to_l
+      label: 'Format Textdirection R To L'
+    -
+      value: format_underlined
+      label: 'Format Underlined'
+    -
+      value: format_underlined_squiggle
+      label: 'Format Underlined Squiggle'
+    -
+      value: forms_add_on
+      label: 'Forms Add On'
+    -
+      value: forms_apps_script
+      label: 'Forms Apps Script'
+    -
+      value: fort
+      label: Fort
+    -
+      value: forum
+      label: Forum
+    -
+      value: forward
+      label: Forward
+    -
+      value: forward_10
+      label: 'Forward 10'
+    -
+      value: forward_30
+      label: 'Forward 30'
+    -
+      value: forward_5
+      label: 'Forward 5'
+    -
+      value: forward_to_inbox
+      label: 'Forward To Inbox'
+    -
+      value: foundation
+      label: Foundation
+    -
+      value: frame_person
+      label: 'Frame Person'
+    -
+      value: free_breakfast
+      label: 'Free Breakfast'
+    -
+      value: free_cancellation
+      label: 'Free Cancellation'
+    -
+      value: front_hand
+      label: 'Front Hand'
+    -
+      value: full_stacked_bar_chart
+      label: 'Full Stacked Bar Chart'
+    -
+      value: fullscreen
+      label: Fullscreen
+    -
+      value: fullscreen_exit
+      label: 'Fullscreen Exit'
+    -
+      value: functions
+      label: Functions
+    -
+      value: g_mobiledata
+      label: 'G Mobiledata'
+    -
+      value: g_translate
+      label: 'G Translate'
+    -
+      value: gamepad
+      label: Gamepad
+    -
+      value: games
+      label: Games
+    -
+      value: garage
+      label: Garage
+    -
+      value: garage_home
+      label: 'Garage Home'
+    -
+      value: garden_cart
+      label: 'Garden Cart'
+    -
+      value: gas_meter
+      label: 'Gas Meter'
+    -
+      value: gate
+      label: Gate
+    -
+      value: gavel
+      label: Gavel
+    -
+      value: gbadge
+      label: Gbadge
+    -
+      value: generating_tokens
+      label: 'Generating Tokens'
+    -
+      value: gesture
+      label: Gesture
+    -
+      value: get_app
+      label: 'Get App'
+    -
+      value: gif
+      label: Gif
+    -
+      value: gif_box
+      label: 'Gif Box'
+    -
+      value: girl
+      label: Girl
+    -
+      value: gite
+      label: Gite
+    -
+      value: gleaf
+      label: Gleaf
+    -
+      value: glyphs
+      label: Glyphs
+    -
+      value: gmail_add_on
+      label: 'Gmail Add On'
+    -
+      value: gmail_apps_script
+      label: 'Gmail Apps Script'
+    -
+      value: gmail_rooms
+      label: 'Gmail Rooms'
+    -
+      value: golf_course
+      label: 'Golf Course'
+    -
+      value: google_guarantee
+      label: 'Google Guarantee'
+    -
+      value: google_plus_reshare
+      label: 'Google Plus Reshare'
+    -
+      value: google_travel
+      label: 'Google Travel'
+    -
+      value: google_travel_outline
+      label: 'Google Travel Outline'
+    -
+      value: google_wifi
+      label: 'Google Wifi'
+    -
+      value: googler_travel
+      label: 'Googler Travel'
+    -
+      value: gpp_bad
+      label: 'Gpp Bad'
+    -
+      value: gpp_good
+      label: 'Gpp Good'
+    -
+      value: gpp_maybe
+      label: 'Gpp Maybe'
+    -
+      value: gps_fixed
+      label: 'Gps Fixed'
+    -
+      value: gps_not_fixed
+      label: 'Gps Not Fixed'
+    -
+      value: gps_off
+      label: 'Gps Off'
+    -
+      value: grade
+      label: Grade
+    -
+      value: gradient
+      label: Gradient
+    -
+      value: grading
+      label: Grading
+    -
+      value: grain
+      label: Grain
+    -
+      value: graphic_eq
+      label: 'Graphic Eq'
+    -
+      value: grass
+      label: Grass
+    -
+      value: grid_3x3
+      label: 'Grid 3X3'
+    -
+      value: grid_4x4
+      label: 'Grid 4X4'
+    -
+      value: grid_goldenratio
+      label: 'Grid Goldenratio'
+    -
+      value: grid_off
+      label: 'Grid Off'
+    -
+      value: grid_on
+      label: 'Grid On'
+    -
+      value: grid_view
+      label: 'Grid View'
+    -
+      value: group
+      label: Group
+    -
+      value: group_add
+      label: 'Group Add'
+    -
+      value: group_off
+      label: 'Group Off'
+    -
+      value: group_remove
+      label: 'Group Remove'
+    -
+      value: group_work
+      label: 'Group Work'
+    -
+      value: grouped_bar_chart
+      label: 'Grouped Bar Chart'
+    -
+      value: groups
+      label: Groups
+    -
+      value: groups_2
+      label: 'Groups 2'
+    -
+      value: groups_3
+      label: 'Groups 3'
+    -
+      value: h_mobiledata
+      label: 'H Mobiledata'
+    -
+      value: h_plus_mobiledata
+      label: 'H Plus Mobiledata'
+    -
+      value: hail
+      label: Hail
+    -
+      value: hand_bones
+      label: 'Hand Bones'
+    -
+      value: hand_gesture
+      label: 'Hand Gesture'
+    -
+      value: handshake
+      label: Handshake
+    -
+      value: handyman
+      label: Handyman
+    -
+      value: hardware
+      label: Hardware
+    -
+      value: hd
+      label: Hd
+    -
+      value: hdr_auto
+      label: 'Hdr Auto'
+    -
+      value: hdr_auto_select
+      label: 'Hdr Auto Select'
+    -
+      value: hdr_enhanced_select
+      label: 'Hdr Enhanced Select'
+    -
+      value: hdr_off
+      label: 'Hdr Off'
+    -
+      value: hdr_off_select
+      label: 'Hdr Off Select'
+    -
+      value: hdr_on
+      label: 'Hdr On'
+    -
+      value: hdr_on_select
+      label: 'Hdr On Select'
+    -
+      value: hdr_plus
+      label: 'Hdr Plus'
+    -
+      value: hdr_strong
+      label: 'Hdr Strong'
+    -
+      value: hdr_weak
+      label: 'Hdr Weak'
+    -
+      value: headphones
+      label: Headphones
+    -
+      value: headphones_battery
+      label: 'Headphones Battery'
+    -
+      value: headset
+      label: Headset
+    -
+      value: headset_mic
+      label: 'Headset Mic'
+    -
+      value: headset_off
+      label: 'Headset Off'
+    -
+      value: healing
+      label: Healing
+    -
+      value: health_and_safety
+      label: 'Health And Safety'
+    -
+      value: hearing
+      label: Hearing
+    -
+      value: hearing_disabled
+      label: 'Hearing Disabled'
+    -
+      value: heart_broken
+      label: 'Heart Broken'
+    -
+      value: heart_minus
+      label: 'Heart Minus'
+    -
+      value: heart_plus
+      label: 'Heart Plus'
+    -
+      value: heat_pump
+      label: 'Heat Pump'
+    -
+      value: heat_pump_balance
+      label: 'Heat Pump Balance'
+    -
+      value: height
+      label: Height
+    -
+      value: help
+      label: Help
+    -
+      value: help_center
+      label: 'Help Center'
+    -
+      value: help_outline
+      label: 'Help Outline'
+    -
+      value: hevc
+      label: Hevc
+    -
+      value: hexagon
+      label: Hexagon
+    -
+      value: hide
+      label: Hide
+    -
+      value: hide_image
+      label: 'Hide Image'
+    -
+      value: hide_source
+      label: 'Hide Source'
+    -
+      value: high_quality
+      label: 'High Quality'
+    -
+      value: highlight
+      label: Highlight
+    -
+      value: highlight_alt
+      label: 'Highlight Alt'
+    -
+      value: highlight_off
+      label: 'Highlight Off'
+    -
+      value: hiking
+      label: Hiking
+    -
+      value: history
+      label: History
+    -
+      value: history_edu
+      label: 'History Edu'
+    -
+      value: history_toggle_off
+      label: 'History Toggle Off'
+    -
+      value: hive
+      label: Hive
+    -
+      value: hls
+      label: Hls
+    -
+      value: hls_off
+      label: 'Hls Off'
+    -
+      value: holiday_village
+      label: 'Holiday Village'
+    -
+      value: home
+      label: Home
+    -
+      value: home_app_logo
+      label: 'Home App Logo'
+    -
+      value: home_filled
+      label: 'Home Filled'
+    -
+      value: home_iot_device
+      label: 'Home Iot Device'
+    -
+      value: home_max
+      label: 'Home Max'
+    -
+      value: home_max_dots
+      label: 'Home Max Dots'
+    -
+      value: home_mini
+      label: 'Home Mini'
+    -
+      value: home_pin
+      label: 'Home Pin'
+    -
+      value: home_repair_service
+      label: 'Home Repair Service'
+    -
+      value: home_speaker
+      label: 'Home Speaker'
+    -
+      value: home_work
+      label: 'Home Work'
+    -
+      value: horizontal_distribute
+      label: 'Horizontal Distribute'
+    -
+      value: horizontal_rule
+      label: 'Horizontal Rule'
+    -
+      value: horizontal_split
+      label: 'Horizontal Split'
+    -
+      value: hot_tub
+      label: 'Hot Tub'
+    -
+      value: hotel
+      label: Hotel
+    -
+      value: hotel_class
+      label: 'Hotel Class'
+    -
+      value: hourglass_bottom
+      label: 'Hourglass Bottom'
+    -
+      value: hourglass_disabled
+      label: 'Hourglass Disabled'
+    -
+      value: hourglass_empty
+      label: 'Hourglass Empty'
+    -
+      value: hourglass_full
+      label: 'Hourglass Full'
+    -
+      value: hourglass_top
+      label: 'Hourglass Top'
+    -
+      value: house
+      label: House
+    -
+      value: house_siding
+      label: 'House Siding'
+    -
+      value: house_with_shield
+      label: 'House With Shield'
+    -
+      value: houseboat
+      label: Houseboat
+    -
+      value: how_to_reg
+      label: 'How To Reg'
+    -
+      value: how_to_vote
+      label: 'How To Vote'
+    -
+      value: html
+      label: Html
+    -
+      value: http
+      label: Http
+    -
+      value: https
+      label: Https
+    -
+      value: hub
+      label: Hub
+    -
+      value: humerus
+      label: Humerus
+    -
+      value: humerus_alt
+      label: 'Humerus Alt'
+    -
+      value: humidity_high
+      label: 'Humidity High'
+    -
+      value: humidity_low
+      label: 'Humidity Low'
+    -
+      value: humidity_mid
+      label: 'Humidity Mid'
+    -
+      value: hvac
+      label: Hvac
+    -
+      value: ice_skating
+      label: 'Ice Skating'
+    -
+      value: icecream
+      label: Icecream
+    -
+      value: image
+      label: Image
+    -
+      value: image_aspect_ratio
+      label: 'Image Aspect Ratio'
+    -
+      value: image_not_supported
+      label: 'Image Not Supported'
+    -
+      value: image_search
+      label: 'Image Search'
+    -
+      value: imagesearch_roller
+      label: 'Imagesearch Roller'
+    -
+      value: imagesmode
+      label: Imagesmode
+    -
+      value: import_contacts
+      label: 'Import Contacts'
+    -
+      value: import_export
+      label: 'Import Export'
+    -
+      value: important_devices
+      label: 'Important Devices'
+    -
+      value: in_home_mode
+      label: 'In Home Mode'
+    -
+      value: inbox
+      label: Inbox
+    -
+      value: incomplete_circle
+      label: 'Incomplete Circle'
+    -
+      value: indeterminate_check_box
+      label: 'Indeterminate Check Box'
+    -
+      value: info
+      label: Info
+    -
+      value: info_outline
+      label: 'Info Outline'
+    -
+      value: input
+      label: Input
+    -
+      value: insert_chart
+      label: 'Insert Chart'
+    -
+      value: insert_chart_outlined
+      label: 'Insert Chart Outlined'
+    -
+      value: insert_comment
+      label: 'Insert Comment'
+    -
+      value: insert_drive_file
+      label: 'Insert Drive File'
+    -
+      value: insert_emoticon
+      label: 'Insert Emoticon'
+    -
+      value: insert_invitation
+      label: 'Insert Invitation'
+    -
+      value: insert_link
+      label: 'Insert Link'
+    -
+      value: insert_page_break
+      label: 'Insert Page Break'
+    -
+      value: insert_photo
+      label: 'Insert Photo'
+    -
+      value: insights
+      label: Insights
+    -
+      value: install_desktop
+      label: 'Install Desktop'
+    -
+      value: install_mobile
+      label: 'Install Mobile'
+    -
+      value: integration_instructions
+      label: 'Integration Instructions'
+    -
+      value: interests
+      label: Interests
+    -
+      value: interpreter_mode
+      label: 'Interpreter Mode'
+    -
+      value: inventory
+      label: Inventory
+    -
+      value: inventory_2
+      label: 'Inventory 2'
+    -
+      value: invert_colors
+      label: 'Invert Colors'
+    -
+      value: invert_colors_off
+      label: 'Invert Colors Off'
+    -
+      value: ios_share
+      label: 'Ios Share'
+    -
+      value: iron
+      label: Iron
+    -
+      value: iso
+      label: Iso
+    -
+      value: javascript
+      label: Javascript
+    -
+      value: join_full
+      label: 'Join Full'
+    -
+      value: join_inner
+      label: 'Join Inner'
+    -
+      value: join_left
+      label: 'Join Left'
+    -
+      value: join_right
+      label: 'Join Right'
+    -
+      value: kayaking
+      label: Kayaking
+    -
+      value: kebab_dining
+      label: 'Kebab Dining'
+    -
+      value: kettle
+      label: Kettle
+    -
+      value: key
+      label: Key
+    -
+      value: key_off
+      label: 'Key Off'
+    -
+      value: key_visualizer
+      label: 'Key Visualizer'
+    -
+      value: keyboard
+      label: Keyboard
+    -
+      value: keyboard_alt
+      label: 'Keyboard Alt'
+    -
+      value: keyboard_arrow_down
+      label: 'Keyboard Arrow Down'
+    -
+      value: keyboard_arrow_left
+      label: 'Keyboard Arrow Left'
+    -
+      value: keyboard_arrow_right
+      label: 'Keyboard Arrow Right'
+    -
+      value: keyboard_arrow_up
+      label: 'Keyboard Arrow Up'
+    -
+      value: keyboard_backspace
+      label: 'Keyboard Backspace'
+    -
+      value: keyboard_capslock
+      label: 'Keyboard Capslock'
+    -
+      value: keyboard_command_key
+      label: 'Keyboard Command Key'
+    -
+      value: keyboard_control_key
+      label: 'Keyboard Control Key'
+    -
+      value: keyboard_double_arrow_down
+      label: 'Keyboard Double Arrow Down'
+    -
+      value: keyboard_double_arrow_left
+      label: 'Keyboard Double Arrow Left'
+    -
+      value: keyboard_double_arrow_right
+      label: 'Keyboard Double Arrow Right'
+    -
+      value: keyboard_double_arrow_up
+      label: 'Keyboard Double Arrow Up'
+    -
+      value: keyboard_hide
+      label: 'Keyboard Hide'
+    -
+      value: keyboard_option_key
+      label: 'Keyboard Option Key'
+    -
+      value: keyboard_return
+      label: 'Keyboard Return'
+    -
+      value: keyboard_tab
+      label: 'Keyboard Tab'
+    -
+      value: keyboard_voice
+      label: 'Keyboard Voice'
+    -
+      value: king_bed
+      label: 'King Bed'
+    -
+      value: kitchen
+      label: Kitchen
+    -
+      value: kitesurfing
+      label: Kitesurfing
+    -
+      value: kormo
+      label: Kormo
+    -
+      value: label
+      label: Label
+    -
+      value: label_important
+      label: 'Label Important'
+    -
+      value: label_important_outline
+      label: 'Label Important Outline'
+    -
+      value: label_off
+      label: 'Label Off'
+    -
+      value: lan
+      label: Lan
+    -
+      value: landscape
+      label: Landscape
+    -
+      value: landslide
+      label: Landslide
+    -
+      value: language
+      label: Language
+    -
+      value: laptop
+      label: Laptop
+    -
+      value: laptop_chromebook
+      label: 'Laptop Chromebook'
+    -
+      value: laptop_mac
+      label: 'Laptop Mac'
+    -
+      value: laptop_windows
+      label: 'Laptop Windows'
+    -
+      value: last_page
+      label: 'Last Page'
+    -
+      value: launch
+      label: Launch
+    -
+      value: laundry
+      label: Laundry
+    -
+      value: layers
+      label: Layers
+    -
+      value: layers_clear
+      label: 'Layers Clear'
+    -
+      value: leaderboard
+      label: Leaderboard
+    -
+      value: leak_add
+      label: 'Leak Add'
+    -
+      value: leak_remove
+      label: 'Leak Remove'
+    -
+      value: legend_toggle
+      label: 'Legend Toggle'
+    -
+      value: lens
+      label: Lens
+    -
+      value: lens_blur
+      label: 'Lens Blur'
+    -
+      value: library_add
+      label: 'Library Add'
+    -
+      value: library_add_check
+      label: 'Library Add Check'
+    -
+      value: library_books
+      label: 'Library Books'
+    -
+      value: library_music
+      label: 'Library Music'
+    -
+      value: lift_to_talk
+      label: 'Lift To Talk'
+    -
+      value: light
+      label: Light
+    -
+      value: light_group
+      label: 'Light Group'
+    -
+      value: light_mode
+      label: 'Light Mode'
+    -
+      value: lightbulb
+      label: Lightbulb
+    -
+      value: lightbulb_circle
+      label: 'Lightbulb Circle'
+    -
+      value: lightbulb_outline
+      label: 'Lightbulb Outline'
+    -
+      value: line_axis
+      label: 'Line Axis'
+    -
+      value: line_style
+      label: 'Line Style'
+    -
+      value: line_weight
+      label: 'Line Weight'
+    -
+      value: linear_scale
+      label: 'Linear Scale'
+    -
+      value: link
+      label: Link
+    -
+      value: link_off
+      label: 'Link Off'
+    -
+      value: linked_camera
+      label: 'Linked Camera'
+    -
+      value: liquor
+      label: Liquor
+    -
+      value: list
+      label: List
+    -
+      value: list_alt
+      label: 'List Alt'
+    -
+      value: live_help
+      label: 'Live Help'
+    -
+      value: live_tv
+      label: 'Live Tv'
+    -
+      value: living
+      label: Living
+    -
+      value: local_activity
+      label: 'Local Activity'
+    -
+      value: local_airport
+      label: 'Local Airport'
+    -
+      value: local_atm
+      label: 'Local Atm'
+    -
+      value: local_bar
+      label: 'Local Bar'
+    -
+      value: local_cafe
+      label: 'Local Cafe'
+    -
+      value: local_car_wash
+      label: 'Local Car Wash'
+    -
+      value: local_convenience_store
+      label: 'Local Convenience Store'
+    -
+      value: local_dining
+      label: 'Local Dining'
+    -
+      value: local_drink
+      label: 'Local Drink'
+    -
+      value: local_fire_department
+      label: 'Local Fire Department'
+    -
+      value: local_florist
+      label: 'Local Florist'
+    -
+      value: local_gas_station
+      label: 'Local Gas Station'
+    -
+      value: local_grocery_store
+      label: 'Local Grocery Store'
+    -
+      value: local_hospital
+      label: 'Local Hospital'
+    -
+      value: local_hotel
+      label: 'Local Hotel'
+    -
+      value: local_laundry_service
+      label: 'Local Laundry Service'
+    -
+      value: local_library
+      label: 'Local Library'
+    -
+      value: local_mall
+      label: 'Local Mall'
+    -
+      value: local_movies
+      label: 'Local Movies'
+    -
+      value: local_offer
+      label: 'Local Offer'
+    -
+      value: local_parking
+      label: 'Local Parking'
+    -
+      value: local_pharmacy
+      label: 'Local Pharmacy'
+    -
+      value: local_phone
+      label: 'Local Phone'
+    -
+      value: local_pizza
+      label: 'Local Pizza'
+    -
+      value: local_play
+      label: 'Local Play'
+    -
+      value: local_police
+      label: 'Local Police'
+    -
+      value: local_post_office
+      label: 'Local Post Office'
+    -
+      value: local_printshop
+      label: 'Local Printshop'
+    -
+      value: local_see
+      label: 'Local See'
+    -
+      value: local_shipping
+      label: 'Local Shipping'
+    -
+      value: local_taxi
+      label: 'Local Taxi'
+    -
+      value: location_automation
+      label: 'Location Automation'
+    -
+      value: location_away
+      label: 'Location Away'
+    -
+      value: location_city
+      label: 'Location City'
+    -
+      value: location_disabled
+      label: 'Location Disabled'
+    -
+      value: location_home
+      label: 'Location Home'
+    -
+      value: location_off
+      label: 'Location Off'
+    -
+      value: location_on
+      label: 'Location On'
+    -
+      value: location_pin
+      label: 'Location Pin'
+    -
+      value: location_searching
+      label: 'Location Searching'
+    -
+      value: lock
+      label: Lock
+    -
+      value: lock_clock
+      label: 'Lock Clock'
+    -
+      value: lock_open
+      label: 'Lock Open'
+    -
+      value: lock_outline
+      label: 'Lock Outline'
+    -
+      value: lock_person
+      label: 'Lock Person'
+    -
+      value: lock_reset
+      label: 'Lock Reset'
+    -
+      value: login
+      label: Login
+    -
+      value: logo_dev
+      label: 'Logo Dev'
+    -
+      value: logout
+      label: Logout
+    -
+      value: looks
+      label: Looks
+    -
+      value: looks_3
+      label: 'Looks 3'
+    -
+      value: looks_4
+      label: 'Looks 4'
+    -
+      value: looks_5
+      label: 'Looks 5'
+    -
+      value: looks_6
+      label: 'Looks 6'
+    -
+      value: looks_one
+      label: 'Looks One'
+    -
+      value: looks_two
+      label: 'Looks Two'
+    -
+      value: loop
+      label: Loop
+    -
+      value: loupe
+      label: Loupe
+    -
+      value: low_priority
+      label: 'Low Priority'
+    -
+      value: loyalty
+      label: Loyalty
+    -
+      value: lte_mobiledata
+      label: 'Lte Mobiledata'
+    -
+      value: lte_plus_mobiledata
+      label: 'Lte Plus Mobiledata'
+    -
+      value: luggage
+      label: Luggage
+    -
+      value: lunch_dining
+      label: 'Lunch Dining'
+    -
+      value: lyrics
+      label: Lyrics
+    -
+      value: machine_image
+      label: 'Machine Image'
+    -
+      value: macro_off
+      label: 'Macro Off'
+    -
+      value: magic_button
+      label: 'Magic Button'
+    -
+      value: mail
+      label: Mail
+    -
+      value: mail_lock
+      label: 'Mail Lock'
+    -
+      value: mail_outline
+      label: 'Mail Outline'
+    -
+      value: male
+      label: Male
+    -
+      value: man
+      label: Man
+    -
+      value: man_2
+      label: 'Man 2'
+    -
+      value: man_3
+      label: 'Man 3'
+    -
+      value: man_4
+      label: 'Man 4'
+    -
+      value: manage_accounts
+      label: 'Manage Accounts'
+    -
+      value: manage_history
+      label: 'Manage History'
+    -
+      value: manage_search
+      label: 'Manage Search'
+    -
+      value: map
+      label: Map
+    -
+      value: maps_home_work
+      label: 'Maps Home Work'
+    -
+      value: maps_ugc
+      label: 'Maps Ugc'
+    -
+      value: margin
+      label: Margin
+    -
+      value: mark_as_unread
+      label: 'Mark As Unread'
+    -
+      value: mark_chat_read
+      label: 'Mark Chat Read'
+    -
+      value: mark_chat_unread
+      label: 'Mark Chat Unread'
+    -
+      value: mark_email_read
+      label: 'Mark Email Read'
+    -
+      value: mark_email_unread
+      label: 'Mark Email Unread'
+    -
+      value: mark_unread_chat_alt
+      label: 'Mark Unread Chat Alt'
+    -
+      value: markunread
+      label: Markunread
+    -
+      value: markunread_mailbox
+      label: 'Markunread Mailbox'
+    -
+      value: masks
+      label: Masks
+    -
+      value: matter
+      label: Matter
+    -
+      value: maximize
+      label: Maximize
+    -
+      value: media_bluetooth_off
+      label: 'Media Bluetooth Off'
+    -
+      value: media_bluetooth_on
+      label: 'Media Bluetooth On'
+    -
+      value: mediation
+      label: Mediation
+    -
+      value: medical_information
+      label: 'Medical Information'
+    -
+      value: medical_services
+      label: 'Medical Services'
+    -
+      value: medication
+      label: Medication
+    -
+      value: medication_liquid
+      label: 'Medication Liquid'
+    -
+      value: meeting_room
+      label: 'Meeting Room'
+    -
+      value: memory
+      label: Memory
+    -
+      value: menu
+      label: Menu
+    -
+      value: menu_book
+      label: 'Menu Book'
+    -
+      value: menu_open
+      label: 'Menu Open'
+    -
+      value: merge
+      label: Merge
+    -
+      value: merge_type
+      label: 'Merge Type'
+    -
+      value: message
+      label: Message
+    -
+      value: mfg_nest_yale_lock
+      label: 'Mfg Nest Yale Lock'
+    -
+      value: mic
+      label: Mic
+    -
+      value: mic_external_off
+      label: 'Mic External Off'
+    -
+      value: mic_external_on
+      label: 'Mic External On'
+    -
+      value: mic_none
+      label: 'Mic None'
+    -
+      value: mic_off
+      label: 'Mic Off'
+    -
+      value: microwave
+      label: Microwave
+    -
+      value: microwave_gen
+      label: 'Microwave Gen'
+    -
+      value: military_tech
+      label: 'Military Tech'
+    -
+      value: minimize
+      label: Minimize
+    -
+      value: minor_crash
+      label: 'Minor Crash'
+    -
+      value: miscellaneous_services
+      label: 'Miscellaneous Services'
+    -
+      value: missed_video_call
+      label: 'Missed Video Call'
+    -
+      value: mms
+      label: Mms
+    -
+      value: mobile_friendly
+      label: 'Mobile Friendly'
+    -
+      value: mobile_off
+      label: 'Mobile Off'
+    -
+      value: mobile_screen_share
+      label: 'Mobile Screen Share'
+    -
+      value: mobiledata_off
+      label: 'Mobiledata Off'
+    -
+      value: mode
+      label: Mode
+    -
+      value: mode_comment
+      label: 'Mode Comment'
+    -
+      value: mode_cool
+      label: 'Mode Cool'
+    -
+      value: mode_cool_off
+      label: 'Mode Cool Off'
+    -
+      value: mode_edit
+      label: 'Mode Edit'
+    -
+      value: mode_edit_outline
+      label: 'Mode Edit Outline'
+    -
+      value: mode_fan
+      label: 'Mode Fan'
+    -
+      value: mode_fan_off
+      label: 'Mode Fan Off'
+    -
+      value: mode_heat
+      label: 'Mode Heat'
+    -
+      value: mode_heat_cool
+      label: 'Mode Heat Cool'
+    -
+      value: mode_heat_off
+      label: 'Mode Heat Off'
+    -
+      value: mode_night
+      label: 'Mode Night'
+    -
+      value: mode_of_travel
+      label: 'Mode Of Travel'
+    -
+      value: mode_off_on
+      label: 'Mode Off On'
+    -
+      value: mode_standby
+      label: 'Mode Standby'
+    -
+      value: model_training
+      label: 'Model Training'
+    -
+      value: monetization_on
+      label: 'Monetization On'
+    -
+      value: money
+      label: Money
+    -
+      value: money_off
+      label: 'Money Off'
+    -
+      value: money_off_csred
+      label: 'Money Off Csred'
+    -
+      value: monitor
+      label: Monitor
+    -
+      value: monitor_heart
+      label: 'Monitor Heart'
+    -
+      value: monitor_weight
+      label: 'Monitor Weight'
+    -
+      value: monitoring
+      label: Monitoring
+    -
+      value: monochrome_photos
+      label: 'Monochrome Photos'
+    -
+      value: mood
+      label: Mood
+    -
+      value: mood_bad
+      label: 'Mood Bad'
+    -
+      value: mop
+      label: Mop
+    -
+      value: moped
+      label: Moped
+    -
+      value: more
+      label: More
+    -
+      value: more_down
+      label: 'More Down'
+    -
+      value: more_horiz
+      label: 'More Horiz'
+    -
+      value: more_time
+      label: 'More Time'
+    -
+      value: more_up
+      label: 'More Up'
+    -
+      value: more_vert
+      label: 'More Vert'
+    -
+      value: mosque
+      label: Mosque
+    -
+      value: motion_blur
+      label: 'Motion Blur'
+    -
+      value: motion_photos_auto
+      label: 'Motion Photos Auto'
+    -
+      value: motion_photos_off
+      label: 'Motion Photos Off'
+    -
+      value: motion_photos_on
+      label: 'Motion Photos On'
+    -
+      value: motion_photos_pause
+      label: 'Motion Photos Pause'
+    -
+      value: motion_photos_paused
+      label: 'Motion Photos Paused'
+    -
+      value: motion_sense
+      label: 'Motion Sense'
+    -
+      value: motion_sensor_active
+      label: 'Motion Sensor Active'
+    -
+      value: motion_sensor_alert
+      label: 'Motion Sensor Alert'
+    -
+      value: motion_sensor_idle
+      label: 'Motion Sensor Idle'
+    -
+      value: motion_sensor_urgent
+      label: 'Motion Sensor Urgent'
+    -
+      value: motorcycle
+      label: Motorcycle
+    -
+      value: mouse
+      label: Mouse
+    -
+      value: move_down
+      label: 'Move Down'
+    -
+      value: move_to_inbox
+      label: 'Move To Inbox'
+    -
+      value: move_up
+      label: 'Move Up'
+    -
+      value: movie
+      label: Movie
+    -
+      value: movie_creation
+      label: 'Movie Creation'
+    -
+      value: movie_filter
+      label: 'Movie Filter'
+    -
+      value: moving
+      label: Moving
+    -
+      value: mp
+      label: Mp
+    -
+      value: multicooker
+      label: Multicooker
+    -
+      value: multiline_chart
+      label: 'Multiline Chart'
+    -
+      value: multiple_stop
+      label: 'Multiple Stop'
+    -
+      value: museum
+      label: Museum
+    -
+      value: music_note
+      label: 'Music Note'
+    -
+      value: music_off
+      label: 'Music Off'
+    -
+      value: music_video
+      label: 'Music Video'
+    -
+      value: my_location
+      label: 'My Location'
+    -
+      value: nat
+      label: Nat
+    -
+      value: nature
+      label: Nature
+    -
+      value: nature_people
+      label: 'Nature People'
+    -
+      value: navigate_before
+      label: 'Navigate Before'
+    -
+      value: navigate_next
+      label: 'Navigate Next'
+    -
+      value: navigation
+      label: Navigation
+    -
+      value: near_me
+      label: 'Near Me'
+    -
+      value: near_me_disabled
+      label: 'Near Me Disabled'
+    -
+      value: nearby_error
+      label: 'Nearby Error'
+    -
+      value: nearby_off
+      label: 'Nearby Off'
+    -
+      value: nearby_share
+      label: 'Nearby Share'
+    -
+      value: nest_audio
+      label: 'Nest Audio'
+    -
+      value: nest_cam_floodlight
+      label: 'Nest Cam Floodlight'
+    -
+      value: nest_cam_indoor
+      label: 'Nest Cam Indoor'
+    -
+      value: nest_cam_iq
+      label: 'Nest Cam Iq'
+    -
+      value: nest_cam_iq_outdoor
+      label: 'Nest Cam Iq Outdoor'
+    -
+      value: nest_cam_magnet_mount
+      label: 'Nest Cam Magnet Mount'
+    -
+      value: nest_cam_outdoor
+      label: 'Nest Cam Outdoor'
+    -
+      value: nest_cam_stand
+      label: 'Nest Cam Stand'
+    -
+      value: nest_cam_wall_mount
+      label: 'Nest Cam Wall Mount'
+    -
+      value: nest_cam_wired_stand
+      label: 'Nest Cam Wired Stand'
+    -
+      value: nest_clock_farsight_analog
+      label: 'Nest Clock Farsight Analog'
+    -
+      value: nest_clock_farsight_digital
+      label: 'Nest Clock Farsight Digital'
+    -
+      value: nest_connect
+      label: 'Nest Connect'
+    -
+      value: nest_detect
+      label: 'Nest Detect'
+    -
+      value: nest_display
+      label: 'Nest Display'
+    -
+      value: nest_display_max
+      label: 'Nest Display Max'
+    -
+      value: nest_doorbell_visitor
+      label: 'Nest Doorbell Visitor'
+    -
+      value: nest_eco
+      label: 'Nest Eco'
+    -
+      value: nest_eco_leaf
+      label: 'Nest Eco Leaf'
+    -
+      value: nest_farsight_weather
+      label: 'Nest Farsight Weather'
+    -
+      value: nest_found_savings
+      label: 'Nest Found Savings'
+    -
+      value: nest_heat_link_e
+      label: 'Nest Heat Link E'
+    -
+      value: nest_heat_link_gen_3
+      label: 'Nest Heat Link Gen 3'
+    -
+      value: nest_hello_doorbell
+      label: 'Nest Hello Doorbell'
+    -
+      value: nest_locator_tag
+      label: 'Nest Locator Tag'
+    -
+      value: nest_mini
+      label: 'Nest Mini'
+    -
+      value: nest_multi_room
+      label: 'Nest Multi Room'
+    -
+      value: nest_remote
+      label: 'Nest Remote'
+    -
+      value: nest_remote_comfort_sensor
+      label: 'Nest Remote Comfort Sensor'
+    -
+      value: nest_secure_alarm
+      label: 'Nest Secure Alarm'
+    -
+      value: nest_sunblock
+      label: 'Nest Sunblock'
+    -
+      value: nest_tag
+      label: 'Nest Tag'
+    -
+      value: nest_thermostat_e_eu
+      label: 'Nest Thermostat E Eu'
+    -
+      value: nest_thermostat_gen_3
+      label: 'Nest Thermostat Gen 3'
+    -
+      value: nest_thermostat_sensor
+      label: 'Nest Thermostat Sensor'
+    -
+      value: nest_thermostat_sensor_eu
+      label: 'Nest Thermostat Sensor Eu'
+    -
+      value: nest_thermostat_zirconium_eu
+      label: 'Nest Thermostat Zirconium Eu'
+    -
+      value: nest_true_radiant
+      label: 'Nest True Radiant'
+    -
+      value: nest_wake_on_approach
+      label: 'Nest Wake On Approach'
+    -
+      value: nest_wake_on_press
+      label: 'Nest Wake On Press'
+    -
+      value: nest_wifi_gale
+      label: 'Nest Wifi Gale'
+    -
+      value: nest_wifi_mistral
+      label: 'Nest Wifi Mistral'
+    -
+      value: nest_wifi_point
+      label: 'Nest Wifi Point'
+    -
+      value: nest_wifi_point_vento
+      label: 'Nest Wifi Point Vento'
+    -
+      value: nest_wifi_router
+      label: 'Nest Wifi Router'
+    -
+      value: network_cell
+      label: 'Network Cell'
+    -
+      value: network_check
+      label: 'Network Check'
+    -
+      value: network_locked
+      label: 'Network Locked'
+    -
+      value: network_ping
+      label: 'Network Ping'
+    -
+      value: network_wifi
+      label: 'Network Wifi'
+    -
+      value: network_wifi_1_bar
+      label: 'Network Wifi 1 Bar'
+    -
+      value: network_wifi_2_bar
+      label: 'Network Wifi 2 Bar'
+    -
+      value: network_wifi_3_bar
+      label: 'Network Wifi 3 Bar'
+    -
+      value: new_label
+      label: 'New Label'
+    -
+      value: new_releases
+      label: 'New Releases'
+    -
+      value: newspaper
+      label: Newspaper
+    -
+      value: next_plan
+      label: 'Next Plan'
+    -
+      value: next_week
+      label: 'Next Week'
+    -
+      value: nfc
+      label: Nfc
+    -
+      value: night_shelter
+      label: 'Night Shelter'
+    -
+      value: night_sight_auto
+      label: 'Night Sight Auto'
+    -
+      value: night_sight_auto_off
+      label: 'Night Sight Auto Off'
+    -
+      value: nightlife
+      label: Nightlife
+    -
+      value: nightlight
+      label: Nightlight
+    -
+      value: nightlight_round
+      label: 'Nightlight Round'
+    -
+      value: nights_stay
+      label: 'Nights Stay'
+    -
+      value: no_accounts
+      label: 'No Accounts'
+    -
+      value: no_adult_content
+      label: 'No Adult Content'
+    -
+      value: no_backpack
+      label: 'No Backpack'
+    -
+      value: no_cell
+      label: 'No Cell'
+    -
+      value: no_crash
+      label: 'No Crash'
+    -
+      value: no_drinks
+      label: 'No Drinks'
+    -
+      value: no_encryption
+      label: 'No Encryption'
+    -
+      value: no_encryption_gmailerrorred
+      label: 'No Encryption Gmailerrorred'
+    -
+      value: no_flash
+      label: 'No Flash'
+    -
+      value: no_food
+      label: 'No Food'
+    -
+      value: no_luggage
+      label: 'No Luggage'
+    -
+      value: no_meals
+      label: 'No Meals'
+    -
+      value: no_meals_ouline
+      label: 'No Meals Ouline'
+    -
+      value: no_meeting_room
+      label: 'No Meeting Room'
+    -
+      value: no_photography
+      label: 'No Photography'
+    -
+      value: no_sim
+      label: 'No Sim'
+    -
+      value: no_stroller
+      label: 'No Stroller'
+    -
+      value: no_transfer
+      label: 'No Transfer'
+    -
+      value: noise_aware
+      label: 'Noise Aware'
+    -
+      value: noise_control_off
+      label: 'Noise Control Off'
+    -
+      value: noise_control_on
+      label: 'Noise Control On'
+    -
+      value: nordic_walking
+      label: 'Nordic Walking'
+    -
+      value: north
+      label: North
+    -
+      value: north_east
+      label: 'North East'
+    -
+      value: north_west
+      label: 'North West'
+    -
+      value: not_accessible
+      label: 'Not Accessible'
+    -
+      value: not_interested
+      label: 'Not Interested'
+    -
+      value: not_listed_location
+      label: 'Not Listed Location'
+    -
+      value: not_started
+      label: 'Not Started'
+    -
+      value: note
+      label: Note
+    -
+      value: note_add
+      label: 'Note Add'
+    -
+      value: note_alt
+      label: 'Note Alt'
+    -
+      value: notes
+      label: Notes
+    -
+      value: notification_add
+      label: 'Notification Add'
+    -
+      value: notification_important
+      label: 'Notification Important'
+    -
+      value: notifications
+      label: Notifications
+    -
+      value: notifications_active
+      label: 'Notifications Active'
+    -
+      value: notifications_none
+      label: 'Notifications None'
+    -
+      value: notifications_off
+      label: 'Notifications Off'
+    -
+      value: notifications_paused
+      label: 'Notifications Paused'
+    -
+      value: numbers
+      label: Numbers
+    -
+      value: offline_bolt
+      label: 'Offline Bolt'
+    -
+      value: offline_pin
+      label: 'Offline Pin'
+    -
+      value: offline_share
+      label: 'Offline Share'
+    -
+      value: oil_barrel
+      label: 'Oil Barrel'
+    -
+      value: on_device_training
+      label: 'On Device Training'
+    -
+      value: ondemand_video
+      label: 'Ondemand Video'
+    -
+      value: online_prediction
+      label: 'Online Prediction'
+    -
+      value: opacity
+      label: Opacity
+    -
+      value: open_in_browser
+      label: 'Open In Browser'
+    -
+      value: open_in_full
+      label: 'Open In Full'
+    -
+      value: open_in_new
+      label: 'Open In New'
+    -
+      value: open_in_new_off
+      label: 'Open In New Off'
+    -
+      value: open_with
+      label: 'Open With'
+    -
+      value: orthopedics
+      label: Orthopedics
+    -
+      value: other_houses
+      label: 'Other Houses'
+    -
+      value: outbound
+      label: Outbound
+    -
+      value: outbox
+      label: Outbox
+    -
+      value: outdoor_garden
+      label: 'Outdoor Garden'
+    -
+      value: outdoor_grill
+      label: 'Outdoor Grill'
+    -
+      value: outgoing_mail
+      label: 'Outgoing Mail'
+    -
+      value: outlet
+      label: Outlet
+    -
+      value: outlined_flag
+      label: 'Outlined Flag'
+    -
+      value: output
+      label: Output
+    -
+      value: oven_gen
+      label: 'Oven Gen'
+    -
+      value: package
+      label: Package
+    -
+      value: packet_mirroring
+      label: 'Packet Mirroring'
+    -
+      value: padding
+      label: Padding
+    -
+      value: pages
+      label: Pages
+    -
+      value: pageview
+      label: Pageview
+    -
+      value: paid
+      label: Paid
+    -
+      value: palette
+      label: Palette
+    -
+      value: pan_tool
+      label: 'Pan Tool'
+    -
+      value: pan_tool_alt
+      label: 'Pan Tool Alt'
+    -
+      value: panorama
+      label: Panorama
+    -
+      value: panorama_fish_eye
+      label: 'Panorama Fish Eye'
+    -
+      value: panorama_horizontal
+      label: 'Panorama Horizontal'
+    -
+      value: panorama_horizontal_select
+      label: 'Panorama Horizontal Select'
+    -
+      value: panorama_photosphere
+      label: 'Panorama Photosphere'
+    -
+      value: panorama_photosphere_select
+      label: 'Panorama Photosphere Select'
+    -
+      value: panorama_vertical
+      label: 'Panorama Vertical'
+    -
+      value: panorama_vertical_select
+      label: 'Panorama Vertical Select'
+    -
+      value: panorama_wide_angle
+      label: 'Panorama Wide Angle'
+    -
+      value: panorama_wide_angle_select
+      label: 'Panorama Wide Angle Select'
+    -
+      value: paragliding
+      label: Paragliding
+    -
+      value: park
+      label: Park
+    -
+      value: partly_cloudy_day
+      label: 'Partly Cloudy Day'
+    -
+      value: partly_cloudy_night
+      label: 'Partly Cloudy Night'
+    -
+      value: party_mode
+      label: 'Party Mode'
+    -
+      value: password
+      label: Password
+    -
+      value: pattern
+      label: Pattern
+    -
+      value: pause
+      label: Pause
+    -
+      value: pause_circle
+      label: 'Pause Circle'
+    -
+      value: pause_circle_filled
+      label: 'Pause Circle Filled'
+    -
+      value: pause_circle_outline
+      label: 'Pause Circle Outline'
+    -
+      value: pause_presentation
+      label: 'Pause Presentation'
+    -
+      value: payment
+      label: Payment
+    -
+      value: payments
+      label: Payments
+    -
+      value: pedal_bike
+      label: 'Pedal Bike'
+    -
+      value: pending
+      label: Pending
+    -
+      value: pending_actions
+      label: 'Pending Actions'
+    -
+      value: pentagon
+      label: Pentagon
+    -
+      value: people
+      label: People
+    -
+      value: people_alt
+      label: 'People Alt'
+    -
+      value: people_outline
+      label: 'People Outline'
+    -
+      value: percent
+      label: Percent
+    -
+      value: pergola
+      label: Pergola
+    -
+      value: perm_camera_mic
+      label: 'Perm Camera Mic'
+    -
+      value: perm_contact_calendar
+      label: 'Perm Contact Calendar'
+    -
+      value: perm_data_setting
+      label: 'Perm Data Setting'
+    -
+      value: perm_device_information
+      label: 'Perm Device Information'
+    -
+      value: perm_identity
+      label: 'Perm Identity'
+    -
+      value: perm_media
+      label: 'Perm Media'
+    -
+      value: perm_phone_msg
+      label: 'Perm Phone Msg'
+    -
+      value: perm_scan_wifi
+      label: 'Perm Scan Wifi'
+    -
+      value: person
+      label: Person
+    -
+      value: person_2
+      label: 'Person 2'
+    -
+      value: person_3
+      label: 'Person 3'
+    -
+      value: person_4
+      label: 'Person 4'
+    -
+      value: person_add
+      label: 'Person Add'
+    -
+      value: person_add_alt
+      label: 'Person Add Alt'
+    -
+      value: person_add_alt_1
+      label: 'Person Add Alt 1'
+    -
+      value: person_add_disabled
+      label: 'Person Add Disabled'
+    -
+      value: person_filled
+      label: 'Person Filled'
+    -
+      value: person_off
+      label: 'Person Off'
+    -
+      value: person_outline
+      label: 'Person Outline'
+    -
+      value: person_pin
+      label: 'Person Pin'
+    -
+      value: person_pin_circle
+      label: 'Person Pin Circle'
+    -
+      value: person_remove
+      label: 'Person Remove'
+    -
+      value: person_remove_alt_1
+      label: 'Person Remove Alt 1'
+    -
+      value: person_search
+      label: 'Person Search'
+    -
+      value: personal_injury
+      label: 'Personal Injury'
+    -
+      value: personal_video
+      label: 'Personal Video'
+    -
+      value: pest_control
+      label: 'Pest Control'
+    -
+      value: pest_control_rodent
+      label: 'Pest Control Rodent'
+    -
+      value: pets
+      label: Pets
+    -
+      value: phishing
+      label: Phishing
+    -
+      value: phone
+      label: Phone
+    -
+      value: phone_android
+      label: 'Phone Android'
+    -
+      value: phone_bluetooth_speaker
+      label: 'Phone Bluetooth Speaker'
+    -
+      value: phone_callback
+      label: 'Phone Callback'
+    -
+      value: phone_disabled
+      label: 'Phone Disabled'
+    -
+      value: phone_enabled
+      label: 'Phone Enabled'
+    -
+      value: phone_forwarded
+      label: 'Phone Forwarded'
+    -
+      value: phone_in_talk
+      label: 'Phone In Talk'
+    -
+      value: phone_iphone
+      label: 'Phone Iphone'
+    -
+      value: phone_locked
+      label: 'Phone Locked'
+    -
+      value: phone_missed
+      label: 'Phone Missed'
+    -
+      value: phone_paused
+      label: 'Phone Paused'
+    -
+      value: phonelink
+      label: Phonelink
+    -
+      value: phonelink_erase
+      label: 'Phonelink Erase'
+    -
+      value: phonelink_lock
+      label: 'Phonelink Lock'
+    -
+      value: phonelink_off
+      label: 'Phonelink Off'
+    -
+      value: phonelink_ring
+      label: 'Phonelink Ring'
+    -
+      value: phonelink_setup
+      label: 'Phonelink Setup'
+    -
+      value: photo
+      label: Photo
+    -
+      value: photo_album
+      label: 'Photo Album'
+    -
+      value: photo_camera
+      label: 'Photo Camera'
+    -
+      value: photo_camera_back
+      label: 'Photo Camera Back'
+    -
+      value: photo_camera_front
+      label: 'Photo Camera Front'
+    -
+      value: photo_filter
+      label: 'Photo Filter'
+    -
+      value: photo_frame
+      label: 'Photo Frame'
+    -
+      value: photo_library
+      label: 'Photo Library'
+    -
+      value: photo_size_select_actual
+      label: 'Photo Size Select Actual'
+    -
+      value: photo_size_select_large
+      label: 'Photo Size Select Large'
+    -
+      value: photo_size_select_small
+      label: 'Photo Size Select Small'
+    -
+      value: php
+      label: Php
+    -
+      value: piano
+      label: Piano
+    -
+      value: piano_off
+      label: 'Piano Off'
+    -
+      value: picture_as_pdf
+      label: 'Picture As Pdf'
+    -
+      value: picture_in_picture
+      label: 'Picture In Picture'
+    -
+      value: picture_in_picture_alt
+      label: 'Picture In Picture Alt'
+    -
+      value: pie_chart
+      label: 'Pie Chart'
+    -
+      value: pie_chart_outline
+      label: 'Pie Chart Outline'
+    -
+      value: pie_chart_outlined
+      label: 'Pie Chart Outlined'
+    -
+      value: pin
+      label: Pin
+    -
+      value: pin_drop
+      label: 'Pin Drop'
+    -
+      value: pin_end
+      label: 'Pin End'
+    -
+      value: pin_invoke
+      label: 'Pin Invoke'
+    -
+      value: pinch
+      label: Pinch
+    -
+      value: pinch_zoom_in
+      label: 'Pinch Zoom In'
+    -
+      value: pinch_zoom_out
+      label: 'Pinch Zoom Out'
+    -
+      value: pivot_table_chart
+      label: 'Pivot Table Chart'
+    -
+      value: pix
+      label: Pix
+    -
+      value: place
+      label: Place
+    -
+      value: place_item
+      label: 'Place Item'
+    -
+      value: plagiarism
+      label: Plagiarism
+    -
+      value: play_arrow
+      label: 'Play Arrow'
+    -
+      value: play_circle
+      label: 'Play Circle'
+    -
+      value: play_circle_filled
+      label: 'Play Circle Filled'
+    -
+      value: play_circle_outline
+      label: 'Play Circle Outline'
+    -
+      value: play_disabled
+      label: 'Play Disabled'
+    -
+      value: play_for_work
+      label: 'Play For Work'
+    -
+      value: play_lesson
+      label: 'Play Lesson'
+    -
+      value: play_pause
+      label: 'Play Pause'
+    -
+      value: playlist_add
+      label: 'Playlist Add'
+    -
+      value: playlist_add_check
+      label: 'Playlist Add Check'
+    -
+      value: playlist_add_check_circle
+      label: 'Playlist Add Check Circle'
+    -
+      value: playlist_add_circle
+      label: 'Playlist Add Circle'
+    -
+      value: playlist_play
+      label: 'Playlist Play'
+    -
+      value: playlist_remove
+      label: 'Playlist Remove'
+    -
+      value: plumbing
+      label: Plumbing
+    -
+      value: plus_one
+      label: 'Plus One'
+    -
+      value: podcasts
+      label: Podcasts
+    -
+      value: point_of_sale
+      label: 'Point Of Sale'
+    -
+      value: policy
+      label: Policy
+    -
+      value: poll
+      label: Poll
+    -
+      value: polyline
+      label: Polyline
+    -
+      value: polymer
+      label: Polymer
+    -
+      value: pool
+      label: Pool
+    -
+      value: portable_wifi_off
+      label: 'Portable Wifi Off'
+    -
+      value: portrait
+      label: Portrait
+    -
+      value: post_add
+      label: 'Post Add'
+    -
+      value: potted_plant
+      label: 'Potted Plant'
+    -
+      value: power
+      label: Power
+    -
+      value: power_input
+      label: 'Power Input'
+    -
+      value: power_off
+      label: 'Power Off'
+    -
+      value: power_rounded
+      label: 'Power Rounded'
+    -
+      value: power_settings_new
+      label: 'Power Settings New'
+    -
+      value: precision_manufacturing
+      label: 'Precision Manufacturing'
+    -
+      value: pregnant_woman
+      label: 'Pregnant Woman'
+    -
+      value: present_to_all
+      label: 'Present To All'
+    -
+      value: preview
+      label: Preview
+    -
+      value: price_change
+      label: 'Price Change'
+    -
+      value: price_check
+      label: 'Price Check'
+    -
+      value: print
+      label: Print
+    -
+      value: print_disabled
+      label: 'Print Disabled'
+    -
+      value: priority
+      label: Priority
+    -
+      value: priority_high
+      label: 'Priority High'
+    -
+      value: privacy
+      label: Privacy
+    -
+      value: privacy_tip
+      label: 'Privacy Tip'
+    -
+      value: private_connectivity
+      label: 'Private Connectivity'
+    -
+      value: production_quantity_limits
+      label: 'Production Quantity Limits'
+    -
+      value: productivity
+      label: Productivity
+    -
+      value: propane
+      label: Propane
+    -
+      value: propane_tank
+      label: 'Propane Tank'
+    -
+      value: psychology
+      label: Psychology
+    -
+      value: psychology_alt
+      label: 'Psychology Alt'
+    -
+      value: public
+      label: Public
+    -
+      value: public_off
+      label: 'Public Off'
+    -
+      value: publish
+      label: Publish
+    -
+      value: published_with_changes
+      label: 'Published With Changes'
+    -
+      value: punch_clock
+      label: 'Punch Clock'
+    -
+      value: push_pin
+      label: 'Push Pin'
+    -
+      value: qr_code
+      label: 'Qr Code'
+    -
+      value: qr_code_2
+      label: 'Qr Code 2'
+    -
+      value: qr_code_scanner
+      label: 'Qr Code Scanner'
+    -
+      value: query_builder
+      label: 'Query Builder'
+    -
+      value: query_stats
+      label: 'Query Stats'
+    -
+      value: question_answer
+      label: 'Question Answer'
+    -
+      value: question_mark
+      label: 'Question Mark'
+    -
+      value: queue
+      label: Queue
+    -
+      value: queue_music
+      label: 'Queue Music'
+    -
+      value: queue_play_next
+      label: 'Queue Play Next'
+    -
+      value: quick_phrases
+      label: 'Quick Phrases'
+    -
+      value: quickreply
+      label: Quickreply
+    -
+      value: quiet_time
+      label: 'Quiet Time'
+    -
+      value: quiet_time_active
+      label: 'Quiet Time Active'
+    -
+      value: quiz
+      label: Quiz
+    -
+      value: r_mobiledata
+      label: 'R Mobiledata'
+    -
+      value: radar
+      label: Radar
+    -
+      value: radio
+      label: Radio
+    -
+      value: radio_button_checked
+      label: 'Radio Button Checked'
+    -
+      value: radio_button_unchecked
+      label: 'Radio Button Unchecked'
+    -
+      value: radiology
+      label: Radiology
+    -
+      value: railway_alert
+      label: 'Railway Alert'
+    -
+      value: rainy
+      label: Rainy
+    -
+      value: ramen_dining
+      label: 'Ramen Dining'
+    -
+      value: ramp_left
+      label: 'Ramp Left'
+    -
+      value: ramp_right
+      label: 'Ramp Right'
+    -
+      value: range_hood
+      label: 'Range Hood'
+    -
+      value: rate_review
+      label: 'Rate Review'
+    -
+      value: raw_off
+      label: 'Raw Off'
+    -
+      value: raw_on
+      label: 'Raw On'
+    -
+      value: read_more
+      label: 'Read More'
+    -
+      value: real_estate_agent
+      label: 'Real Estate Agent'
+    -
+      value: receipt
+      label: Receipt
+    -
+      value: receipt_long
+      label: 'Receipt Long'
+    -
+      value: recent_actors
+      label: 'Recent Actors'
+    -
+      value: recommend
+      label: Recommend
+    -
+      value: record_voice_over
+      label: 'Record Voice Over'
+    -
+      value: rectangle
+      label: Rectangle
+    -
+      value: recycling
+      label: Recycling
+    -
+      value: redeem
+      label: Redeem
+    -
+      value: redo
+      label: Redo
+    -
+      value: reduce_capacity
+      label: 'Reduce Capacity'
+    -
+      value: refresh
+      label: Refresh
+    -
+      value: remember_me
+      label: 'Remember Me'
+    -
+      value: remote_gen
+      label: 'Remote Gen'
+    -
+      value: remove
+      label: Remove
+    -
+      value: remove_circle
+      label: 'Remove Circle'
+    -
+      value: remove_circle_outline
+      label: 'Remove Circle Outline'
+    -
+      value: remove_done
+      label: 'Remove Done'
+    -
+      value: remove_from_queue
+      label: 'Remove From Queue'
+    -
+      value: remove_moderator
+      label: 'Remove Moderator'
+    -
+      value: remove_red_eye
+      label: 'Remove Red Eye'
+    -
+      value: remove_road
+      label: 'Remove Road'
+    -
+      value: remove_shopping_cart
+      label: 'Remove Shopping Cart'
+    -
+      value: reorder
+      label: Reorder
+    -
+      value: repartition
+      label: Repartition
+    -
+      value: repeat
+      label: Repeat
+    -
+      value: repeat_on
+      label: 'Repeat On'
+    -
+      value: repeat_one
+      label: 'Repeat One'
+    -
+      value: repeat_one_on
+      label: 'Repeat One On'
+    -
+      value: replay
+      label: Replay
+    -
+      value: replay_10
+      label: 'Replay 10'
+    -
+      value: replay_30
+      label: 'Replay 30'
+    -
+      value: replay_5
+      label: 'Replay 5'
+    -
+      value: replay_circle_filled
+      label: 'Replay Circle Filled'
+    -
+      value: reply
+      label: Reply
+    -
+      value: reply_all
+      label: 'Reply All'
+    -
+      value: report
+      label: Report
+    -
+      value: report_gmailerrorred
+      label: 'Report Gmailerrorred'
+    -
+      value: report_off
+      label: 'Report Off'
+    -
+      value: report_problem
+      label: 'Report Problem'
+    -
+      value: request_page
+      label: 'Request Page'
+    -
+      value: request_quote
+      label: 'Request Quote'
+    -
+      value: reset_tv
+      label: 'Reset Tv'
+    -
+      value: restart_alt
+      label: 'Restart Alt'
+    -
+      value: restaurant
+      label: Restaurant
+    -
+      value: restaurant_menu
+      label: 'Restaurant Menu'
+    -
+      value: restore
+      label: Restore
+    -
+      value: restore_from_trash
+      label: 'Restore From Trash'
+    -
+      value: restore_page
+      label: 'Restore Page'
+    -
+      value: retention
+      label: Retention
+    -
+      value: reviews
+      label: Reviews
+    -
+      value: rheumatology
+      label: Rheumatology
+    -
+      value: rib_cage
+      label: 'Rib Cage'
+    -
+      value: rice_bowl
+      label: 'Rice Bowl'
+    -
+      value: ring_volume
+      label: 'Ring Volume'
+    -
+      value: rocket
+      label: Rocket
+    -
+      value: rocket_launch
+      label: 'Rocket Launch'
+    -
+      value: roller_shades
+      label: 'Roller Shades'
+    -
+      value: roller_shades_closed
+      label: 'Roller Shades Closed'
+    -
+      value: roller_skating
+      label: 'Roller Skating'
+    -
+      value: roofing
+      label: Roofing
+    -
+      value: room
+      label: Room
+    -
+      value: room_preferences
+      label: 'Room Preferences'
+    -
+      value: room_service
+      label: 'Room Service'
+    -
+      value: rotate_90_degrees_ccw
+      label: 'Rotate 90 Degrees Ccw'
+    -
+      value: rotate_90_degrees_cw
+      label: 'Rotate 90 Degrees Cw'
+    -
+      value: rotate_left
+      label: 'Rotate Left'
+    -
+      value: rotate_right
+      label: 'Rotate Right'
+    -
+      value: roundabout_left
+      label: 'Roundabout Left'
+    -
+      value: roundabout_right
+      label: 'Roundabout Right'
+    -
+      value: rounded_corner
+      label: 'Rounded Corner'
+    -
+      value: route
+      label: Route
+    -
+      value: router
+      label: Router
+    -
+      value: routine
+      label: Routine
+    -
+      value: rowing
+      label: Rowing
+    -
+      value: rss_feed
+      label: 'Rss Feed'
+    -
+      value: rsvp
+      label: Rsvp
+    -
+      value: rtt
+      label: Rtt
+    -
+      value: rule
+      label: Rule
+    -
+      value: rule_folder
+      label: 'Rule Folder'
+    -
+      value: run_circle
+      label: 'Run Circle'
+    -
+      value: running_with_errors
+      label: 'Running With Errors'
+    -
+      value: rv_hookup
+      label: 'Rv Hookup'
+    -
+      value: safety_check
+      label: 'Safety Check'
+    -
+      value: safety_divider
+      label: 'Safety Divider'
+    -
+      value: sailing
+      label: Sailing
+    -
+      value: sanitizer
+      label: Sanitizer
+    -
+      value: satellite
+      label: Satellite
+    -
+      value: satellite_alt
+      label: 'Satellite Alt'
+    -
+      value: save
+      label: Save
+    -
+      value: save_alt
+      label: 'Save Alt'
+    -
+      value: save_as
+      label: 'Save As'
+    -
+      value: saved_search
+      label: 'Saved Search'
+    -
+      value: savings
+      label: Savings
+    -
+      value: scale
+      label: Scale
+    -
+      value: scanner
+      label: Scanner
+    -
+      value: scatter_plot
+      label: 'Scatter Plot'
+    -
+      value: scene
+      label: Scene
+    -
+      value: schedule
+      label: Schedule
+    -
+      value: schedule_send
+      label: 'Schedule Send'
+    -
+      value: schema
+      label: Schema
+    -
+      value: school
+      label: School
+    -
+      value: science
+      label: Science
+    -
+      value: score
+      label: Score
+    -
+      value: scoreboard
+      label: Scoreboard
+    -
+      value: screen_attention
+      label: 'Screen Attention'
+    -
+      value: screen_attention_off
+      label: 'Screen Attention Off'
+    -
+      value: screen_lock_landscape
+      label: 'Screen Lock Landscape'
+    -
+      value: screen_lock_portrait
+      label: 'Screen Lock Portrait'
+    -
+      value: screen_lock_rotation
+      label: 'Screen Lock Rotation'
+    -
+      value: screen_rotation
+      label: 'Screen Rotation'
+    -
+      value: screen_rotation_alt
+      label: 'Screen Rotation Alt'
+    -
+      value: screen_search_desktop
+      label: 'Screen Search Desktop'
+    -
+      value: screen_share
+      label: 'Screen Share'
+    -
+      value: screenshot
+      label: Screenshot
+    -
+      value: screenshot_monitor
+      label: 'Screenshot Monitor'
+    -
+      value: scuba_diving
+      label: 'Scuba Diving'
+    -
+      value: sd
+      label: Sd
+    -
+      value: sd_card
+      label: 'Sd Card'
+    -
+      value: sd_card_alert
+      label: 'Sd Card Alert'
+    -
+      value: sd_storage
+      label: 'Sd Storage'
+    -
+      value: search
+      label: Search
+    -
+      value: search_off
+      label: 'Search Off'
+    -
+      value: security
+      label: Security
+    -
+      value: security_pro_monitoring
+      label: 'Security Pro Monitoring'
+    -
+      value: security_update
+      label: 'Security Update'
+    -
+      value: security_update_good
+      label: 'Security Update Good'
+    -
+      value: security_update_warning
+      label: 'Security Update Warning'
+    -
+      value: segment
+      label: Segment
+    -
+      value: select_all
+      label: 'Select All'
+    -
+      value: select_check_box
+      label: 'Select Check Box'
+    -
+      value: self_improvement
+      label: 'Self Improvement'
+    -
+      value: sell
+      label: Sell
+    -
+      value: send
+      label: Send
+    -
+      value: send_and_archive
+      label: 'Send And Archive'
+    -
+      value: send_time_extension
+      label: 'Send Time Extension'
+    -
+      value: send_to_mobile
+      label: 'Send To Mobile'
+    -
+      value: sensor_door
+      label: 'Sensor Door'
+    -
+      value: sensor_occupied
+      label: 'Sensor Occupied'
+    -
+      value: sensor_window
+      label: 'Sensor Window'
+    -
+      value: sensors
+      label: Sensors
+    -
+      value: sensors_off
+      label: 'Sensors Off'
+    -
+      value: sentiment_dissatisfied
+      label: 'Sentiment Dissatisfied'
+    -
+      value: sentiment_extremely_dissatisfied
+      label: 'Sentiment Extremely Dissatisfied'
+    -
+      value: sentiment_neutral
+      label: 'Sentiment Neutral'
+    -
+      value: sentiment_satisfied
+      label: 'Sentiment Satisfied'
+    -
+      value: sentiment_satisfied_alt
+      label: 'Sentiment Satisfied Alt'
+    -
+      value: sentiment_very_dissatisfied
+      label: 'Sentiment Very Dissatisfied'
+    -
+      value: sentiment_very_satisfied
+      label: 'Sentiment Very Satisfied'
+    -
+      value: service_directory
+      label: 'Service Directory'
+    -
+      value: set_meal
+      label: 'Set Meal'
+    -
+      value: settings
+      label: Settings
+    -
+      value: settings_accessibility
+      label: 'Settings Accessibility'
+    -
+      value: settings_alert
+      label: 'Settings Alert'
+    -
+      value: settings_applications
+      label: 'Settings Applications'
+    -
+      value: settings_backup_restore
+      label: 'Settings Backup Restore'
+    -
+      value: settings_bluetooth
+      label: 'Settings Bluetooth'
+    -
+      value: settings_brightness
+      label: 'Settings Brightness'
+    -
+      value: settings_cell
+      label: 'Settings Cell'
+    -
+      value: settings_ethernet
+      label: 'Settings Ethernet'
+    -
+      value: settings_input_antenna
+      label: 'Settings Input Antenna'
+    -
+      value: settings_input_component
+      label: 'Settings Input Component'
+    -
+      value: settings_input_composite
+      label: 'Settings Input Composite'
+    -
+      value: settings_input_hdmi
+      label: 'Settings Input Hdmi'
+    -
+      value: settings_input_svideo
+      label: 'Settings Input Svideo'
+    -
+      value: settings_overscan
+      label: 'Settings Overscan'
+    -
+      value: settings_phone
+      label: 'Settings Phone'
+    -
+      value: settings_power
+      label: 'Settings Power'
+    -
+      value: settings_remote
+      label: 'Settings Remote'
+    -
+      value: settings_suggest
+      label: 'Settings Suggest'
+    -
+      value: settings_system_daydream
+      label: 'Settings System Daydream'
+    -
+      value: settings_voice
+      label: 'Settings Voice'
+    -
+      value: settop_component
+      label: 'Settop Component'
+    -
+      value: severe_cold
+      label: 'Severe Cold'
+    -
+      value: shape_line
+      label: 'Shape Line'
+    -
+      value: share
+      label: Share
+    -
+      value: share_location
+      label: 'Share Location'
+    -
+      value: share_reviews
+      label: 'Share Reviews'
+    -
+      value: sheets_add_on
+      label: 'Sheets Add On'
+    -
+      value: sheets_apps_script
+      label: 'Sheets Apps Script'
+    -
+      value: shield
+      label: Shield
+    -
+      value: shield_moon
+      label: 'Shield Moon'
+    -
+      value: shield_with_heart
+      label: 'Shield With Heart'
+    -
+      value: shield_with_house
+      label: 'Shield With House'
+    -
+      value: shop
+      label: Shop
+    -
+      value: shop_2
+      label: 'Shop 2'
+    -
+      value: shop_two
+      label: 'Shop Two'
+    -
+      value: shopping_bag
+      label: 'Shopping Bag'
+    -
+      value: shopping_basket
+      label: 'Shopping Basket'
+    -
+      value: shopping_cart
+      label: 'Shopping Cart'
+    -
+      value: shopping_cart_checkout
+      label: 'Shopping Cart Checkout'
+    -
+      value: short_text
+      label: 'Short Text'
+    -
+      value: shortcut
+      label: Shortcut
+    -
+      value: show_chart
+      label: 'Show Chart'
+    -
+      value: shower
+      label: Shower
+    -
+      value: shuffle
+      label: Shuffle
+    -
+      value: shuffle_on
+      label: 'Shuffle On'
+    -
+      value: shutter_speed
+      label: 'Shutter Speed'
+    -
+      value: sick
+      label: Sick
+    -
+      value: sign_language
+      label: 'Sign Language'
+    -
+      value: signal_cellular_0_bar
+      label: 'Signal Cellular 0 Bar'
+    -
+      value: signal_cellular_1_bar
+      label: 'Signal Cellular 1 Bar'
+    -
+      value: signal_cellular_2_bar
+      label: 'Signal Cellular 2 Bar'
+    -
+      value: signal_cellular_3_bar
+      label: 'Signal Cellular 3 Bar'
+    -
+      value: signal_cellular_4_bar
+      label: 'Signal Cellular 4 Bar'
+    -
+      value: signal_cellular_alt
+      label: 'Signal Cellular Alt'
+    -
+      value: signal_cellular_alt_1_bar
+      label: 'Signal Cellular Alt 1 Bar'
+    -
+      value: signal_cellular_alt_2_bar
+      label: 'Signal Cellular Alt 2 Bar'
+    -
+      value: signal_cellular_connected_no_internet_0_bar
+      label: 'Signal Cellular Connected No Internet 0 Bar'
+    -
+      value: signal_cellular_connected_no_internet_1_bar
+      label: 'Signal Cellular Connected No Internet 1 Bar'
+    -
+      value: signal_cellular_connected_no_internet_2_bar
+      label: 'Signal Cellular Connected No Internet 2 Bar'
+    -
+      value: signal_cellular_connected_no_internet_3_bar
+      label: 'Signal Cellular Connected No Internet 3 Bar'
+    -
+      value: signal_cellular_connected_no_internet_4_bar
+      label: 'Signal Cellular Connected No Internet 4 Bar'
+    -
+      value: signal_cellular_no_sim
+      label: 'Signal Cellular No Sim'
+    -
+      value: signal_cellular_nodata
+      label: 'Signal Cellular Nodata'
+    -
+      value: signal_cellular_null
+      label: 'Signal Cellular Null'
+    -
+      value: signal_cellular_off
+      label: 'Signal Cellular Off'
+    -
+      value: signal_disconnected
+      label: 'Signal Disconnected'
+    -
+      value: signal_wifi_0_bar
+      label: 'Signal Wifi 0 Bar'
+    -
+      value: signal_wifi_1_bar
+      label: 'Signal Wifi 1 Bar'
+    -
+      value: signal_wifi_1_bar_lock
+      label: 'Signal Wifi 1 Bar Lock'
+    -
+      value: signal_wifi_2_bar
+      label: 'Signal Wifi 2 Bar'
+    -
+      value: signal_wifi_2_bar_lock
+      label: 'Signal Wifi 2 Bar Lock'
+    -
+      value: signal_wifi_3_bar
+      label: 'Signal Wifi 3 Bar'
+    -
+      value: signal_wifi_3_bar_lock
+      label: 'Signal Wifi 3 Bar Lock'
+    -
+      value: signal_wifi_4_bar
+      label: 'Signal Wifi 4 Bar'
+    -
+      value: signal_wifi_4_bar_lock
+      label: 'Signal Wifi 4 Bar Lock'
+    -
+      value: signal_wifi_bad
+      label: 'Signal Wifi Bad'
+    -
+      value: signal_wifi_connected_no_internet_0
+      label: 'Signal Wifi Connected No Internet 0'
+    -
+      value: signal_wifi_connected_no_internet_1
+      label: 'Signal Wifi Connected No Internet 1'
+    -
+      value: signal_wifi_connected_no_internet_2
+      label: 'Signal Wifi Connected No Internet 2'
+    -
+      value: signal_wifi_connected_no_internet_3
+      label: 'Signal Wifi Connected No Internet 3'
+    -
+      value: signal_wifi_connected_no_internet_4
+      label: 'Signal Wifi Connected No Internet 4'
+    -
+      value: signal_wifi_off
+      label: 'Signal Wifi Off'
+    -
+      value: signal_wifi_statusbar_1_bar
+      label: 'Signal Wifi Statusbar 1 Bar'
+    -
+      value: signal_wifi_statusbar_2_bar
+      label: 'Signal Wifi Statusbar 2 Bar'
+    -
+      value: signal_wifi_statusbar_3_bar
+      label: 'Signal Wifi Statusbar 3 Bar'
+    -
+      value: signal_wifi_statusbar_4_bar
+      label: 'Signal Wifi Statusbar 4 Bar'
+    -
+      value: signal_wifi_statusbar_connected_no_internet
+      label: 'Signal Wifi Statusbar Connected No Internet'
+    -
+      value: signal_wifi_statusbar_connected_no_internet_1
+      label: 'Signal Wifi Statusbar Connected No Internet 1'
+    -
+      value: signal_wifi_statusbar_connected_no_internet_2
+      label: 'Signal Wifi Statusbar Connected No Internet 2'
+    -
+      value: signal_wifi_statusbar_connected_no_internet_3
+      label: 'Signal Wifi Statusbar Connected No Internet 3'
+    -
+      value: signal_wifi_statusbar_connected_no_internet_4
+      label: 'Signal Wifi Statusbar Connected No Internet 4'
+    -
+      value: signal_wifi_statusbar_not_connected
+      label: 'Signal Wifi Statusbar Not Connected'
+    -
+      value: signal_wifi_statusbar_null
+      label: 'Signal Wifi Statusbar Null'
+    -
+      value: signpost
+      label: Signpost
+    -
+      value: sim_card
+      label: 'Sim Card'
+    -
+      value: sim_card_alert
+      label: 'Sim Card Alert'
+    -
+      value: sim_card_download
+      label: 'Sim Card Download'
+    -
+      value: single_bed
+      label: 'Single Bed'
+    -
+      value: sip
+      label: Sip
+    -
+      value: skateboarding
+      label: Skateboarding
+    -
+      value: skeleton
+      label: Skeleton
+    -
+      value: skip_next
+      label: 'Skip Next'
+    -
+      value: skip_previous
+      label: 'Skip Previous'
+    -
+      value: skull
+      label: Skull
+    -
+      value: sledding
+      label: Sledding
+    -
+      value: slides_add_on
+      label: 'Slides Add On'
+    -
+      value: slides_apps_script
+      label: 'Slides Apps Script'
+    -
+      value: slideshow
+      label: Slideshow
+    -
+      value: slow_motion_video
+      label: 'Slow Motion Video'
+    -
+      value: smart_button
+      label: 'Smart Button'
+    -
+      value: smart_display
+      label: 'Smart Display'
+    -
+      value: smart_outlet
+      label: 'Smart Outlet'
+    -
+      value: smart_screen
+      label: 'Smart Screen'
+    -
+      value: smart_toy
+      label: 'Smart Toy'
+    -
+      value: smartphone
+      label: Smartphone
+    -
+      value: smoke_free
+      label: 'Smoke Free'
+    -
+      value: smoking_rooms
+      label: 'Smoking Rooms'
+    -
+      value: sms
+      label: Sms
+    -
+      value: sms_failed
+      label: 'Sms Failed'
+    -
+      value: snippet_folder
+      label: 'Snippet Folder'
+    -
+      value: snooze
+      label: Snooze
+    -
+      value: snowboarding
+      label: Snowboarding
+    -
+      value: snowing
+      label: Snowing
+    -
+      value: snowmobile
+      label: Snowmobile
+    -
+      value: snowshoeing
+      label: Snowshoeing
+    -
+      value: soap
+      label: Soap
+    -
+      value: social_distance
+      label: 'Social Distance'
+    -
+      value: solar_power
+      label: 'Solar Power'
+    -
+      value: sort
+      label: Sort
+    -
+      value: sort_by_alpha
+      label: 'Sort By Alpha'
+    -
+      value: sos
+      label: Sos
+    -
+      value: sound_detection_dog_barking
+      label: 'Sound Detection Dog Barking'
+    -
+      value: sound_detection_glass_break
+      label: 'Sound Detection Glass Break'
+    -
+      value: sound_detection_loud_sound
+      label: 'Sound Detection Loud Sound'
+    -
+      value: sound_sensing
+      label: 'Sound Sensing'
+    -
+      value: soup_kitchen
+      label: 'Soup Kitchen'
+    -
+      value: source
+      label: Source
+    -
+      value: south
+      label: South
+    -
+      value: south_america
+      label: 'South America'
+    -
+      value: south_east
+      label: 'South East'
+    -
+      value: south_west
+      label: 'South West'
+    -
+      value: spa
+      label: Spa
+    -
+      value: space_bar
+      label: 'Space Bar'
+    -
+      value: space_dashboard
+      label: 'Space Dashboard'
+    -
+      value: spatial_audio
+      label: 'Spatial Audio'
+    -
+      value: spatial_audio_off
+      label: 'Spatial Audio Off'
+    -
+      value: spatial_tracking
+      label: 'Spatial Tracking'
+    -
+      value: speaker
+      label: Speaker
+    -
+      value: speaker_group
+      label: 'Speaker Group'
+    -
+      value: speaker_notes
+      label: 'Speaker Notes'
+    -
+      value: speaker_notes_off
+      label: 'Speaker Notes Off'
+    -
+      value: speaker_phone
+      label: 'Speaker Phone'
+    -
+      value: speech_to_text
+      label: 'Speech To Text'
+    -
+      value: speed
+      label: Speed
+    -
+      value: spellcheck
+      label: Spellcheck
+    -
+      value: splitscreen
+      label: Splitscreen
+    -
+      value: spoke
+      label: Spoke
+    -
+      value: sports
+      label: Sports
+    -
+      value: sports_bar
+      label: 'Sports Bar'
+    -
+      value: sports_baseball
+      label: 'Sports Baseball'
+    -
+      value: sports_basketball
+      label: 'Sports Basketball'
+    -
+      value: sports_cricket
+      label: 'Sports Cricket'
+    -
+      value: sports_esports
+      label: 'Sports Esports'
+    -
+      value: sports_football
+      label: 'Sports Football'
+    -
+      value: sports_golf
+      label: 'Sports Golf'
+    -
+      value: sports_gymnastics
+      label: 'Sports Gymnastics'
+    -
+      value: sports_handball
+      label: 'Sports Handball'
+    -
+      value: sports_hockey
+      label: 'Sports Hockey'
+    -
+      value: sports_kabaddi
+      label: 'Sports Kabaddi'
+    -
+      value: sports_martial_arts
+      label: 'Sports Martial Arts'
+    -
+      value: sports_mma
+      label: 'Sports Mma'
+    -
+      value: sports_motorsports
+      label: 'Sports Motorsports'
+    -
+      value: sports_rugby
+      label: 'Sports Rugby'
+    -
+      value: sports_score
+      label: 'Sports Score'
+    -
+      value: sports_soccer
+      label: 'Sports Soccer'
+    -
+      value: sports_tennis
+      label: 'Sports Tennis'
+    -
+      value: sports_volleyball
+      label: 'Sports Volleyball'
+    -
+      value: sprinkler
+      label: Sprinkler
+    -
+      value: square
+      label: Square
+    -
+      value: square_foot
+      label: 'Square Foot'
+    -
+      value: ssid_chart
+      label: 'Ssid Chart'
+    -
+      value: stabilization
+      label: Stabilization
+    -
+      value: stabilization_action
+      label: 'Stabilization Action'
+    -
+      value: stabilization_lock
+      label: 'Stabilization Lock'
+    -
+      value: stabilization_pan
+      label: 'Stabilization Pan'
+    -
+      value: stacked_bar_chart
+      label: 'Stacked Bar Chart'
+    -
+      value: stacked_line_chart
+      label: 'Stacked Line Chart'
+    -
+      value: stadia_controller
+      label: 'Stadia Controller'
+    -
+      value: stadium
+      label: Stadium
+    -
+      value: stairs
+      label: Stairs
+    -
+      value: star
+      label: Star
+    -
+      value: star_border
+      label: 'Star Border'
+    -
+      value: star_border_purple500
+      label: 'Star Border Purple500'
+    -
+      value: star_half
+      label: 'Star Half'
+    -
+      value: star_outline
+      label: 'Star Outline'
+    -
+      value: star_purple500
+      label: 'Star Purple500'
+    -
+      value: star_rate
+      label: 'Star Rate'
+    -
+      value: stars
+      label: Stars
+    -
+      value: start
+      label: Start
+    -
+      value: stateful
+      label: Stateful
+    -
+      value: stay_current_landscape
+      label: 'Stay Current Landscape'
+    -
+      value: stay_current_portrait
+      label: 'Stay Current Portrait'
+    -
+      value: stay_primary_landscape
+      label: 'Stay Primary Landscape'
+    -
+      value: stay_primary_portrait
+      label: 'Stay Primary Portrait'
+    -
+      value: sticky_note_2
+      label: 'Sticky Note 2'
+    -
+      value: stop
+      label: Stop
+    -
+      value: stop_circle
+      label: 'Stop Circle'
+    -
+      value: stop_screen_share
+      label: 'Stop Screen Share'
+    -
+      value: storage
+      label: Storage
+    -
+      value: store
+      label: Store
+    -
+      value: store_mall_directory
+      label: 'Store Mall Directory'
+    -
+      value: storefront
+      label: Storefront
+    -
+      value: storm
+      label: Storm
+    -
+      value: straight
+      label: Straight
+    -
+      value: straighten
+      label: Straighten
+    -
+      value: stream
+      label: Stream
+    -
+      value: streetview
+      label: Streetview
+    -
+      value: strikethrough_s
+      label: 'Strikethrough S'
+    -
+      value: stroller
+      label: Stroller
+    -
+      value: style
+      label: Style
+    -
+      value: styler
+      label: Styler
+    -
+      value: subdirectory_arrow_left
+      label: 'Subdirectory Arrow Left'
+    -
+      value: subdirectory_arrow_right
+      label: 'Subdirectory Arrow Right'
+    -
+      value: subject
+      label: Subject
+    -
+      value: subscript
+      label: Subscript
+    -
+      value: subscriptions
+      label: Subscriptions
+    -
+      value: subtitles
+      label: Subtitles
+    -
+      value: subtitles_off
+      label: 'Subtitles Off'
+    -
+      value: subway
+      label: Subway
+    -
+      value: summarize
+      label: Summarize
+    -
+      value: sunny
+      label: Sunny
+    -
+      value: sunny_snowing
+      label: 'Sunny Snowing'
+    -
+      value: superscript
+      label: Superscript
+    -
+      value: supervised_user_circle
+      label: 'Supervised User Circle'
+    -
+      value: supervisor_account
+      label: 'Supervisor Account'
+    -
+      value: support
+      label: Support
+    -
+      value: support_agent
+      label: 'Support Agent'
+    -
+      value: surfing
+      label: Surfing
+    -
+      value: surround_sound
+      label: 'Surround Sound'
+    -
+      value: swap_calls
+      label: 'Swap Calls'
+    -
+      value: swap_horiz
+      label: 'Swap Horiz'
+    -
+      value: swap_horizontal_circle
+      label: 'Swap Horizontal Circle'
+    -
+      value: swap_vert
+      label: 'Swap Vert'
+    -
+      value: swap_vertical_circle
+      label: 'Swap Vertical Circle'
+    -
+      value: swipe
+      label: Swipe
+    -
+      value: swipe_down
+      label: 'Swipe Down'
+    -
+      value: swipe_down_alt
+      label: 'Swipe Down Alt'
+    -
+      value: swipe_left
+      label: 'Swipe Left'
+    -
+      value: swipe_left_alt
+      label: 'Swipe Left Alt'
+    -
+      value: swipe_right
+      label: 'Swipe Right'
+    -
+      value: swipe_right_alt
+      label: 'Swipe Right Alt'
+    -
+      value: swipe_up
+      label: 'Swipe Up'
+    -
+      value: swipe_up_alt
+      label: 'Swipe Up Alt'
+    -
+      value: swipe_vertical
+      label: 'Swipe Vertical'
+    -
+      value: switch
+      label: Switch
+    -
+      value: switch_access_shortcut
+      label: 'Switch Access Shortcut'
+    -
+      value: switch_access_shortcut_add
+      label: 'Switch Access Shortcut Add'
+    -
+      value: switch_account
+      label: 'Switch Account'
+    -
+      value: switch_camera
+      label: 'Switch Camera'
+    -
+      value: switch_left
+      label: 'Switch Left'
+    -
+      value: switch_right
+      label: 'Switch Right'
+    -
+      value: switch_video
+      label: 'Switch Video'
+    -
+      value: swords
+      label: Swords
+    -
+      value: synagogue
+      label: Synagogue
+    -
+      value: sync
+      label: Sync
+    -
+      value: sync_alt
+      label: 'Sync Alt'
+    -
+      value: sync_disabled
+      label: 'Sync Disabled'
+    -
+      value: sync_lock
+      label: 'Sync Lock'
+    -
+      value: sync_problem
+      label: 'Sync Problem'
+    -
+      value: system_security_update
+      label: 'System Security Update'
+    -
+      value: system_security_update_good
+      label: 'System Security Update Good'
+    -
+      value: system_security_update_warning
+      label: 'System Security Update Warning'
+    -
+      value: system_update
+      label: 'System Update'
+    -
+      value: system_update_alt
+      label: 'System Update Alt'
+    -
+      value: tab
+      label: Tab
+    -
+      value: tab_unselected
+      label: 'Tab Unselected'
+    -
+      value: table
+      label: Table
+    -
+      value: table_bar
+      label: 'Table Bar'
+    -
+      value: table_chart
+      label: 'Table Chart'
+    -
+      value: table_restaurant
+      label: 'Table Restaurant'
+    -
+      value: table_rows
+      label: 'Table Rows'
+    -
+      value: table_view
+      label: 'Table View'
+    -
+      value: tablet
+      label: Tablet
+    -
+      value: tablet_android
+      label: 'Tablet Android'
+    -
+      value: tablet_mac
+      label: 'Tablet Mac'
+    -
+      value: tag
+      label: Tag
+    -
+      value: tag_faces
+      label: 'Tag Faces'
+    -
+      value: takeout_dining
+      label: 'Takeout Dining'
+    -
+      value: tamper_detection_off
+      label: 'Tamper Detection Off'
+    -
+      value: tamper_detection_on
+      label: 'Tamper Detection On'
+    -
+      value: tap_and_play
+      label: 'Tap And Play'
+    -
+      value: tapas
+      label: Tapas
+    -
+      value: task
+      label: Task
+    -
+      value: task_alt
+      label: 'Task Alt'
+    -
+      value: taxi_alert
+      label: 'Taxi Alert'
+    -
+      value: team_dashboard
+      label: 'Team Dashboard'
+    -
+      value: temp_preferences_custom
+      label: 'Temp Preferences Custom'
+    -
+      value: temp_preferences_eco
+      label: 'Temp Preferences Eco'
+    -
+      value: temple_buddhist
+      label: 'Temple Buddhist'
+    -
+      value: temple_hindu
+      label: 'Temple Hindu'
+    -
+      value: tenancy
+      label: Tenancy
+    -
+      value: terminal
+      label: Terminal
+    -
+      value: terrain
+      label: Terrain
+    -
+      value: text_decrease
+      label: 'Text Decrease'
+    -
+      value: text_fields
+      label: 'Text Fields'
+    -
+      value: text_format
+      label: 'Text Format'
+    -
+      value: text_increase
+      label: 'Text Increase'
+    -
+      value: text_rotate_up
+      label: 'Text Rotate Up'
+    -
+      value: text_rotate_vertical
+      label: 'Text Rotate Vertical'
+    -
+      value: text_rotation_angledown
+      label: 'Text Rotation Angledown'
+    -
+      value: text_rotation_angleup
+      label: 'Text Rotation Angleup'
+    -
+      value: text_rotation_down
+      label: 'Text Rotation Down'
+    -
+      value: text_rotation_none
+      label: 'Text Rotation None'
+    -
+      value: text_snippet
+      label: 'Text Snippet'
+    -
+      value: text_to_speech
+      label: 'Text To Speech'
+    -
+      value: textsms
+      label: Textsms
+    -
+      value: texture
+      label: Texture
+    -
+      value: theater_comedy
+      label: 'Theater Comedy'
+    -
+      value: theaters
+      label: Theaters
+    -
+      value: thermometer
+      label: Thermometer
+    -
+      value: thermostat
+      label: Thermostat
+    -
+      value: thermostat_auto
+      label: 'Thermostat Auto'
+    -
+      value: thermostat_carbon
+      label: 'Thermostat Carbon'
+    -
+      value: thumb_down
+      label: 'Thumb Down'
+    -
+      value: thumb_down_alt
+      label: 'Thumb Down Alt'
+    -
+      value: thumb_down_off
+      label: 'Thumb Down Off'
+    -
+      value: thumb_down_off_alt
+      label: 'Thumb Down Off Alt'
+    -
+      value: thumb_up
+      label: 'Thumb Up'
+    -
+      value: thumb_up_alt
+      label: 'Thumb Up Alt'
+    -
+      value: thumb_up_off
+      label: 'Thumb Up Off'
+    -
+      value: thumb_up_off_alt
+      label: 'Thumb Up Off Alt'
+    -
+      value: thumbs_up_down
+      label: 'Thumbs Up Down'
+    -
+      value: thunderstorm
+      label: Thunderstorm
+    -
+      value: tibia
+      label: Tibia
+    -
+      value: tibia_alt
+      label: 'Tibia Alt'
+    -
+      value: time_auto
+      label: 'Time Auto'
+    -
+      value: time_to_leave
+      label: 'Time To Leave'
+    -
+      value: timelapse
+      label: Timelapse
+    -
+      value: timeline
+      label: Timeline
+    -
+      value: timer
+      label: Timer
+    -
+      value: timer_10
+      label: 'Timer 10'
+    -
+      value: timer_10_alt_1
+      label: 'Timer 10 Alt 1'
+    -
+      value: timer_10_select
+      label: 'Timer 10 Select'
+    -
+      value: timer_3
+      label: 'Timer 3'
+    -
+      value: timer_3_alt_1
+      label: 'Timer 3 Alt 1'
+    -
+      value: timer_3_select
+      label: 'Timer 3 Select'
+    -
+      value: timer_off
+      label: 'Timer Off'
+    -
+      value: tips_and_updates
+      label: 'Tips And Updates'
+    -
+      value: tire_repair
+      label: 'Tire Repair'
+    -
+      value: title
+      label: Title
+    -
+      value: toc
+      label: Toc
+    -
+      value: today
+      label: Today
+    -
+      value: toggle_off
+      label: 'Toggle Off'
+    -
+      value: toggle_on
+      label: 'Toggle On'
+    -
+      value: token
+      label: Token
+    -
+      value: toll
+      label: Toll
+    -
+      value: tonality
+      label: Tonality
+    -
+      value: tools_flat_head
+      label: 'Tools Flat Head'
+    -
+      value: tools_installation_kit
+      label: 'Tools Installation Kit'
+    -
+      value: tools_ladder
+      label: 'Tools Ladder'
+    -
+      value: tools_level
+      label: 'Tools Level'
+    -
+      value: tools_phillips
+      label: 'Tools Phillips'
+    -
+      value: tools_pliers_wire_stripper
+      label: 'Tools Pliers Wire Stripper'
+    -
+      value: tools_power_drill
+      label: 'Tools Power Drill'
+    -
+      value: tools_wrench
+      label: 'Tools Wrench'
+    -
+      value: topic
+      label: Topic
+    -
+      value: tornado
+      label: Tornado
+    -
+      value: touch_app
+      label: 'Touch App'
+    -
+      value: tour
+      label: Tour
+    -
+      value: toys
+      label: Toys
+    -
+      value: toys_fan
+      label: 'Toys Fan'
+    -
+      value: track_changes
+      label: 'Track Changes'
+    -
+      value: traffic
+      label: Traffic
+    -
+      value: trail_length
+      label: 'Trail Length'
+    -
+      value: trail_length_medium
+      label: 'Trail Length Medium'
+    -
+      value: trail_length_short
+      label: 'Trail Length Short'
+    -
+      value: train
+      label: Train
+    -
+      value: tram
+      label: Tram
+    -
+      value: transcribe
+      label: Transcribe
+    -
+      value: transfer_within_a_station
+      label: 'Transfer Within A Station'
+    -
+      value: transform
+      label: Transform
+    -
+      value: transgender
+      label: Transgender
+    -
+      value: transit_enterexit
+      label: 'Transit Enterexit'
+    -
+      value: translate
+      label: Translate
+    -
+      value: transportation
+      label: Transportation
+    -
+      value: travel_explore
+      label: 'Travel Explore'
+    -
+      value: trending_down
+      label: 'Trending Down'
+    -
+      value: trending_flat
+      label: 'Trending Flat'
+    -
+      value: trending_up
+      label: 'Trending Up'
+    -
+      value: trip_origin
+      label: 'Trip Origin'
+    -
+      value: troubleshoot
+      label: Troubleshoot
+    -
+      value: try
+      label: Try
+    -
+      value: tsunami
+      label: Tsunami
+    -
+      value: tty
+      label: Tty
+    -
+      value: tune
+      label: Tune
+    -
+      value: tungsten
+      label: Tungsten
+    -
+      value: turn_left
+      label: 'Turn Left'
+    -
+      value: turn_right
+      label: 'Turn Right'
+    -
+      value: turn_sharp_left
+      label: 'Turn Sharp Left'
+    -
+      value: turn_sharp_right
+      label: 'Turn Sharp Right'
+    -
+      value: turn_slight_left
+      label: 'Turn Slight Left'
+    -
+      value: turn_slight_right
+      label: 'Turn Slight Right'
+    -
+      value: turned_in
+      label: 'Turned In'
+    -
+      value: turned_in_not
+      label: 'Turned In Not'
+    -
+      value: tv
+      label: Tv
+    -
+      value: tv_gen
+      label: 'Tv Gen'
+    -
+      value: tv_off
+      label: 'Tv Off'
+    -
+      value: tv_with_assistant
+      label: 'Tv With Assistant'
+    -
+      value: two_wheeler
+      label: 'Two Wheeler'
+    -
+      value: type_specimen
+      label: 'Type Specimen'
+    -
+      value: u_turn_left
+      label: 'U Turn Left'
+    -
+      value: u_turn_right
+      label: 'U Turn Right'
+    -
+      value: ulna_radius
+      label: 'Ulna Radius'
+    -
+      value: ulna_radius_alt
+      label: 'Ulna Radius Alt'
+    -
+      value: umbrella
+      label: Umbrella
+    -
+      value: unarchive
+      label: Unarchive
+    -
+      value: unblock_flipped
+      label: 'Unblock Flipped'
+    -
+      value: undo
+      label: Undo
+    -
+      value: unfold_less
+      label: 'Unfold Less'
+    -
+      value: unfold_less_double
+      label: 'Unfold Less Double'
+    -
+      value: unfold_more
+      label: 'Unfold More'
+    -
+      value: unfold_more_double
+      label: 'Unfold More Double'
+    -
+      value: unpin
+      label: Unpin
+    -
+      value: unpublished
+      label: Unpublished
+    -
+      value: unsubscribe
+      label: Unsubscribe
+    -
+      value: upcoming
+      label: Upcoming
+    -
+      value: update
+      label: Update
+    -
+      value: update_disabled
+      label: 'Update Disabled'
+    -
+      value: upgrade
+      label: Upgrade
+    -
+      value: upload
+      label: Upload
+    -
+      value: upload_file
+      label: 'Upload File'
+    -
+      value: usb
+      label: Usb
+    -
+      value: usb_off
+      label: 'Usb Off'
+    -
+      value: vaccines
+      label: Vaccines
+    -
+      value: valve
+      label: Valve
+    -
+      value: vape_free
+      label: 'Vape Free'
+    -
+      value: vaping_rooms
+      label: 'Vaping Rooms'
+    -
+      value: verified
+      label: Verified
+    -
+      value: verified_user
+      label: 'Verified User'
+    -
+      value: vertical_align_bottom
+      label: 'Vertical Align Bottom'
+    -
+      value: vertical_align_center
+      label: 'Vertical Align Center'
+    -
+      value: vertical_align_top
+      label: 'Vertical Align Top'
+    -
+      value: vertical_distribute
+      label: 'Vertical Distribute'
+    -
+      value: vertical_shades
+      label: 'Vertical Shades'
+    -
+      value: vertical_shades_closed
+      label: 'Vertical Shades Closed'
+    -
+      value: vertical_split
+      label: 'Vertical Split'
+    -
+      value: vibration
+      label: Vibration
+    -
+      value: video_audio_call
+      label: 'Video Audio Call'
+    -
+      value: video_call
+      label: 'Video Call'
+    -
+      value: video_camera_back
+      label: 'Video Camera Back'
+    -
+      value: video_camera_front
+      label: 'Video Camera Front'
+    -
+      value: video_chat
+      label: 'Video Chat'
+    -
+      value: video_file
+      label: 'Video File'
+    -
+      value: video_label
+      label: 'Video Label'
+    -
+      value: video_library
+      label: 'Video Library'
+    -
+      value: video_settings
+      label: 'Video Settings'
+    -
+      value: video_stable
+      label: 'Video Stable'
+    -
+      value: videocam
+      label: Videocam
+    -
+      value: videocam_off
+      label: 'Videocam Off'
+    -
+      value: videogame_asset
+      label: 'Videogame Asset'
+    -
+      value: videogame_asset_off
+      label: 'Videogame Asset Off'
+    -
+      value: view_agenda
+      label: 'View Agenda'
+    -
+      value: view_array
+      label: 'View Array'
+    -
+      value: view_carousel
+      label: 'View Carousel'
+    -
+      value: view_column
+      label: 'View Column'
+    -
+      value: view_comfy
+      label: 'View Comfy'
+    -
+      value: view_comfy_alt
+      label: 'View Comfy Alt'
+    -
+      value: view_compact
+      label: 'View Compact'
+    -
+      value: view_compact_alt
+      label: 'View Compact Alt'
+    -
+      value: view_cozy
+      label: 'View Cozy'
+    -
+      value: view_day
+      label: 'View Day'
+    -
+      value: view_headline
+      label: 'View Headline'
+    -
+      value: view_in_ar
+      label: 'View In Ar'
+    -
+      value: view_in_ar_new
+      label: 'View In Ar New'
+    -
+      value: view_kanban
+      label: 'View Kanban'
+    -
+      value: view_list
+      label: 'View List'
+    -
+      value: view_module
+      label: 'View Module'
+    -
+      value: view_quilt
+      label: 'View Quilt'
+    -
+      value: view_sidebar
+      label: 'View Sidebar'
+    -
+      value: view_stream
+      label: 'View Stream'
+    -
+      value: view_timeline
+      label: 'View Timeline'
+    -
+      value: view_week
+      label: 'View Week'
+    -
+      value: vignette
+      label: Vignette
+    -
+      value: villa
+      label: Villa
+    -
+      value: visibility
+      label: Visibility
+    -
+      value: visibility_off
+      label: 'Visibility Off'
+    -
+      value: voice_chat
+      label: 'Voice Chat'
+    -
+      value: voice_over_off
+      label: 'Voice Over Off'
+    -
+      value: voicemail
+      label: Voicemail
+    -
+      value: volcano
+      label: Volcano
+    -
+      value: volume_down
+      label: 'Volume Down'
+    -
+      value: volume_down_alt
+      label: 'Volume Down Alt'
+    -
+      value: volume_mute
+      label: 'Volume Mute'
+    -
+      value: volume_off
+      label: 'Volume Off'
+    -
+      value: volume_up
+      label: 'Volume Up'
+    -
+      value: volunteer_activism
+      label: 'Volunteer Activism'
+    -
+      value: vpn_googleone
+      label: 'Vpn Googleone'
+    -
+      value: vpn_key
+      label: 'Vpn Key'
+    -
+      value: vpn_key_off
+      label: 'Vpn Key Off'
+    -
+      value: vpn_lock
+      label: 'Vpn Lock'
+    -
+      value: vrpano
+      label: Vrpano
+    -
+      value: wallet
+      label: Wallet
+    -
+      value: wallpaper
+      label: Wallpaper
+    -
+      value: warehouse
+      label: Warehouse
+    -
+      value: warning
+      label: Warning
+    -
+      value: warning_amber
+      label: 'Warning Amber'
+    -
+      value: wash
+      label: Wash
+    -
+      value: watch
+      label: Watch
+    -
+      value: watch_later
+      label: 'Watch Later'
+    -
+      value: watch_off
+      label: 'Watch Off'
+    -
+      value: water
+      label: Water
+    -
+      value: water_damage
+      label: 'Water Damage'
+    -
+      value: water_drop
+      label: 'Water Drop'
+    -
+      value: water_heater
+      label: 'Water Heater'
+    -
+      value: waterfall_chart
+      label: 'Waterfall Chart'
+    -
+      value: waves
+      label: Waves
+    -
+      value: waving_hand
+      label: 'Waving Hand'
+    -
+      value: wb_auto
+      label: 'Wb Auto'
+    -
+      value: wb_cloudy
+      label: 'Wb Cloudy'
+    -
+      value: wb_incandescent
+      label: 'Wb Incandescent'
+    -
+      value: wb_iridescent
+      label: 'Wb Iridescent'
+    -
+      value: wb_shade
+      label: 'Wb Shade'
+    -
+      value: wb_sunny
+      label: 'Wb Sunny'
+    -
+      value: wb_twighlight
+      label: 'Wb Twighlight'
+    -
+      value: wb_twilight
+      label: 'Wb Twilight'
+    -
+      value: wc
+      label: Wc
+    -
+      value: weather_snowy
+      label: 'Weather Snowy'
+    -
+      value: web
+      label: Web
+    -
+      value: web_asset
+      label: 'Web Asset'
+    -
+      value: web_asset_off
+      label: 'Web Asset Off'
+    -
+      value: web_stories
+      label: 'Web Stories'
+    -
+      value: webhook
+      label: Webhook
+    -
+      value: weekend
+      label: Weekend
+    -
+      value: weight
+      label: Weight
+    -
+      value: west
+      label: West
+    -
+      value: whatsapp
+      label: Whatsapp
+    -
+      value: whatshot
+      label: Whatshot
+    -
+      value: wheelchair_pickup
+      label: 'Wheelchair Pickup'
+    -
+      value: where_to_vote
+      label: 'Where To Vote'
+    -
+      value: whiteboard
+      label: Whiteboard
+    -
+      value: widgets
+      label: Widgets
+    -
+      value: width_full
+      label: 'Width Full'
+    -
+      value: width_normal
+      label: 'Width Normal'
+    -
+      value: width_wide
+      label: 'Width Wide'
+    -
+      value: wifi
+      label: Wifi
+    -
+      value: wifi_1_bar
+      label: 'Wifi 1 Bar'
+    -
+      value: wifi_2_bar
+      label: 'Wifi 2 Bar'
+    -
+      value: wifi_calling
+      label: 'Wifi Calling'
+    -
+      value: wifi_calling_1
+      label: 'Wifi Calling 1'
+    -
+      value: wifi_calling_2
+      label: 'Wifi Calling 2'
+    -
+      value: wifi_calling_3
+      label: 'Wifi Calling 3'
+    -
+      value: wifi_channel
+      label: 'Wifi Channel'
+    -
+      value: wifi_find
+      label: 'Wifi Find'
+    -
+      value: wifi_lock
+      label: 'Wifi Lock'
+    -
+      value: wifi_off
+      label: 'Wifi Off'
+    -
+      value: wifi_password
+      label: 'Wifi Password'
+    -
+      value: wifi_protected_setup
+      label: 'Wifi Protected Setup'
+    -
+      value: wifi_tethering
+      label: 'Wifi Tethering'
+    -
+      value: wifi_tethering_error
+      label: 'Wifi Tethering Error'
+    -
+      value: wifi_tethering_off
+      label: 'Wifi Tethering Off'
+    -
+      value: wind_power
+      label: 'Wind Power'
+    -
+      value: window
+      label: Window
+    -
+      value: window_closed
+      label: 'Window Closed'
+    -
+      value: window_open
+      label: 'Window Open'
+    -
+      value: window_sensor
+      label: 'Window Sensor'
+    -
+      value: wine_bar
+      label: 'Wine Bar'
+    -
+      value: woman
+      label: Woman
+    -
+      value: woman_2
+      label: 'Woman 2'
+    -
+      value: work
+      label: Work
+    -
+      value: work_history
+      label: 'Work History'
+    -
+      value: work_off
+      label: 'Work Off'
+    -
+      value: work_outline
+      label: 'Work Outline'
+    -
+      value: workspace_premium
+      label: 'Workspace Premium'
+    -
+      value: workspaces
+      label: Workspaces
+    -
+      value: workspaces_filled
+      label: 'Workspaces Filled'
+    -
+      value: workspaces_outline
+      label: 'Workspaces Outline'
+    -
+      value: wrap_text
+      label: 'Wrap Text'
+    -
+      value: wrong_location
+      label: 'Wrong Location'
+    -
+      value: wysiwyg
+      label: Wysiwyg
+    -
+      value: yard
+      label: Yard
+    -
+      value: youtube_searched_for
+      label: 'Youtube Searched For'
+    -
+      value: zone_person_alert
+      label: 'Zone Person Alert'
+    -
+      value: zone_person_idle
+      label: 'Zone Person Idle'
+    -
+      value: zone_person_urgent
+      label: 'Zone Person Urgent'
+    -
+      value: zoom_in
+      label: 'Zoom In'
+    -
+      value: zoom_in_map
+      label: 'Zoom In Map'
+    -
+      value: zoom_out
+      label: 'Zoom Out'
+    -
+      value: zoom_out_map
+      label: 'Zoom Out Map'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

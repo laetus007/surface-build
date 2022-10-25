@@ -1,0 +1,31 @@
+uuid: 806bcd3d-0724-46bc-8601-25683ccf6845
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_tab.field_sf_title
+    - field.field.paragraph.sf_tab.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_tab
+  module:
+    - text
+id: paragraph.sf_tab.default
+targetEntityType: paragraph
+bundle: sf_tab
+mode: default
+content:
+  field_sf_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_wysiwyg:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

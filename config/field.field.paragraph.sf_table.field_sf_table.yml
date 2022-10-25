@@ -1,0 +1,49 @@
+uuid: 4d47dcc5-6225-402d-97c4-9966ff25f85c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_table
+    - paragraphs.paragraphs_type.sf_table
+  module:
+    - tablefield
+id: paragraph.sf_table.field_sf_table
+field_name: field_sf_table
+entity_type: paragraph
+bundle: sf_table
+label: Table
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    rebuild:
+      cols: '3'
+      rows: '3'
+    value:
+      0:
+        - ''
+        - ''
+        - ''
+      1:
+        - ''
+        - ''
+        - ''
+      2:
+        - ''
+        - ''
+        - ''
+      caption: ''
+    format: null
+    caption: ''
+default_value_callback: ''
+settings:
+  export: false
+  restrict_rebuild: true
+  restrict_import: true
+  lock_values: false
+  cell_processing: 1
+  empty_rules:
+    ignore_table_structure: false
+    ignore_table_header: false
+field_type: tablefield

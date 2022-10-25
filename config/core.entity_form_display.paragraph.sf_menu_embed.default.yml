@@ -1,0 +1,26 @@
+uuid: 37625c4c-e995-4f37-a9cc-4146b63c1dcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_menu_embed.field_sf_menu
+    - paragraphs.paragraphs_type.sf_menu_embed
+  module:
+    - block_field
+id: paragraph.sf_menu_embed.default
+targetEntityType: paragraph
+bundle: sf_menu_embed
+mode: default
+content:
+  field_sf_menu:
+    type: block_field_default
+    weight: 0
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

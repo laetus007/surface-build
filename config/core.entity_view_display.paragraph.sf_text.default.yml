@@ -1,0 +1,22 @@
+uuid: 17aa8d80-7a1e-4eea-8684-ac564b53cd36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_text.field_sf_wysiwyg
+    - paragraphs.paragraphs_type.sf_text
+  module:
+    - text
+id: paragraph.sf_text.default
+targetEntityType: paragraph
+bundle: sf_text
+mode: default
+content:
+  field_sf_wysiwyg:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

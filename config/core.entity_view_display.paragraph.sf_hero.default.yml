@@ -1,0 +1,65 @@
+uuid: 65325712-0b44-4709-a0e0-317ea8d066c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sf_hero.field_sf_image
+    - field.field.paragraph.sf_hero.field_sf_link
+    - field.field.paragraph.sf_hero.field_sf_subtitle
+    - field.field.paragraph.sf_hero.field_sf_title
+    - field.field.paragraph.sf_hero.field_sf_video
+    - paragraphs.paragraphs_type.sf_hero
+  module:
+    - link
+id: paragraph.sf_hero.default
+targetEntityType: paragraph
+bundle: sf_hero
+mode: default
+content:
+  field_sf_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_link:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_sf_subtitle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_sf_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sf_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

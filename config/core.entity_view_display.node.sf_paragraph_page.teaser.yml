@@ -1,0 +1,22 @@
+uuid: 1bbe0147-c2fe-4185-a52c-b2d141fa1c11
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sf_paragraph_page.field_sf_content
+    - node.type.sf_paragraph_page
+  module:
+    - user
+id: node.sf_paragraph_page.teaser
+targetEntityType: node
+bundle: sf_paragraph_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_sf_content: true

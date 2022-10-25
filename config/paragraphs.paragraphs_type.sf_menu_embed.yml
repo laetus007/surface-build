@@ -1,0 +1,20 @@
+uuid: aa201424-50ea-43ad-b7a0-665cc00168bd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:98939351-7549-477f-ae87-2129de9fff4e'
+  module:
+    - paragraphs_library
+    - style_options
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: sf_menu_embed
+label: 'Menu embed'
+icon_uuid: 98939351-7549-477f-ae87-2129de9fff4e
+icon_default: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDYuNjUgMzI0Ij48ZyBpZD0iTGF5ZXJfMS0yIj48cGF0aCBkPSJNMzMuNSwwQzE1Ljc1LDAsMS4yMiwxMy44MSwuMDcsMzEuMjdjLTEuMjksMTkuNjMsMTQuNTYsMzUuNzMsMzQuMjMsMzUuNzNINDEyLjM0YzE5LjY3LDAsMzUuNTItMTYuMSwzNC4yMy0zNS43My0xLjE1LTE3LjQ2LTE1LjY3LTMxLjI3LTMzLjQzLTMxLjI3SDMzLjVabTAsMTI5QzE1Ljc1LDEyOSwxLjIyLDE0Mi44MSwuMDcsMTYwLjI3Yy0xLjI5LDE5LjYzLDE0LjU2LDM1LjczLDM0LjIzLDM1LjczSDQxMi4zNGMxOS42NywwLDM1LjUyLTE2LjEsMzQuMjMtMzUuNzMtMS4xNS0xNy40Ni0xNS42Ny0zMS4yNy0zMy40My0zMS4yN0gzMy41Wm0wLDEyOGMtMTcuNzUsMC0zMi4yOCwxMy44MS0zMy40MywzMS4yNy0xLjI5LDE5LjYzLDE0LjU2LDM1LjczLDM0LjIzLDM1LjczSDQxMi4zNGMxOS42NywwLDM1LjUyLTE2LjEsMzQuMjMtMzUuNzMtMS4xNS0xNy40Ni0xNS42Ny0zMS4yNy0zMy40My0zMS4yN0gzMy41WiIvPjwvZz48L3N2Zz4='
+description: 'The menu embed component allows users to place a menu on the page.'
+behavior_plugins:
+  style_options:
+    enabled: true

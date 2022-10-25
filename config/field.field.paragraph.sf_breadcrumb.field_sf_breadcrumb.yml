@@ -1,0 +1,25 @@
+uuid: a8484017-a3ce-43ff-aa79-7dd6559ebfc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sf_breadcrumb
+    - paragraphs.paragraphs_type.sf_breadcrumb
+  module:
+    - block_field
+id: paragraph.sf_breadcrumb.field_sf_breadcrumb
+field_name: field_sf_breadcrumb
+entity_type: paragraph
+bundle: sf_breadcrumb
+label: Breadcrumb
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      system_breadcrumb_block: system_breadcrumb_block
+field_type: block_field

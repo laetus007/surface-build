@@ -1,0 +1,19 @@
+uuid: 3161a1a8-3e38-41a5-94ec-2f4fbeafa639
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_sf_teaser
+field_name: field_sf_teaser
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
