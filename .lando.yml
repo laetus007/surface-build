@@ -1,4 +1,4 @@
-name: surface
+name: surface-build
 recipe: drupal9
 config:
   php: 8.1
@@ -14,6 +14,8 @@ services:
         PHP_IDE_CONFIG: "serverName=appserver"
         XDEBUG_SESSION_START: lando
         SIMPLETEST_BASE_URL: "https://surface.lndo.site"
+    config:
+      php: .lando/php.ini
 tooling:
   xdebug-on:
     service: appserver
