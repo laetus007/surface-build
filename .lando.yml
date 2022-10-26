@@ -1,6 +1,7 @@
 name: surface
 recipe: drupal9
 config:
+  via: nginx
   php: 8.1
   webroot: web
   datasbase: mariadb
