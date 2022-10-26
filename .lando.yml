@@ -1,4 +1,4 @@
-name: surface-build
+name: surface
 recipe: drupal9
 config:
   php: 8.1
