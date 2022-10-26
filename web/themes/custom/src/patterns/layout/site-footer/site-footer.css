@@ -1,0 +1,24 @@
+/**
+ * @file
+ * Site Footer.
+ */
+
+.site-footer {
+  background: linear-gradient(180deg, var(--gray-9) 0%, var(--gray-8) 100%);
+  color: var(--gray-7);
+  position: relative;
+}
+
+.site-footer__inner {
+  padding-block: var(--size-4);
+
+  @media (min-width: 976px) {
+    .gin--vertical-toolbar & {
+      padding-inline-start: calc(var(--size-4) + 60px);
+    }
+  }
+
+  @media (--xl) {
+    padding-block: var(--size-8) calc(13 * var(--size-2));
+  }
+}

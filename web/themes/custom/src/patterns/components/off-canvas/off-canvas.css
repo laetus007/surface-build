@@ -1,0 +1,79 @@
+/**
+ * @file
+ * Settings tray specific styles.
+ */
+
+#drupal-off-canvas {
+  & .form-type-boolean {
+    line-height: var(--font-lineheight-2);
+    margin-inline-start: 0;
+
+    & input[type='checkbox'],
+    & input[type='radio'] {
+      float: none;
+      height: var(--size-105);
+      transform: none;
+      vertical-align: middle;
+      width: var(--size-105);
+    }
+
+    & .form-item__description {
+      margin-inline-start: 0;
+    }
+  }
+
+  /* Necessary for Safari. */
+  & .surface-details {
+    border-bottom: solid 1px rgba(255, 255, 255, 25%);
+    border-top: solid 1px rgba(255, 255, 255, 25%);
+    box-shadow: none;
+  }
+
+  & .surface-details__wrapper {
+    padding: 20px;
+  }
+
+  /* Necessary for Safari. */
+  & .surface-details__summary {
+    display: block;
+    list-style: initial;
+
+    &:focus {
+      outline: solid 1px rgba(255, 255, 255, 25%);
+    }
+
+    &::before {
+      content: none;
+    }
+
+    &::-webkit-details-marker {
+      display: inline-block;
+    }
+
+    /* Necessary for IE11. */
+    & .details-title::before {
+      content: none;
+    }
+
+    /* Necessary for Firefox. */
+    @supports (list-style-type: disclosure-closed) {
+      display: list-item;
+      list-style-position: inside;
+      list-style-type: disclosure-closed;
+    }
+  }
+
+  /* Necessary for Firefox. */
+  & .surface-details[open] .surface-details__summary {
+    @supports (list-style-type: disclosure-open) {
+      list-style-type: disclosure-open;
+    }
+  }
+
+  /* Necessary for Safari. */
+  & div {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+  }
+}

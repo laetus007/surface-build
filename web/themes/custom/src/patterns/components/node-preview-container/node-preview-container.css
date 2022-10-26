@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Node preview container styling.
+ */
+
+.node-preview-container {
+  background: white;
+  height: 60px;
+  padding-block: 0;
+  padding-inline: 0;
+  position: fixed;
+
+  .gin--horizontal-toolbar & {
+    top: 53px;
+  }
+
+  .node-preview-form-select {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    max-width: var(--max-width);
+    padding-block: 0;
+    padding-inline: var(--size-2);
+
+    @media (--md) {
+      padding-inline: var(--size-4);
+    }
+  }
+
+  .node-preview-backlink {
+    background: transparent;
+    border: 0;
+    margin-block: var(--size-1);
+    margin-inline-end: auto;
+    margin-inline-start: 0;
+  }
+}

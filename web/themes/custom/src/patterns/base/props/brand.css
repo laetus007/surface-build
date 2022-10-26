@@ -1,0 +1,27 @@
+:where(html) {
+  /* Primary Brand Colors */
+  --ucla-blue: #2774ae;
+  --ucla-yellow: #ffd100;
+
+  /* Secondary Brand Colors */
+  --midnight-joshua-tree: #003b5c;
+  --silver-lake-reservoir: #005587;
+  --chumash-soil: #ffc72c;
+  --santa-monica-sunset: #ffb81c;
+  --topanga-creek: #8bb8e8;
+  --grove-fountain: #daebfe;
+  --burbank-blue: #46c1be;
+  --la-winter: #bae5f4;
+  --southbay-waves: #139ebe;
+
+  /* Tertiary Brand Colors */
+  --venice-canal: #1a7e89;
+  --avocado-toast: #89d0c8;
+  --super-bloom: #fff579;
+  --escondido-falls: #60cbea;
+  --downtown-dusk: #d3bfdd;
+  --santa-barbara-sand: #f6f4ee;
+  --midnight-observatory: #00273d;
+  --malibu-dolphin: #656c71;
+  --silver-screen: #c9cfd4;
+}

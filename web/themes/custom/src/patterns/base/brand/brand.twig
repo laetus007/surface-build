@@ -1,0 +1,19 @@
+<section class="pl-brands">
+  {% for title, list in brands %}
+    <div class="just-for-gap">
+      <h3>{{ title }}</h3>
+      <article class="brand-demo">
+        {% for item in list %}
+          <div class="brand-demo__swatch">
+            <div class="swatch" style="background-color: var({{ item.var }})"></div>
+            <div class="meta">
+              <span class="name">{{ item.name }}</span>
+              <span class="hex">HEX {{ item.hex }}</span>
+              <span class="var">{{ item.var }}</span>
+            </div>
+          </div>
+        {% endfor %}
+      </article>
+    </div>
+  {% endfor %}
+</section>

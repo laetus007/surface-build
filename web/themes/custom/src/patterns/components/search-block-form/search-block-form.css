@@ -1,0 +1,153 @@
+/**
+ * @file
+ * Search Block form.
+ */
+
+.search-block-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  & input[type='search'] {
+    appearance: none;
+    background-color: transparent;
+    background-image: linear-gradient(var(--blue-5), var(--blue-5)); /* Two values are needed for IE11 support. */
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 0% 10px;
+    border: solid 1px transparent;
+    box-shadow: none;
+    color: white;
+    font-family: serif;
+    font-size: 32px;
+    height: var(--size-18);
+    padding-block: 0;
+    padding-inline-end: 0;
+    padding-inline-start: var(--size-4);
+    transition: background-size 0.4s;
+    width: calc(100% + var(--size-4));
+
+    .search-narrow & {
+      font-size: 16px;
+      height: calc(3 * var(--size-2));
+      padding-inline: var(--size-2);
+
+      @media (--md) {
+        height: calc(var(--size-2) * 4);
+        padding-inline: var(--size-4);
+      }
+    }
+
+    &::-ms-clear {
+      opacity: 0.5;
+      width: 40px;
+    }
+
+    &:focus {
+      background-size: 100% var(--size-1);
+      outline: solid 4px transparent;
+      outline-offset: -4px;
+
+      @media screen and (-ms-high-contrast: active) {
+        border-bottom-width: var(--size-1);
+
+        .search-narrow & {
+          border-bottom-width: 5px;
+        }
+      }
+    }
+  }
+
+  .form-item {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .form-item-keys {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .form-actions {
+    display: flex;
+    margin: 0;
+  }
+
+  .search-wide__grid & {
+    grid-column: 1 / 12;
+  }
+}
+
+.search-block-form__submit {
+  align-self: stretch;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  margin-block: 0;
+  margin-inline: 0;
+  overflow: hidden;
+  padding-block: 0;
+  padding-inline: 0;
+  position: relative;
+  width: 100px;
+
+  .search-narrow & {
+    width: var(--size-6);
+  }
+
+  &:focus {
+    box-shadow: none;
+    outline-offset: -4px;
+    outline: solid 4px transparent;
+
+    & span::after {
+      transform: scaleX(1);
+    }
+
+    @media screen and (-ms-high-contrast: active) {
+      border-bottom-width: var(--size-1);
+
+      & span::after {
+        content: none;
+      }
+    }
+  }
+
+  @media (--md) {
+    width: 80px;
+  }
+
+  @media screen and (-ms-high-contrast: active) {
+    & .visually-hidden {
+      clip: auto;
+      height: auto;
+      overflow: visible;
+      position: static;
+      text-align: center;
+      width: auto;
+    }
+
+    & .icon--search {
+      display: none;
+    }
+  }
+
+  & .icon--search {
+    background-image: url('../images/search--white.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 100%;
+    pointer-events: none;
+    width: 24px;
+
+    .search-narrow & {
+      background-size: auto;
+      width: 100%;
+    }
+  }
+}

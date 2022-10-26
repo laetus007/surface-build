@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Universal styles.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  @media print {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+}
+
+::selection {
+  background-color: var(--blue-9);
+  color: white;
+}
+
+::placeholder {
+  color: var(--gray-5);
+}
+
+:where(:focus-visible) {
+  outline: solid 2px currentcolor;
+  outline-offset: 2px;
+}
+
+:where([tabindex]:not([tabindex*='-'])) {
+  cursor: pointer;
+  touch-action: manipulation;
+}

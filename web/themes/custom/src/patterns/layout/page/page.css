@@ -1,0 +1,11 @@
+/**
+ * @file
+ * Page Layout.
+ */
+
+.l-page {
+  background: white;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  min-height: 100vh;
+}

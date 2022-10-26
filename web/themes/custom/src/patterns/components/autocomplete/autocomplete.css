@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Visual styles for autocomplete input field.
+ */
+
+:root {
+  --autocomplete-search-icon-url: url('../images/magnifying-glass.svg');
+  --autocomplete-throbber-icon-url: url('../images/throbber.svg');
+  --autocomplete-icon-right-offset: var(--size-2);
+}
+
+.form-autocomplete {
+  background-color: white;
+  background-image: var(--autocomplete-search-icon-url);
+  background-position: right var(--autocomplete-icon-right-offset) center;
+  background-repeat: no-repeat;
+  padding-inline-end: var(--size-6);
+
+  &:disabled {
+    background-color: var(--gray-1);
+  }
+
+  &.ui-autocomplete-loading {
+    background: var(--autocomplete-throbber-icon-url) no-repeat right var(--autocomplete-icon-right-offset) center;
+  }
+}

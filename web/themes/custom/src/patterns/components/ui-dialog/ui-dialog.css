@@ -1,0 +1,166 @@
+/**
+ * @file
+ * Presentational styles for Drupal dialogs.
+ */
+
+.ui-dialog {
+  background: transparent;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0 0 1rem -0.25rem #232429;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1260;
+
+  &:focus {
+    box-shadow: 0 0 0 3px var(--blue-9);
+    outline: 2px dotted transparent;
+  }
+
+  .ui-dialog-titlebar {
+    background: #232429;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    line-height: 2rem;
+    padding: 1rem 4rem 1rem 1.5rem;
+    position: relative;
+  }
+
+  .ui-dialog-title {
+    font-family: var(--font-system);
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .ui-dialog-titlebar-close {
+    background: none;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    height: 28px;
+    margin: 0 1.5rem;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.1s;
+    width: 28px;
+
+    &:hover {
+      border-color: white;
+    }
+
+    &:focus {
+      border-color: var(--blue-9);
+      box-shadow: none;
+      outline: 2px dotted transparent;
+    }
+  }
+
+  .ui-icon.ui-icon-closethick {
+    background-image: url('../images/ex.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 100%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  > .ui-dialog-content {
+    background: white;
+    color: #232429;
+    overflow: auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .ui-dialog-content {
+    position: static;
+
+    .form-actions {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  > .ui-dialog-buttonpane {
+    background: #f3f4f9;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #232429;
+  }
+
+  .ui-dialog-buttonpane .ui-button-text-only .ui-button-text {
+    padding: 0;
+  }
+
+  .ui-dialog-buttonset {
+    justify-content: flex-end;
+    margin: 0 0.75rem;
+  }
+}
+
+@media all and (max-width: 48em) { /* 768px */
+  .ui-dialog:not(.ui-dialog-off-canvas) {
+    min-width: 92%;
+    max-width: 92%;
+  }
+}
+
+/**
+ * Off-canvas styles.
+ */
+.ui-dialog.ui-dialog-off-canvas .ui-widget-content.ui-dialog-content {
+  background: none;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .ui-dialog .ui-icon.ui-icon-closethick {
+    background: none;
+  }
+
+  .ui-dialog .ui-icon.ui-icon-closethick::before,
+  .ui-dialog .ui-icon.ui-icon-closethick::after {
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 100%;
+    content: '';
+  }
+
+  .ui-dialog .ui-icon.ui-icon-closethick::before {
+    top: -40%;
+    left: 60%;
+    transform: rotate(45deg);
+    border-bottom: 2px white solid;
+  }
+
+  .ui-dialog .ui-icon.ui-icon-closethick::after {
+    top: -78%;
+    left: 60%;
+    transform: rotate(-45deg);
+    border-top: 2px white solid;
+  }
+}
+
+#drupal-off-canvas {
+  & .form-type--boolean {
+    margin-left: 0;
+  }
+
+  & .form-item .form-item__description {
+    color: #f3f4f9;
+    font-size: 0.75rem;
+  }
+}
+
+.ui-widget-overlay {
+  background: #232429;
+  opacity: 0.7;
+  z-index: 1259;
+}

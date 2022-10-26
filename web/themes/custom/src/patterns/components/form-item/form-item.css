@@ -1,0 +1,76 @@
+/**
+ * @file
+ * Main form item styles.
+ */
+
+.form-item {
+  margin-block: var(--size-2);
+
+  /* When a table row or a container-inline has a single form item, prevent it from adding unnecessary extra spacing. */
+  tr &,
+  .container-inline & {
+    margin-block: var(--size-1);
+  }
+}
+
+/* Form item description. */
+.form-item__description {
+  color: var(--gray-7);
+  font-size: var(--font-size-00);
+  line-height: var(--font-lineheight-3);
+  margin-block: var(--size-1);
+  max-width: 60ch;
+
+  &.is-disabled {
+    color: var(--gray-6);
+    cursor: default;
+  }
+}
+
+/* Error message (Inline form errors). */
+.form-item__error-message {
+  color: var(--red-9);
+  font-size: var(--font-size-00);
+  font-weight: normal;
+  line-height: var(--font-lineheight-3);
+  margin-block: var(--size-1);
+}
+
+.form-item--error-message {
+  background-image: url('../images/inline-error.svg');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: var(--size-2) var(--size-2);
+  color: var(--red-9);
+  font-size: var(--font-size-00);
+  line-height: var(--font-lineheight-2);
+  margin-block: var(--size-1);
+  padding-inline-start: var(--size-3);
+}
+
+/* Custom label placement for editor filter format select. */
+.form-item--editor-format {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  .form-item__label,
+  .form-item__prefix,
+  .form-item__suffix,
+  .form-element--editor-format {
+    min-width: 1px;
+  }
+
+  .form-item__label,
+  .form-item__prefix,
+  .form-item__suffix {
+    margin-inline-end: var(--size-1);
+  }
+
+  .form-item__description,
+  .form-item--error-message {
+    flex: 0 1 100%;
+    min-width: 1px;
+  }
+}

@@ -1,0 +1,223 @@
+global:
+  version: VERSION
+  css:
+    base:
+      dist/css/global.css: {}
+    layout:
+      dist/css/block.css: {}
+      dist/css/site-branding.css: {}
+      dist/css/layout.css: {}
+      dist/css/grid.css: {}
+      dist/css/layout-footer.css: {}
+      dist/css/region.css: {}
+      dist/css/view.css: {}
+    component:
+      dist/css/breadcrumb.css: {}
+      dist/css/site-logo.css: {}
+      dist/css/site-name.css: {}
+      dist/css/embedded-media.css: {}
+      dist/css/site-footer.css: {}
+      dist/css/button.css: {}
+      dist/css/container-inline.module.css: {}
+      dist/css/fieldset.css: {}
+      dist/css/field.css: {}
+      dist/css/form.css: {}
+      dist/css/form-item.css: {}
+      dist/css/form-item-label.css: {}
+      dist/css/form-boolean.css: {}
+      dist/css/form-item-upload.css: {}
+      dist/css/form-text.css: {}
+      dist/css/form-select.css: {}
+      dist/css/mobile-nav.css: {}
+      dist/css/header-navigation.css: {}
+      dist/css/links.css: {}
+      dist/css/node.css: {}
+      dist/css/node-teaser.css: {}
+      dist/css/page-title.css: {}
+      dist/css/site-header.css: {}
+      dist/css/skip-link.css: {}
+      dist/css/pager.css: {}
+      dist/css/table.css: {}
+      dist/css/text-content.css: {}
+      dist/css/tabledrag.css: {}
+      dist/css/views-exposed-form.css: {}
+      dist/css/wide-image.css: {}
+    theme:
+      dist/css/toolbar.css: {}
+      dist/css/toolbar-secondary.css: {}
+      dist/css/horizontal-toolbar.css: {}
+  js:
+    dist/js/form-boolean.js: {}
+    dist/js/menu-utils.js: {}
+  dependencies:
+    - core/drupal.element.closest
+    - core/drupal.element.matches
+    - core/drupal.nodelist.foreach
+    - core/drupal
+    - core/once
+    - core/tabbable
+
+cke-dialog:
+  css:
+    component:
+      dist/css/cke-dialog.css: {}
+
+content_moderation:
+  css:
+    component:
+      dist/css/content-moderation.css: {}
+
+details:
+  css:
+    theme:
+      dist/css/details.css: {}
+
+dialog:
+  css:
+    component:
+      dist/css/ui-dialog.css: {}
+    theme:
+      dist/css/jquery.ui.css: {}
+
+dialog.off_canvas:
+  css:
+    component:
+      dist/css/off-canvas.css: {}
+
+dropbutton:
+  css:
+    component:
+      dist/css/dropbutton.css: {}
+
+drupal.node.preview:
+  css:
+    theme:
+      dist/css/node-preview-container.css: {}
+
+feed:
+  css:
+    theme:
+      dist/css/feed-icon.css: {}
+
+filter.theme:
+  css:
+    theme:
+      dist/css/filter.theme.css: {}
+
+layout_onecol:
+  css:
+    layout:
+      dist/css/layout-onecol.css: {}
+
+layout_twocol:
+  css:
+    layout:
+      dist/css/layout-twocol.css: {}
+
+layout_threecol:
+  css:
+    layout:
+      dist/css/layout-threecol.css: {}
+
+layout_fourcol:
+  css:
+    layout:
+      dist/css/layout-fourcol.css: {}
+
+layout_paragraphs_builder:
+  css:
+    layout:
+      dist/css/layout-paragraphs-builder.css: {}
+
+layout-views-grid-horizontal:
+  css:
+    layout:
+      dist/css/layout-views-grid-horizontal.css: {}
+
+layout-views-grid-vertical:
+  css:
+    layout:
+      dist/css/layout-views-grid-vertical.css: {}
+
+local-actions:
+  css:
+    component:
+      dist/css/action-links.css: {}
+
+maintenance-page:
+  css:
+    component:
+      dist/css/maintenance-page.css: {}
+
+messages:
+  css:
+    component:
+      dist/css/messages.css: {}
+  js:
+    dist/js/messages.js: {}
+    dist/js/message.theme.js: {}
+  dependencies:
+    - core/drupal.array.includes
+
+menu-main:
+  css:
+    component:
+      dist/css/menu-main.css: {}
+      dist/css/nav-primary-button.css: {}
+  js:
+    dist/js/menu-main.js: {}
+    dist/js/menu-main-second-level.js: {}
+
+menu-account:
+  css:
+    component:
+      dist/css/menu-account.css: {}
+
+progress:
+  css:
+    component:
+      dist/css/progress.css: {}
+
+search-block-form:
+  css:
+    component:
+      dist/css/search-block-form.css: {}
+
+search-narrow:
+  css:
+    component:
+      dist/css/search-narrow.css: {}
+
+search-results:
+  css:
+    theme:
+      dist/css/search-results.css: {}
+
+search-wide:
+  css:
+    component:
+      dist/css/search-wide.css: {}
+  js:
+    dist/js/search-wide.js: {}
+
+tabs:
+  css:
+    theme:
+      dist/css/tabs.css: {}
+  js:
+    dist/js/tabs.js: {}
+
+tags:
+  css:
+    theme:
+      dist/css/tags.css: {}
+
+media_library:
+  css:
+    theme:
+      dist/css/media-library.css: {}
+
+media_library.ui:
+  css:
+    theme:
+      dist/css/media-library.ui.css: {}

@@ -1,0 +1,506 @@
+<?php
+
+/**
+ * @file
+ * Form-related hook implementations.
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\file\FileInterface;
+use Drupal\views\Form\ViewsForm;
+
+
+// use Drupal\Component\Utility\NestedArray;
+// use Drupal\Component\Utility\UrlHelper;
+// use Drupal\Core\Entity\EntityForm;
+// use Drupal\Core\Link;
+// use Drupal\Core\Template\Attribute;
+// use Drupal\Core\Url;
+// use Drupal\media\MediaForm;
+// use Drupal\views\ViewExecutable;
+// use Drupal\views_ui\Form\Ajax\ViewsFormInterface;
+
+ /**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ */
+function surface_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+  if (isset($variables['element']['#form_id'])) {
+    $suggestions[] = 'form__' . $variables['element']['#form_id'];
+  }
+}
+
+/**
+ * Implements hook_form_alter() for adding classes and placeholder text to the search forms.
+ */
+function surface_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $build_info = $form_state->getBuildInfo();
+  $form_object = $form_state->getFormObject();
+
+  if (isset($form['actions']['submit']) && (count($form['actions'])) <= 2) {
+    $form['actions']['submit']['#attributes']['class'][] = 'button--primary';
+  }
+
+  if ($form_object instanceof ViewsForm && strpos($form_object->getBaseFormId(), 'views_form_media_library') === 0) {
+    if (isset($form['header'])) {
+      $form['header']['#attributes']['class'][] = 'media-library-views-form__header';
+      $form['header']['media_bulk_form']['#attributes']['class'][] = 'media-library-views-form__bulk_form';
+    }
+    $form['actions']['submit']['#attributes']['class'] = ['media-library-select'];
+
+    // The conditional below exists because the media-library-views-form class is
+    // is currently added by Classy, but Claro will eventually not use Classy as
+    // a base theme.
+    // @todo remove conditional, keep class addition in
+    //   https://drupal.org/node/3110137
+    // @see https://www.drupal.org/node/3109287
+    // @see classy_form_alter()
+    if (!isset($form['#attributes']['class']) || !in_array('media-library-views-form', $form['#attributes']['class'])) {
+      $form['#attributes']['class'][] = 'media-library-views-form';
+    }
+  }
+
+  switch ($form_id) {
+    case 'search_form':
+      $form['basic']['keys']['#attributes']['placeholder'] = t('Search by keyword or phrase.');
+      $form['basic']['submit']['#attributes']['class'][] = 'button--primary';
+      $form['advanced']['submit']['#attributes']['class'][] = 'button--primary';
+      break;
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function surface_form_media_library_add_form_alter(array &$form, FormStateInterface $form_state) {
+  $form['#attributes']['class'][] = 'media-library-add-form';
+  $form['#attached']['library'][] = 'claro/media_library.theme';
+
+  // If there are unsaved media items, apply styling classes to various parts of the form.
+  if (isset($form['media'])) {
+    $form['#attributes']['class'][] = 'media-library-add-form--with-input';
+    $form['description']['#template'] = '<p class="media-library-add-form__description">{{ text }}</p>';
+  }
+  else {
+    $form['#attributes']['class'][] = 'media-library-add-form--without-input';
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function surface_form_media_library_add_form_upload_alter(array &$form, FormStateInterface $form_state) {
+  $form['#attributes']['class'][] = 'media-library-add-form--upload';
+  if (isset($form['container']['upload'])) {
+    $form['container']['upload']['#do_not_wrap_in_details'] = TRUE;
+  }
+  if (isset($form['container'])) {
+    $form['container']['#attributes']['class'][] = 'media-library-add-form__input-wrapper';
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function surface_form_media_library_add_form_oembed_alter(array &$form, FormStateInterface $form_state) {
+  $form['#attributes']['class'][] = 'media-library-add-form--oembed';
+
+  if (isset($form['container'])) {
+    $form['container']['#attributes']['class'][] = 'media-library-add-form__input-wrapper';
+    $form['container']['url']['#attributes']['class'][] = 'media-library-add-form-oembed-url';
+    $form['container']['submit']['#attributes']['class'][] = 'media-library-add-form-oembed-submit';
+  }
+}
+
+/**
+ * Implements hook_preprocess_item_list__media_library_add_form_media_list().
+ *
+ * This targets each new, unsaved media item added to the media library, before
+ * they are saved.
+ */
+function surface_preprocess_item_list__media_library_add_form_media_list(array &$variables) {
+  foreach ($variables['items'] as &$item) {
+    $item['value']['preview']['#attributes']['class'][] = 'media-library-add-form__preview';
+    $item['value']['fields']['#attributes']['class'][] = 'media-library-add-form__fields';
+    $item['value']['remove_button']['#attributes']['class'][] = 'media-library-add-form__remove-button';
+    $item['value']['remove_button']['#attributes']['class'][] = 'button--extrasmall';
+
+    $fields = &$item['value']['fields'];
+    $source_field_name = $fields['#source_field_name'];
+    $fields[$source_field_name]['widget'][0]['#do_not_wrap_in_details'] = TRUE;
+
+    if (isset($fields[$source_field_name])) {
+      $fields[$source_field_name]['#attributes']['class'][] = 'media-library-add-form__source-field';
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_media_library_item__widget().
+ *
+ * This targets each media item selected in an entity reference field.
+ */
+function surface_preprocess_media_library_item__widget(array &$variables) {
+  $variables['content']['remove_button']['#attributes']['class'][] = 'media-library-item__remove';
+  $variables['content']['remove_button']['#attributes']['class'][] = 'icon-link';
+}
+
+/**
+ * Implements hook_preprocess_media_library_item__small().
+ *
+ * This targets each pre-selected media item selected when adding new media in
+ * the modal media library dialog.
+ */
+function surface_preprocess_media_library_item__small(array &$variables) {
+  $variables['content']['select']['#attributes']['class'][] = 'media-library-item__click-to-select-checkbox';
+}
+
+/**
+ * @todo Remove this when https://www.drupal.org/project/drupal/issues/2999549
+ * lands.
+ *
+ * @see \Drupal\media_library\Plugin\Field\FieldWidget\MediaLibraryWidget::formElement()
+ */
+function surface_preprocess_fieldset__media_library_widget(array &$variables) {
+  if (isset($variables['prefix']['weight_toggle'])) {
+    $variables['prefix']['weight_toggle']['#attributes']['class'][] = 'action-link';
+    $variables['prefix']['weight_toggle']['#attributes']['class'][] = 'action-link--extrasmall';
+    $variables['prefix']['weight_toggle']['#attributes']['class'][] = 'action-link--icon-show';
+    $variables['prefix']['weight_toggle']['#attributes']['class'][] = 'media-library-widget__toggle-weight';
+  }
+  if (isset($variables['suffix']['open_button'])) {
+    $variables['suffix']['open_button']['#attributes']['class'][] = 'media-library-open-button';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for file_managed_file.
+ */
+function surface_preprocess_file_managed_file(&$variables) {
+  // Produce the same renderable element structure as image widget has.
+  $child_keys = Element::children($variables['element']);
+  foreach ($child_keys as $child_key) {
+    $variables['data'][$child_key] = $variables['element'][$child_key];
+  }
+
+  _surface_preprocess_file_and_image_widget($variables);
+}
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function surface_form_node_preview_form_select_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['backlink']['#options']['attributes']['class'][] = 'button';
+  $form['backlink']['#options']['attributes']['class'][] = 'button--small';
+  $form['backlink']['#options']['attributes']['class'][] = 'button--icon-back';
+  $form['backlink']['#options']['attributes']['class'][] = 'button--primary';
+  $form['view_mode']['#attributes']['class'][] = 'form-element--small';
+}
+
+/**
+ * Implements hook_preprocess_form_element().
+ */
+function surface_preprocess_form_element(&$variables) {
+  if (in_array($variables['element']['#type'] ?? FALSE, ['checkbox', 'radio'], TRUE)) {
+    $variables['attributes']['class'][] = 'form-type-boolean';
+  }
+
+  if (!empty($variables['description']['attributes'])) {
+    $variables['description']['attributes']->addClass('form-item__description');
+  }
+
+  if ($variables['disabled']) {
+    $variables['label']['#attributes']['class'][] = 'is-disabled';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_form_element_label(&$variables) {
+  $variables['attributes']['class'][] = 'form-item__label';
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_input(&$variables) {
+  if (!empty($variables['element']['#title_display']) &&  $variables['element']['#title_display'] === 'attribute' && !empty((string) $variables['element']['#title'])) {
+    $variables['attributes']['title'] = (string) $variables['element']['#title'];
+  }
+
+  $type_api = $variables['element']['#type'];
+  $type_html = $variables['attributes']['type'];
+  $text_types_html = [
+    'text',
+    'email',
+    'tel',
+    'number',
+    'search',
+    'password',
+    'date',
+    'time',
+    'file',
+    'color',
+    'datetime-local',
+    'url',
+    'month',
+    'week',
+  ];
+
+  if (in_array($type_html, $text_types_html, TRUE)) {
+    $variables['attributes']['class'][] = 'form-element';
+    $variables['attributes']['class'][] = Html::getClass('form-element--type-' . $type_html);
+    $variables['attributes']['class'][] = Html::getClass('form-element--api-' . $type_api);
+
+    // This logic is functioning as expected, but there is nothing in the theme that renders the result.
+    // As a result it can't currently be covered by a functional test.
+    if (!empty($variables['element']['#autocomplete_route_name'])) {
+      $variables['autocomplete_message'] = t('Loading…');
+    }
+  }
+
+  if (in_array($type_html, ['checkbox', 'radio'], TRUE)) {
+    $variables['attributes']['class'][] = 'form-boolean';
+    $variables['attributes']['class'][] = Html::getClass('form-boolean--type-' . $type_html);
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_textarea(&$variables) {
+  $variables['attributes']['class'][] = 'form-element';
+  $variables['attributes']['class'][] = 'form-element--type-textarea';
+  $variables['attributes']['class'][] = 'form-element--api-textarea';
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_select(&$variables) {
+  $variables['attributes']['class'][] = 'form-element';
+  $variables['attributes']['class'][] = $variables['element']['#multiple'] ? 'form-element--type-select-multiple' : 'form-element--type-select';
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_checkboxes(&$variables) {
+  $variables['attributes']['class'][] = 'form-boolean-group';
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_radios(&$variables) {
+  $variables['attributes']['class'][] = 'form-boolean-group';
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function surface_preprocess_field_multiple_value_form(&$variables) {
+  // Make disabled available for the template.
+  $variables['disabled'] = !empty($variables['element']['#disabled']);
+
+  if (!empty($variables['multiple'])) {
+    // Add an additional CSS class for the field label table cell.
+    // This repeats the logic of template_preprocess_field_multiple_value_form()
+    // without using '#prefix' and '#suffix' for the wrapper element.
+    //
+    // If the field is multiple, we don't have to check the existence of the table header cell.
+    //
+    // @see template_preprocess_field_multiple_value_form().
+    $header_attributes = ['class' => ['form-item__label', 'form-item__label--multiple-value-form']];
+    if (!empty($variables['element']['#required'])) {
+      $header_attributes['class'][] = 'js-form-required';
+      $header_attributes['class'][] = 'form-required';
+    }
+    // Using array_key_first() for addressing the first header cell would be
+    // more elegant here, but we can rely on the related theme.inc preprocess.
+    // @todo change this after https://www.drupal.org/node/3099026 has landed.
+    $variables['table']['#header'][0]['data'] = [
+      '#type' => 'html_tag',
+      '#tag' => 'h4',
+      '#value' => $variables['element']['#title'],
+      '#attributes' => $header_attributes,
+    ];
+
+    if ($variables['disabled']) {
+      $variables['table']['#attributes']['class'][] = 'tabledrag-disabled';
+      $variables['table']['#attributes']['class'][] = 'js-tabledrag-disabled';
+
+      // We will add the 'is-disabled' CSS class to the disabled table header cells.
+      $header_attributes['class'][] = 'is-disabled';
+      foreach ($variables['table']['#header'] as &$cell) {
+        if (is_array($cell) && isset($cell['data'])) {
+          $cell = $cell + ['class' => []];
+          $cell['class'][] = 'is-disabled';
+        }
+        else {
+          // We have to modify the structure of this header cell.
+          $cell = [
+            'data' => $cell,
+            'class' => ['is-disabled'],
+          ];
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements template_preprocess_HOOK() for fieldset.
+ */
+function surface_preprocess_fieldset(&$variables) {
+  $element = $variables['element'];
+  $composite_types = ['checkboxes', 'radios'];
+
+  if (!empty($element['#type']) && in_array($element['#type'], $composite_types) && !empty($variables['element']['#children_errors'])) {
+    $variables['legend_span']['attributes']->addClass('has-error');
+  }
+
+  if (!empty($element['#disabled'])) {
+    $variables['legend_span']['attributes']->addClass('is-disabled');
+
+    if (!empty($variables['description']) && !empty($variables['description']['attributes'])) {
+      $variables['description']['attributes']->addClass('is-disabled');
+    }
+  }
+
+  // Remove 'container-inline' class from the main attributes and add a flag instead.
+  // @todo remove this after https://www.drupal.org/node/3059593 has been resolved.
+  if (!empty($variables['attributes']['class'])) {
+    $container_inline_key = array_search('container-inline', $variables['attributes']['class']);
+
+    if ($container_inline_key !== FALSE) {
+      unset($variables['attributes']['class'][$container_inline_key]);
+      $variables['inline_items'] = TRUE;
+    }
+  }
+}
+
+/**
+ * Implements hook_form_views_exposed_form_alter().
+ */
+function surface_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  $view = $form_state->getStorage()['view'];
+  $view_title = $view->getTitle();
+
+  // Add a label so screenreaders can identify the purpose of the exposed form without having to scan content that appears further down the page.
+  $form['#attributes']['aria-label'] = t('Filter the contents of the %view_title view', ['%view_title' => $view_title]);
+  $form['#attributes']['class'][] = 'form--inline';
+}
+
+/**
+ * @param $suggestions
+ * @param array $variables
+ */
+function surface_theme_suggestions_input_alter(&$suggestions, array $variables) {
+  $element = $variables['element'];
+
+  if (isset($element['#attributes']['data-twig-suggestion'])) {
+    $suggestions[] = 'input__' . $element['#type'] . '__' . $element['#attributes']['data-twig-suggestion'];
+  }
+
+  if ($element['#type'] === 'checkbox') {
+    if (!isset($element['#error_no_message'])) {
+      $suggestions[] = 'input__checkbox__toggle';
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_table().
+ */
+function surface_preprocess_table(&$variables) {
+  // Mark the whole table and the first cells if rows are draggable.
+  if (!empty($variables['rows'])) {
+    $draggable_row_found = FALSE;
+    foreach ($variables['rows'] as &$row) {
+      /** @var \Drupal\Core\Template\Attribute $row['attributes'] */
+      if (!empty($row['attributes']) && $row['attributes']->hasClass('draggable')) {
+        if (!$draggable_row_found) {
+          $variables['attributes']['class'][] = 'draggable-table';
+          $draggable_row_found = TRUE;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Helper pre-process callback for file_managed_file and image_widget.
+ *
+ * @param array $variables
+ *   The renderable array of image and file widgets, with 'element' and 'data'
+ *   keys.
+ */
+function _surface_preprocess_file_and_image_widget(array &$variables) {
+  $element = $variables['element'];
+  $main_item_keys = [
+    'upload',
+    'upload_button',
+    'remove_button',
+  ];
+
+  // Calculate helper values for the template.
+  $upload_is_accessible = !isset($element['upload']['#access']) || $element['upload']['#access'] !== FALSE;
+  $is_multiple = !empty($element['#cardinality']) && $element['#cardinality'] !== 1;
+  $has_value = isset($element['#value']['fids']) && !empty($element['#value']['fids']);
+
+  // File widget properties.
+  $display_can_be_displayed = !empty($element['#display_field']);
+  // Display is rendered in a separate table cell for multiple value widgets.
+  $display_is_visible = $display_can_be_displayed && !$is_multiple && isset($element['display']['#type']) && $element['display']['#type'] !== 'hidden';
+  $description_can_be_displayed = !empty($element['#description_field']);
+  $description_is_visible = $description_can_be_displayed && isset($element['description']);
+
+  // Image widget properties.
+  $alt_can_be_displayed = !empty($element['#alt_field']);
+  $alt_is_visible = $alt_can_be_displayed && (!isset($element['alt']['#access']) || $element['alt']['#access'] !== FALSE);
+  $title_can_be_displayed = !empty($element['#title_field']);
+  $title_is_visible = $title_can_be_displayed && (!isset($element['title']['#access']) || $element['title']['#access'] !== FALSE);
+
+  $variables['multiple'] = $is_multiple;
+  $variables['upload'] = $upload_is_accessible;
+  $variables['has_value'] = $has_value;
+  $variables['has_meta'] = $alt_is_visible || $title_is_visible || $display_is_visible || $description_is_visible;
+  $variables['display'] = $display_is_visible;
+
+  // Render file upload input and upload button (or file name and remove button,
+  // if the field is not empty) in an emphasized div.
+  foreach ($variables['data'] as $key => $item) {
+    $item_is_filename = isset($item['filename']['#file']) && $item['filename']['#file'] instanceof FileInterface;
+
+    // Move filename to main items.
+    if ($item_is_filename) {
+      $variables['main_items']['filename'] = $item;
+      unset($variables['data'][$key]);
+      continue;
+    }
+
+    // Move buttons, upload input and hidden items to main items.
+    if (in_array($key, $main_item_keys)) {
+      $variables['main_items'][$key] = $item;
+      unset($variables['data'][$key]);
+    }
+  }
+}
+
+/**
+ * Implements template_preprocess_text_format_wrapper().
+ *
+ * @todo Remove when https://www.drupal.org/node/3016343 is fixed.
+ */
+function surface_preprocess_text_format_wrapper(&$variables) {
+  $description_attributes = [];
+  if (!empty($variables['attributes']['id'])) {
+    $description_attributes['id'] = $variables['attributes']['aria-describedby'] = $variables['attributes']['id'];
+    unset($variables['attributes']['id']);
+  }
+  $variables['description_attributes'] = new Attribute($description_attributes);
+}

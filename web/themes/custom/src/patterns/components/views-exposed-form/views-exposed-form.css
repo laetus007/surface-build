@@ -1,0 +1,27 @@
+/**
+ * @file
+ * Views exposed form styling.
+ */
+
+.views-exposed-form {
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid var(--gray-2);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: var(--size-3);
+  padding-block-start: var(--size-1);
+  padding-block-end: var(--size-3);
+  padding-inline: var(--size-3);
+}
+
+.views-exposed-form__item {
+  margin-block-start: var(--size-105);
+  margin-inline-end: var(--size-1);
+  max-width: 100%;
+}
+
+.views-exposed-form__item--actions {
+  margin-block-start: var(--size-5);
+}
