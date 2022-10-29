@@ -4,7 +4,7 @@
  */
 
 :where(select) {
-  background-color: var(--gray-2);
+  background-color: hsl(var(--gray-2));
   border-radius: var(--radius-2);
   color: inherit;
   cursor: pointer;

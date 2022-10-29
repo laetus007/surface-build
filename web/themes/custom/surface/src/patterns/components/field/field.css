@@ -20,7 +20,7 @@
 }
 
 .field__label {
-  font-weight: bold;
+  font-weight: var(--font-weight-700);
 }
 
 .field--label-inline .field__label,

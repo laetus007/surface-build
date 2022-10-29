@@ -18,7 +18,7 @@
   width: var(--size-4);
 
   &:focus {
-    outline: auto 2px var(--blue-5);
+    outline: auto 2px hsl(var(--blue-5));
     outline-offset: 2px;
   }
 
@@ -34,7 +34,7 @@
 
     &::before,
     &::after {
-      border-top: solid 3px var(--blue-5);
+      border-top: solid 3px hsl(var(--blue-5));
       content: '';
       height: 0;
       left: 50%;
@@ -74,7 +74,7 @@
       outline: 0;
 
       & .icon--menu-toggle {
-        border: solid 2px var(--blue-9);
+        border: solid 2px hsl(var(--blue-9));
       }
     }
 
@@ -87,7 +87,7 @@
     }
 
     & .icon--menu-toggle {
-      background-color: white;
+      background-color: hsl(0, 0%, 100%);
       border-radius: 4px;
       inset-inline-start: 3px;
       transform: translateY(-50%);

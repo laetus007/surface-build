@@ -24,7 +24,7 @@
 
     /* Bottom divider line. */
     &::after {
-      border-block-start: solid 2px var(--gray-1);
+      border-block-start: solid 2px hsl(var(--gray-1));
       content: '';
       height: 0;
       inset-block-end: 0;
@@ -35,12 +35,12 @@
   }
 
   & .menu__link--link {
-    color: var(--gray-9);
-    font-weight: 600;
+    color: hsl(var(--gray-9));
+    font-weight: var(--font-weight-600);
     text-decoration: none;
 
     &:hover {
-      color: var(--blue-5);
+      color: hsl(var(--blue-5));
     }
   }
 

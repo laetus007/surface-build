@@ -5,7 +5,7 @@
 
 .node__meta {
   align-items: center;
-  color: var(--gray-7);
+  color: hsl(var(--gray-7));
   display: flex;
   font-size: 14px;
   line-height: var(--size-2);
@@ -31,18 +31,18 @@
 .node__title {
   & a {
     background-color: transparent;
-    background-image: linear-gradient(var(--blue-5), var(--blue-5)); /* Two values are needed for IE11 support. */
+    background-image: linear-gradient(hsl(var(--blue-5)), hsl(var(--blue-5))); /* Two values are needed for IE11 support. */
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 0 3px;
-    color: var(--gray-9);
+    color: hsl(var(--gray-9));
     padding-block-end: 3px;
     text-decoration: none;
     transition: background-size 0.2s, color 0.2s;
 
     &:hover,
     &:focus {
-      color: var(--blue-9);
+      color: hsl(var(--blue-9));
     }
   }
 }
@@ -56,5 +56,5 @@
 }
 
 .node--unpublished {
-  background-color: #fff4f4;
+  background-color: hsl(0, 100%, 98%);
 }

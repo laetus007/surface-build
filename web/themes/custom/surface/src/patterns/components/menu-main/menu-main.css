@@ -69,7 +69,7 @@
   }
 
   .menu__link {
-    color: #0d1214;
+    color: hsl(197, 21%, 6%);
     display: flex;
     flex-grow: 1;
     font-size: 1.75rem;
@@ -90,7 +90,7 @@
     }
 
     &:focus {
-      outline: auto 2px #2494db;
+      outline: auto 2px hsl(203, 72%, 50%);
       outline-offset: 2px;
 
       @media (--xl) {
@@ -121,7 +121,7 @@
   }
 
   .menu__link--nolink {
-    color: #6e7172;
+    color: hsl(195, 2%, 44%);
     font-weight: normal;
     padding-block: 0.5625rem;
     padding-inline: 0;
@@ -141,7 +141,7 @@
 
       &::before,
       &::after {
-        border-top: solid 3px #2494db;
+        border-top: solid 3px hsl(203, 72%, 50%);
         content: '';
         height: 0;
         position: absolute;
@@ -260,7 +260,7 @@
   Secondary menu specific styles.
 */
 .menu-main--level-2 {
-  border-left: solid 18px #2494db;
+  border-left: solid 18px hsl(203, 72%, 50%);
   flex-basis: 100%;
   margin-block: 0;
   margin-inline-start: -1.125rem;

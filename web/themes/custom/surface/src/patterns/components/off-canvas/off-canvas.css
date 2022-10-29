@@ -73,7 +73,7 @@
   /* Necessary for Safari. */
   & div {
     display: block;
-    color: #ddd;
+    color: hsl(0, 0%, 87%);
     font-size: 14px;
   }
 }

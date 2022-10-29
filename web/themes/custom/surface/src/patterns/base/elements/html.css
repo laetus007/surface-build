@@ -4,15 +4,15 @@
  */
 
 :root {
-  --accent-color: var(--blue-6);
-  --caret-color: var(--blue-6);
-  --scrollbar-color: var(--blue-6);
-  --text-color: var(--gray-9);
+  --accent-color: hsl(var(--blue-6));
+  --caret-color: hsl(var(--blue-6));
+  --scrollbar-color: hsl(var(--blue-6));
+  --text-color: hsl(var(--gray-9));
 }
 
 :where(html) {
   accent-color: var(--accent-color);
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   block-size: 100%;
   caret-color: var(--caret-color);
   color: var(--text-color);

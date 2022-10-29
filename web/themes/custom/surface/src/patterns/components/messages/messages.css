@@ -10,8 +10,8 @@
 }
 
 .messages {
-  background-color: var(--gray-9);
-  color: white;
+  background-color: hsl(var(--gray-9));
+  color: hsl(0, 0%, 100%);
   margin-block: var(--size-2);
   min-height: calc(var(--messages-icon-size) + 2 * var(--size-2));
   outline: solid 1px transparent;
@@ -43,7 +43,7 @@
 }
 
 .messages--error {
-  $message-error-color: var(--red-5);
+  $message-error-color: hsl(var(--red-5));
 
   .messages__icon {
     @include svg-icon('../images/error.svg', 32px, 32px, $message-error-color);
@@ -51,7 +51,7 @@
 }
 
 .messages--warning {
-  $message-warning-color: var(--yellow-5);
+  $message-warning-color: hsl(var(--yellow-5));
 
   .messages__icon {
     @include svg-icon('../images/warning.svg', 32px, 32px, $message-warning-color);
@@ -59,7 +59,7 @@
 }
 
 .messages--status {
-  $message-status-color: var(--green-5);
+  $message-status-color: hsl(var(--green-5));
 
   .messages__icon {
     @include svg-icon('../images/status.svg', 32px, 32px, $message-status-color);
@@ -67,7 +67,7 @@
 }
 
 .messages--info {
-  $message-info-color: var(--blue-5);
+  $message-info-color: hsl(var(--blue-5));
 
   .messages__icon {
     @include svg-icon('../images/info.svg', 32px, 32px, $message-info-color);
@@ -94,7 +94,7 @@
 
   &::before,
   &::after {
-    border-top: solid 2px var(--gray-5);
+    border-top: solid 2px hsl(var(--gray-5));
     content: '';
     display: block;
     height: 0;
@@ -120,7 +120,7 @@
   }
 
   &:focus {
-    outline: 2px solid var(--blue-5);
+    outline: 2px solid hsl(var(--blue-5));
     outline-offset: 2px;
   }
 }

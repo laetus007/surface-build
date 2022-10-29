@@ -19,12 +19,12 @@
 }
 
 ::selection {
-  background-color: var(--blue-9);
-  color: white;
+  background-color: hsl(var(--blue-9));
+  color: hsl(0, 0%, 100%);
 }
 
 ::placeholder {
-  color: var(--gray-5);
+  color: hsl(var(--gray-5));
 }
 
 :where(:focus-visible) {

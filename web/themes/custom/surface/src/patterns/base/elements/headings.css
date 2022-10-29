@@ -13,7 +13,7 @@
 }
 
 :where(h1) {
-  color: var(--gray-9);
+  color: hsl(var(--gray-9));
   font-size: var(--font-size-5);
   font-weight: var(--font-weight-700);
   letter-spacing: var(--font-letterspacing-0);
@@ -28,7 +28,7 @@
 }
 
 :where(h2) {
-  color: var(--gray-9);
+  color: hsl(var(--gray-9));
   font-size: var(--font-size-5);
   font-weight: var(--font-weight-700);
   letter-spacing: var(--font-letterspacing-0);

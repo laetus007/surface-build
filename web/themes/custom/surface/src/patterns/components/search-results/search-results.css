@@ -15,7 +15,7 @@
 }
 
 .search-result__title {
-  color: var(--gray-9);
+  color: hsl(var(--gray-9));
   font-size: 20px;
   line-height: var(--font-lineheight-4);
   margin-block: 0;
@@ -23,7 +23,7 @@
 
   & a {
     background-color: transparent;
-    background-image: linear-gradient(var(--blue-5), var(--blue-5)); /* Two values are needed for IE11 support. */
+    background-image: linear-gradient(hsl(var(--blue-5)), hsl(var(--blue-5))); /* Two values are needed for IE11 support. */
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 0 3px;
@@ -32,7 +32,7 @@
     transition: background-size 0.2s, color 0.2s;
 
     &:hover {
-      color: var(--blue-9);
+      color: hsl(var(--blue-9));
     }
   }
 
@@ -53,14 +53,14 @@
 
 .search-result__meta {
   align-items: center;
-  color: var(--gray-7);
+  color: hsl(var(--gray-7));
   display: flex;
   font-size: 14px;
   line-height: var(--font-lineheight-1);
   margin-block-end: var(--size-2);
 
   & a {
-    color: var(--blue-9);
+    color: hsl(var(--blue-9));
     font-weight: bold;
   }
 }
@@ -70,7 +70,7 @@
   position: relative; /* Anchor after pseudo-element. */
 
   &::after {
-    border-top: solid 2px var(--gray-1);
+    border-top: solid 2px hsl(var(--gray-1));
     content: '';
     height: 0;
     inset-block-end: 0;

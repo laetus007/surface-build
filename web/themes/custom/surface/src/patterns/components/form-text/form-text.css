@@ -19,10 +19,10 @@
 [type='week'],
 textarea {
   appearance: none;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   border-radius: var(--radius-1);
-  border: 1px solid var(--gray-5);
-  color: var(--gray-8);
+  border: 1px solid hsl(var(--gray-5));
+  color: hsl(var(--gray-8));
   font-family: inherit;
   font-size: inherit;
   max-width: 100%;
@@ -31,8 +31,8 @@ textarea {
   width: 100%;
 
   &:focus {
-    border: solid 2px var(--blue-5);
-    outline: solid 2px var(--blue-5);
+    border: solid 2px hsl(var(--blue-5));
+    outline: solid 2px hsl(var(--blue-5));
 
     @supports (outline-style: double) {
       border-width: 1px;
@@ -47,15 +47,15 @@ textarea {
   }
 
   &[disabled] {
-    background-color: var(--gray-1);
-    color: var(--gray-5);
+    background-color: hsl(var(--gray-1));
+    color: hsl(var(--gray-5));
   }
 
   &.error {
-    border: solid 2px var(--red-9);
+    border: solid 2px hsl(var(--red-9));
 
     &:focus {
-      outline-color: var(--red-9);
+      outline-color: hsl(var(--red-9));
       outline-offset: -2px;
     }
   }

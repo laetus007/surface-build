@@ -4,9 +4,9 @@
  */
 
 .fieldset {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   border-radius: var(--radius-1);
-  border: solid 2px var(--gray-9);
+  border: solid 2px hsl(var(--gray-9));
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -28,7 +28,7 @@
 }
 
 .fieldset__legend {
-  background-color: var(--gray-9);
+  background-color: hsl(var(--gray-9));
   border-top-left-radius: var(--radius-1);
   border-top-right-radius: var(--radius-1);
   color: inherit;
@@ -65,15 +65,16 @@
 }
 
 .fieldset__label {
-  color: white;
+  color: hsl(0, 0%, 100%);
   display: block;
-  line-height: var(--font-lineheight-1);
-  padding-block: var(--size-1);
+  font-size: var(--font-size-1);
+  line-height: normal;
+  padding-block: var(--size-105);
   padding-inline: var(--size-2);
 }
 
 .fieldset__label.is-disabled {
-  color: var(--gray-9);
+  color: hsl(var(--gray-9));
 }
 
 .fieldset__description {
@@ -83,7 +84,7 @@
 }
 
 .fieldset__description.is-disabled {
-  color: var(--gray-3);
+  color: hsl(var(--gray-3));
 }
 
 .fieldset__error-message {
@@ -91,7 +92,7 @@
   background-position: left top;
   background-repeat: no-repeat;
   background-size: var(--size-2) var(--size-2);
-  color: var(--red-9);
+  color: hsl(var(--red-9));
   font-size: var(--font-size-0);
   line-height: var(--font-lineheight-1);
   margin-block: var(--size-1);
@@ -112,7 +113,7 @@
 }
 
 .fieldset--group .fieldset__legend--visible ~ .fieldset__wrapper {
-  border: solid 2px var(--gray-9);
+  border: solid 2px hsl(var(--gray-9));
   border-bottom-right-radius: var(--radius-1);
   border-bottom-left-radius: var(--radius-1);
 }

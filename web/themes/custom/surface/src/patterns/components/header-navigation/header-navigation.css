@@ -82,7 +82,7 @@
 }
 
 .header-nav-overlay {
-  background: var(--blue-9);
+  background: hsl(var(--blue-9));
   display: none;
   height: 100vh;
   inset-block-start: 0;

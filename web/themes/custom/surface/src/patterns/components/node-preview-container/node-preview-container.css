@@ -4,7 +4,7 @@
  */
 
 .node-preview-container {
-  background: white;
+  background: hsl(0, 0%, 100%);
   height: 60px;
   padding-block: 0;
   padding-inline: 0;

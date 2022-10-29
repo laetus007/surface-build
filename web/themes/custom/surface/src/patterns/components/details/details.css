@@ -8,10 +8,10 @@
   --details-summary-transition: background-color 0.12s ease-in-out;
 }
 
-.details {
+details.details {
   border-radius: var(--border-size-2);
-  border: var(--details-border-width) solid var(--gray-1);
-  box-shadow: 0 1px 4px var(--gray-0);
+  border: var(--details-border-width) solid hsl(var(--gray-1));
+  box-shadow: 0 1px 4px hsl(var(--gray-0));
   color: inherit;
   display: block;
   margin-block: var(--size-1);
@@ -19,10 +19,10 @@
 
 /* Details summary styles */
 .details__summary {
-  background-color: var(--gray-2);
+  background-color: hsl(var(--gray-2));
   color: inherit;
   cursor: pointer;
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-1);
   font-weight: var(--font-weight-700);
   hyphens: auto;
   line-height: var(--font-lineheight-1);
@@ -51,7 +51,7 @@
   /* Pseudo-selector to manage focus styles */
   &::after {
     border-radius: var(--border-size-2);
-    box-shadow: inset 0 0 0 2px var(--blue-4);
+    box-shadow: inset 0 0 0 2px hsl(var(--blue-4));
     content: '';
     inset: calc(var(--details-border-width) * -1);
     opacity: 0;
@@ -72,7 +72,7 @@
 
   /* Details summary, hover state */
   &:hover {
-    background-color: var(--gray-1);
+    background-color: hsl(var(--gray-1));
   }
 
   /* Details summary, focus and active states */
@@ -93,15 +93,14 @@
 .details__wrapper {
   margin: var(--size-1);
 
-  @media (--lg) {
-    margin-block: var(--size-3);
-    margin-inline: var(--size-4);
+  .details {
+    border-color: hsl(var(--gray-5));
   }
 }
 
 /* Error */
 .details__error {
-  color: var(--red-9);
+  color: hsl(var(--red-9));
   font-size: var(--font-size-0);
   line-height: var(--font-lineheight-2);
   margin-block-end: var(--size-1);
@@ -109,7 +108,7 @@
 
 /* Description */
 .details__description {
-  color: var(--gray-8);
+  color: hsl(var(--gray-8));
   font-size: var(--font-size-0);
   line-height: var(--font-lineheight-2);
   margin-block-end: var(--size-1);

@@ -29,7 +29,7 @@
   z-index: 110;
 
   &:focus {
-    outline: solid 2px var(--blue-9);
+    outline: solid 2px hsl(var(--blue-9));
   }
 
   &:active {
@@ -82,14 +82,14 @@
 }
 
 .mobile-nav__icon {
-  background-color: var(--blue-5);
+  background-color: hsl(var(--blue-5));
   display: block;
   height: 3px;
   position: relative;
   width: var(--size-4);
 
   &::before {
-    background-color: var(--blue-5);
+    background-color: hsl(var(--blue-5));
     content: '';
     height: 3px;
     inset-block-start: -8px;
@@ -100,7 +100,7 @@
   }
 
   &::after {
-    background-color: var(--blue-5);
+    background-color: hsl(var(--blue-5));
     content: '';
     height: 3px;
     inset-block: auto -8px;

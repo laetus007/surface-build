@@ -14,6 +14,10 @@
   top: 0;
   z-index: 1260;
 
+  .pl & {
+    position: relative;
+  }
+
   &:focus {
     box-shadow: 0 0 0 3px var(--blue-9);
     outline: 2px dotted transparent;

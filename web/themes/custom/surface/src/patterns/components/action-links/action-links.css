@@ -14,7 +14,7 @@
     display: inline-block;
 
     & a {
-      color: var(--blue-9);
+      color: hsl(var(--blue-9));
     }
   }
 }

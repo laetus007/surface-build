@@ -11,13 +11,13 @@
   & input[type='search'] {
     appearance: none;
     background-color: transparent;
-    background-image: linear-gradient(var(--blue-5), var(--blue-5)); /* Two values are needed for IE11 support. */
+    background-image: linear-gradient(hsl(var(--blue-5)), hsl(var(--blue-5))); /* Two values are needed for IE11 support. */
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 0% 10px;
     border: solid 1px transparent;
     box-shadow: none;
-    color: white;
+    color: hsl(0, 0%, 100%);
     font-family: serif;
     font-size: 32px;
     height: var(--size-18);

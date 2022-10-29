@@ -10,7 +10,7 @@
   position: relative;
 
   &::after {
-    background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0%) 100%);
+    background: linear-gradient(to left, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 100%) 100%);
     content: '';
     height: var(--size-2);
     inset-block-start: 0;
@@ -59,8 +59,8 @@
   display: inline-block;
 
   &:nth-child(n+2)::before {
-    border-block-start: 2px solid var(--gray-6);
-    border-inline-end: 2px solid var(--gray-6);
+    border-block-start: 2px solid hsl(var(--gray-6));
+    border-inline-end: 2px solid hsl(var(--gray-6));
     content: '';
     display: inline-block;
     height: 8px;
@@ -79,7 +79,7 @@
 }
 
 .breadcrumb__link {
-  color: var(--blue-9);
+  color: hsl(var(--blue-9));
   text-decoration: none;
 
   &:hover,

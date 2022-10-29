@@ -11,8 +11,8 @@
     margin-block-end: var(--size-2);
 
     & a {
-      color: var(--blue-9);
-      font-weight: bold;
+      color: hsl(var(--blue-9));
+      font-weight: var(--font-weight-700);
     }
   }
 
@@ -67,7 +67,7 @@
   }
 
   & .node__title {
-    color: var(--gray-9);
+    color: hsl(var(--gray-9));
     font-size: 24px;
     line-height: var(--font-lineheight-1);
     margin-block-end: var(--size-2);
