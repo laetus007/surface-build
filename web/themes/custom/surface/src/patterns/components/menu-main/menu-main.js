@@ -1,4 +1,4 @@
-(function (Drupal, once, tabbable) {
+(function (Drupal, tabbable) {
   function isNavOpen(navWrapper) {
     return navWrapper.classList.contains('is-active');
   }
@@ -78,8 +78,7 @@
 
   Drupal.behaviors.surfaceNavigation = {
     attach: function attach(context) {
-      var headerId = 'header';
-      var header = once('navigation', "#".concat(headerId), context).shift();
+      var header = context.querySelector('[data-drupal-selector="site-header"]');
       var navWrapperId = 'header-nav';
 
       if (header) {
@@ -100,4 +99,4 @@
       }
     }
   };
-})(Drupal, once, tabbable);
+})(Drupal, tabbable);

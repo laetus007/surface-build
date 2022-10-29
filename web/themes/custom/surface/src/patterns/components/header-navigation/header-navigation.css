@@ -4,9 +4,10 @@
  */
 
 .header-nav {
-  background-color: white;
-  border-block-start: solid white var(--size-11);
-  box-shadow: 0 0 72px rgba(0, 0, 0, 10%);
+  background-color: hsl(0, 0%, 100%);
+  border-block-start: solid hsl(0, 0%, 100%) var(--size-11);
+  border-top-width: 100px;
+  box-shadow: 0 0 72px hsla(0, 0%, 0%, 10%);
   flex-basis: 0;
   flex-grow: 1;
   height: 100%;
@@ -27,15 +28,20 @@
     transform: translateX(-100%);
   }
 
+  /* Take into account Pattern Lab */
+  .pl & {
+    border-top-width: 200px;
+  }
+
   /* Take into account admin toolbar and orientations */
   .gin--vertical-toolbar.toolbar-horizontal & {
-    border-top-width: calc(var(--size-13) + 60px);
+    border-top-width: calc(100px + 60px);
   }
 
   /* Take into account admin toolbar and orientations */
   .gin--vertical-toolbar.toolbar-vertical &,
   .gin--horizontal-toolbar.toolbar-vertical & {
-    border-top-width: calc(var(--size-12) + 87px);
+    border-top-width: calc(100px + 87px);
   }
 
   @supports (flex-basis: max-content) {
@@ -43,19 +49,18 @@
   }
 
   @media (--md) {
-    border-top-width: var(--size-13);
     padding-block-end: var(--size-6);
     padding-inline-start: var(--size-6);
 
     /* Take into account admin toolbar and orientations */
     .gin--horizontal-toolbar.toolbar-horizontal &,
     .gin--horizontal-toolbar.toolbar-vertical & {
-      border-top-width: calc(var(--size-13) + 113px);
+      border-top-width: calc(100px + 113px);
     }
 
     /* Take into account admin toolbar and orientations */
     .gin--vertical-toolbar.toolbar-vertical & {
-      border-top-width: calc(var(--size-10) + 87px);
+      border-top-width: calc(100px + 87px);
     }
   }
 
