@@ -3,9 +3,14 @@
     <div class="just-for-gap">
       <h3>{{ title }}</h3>
       <article class="color-demo">
-        {% for color, hex in list %}
-          <div style="background-color: {{ hex }}">
-            <span>{{ color }}</span>
+        {% for item in list %}
+          <div class="color-demo__swatch">
+            <div class="swatch" style="background-color: hsl({{ item.value }})"></div>
+            <div class="meta">
+              <span class="name">{{ item.name }}</span>
+              <span class="value"> hsl({{ item.value }})</span>
+              <span class="var">{{ item.var }}</span>
+            </div>
           </div>
         {% endfor %}
       </article>

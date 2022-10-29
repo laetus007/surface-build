@@ -99,20 +99,23 @@
   }
 }
 
-/* Brand Demo */
-.pl-brands {
+/* Brand & Color Demo */
+.pl-brands,
+.pl-colors {
   display: grid;
   gap: var(--size-4);
   justify-items: flex-start;
   padding-block: var(--size-6);
 
-  .brand-demo {
+  .brand-demo,
+  .color-demo {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(max(var(--size-20), 10rem), 1fr));
     gap: var(--size-2);
   }
 
-  .brand-demo__swatch {
+  .brand-demo__swatch,
+  .color-demo__swatch {
     .swatch {
       aspect-ratio: var(--ratio-square);
       border-color: var(--gray-3);
@@ -135,43 +138,6 @@
       &.name {
         font-size: var(--font-size-0);
         font-weight: var(--font-weight-700);
-      }
-    }
-  }
-}
-
-/* Color Demo */
-.pl-colors {
-  display: grid;
-  gap: var(--size-4);
-  justify-items: flex-start;
-  padding-block: var(--size-6);
-
-  .color-demo {
-    display: flex;
-    flex-flow: row wrap;
-    gap: var(--size-2);
-
-    > div {
-      align-content: end;
-      aspect-ratio: var(--ratio-square);
-      border-color: var(--gray-3);
-      border-radius: var(--radius-1);
-      border-width: var(--size-05);
-      display: grid;
-      inline-size: var(--size-20);
-
-      > span {
-        color: black;
-        display: block;
-        font-size: var(--font-size-00);
-        padding: var(--size-2);
-      }
-
-      &:nth-child(n+6) {
-        span {
-          color: white;
-        }
       }
     }
   }
