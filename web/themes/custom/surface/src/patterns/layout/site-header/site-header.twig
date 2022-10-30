@@ -1,7 +1,7 @@
-<header id="header" class="site-header" data-drupal-selector="site-header" role="banner">
-  <div class="site-header__fixable is-fixed is-expanded" data-drupal-selector="site-header-fixable">
-    <div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
-      <div class="site-header__inner__container l-container">
+<header id="header" class="site-header" data-drupal-selector="site-header" role="banner" data-once="navigation">
+	<div class="site-header__fixable is-fixed is-expanded" data-drupal-selector="site-header-fixable">
+		<div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
+			<div class="site-header__inner__container l-container">
         {% block branding %}
           {% include '@layout/site-branding/site-branding.twig' with {
             'site_logo': '/dist/images/logo.svg',
@@ -50,8 +50,8 @@
                   } %}
                 {% endblock %}
               {% endembed %}
-            </div>
-          {% endblock %}
+            {% endblock %}
+          </div>
         </div>
       </div>
     </div>

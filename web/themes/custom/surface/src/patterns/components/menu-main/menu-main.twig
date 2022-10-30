@@ -76,7 +76,7 @@
         {% set item_classes = item_classes|join(' ')|trim %}
         {% set link_classes = link_classes|join(' ')|trim %}
 
-        <li class="{{ item_classes }}" {{ item.attributes.setAttribute('data-drupal-selector', is_top_level_menu and item.below ? 'menu__item--has-children': false) }}>
+        <li class="{{ item_classes }}" data-drupal-selector="{{ is_top_level_menu and item.below ? 'menu__item--has-children' }}">
           {% set aria_id = (aria_id ~ loop.index )|clean_id %}
           {% set link_title %}
             <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
@@ -96,13 +96,13 @@
             {% if item.below %}
               {% if is_top_level_menu %}
                 <button class="primary-nav__button-toggle" data-drupal-selector="primary-nav-submenu-toggle-button" aria-controls="{{ aria_id }}" aria-expanded="false" aria-hidden="true" tabindex="-1">
-                  <span class="visually-hidden">{{ '@title sub-navigation'|t({'@title': item.title}) }}</span>
+                  <span class="visually-hidden">{{ item.title ~ ' sub-navigation' }}</span>
                   <span class="icon--menu-toggle"></span>
                 </button>
               {% endif %}
 
               {% set attributes = attributes.setAttribute('id', aria_id) %}
-              {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id) }}
+              {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu_class, item_class, link_class, is_demo) }}
             {% endif %}
 
           {% elseif menu_item_type == 'button' %}
@@ -118,7 +118,7 @@
             {% endif %}
 
             {% set attributes = attributes.setAttribute('id', aria_id) %}
-            {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id) }}
+            {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu_class, item_class, link_class, is_demo) }}
           {% endif %}
         </li>
       {% endfor %}
