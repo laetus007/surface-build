@@ -8,9 +8,9 @@ definitions:
     expanded: false
     enabled: true
   standard__front_page:
+    weight: -50
     menu_name: main
     parent: ''
-    weight: 0
     expanded: false
     enabled: false
   entity__field_storage_config__collection:
