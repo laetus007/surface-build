@@ -18,14 +18,14 @@
   }
 
   .views-display-link {
-    color: #333;
+    color: hsl(0, 0%, 20%);
     font-size: 15px;
     line-height: 16px;
     margin: 0;
     padding-left: 22px;
 
     &.is-active {
-      color: var(--blue-9);
+      color: hsl(var(--blue-9));
       font-weight: bold;
     }
   }
@@ -69,7 +69,7 @@
 }
 
 .media-library-menu {
-  color: #232429;
+  color: hsl(230, 8%, 15%);
   display: block;
   list-style: none;
   margin: 0;
@@ -84,7 +84,7 @@
   padding: 0.5rem 0;
 
   &::before {
-    border-top: 1px solid #d3d4d9;
+    border-top: 1px solid hsl(230, 7%, 84%);
     content: '';
     display: block;
     margin-top: -1px;
@@ -97,7 +97,7 @@
   border-radius: 2px 0 0 2px;
   border-width: 1px 0 1px 4px;
   border: 1px solid transparent;
-  color: #232429;
+  color: hsl(230, 8%, 15%);
   display: block;
   hyphens: auto;
   margin-top: -1px;
@@ -117,7 +117,7 @@
 
     &::after {
       border-radius: 2px;
-      border: 3px solid #26a769;
+      border: 3px solid hsl(151, 63%, 40%);
       bottom: 0;
       content: '';
       left: 0;
@@ -131,10 +131,10 @@
 
   &:hover {
     /* These borders are necessary to replace the dividing lines while in the hover state. */
-    background: #f5f8ff;
-    border-bottom: 1px solid #d3d4d9;
-    border-top: 1px solid #d3d4d9;
-    color: #003ecc;
+    background: hsl(222, 100%, 98%);
+    border-bottom: 1px solid hsl(230, 7%, 84%);
+    border-top: 1px solid hsl(230, 7%, 84%);
+    color: hsl(222, 100%, 40%);
     text-decoration: none;
   }
 
@@ -151,15 +151,15 @@
   }
 
   &.active {
-    background-color: white;
-    border-color: #dedfe4 transparent;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(230, 10%, 88%) transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 10%);
-    color: #003ecc;
+    color: hsl(222, 100%, 40%);
     z-index: 2; /* The selected menu link should be on a higher level than the white masking line that hides the gray separator. */
 
     &:hover {
-      background-color: #f5f8ff;
-      color: #0036b1;
+      background-color: hsl(222, 100%, 98%);
+      color: hsl(222, 100%, 35%);
 
       &::before {
         background: none;
@@ -167,7 +167,7 @@
     }
 
     &::before {
-      border-left: 4px solid #003ecc;
+      border-left: 4px solid hsl(222, 100%, 40%);
       border-radius: 2px 0 0 2px;
       z-index: 1; /* The blue active-tab indication should be on a higher level than the green focus border. */
     }
@@ -181,8 +181,8 @@
 }
 
 .media-library-menu + .media-library-content {
-  border-left: 1px solid #dedfe4;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 10%);
+  border-left: 1px solid hsl(230, 10%, 88%);
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 10%);
   z-index: 0;
 }
 
@@ -209,10 +209,10 @@
 }
 
 .media-library-add-form__input-wrapper {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   border-radius: 2px;
-  border: 1px solid #dedfe4;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 10%);
+  border: 1px solid hsl(230, 10%, 88%);
+  box-shadow: 0 2px 4px hsla(0, 0%, 0%, 10%);
   padding: 0.5rem 1.5rem 1.5rem;
 }
 
@@ -228,7 +228,7 @@
 
 /* Adjust the focus border on this element so it is not too close to buttons. */
 .media-library-add-form__added-media:focus {
-  box-shadow: 0 0 0 4px white, 0 0 0 7px #26a769;
+  box-shadow: 0 0 0 4px hsl(0, 0%, 100%), 0 0 0 7px hsl(151, 63%, 40%);
 }
 
 .media-library-add-form .file-upload-help {
@@ -322,15 +322,15 @@
   }
 
   img {
-    background-image: linear-gradient(-45deg, #d4d4d8 25%, transparent 26%), linear-gradient(-45deg, #d4d4d8 25%, transparent 26%), linear-gradient(135deg, #d4d4d8 25%, transparent 26%), linear-gradient(135deg, #d4d4d8 25%, transparent 26%);
+    background-image: linear-gradient(-45deg, hsl(240, 5%, 84%) 25%, transparent 26%), linear-gradient(-45deg, hsl(240, 5%, 84%) 25%, transparent 26%), linear-gradient(135deg, hsl(240, 5%, 84%) 25%, transparent 26%), linear-gradient(135deg, hsl(240, 5%, 84%) 25%, transparent 26%);
     background-position: 0 0, 0.5rem 0.5rem, 0.5rem 0.5rem, 0 0;
   }
 
   .ajax-progress.ajax-progress.ajax-progress {
-    background: white;
+    background: hsl(0, 0%, 100%);
     border-radius: 3.5rem;
-    border: 1px solid rgba(216, 217, 224, 80%);
-    box-shadow: 0 0.25rem 0.625rem rgba(34, 35, 48, 10%);
+    border: 1px solid hsla(233, 11%, 86%, 80%);
+    box-shadow: 0 0.25rem 0.625rem hsla(236, 17%, 16%, 10%);
     box-sizing: border-box;
     height: 3rem;
     left: 50%;
@@ -343,7 +343,7 @@
 
   .ajax-progress__throbber {
     border-right: 3px dotted transparent;
-    border: 3px solid #003ecc;
+    border: 3px solid hsl(222, 100%, 40%);
     height: 1.75rem;
     left: 50%;
     margin: -0.875rem;
@@ -368,7 +368,7 @@
   width: 50%;
 
   &:focus {
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 20%), 0 0 0 4px rgba(0, 125, 250, 60%);
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 20%), 0 0 0 4px hsla(210, 100%, 49%, 60%);
     outline: none;
 
     .media-library-item__preview-wrapper {
@@ -382,7 +382,7 @@
   }
 
   .field--name-thumbnail {
-    background-color: #ebebeb;
+    background-color: hsl(0, 0%, 92%);
     overflow: hidden;
     text-align: center;
 
@@ -394,8 +394,8 @@
   }
 
   .form-boolean--type-checkbox:checked {
-    background-color: #6694ff;
-    border-color: #6694ff;
+    background-color: hsl(222, 100%, 70%);
+    border-color: hsl(222, 100%, 70%);
   }
 }
 
@@ -490,15 +490,15 @@
 
 .media-library-item--grid.is-hover::before,
 .media-library-item--grid.checked.is-hover::before {
-  border-color: #0036b1;
+  border-color: hsl(222, 100%, 35%);
 }
 
 .media-library-item--grid.is-focus::before {
-  border-color: #0036b1;
+  border-color: hsl(222, 100%, 35%);
 }
 
 .media-library-item--grid.checked::before {
-  border-color: #26a769;
+  border-color: hsl(151, 63%, 40%);
 }
 
 .media-library-item__click-to-select-checkbox {
@@ -542,7 +542,7 @@
 /* Media library entity view display styles. */
 .media-library-item__preview {
   border-radius: 1rem;
-  border: 1px solid #d4d4d8;
+  border: 1px solid hsl(240, 5%, 84%);
   overflow: hidden;
   padding-bottom: 100%;
   position: relative;
@@ -577,8 +577,8 @@
 }
 
 .media-library-item__status {
-  background: #666;
-  color: #e4e4e4;
+  background: hsl(0, 0%, 40%);
+  color: hsl(0, 0%, 89%);
   font-size: 12px;
   font-style: italic;
   left: 5px;
@@ -616,7 +616,7 @@
 }
 
 .media-library-item__type {
-  color: #696969;
+  color: hsl(0, 0%, 41%);
   font-size: 12px;
 }
 
@@ -684,7 +684,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px;
-  border: 1px solid #d3d4d9 !important;
+  border: 1px solid hsl(230, 7%, 84%) !important;
   right: 40px;
 
   &:active {
@@ -703,19 +703,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px;
-  border: 1px solid #d3d4d9 !important;
+  border: 1px solid hsl(230, 7%, 84%) !important;
 }
 
 .media-library-item__remove:active,
 .media-library-item__remove.button:active,
 .media-library-item__remove.button:disabled:active {
   background-image: url('../images/ex.svg');
-  border-color: #003ecc !important;
+  border-color: hsl(222, 100%, 40%) !important;
 }
 
 /* Style the added media item container. */
 .media-library-add-form__media {
-  border-bottom: 1px solid #c0c0c0;
+  border-bottom: 1px solid hsl(0, 0%, 75%);
   display: flex;
   position: relative;
 
@@ -727,7 +727,7 @@
 
 .media-library-add-form__preview {
   align-items: center;
-  background: rgba(243, 244, 249, 40%);
+  background: hsla(230, 33%, 96%, 40%);
   display: flex;
   justify-content: center;
   margin-right: 20px;

@@ -4,16 +4,16 @@
  */
 
 .site-name {
-  color: white;
+  color: hsl(0, 0%, 100%);
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-700);
 
   .site-branding--bg-gray & {
-    color: var(--blue-5);
+    color: hsl(var(--blue-5));
   }
 
   .site-branding--bg-white & {
-    color: var(--blue-5);
+    color: hsl(var(--blue-5));
   }
 
   & a {

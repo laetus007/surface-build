@@ -4,13 +4,13 @@
  */
 
 .block__title {
-  color: var(--gray-9);
-  font-size: var(--font-size-0);
+  color: hsl(var(--gray-9));
+  font-size: var(--font-size-2);
   letter-spacing: 0.02em;
   line-height: var(--font-lineheight-2);
   margin-block: 0 var(--size-2);
 
   .site-footer & {
-    color: var(--gray-7);
+    color: hsl(var(--gray-7));
   }
 }

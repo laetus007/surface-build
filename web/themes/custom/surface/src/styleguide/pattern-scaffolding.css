@@ -1,12 +1,12 @@
 :where(html) {
-  --link: var(--indigo-7);
-  --link-visited: var(--grape-7);
-  --text-1: var(--gray-9);
-  --text-2: var(--gray-7);
-  --surface-1: var(--gray-0);
-  --surface-2: var(--gray-2);
-  --surface-3: var(--gray-3);
-  --surface-4: var(--gray-4);
+  --link: hsl(var(--indigo-7));
+  --link-visited: hsl(var(--grape-7));
+  --text-1: hsl(var(--gray-9));
+  --text-2: hsl(var(--gray-7));
+  --surface-1: hsl(var(--gray-0));
+  --surface-2: hsl(var(--gray-2));
+  --surface-3: hsl(var(--gray-3));
+  --surface-4: hsl(var(--gray-4));
   --max-inline-body: calc(100vw - (var(--size-8) * 2));
 }
 
@@ -88,7 +88,7 @@
 
     > div {
       aspect-ratio: var(--ratio-square);
-      border-color: var(--gray-3);
+      border-color: hsl(var(--gray-3));
       border-style: solid;
       border-width: var(--size-05);
       display: grid;
@@ -118,7 +118,7 @@
   .color-demo__swatch {
     .swatch {
       aspect-ratio: var(--ratio-square);
-      border-color: var(--gray-3);
+      border-color: hsl(var(--gray-3));
       border-radius: var(--radius-1);
       border-width: var(--size-05);
       display: grid;
@@ -175,22 +175,22 @@
     }
 
     .font-meta__alpha {
-      color: var(--gray-7);
+      color: hsl(var(--gray-7));
       width: 100%;
     }
 
     .font-meta__label {
-      color: var(--gray-6);
+      color: hsl(var(--gray-6));
     }
 
     .font-meta__preview {
-      border-top: var(--border-size-1) solid var(--gray-3);
+      border-top: var(--border-size-1) solid hsl(var(--gray-3));
       margin: var(--size-2) 0 0;
       padding: var(--size-2) 0 0;
       width: fit-content;
 
       @media (min-width: 768px) {
-        border-left: var(--border-size-1) solid var(--gray-3);
+        border-left: var(--border-size-1) solid hsl(var(--gray-3));
         border-top: 0;
         margin: 0 0 0 var(--size-2);
         padding: 0 0 0 var(--size-2);
@@ -218,7 +218,7 @@
 
     > div {
       aspect-ratio: var(--ratio-square);
-      border-color: var(--gray-3);
+      border-color: hsl(var(--gray-3));
       border-radius: var(--radius-3);
       border-width: var(--size-00);
       display: grid;
@@ -238,7 +238,7 @@
     > div {
       flex-grow: 1;
       font-weight: var(--font-weight-300);
-      outline: 1px solid #ddd;
+      outline: 1px solid hsl(0, 0%, 87%);
       overflow: hidden;
       padding: 0.8em 1.2em;
       width: calc(25% - 1px);

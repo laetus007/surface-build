@@ -4,8 +4,8 @@
  */
 
 .skip-link {
-  background-color: var(--gray-9);
-  color: white;
+  background-color: hsl(var(--gray-9));
+  color: hsl(0, 0%, 100%);
   display: block;
   outline: none;
   padding-block: var(--size-1);
@@ -15,7 +15,7 @@
   width: 100%;
 
   &:hover {
-    color: white;
+    color: hsl(0, 0%, 100%);
     text-decoration: underline;
   }
 

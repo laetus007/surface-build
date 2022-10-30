@@ -4,7 +4,7 @@
  */
 
 .l-page {
-  background: white;
+  background: hsl(0, 0%, 100%);
   display: grid;
   grid-template-rows: auto 1fr auto auto;
   min-height: 100vh;

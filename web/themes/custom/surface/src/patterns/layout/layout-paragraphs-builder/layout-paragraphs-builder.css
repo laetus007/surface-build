@@ -5,6 +5,6 @@
 
 .lpb-formatter:hover,
 .lpb-formatter:focus-within {
-  outline: 1px dashed #d6d6d6;
+  outline: 1px dashed hsl(0, 0%, 84%);
   outline-offset: 1px;
 }

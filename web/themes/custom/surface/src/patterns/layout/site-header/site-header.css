@@ -97,8 +97,8 @@
 }
 
 .site-header__inner {
-  background: white;
-  box-shadow: -36px 1px 36px rgba(0, 0, 0, 8%);
+  background: hsl(0, 0%, 100%);
+  box-shadow: -36px 1px 36px hsla(0, 0%, 0%, 8%);
   flex-grow: 1;
   transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
   width: 100%;

@@ -5,7 +5,7 @@
 
 .site-branding {
   align-items: flex-end;
-  background-color: var(--blue-5);
+  background-color: hsl(var(--blue-5));
   display: flex;
   flex-shrink: 1;
   margin-inline-start: calc(var(--size-2) * -1);
@@ -28,5 +28,5 @@
 }
 
 .site-branding__name {
-  color: white;
+  color: hsl(0, 0%, 100%);
 }

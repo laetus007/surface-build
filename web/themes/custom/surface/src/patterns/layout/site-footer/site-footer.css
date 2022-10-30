@@ -4,8 +4,8 @@
  */
 
 .site-footer {
-  background: linear-gradient(180deg, var(--gray-9) 0%, var(--gray-8) 100%);
-  color: var(--gray-7);
+  background: linear-gradient(180deg, hsl(var(--gray-9)) 0%, hsl(var(--gray-8)) 100%);
+  color: hsl(var(--gray-7));
   position: relative;
 }
 

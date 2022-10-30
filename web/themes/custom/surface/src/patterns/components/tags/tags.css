@@ -9,7 +9,7 @@
 }
 
 .field--tags__label {
-  color: var(--gray-7);
+  color: hsl(var(--gray-7));
   font-size: var(--font-size-0);
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -56,10 +56,10 @@
 
 .field--tags__item a {
   align-items: center;
-  color: var(--blue-9);
+  color: hsl(var(--blue-9));
   display: flex;
   font-size: var(--font-size-1);
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   letter-spacing: 0.02em;
   line-height: 1.5;
   position: relative;
@@ -68,7 +68,7 @@
 
 .node--view-mode-full {
   & .field--tags {
-    background-color: var(--gray-1);
+    background-color: hsl(var(--gray-1));
     margin-block: var(--size-9);
     padding-block: var(--size-3);
     padding-inline: var(--size-4);

@@ -18,7 +18,7 @@
 }
 
 .gin-secondary-toolbar--frontend {
-  background: white;
+  background: hsl(0, 0%, 100%);
   display: block;
   position: fixed;
   top: 39px;
