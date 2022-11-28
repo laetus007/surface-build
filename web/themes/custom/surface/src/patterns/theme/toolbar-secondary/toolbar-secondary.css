@@ -8,7 +8,7 @@
   max-width: var(--max-width);
   padding-inline: var(--size-2);
 
-  @media (min-width: 976px) {
+  @media (--toolbar) {
     padding-inline: var(--size-4);
 
     .gin--vertical-toolbar & {

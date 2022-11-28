@@ -91,8 +91,8 @@
       "text": "Surface",
       "altText": "Surface Logo",
       "url": "/",
-      "srcLight": "./dist/images/logo.svg",
-      "srcDark": "./dist/images/logo.svg"
+      "srcLight": "./dist/images/logo-surface.svg",
+      "srcDark": "./dist/images/logo-surface.svg"
     }
   },
   "uikits": [

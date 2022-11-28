@@ -27,17 +27,6 @@
     transition: background-size 0.4s;
     width: calc(100% + var(--size-4));
 
-    .search-narrow & {
-      font-size: 16px;
-      height: calc(3 * var(--size-2));
-      padding-inline: var(--size-2);
-
-      @media (--md) {
-        height: calc(var(--size-2) * 4);
-        padding-inline: var(--size-4);
-      }
-    }
-
     &::-ms-clear {
       opacity: 0.5;
       width: 40px;
@@ -50,10 +39,6 @@
 
       @media screen and (-ms-high-contrast: active) {
         border-bottom-width: var(--size-1);
-
-        .search-narrow & {
-          border-bottom-width: 5px;
-        }
       }
     }
   }
@@ -93,10 +78,6 @@
   padding-inline: 0;
   position: relative;
   width: 100px;
-
-  .search-narrow & {
-    width: var(--size-6);
-  }
 
   &:focus {
     box-shadow: none;
@@ -144,10 +125,5 @@
     height: 100%;
     pointer-events: none;
     width: 24px;
-
-    .search-narrow & {
-      background-size: auto;
-      width: 100%;
-    }
   }
 }

@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Search modal.
+ */
+
+.search-modal {
+  background-color: hsl(var(--santa-barbara-sand));
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+
+  &::backdrop {
+    background: purple;
+    opacity: 0.2;
+  }
+}

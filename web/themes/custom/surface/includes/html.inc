@@ -19,6 +19,12 @@ function surface_preprocess_html(&$variables) {
   if ($site_branding && $site_branding !== 'default') {
     $variables['attributes']['class'][] = 'surface--' . $site_branding;
   }
+
+  // Set default menu
+  $site_menu = theme_get_setting('site_menu');
+  if ($site_menu && $site_menu !== 'default') {
+    $variables['attributes']['class'][] = 'surface--' . $site_menu;
+  }
 }
 
 /**

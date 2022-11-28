@@ -1,9 +1,9 @@
 /**
  * @file
- * Base Layout.
+ * Container Layout.
  */
 
-.l-container {
+.container {
   margin-inline: auto;
   max-width: var(--max-width);
   padding-inline: var(--size-2);

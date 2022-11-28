@@ -4,10 +4,10 @@
  */
 
 :where(button) {
-  font: inherit;
-  font-size: inherit;
   color: inherit;
+  font: inherit;
   letter-spacing: inherit;
+  margin: 0;
 }
 
 :where(button label[for]) {

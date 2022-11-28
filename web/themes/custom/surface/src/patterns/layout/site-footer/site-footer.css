@@ -12,7 +12,7 @@
 .site-footer__inner {
   padding-block: var(--size-4);
 
-  @media (min-width: 976px) {
+  @media (--toolbar) {
     .gin--vertical-toolbar & {
       padding-inline-start: calc(var(--size-4) + 60px);
     }
