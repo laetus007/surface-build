@@ -3,7 +3,7 @@
 } %}
 
 <header id="header" class="site-header" data-drupal-selector="site-header" role="banner" data-once="navigation">
-	<div class="site-header__fixable is-fixed is-expanded" data-drupal-selector="site-header-fixable">
+	<div class="site-header__fixable" data-drupal-selector="site-header-fixable">
 		<div class="site-header__preface">
       <div class="container">
         <div class="flex">
@@ -36,7 +36,6 @@
           } %}
         {% endblock %}
 
-        <div class="header-nav-overlay" data-drupal-selector="header-nav-overlay"></div>
         {% include '@components/mobile-nav/mobile-nav.twig' %}
 
         <div id="header-nav" class="header-nav surface--mega" data-drupal-selector="header-nav">

@@ -8,10 +8,8 @@
     props.navButton.setAttribute('aria-expanded', value);
 
     if (value) {
-      props.body.classList.add('is-overlay-active');
       props.navWrapper.classList.add('is-active');
     } else {
-      props.body.classList.remove('is-overlay-active');
       props.navWrapper.classList.remove('is-active');
     }
   }
@@ -63,7 +61,6 @@
     window.addEventListener('resize', function () {
       if (props.surface.isDesktopNav()) {
         toggleNav(props, false);
-        props.body.classList.remove('is-overlay-active');
       }
 
       Drupal.surface.closeAllSubNav();
@@ -86,7 +83,7 @@
         var surface = Drupal.surface;
         var navButton = context.querySelector('[data-drupal-selector="mobile-nav__button"]');
         var body = context.querySelector('body');
-        var overlay = context.querySelector('[data-drupal-selector="header-nav-overlay"]');
+
         init({
           surface: surface,
           header: header,
@@ -94,7 +91,6 @@
           navWrapper: navWrapper,
           navButton: navButton,
           body: body,
-          overlay: overlay
         });
       }
     }
