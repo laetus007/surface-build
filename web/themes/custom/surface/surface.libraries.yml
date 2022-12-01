@@ -190,6 +190,11 @@ search-wide:
   js:
     dist/js/search-wide.js: {}
 
+settings:
+  css:
+    theme:
+      dist/css/settings.css: {}
+
 tabs:
   css:
     theme:

@@ -8,8 +8,4 @@
 
   Drupal.surface.isDesktopNav = isDesktopNav;
 
-  window.addEventListener('load', function(event) {
-    document.body.classList.remove('preload');
-  });
-
 })(Drupal);

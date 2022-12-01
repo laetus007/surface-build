@@ -11,9 +11,6 @@
  * Adds body classes if certain regions have content.
  */
 function surface_preprocess_html(&$variables) {
-  // So fonts can be preloaded from base theme in the event Surface is used as a subtheme.
-  $variables['surface_path'] = \Drupal::request()->getBasePath() . '/' . \Drupal::service('extension.list.theme')->getPath('surface');
-
   // Set default theme
   $site_theme = theme_get_setting('site_theme');
   if ($site_theme && $site_theme !== 'default') {
