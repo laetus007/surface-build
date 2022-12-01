@@ -48,10 +48,9 @@ function surface_form_system_theme_settings_alter(&$form, FormStateInterface $fo
   $form['surface_settings']['settings']['site_menu'] = [
     '#type' => 'radios',
     '#title' => t('Navigation (Main menu)'),
-    '#description' => t('Choose the main navigation style you want applied to your site.'),
     '#default_value' => theme_get_setting('site_menu'),
     '#options' => [
-      'default' => t('Normal'),
+      'default' => t('Normal (Default)'),
       'dropdown' => t('Dropdown'),
       'mega' => t('Megamenu')
     ],

@@ -78,11 +78,35 @@
         &:checked {
           border-color: rgb(5, 80, 230);
           box-shadow: inset 0 0 0 1px rgb(5, 80, 230);
+
+          &:focus {
+            box-shadow: inset 0 0 0 1px rgb(5, 80, 230), 0 0 0 3px rgba(0, 125, 250, 60%);
+          }
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 3px rgba(0, 125, 250, 60%);
         }
       }
 
       input[data-drupal-selector='edit-site-menu-default'] {
         background-image: url('../images/menu-default.svg');
+      }
+
+      input[data-drupal-selector='edit-site-menu-dropdown'] {
+        background-image: url('../images/menu-dropdown.svg');
+      }
+
+      input[data-drupal-selector='edit-site-menu-mega'] {
+        background-image: url('../images/menu-mega.svg');
+      }
+
+      .form-item__label {
+        font-size: 12px;
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        width: 100%;
       }
     }
   }

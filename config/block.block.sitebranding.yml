@@ -1,4 +1,4 @@
-uuid: 84fc2b5f-101d-4e10-a764-3ef3be775c65
+uuid: 8a0b96d2-228d-49b3-8cd2-f723b6459aef
 langcode: en
 status: true
 dependencies:
@@ -6,11 +6,9 @@ dependencies:
     - system
   theme:
     - surface
-_core:
-  default_config_hash: _aC1_pw19MMEhMnUhGABdG5pDulANeYkDvAl49s9mHE
-id: surface_site_branding
+id: sitebranding
 theme: surface
-region: header
+region: footer
 weight: 0
 provider: null
 plugin: system_branding_block
