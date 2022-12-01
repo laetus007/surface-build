@@ -27,12 +27,6 @@
   }
 }
 
-.search-wide__container {
-  .container-inline & {
-    display: block;
-  }
-}
-
 .search-wide__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -65,7 +59,7 @@
   }
 
   & svg {
-    margin-inline: auto;
+    margin-inline-end: var(--size-1);
   }
 
   @media (forced-colors: active) {

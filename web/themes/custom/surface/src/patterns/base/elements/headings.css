@@ -3,10 +3,10 @@
  * Headings element styles.
  */
 
-/* Remove top margin for adjacent subheadings. */
 :where(h1, h2, h3, h4, h5, h6) {
   font-family: var(--font-sans);
 
+  /* Remove top margin for adjacent subheadings. */
   & + & {
     margin-block-start: 0;
   }

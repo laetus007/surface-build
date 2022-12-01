@@ -4,9 +4,8 @@
 
   /* Containers */
   --max-width: 1440px;
+}
 
-  .surface--dgsom & {
-    --font-sans: Karbon, Helvetica, sans-serif;
-    --font-serif: Georgia, 'Times New Roman', Times, serif;
-  }
+:where([data-theme='dgsom']) {
+  --font-sans: Karbon, Helvetica, sans-serif;
 }

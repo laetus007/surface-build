@@ -14,7 +14,7 @@ function surface_preprocess_html(&$variables) {
   // Set default theme
   $site_theme = theme_get_setting('site_theme');
   if ($site_theme && $site_theme !== 'default') {
-    $variables['attributes']['class'][] = 'surface--' . $site_theme;
+    $variables['theme'] = $site_theme;
   }
 }
 
