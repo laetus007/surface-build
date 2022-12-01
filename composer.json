@@ -81,8 +81,8 @@
         },
         "patches": {
           "drupal/layout_paragraphs": {
-              "Ajax wrapper": "patches/layout_paragraphs_messages.patch"
-          }
+            "Ajax wrapper": "patches/layout_paragraphs_messages.patch"
+        }
         },
         "installer-paths": {
             "web/core": [

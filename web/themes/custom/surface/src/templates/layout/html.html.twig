@@ -14,12 +14,9 @@
  *   - slogan: The slogan of the site.
  * - page_top: Initial rendered markup. This should be printed before 'page'.
  * - page: The rendered page markup.
- * - page_bottom: Closing rendered markup. This variable should be printed after
- *   'page'.
+ * - page_bottom: Closing rendered markup. This variable should be printed after 'page'.
  * - db_offline: A flag indicating if the database is offline.
- * - placeholder_token: The token for generating head, css, js and js-bottom
- *   placeholders.
- * - surface_path: Returns the path to an Surface theme.
+ * - placeholder_token: The token for generating head, css, js and js-bottom placeholders.
  * - noscript_styles: <noscript> content.
  *
  * @see template_preprocess_html()
@@ -31,7 +28,6 @@
   not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
   node_type ? 'page-node-type-' ~ node_type|clean_class,
   db_offline ? 'db-offline',
-  'preload'
 ] %}
 
 <!DOCTYPE html>
@@ -41,7 +37,6 @@
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
-    {% include '@surface/includes/preload.twig' with { surface_path: surface_path } only %}
     {{ noscript_styles }}
   </head>
   <body{{ attributes.addClass(body_classes) }}>

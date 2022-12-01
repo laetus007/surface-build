@@ -1,0 +1,40 @@
+---
+menu_name: 'secondary'
+is_demo: true
+items:
+  - title: 'UCLA Health'
+    url: '#'
+    in_active_trail: false
+    below: false
+  - title: 'Give'
+    url: '#'
+    in_active_trail: false
+    below: false
+  - title: 'Departments'
+    url: '#'
+    in_active_trail: false
+    below:
+      - title: 'Administrative'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Basic Science'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Clinical'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Education and Research Centers'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Research Institutes'
+        url: '#'
+        in_active_trail: false
+        below: false
+  - title: 'Quick Links'
+    url: '#'
+    in_active_trail: false
+    below: false

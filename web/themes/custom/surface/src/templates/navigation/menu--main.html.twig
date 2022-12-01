@@ -36,6 +36,7 @@
     {% set menu_classes = [
       'menu',
       menu_name ? 'menu-' ~ menu_name|clean_class,
+      menu_class ? 'menu-main--' ~ menu_class|clean_class,
       menu_level > 0 ? 'menu-main--level-' ~ (menu_level + 1),
       attributes ? attributes.class
     ]|join(' ')|trim %}

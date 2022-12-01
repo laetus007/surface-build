@@ -12,9 +12,9 @@
 {% extends '@layout/page/page.twig' %}
   {% block header %}
     <header id="header" class="site-header" role="banner" data-once="navigation">
-      <div class="site-header__fixable is-fixed is-expanded">
+      <div class="site-header__fixable">
         <div id="site-header__inner" class="site-header__inner">
-          <div class="l-container site-header__inner__container">
+          <div class="container site-header__inner__container">
             {{ drupal_entity('block', 'surface_site_branding') }}
           </div>
         </div>
@@ -26,13 +26,13 @@
     {{ page.highlighted }}
     {{ page.content_above }}
 
-    <div class="l-container l-grid l-grid--medium">
+    <div class="container l-grid l-grid--medium">
       {% if title %}
         <h1 class="title" id="page-title">{{ title }}</h1>
       {% endif %}
     </div>
 
-    <div class="l-container l-grid l-grid--medium" id="content">
+    <div class="container l-grid l-grid--medium" id="content">
       <div id="block-surface-content" class="block block-system block-system-main-block text-content">
         {{ page.content }}
       </div>

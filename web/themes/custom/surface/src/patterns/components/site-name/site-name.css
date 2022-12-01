@@ -4,17 +4,9 @@
  */
 
 .site-name {
-  color: hsl(0, 0%, 100%);
+  color: hsl(var(--ucla-blue));
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-700);
-
-  .site-branding--bg-gray & {
-    color: hsl(var(--blue-5));
-  }
-
-  .site-branding--bg-white & {
-    color: hsl(var(--blue-5));
-  }
 
   & a {
     color: inherit;

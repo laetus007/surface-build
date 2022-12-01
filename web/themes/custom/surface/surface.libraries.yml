@@ -4,9 +4,9 @@ global:
     base:
       dist/css/global.css: {}
     layout:
+      dist/css/container.css: {}
       dist/css/block.css: {}
       dist/css/site-branding.css: {}
-      dist/css/layout.css: {}
       dist/css/grid.css: {}
       dist/css/layout-footer.css: {}
       dist/css/region.css: {}
@@ -168,11 +168,6 @@ menu-main:
     dist/js/menu-main.js: {}
     dist/js/menu-main-second-level.js: {}
 
-menu-account:
-  css:
-    component:
-      dist/css/menu-account.css: {}
-
 progress:
   css:
     component:
@@ -182,11 +177,6 @@ search-block-form:
   css:
     component:
       dist/css/search-block-form.css: {}
-
-search-narrow:
-  css:
-    component:
-      dist/css/search-narrow.css: {}
 
 search-results:
   css:
@@ -199,6 +189,11 @@ search-wide:
       dist/css/search-wide.css: {}
   js:
     dist/js/search-wide.js: {}
+
+settings:
+  css:
+    theme:
+      dist/css/settings.css: {}
 
 tabs:
   css:

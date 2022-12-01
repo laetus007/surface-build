@@ -5,18 +5,15 @@
 
 .site-branding {
   align-items: flex-end;
-  background-color: hsl(var(--blue-5));
   display: flex;
   flex-shrink: 1;
-  margin-inline-start: calc(var(--size-2) * -1);
   padding-block: var(--size-2);
-  padding-inline: var(--size-2);
+  padding-inline-end: var(--size-2);
   width: fit-content;
   z-index: 1000;
 
-  @media (--lg) {
-    height: var(--size-13);
-    padding-inline: var(--size-4);
+  @media (--toolbar) {
+    padding-inline-end: var(--size-4);
   }
 }
 

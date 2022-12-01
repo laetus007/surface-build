@@ -10,14 +10,6 @@
 
   & img {
     max-width: 100%;
-    width: 30px;
-
-    @media (--md) {
-      width: 40px;
-    }
-
-    @media (--lg) {
-      width: 50px;
-    }
+    width: 350px;
   }
 }

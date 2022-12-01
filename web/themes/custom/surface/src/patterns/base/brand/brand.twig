@@ -5,10 +5,10 @@
       <article class="brand-demo">
         {% for item in list %}
           <div class="brand-demo__swatch">
-            <div class="swatch" style="background-color: var({{ item.var }})"></div>
+            <div class="swatch" style="background-color: hsl({{ item.value }})"></div>
             <div class="meta">
               <span class="name">{{ item.name }}</span>
-              <span class="value"> {{ item.value }}</span>
+              <span class="value">hsl({{ item.value }})</span>
               <span class="var">{{ item.var }}</span>
             </div>
           </div>

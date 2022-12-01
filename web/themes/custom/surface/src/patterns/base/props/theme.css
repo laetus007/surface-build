@@ -1,17 +1,12 @@
 :where(html) {
+  --color-dark: 0 0% 0%;
+  --color-light: 0 0% 100%;
+
   /* Containers */
   --max-width: 1440px;
 
-  /* Shadows */
-  --shadow-focusable: 0 0 0 2px white, 0 0 0 4px var(--blue-7), 0 0 36px rgba(83, 176, 235, 25%);
-
-  /* Outlines */
-  --outline-thin: 1px solid transparent;
-  --outline-thick: 6px dashed transparent;
-  --outline-base: 2px solid var(--blue-7);
-  --outline-offset: 2px;
-
-  /* Form */
-  --form-element-border-size-base: 2px;
-  --form-element-border-size-left: 6px;
+  .surface--dgsom & {
+    --font-sans: Karbon, Helvetica, sans-serif;
+    --font-serif: Georgia, 'Times New Roman', Times, serif;
+  }
 }

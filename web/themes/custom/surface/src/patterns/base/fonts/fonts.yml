@@ -1,13 +1,13 @@
 ---
 fonts:
-  serif:
+  Georgia:
     - family: 'Georgia, Times New Roman, serif'
       style: 'normal'
       weight: '400'
     - family: 'Georgia, Times New Roman, serif'
       style: 'normal'
       weight: '700'
-  sans:
+  Helvetica:
     - family: 'Helvetica, sans-serif'
       style: 'normal'
       weight: '300'
@@ -15,6 +15,22 @@ fonts:
       style: 'normal'
       weight: '400'
     - family: 'Helvetica, sans-serif'
+      style: 'normal'
+      weight: '700'
+  karbon:
+    - family: 'Karbon, sans-serif'
+      style: 'normal'
+      weight: '400'
+    - family: 'Karbon, sans-serif'
+      style: 'italic'
+      weight: '400'
+    - family: 'Karbon, sans-serif'
+      style: 'normal'
+      weight: '500'
+    - family: 'Karbon, sans-serif'
+      style: 'normal'
+      weight: '600'
+    - family: 'Karbon, sans-serif'
       style: 'normal'
       weight: '700'
   system:

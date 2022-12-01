@@ -5,7 +5,7 @@
 
 .search-wide__wrapper {
   background: hsl(var(--gray-9));
-  display: none;
+  display: block;
   height: var(--size-18);
   inset-block-start: 100%;
   inset-inline-start: 0;
@@ -20,10 +20,6 @@
   visibility: hidden;
   width: 100%;
   z-index: 1;
-
-  @media (--xl) {
-    display: block;
-  }
 
   &.is-active {
     max-height: var(--size-18);
@@ -48,67 +44,23 @@
 }
 
 .search-wide__button {
+  align-items: center;
   appearance: none;
   background: transparent;
   border: 0;
-  color: hsl(var(--gray-9));
+  color: hsl(var(--color-light));
   cursor: pointer;
-  display: none;
-  height: var(--size-13);
+  display: inline-flex;
   position: relative;
-  width: var(--size-6);
-
-  @media (--xl) {
-    display: block;
-  }
 
   &:focus {
-    outline: 0;
-    position: relative;
-
-    &::after {
-      border-radius: 4px;
-      border: solid 2px hsl(var(--blue-5));
-      content: '';
-      height: var(--size-6);
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 80%;
-    }
+    box-shadow: 0 0 0 2px hsl(var(--color-light)), 0 0 0 4px hsl(var(--gray-8) / 15%);
+    outline: none;
   }
 
   &[aria-expanded='true'] {
-    background: hsl(var(--gray-9));
-
     &:focus::after {
       border-color: hsl(0, 0%, 100%);
-    }
-
-    & .search-wide__button-close {
-      &::before,
-      &::after {
-        border-block-start: solid 2px hsl(0, 0%, 100%);
-        content: '';
-        height: 0;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        width: var(--size-3);
-      }
-
-      &::before {
-        transform: translate(-50%, -50%) rotate(-45deg);
-      }
-
-      &::after {
-        transform: translate(-50%, -50%) rotate(45deg);
-      }
-    }
-
-    & svg {
-      display: none;
     }
   }
 

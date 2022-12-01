@@ -1,0 +1,161 @@
+<?php
+
+/**
+ * @file
+ * Functions to support Surface theme settings.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_FORM_ID_alter() for system_theme_settings.
+ */
+function surface_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  // Work-around for a core bug affecting admin themes. See issue #943212.
+  if (isset($form_id)) {
+    return;
+  }
+
+  // Move default theme settings to bottom.
+  $form['logo']['#open'] = FALSE;
+  $form['logo']['#weight'] = 97;
+  $form['favicon']['#open'] = FALSE;
+  $form['favicon']['#weight'] = 98;
+  $form['theme_settings']['#open'] = FALSE;
+  $form['theme_settings']['#weight'] = 99;
+  $form['#attached']['library'][] = 'surface/settings';
+  $form['#submit'][] = 'surface_form_system_theme_settings_submit';
+
+  // General settings.
+  $form['surface_settings']['settings'] = [
+    '#type' => 'details',
+    '#open' => TRUE,
+    '#title' => t('Settings'),
+  ];
+
+  $form['surface_settings']['settings']['site_theme'] = [
+    '#type' => 'radios',
+    '#title' => t('Appearance'),
+    '#description' => t('Choose the branding you want applied to your site.'),
+    '#default_value' => theme_get_setting('site_theme'),
+    '#options' => [
+      'default' => t('Surface'),
+      'dgsom' => t('DGSOM'),
+      'labs' => t('Labs'),
+    ],
+  ];
+
+  $form['surface_settings']['settings']['site_menu'] = [
+    '#type' => 'radios',
+    '#title' => t('Navigation (Main menu)'),
+    '#default_value' => theme_get_setting('site_menu'),
+    '#options' => [
+      'default' => t('Normal (Default)'),
+      'dropdown' => t('Dropdown'),
+      'mega' => t('Megamenu')
+    ],
+  ];
+
+  $form['surface_settings']['settings']['header_logo'] = [
+    '#type' => 'managed_file',
+    '#title' => t('Header logo'),
+    '#description' => t('Choose the logo you want to display in your sites header.'),
+    '#default_value'  => theme_get_setting('header_logo'),
+    '#upload_location' => 'public://logos',
+    '#upload_validators' => [
+      'file_validate_extensions' => [
+        'svg'
+      ],
+    ],
+  ];
+
+  $form['surface_settings']['settings']['footer_logo'] = [
+    '#type' => 'managed_file',
+    '#title' => t('Footer logo'),
+    '#description' => t('Choose the logo you want to display in your sites footer.  Generally this is the inverse of the header logo.'),
+    '#default_value'  => theme_get_setting('footer_logo'),
+    '#upload_location' => 'public://logos',
+    '#upload_validators' => [
+      'file_validate_extensions' => [
+        'svg'
+      ],
+    ],
+  ];
+
+  $form['surface_settings']['settings']['facebook_url'] = [
+    '#type' => 'textfield',
+    '#title' => t('Facebook Url'),
+    '#description' => t("Enter Facebook url. Leave the url field blank to hide this icon."),
+    '#default_value' => theme_get_setting('facebook_url'),
+  ];
+
+  $form['surface_settings']['settings']['twitter_url'] = [
+    '#type' => 'textfield',
+    '#title' => t('Twitter Url'),
+    '#description' => t("Enter Twitter url. Leave the url field blank to hide this icon."),
+    '#default_value' => theme_get_setting('twitter_url'),
+  ];
+
+  $form['surface_settings']['settings']['instagram_url'] = [
+    '#type' => 'textfield',
+    '#title' => t('Instagram Url'),
+    '#description' => t("Enter Instagram url. Leave the url field blank to hide this icon."),
+    '#default_value' => theme_get_setting('instagram_url'),
+  ];
+
+  $form['surface_settings']['settings']['youtube_url'] = [
+    '#type' => 'textfield',
+    '#title' => t('Youtube Url'),
+    '#description' => t("Enter Youtube url. Leave the url field blank to hide this icon."),
+    '#default_value' => theme_get_setting('youtube_url'),
+  ];
+
+  $form['surface_settings']['settings']['linkedin_url'] = [
+    '#type' => 'textfield',
+    '#title' => t('LinkedIn Url'),
+    '#description' => t("Enter LinkedIn url. Leave the url field blank to hide this icon."),
+    '#default_value' => theme_get_setting('linkedin_url'),
+  ];
+}
+
+/**
+ * Submit handler for system_theme_settings.
+ */
+function surface_form_system_theme_settings_submit(&$form, FormStateInterface $form_state) {
+  $surface_settings = $form['surface_settings']['settings'];
+  $values = $form_state->getValues();
+
+  // Process header logo
+  if (!empty($values['header_logo'])) {
+    $file = \Drupal\file\Entity\File::load($values['header_logo'][0]);
+    if ($file->isTemporary()) {
+      $file->setPermanent();
+      $file->save();
+    }
+  } else {
+    if (!empty($surface_settings['header_logo']['#default_value'][0])) {
+      $file = \Drupal\file\Entity\File::load($surface_settings['header_logo']['#default_value'][0]);
+      if ($file->isPermanent()) {
+        $file->setTemporary();
+        $file->save();
+      }
+    }
+  }
+
+  // Process footer logo
+  if (!empty($values['footer_logo'])) {
+    $file = \Drupal\file\Entity\File::load($values['footer_logo'][0]);
+    if ($file->isTemporary()) {
+      $file->setPermanent();
+      $file->save();
+    }
+  } else {
+    if (!empty($surface_settings['footer_logo']['#default_value'][0])) {
+      $file = \Drupal\file\Entity\File::load($surface_settings['footer_logo']['#default_value'][0]);
+      if ($file->isPermanent()) {
+        $file->setTemporary();
+        $file->save();
+      }
+    }
+  }
+}

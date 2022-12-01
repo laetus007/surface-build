@@ -1,0 +1,19 @@
+/**
+ * @file
+ * Container Layout.
+ */
+
+.container {
+  margin-inline: auto;
+  max-width: var(--max-width);
+  padding-inline: var(--size-2);
+  width: 100%;
+
+  @media (--xl) {
+    padding-inline: var(--size-4);
+  }
+
+  & & {
+    padding-inline: 0;
+  }
+}

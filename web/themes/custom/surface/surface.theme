@@ -5,15 +5,9 @@
  * Functions to support theming.
  */
 
-require_once dirname(__FILE__) . '/includes/block.inc';
-require_once dirname(__FILE__) . '/includes/field.inc';
-require_once dirname(__FILE__) . '/includes/form.inc';
-require_once dirname(__FILE__) . '/includes/html.inc';
-require_once dirname(__FILE__) . '/includes/media.inc';
-require_once dirname(__FILE__) . '/includes/navigation.inc';
-require_once dirname(__FILE__) . '/includes/node.inc';
-require_once dirname(__FILE__) . '/includes/paragraph.inc';
-require_once dirname(__FILE__) . '/includes/taxonomy.inc';
-require_once dirname(__FILE__) . '/includes/theme.inc';
-require_once dirname(__FILE__) . '/includes/user.inc';
-require_once dirname(__FILE__) . '/includes/views.inc';
+/**
+ * Load include files which contain additional theming logic.
+ */
+foreach (glob(\Drupal::service('extension.list.theme')->getPath('surface') . '/includes/*.theme') as $file) {
+  include $file;
+}

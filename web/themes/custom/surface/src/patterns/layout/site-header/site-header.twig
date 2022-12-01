@@ -1,52 +1,54 @@
+{% include '@components/pre-header/pre-header.twig' with {
+  'text': 'Find the latest information on <a href="#">COVID-19</a>, <a href="#">monkeypox</a> and <a href="#">flu prevention</a>.'
+} %}
+
 <header id="header" class="site-header" data-drupal-selector="site-header" role="banner" data-once="navigation">
-	<div class="site-header__fixable is-fixed is-expanded" data-drupal-selector="site-header-fixable">
-		<div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
-			<div class="site-header__inner__container l-container">
+	<div class="site-header__fixable" data-drupal-selector="site-header-fixable">
+		<div class="site-header__preface">
+      <div class="container">
+        <div class="flex">
+          {% block secondary %}
+            <ul class="secondary-links">
+              <li>
+                <a href="#">UCLA Health</a>
+              </li>
+              <li>
+                <a href="#">Give</a>
+              </li>
+              <li>
+                <a href="#">Translate</a>
+              </li>
+            </ul>
+          {% endblock %}
+
+          {% block search_wide %}
+            {% include '@components/search-wide/search-wide.twig' %}
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+    <div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
+			<div class="site-header__inner__container container">
         {% block branding %}
           {% include '@layout/site-branding/site-branding.twig' with {
-            'site_logo': '/dist/images/logo.svg',
-            'site_name': 'Surface'
+            'site_logo': '/dist/images/logo.svg'
           } %}
         {% endblock %}
 
-        <div class="header-nav-overlay" data-drupal-selector="header-nav-overlay"></div>
         {% include '@components/mobile-nav/mobile-nav.twig' %}
 
         <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
-          {% block search_narrow %}
-            {% include '@components/search-narrow/search-narrow.twig' %}
-          {% endblock %}
-
-          {% block primary %}
-            {% embed '@layout/nav/nav.twig' with {
-              'heading_id': 'block-surface-main-menu',
-              'label': 'Main navigation'
-            } %}
-              {% block content %}
-                {% include '@components/menu-main/menu-main.twig' with {
-                  'menu_name': 'main',
-                  'is_demo': true,
-                  'items': main_menu
-                } %}
-              {% endblock %}
-            {% endembed %}
-          {% endblock %}
-
-          <div class="site-header__secondary">
-            {% block search_wide %}
-              {% include '@components/search-wide/search-wide.twig' %}
-            {% endblock %}
-
-            {% block secondary %}
+          <div class="header-nav__inner">
+            {% block primary %}
               {% embed '@layout/nav/nav.twig' with {
-                'heading_id': 'block-surface-account-menu',
-                'label': 'User account menu'
+                'heading_id': 'block-surface-main-menu',
+                'label': 'Main navigation'
               } %}
                 {% block content %}
-                  {% include '@components/menu-account/menu-account.twig' with {
-                    'menu_name': 'account',
+                  {% include '@components/menu-main/menu-main.twig' with {
+                    'menu_name': 'main',
                     'is_demo': true,
-                    'items': account_menu
+                    'items': main_menu
                   } %}
                 {% endblock %}
               {% endembed %}
