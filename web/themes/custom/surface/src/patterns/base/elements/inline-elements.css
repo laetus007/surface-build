@@ -32,7 +32,7 @@
     }
 
     &[href]::after {
-      content: ' <' attr(href) '>';
+      content: " <" attr(href) ">";
       font-family: var(--font-sans);
       font-size: 10pt;
       font-weight: normal;
@@ -40,16 +40,16 @@
     }
 
     /* Uncomment and replace example.com with your site’s domain.
-    &[href^='/']::after {
-      content: ' <http://example.com' attr(href) '>';
+    &[href^="/"]::after {
+      content: " <http://example.com" attr(href) ">";
     } */
 
-    &[href^='javascript:']::after,
-    &[href^='mailto:']::after,
-    &[href^='tel:']::after,
-    &[href^='#']::after,
-    &[href*='?']::after {
-      content: '';
+    &[href^="javascript:"]::after,
+    &[href^="mailto:"]::after,
+    &[href^="tel:"]::after,
+    &[href^="#"]::after,
+    &[href*="?"]::after {
+      content: "";
     }
   }
 }
@@ -64,7 +64,7 @@
 
   @media print {
     &[title]::after {
-      content: ' (' attr(title) ')';
+      content: " (" attr(title) ")";
     }
   }
 }

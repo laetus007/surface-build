@@ -10,7 +10,7 @@
   padding-inline: var(--size-1);
 
   & select,
-  & input:not([type='submit']) {
+  & input:not([type="submit"]) {
     background-color: hsl(0, 0%, 100%);
   }
 

@@ -163,7 +163,7 @@ menu-main:
   css:
     component:
       dist/css/menu-main.css: {}
-      dist/css/nav-primary-button.css: {}
+      dist/css/menu-toggle.css: {}
   js:
     dist/js/menu-main.js: {}
     dist/js/menu-main-second-level.js: {}

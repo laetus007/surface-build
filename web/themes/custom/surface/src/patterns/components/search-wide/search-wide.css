@@ -52,7 +52,7 @@
     outline: none;
   }
 
-  &[aria-expanded='true'] {
+  &[aria-expanded="true"] {
     &:focus::after {
       border-color: hsl(0, 0%, 100%);
     }

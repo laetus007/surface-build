@@ -3,7 +3,7 @@
  * Feed icon styles.
  */
 
-@import '../../base/mixins/svg-icon';
+@import "../../base/mixins/svg-icon";
 
 .feed-icon {
   align-items: center;
@@ -24,7 +24,7 @@
 }
 
 .feed-icon__icon {
-  @include svg-icon('../images/rss.svg', 28px, 28px, white);
+  @include svg-icon("../images/rss.svg", 28px, 28px, white);
   background-color: hsl(var(--blue-5));
   margin-inline-start: var(--size-1);
 }

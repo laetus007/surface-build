@@ -25,7 +25,7 @@
     /* Bottom divider line. */
     &::after {
       border-block-start: solid 2px hsl(var(--gray-1));
-      content: '';
+      content: "";
       height: 0;
       inset-block-end: 0;
       inset-inline-start: 0;

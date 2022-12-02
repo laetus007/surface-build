@@ -6,7 +6,7 @@
 @mixin svg-icon($path, $height, $width, $color) {
   background-color: $color;
   background-size: cover;
-  content: '';
+  content: "";
   display: inline-block;
   height: $height;
   mask-image: url($path);

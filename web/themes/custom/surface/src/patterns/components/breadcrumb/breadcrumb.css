@@ -11,7 +11,7 @@
 
   &::after {
     background: linear-gradient(to left, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 100%) 100%);
-    content: '';
+    content: "";
     height: var(--size-2);
     inset-block-start: 0;
     inset-inline-end: calc(var(--size-2) * -1);
@@ -61,7 +61,7 @@
   &:nth-child(n+2)::before {
     border-block-start: 2px solid hsl(var(--gray-6));
     border-inline-end: 2px solid hsl(var(--gray-6));
-    content: '';
+    content: "";
     display: inline-block;
     height: 8px;
     margin-inline: var(--size-2) var(--size-205);

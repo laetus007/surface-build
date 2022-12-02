@@ -38,7 +38,7 @@ details.details {
   &::before {
     border-block-start: solid 2px currentcolor;
     border-inline-end: solid 2px currentcolor;
-    content: '';
+    content: "";
     display: block;
     height: 10px;
     inset-block-start: 50%;
@@ -52,7 +52,7 @@ details.details {
   &::after {
     border-radius: var(--border-size-2);
     box-shadow: inset 0 0 0 2px hsl(var(--blue-4));
-    content: '';
+    content: "";
     inset: calc(var(--details-border-width) * -1);
     opacity: 0;
     pointer-events: none;

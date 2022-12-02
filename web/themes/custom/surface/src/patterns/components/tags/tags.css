@@ -19,7 +19,7 @@
   margin-inline-end: calc(var(--size-3) - (var(--size-1) / 2));
 
   &::after {
-    content: ':';
+    content: ":";
   }
 
   @media (--md) {
@@ -49,7 +49,7 @@
 }
 
 .field--tags__item:nth-last-child(n+2)::after {
-  content: ',';
+  content: ",";
   font-size: var(--font-size-1);
   line-height: 1.5;
 }

@@ -11,10 +11,8 @@
  *   - title: The menu link title.
  *   - url: The menu link url, instance of \Drupal\Core\Url
  *   - localized_options: Menu link localized options.
- *   - is_expanded: TRUE if the link has visible children within the current
- *     menu tree.
- *   - is_collapsed: TRUE if the link has children within the current menu tree
- *     that are not currently visible.
+ *   - is_expanded: TRUE if the link has visible children within the current menu tree.
+ *   - is_collapsed: TRUE if the link has children within the current menu tree that are not currently visible.
  *   - in_active_trail: TRUE if the link is in the active trail.
  *
  * @ingroup themeable
@@ -22,11 +20,11 @@
 #}
 
 {{ attach_library('surface/menu-main') }}
-{% import _self as menus %}
-{{ menus.menu_links(items, attributes, 0, 'menu__item-', menu_name, menu_class, item_class, link_class, is_demo) }}
 
-{% macro menu_links(items, attributes, menu_level, aria_id, menu_name, menu_class, item_class, link_class, is_demo) %}
-  {% set primary_nav_level = 'menu-main--level-' ~ (menu_level + 1) %}
+{% import _self as menus %}
+{{ menus.menu_links(items, attributes, 0, 'menu__item-', menu_name, menu, item_class, link_class, is_demo) }}
+
+{% macro menu_links(items, attributes, menu_level, aria_id, menu_name, menu, item_class, link_class, is_demo) %}
   {% set drupal_selector_primary_nav_level = menu_level <= 1 ? 'menu-main--level-' ~ (menu_level + 1) : false %}
   {% set is_top_level_menu = menu_level == 0 %}
 
@@ -35,8 +33,8 @@
 
     {% set menu_classes = [
       'menu',
-      'menu-' ~ menu_name|clean_class,
-      primary_nav_level,
+      menu_name ? 'menu-' ~ menu_name|clean_class,
+      menu_level > 0 ? 'menu-main--level-' ~ (menu_level + 1),
       attributes ? attributes.class
     ]|join(' ')|trim %}
 
@@ -44,7 +42,7 @@
       <span data-drupal-selector="menu-main--1" class="menu-main--1"></span>
     {% endif %}
 
-    <ul class="{{ menu_classes }}" data-drupal-selector="{{ drupal_selector_primary_nav_level }}" {{ attributes ? attributes|without('class') }}>
+    <ul class="{{ menu_classes }}" data-type="{{ menu }}" data-drupal-selector="{{ drupal_selector_primary_nav_level }}" {{ attributes ? attributes|without('class') }}>
       {% for item in items %}
 
         {% if item.url.isRouted and item.url.routeName == '<nolink>' %}
@@ -58,25 +56,25 @@
         {% set item_classes = [
             'menu__item',
             'menu__item--' ~ menu_item_type,
-            'menu__item--level-' ~ (menu_level + 1),
+            menu_level > 0 ? 'menu__item--level-' ~ (menu_level + 1),
             item.in_active_trail ? 'menu__item--active-trail',
-            item.below ? 'menu__item--has-children',
+            item.below and menu != 'default' ? 'menu__item--has-children',
           ]
         %}
 
         {% set link_classes = [
             'menu__link',
             'menu__link--' ~ menu_item_type,
-            'menu__link--level-' ~ (menu_level + 1),
+            menu_level > 0 ? 'menu__link--level-' ~ (menu_level + 1),
             item.in_active_trail ? 'menu__link--active-trail',
-            item.below ? 'menu__link--has-children',
+            item.below and menu != 'default' ? 'menu__link--has-children',
           ]
         %}
 
         {% set item_classes = item_classes|join(' ')|trim %}
         {% set link_classes = link_classes|join(' ')|trim %}
 
-        <li class="{{ item_classes }}" data-drupal-selector="{{ is_top_level_menu and item.below ? 'menu__item--has-children' }}">
+        <li class="{{ item_classes }}" data-drupal-selector="{{ is_top_level_menu and menu != 'default' and item.below ? 'menu__item--has-children' }}">
           {% set aria_id = (aria_id ~ loop.index )|clean_id %}
           {% set link_title %}
             <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
@@ -84,25 +82,34 @@
 
           {% if menu_item_type == 'link' or menu_item_type == 'nolink' %}
             {% if is_demo %}
-              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ is_top_level_menu ? 'menu__link--has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
+              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ is_top_level_menu and menu != 'default' ? 'menu__link--has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
             {% else %}
               {{ link(menu_item_type == 'link' ? link_title : item.title, item.url, {
                 'class': link_classes,
-                'data-drupal-selector': is_top_level_menu ? 'menu__link--has-children' : false,
+                'data-drupal-selector': is_top_level_menu  ? 'menu__link--has-children' : false,
                 })
               }}
             {% endif %}
 
-            {% if item.below %}
+            {% if item.below and menu != "default" %}
+
               {% if is_top_level_menu %}
-                <button class="primary-nav__button-toggle" data-drupal-selector="primary-nav-submenu-toggle-button" aria-controls="{{ aria_id }}" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <button class="menu-toggle" data-drupal-selector="menu-toggle" aria-controls="{{ aria_id }}" aria-expanded="false" aria-hidden="true" tabindex="-1">
                   <span class="visually-hidden">{{ item.title ~ ' sub-navigation' }}</span>
                   <span class="icon--menu-toggle"></span>
                 </button>
               {% endif %}
 
-              {% set attributes = attributes.setAttribute('id', aria_id) %}
-              {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu_class, item_class, link_class, is_demo) }}
+              {% if menu == 'dropdown' and menu_level < 1 %}
+                {% set attributes = attributes.setAttribute('id', aria_id) %}
+                {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu, item_class, link_class, is_demo) }}
+              {% endif %}
+
+              {% if menu == 'mega' and menu_level < 2 %}
+                {% set attributes = attributes.setAttribute('id', aria_id) %}
+                {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu, item_class, link_class, is_demo) }}
+              {% endif %}
+
             {% endif %}
 
           {% elseif menu_item_type == 'button' %}
@@ -118,7 +125,7 @@
             {% endif %}
 
             {% set attributes = attributes.setAttribute('id', aria_id) %}
-            {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu_class, item_class, link_class, is_demo) }}
+            {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu, item_class, link_class, is_demo) }}
           {% endif %}
         </li>
       {% endfor %}

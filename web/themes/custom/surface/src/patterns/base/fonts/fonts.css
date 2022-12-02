@@ -6,8 +6,8 @@
 @font-face {
   font-family: karbon;
   src:
-    local('Karbon Regular'),
-    url('../fonts/karbon/Karbon-Regular.ttf') format('truetype');
+    local("Karbon Regular"),
+    url("../fonts/karbon/Karbon-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,8 +16,8 @@
 @font-face {
   font-family: karbon;
   src:
-    local('Karbon Italic'),
-    url('../fonts/karbon/Karbon-RegularItalic.ttf') format('truetype');
+    local("Karbon Italic"),
+    url("../fonts/karbon/Karbon-RegularItalic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -26,8 +26,8 @@
 @font-face {
   font-family: karbon;
   src:
-    local('Karbon Medium'),
-    url('../fonts/karbon/Karbon-Medium.ttf') format('truetype');
+    local("Karbon Medium"),
+    url("../fonts/karbon/Karbon-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -36,8 +36,8 @@
 @font-face {
   font-family: karbon;
   src:
-    local('Karbon Semibold'),
-    url('../fonts/karbon/Karbon-SemiBold.ttf') format('truetype');
+    local("Karbon Semibold"),
+    url("../fonts/karbon/Karbon-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -46,8 +46,8 @@
 @font-face {
   font-family: karbon;
   src:
-    local('Karbon Bold'),
-    url('../fonts/karbon/Karbon-Bold.ttf') format('truetype');
+    local("Karbon Bold"),
+    url("../fonts/karbon/Karbon-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;

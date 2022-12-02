@@ -3,7 +3,7 @@
   var secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu__item--has-children"]');
 
   function toggleSubNav(topLevelMenuItem, toState) {
-    var buttonSelector = '[data-drupal-selector="primary-nav-submenu-toggle-button"]';
+    var buttonSelector = '[data-drupal-selector="menu-toggle"]';
     var button = topLevelMenuItem.querySelector(buttonSelector);
     var state = toState !== undefined ? toState : button.getAttribute('aria-expanded') !== 'true';
 
@@ -41,7 +41,7 @@
   }
 
   secondLevelNavMenus.forEach(function (el) {
-    var button = el.querySelector('[data-drupal-selector="primary-nav-submenu-toggle-button"]');
+    var button = el.querySelector('[data-drupal-selector="menu-toggle"]');
     button.removeAttribute('aria-hidden');
     button.removeAttribute('tabindex');
 
@@ -79,7 +79,7 @@
   function closeAllSubNav() {
     secondLevelNavMenus.forEach(function (el) {
       if (el.contains(document.activeElement)) {
-        el.querySelector('[data-drupal-selector="primary-nav-submenu-toggle-button"]').focus();
+        el.querySelector('[data-drupal-selector="menu-toggle"]').focus();
       }
 
       toggleSubNav(el, false);
@@ -91,7 +91,7 @@
   function areAnySubNavsOpen() {
     var subNavsAreOpen = false;
     secondLevelNavMenus.forEach(function (el) {
-      var button = el.querySelector('[data-drupal-selector="primary-nav-submenu-toggle-button"]');
+      var button = el.querySelector('[data-drupal-selector="menu-toggle"]');
       var state = button.getAttribute('aria-expanded') === 'true';
 
       if (state) {

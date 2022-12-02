@@ -76,7 +76,7 @@
   &::before {
     border-block-end: solid 2px currentcolor;
     border-inline-start: solid 2px currentcolor;
-    content: '';
+    content: "";
     display: block;
     height: 0.5em;
     margin-inline-end: 0.5em;
@@ -92,7 +92,7 @@
     border-left: 0.3em solid transparent;
     border-right: 0.3em solid transparent;
     border-top: 0.3em solid;
-    content: '';
+    content: "";
     margin-inline-start: var(--size-05);
   }
 }

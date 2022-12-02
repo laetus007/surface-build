@@ -36,7 +36,7 @@
     color: inherit;
   }
 
-  &[aria-expanded='true'] {
+  &[aria-expanded="true"] {
     .mobile-nav-button__icon {
       background-color: transparent;
 
@@ -90,7 +90,7 @@
 
   &::before {
     background-color: hsl(var(--blue-5));
-    content: '';
+    content: "";
     height: 3px;
     inset-block-start: -8px;
     inset-inline-start: 0;
@@ -101,7 +101,7 @@
 
   &::after {
     background-color: hsl(var(--blue-5));
-    content: '';
+    content: "";
     height: 3px;
     inset-block: auto -8px;
     inset-inline-start: 0;

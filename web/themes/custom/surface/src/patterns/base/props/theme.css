@@ -6,6 +6,6 @@
   --max-width: 1440px;
 }
 
-:where([data-theme='dgsom']) {
+:where([data-theme="dgsom"]) {
   --font-sans: Karbon, Helvetica, sans-serif;
 }

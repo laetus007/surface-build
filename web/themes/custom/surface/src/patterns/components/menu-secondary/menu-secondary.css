@@ -34,7 +34,7 @@
     @media (--xl) {
       align-items: center;
       display: flex;
-      flex-wrap: nowrap; /* Ensure that sub navigation toggle button doesn't wrap underneath link. */
+      flex-wrap: nowrap; /* Ensure that sub navigation toggle button doesn"t wrap underneath link. */
       margin-block: 0;
       margin-inline: 0;
       max-width: 12.5rem;
@@ -110,7 +110,7 @@
         @media (--xl) {
           border-radius: 0.25rem;
           border: solid 2px #2494db;
-          content: '';
+          content: "";
           height: 3.375rem;
           left: 50%;
           position: absolute;
@@ -150,7 +150,7 @@
       &::before,
       &::after {
         border-top: solid 3px hsl(203, 72%, 50%);
-        content: '';
+        content: "";
         height: 0;
         position: absolute;
         right: 0.5625rem;
@@ -185,7 +185,7 @@
       &:focus {
         &::before {
           @media (--xl) {
-            content: '';
+            content: "";
             width: calc(100% + 1.6875rem);
           }
         }
@@ -196,7 +196,7 @@
         padding-inline-end: 0.5625rem;
       }
 
-      &[aria-expanded='true']::after {
+      &[aria-expanded="true"]::after {
         opacity: 0;
 
         @media (--xl) {
@@ -216,7 +216,7 @@
     &::after {
       border-top: solid 5px #2494db;
       bottom: 0;
-      content: '';
+      content: "";
       height: 0;
       left: 0;
       position: absolute;
@@ -375,7 +375,7 @@
     &::after {
       border-top: solid 5px #2494db;
       bottom: 0;
-      content: '';
+      content: "";
       height: 0;
       left: 0;
       position: absolute;
