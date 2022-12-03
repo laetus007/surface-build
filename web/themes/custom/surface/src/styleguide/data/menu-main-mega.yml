@@ -1,4 +1,5 @@
 ---
+menu: 'mega'
 main_menu_mega:
   - title: 'Education'
     url: '#'

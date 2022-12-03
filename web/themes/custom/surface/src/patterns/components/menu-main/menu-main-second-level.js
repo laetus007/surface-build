@@ -55,9 +55,9 @@
       if (isDesktopNav() && !el.classList.contains('is-touch-event')) {
         el.classList.add('is-active-mouseover-event');
         toggleSubNav(el, true);
-        setTimeout(function () {
-          el.classList.remove('is-active-mouseover-event');
-        }, 500);
+        // setTimeout(function () {
+        //   el.classList.remove('is-active-mouseover-event');
+        // }, 500);
       }
     });
 
@@ -70,6 +70,7 @@
     el.addEventListener('mouseout', function () {
       if (isDesktopNav() && !document.activeElement.matches('[aria-expanded="true"], .is-active-menu-parent *')) {
         toggleSubNav(el, false);
+        el.classList.remove('is-active-mouseover-event');
       }
     });
 

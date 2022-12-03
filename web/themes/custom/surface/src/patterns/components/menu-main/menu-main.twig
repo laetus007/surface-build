@@ -56,7 +56,7 @@
         {% set item_classes = [
             'menu__item',
             'menu__item--' ~ menu_item_type,
-            menu_level > 0 ? 'menu__item--level-' ~ (menu_level + 1),
+            'menu__item--level-' ~ (menu_level + 1),
             item.in_active_trail ? 'menu__item--active-trail',
             item.below and menu != 'default' ? 'menu__item--has-children',
           ]
@@ -65,7 +65,7 @@
         {% set link_classes = [
             'menu__link',
             'menu__link--' ~ menu_item_type,
-            menu_level > 0 ? 'menu__link--level-' ~ (menu_level + 1),
+            'menu__link--level-' ~ (menu_level + 1),
             item.in_active_trail ? 'menu__link--active-trail',
             item.below and menu != 'default' ? 'menu__link--has-children',
           ]

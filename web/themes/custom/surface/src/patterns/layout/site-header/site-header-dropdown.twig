@@ -3,58 +3,56 @@
 } %}
 
 <header id="header" class="site-header" data-drupal-selector="site-header" role="banner" data-once="navigation">
-	<div class="site-header__fixable" data-drupal-selector="site-header-fixable">
-		<div class="site-header__preface">
-      <div class="container">
-        <div class="flex">
-          {% block secondary %}
-            <ul class="secondary-links">
-              <li>
-                <a href="#">UCLA Health</a>
-              </li>
-              <li>
-                <a href="#">Give</a>
-              </li>
-              <li>
-                <a href="#">Translate</a>
-              </li>
-            </ul>
-          {% endblock %}
-
-          {% block search_wide %}
-            {% include '@components/search-wide/search-wide.twig' %}
-          {% endblock %}
-        </div>
-      </div>
-    </div>
-
-    <div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
-			<div class="site-header__inner__container container">
-        {% block branding %}
-          {% include '@layout/site-branding/site-branding.twig' with {
-            'site_logo': '/dist/images/logo.svg'
-          } %}
+  <div class="site-header__preface">
+    <div class="container">
+      <div class="flex">
+        {% block secondary %}
+          <ul class="secondary-links">
+            <li>
+              <a href="#">UCLA Health</a>
+            </li>
+            <li>
+              <a href="#">Give</a>
+            </li>
+            <li>
+              <a href="#">Translate</a>
+            </li>
+          </ul>
         {% endblock %}
 
-        {% include '@components/mobile-nav/mobile-nav.twig' %}
+        {% block search_wide %}
+          {% include '@components/search-wide/search-wide.twig' %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
 
-        <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
-          <div class="header-nav__inner">
-            {% block primary %}
-              {% embed '@layout/nav/nav.twig' with {
-                'heading_id': 'block-surface-main-menu',
-                'label': 'Main navigation'
-              } %}
-                {% block content %}
-                  {% include '@components/menu-main/menu-main.twig' with {
-                    'menu_name': 'main',
-                    'is_demo': true,
-                    'items': main_menu_dropdown
-                  } %}
-                {% endblock %}
-              {% endembed %}
-            {% endblock %}
-          </div>
+  <div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
+    <div class="site-header__inner__container container">
+      {% block branding %}
+        {% include '@layout/site-branding/site-branding.twig' with {
+          'site_logo': '/dist/images/logo.svg'
+        } %}
+      {% endblock %}
+
+      {% include '@components/mobile-nav/mobile-nav.twig' %}
+
+      <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
+        <div class="header-nav__inner">
+          {% block primary %}
+            {% embed '@layout/nav/nav.twig' with {
+              'heading_id': 'block-surface-main-menu',
+              'label': 'Main navigation'
+            } %}
+              {% block content %}
+                {% include '@components/menu-main/menu-main.twig' with {
+                  'menu_name': 'main',
+                  'is_demo': true,
+                  'items': main_menu_dropdown
+                } %}
+              {% endblock %}
+            {% endembed %}
+          {% endblock %}
         </div>
       </div>
     </div>

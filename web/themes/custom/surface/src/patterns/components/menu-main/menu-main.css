@@ -41,7 +41,7 @@
       position: relative;
       width: max-content;
 
-      .surface--mega & {
+      [data-type="mega"] & {
         position: static;
       }
     }
@@ -92,7 +92,7 @@
         }
       }
 
-      .surface--mega & {
+      [data-type="mega"] & {
         color: hsl(var(--ucla-blue));
       }
     }
@@ -206,6 +206,12 @@
     }
   }
 
+  .is-active-mouseover-event {
+    .menu__link {
+      color: hsl(var(--ucla-blue));
+    }
+  }
+
   .menu__link-inner {
     align-items: center;
     display: inline-flex;
@@ -253,7 +259,7 @@
       width: 0;
       z-index: 105; /* Match level 2 menus. */
 
-      .surface--mega & {
+      [data-type="mega"] & {
         border: none;
       }
     }
@@ -308,7 +314,7 @@
     z-index: 105; /* Appear above search container. */
 
     /* Megamenu option selected */
-    .surface--mega & {
+    [data-type="mega"] & {
       align-items: baseline;
       display: grid;
       grid-gap: var(--size-1);
@@ -395,7 +401,7 @@
       padding-inline: 0;
     }
 
-    .surface--mega & {
+    [data-type="mega"] & {
       color: hsl(var(--ucla-blue));
     }
   }
