@@ -5,31 +5,24 @@
 
 .header-nav {
   background-color: hsl(0, 0%, 100%);
-  border-block-start: solid hsl(0, 0%, 100%) var(--size-11);
-  border-top-width: 100px;
   box-shadow: 0 0 72px hsla(0, 0%, 0%, 10%);
   flex-basis: 0;
   flex-grow: 1;
-  height: 100%;
+  height: 100vh;
   inset-block-start: 0;
-  inset-inline-start: 100%;
   overflow: auto;
-  padding-block: 0 var(--size-2);
+  padding-block: 99px var(--size-2);
   padding-inline: var(--size-2);
-  position: fixed;
-  transition: visibility 0.2s, transform 0.2s;
+  position: absolute;
+  right: 0;
+  transition: visibility 0.2s, clip-path ease-in-out 700ms;
   visibility: hidden;
   width: 100%;
   z-index: 105;
 
   &.is-active {
     visibility: visible;
-    transform: translateX(-100%);
-  }
-
-  /* Take into account Pattern Lab */
-  .pl & {
-    border-top-width: 200px;
+    animation: clip-path-circle-open 750ms ease-in-out forwards;
   }
 
   /* Take into account admin toolbar and orientations */
@@ -68,13 +61,32 @@
     border-block-start: 0;
     box-shadow: none;
     display: flex;
+    height: auto;
     justify-content: flex-end;
     overflow: visible;
     padding-block: 0;
     padding-inline: 0;
     position: static;
-    transform: none;
-    transition: transform 0.2s;
     visibility: visible;
+  }
+}
+
+@keyframes clip-path-circle-open {
+  0% {
+    clip-path: circle(0% at top right);
+  }
+
+  100% {
+    clip-path: circle(250% at top right);
+  }
+}
+
+@keyframes clip-path-circle-close {
+  0% {
+    clip-path: circle(250% at top right);
+  }
+
+  100% {
+    clip-path: circle(0% at top right);
   }
 }
