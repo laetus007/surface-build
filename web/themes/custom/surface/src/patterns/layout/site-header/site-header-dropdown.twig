@@ -1,4 +1,4 @@
-{% include '@components/pre-header/pre-header.twig' with {
+{% include '@components/site-alert/site-alert.twig' with {
   'text': 'Find the latest information on <a href="#">COVID-19</a>, <a href="#">monkeypox</a> and <a href="#">flu prevention</a>.'
 } %}
 
@@ -46,7 +46,7 @@
             } %}
               {% block content %}
                 {% include '@components/menu-main/menu-main.twig' with {
-                  'menu_name': 'main',
+                  'menu': 'dropdown',
                   'is_demo': true,
                   'items': main_menu_dropdown
                 } %}

@@ -14,7 +14,7 @@
 
   /* Take into account pattern lab */
   .pl & {
-    position: absolute;
+    position: relative;
   }
 
   /* Take into account vertical toolbar */
@@ -127,5 +127,5 @@
 .flex {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }

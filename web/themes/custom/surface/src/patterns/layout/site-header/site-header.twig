@@ -1,8 +1,10 @@
-{% include '@components/pre-header/pre-header.twig' with {
-  'text': 'Find the latest information on <a href="#">COVID-19</a>, <a href="#">monkeypox</a> and <a href="#">flu prevention</a>.'
-} %}
-
 <header id="header" class="site-header" data-drupal-selector="site-header" role="banner" data-once="navigation">
+  {% block alert %}
+    {% include '@components/site-alert/site-alert.twig' with {
+      'text': 'Find the latest information on <a href="#">COVID-19</a>, <a href="#">monkeypox</a> and <a href="#">flu prevention</a>.'
+    } %}
+  {% endblock %}
+
   <div class="site-header__preface">
     <div class="container">
       <div class="flex">
@@ -13,6 +15,9 @@
             </li>
             <li>
               <a href="#">Give</a>
+            </li>
+            <li>
+              <a href="#">Quick Links</a>
             </li>
             <li>
               <a href="#">Translate</a>
@@ -45,7 +50,7 @@
             } %}
               {% block content %}
                 {% include '@components/menu-main/menu-main.twig' with {
-                  'menu_name': 'main',
+                  'menu': 'default',
                   'is_demo': true,
                   'items': main_menu
                 } %}

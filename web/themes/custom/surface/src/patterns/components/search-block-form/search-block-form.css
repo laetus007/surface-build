@@ -59,7 +59,7 @@
   }
 
   .search-wide__grid & {
-    grid-column: 1 / 14;
+    grid-column: 1 / 13;
   }
 }
 

@@ -42,13 +42,13 @@
   appearance: none;
   background: transparent;
   border: 0;
-  color: hsl(var(--color-light));
+  color: var(--text-light);
   cursor: pointer;
   display: inline-flex;
   position: relative;
 
   &:focus {
-    box-shadow: 0 0 0 2px hsl(var(--color-light)), 0 0 0 4px hsl(var(--gray-8) / 15%);
+    box-shadow: 0 0 0 2px hsl(var(--white)), 0 0 0 4px hsl(var(--gray-8) / 15%);
     outline: none;
   }
 

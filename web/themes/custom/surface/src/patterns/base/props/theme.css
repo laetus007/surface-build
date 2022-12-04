@@ -1,6 +1,15 @@
 :where(html) {
-  --color-dark: 0 0% 0%;
-  --color-light: 0 0% 100%;
+  --black: 0 0% 0%;
+  --white: 0 0% 100%;
+
+  /* Backgrounds */
+  --bg-dark: hsl(var(--black));
+  --bg-light: hsl(var(--white));
+  --bg-ucla-blue: hsl(var(--ucla-blue));
+
+  /* Text */
+  --text-dark: hsl(var(--black));
+  --text-light: hsl(var(--white));
 
   /* Containers */
   --max-width: 1440px;
@@ -8,4 +17,10 @@
 
 :where([data-theme="dgsom"]) {
   --font-sans: Karbon, Helvetica, sans-serif;
+  --font-size-1: var(--font-size-2);
+}
+
+:where([data-theme="labs"]) {
+  --font-sans: Karbon, Helvetica, sans-serif;
+  --font-size-1: var(--font-size-2);
 }

@@ -15,6 +15,10 @@
 
 {% if content %}
   {% embed '@layout/site-header/site-header.twig' %}
+    {% block alert %}
+      {{ drupal_entity('block', 'surface_site_alert') }}
+    {% endblock %}
+
     {% block branding %}
       {{ drupal_entity('block', 'surface_site_branding') }}
     {% endblock %}
@@ -25,10 +29,6 @@
 
     {% block search_wide %}
       {{ drupal_entity('block', 'surface_search_form_wide') }}
-    {% endblock %}
-
-    {% block secondary %}
-      {{ drupal_entity('block', 'surface_account_menu') }}
     {% endblock %}
   {% endembed %}
 {% endif %}

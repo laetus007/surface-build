@@ -1,6 +1,5 @@
 ---
 menu: 'dropdown'
-menu_name: 'main'
 is_demo: true
 items:
   - title: 'Education'

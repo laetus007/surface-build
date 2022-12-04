@@ -1,6 +1,6 @@
 (function (Drupal) {
   var isDesktopNav = Drupal.surface.isDesktopNav;
-  var secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu__item--has-children"]');
+  var secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu-main__item--has-children"]');
 
   function toggleSubNav(topLevelMenuItem, toState) {
     var buttonSelector = '[data-drupal-selector="menu-toggle"]';
@@ -32,7 +32,7 @@
   function handleBlur(e) {
     if (!Drupal.surface.isDesktopNav()) return;
     setTimeout(function () {
-      var menuParentItem = e.target.closest('[data-drupal-selector="menu__item--has-children"]');
+      var menuParentItem = e.target.closest('[data-drupal-selector="menu-main__item--has-children"]');
 
       if (!menuParentItem.contains(document.activeElement)) {
         toggleSubNav(menuParentItem, false);
@@ -55,9 +55,6 @@
       if (isDesktopNav() && !el.classList.contains('is-touch-event')) {
         el.classList.add('is-active-mouseover-event');
         toggleSubNav(el, true);
-        // setTimeout(function () {
-        //   el.classList.remove('is-active-mouseover-event');
-        // }, 500);
       }
     });
 

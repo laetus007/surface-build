@@ -1,5 +1,4 @@
 ---
-menu: 'dropdown'
 main_menu_dropdown:
   - title: 'Education'
     url: '#'

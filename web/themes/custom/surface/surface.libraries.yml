@@ -195,6 +195,11 @@ settings:
     theme:
       dist/css/settings.css: {}
 
+site-alert:
+  css:
+    component:
+      dist/css/site-alert.css: {}
+
 tabs:
   css:
     theme:

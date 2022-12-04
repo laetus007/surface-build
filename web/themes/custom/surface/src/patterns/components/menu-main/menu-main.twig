@@ -4,7 +4,6 @@
  * Surface's theme implementation for the menus in the primary_menu region.
  *
  * Available variables:
- * - menu_name: The machine name of the menu.
  * - items: A nested list of menu items. Each menu item contains:
  *   - attributes: HTML attributes for the menu item.
  *   - below: The menu item child items.
@@ -22,9 +21,9 @@
 {{ attach_library('surface/menu-main') }}
 
 {% import _self as menus %}
-{{ menus.menu_links(items, attributes, 0, 'menu__item-', menu_name, menu, item_class, link_class, is_demo) }}
+{{ menus.menu_links(items, attributes, 0, 'menu-main__item-', menu, item_class, link_class, is_demo) }}
 
-{% macro menu_links(items, attributes, menu_level, aria_id, menu_name, menu, item_class, link_class, is_demo) %}
+{% macro menu_links(items, attributes, menu_level, aria_id, menu, item_class, link_class, is_demo) %}
   {% set drupal_selector_primary_nav_level = menu_level <= 1 ? 'menu-main--level-' ~ (menu_level + 1) : false %}
   {% set is_top_level_menu = menu_level == 0 %}
 
@@ -32,8 +31,7 @@
   {% if items %}
 
     {% set menu_classes = [
-      'menu',
-      menu_name ? 'menu-' ~ menu_name|clean_class,
+      'menu-main',
       menu_level > 0 ? 'menu-main--level-' ~ (menu_level + 1),
       attributes ? attributes.class
     ]|join(' ')|trim %}
@@ -54,39 +52,39 @@
         {% endif %}
 
         {% set item_classes = [
-            'menu__item',
-            'menu__item--' ~ menu_item_type,
-            'menu__item--level-' ~ (menu_level + 1),
-            item.in_active_trail ? 'menu__item--active-trail',
-            item.below and menu != 'default' ? 'menu__item--has-children',
+            'menu-main__item',
+            'menu-main__item--' ~ menu_item_type,
+            'menu-main__item--level-' ~ (menu_level + 1),
+            item.in_active_trail ? 'menu-main__item--active-trail',
+            item.below and menu != 'default' ? 'menu-main__item--has-children',
           ]
         %}
 
         {% set link_classes = [
-            'menu__link',
-            'menu__link--' ~ menu_item_type,
-            'menu__link--level-' ~ (menu_level + 1),
-            item.in_active_trail ? 'menu__link--active-trail',
-            item.below and menu != 'default' ? 'menu__link--has-children',
+            'menu-main__link',
+            'menu-main__link--' ~ menu_item_type,
+            'menu-main__link--level-' ~ (menu_level + 1),
+            item.in_active_trail ? 'menu-main__link--active-trail',
+            item.below and menu != 'default' ? 'menu-main__link--has-children',
           ]
         %}
 
         {% set item_classes = item_classes|join(' ')|trim %}
         {% set link_classes = link_classes|join(' ')|trim %}
 
-        <li class="{{ item_classes }}" data-drupal-selector="{{ is_top_level_menu and menu != 'default' and item.below ? 'menu__item--has-children' }}">
+        <li class="{{ item_classes }}" data-drupal-selector="{{ is_top_level_menu and menu != 'default' and item.below ? 'menu-main__item--has-children' }}">
           {% set aria_id = (aria_id ~ loop.index )|clean_id %}
           {% set link_title %}
-            <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
+            <span class="menu-main__link-inner menu-main__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
           {% endset %}
 
           {% if menu_item_type == 'link' or menu_item_type == 'nolink' %}
             {% if is_demo %}
-              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ is_top_level_menu and menu != 'default' ? 'menu__link--has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
+              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ is_top_level_menu and menu != 'default' ? 'menu-main__link--has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
             {% else %}
               {{ link(menu_item_type == 'link' ? link_title : item.title, item.url, {
                 'class': link_classes,
-                'data-drupal-selector': is_top_level_menu  ? 'menu__link--has-children' : false,
+                'data-drupal-selector': is_top_level_menu  ? 'menu-main__link--has-children' : false,
                 })
               }}
             {% endif %}
@@ -102,19 +100,19 @@
 
               {% if menu == 'dropdown' and menu_level < 1 %}
                 {% set attributes = attributes.setAttribute('id', aria_id) %}
-                {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu, item_class, link_class, is_demo) }}
+                {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu, item_class, link_class, is_demo) }}
               {% endif %}
 
               {% if menu == 'mega' and menu_level < 2 %}
                 {% set attributes = attributes.setAttribute('id', aria_id) %}
-                {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu, item_class, link_class, is_demo) }}
+                {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu, item_class, link_class, is_demo) }}
               {% endif %}
 
             {% endif %}
 
           {% elseif menu_item_type == 'button' %}
             {% if is_demo %}
-              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ is_top_level_menu ? 'menu__link-has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
+              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ is_top_level_menu ? 'menu-main__link-has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
             {% else %}
               {{ link(link_title, item.url, {
                 'class': link_classes,
@@ -125,7 +123,7 @@
             {% endif %}
 
             {% set attributes = attributes.setAttribute('id', aria_id) %}
-            {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu_name, menu, item_class, link_class, is_demo) }}
+            {{ menus.menu_links(item.below, attributes, menu_level + 1, aria_id, menu, item_class, link_class, is_demo) }}
           {% endif %}
         </li>
       {% endfor %}
