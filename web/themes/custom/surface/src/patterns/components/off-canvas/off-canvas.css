@@ -8,8 +8,8 @@
     line-height: var(--font-lineheight-2);
     margin-inline-start: 0;
 
-    & input[type='checkbox'],
-    & input[type='radio'] {
+    & input[type="checkbox"],
+    & input[type="radio"] {
       float: none;
       height: var(--size-105);
       transform: none;

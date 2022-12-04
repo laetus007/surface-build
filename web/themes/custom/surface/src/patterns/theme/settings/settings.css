@@ -3,7 +3,7 @@
  * Theme settings.
  */
 
-[data-drupal-selector='edit-site-theme'] {
+[data-drupal-selector="edit-site-theme"] {
   .form-radios {
     border-radius: 2rem;
     border: 1px solid #8e929c;
@@ -51,7 +51,7 @@
   }
 }
 
-[data-drupal-selector='edit-site-menu'] {
+[data-drupal-selector="edit-site-menu"] {
   .form-radios {
     display: flex;
     flex-wrap: wrap;
@@ -89,16 +89,16 @@
         }
       }
 
-      input[data-drupal-selector='edit-site-menu-default'] {
-        background-image: url('../images/menu-default.svg');
+      input[data-drupal-selector="edit-site-menu-default"] {
+        background-image: url("../images/menu-default.svg");
       }
 
-      input[data-drupal-selector='edit-site-menu-dropdown'] {
-        background-image: url('../images/menu-dropdown.svg');
+      input[data-drupal-selector="edit-site-menu-dropdown"] {
+        background-image: url("../images/menu-dropdown.svg");
       }
 
-      input[data-drupal-selector='edit-site-menu-mega'] {
-        background-image: url('../images/menu-mega.svg');
+      input[data-drupal-selector="edit-site-menu-mega"] {
+        background-image: url("../images/menu-mega.svg");
       }
 
       .form-item__label {

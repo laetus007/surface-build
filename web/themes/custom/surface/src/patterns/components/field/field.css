@@ -35,5 +35,5 @@
 }
 
 .field--label-inline .field__label::after {
-  content: ':';
+  content: ":";
 }

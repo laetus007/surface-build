@@ -71,7 +71,7 @@
 
   &::after {
     border-top: solid 2px hsl(var(--gray-1));
-    content: '';
+    content: "";
     height: 0;
     inset-block-end: 0;
     position: absolute;

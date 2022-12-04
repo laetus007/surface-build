@@ -4,7 +4,7 @@
  */
 
 :root {
-  --form-element-select-icon: url('../images/chevron-down.svg');
+  --form-element-select-icon: url("../images/chevron-down.svg");
 }
 
 select {

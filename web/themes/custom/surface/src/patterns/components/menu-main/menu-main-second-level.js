@@ -1,9 +1,9 @@
 (function (Drupal) {
   var isDesktopNav = Drupal.surface.isDesktopNav;
-  var secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu__item--has-children"]');
+  var secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu-main__item--has-children"]');
 
   function toggleSubNav(topLevelMenuItem, toState) {
-    var buttonSelector = '[data-drupal-selector="primary-nav-submenu-toggle-button"]';
+    var buttonSelector = '[data-drupal-selector="menu-toggle"]';
     var button = topLevelMenuItem.querySelector(buttonSelector);
     var state = toState !== undefined ? toState : button.getAttribute('aria-expanded') !== 'true';
 
@@ -32,7 +32,7 @@
   function handleBlur(e) {
     if (!Drupal.surface.isDesktopNav()) return;
     setTimeout(function () {
-      var menuParentItem = e.target.closest('[data-drupal-selector="menu__item--has-children"]');
+      var menuParentItem = e.target.closest('[data-drupal-selector="menu-main__item--has-children"]');
 
       if (!menuParentItem.contains(document.activeElement)) {
         toggleSubNav(menuParentItem, false);
@@ -41,7 +41,7 @@
   }
 
   secondLevelNavMenus.forEach(function (el) {
-    var button = el.querySelector('[data-drupal-selector="primary-nav-submenu-toggle-button"]');
+    var button = el.querySelector('[data-drupal-selector="menu-toggle"]');
     button.removeAttribute('aria-hidden');
     button.removeAttribute('tabindex');
 
@@ -55,9 +55,6 @@
       if (isDesktopNav() && !el.classList.contains('is-touch-event')) {
         el.classList.add('is-active-mouseover-event');
         toggleSubNav(el, true);
-        setTimeout(function () {
-          el.classList.remove('is-active-mouseover-event');
-        }, 500);
       }
     });
 
@@ -70,6 +67,7 @@
     el.addEventListener('mouseout', function () {
       if (isDesktopNav() && !document.activeElement.matches('[aria-expanded="true"], .is-active-menu-parent *')) {
         toggleSubNav(el, false);
+        el.classList.remove('is-active-mouseover-event');
       }
     });
 
@@ -79,7 +77,7 @@
   function closeAllSubNav() {
     secondLevelNavMenus.forEach(function (el) {
       if (el.contains(document.activeElement)) {
-        el.querySelector('[data-drupal-selector="primary-nav-submenu-toggle-button"]').focus();
+        el.querySelector('[data-drupal-selector="menu-toggle"]').focus();
       }
 
       toggleSubNav(el, false);
@@ -91,7 +89,7 @@
   function areAnySubNavsOpen() {
     var subNavsAreOpen = false;
     secondLevelNavMenus.forEach(function (el) {
-      var button = el.querySelector('[data-drupal-selector="primary-nav-submenu-toggle-button"]');
+      var button = el.querySelector('[data-drupal-selector="menu-toggle"]');
       var state = button.getAttribute('aria-expanded') === 'true';
 
       if (state) {

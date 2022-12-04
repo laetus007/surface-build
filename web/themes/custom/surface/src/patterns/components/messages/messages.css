@@ -3,7 +3,7 @@
  * Messages styles.
  */
 
-@import '../../base/mixins/svg-icon';
+@import "../../base/mixins/svg-icon";
 
 :root {
   --messages-icon-size: 32px;
@@ -46,7 +46,7 @@
   $message-error-color: hsl(var(--red-5));
 
   .messages__icon {
-    @include svg-icon('../images/error.svg', 32px, 32px, $message-error-color);
+    @include svg-icon("../images/error.svg", 32px, 32px, $message-error-color);
   }
 }
 
@@ -54,7 +54,7 @@
   $message-warning-color: hsl(var(--yellow-5));
 
   .messages__icon {
-    @include svg-icon('../images/warning.svg', 32px, 32px, $message-warning-color);
+    @include svg-icon("../images/warning.svg", 32px, 32px, $message-warning-color);
   }
 }
 
@@ -62,7 +62,7 @@
   $message-status-color: hsl(var(--green-5));
 
   .messages__icon {
-    @include svg-icon('../images/status.svg', 32px, 32px, $message-status-color);
+    @include svg-icon("../images/status.svg", 32px, 32px, $message-status-color);
   }
 }
 
@@ -70,7 +70,7 @@
   $message-info-color: hsl(var(--blue-5));
 
   .messages__icon {
-    @include svg-icon('../images/info.svg', 32px, 32px, $message-info-color);
+    @include svg-icon("../images/info.svg", 32px, 32px, $message-info-color);
   }
 }
 
@@ -95,7 +95,7 @@
   &::before,
   &::after {
     border-top: solid 2px hsl(var(--gray-5));
-    content: '';
+    content: "";
     display: block;
     height: 0;
     left: 50%;

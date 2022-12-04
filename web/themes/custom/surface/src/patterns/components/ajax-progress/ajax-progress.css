@@ -55,7 +55,7 @@
 
   &::before {
     border-width: 3px;
-    content: '';
+    content: "";
     height: 1.75rem;
     inset-block-start: 50%;
     inset-inline-start: 50%;

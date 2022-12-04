@@ -1,5 +1,4 @@
 ---
-menu_name: 'secondary'
 is_demo: true
 items:
   - title: 'UCLA Health'
@@ -37,4 +36,24 @@ items:
   - title: 'Quick Links'
     url: '#'
     in_active_trail: false
-    below: false
+    below:
+      - title: 'Quick Link 1'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Quick Link 2'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Quick Link 3'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Quick Link 4'
+        url: '#'
+        in_active_trail: false
+        below: false
+      - title: 'Quick Link 5'
+        url: '#'
+        in_active_trail: false
+        below: false

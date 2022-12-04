@@ -1,15 +1,15 @@
 /**
  * @file
- * Pre header styles.
+ * Site alert styles.
 */
 
-.pre-header {
-  background-color: hsl(var(--ucla-blue));
-  color: hsl(0, 0%, 100%);
+.site-alert {
+  background-color: var(--bg-ucla-blue);
+  color: var(--text-light);
   padding-block: var(--size-2);
 }
 
-.pre-header__layout {
+.site-alert__layout {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -22,8 +22,11 @@
   }
 }
 
-.pre-header__text {
-  color: hsl(0, 0%, 100%);
+.site-alert__text {
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-1);
+  line-height: var(--size-3);
 
   a {
     color: inherit;

@@ -1,5 +1,5 @@
 ---
-menu_name: 'main'
+menu: 'mega'
 is_demo: true
 items:
   - title: 'Education'

@@ -36,9 +36,9 @@ function surface_preprocess_maintenance_page(&$variables) {
 
 function surface_preprocess(&$variables) {
   // Get menu type
-  $menu_type = theme_get_setting('site_menu');
-  if ($menu_type && $menu_type !== 'default') {
-    $variables['menu_class'] = $menu_type;
+  $site_menu = theme_get_setting('site_menu');
+  if ($site_menu) {
+    $variables['menu'] = $site_menu;
   }
 
   // Set header logo

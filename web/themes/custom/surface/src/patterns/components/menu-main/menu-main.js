@@ -31,14 +31,6 @@
       }
     });
 
-    props.overlay.addEventListener('click', function () {
-      toggleNav(props, false);
-    });
-
-    props.overlay.addEventListener('touchstart', function () {
-      toggleNav(props, false);
-    });
-
     props.header.addEventListener('keydown', function (e) {
       if (e.key === 'Tab' && isNavOpen(props.navWrapper)) {
         var tabbableNavElements = tabbable.tabbable(props.navWrapper);

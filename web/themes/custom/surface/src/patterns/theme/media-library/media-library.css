@@ -32,13 +32,13 @@
 
   .views-display-link-widget {
     margin-right: 15px;
-    background-image: url('../images/grid.svg');
+    background-image: url("../images/grid.svg");
     background-repeat: no-repeat;
     background-position: left 0;
   }
 
   .views-display-link-widget_table {
-    background-image: url('../images/table.svg');
+    background-image: url("../images/table.svg");
     background-repeat: no-repeat;
     background-position: left 0;
   }
@@ -85,7 +85,7 @@
 
   &::before {
     border-top: 1px solid hsl(230, 7%, 84%);
-    content: '';
+    content: "";
     display: block;
     margin-top: -1px;
     width: 100%;
@@ -119,7 +119,7 @@
       border-radius: 2px;
       border: 3px solid hsl(151, 63%, 40%);
       bottom: 0;
-      content: '';
+      content: "";
       left: 0;
       margin: -1px -0.25rem;
       pointer-events: none;
@@ -141,7 +141,7 @@
   &::before {
     background-clip: padding-box;
     bottom: -1px;
-    content: '';
+    content: "";
     left: -0.25rem;
     pointer-events: none;
     position: absolute;
@@ -680,7 +680,7 @@
 }
 
 .media-library-item__edit {
-  background-image: url('../images/pencil.svg');
+  background-image: url("../images/pencil.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px;
@@ -688,7 +688,7 @@
   right: 40px;
 
   &:active {
-    background-image: url('../images/pencil.svg');
+    background-image: url("../images/pencil.svg");
   }
 }
 
@@ -699,7 +699,7 @@
 .media-library-item__remove.button:disabled:active,
 .media-library-item__remove.button:hover,
 .media-library-item__remove.button:focus {
-  background-image: url('../images/ex.svg');
+  background-image: url("../images/ex.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 12px;
@@ -709,7 +709,7 @@
 .media-library-item__remove:active,
 .media-library-item__remove.button:active,
 .media-library-item__remove.button:disabled:active {
-  background-image: url('../images/ex.svg');
+  background-image: url("../images/ex.svg");
   border-color: hsl(222, 100%, 40%) !important;
 }
 
@@ -739,7 +739,7 @@
 }
 
 .media-library-add-form__remove-button {
-  background-image: url('../images/ex.svg');
+  background-image: url("../images/ex.svg");
   background-position: var(--size-1) center;
   background-repeat: no-repeat;
   background-size: var(--size-105);
@@ -748,7 +748,7 @@
 }
 
 .media-library-add-form__remove-button.button:disabled {
-  background-image: url('../images/ex.svg');
+  background-image: url("../images/ex.svg");
 }
 
 /* @todo Remove in https://www.drupal.org/project/drupal/issues/3064914 */

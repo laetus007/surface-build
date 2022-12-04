@@ -3,8 +3,8 @@
  * Checkbox and radio input elements.
  */
 
-input[type='checkbox'],
-input[type='radio'] {
+input[type="checkbox"],
+input[type="radio"] {
   appearance: none;
   background-color: hsl(0, 0%, 100%);
   background-position: 50% 50%;
@@ -70,10 +70,10 @@ input[type='radio'] {
   }
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   &:checked {
     background-color: hsl(var(--blue-9));
-    background-image: url('../images/checked.svg');
+    background-image: url("../images/checked.svg");
     border-color: hsl(var(--blue-9));
   }
 
@@ -84,7 +84,7 @@ input[type='checkbox'] {
   }
 }
 
-input[type='radio'] {
+input[type="radio"] {
   border-radius: 50%;
 
   &:checked {

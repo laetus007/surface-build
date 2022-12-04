@@ -37,7 +37,7 @@
 }
 
 .form-item--error-message {
-  background-image: url('../images/inline-error.svg');
+  background-image: url("../images/inline-error.svg");
   background-position: left top;
   background-repeat: no-repeat;
   background-size: var(--size-2) var(--size-2);
