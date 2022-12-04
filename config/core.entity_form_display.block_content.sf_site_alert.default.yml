@@ -1,28 +1,24 @@
-uuid: 1103384d-7280-4e73-bc52-a5876a5b9e89
+uuid: a3dffd6e-47f0-4554-91c3-4e1a4b01079c
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.basic
-    - field.field.block_content.basic.body
+    - block_content.type.sf_site_alert
+    - field.field.block_content.sf_site_alert.field_sf_text
   module:
     - text
-_core:
-  default_config_hash: jAps3FCxvKecABS_tgExbhCZrBLQB3bNPWw18WjE3ss
-id: block_content.basic.default
+id: block_content.sf_site_alert.default
 targetEntityType: block_content
-bundle: basic
+bundle: sf_site_alert
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: -4
+  field_sf_text:
+    type: text_textarea
+    weight: 26
     region: content
     settings:
-      rows: 9
-      summary_rows: 3
+      rows: 5
       placeholder: ''
-      show_summary: false
     third_party_settings: {  }
   info:
     type: string_textfield

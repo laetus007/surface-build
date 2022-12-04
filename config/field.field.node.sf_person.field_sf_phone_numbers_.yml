@@ -1,0 +1,21 @@
+uuid: b761b3dd-3bb3-4197-8836-32007c54ecbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_phone_numbers_
+    - node.type.sf_person
+  module:
+    - telephone
+id: node.sf_person.field_sf_phone_numbers_
+field_name: field_sf_phone_numbers_
+entity_type: node
+bundle: sf_person
+label: 'Phone Number(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,183 @@
+uuid: 376b906c-3c4d-49cc-846f-518a9f1a5ff3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sf_person.body
+    - field.field.node.sf_person.field_sf_courses
+    - field.field.node.sf_person.field_sf_credentials
+    - field.field.node.sf_person.field_sf_education_and_degrees
+    - field.field.node.sf_person.field_sf_emails
+    - field.field.node.sf_person.field_sf_first_name
+    - field.field.node.sf_person.field_sf_honors_and_awards
+    - field.field.node.sf_person.field_sf_last_name
+    - field.field.node.sf_person.field_sf_m_documents
+    - field.field.node.sf_person.field_sf_m_primary_image
+    - field.field.node.sf_person.field_sf_middle_initial
+    - field.field.node.sf_person.field_sf_name_prefix
+    - field.field.node.sf_person.field_sf_office_hours
+    - field.field.node.sf_person.field_sf_office_location
+    - field.field.node.sf_person.field_sf_phone_numbers_
+    - field.field.node.sf_person.field_sf_position_title
+    - field.field.node.sf_person.field_sf_units
+    - field.field.node.sf_person.field_sf_websites
+    - node.type.sf_person
+  module:
+    - link
+    - telephone
+    - text
+    - user
+id: node.sf_person.default
+targetEntityType: node
+bundle: sf_person
+mode: default
+content:
+  body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_sf_courses:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_sf_credentials:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_sf_education_and_degrees:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_sf_emails:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_sf_first_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_sf_honors_and_awards:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_sf_last_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_sf_m_documents:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_sf_m_primary_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_middle_initial:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_sf_name_prefix:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_sf_office_hours:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_sf_office_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_sf_phone_numbers_:
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_sf_position_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sf_units:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sf_websites:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+hidden:
+  links: true

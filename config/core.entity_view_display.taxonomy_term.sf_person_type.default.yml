@@ -1,0 +1,13 @@
+uuid: 369006fa-6bed-4b42-9200-cae6123de80f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_person_type
+id: taxonomy_term.sf_person_type.default
+targetEntityType: taxonomy_term
+bundle: sf_person_type
+mode: default
+content: {  }
+hidden:
+  description: true

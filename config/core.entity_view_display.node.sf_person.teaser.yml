@@ -1,0 +1,56 @@
+uuid: eda654e7-0cd3-4c5a-b517-7ba37b26639e
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sf_person.body
+    - field.field.node.sf_person.field_sf_courses
+    - field.field.node.sf_person.field_sf_credentials
+    - field.field.node.sf_person.field_sf_education_and_degrees
+    - field.field.node.sf_person.field_sf_emails
+    - field.field.node.sf_person.field_sf_first_name
+    - field.field.node.sf_person.field_sf_honors_and_awards
+    - field.field.node.sf_person.field_sf_last_name
+    - field.field.node.sf_person.field_sf_m_documents
+    - field.field.node.sf_person.field_sf_m_primary_image
+    - field.field.node.sf_person.field_sf_middle_initial
+    - field.field.node.sf_person.field_sf_name_prefix
+    - field.field.node.sf_person.field_sf_office_hours
+    - field.field.node.sf_person.field_sf_office_location
+    - field.field.node.sf_person.field_sf_phone_numbers_
+    - field.field.node.sf_person.field_sf_position_title
+    - field.field.node.sf_person.field_sf_units
+    - field.field.node.sf_person.field_sf_websites
+    - node.type.sf_person
+  module:
+    - user
+id: node.sf_person.teaser
+targetEntityType: node
+bundle: sf_person
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_sf_courses: true
+  field_sf_credentials: true
+  field_sf_education_and_degrees: true
+  field_sf_emails: true
+  field_sf_first_name: true
+  field_sf_honors_and_awards: true
+  field_sf_last_name: true
+  field_sf_m_documents: true
+  field_sf_m_primary_image: true
+  field_sf_middle_initial: true
+  field_sf_name_prefix: true
+  field_sf_office_hours: true
+  field_sf_office_location: true
+  field_sf_phone_numbers_: true
+  field_sf_position_title: true
+  field_sf_units: true
+  field_sf_websites: true

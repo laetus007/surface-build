@@ -1,20 +1,18 @@
-uuid: 7ba36999-298f-4f1d-aa23-7bc8f6e1324b
+uuid: 1c0ec8fb-bc46-4754-b3ef-a548b55f016e
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.basic
-    - field.field.block_content.basic.body
+    - block_content.type.sf_site_alert
+    - field.field.block_content.sf_site_alert.field_sf_text
   module:
     - text
-_core:
-  default_config_hash: hBNNDTFwakREOTa6GGMqN899Iyrii0hInwSJtQ7Kj30
-id: block_content.basic.default
+id: block_content.sf_site_alert.default
 targetEntityType: block_content
-bundle: basic
+bundle: sf_site_alert
 mode: default
 content:
-  body:
+  field_sf_text:
     type: text_default
     label: hidden
     settings: {  }

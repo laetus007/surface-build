@@ -1,0 +1,17 @@
+uuid: 3f6ed955-179b-49b8-b8ae-646fe06e3fc4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Person
+type: sf_person
+description: 'Add a person to profile an individual.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

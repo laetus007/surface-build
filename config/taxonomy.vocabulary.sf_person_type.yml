@@ -1,0 +1,8 @@
+uuid: 6e8585de-c376-4645-a45a-1dcb7bd1ebb8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Person type'
+vid: sf_person_type
+description: 'a classification for person'
+weight: 0

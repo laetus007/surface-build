@@ -1,0 +1,35 @@
+uuid: b4ea436c-dd3f-4ad9-9db2-ff9c05313801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sf_article.body
+    - field.field.node.sf_article.field_sf_authored_on
+    - node.type.sf_article
+  module:
+    - datetime
+    - text
+    - user
+id: node.sf_article.default
+targetEntityType: node
+bundle: sf_article
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_authored_on:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  links: true

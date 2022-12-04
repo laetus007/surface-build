@@ -1,0 +1,19 @@
+uuid: 30ca52c3-e42a-46eb-813d-b7755e50062b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_last_name
+    - node.type.sf_person
+id: node.sf_person.field_sf_last_name
+field_name: field_sf_last_name
+entity_type: node
+bundle: sf_person
+label: 'Last name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

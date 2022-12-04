@@ -1,0 +1,29 @@
+uuid: d1194303-1002-4a37-821a-595bc977e000
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_units
+id: taxonomy_term.sf_units.default
+targetEntityType: taxonomy_term
+bundle: sf_units
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

@@ -1,0 +1,21 @@
+uuid: 5b8abfda-70ad-4616-8095-77d74dba7c99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_authored_on
+    - node.type.sf_article
+  module:
+    - datetime
+id: node.sf_article.field_sf_authored_on
+field_name: field_sf_authored_on
+entity_type: node
+bundle: sf_article
+label: 'Authored on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

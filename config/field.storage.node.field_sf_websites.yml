@@ -1,0 +1,19 @@
+uuid: f7014a63-c450-426d-ad7d-6b84b35d1d84
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_sf_websites
+field_name: field_sf_websites
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: e70f164e-07dc-4924-b00d-bdfff8056388
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.sf_site_alert
+    - field.storage.block_content.field_sf_text
+  module:
+    - text
+id: block_content.sf_site_alert.field_sf_text
+field_name: field_sf_text
+entity_type: block_content
+bundle: sf_site_alert
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

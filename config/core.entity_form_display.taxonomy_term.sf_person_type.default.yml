@@ -1,0 +1,29 @@
+uuid: d3fa6138-b03c-4bd5-b4bc-3425e3ca087c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_person_type
+id: taxonomy_term.sf_person_type.default
+targetEntityType: taxonomy_term
+bundle: sf_person_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

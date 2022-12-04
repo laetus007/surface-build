@@ -1,0 +1,19 @@
+uuid: 4e21e473-d54e-4a79-8192-82d66b824e82
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - telephone
+id: node.field_sf_phone_numbers_
+field_name: field_sf_phone_numbers_
+entity_type: node
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: db40e842-286c-47ca-bc5a-c6632d4d951c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:sf_site_alert:3555151c-0bc8-4313-b92e-12e6b9eb1ac9'
+  module:
+    - block_content
+  theme:
+    - surface
+id: surface_site_alert
+theme: surface
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:3555151c-0bc8-4313-b92e-12e6b9eb1ac9'
+settings:
+  id: 'block_content:3555151c-0bc8-4313-b92e-12e6b9eb1ac9'
+  label: 'Site alert'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: dc5b480c-e94a-483a-aff6-93d2fc1d49f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sf_person
+id: node.sf_person.promote
+field_name: promote
+entity_type: node
+bundle: sf_person
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

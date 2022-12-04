@@ -90,6 +90,9 @@ settings:
       sf_slider_item:
         weight: 48
         enabled: true
+      sf_staff:
+        weight: 50
+        enabled: false
       sf_tab:
         weight: 49
         enabled: true

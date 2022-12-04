@@ -1,0 +1,8 @@
+uuid: d4abb48a-332f-4023-b667-e62f90ba885a
+langcode: en
+status: true
+dependencies: {  }
+name: Units
+vid: sf_units
+description: 'Units are organizational units of the university, such as a college, school, department, center, institute, or other group.'
+weight: 0

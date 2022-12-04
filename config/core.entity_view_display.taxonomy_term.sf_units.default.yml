@@ -1,0 +1,13 @@
+uuid: 5e4adfa3-007a-49f5-ab7d-a96832e8657d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_units
+id: taxonomy_term.sf_units.default
+targetEntityType: taxonomy_term
+bundle: sf_units
+mode: default
+content: {  }
+hidden:
+  description: true

@@ -1,0 +1,32 @@
+uuid: 95bb371e-5c9e-4563-9ac1-7f5baa1c7d19
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sf_article.body
+    - field.field.node.sf_article.field_sf_authored_on
+    - node.type.sf_article
+  module:
+    - text
+    - user
+id: node.sf_article.teaser
+targetEntityType: node
+bundle: sf_article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_sf_authored_on: true

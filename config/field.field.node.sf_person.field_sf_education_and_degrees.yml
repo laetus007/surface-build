@@ -1,0 +1,19 @@
+uuid: f79afe22-6b59-4507-ba8f-e927053c02d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_education_and_degrees
+    - node.type.sf_person
+id: node.sf_person.field_sf_education_and_degrees
+field_name: field_sf_education_and_degrees
+entity_type: node
+bundle: sf_person
+label: 'Education and Degree(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

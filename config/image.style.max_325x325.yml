@@ -13,8 +13,14 @@ effects:
   cb842cc8-682f-42a6-bd05-5a1ac726f0d8:
     uuid: cb842cc8-682f-42a6-bd05-5a1ac726f0d8
     id: image_scale
-    weight: 1
+    weight: -9
     data:
       width: 325
       height: 325
       upscale: false
+  0c694604-2dcd-43b9-976e-c28264b71b4e:
+    uuid: 0c694604-2dcd-43b9-976e-c28264b71b4e
+    id: image_convert
+    weight: -10
+    data:
+      extension: webp
