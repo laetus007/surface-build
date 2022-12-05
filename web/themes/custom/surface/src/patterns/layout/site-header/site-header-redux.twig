@@ -1,0 +1,47 @@
+<header id="header" class="site-header" data-drupal-selector="site-header" role="banner" data-once="navigation">
+  {% include '@components/site-alert/site-alert.twig' with {
+    'text': 'Find the latest information on <a href="#">COVID-19</a>, <a href="#">monkeypox</a> and <a href="#">flu prevention</a>.'
+  } %}
+
+  <div class="site-secondary">
+    <div class="container">
+      <ul>
+        <li>
+          <a href="#">UCLA Health</a>
+        </li>
+        <li>
+          <a href="#">Give</a>
+        </li>
+        <li>
+          <a href="#">Quick Links</a>
+        </li>
+        <li>
+          <a href="#">Translate</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="site-header-content">
+    <div class="site-header-inner">
+      {% block branding %}
+        {% include '@layout/site-branding/site-branding.twig' with {
+          'site_logo': '/dist/images/logo.svg'
+        } %}
+      {% endblock %}
+
+      <nav id="site-navigation" class="site-navigation" data-drupal-selector="site-navigation">
+        {% include '@components/mobile-button/mobile-button.twig' %}
+
+        <div class="site-navigation-container">
+          {% include '@components/menu-main/menu-main.twig' with {
+            'menu': 'dropdown',
+            'is_demo': true,
+            'items': main_menu_dropdown
+          } %}
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</header>

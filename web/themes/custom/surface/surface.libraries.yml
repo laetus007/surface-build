@@ -9,6 +9,8 @@ global:
       dist/css/site-branding.css: {}
       dist/css/grid.css: {}
       dist/css/layout-footer.css: {}
+      dist/css/main.css: {}
+      dist/css/page.css: {}
       dist/css/region.css: {}
       dist/css/view.css: {}
     component:

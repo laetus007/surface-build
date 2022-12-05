@@ -3,7 +3,9 @@
  * Main content Layout.
  */
 
-.l-main {
+.main {
+  inset-block-start: 220px;
+  position: relative;
   scroll-margin-top: 100px;
   width: 100%;
 

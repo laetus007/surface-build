@@ -1,0 +1,143 @@
+/**
+ * @file
+ * Site header.
+ */
+
+.site-header {
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  min-height: 72px;
+  position: fixed;
+  transition: all 0.5s;
+  width: 100%;
+  z-index: 102;
+
+  /* Take into account pattern lab */
+  .pl & {
+    position: relative;
+  }
+
+  /* Take into account vertical toolbar */
+  .gin--vertical-toolbar & {
+    min-height: 120px;
+  }
+
+  /* Take into account horizontal toolbar */
+  .gin--horizontal-toolbar & {
+    min-height: 104px;
+  }
+
+  @media (--sm) {
+    min-height: 72px;
+
+    /* Take into account horizontal toolbar */
+    .gin--horizontal-toolbar & {
+      min-height: 120px;
+    }
+  }
+
+  @media (--md) {
+    min-height: 85px;
+
+    /* Take into account vertical toolbar */
+    .gin--vertical-toolbar & {
+      min-height: 152px;
+    }
+
+    /* Take into account horizontal toolbar */
+    .gin--horizontal-toolbar & {
+      min-height: 152px;
+    }
+  }
+
+  @media (--lg) {
+    min-height: 104px;
+
+    /* Take into account vertical toolbar */
+    .gin--vertical-toolbar & {
+      min-height: 164px;
+    }
+
+    /* Take into account horizontal toolbar */
+    .gin--horizontal-toolbar & {
+      min-height: 188px;
+    }
+  }
+}
+
+/* Take into account horiztonal toolbar */
+.gin--horizontal-toolbar.toolbar-horizontal {
+  .site-header {
+    inset-block-start: 113px;
+  }
+}
+
+/* Take into account either toolbar orientation */
+.gin--horizontal-toolbar.toolbar-vertical,
+.gin--vertical-toolbar.toolbar-vertical {
+  .site-header {
+    inset-block-start: 87px;
+  }
+}
+
+/* Take into account vertical toolbar */
+.gin--vertical-toolbar.toolbar-horizontal {
+  .site-header {
+    inset-block-start: 60px;
+  }
+}
+
+.site-header__inner {
+  align-items: flex-end;
+  display: flex;
+  background: hsl(0, 0%, 100%);
+  box-shadow: -36px 1px 36px hsla(0, 0%, 0%, 8%);
+  flex-grow: 1;
+  position: relative;
+  transition: opacity 0.3s, transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  z-index: 1;
+}
+
+.site-header__inner__container {
+  align-items: center;
+  display: flex;
+  min-height: 99px;
+  justify-content: space-between;
+}
+
+.site-header__preface {
+  background-color: hsl(var(--midnight-joshua-tree));
+  color: hsl(0, 0%, 100%);
+}
+
+.secondary-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: hsl(0, 0%, 100%);
+    display: block;
+    padding-block: var(--size-2);
+    padding-inline-end: var(--size-4);
+    text-decoration: none;
+  }
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Redeux */
+.site-header {
+  position: fixed;
+  top: 0;
+}
+
+.site-header-content {
+
+}

@@ -19,16 +19,20 @@
       {{ drupal_entity('block', 'surface_site_alert') }}
     {% endblock %}
 
+    {% block secondary %}
+
+    {% endblock %}
+
+    {% block search_wide %}
+      {{ drupal_entity('block', 'surface_search_form_wide') }}
+    {% endblock %}
+
     {% block branding %}
       {{ drupal_entity('block', 'surface_site_branding') }}
     {% endblock %}
 
     {% block primary %}
       {{ drupal_entity('block', 'surface_main_menu') }}
-    {% endblock %}
-
-    {% block search_wide %}
-      {{ drupal_entity('block', 'surface_search_form_wide') }}
     {% endblock %}
   {% endembed %}
 {% endif %}

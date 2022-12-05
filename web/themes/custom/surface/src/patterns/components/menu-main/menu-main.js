@@ -68,12 +68,12 @@
   Drupal.behaviors.surfaceNavigation = {
     attach: function attach(context) {
       var header = context.querySelector('[data-drupal-selector="site-header"]');
-      var navWrapperId = 'header-nav';
+      var navWrapperId = 'site-navigation';
 
       if (header) {
         var navWrapper = header.querySelector("#".concat(navWrapperId));
         var surface = Drupal.surface;
-        var navButton = context.querySelector('[data-drupal-selector="mobile-nav__button"]');
+        var navButton = context.querySelector('[data-drupal-selector="mobile-button"]');
         var body = context.querySelector('body');
 
         init({

@@ -236,6 +236,12 @@
   }
 }
 
+[data-drupal-selector="menu-main--level-1"] {
+  .is-active & {
+    margin-top: 80px;
+  }
+}
+
 .menu-main--1 {
   @media (--xl) {
     border-bottom: solid 10px #2494db;

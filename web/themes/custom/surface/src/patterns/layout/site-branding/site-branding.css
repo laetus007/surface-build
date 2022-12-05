@@ -10,7 +10,6 @@
   padding-block: var(--size-2);
   padding-inline-end: var(--size-2);
   width: fit-content;
-  z-index: 1000;
 
   @media (--toolbar) {
     padding-inline-end: var(--size-4);

@@ -2,7 +2,7 @@
   Drupal.surface = {};
 
   function isDesktopNav() {
-    var navButtons = document.querySelector('[data-drupal-selector="mobile-nav"]');
+    var navButtons = document.querySelector('[data-drupal-selector="mobile-button"]');
     return navButtons ? window.getComputedStyle(navButtons).getPropertyValue('display') === 'none' : false;
   }
 

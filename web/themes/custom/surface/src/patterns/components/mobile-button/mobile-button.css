@@ -1,32 +1,19 @@
 /**
  * @file
- * Header Mobile Nav.
+ * Mobile button.
  */
 
-.mobile-nav {
-  margin-inline-start: auto;
-
-  @media (--xl) {
-    display: none;
-  }
-}
-
-.mobile-nav__button {
+.mobile-button {
   align-items: center;
   align-self: center;
   appearance: none;
   background: transparent;
   border: none;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   height: var(--size-4);
-  margin-inline-end: -6px;
-  margin-inline-start: auto;
-  padding-block: 0;
-  padding-inline: 6px;
   position: relative;
-  width: var(--size-4);
-  z-index: 110;
+  width: auto;
 
   &:focus {
     outline: solid 2px hsl(var(--blue-9));
@@ -37,7 +24,7 @@
   }
 
   &[aria-expanded="true"] {
-    .mobile-nav-button__icon {
+    .mobile-button__icon {
       background-color: transparent;
 
       &::before {
@@ -52,14 +39,19 @@
     }
   }
 
-  @media (--sm) {
-    display: inline-flex;
-    padding-inline-start: var(--size-2);
-    width: auto;
+  .is-active & {
+    position: fixed;
+    right: 35px;
+    top: 10px;
+    z-index: 1;
+  }
+
+  @media (--xl) {
+    display: none;
   }
 }
 
-.mobile-nav__label {
+.mobile-button__label {
   clip: rect(1px, 1px, 1px, 1px);
   display: block;
   height: 1px;
@@ -81,7 +73,7 @@
   }
 }
 
-.mobile-nav__icon {
+.mobile-button__icon {
   background-color: hsl(var(--blue-5));
   display: block;
   height: 3px;
