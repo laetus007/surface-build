@@ -8,8 +8,9 @@
   flex-direction: column;
   left: 0;
   position: fixed;
-  top: 0;
+  top: 59px;
   width: 100%;
+  z-index: 501;
 }
 
 .site-header-content {
@@ -36,6 +37,17 @@
   background-color: hsl(var(--midnight-joshua-tree));
   color: hsl(0, 0%, 100%);
   width: 100%;
+}
+
+.site-secondary-inner {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-inline: var(--size-2);
+  position: relative;
+  margin-inline: auto;
+  max-width: 1440px;
+  width: 100%;
 
   ul {
     display: flex;
@@ -51,6 +63,10 @@
       padding-inline-end: var(--size-4);
       text-decoration: none;
     }
+  }
+
+  @media (--xl) {
+    padding-inline: var(--size-4);
   }
 }
 
@@ -81,6 +97,7 @@
     scrollbar-gutter: stable both-edges;
     transition: visibility 0s linear 0s, opacity 0.3s, transform 0.3s;
     transform: scale(1);
+    top: 39px;
   }
 
   @media (--xl) {

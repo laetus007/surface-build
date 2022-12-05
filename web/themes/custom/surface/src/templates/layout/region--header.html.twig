@@ -20,11 +20,25 @@
     {% endblock %}
 
     {% block secondary %}
-
-    {% endblock %}
-
-    {% block search_wide %}
-      {{ drupal_entity('block', 'surface_search_form_wide') }}
+      <div class="site-secondary">
+        <div class="site-secondary-inner">
+          <ul>
+            <li>
+              <a href="#">UCLA Health</a>
+            </li>
+            <li>
+              <a href="#">Give</a>
+            </li>
+            <li>
+              <a href="#">Quick Links</a>
+            </li>
+            <li>
+              <a href="#">Translate</a>
+            </li>
+          </ul>
+          {{ drupal_entity('block', 'surface_search_form_wide') }}
+        </div>
+      </div>
     {% endblock %}
 
     {% block branding %}
@@ -32,7 +46,7 @@
     {% endblock %}
 
     {% block primary %}
-      {{ drupal_entity('block', 'surface_main_menu') }}
+      {{ drupal_menu('main') }}
     {% endblock %}
   {% endembed %}
 {% endif %}

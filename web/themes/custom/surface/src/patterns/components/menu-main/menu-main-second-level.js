@@ -60,7 +60,12 @@
 
     button.addEventListener('click', function () {
       if (!el.classList.contains('is-active-mouseover-event')) {
-        toggleSubNav(el);
+        if(this.ariaExpanded === 'true') {
+          toggleSubNav(el);
+        } else {
+          closeAllSubNav();
+          toggleSubNav(el);
+        }
       }
     });
 

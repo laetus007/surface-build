@@ -279,7 +279,8 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  padding-inline-start: 2.8125rem;
+  padding-block: 4px;
+  padding-inline: 40px 8px;
   transition: opacity 0.2s, visibility 0.2s, max-height 0.2s;
   visibility: hidden;
 

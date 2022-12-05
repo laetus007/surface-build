@@ -30,7 +30,7 @@ global:
       dist/css/form-item-upload.css: {}
       dist/css/form-text.css: {}
       dist/css/form-select.css: {}
-      dist/css/mobile-nav.css: {}
+      dist/css/mobile-button.css: {}
       dist/css/header-navigation.css: {}
       dist/css/links.css: {}
       dist/css/node.css: {}

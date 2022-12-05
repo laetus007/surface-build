@@ -5,60 +5,50 @@
     } %}
   {% endblock %}
 
-  <div class="site-header__preface">
-    <div class="container">
-      <div class="flex">
-        {% block secondary %}
-          <ul class="secondary-links">
-            <li>
-              <a href="#">UCLA Health</a>
-            </li>
-            <li>
-              <a href="#">Give</a>
-            </li>
-            <li>
-              <a href="#">Quick Links</a>
-            </li>
-            <li>
-              <a href="#">Translate</a>
-            </li>
-          </ul>
-        {% endblock %}
-
-        {% block search_wide %}
-          {% include '@components/search-wide/search-wide.twig' %}
-        {% endblock %}
+  {% block secondary %}
+    <div class="site-secondary">
+      <div class="site-secondary-inner">
+        <ul>
+          <li>
+            <a href="#">UCLA Health</a>
+          </li>
+          <li>
+            <a href="#">Give</a>
+          </li>
+          <li>
+            <a href="#">Quick Links</a>
+          </li>
+          <li>
+            <a href="#">Translate</a>
+          </li>
+        </ul>
+        {% include '@components/search-wide/search-wide.twig' %}
       </div>
     </div>
-  </div>
-  <div id="site-header__inner" class="site-header__inner" data-drupal-selector="site-header-inner">
-    <div class="site-header__inner__container container">
+  {% endblock %}
+
+  <div class="site-header-content">
+    <div class="site-header-inner">
       {% block branding %}
         {% include '@layout/site-branding/site-branding.twig' with {
           'site_logo': '/dist/images/logo.svg'
         } %}
       {% endblock %}
 
-      {% include '@components/mobile-button/mobile-button.twig' %}
+      <nav id="site-navigation" class="site-navigation" data-drupal-selector="site-navigation">
+        {% include '@components/mobile-button/mobile-button.twig' %}
 
-      <div id="header-nav" class="header-nav" data-drupal-selector="header-nav">
-        <div class="header-nav__inner">
+        <div class="site-navigation-container">
           {% block primary %}
-            {% embed '@layout/nav/nav.twig' with {
-              'heading_id': 'block-surface-main-menu',
-              'label': 'Main navigation'
+            {% include '@components/menu-main/menu-main.twig' with {
+              'menu': 'default',
+              'is_demo': true,
+              'items': main_menu
             } %}
-              {% block content %}
-                {% include '@components/menu-main/menu-main.twig' with {
-                  'menu': 'default',
-                  'is_demo': true,
-                  'items': main_menu
-                } %}
-              {% endblock %}
-            {% endembed %}
           {% endblock %}
         </div>
-      </div>
+      </nav>
+
     </div>
   </div>
 </header>

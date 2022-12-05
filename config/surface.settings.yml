@@ -11,8 +11,8 @@ features:
 logo:
   use_default: true
 site_branding: default
-site_theme: default
-site_menu: mega
+site_theme: dgsom
+site_menu: dropdown
 header_logo:
   - '34'
 footer_logo: {  }
