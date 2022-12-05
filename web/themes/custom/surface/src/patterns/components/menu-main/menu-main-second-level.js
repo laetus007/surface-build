@@ -45,12 +45,6 @@
     button.removeAttribute('aria-hidden');
     button.removeAttribute('tabindex');
 
-    el.addEventListener('touchstart', function () {
-      el.classList.add('is-touch-event');
-    }, {
-      passive: true
-    });
-
     el.addEventListener('mouseover', function () {
       if (isDesktopNav() && !el.classList.contains('is-touch-event')) {
         el.classList.add('is-active-mouseover-event');
@@ -110,13 +104,5 @@
     if (e.key === 'Escape' || e.key === 'Esc') {
       if (isDesktopNav()) closeAllSubNav();
     }
-  });
-
-  document.addEventListener('touchstart', function (e) {
-    if (areAnySubNavsOpen() && !e.target.matches('[data-drupal-selector="header-nav"], [data-drupal-selector="header-nav"] *')) {
-      closeAllSubNav();
-    }
-  }, {
-    passive: true
   });
 })(Drupal);
