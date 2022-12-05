@@ -187,6 +187,9 @@ jobs:
       # https://github.com/pantheon-systems/docker-build-tools-ci/blob/6.x/scripts/set-environment
       - name: setup-environment-vars
         run: /build-tools-ci/scripts/set-environment
+        
+      - name: Composer Install Dependencies
+        run: composer install --optimize-autoloader --no-dev --prefer-dist --no-progress --no-suggest
 
       - name: Build Patternlab
         run: |
