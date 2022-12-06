@@ -14,6 +14,7 @@
 }
 
 .site-header-content {
+  background-color: var(--bg-light);
   display: flex;
   flex: 0 1 auto;
 }
@@ -70,10 +71,6 @@
   }
 }
 
-.site-navigation {
-  position: relative;
-}
-
 .site-navigation-container {
   background-color: white;
   bottom: 0;
@@ -104,8 +101,9 @@
     height: auto;
     opacity: 1;
     overflow: visible;
-    position: relative;
+    position: initial;
     transform: none;
     visibility: visible;
+    will-change: unset;
   }
 }
