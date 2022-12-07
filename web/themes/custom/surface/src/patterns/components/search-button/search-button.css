@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Search button.
+ */
+
+.search-button {
+  align-items: center;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: var(--text-light);
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+
+  &:focus {
+    box-shadow: 0 0 0 2px hsl(var(--white)), 0 0 0 4px hsl(var(--gray-8) / 15%);
+    outline: none;
+  }
+
+  &[aria-expanded="true"] {
+    &:focus::after {
+      border-color: hsl(0, 0%, 100%);
+    }
+  }
+
+  & svg {
+    margin-inline-end: var(--size-1);
+  }
+
+  @media (forced-colors: active) {
+    background: ButtonFace;
+
+    & path {
+      fill: ButtonText;
+    }
+  }
+}

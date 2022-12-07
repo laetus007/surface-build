@@ -1,6 +1,5 @@
 ---
-is_demo: true
-items:
+secondary_menu:
   - title: 'UCLA Health'
     url: '#'
     in_active_trail: false

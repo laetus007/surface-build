@@ -36,6 +36,7 @@ global:
       dist/css/node.css: {}
       dist/css/node-teaser.css: {}
       dist/css/page-title.css: {}
+      dist/css/search-button.css: {}
       dist/css/site-header.css: {}
       dist/css/skip-link.css: {}
       dist/css/pager.css: {}
@@ -51,6 +52,7 @@ global:
   js:
     dist/js/form-boolean.js: {}
     dist/js/menu-utils.js: {}
+    dist/js/search-button.js: {}
   dependencies:
     - core/drupal.element.closest
     - core/drupal.element.matches
@@ -185,12 +187,10 @@ search-results:
     theme:
       dist/css/search-results.css: {}
 
-search-wide:
+site-search:
   css:
     component:
-      dist/css/search-wide.css: {}
-  js:
-    dist/js/search-wide.js: {}
+      dist/css/site-search.css: {}
 
 settings:
   css:

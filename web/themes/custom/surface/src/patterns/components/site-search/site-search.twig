@@ -1,0 +1,23 @@
+{{ attach_library('surface/site-search') }}
+
+{% set classes = [
+  'site-search',
+  attributes ? attributes.class
+]|join(' ')|trim %}
+
+{% set content_classes = [
+  'site-search__wrapper',
+  content_attributes ? content_attributes.class
+]|join(' ')|trim %}
+
+<div class="{{ classes }}" data-drupal-selector="site-search" id="site-search" role="search">
+  <div class="{{ content_classes }}" data-drupal-selector="site-search-wrapper">
+		<div class="container">
+			<div class="site-search__grid">
+				{% block content %}
+					{% include '@components/search-block-form/search-block-form.twig' %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+</div>

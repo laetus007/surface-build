@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Site Search.
+ */
+
+.site-search__wrapper {
+  background: hsl(var(--gray-9));
+  display: block;
+  height: var(--size-18);
+  inset-block-start: 100%;
+  inset-inline-start: 0;
+  margin-block: 0;
+  margin-inline: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding-block: 0;
+  padding-inline: 0;
+  position: absolute;
+  transition: all 0.2s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
+
+  &.is-active {
+    max-height: var(--size-18);
+    visibility: visible;
+  }
+}
+
+.site-search__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: var(--size-4);
+
+  .container-inline & {
+    display: grid;
+  }
+}

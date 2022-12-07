@@ -58,7 +58,7 @@
     margin: 0;
   }
 
-  .search-wide__grid & {
+  .site-search__grid & {
     grid-column: 1 / 13;
   }
 }

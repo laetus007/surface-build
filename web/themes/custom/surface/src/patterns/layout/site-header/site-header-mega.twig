@@ -5,27 +5,17 @@
     } %}
   {% endblock %}
 
-  {% block secondary %}
-    <div class="site-secondary">
-      <div class="site-secondary-inner">
-        <ul>
-          <li>
-            <a href="#">UCLA Health</a>
-          </li>
-          <li>
-            <a href="#">Give</a>
-          </li>
-          <li>
-            <a href="#">Quick Links</a>
-          </li>
-          <li>
-            <a href="#">Translate</a>
-          </li>
-        </ul>
-        {% include '@components/search-wide/search-wide.twig' %}
-      </div>
+  <section class="site-secondary">
+    <div class="site-secondary-inner">
+      {% block secondary %}
+        {% include '@components/menu-secondary/menu-secondary.twig' with {
+          'is_demo': true,
+          'items': secondary_menu
+        } %}
+        {% include '@components/search-button/search-button.twig' %}
+      {% endblock %}
     </div>
-  {% endblock %}
+  </section>
 
   <div class="site-header-content">
     <div class="site-header-inner">

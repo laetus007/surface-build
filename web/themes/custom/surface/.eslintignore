@@ -8,4 +8,5 @@ src/patterns/components/menu-main/menu-utils.js
 src/patterns/components/messages/messages.js
 src/patterns/components/messages/message.theme.js
 src/patterns/components/search-wide/search-wide.js
+src/patterns/components/search-button/search-button.js
 src/patterns/components/tabs/tabs.js

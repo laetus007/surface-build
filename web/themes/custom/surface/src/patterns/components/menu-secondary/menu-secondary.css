@@ -2,3 +2,24 @@
  * @file
  * Main menu styling.
  */
+
+.menu-secondary {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.menu-secondary__link {
+  padding-block: var(--size-05);
+  padding-inline: var(--size-2);
+
+  &:focus {
+    outline: auto 2px hsl(203, 72%, 50%);
+    outline-offset: 2px;
+  }
+}

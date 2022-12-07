@@ -11,7 +11,7 @@ dependencies:
 id: surface_site_alert
 theme: surface
 region: header
-weight: 0
+weight: -5
 provider: null
 plugin: 'block_content:3555151c-0bc8-4313-b92e-12e6b9eb1ac9'
 settings:
