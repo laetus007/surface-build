@@ -1,0 +1,25 @@
+/**
+ * @file
+ * Site primary.
+ */
+
+.site-primary {
+  background-color: var(--bg-light);
+  display: flex;
+  flex: 0 1 auto;
+}
+
+.site-primary__content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .gin--vertical-toolbar & {
+    margin-inline-start: 0;
+
+    @media (--toolbar) {
+      margin-inline-start: 65px;
+    }
+  }
+}

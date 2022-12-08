@@ -1,9 +1,9 @@
-uuid: db40e842-286c-47ca-bc5a-c6632d4d951c
+uuid: b33b52fe-2e5b-4d3a-bb28-aebbbbc98c9d
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:sf_site_alert:3555151c-0bc8-4313-b92e-12e6b9eb1ac9'
+    - 'block_content:sf_site_alert:a7ed7c2e-92eb-4951-9c9f-e89c553426ff'
   module:
     - block_content
   theme:
@@ -13,9 +13,9 @@ theme: surface
 region: header
 weight: -5
 provider: null
-plugin: 'block_content:3555151c-0bc8-4313-b92e-12e6b9eb1ac9'
+plugin: 'block_content:a7ed7c2e-92eb-4951-9c9f-e89c553426ff'
 settings:
-  id: 'block_content:3555151c-0bc8-4313-b92e-12e6b9eb1ac9'
+  id: 'block_content:a7ed7c2e-92eb-4951-9c9f-e89c553426ff'
   label: 'Site alert'
   label_display: '0'
   provider: block_content

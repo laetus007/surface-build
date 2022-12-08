@@ -4,12 +4,16 @@
  */
 
 .main {
-  inset-block-start: 220px;
+  inset-block-start: 180px;
   position: relative;
-  scroll-margin-top: 100px;
   width: 100%;
 
-  @media (--xl) {
-    scroll-margin-top: 100px;
+  .gin--vertical-toolbar & {
+    inset-block-start: 220px;
+
+    @media (--toolbar) {
+      inset-block-start: 250px;
+      padding-inline-start: 65px;
+    }
   }
 }

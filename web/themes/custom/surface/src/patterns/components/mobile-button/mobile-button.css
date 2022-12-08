@@ -44,6 +44,14 @@
     right: 30px;
     top: 60px;
     z-index: 1;
+
+    .gin--vertical-toolbar & {
+      top: 110px;
+
+      @media (--toolbar) {
+        top: 80px;
+      }
+    }
   }
 
   @media (--xl) {

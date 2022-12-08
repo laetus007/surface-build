@@ -38,6 +38,9 @@ global:
       dist/css/page-title.css: {}
       dist/css/search-button.css: {}
       dist/css/site-header.css: {}
+      dist/css/site-secondary.css: {}
+      dist/css/site-primary.css: {}
+      dist/css/site-navigation.css: {}
       dist/css/skip-link.css: {}
       dist/css/pager.css: {}
       dist/css/table.css: {}
@@ -171,6 +174,11 @@ menu-main:
   js:
     dist/js/menu-main.js: {}
     dist/js/menu-main-second-level.js: {}
+
+menu-secondary:
+  css:
+    component:
+      dist/css/menu-secondary.css: {}
 
 progress:
   css:

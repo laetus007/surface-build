@@ -1,0 +1,49 @@
+/**
+ * @file
+ * Site navigation.
+ */
+
+.site-navigation-container {
+  background-color: white;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow-y: auto;
+  padding-inline: 20px;
+  position: fixed;
+  right: 0;
+  transform-origin: 50% 0;
+  transform: scale(0);
+  transition: visibility 0s linear 0.3s, opacity 0.3s, transform 0.3s;
+  visibility: hidden;
+  width: 100%;
+  will-change: transform;
+
+  .is-active & {
+    visibility: visible;
+    opacity: 1;
+    scrollbar-gutter: stable both-edges;
+    transition: visibility 0s linear 0s, opacity 0.3s, transform 0.3s;
+    transform: scale(1);
+    top: 0;
+
+    .gin--vertical-toolbar & {
+      top: 87px;
+
+      @media (--toolbar) {
+        top: 60px;
+      }
+    }
+  }
+
+  @media (--xl) {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    position: initial;
+    transform: none;
+    visibility: visible;
+    will-change: unset;
+  }
+}

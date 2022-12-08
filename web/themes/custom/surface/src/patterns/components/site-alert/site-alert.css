@@ -9,7 +9,7 @@
   padding-block: var(--size-2);
 }
 
-.site-alert__layout {
+.site-alert__content {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
