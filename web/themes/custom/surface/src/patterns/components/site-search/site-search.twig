@@ -1,17 +1,7 @@
 {{ attach_library('surface/site-search') }}
 
-{% set classes = [
-  'site-search',
-  attributes ? attributes.class
-]|join(' ')|trim %}
-
-{% set content_classes = [
-  'site-search__wrapper',
-  content_attributes ? content_attributes.class
-]|join(' ')|trim %}
-
-<section class="{{ classes }}" data-drupal-selector="site-search" id="site-search" role="search">
-  <div class="{{ content_classes }}" data-drupal-selector="site-search-wrapper">
+<section class="site-search" data-drupal-selector="site-search" id="site-search" role="search">
+  <div class="site-search__wrapper" data-drupal-selector="site-search-wrapper">
 		<div class="container">
 			<div class="site-search__grid">
 				{% block content %}

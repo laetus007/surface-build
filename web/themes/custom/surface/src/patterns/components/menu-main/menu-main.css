@@ -14,7 +14,6 @@
   @media (--xl) {
     align-items: stretch;
     display: flex;
-    margin-inline-end: 1.125rem;
   }
 }
 

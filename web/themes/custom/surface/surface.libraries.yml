@@ -31,7 +31,6 @@ global:
       dist/css/form-text.css: {}
       dist/css/form-select.css: {}
       dist/css/mobile-button.css: {}
-      dist/css/header-navigation.css: {}
       dist/css/links.css: {}
       dist/css/node.css: {}
       dist/css/node-teaser.css: {}
