@@ -4,7 +4,7 @@
  */
 
 .main {
-  inset-block-start: 180px;
+  inset-block-start: 175px;
   position: relative;
   width: 100%;
 
@@ -12,8 +12,16 @@
     inset-block-start: 220px;
 
     @media (--toolbar) {
-      inset-block-start: 250px;
+      inset-block-start: 235px;
       padding-inline-start: 65px;
     }
+
+    @media (--xl) {
+      inset-block-start: 270px;
+    }
+  }
+
+  @media (--xl) {
+    inset-block-start: 210px;
   }
 }
