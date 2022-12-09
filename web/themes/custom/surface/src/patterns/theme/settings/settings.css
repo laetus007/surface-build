@@ -111,3 +111,9 @@
     }
   }
 }
+
+[data-drupal-selector="edit-alert"] {
+  .filter-wrapper {
+    display: none;
+  }
+}

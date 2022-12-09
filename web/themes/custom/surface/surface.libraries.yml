@@ -95,7 +95,7 @@ dropbutton:
     component:
       dist/css/dropbutton.css: {}
 
-drupal.node.preview:
+node-preview:
   css:
     theme:
       dist/css/node-preview-container.css: {}

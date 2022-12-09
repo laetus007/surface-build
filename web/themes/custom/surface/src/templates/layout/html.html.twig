@@ -39,7 +39,7 @@
     <js-placeholder token="{{ placeholder_token }}">
     {{ noscript_styles }}
   </head>
-  <body{{ attributes.addClass(body_classes) }} data-theme="{{ theme }}">
+  <body{{ attributes.addClass(body_classes) }} data-theme="{{ data_theme }}" data-alert="{{ data_alert }}">
     {% include '@components/skip-link/skip-link.twig' %}
     {{ page_top }}
     {{ page }}

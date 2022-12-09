@@ -41,6 +41,8 @@ libraries-extend:
     - surface/dialog
   core/drupal.message:
     - surface/messages
+  node/drupal.node.preview:
+    - surface/node-preview
 
 regions:
   header: Header
@@ -50,6 +52,7 @@ regions:
   content: Content
   content_below: Content Below
   footer: Footer
+  theme: Theme
 
 ckeditor_stylesheets:
   - dist/css/global.css
@@ -57,6 +60,12 @@ ckeditor_stylesheets:
   - dist/css/table.css
   - dist/css/text-content.css
   - dist/css/ckeditor-frame.css
+
+ckeditor5-stylesheets:
+  - dist/css/global.css
+  - dist/css/embedded-media.css
+  - dist/css/table.css
+  - dist/css/text-content.css
 
 components:
   namespaces:

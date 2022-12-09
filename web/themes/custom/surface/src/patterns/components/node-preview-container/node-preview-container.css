@@ -4,26 +4,24 @@
  */
 
 .node-preview-container {
-  background: hsl(0, 0%, 100%);
-  height: 60px;
-  padding-block: 0;
-  padding-inline: 0;
-  position: fixed;
+  background: var(--bg-light);
+  height: 70px;
+  opacity: 1;
 
-  .gin--horizontal-toolbar & {
-    top: 53px;
+  .gin--vertical-toolbar & {
+    top: 39px;
+
+    @media (--toolbar) {
+      top: 0;
+    }
   }
 
   .node-preview-form-select {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
     margin-inline: auto;
     max-width: var(--max-width);
-    padding-block: 0;
     padding-inline: var(--size-2);
 
-    @media (--md) {
+    @media (--xl) {
       padding-inline: var(--size-4);
     }
   }
@@ -31,8 +29,5 @@
   .node-preview-backlink {
     background: transparent;
     border: 0;
-    margin-block: var(--size-1);
-    margin-inline-end: auto;
-    margin-inline-start: 0;
   }
 }

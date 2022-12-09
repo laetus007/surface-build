@@ -16,7 +16,11 @@
 {% if content %}
   {% embed '@layout/site-header/site-header.twig' %}
     {% block alert %}
-      {{ drupal_entity('block', 'surface_site_alert') }}
+      {% if data_alert == 'true' %}
+        {% include '@components/site-alert/site-alert.twig' with {
+          'text': alert
+        } %}
+      {% endif %}
     {% endblock %}
 
     {% block secondary %}

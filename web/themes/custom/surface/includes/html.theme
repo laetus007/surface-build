@@ -11,10 +11,11 @@
  * Adds body classes if certain regions have content.
  */
 function surface_preprocess_html(&$variables) {
-  // Set default theme
-  $site_theme = theme_get_setting('site_theme');
-  if ($site_theme && $site_theme !== 'default') {
-    $variables['theme'] = $site_theme;
+  // Determine if the site has a site alert.
+  if (array_key_exists('surface_site_alert', $variables['page']['header'])) {
+    $variables['attributes']['class'][] = 'has-alert';
+  } else {
+    $variables['attributes']['class'][] = 'no-alert';
   }
 }
 
@@ -35,10 +36,27 @@ function surface_preprocess_maintenance_page(&$variables) {
 }
 
 function surface_preprocess(&$variables) {
+  // Get default theme
+  $site_theme = theme_get_setting('site_theme');
+  if ($site_theme and $site_theme != 'default') {
+    $variables['data_theme'] = $site_theme;
+  } else {
+    $variables['data_theme'] = 'surface';
+  }
+
   // Get menu type
   $site_menu = theme_get_setting('site_menu');
   if ($site_menu) {
     $variables['menu'] = $site_menu;
+  }
+
+  // Get alert
+  $alert = theme_get_setting('alert');
+  if (empty($alert['value'])) {
+    $variables['data_alert'] = 'false';
+  } else {
+    $variables['data_alert'] = 'true';
+    $variables['alert'] = $alert['value'];
   }
 
   // Set header logo

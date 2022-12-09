@@ -56,5 +56,5 @@
 }
 
 .node--unpublished {
-  background-color: hsl(0, 100%, 98%);
+  background-color: hsl(var(--santa-barbara-sand));
 }

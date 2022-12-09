@@ -56,6 +56,14 @@ function surface_form_system_theme_settings_alter(&$form, FormStateInterface $fo
     ],
   ];
 
+  $form['surface_settings']['settings']['alert'] = [
+    '#type' => 'text_format',
+    '#format' => 'restricted_html',
+    '#title' => t('Alert'),
+    '#description' => t("Add alert content that will be displayed globally."),
+    '#default_value' => theme_get_setting('alert')['value'],
+  ];
+
   $form['surface_settings']['settings']['header_logo'] = [
     '#type' => 'managed_file',
     '#title' => t('Header logo'),
