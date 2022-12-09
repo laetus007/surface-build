@@ -3,19 +3,12 @@
  * Site Search.
  */
 
-.site-search__wrapper {
+.site-search {
   background: hsl(var(--gray-9));
   display: block;
   height: var(--size-18);
-  inset-block-start: 100%;
-  inset-inline-start: 0;
-  margin-block: 0;
-  margin-inline: 0;
   max-height: 0;
   overflow: hidden;
-  padding-block: 0;
-  padding-inline: 0;
-  position: absolute;
   transition: all 0.2s;
   visibility: hidden;
   width: 100%;
@@ -27,7 +20,7 @@
   }
 }
 
-.site-search__grid {
+.site-search__content {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: var(--size-4);

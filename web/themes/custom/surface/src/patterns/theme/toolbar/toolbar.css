@@ -9,18 +9,22 @@
   padding-left: 0; /* purposely using shorthand */
 }
 
+[dir="ltr"] body.toolbar-horizontal {
+  margin-inline-start: 65px;
+}
+
 .gin--horizontal-toolbar {
   .toolbar-oriented {
     .toolbar-bar {
-      position: fixed;
+      position: sticky;
     }
   }
 }
 
 .gin-secondary-toolbar--frontend {
-  background: hsl(0, 0%, 100%);
+  background: var(--bg-light);
   display: block;
-  position: fixed;
+  position: sticky;
   top: 39px;
   width: 100%;
 

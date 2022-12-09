@@ -15,12 +15,4 @@
   justify-content: space-between;
   min-height: 54px;
   position: relative;
-
-  .gin--vertical-toolbar & {
-    margin-inline-start: 0;
-
-    @media (--toolbar) {
-      margin-inline-start: 65px;
-    }
-  }
 }

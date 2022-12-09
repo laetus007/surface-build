@@ -7,22 +7,22 @@
   box-shadow: -36px 1px 36px hsla(0, 0%, 0%, 8%);
   display: flex;
   flex-direction: column;
-  left: 0;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: -70px;
   width: 100%;
   z-index: 1;
 
   /* Take into account pattern lab */
   .pl & {
     position: relative;
+    top: 0;
   }
 
   .gin--vertical-toolbar & {
-    top: 87px;
+    top: 18px;
 
     @media (--toolbar) {
-      top: 60px;
+      top: -10px;
     }
   }
 }

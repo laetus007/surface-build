@@ -1,13 +1,11 @@
 {{ attach_library('surface/site-search') }}
 
 <section class="site-search" data-drupal-selector="site-search" id="site-search" role="search">
-  <div class="site-search__wrapper" data-drupal-selector="site-search-wrapper">
-		<div class="container">
-			<div class="site-search__grid">
-				{% block content %}
-					{% include '@components/search-block-form/search-block-form.twig' %}
-				{% endblock %}
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="site-search__content">
+      {% block content %}
+        {% include '@components/search-block-form/search-block-form.twig' %}
+      {% endblock %}
+    </div>
+  </div>
 </section>

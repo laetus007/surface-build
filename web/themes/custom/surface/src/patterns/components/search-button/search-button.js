@@ -1,15 +1,15 @@
 (function (Drupal) {
   let searchButton = document.querySelector('[data-drupal-selector="search-button"]');
-  let searchWide = document.querySelector('[data-drupal-selector="site-search"]');
+  let searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
   let searchWrapper = document.querySelector('[data-drupal-selector="site-search-wrapper"]');
 
   function searchIsVisible() {
-    return searchWrapper.classList.contains('is-active');
+    return searchContainer.classList.contains('is-active');
   }
 
   function handleFocus() {
     if (searchIsVisible()) {
-      searchWrapper.querySelector('input[type="search"]').focus();
+      searchContainer.querySelector('input[type="search"]').focus();
     }
   }
 
@@ -23,15 +23,15 @@
 
   function openSearch() {
     searchButton.setAttribute('aria-expanded', 'true');
-    searchWrapper.classList.add('is-active');
-    searchWrapper.addEventListener('transitionend', handleFocus, {
+    searchContainer.classList.add('is-active');
+    searchContainer.addEventListener('transitionend', handleFocus, {
       once: true
     });
   }
 
   function closeSearch() {
     searchButton.setAttribute('aria-expanded', 'false');
-    searchWrapper.classList.remove('is-active');
+    searchContainer.classList.remove('is-active');
     searchButton.focus();
   }
 
@@ -46,13 +46,13 @@
 
   });
 
-  if(searchWide) {
-    searchWide.addEventListener('focusout', function (e) {
+  if(searchContainer) {
+    searchContainer.addEventListener('focusout', function (e) {
       closeSearch();
     });
   }
 
-  Drupal.behaviors.searchWide = {
+  Drupal.behaviors.search = {
     attach: function attach(context) {
       var searchButton = once('site-search', '[data-drupal-selector="search-button"]', context).shift();
 

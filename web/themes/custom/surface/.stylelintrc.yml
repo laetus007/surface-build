@@ -46,6 +46,7 @@ rules:
   string-quotes: double
   string-no-newline: true
   unit-no-unknown: true
+  value-no-vendor-prefix: null
   value-list-comma-newline-before: never-multi-line
   value-keyword-case:
     - lower
