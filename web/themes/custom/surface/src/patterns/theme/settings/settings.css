@@ -112,6 +112,63 @@
   }
 }
 
+[data-drupal-selector="edit-site-search"] {
+  .form-radios {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+
+    .form-item {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 12px 0 0;
+      position: relative;
+      width: 140px;
+
+      input {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 0.75rem;
+        cursor: pointer;
+        height: 100px;
+        margin-left: 0;
+        position: static;
+        transform: none;
+        width: 140px;
+
+        &:checked {
+          border-color: rgb(5, 80, 230);
+          box-shadow: inset 0 0 0 1px rgb(5, 80, 230);
+
+          &:focus {
+            box-shadow: inset 0 0 0 1px rgb(5, 80, 230), 0 0 0 3px rgba(0, 125, 250, 60%);
+          }
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 3px rgba(0, 125, 250, 60%);
+        }
+      }
+
+      input[data-drupal-selector="edit-site-search-default"] {
+        background-image: url("../images/search-dropdown.svg");
+      }
+
+      input[data-drupal-selector="edit-site-search-modal"] {
+        background-image: url("../images/search-modal.svg");
+      }
+
+      .form-item__label {
+        font-size: 12px;
+        display: block;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        width: 100%;
+      }
+    }
+  }
+}
+
 [data-drupal-selector="edit-alert"] {
   .filter-wrapper {
     display: none;

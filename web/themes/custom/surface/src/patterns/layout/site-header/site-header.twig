@@ -47,6 +47,10 @@
   </section>
 
   {% block search %}
-    {% include '@components/site-search/site-search.twig' %}
+    {% if data_search == 'default' %}
+      {% include '@components/site-search/site-search.twig' %}
+    {% else %}
+      {% include '@components/search-modal/search-modal.twig' %}
+    {% endif %}
   {% endblock %}
 </header>

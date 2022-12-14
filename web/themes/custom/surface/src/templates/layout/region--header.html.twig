@@ -36,7 +36,11 @@
     {% endblock %}
 
     {% block search %}
-      {{ drupal_entity('block', 'surface_search_form_wide') }}
+      {% if data_search == 'default' %}
+        {{ drupal_entity('block', 'surface_search_form_wide') }}
+      {% else %}
+        {% include '@components/search-modal/search-modal.twig' %}
+      {% endif %}
     {% endblock %}
   {% endembed %}
 {% endif %}

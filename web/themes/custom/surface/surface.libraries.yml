@@ -189,6 +189,11 @@ search-block-form:
     component:
       dist/css/search-block-form.css: {}
 
+search-modal:
+  css:
+    component:
+      dist/css/search-modal.css: {}
+
 search-results:
   css:
     theme:

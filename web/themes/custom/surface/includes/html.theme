@@ -50,6 +50,12 @@ function surface_preprocess(&$variables) {
     $variables['menu'] = $site_menu;
   }
 
+  // Get search type
+  $site_search = theme_get_setting('site_search');
+  if ($site_search) {
+    $variables['data_search'] = $site_search;
+  }
+
   // Get alert
   $alert = theme_get_setting('alert');
   if (empty($alert['value'])) {

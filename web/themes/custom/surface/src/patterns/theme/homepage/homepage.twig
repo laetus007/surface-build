@@ -4,7 +4,9 @@
   {% endblock %}
 
   {% block main %}
-    <div>Main content</div>
+    <div class="container">
+      {% include '@components/text-content/text-content.twig' %}
+    </div>
   {% endblock %}
 
   {% block footer %}

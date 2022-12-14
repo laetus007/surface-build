@@ -56,6 +56,16 @@ function surface_form_system_theme_settings_alter(&$form, FormStateInterface $fo
     ],
   ];
 
+  $form['surface_settings']['settings']['site_search'] = [
+    '#type' => 'radios',
+    '#title' => t('Search (display)'),
+    '#default_value' => theme_get_setting('site_search'),
+    '#options' => [
+      'default' => t('Normal (Default)'),
+      'modal' => t('Modal'),
+    ],
+  ];
+
   $form['surface_settings']['settings']['alert'] = [
     '#type' => 'text_format',
     '#format' => 'restricted_html',

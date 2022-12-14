@@ -1,8 +1,10 @@
 (function (Drupal) {
   const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
   const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
+  const searchModal = document.querySelector('[data-drupal-selector="modal"]');
 
   function searchIsVisible() {
+    if(!searchContainer) return false;
     return searchContainer.classList.contains('is-active');
   }
 
@@ -21,11 +23,13 @@
   }
 
   function openSearch() {
-    searchButton.setAttribute('aria-expanded', 'true');
-    searchContainer.classList.add('is-active');
-    searchContainer.addEventListener('transitionend', handleFocus, {
-      once: true
-    });
+    if (searchContainer) {
+      searchButton.setAttribute('aria-expanded', 'true');
+      searchContainer.classList.add('is-active');
+      searchContainer.addEventListener('transitionend', handleFocus, {
+        once: true
+      });
+    }
   }
 
   function closeSearch() {
