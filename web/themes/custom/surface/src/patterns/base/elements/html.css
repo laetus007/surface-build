@@ -22,6 +22,7 @@
   font-style: normal;
   line-height: var(--font-lineheight-2);
   min-height: 100%;
+  scroll-padding-top: 150px;
   scrollbar-color: var(--scrollbar-color) transparent;
   text-size-adjust: none;
 

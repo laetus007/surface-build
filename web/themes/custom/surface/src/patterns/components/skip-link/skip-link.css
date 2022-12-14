@@ -4,9 +4,10 @@
  */
 
 .skip-link {
+  align-items: center;
   background-color: hsl(var(--gray-9));
-  color: hsl(0, 0%, 100%);
-  display: block;
+  color: var(--text-light);
+  display: flex;
   outline: none;
   padding-block: var(--size-1);
   padding-inline: var(--size-2);
@@ -21,13 +22,14 @@
 
   &::after {
     content: "\0020	➔";
+    padding-inline-start: var(--size-1);
   }
 }
 
 .skip-link.focusable:focus {
   height: 40px;
   outline: none;
-  position: absolute !important;
+  position: sticky;
   width: 100%;
   z-index: 503;
 }

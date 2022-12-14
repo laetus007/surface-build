@@ -4,7 +4,7 @@
  */
 
 .site-search {
-  background: hsl(var(--gray-9));
+  background-color: hsl(var(--gray-9));
   display: block;
   height: var(--size-18);
   max-height: 0;
@@ -14,7 +14,14 @@
   width: 100%;
   z-index: 1;
 
+  /* Search is active */
   &.is-active {
+    max-height: var(--size-18);
+    visibility: visible;
+  }
+
+  /* Search in Pattern Lab */
+  .default & {
     max-height: var(--size-18);
     visibility: visible;
   }
@@ -24,8 +31,56 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: var(--size-4);
+  position: relative;
 
   .container-inline & {
     display: grid;
+  }
+}
+
+.site-search__links {
+  max-width: 65ch;
+
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding-inline-start: 0;
+  }
+}
+
+.site-search__close {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+/* Search modal */
+.site-search--modal {
+  background-color: var(--bg-light);
+  height: 100vh;
+  left: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  /* Search modal is active */
+  &.is-active {
+    max-height: 100vh;
+    visibility: visible;
+  }
+
+  /* Search modal in Pattern Lab */
+  .modal & {
+    max-height: 100vh;
+    visibility: visible;
   }
 }

@@ -67,6 +67,8 @@
   "patternStateCascade": ["inprogress", "inreview", "complete"],
   "patternExportDirectory": "./pattern_exports/",
   "patternExportPatternPartials": [],
+  "patternWrapClassesEnable": true,
+  "patternWrapClassesKey": ["theme-class", "data_search"],
   "plugins": {
     "@pattern-lab/plugin-tab": {
       "enabled": true,

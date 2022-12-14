@@ -10,6 +10,7 @@
   /* Text */
   --text-dark: hsl(var(--black));
   --text-light: hsl(var(--white));
+  --text-ucla-blue: hsl(var(--ucla-blue));
 
   /* Containers */
   --max-width: 1440px;

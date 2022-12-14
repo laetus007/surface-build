@@ -50,6 +50,10 @@
   font-size: var(--font-size-0);
 }
 
+.pl-pattern-wrapper-element {
+  position: relative;
+}
+
 /* Aspect Ratio Demos */
 .pl-aspect-ratio {
   display: grid;

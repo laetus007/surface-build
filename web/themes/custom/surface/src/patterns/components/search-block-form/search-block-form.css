@@ -4,22 +4,28 @@
  */
 
 .search-block-form {
+  background-color: hsl(var(--gray-9));
   display: flex;
   justify-content: space-between;
   width: 100%;
 
+  /* Search block form in modal. */
+  .site-search--modal & {
+    background-color: transparent;
+  }
+
   & input[type="search"] {
     appearance: none;
     background-color: transparent;
-    background-image: linear-gradient(hsl(var(--blue-5)), hsl(var(--blue-5))); /* Two values are needed for IE11 support. */
+    background-image: linear-gradient(var(--bg-ucla-blue), var(--bg-ucla-blue));
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 0% 10px;
+    background-size: 0% var(--size-1);
     border: solid 1px transparent;
     box-shadow: none;
-    color: hsl(0, 0%, 100%);
-    font-family: serif;
-    font-size: 32px;
+    color: var(--text-light);
+    font-family: var(--font-serif);
+    font-size: var(--font-size-7);
     height: var(--size-18);
     padding-block: 0;
     padding-inline-end: 0;
@@ -27,18 +33,26 @@
     transition: background-size 0.4s;
     width: calc(100% + var(--size-4));
 
-    &::-ms-clear {
-      opacity: 0.5;
-      width: 40px;
+    /* Search block form in modal. */
+    .site-search--modal & {
+      background-image: none;
+      border-color: hsl(var(--gray-8));
+      border-radius: var(--size-1);
+      color: var(--text-ucla-blue);
+      height: 70px;
+      padding-inline-end: 80px;
+      transition: none;
+      width: 100%;
     }
 
     &:focus {
       background-size: 100% var(--size-1);
-      outline: solid 4px transparent;
-      outline-offset: -4px;
+      outline: none;
 
-      @media screen and (-ms-high-contrast: active) {
-        border-bottom-width: var(--size-1);
+      /* Search block form in modal. */
+      .site-search--modal & {
+        outline: double 6px var(--bg-ucla-blue);
+        outline-offset: -1px;
       }
     }
   }
@@ -48,14 +62,15 @@
     margin: 0;
   }
 
-  .form-item-keys {
-    flex-grow: 1;
-    margin: 0;
-  }
-
   .form-actions {
-    display: flex;
-    margin: 0;
+    margin-block: 0;
+
+    /* Search block form in modal. */
+    .site-search--modal & {
+      height: 70px;
+      position: absolute;
+      right: 0;
+    }
   }
 
   .site-search__content & {
@@ -64,9 +79,11 @@
 }
 
 .search-block-form__submit {
+  align-items: center;
   align-self: stretch;
   background-color: transparent;
   border-color: transparent;
+  color: var(--text-light);
   cursor: pointer;
   display: flex;
   height: auto;
@@ -79,51 +96,22 @@
   position: relative;
   width: 100px;
 
-  &:focus {
-    box-shadow: none;
-    outline-offset: -4px;
-    outline: solid 4px transparent;
-
-    & span::after {
-      transform: scaleX(1);
-    }
-
-    @media screen and (-ms-high-contrast: active) {
-      border-bottom-width: var(--size-1);
-
-      & span::after {
-        content: none;
-      }
-    }
+  /* Search block form in modal. */
+  .site-search--modal & {
+    color: var(--text-ucla-blue);
   }
 
   @media (--md) {
     width: 80px;
   }
 
-  @media screen and (-ms-high-contrast: active) {
-    & .visually-hidden {
-      clip: auto;
-      height: auto;
-      overflow: visible;
-      position: static;
-      text-align: center;
-      width: auto;
-    }
-
-    & .icon--search {
-      display: none;
-    }
+  &:focus {
+    box-shadow: none;
+    outline-offset: -4px;
+    outline: solid 4px transparent;
   }
 
-  & .icon--search {
-    background-image: url("../images/search--white.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    height: 100%;
-    pointer-events: none;
+  svg {
     width: 24px;
   }
 }

@@ -1,8 +1,6 @@
 <header id="header" class="site-header" data-drupal-selector="site-header" role="banner" data-once="navigation">
   {% block alert %}
-    {% include '@components/site-alert/site-alert.twig' with {
-      'text': 'Find the latest information on <a href="#">COVID-19</a>, <a href="#">monkeypox</a> and <a href="#">flu prevention</a>.'
-    } %}
+    {% include '@components/site-alert/site-alert.twig' %}
   {% endblock %}
 
   <section class="site-secondary">
@@ -47,10 +45,6 @@
   </section>
 
   {% block search %}
-    {% if data_search == 'default' %}
-      {% include '@components/site-search/site-search.twig' %}
-    {% else %}
-      {% include '@components/search-modal/search-modal.twig' %}
-    {% endif %}
+    {% include '@components/site-search/site-search.twig' %}
   {% endblock %}
 </header>

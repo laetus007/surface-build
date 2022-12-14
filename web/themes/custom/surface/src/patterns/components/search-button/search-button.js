@@ -1,7 +1,7 @@
 (function (Drupal) {
   const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
   const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
-  const searchModal = document.querySelector('[data-drupal-selector="modal"]');
+  const searchInput = document.querySelector('[data-drupal-selector="edit-keys"]');
 
   function searchIsVisible() {
     if(!searchContainer) return false;
@@ -38,18 +38,6 @@
     searchButton.focus();
   }
 
-  if(searchContainer){
-    document.addEventListener('keyup', function (e) {
-      if (e.key === 'Escape' || e.code === 'Escape') {
-        closeSearch();
-      }
-
-      if (e.key === ' ' || e.code === 'Space') {
-        openSearch();
-      }
-    });
-  }
-
   if(searchContainer) {
     searchContainer.addEventListener('focusout', function (e) {
       closeSearch();
@@ -63,6 +51,20 @@
       if(searchButton) {
         searchButton.addEventListener('mousedown', function () {
           toggleSearch();
+        });
+
+        searchButton.addEventListener('keyup', function (e) {
+          if (e.key === ' ' || e.code === 'Space') {
+            openSearch();
+          }
+        });
+      }
+
+      if(searchInput) {
+        searchInput.addEventListener('keyup', function (e) {
+          if (e.key === 'Escape' || e.code === 'Escape') {
+            closeSearch();
+          }
         });
       }
     }
