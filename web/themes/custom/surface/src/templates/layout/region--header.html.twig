@@ -36,9 +36,14 @@
     {% endblock %}
 
     {% block search %}
-      {% include '@components/site-search/site-search.twig' with {
+      {% embed '@components/site-search/site-search.twig' with {
         'data_search': data_search
       } %}
+
+        {% block quicklinks %}
+          {{ drupal_menu('quick-links') }}
+        {% endblock %}
+      {% endembed %}
     {% endblock %}
   {% endembed %}
 {% endif %}

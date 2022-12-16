@@ -6,11 +6,13 @@
   --bg-dark: hsl(var(--black));
   --bg-light: hsl(var(--white));
   --bg-ucla-blue: hsl(var(--ucla-blue));
+  --bg-santa-barbara-sand: hsl(var(--santa-barbara-sand));
 
   /* Text */
   --text-dark: hsl(var(--black));
   --text-light: hsl(var(--white));
   --text-ucla-blue: hsl(var(--ucla-blue));
+  --text-midnight-joshua-tree: hsl(var(--midnight-joshua-tree));
 
   /* Containers */
   --max-width: 1440px;

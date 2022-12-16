@@ -179,6 +179,11 @@ menu-secondary:
     component:
       dist/css/menu-secondary.css: {}
 
+menu-quicklinks:
+  css:
+    component:
+      dist/css/menu-quicklinks.css: {}
+
 progress:
   css:
     component:

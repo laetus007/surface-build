@@ -27,31 +27,10 @@
   }
 }
 
-.site-search__content {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: var(--size-4);
-  position: relative;
-
-  .container-inline & {
-    display: grid;
-  }
-}
-
-.site-search__links {
-  max-width: 65ch;
-
-  ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    list-style: none;
-    padding-inline-start: 0;
-  }
-}
-
 .site-search__close {
   display: flex;
   justify-content: flex-end;
+  margin-block: var(--size-5);
 
   button {
     background: transparent;
@@ -62,25 +41,64 @@
   }
 }
 
+.site-search__heading {
+  h2 {
+    font-size: var(--font-size-11);
+    font-weight: var(--font-weight-400);
+    margin-block: 0;
+  }
+
+  span {
+    display: block;
+    font-size: var(--font-size-2);
+    margin-block-end: var(--size-2);
+  }
+}
+
+.site-search__content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: var(--size-4);
+  position: relative;
+}
+
+.site-search__links {
+  h3 {
+    font-size: var(--font-size-5);
+  }
+}
+
 /* Search modal */
 .site-search--modal {
   background-color: var(--bg-light);
   height: 100vh;
   left: 0;
   max-width: 100%;
+  opacity: 0;
   position: absolute;
   top: 0;
+  transition: all 0.5s;
   width: 100%;
 
   /* Search modal is active */
   &.is-active {
     max-height: 100vh;
+    opacity: 1;
     visibility: visible;
   }
 
   /* Search modal in Pattern Lab */
   .modal & {
     max-height: 100vh;
+    opacity: 1;
     visibility: visible;
+  }
+
+  .container {
+    max-width: 125ch;
+  }
+
+  .site-search__content {
+    margin-block-end: var(--size-8);
   }
 }

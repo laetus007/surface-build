@@ -36,9 +36,9 @@
     /* Search block form in modal. */
     .site-search--modal & {
       background-image: none;
-      border-color: hsl(var(--gray-8));
+      border-color: hsl(var(--silver-screen) / 60%);
       border-radius: var(--size-1);
-      color: var(--text-ucla-blue);
+      color: var(--text-midnight-joshua-tree);
       height: 70px;
       padding-inline-end: 80px;
       transition: none;

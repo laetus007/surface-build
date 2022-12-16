@@ -2,3 +2,40 @@
  * @file
  * Quicklinks menu styling.
  */
+
+.menu-quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+
+  .menu__item {
+    margin-inline-end: var(--size-1);
+
+    &:last-child {
+      margin-inline-end: 0;
+    }
+  }
+
+  .menu__link {
+    background-color: hsl(var(--silver-screen) / 20%);
+    border: 2px solid var(--bg-light);
+    border-radius: 20px;
+    color: var(--text-midnight-joshua-tree);
+    cursor: pointer;
+    display: inline-block;
+    padding-block: var(--size-105);
+    padding-inline: var(--size-205);
+    text-decoration: none;
+    text-transform: none;
+    transition-duration: 200ms;
+    transition-property: background-color, border-color, color;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+      background-color: hsl(var(--silver-screen) / 20%);
+      border-color: hsl(var(--silver-screen) / 20%);
+      color: var(--text-midnight-joshua-tree);
+    }
+  }
+}

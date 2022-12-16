@@ -34,12 +34,12 @@
     {% if data_search == "modal" %}
       <div class="site-search__links">
         <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Link one</a></li>
-          <li><a href="#">Link two</a></li>
-          <li><a href="#">Link three</a></li>
-          <li><a href="#">Link four</a></li>
-        </ul>
+        {% block quicklinks %}
+          {% include '@components/menu-quicklinks/menu-quicklinks.twig' with {
+            'is_demo': true,
+            'items': quicklinks_menu
+          } %}
+        {% endblock %}
       </div>
     {% endif %}
   </div>

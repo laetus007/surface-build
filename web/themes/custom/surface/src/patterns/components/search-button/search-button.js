@@ -3,6 +3,7 @@
   const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
   const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
   const searchInput = searchContainer.querySelector('input[type="search"]');
+  const searchClose = searchContainer.querySelector('[data-drupal-selector="search-close"]');
 
   function searchIsVisible() {
     return searchContainer.classList.contains('is-active');
@@ -10,7 +11,7 @@
 
   function watchForClickOut(e) {
     let clickInSearchArea = e.target.classList.contains('form-element--type-search');
-    if (!clickInSearchArea && searchIsVisible()) {
+    if (!clickInSearchArea && searchType !== 'modal' && searchIsVisible()) {
       toggleSearchVisibility(false);
     }
   }
@@ -19,7 +20,7 @@
     if (e.relatedTarget) {
       let inSearchBar = e.relatedTarget.classList.contains('form-element--type-search');
       let inSearchButton = e.relatedTarget.classList.contains('search-block-form__submit');
-      if (!inSearchBar && !inSearchButton) {
+      if (!inSearchBar && !inSearchButton && searchType !== 'modal') {
         toggleSearchVisibility(false);
       }
     }
@@ -77,10 +78,17 @@
   Drupal.behaviors.search = {
     attach: function attach(context) {
       let searchButtonEl = once('search-button', searchButton, context).shift();
+      let searchCloseEl = once('search-close', searchClose, context).shift();
 
       if(searchButtonEl) {
         searchButtonEl.setAttribute('aria-expanded', searchIsVisible());
         searchButtonEl.addEventListener('click', function () {
+          toggleSearchVisibility(!searchIsVisible());
+        });
+      }
+
+      if(searchCloseEl) {
+        searchCloseEl.addEventListener('click', function () {
           toggleSearchVisibility(!searchIsVisible());
         });
       }
