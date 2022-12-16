@@ -15,9 +15,17 @@ site_theme: default
 site_menu: mega
 header_logo:
   - '34'
-footer_logo: {  }
+footer_logo:
+  - '35'
 facebook_url: ''
 twitter_url: ''
 instagram_url: ''
 youtube_url: ''
 linkedin_url: ''
+alert:
+  value: '<p>Find the latest information on <a href="http://localhost:3000/patterns/components-site-alert/index.html?1670615981185#">COVID-19</a>, <a href="http://localhost:3000/patterns/components-site-alert/index.html?1670615981185#">monkeypox</a> and <a href="http://localhost:3000/patterns/components-site-alert/index.html?1670615981185#">flu prevention</a>.</p>'
+  format: restricted_html
+header_alert:
+  value: '<p><span>Find the latest information on </span><a href="http://localhost:3000/patterns/theme-homepage/index.html?1670101316921#">COVID-19</a><span>, </span><a href="http://localhost:3000/patterns/theme-homepage/index.html?1670101316921#">monkeypox</a><span>, and </span><a href="http://localhost:3000/patterns/theme-homepage/index.html?1670101316921#">flu prevention</a><span>.</span></p>'
+  format: basic_html
+site_search: default

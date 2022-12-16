@@ -1,0 +1,17 @@
+uuid: 5342ede5-2dea-4e60-b700-d9924cf655fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - ckeditor5
+format: restricted_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - bold
+      - link
+  plugins: {  }
+image_upload: {  }

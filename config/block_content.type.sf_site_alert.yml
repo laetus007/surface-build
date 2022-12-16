@@ -1,8 +1,0 @@
-uuid: 0f73309d-45a0-4600-a685-f4d158d78c3f
-langcode: en
-status: true
-dependencies: {  }
-id: sf_site_alert
-label: 'Site alert'
-revision: 0
-description: 'The site alert component is used to display global information across the top of the site header.'

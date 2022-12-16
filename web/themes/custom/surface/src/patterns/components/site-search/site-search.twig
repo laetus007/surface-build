@@ -1,6 +1,12 @@
 {{ attach_library('surface/site-search') }}
 
-<section class="site-search {{ modifier }}" data-drupal-selector="site-search" id="site-search" role="search">
+{% set classes = [
+  'site-search',
+  data_search == 'modal' ? 'site-search--modal',
+  attributes ? attributes.class
+]|join(' ')|trim %}
+
+<section class="{{ classes }}" data-drupal-selector="site-search" id="site-search" role="search">
   <div class="container">
 
     {% if data_search == "modal" %}
