@@ -153,7 +153,7 @@ function surface_form_system_theme_settings_submit(&$form, FormStateInterface $f
   } else {
     if (!empty($surface_settings['header_logo']['#default_value'][0])) {
       $file = \Drupal\file\Entity\File::load($surface_settings['header_logo']['#default_value'][0]);
-      if ($file->isPermanent()) {
+      if (!is_null($file) && $file->isPermanent()) {
         $file->setTemporary();
         $file->save();
       }
@@ -170,7 +170,7 @@ function surface_form_system_theme_settings_submit(&$form, FormStateInterface $f
   } else {
     if (!empty($surface_settings['footer_logo']['#default_value'][0])) {
       $file = \Drupal\file\Entity\File::load($surface_settings['footer_logo']['#default_value'][0]);
-      if ($file->isPermanent()) {
+      if (!is_null($file) && $file->isPermanent()) {
         $file->setTemporary();
         $file->save();
       }

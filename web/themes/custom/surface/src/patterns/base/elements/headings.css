@@ -27,7 +27,7 @@
   }
 }
 
-:where(h2) {
+:where(h2):not('messages__title') {
   color: hsl(var(--gray-9));
   font-size: var(--font-size-5);
   font-weight: var(--font-weight-700);

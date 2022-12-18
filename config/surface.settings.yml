@@ -15,8 +15,7 @@ site_theme: default
 site_menu: mega
 header_logo:
   - '34'
-footer_logo:
-  - '35'
+footer_logo: {  }
 facebook_url: ''
 twitter_url: ''
 instagram_url: ''

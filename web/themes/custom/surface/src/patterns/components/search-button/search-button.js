@@ -1,97 +1,72 @@
-(function (Drupal) {
+((Drupal, once) => {
   const searchType = document.getElementsByTagName('body')[0].getAttribute('data-search');
   const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
   const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
   const searchInput = searchContainer.querySelector('input[type="search"]');
   const searchClose = searchContainer.querySelector('[data-drupal-selector="search-close"]');
 
-  function searchIsVisible() {
-    return searchContainer.classList.contains('is-active');
-  }
-
-  function watchForClickOut(e) {
-    let clickInSearchArea = e.target.classList.contains('form-element--type-search');
-    if (!clickInSearchArea && searchType !== 'modal' && searchIsVisible()) {
-      toggleSearchVisibility(false);
-    }
-  }
-
-  function watchForFocusOut(e) {
-    if (e.relatedTarget) {
-      let inSearchBar = e.relatedTarget.classList.contains('form-element--type-search');
-      let inSearchButton = e.relatedTarget.classList.contains('search-block-form__submit');
-      if (!inSearchBar && !inSearchButton && searchType !== 'modal') {
-        toggleSearchVisibility(false);
-      }
-    }
-  }
-
-  function watchForEscapeOut(e) {
-    if (e.key === 'Escape' || e.key === 'Esc') {
-      toggleSearchVisibility(false);
-    }
-  }
-
-  function handleFocus() {
-    if (searchIsVisible()) {
-      searchInput.focus();
-    } else if (searchContainer.contains(document.activeElement)) {
-      searchButton.focus();
-    }
-  }
-
-  function toggleSearchVisibility(visibility) {
-    searchButton.setAttribute('aria-expanded', visibility === true);
-    searchContainer.addEventListener('transitionend', handleFocus, {
-      once: true
-    });
-
-    if (visibility === true) {
-      searchContainer.classList.add('is-active');
-      document.addEventListener('click', watchForClickOut, {
-        capture: true
-      });
-      document.addEventListener('focusout', watchForFocusOut, {
-        capture: true
-      });
-      document.addEventListener('keyup', watchForEscapeOut, {
-        capture: true
-      });
-
-      console.log(searchIsVisible());
-    } else {
-      searchContainer.classList.remove('is-active');
-      document.removeEventListener('click', watchForClickOut, {
-        capture: true
-      });
-      document.removeEventListener('focusout', watchForFocusOut, {
-        capture: true
-      });
-      document.removeEventListener('keyup', watchForEscapeOut, {
-        capture: true
-      });
-
-      console.log(searchIsVisible());
-    }
-  }
-
-  Drupal.behaviors.search = {
+  Drupal.behaviors.surfaceSearch = {
     attach: function attach(context) {
-      let searchButtonEl = once('search-button', searchButton, context).shift();
-      let searchCloseEl = once('search-close', searchClose, context).shift();
+      Drupal.surfaceSearch.init(context);
+    },
+  };
 
-      if(searchButtonEl) {
-        searchButtonEl.setAttribute('aria-expanded', searchIsVisible());
-        searchButtonEl.addEventListener('click', function () {
-          toggleSearchVisibility(!searchIsVisible());
+  Drupal.surfaceSearch = {
+    init: function (context) {
+      once('surfaceSearchInit', '[data-drupal-selector="site-search"]', context).forEach(() => {
+        document.addEventListener('keyup', e => {
+          if (Drupal.surfaceSearch.searchIsVisible() && e.key === 'Escape' || e.key === 'Esc') {
+            e.preventDefault();
+            this.toggleSearch();
+          }
         });
+      });
+
+      // Search toggle
+      once('surfaceSearchToggle', '[data-drupal-selector="search-button"]', context).forEach(el => el.addEventListener('click', e => {
+        e.preventDefault();
+        this.toggleSearch();
+      }));
+    },
+
+    searchIsVisible: () => {
+      return searchContainer.classList.contains('is-active');
+    },
+
+    toggleSearch: () => {
+      if (Drupal.surfaceSearch.searchIsVisible()) {
+        Drupal.surfaceSearch.collapseSearch();
+      } else {
+        Drupal.surfaceSearch.showSearch();
       }
+    },
 
-      if(searchCloseEl) {
-        searchCloseEl.addEventListener('click', function () {
-          toggleSearchVisibility(!searchIsVisible());
-        });
+    showSearch: () => {
+      const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
+      const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
+
+      searchButton.setAttribute('aria-expanded', 'true');
+      searchContainer.classList.add('is-active');
+
+      searchContainer.addEventListener('transitionend', Drupal.surfaceSearch.handleFocus, {
+        once: true
+      });
+    },
+
+    collapseSearch: () => {
+      const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
+      const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
+
+      searchButton.setAttribute('aria-expanded', 'false');
+      searchContainer.classList.remove('is-active');
+    },
+
+    handleFocus: () => {
+      const searchInput = searchContainer.querySelector('input[type="search"]');
+
+      if (Drupal.surfaceSearch.searchIsVisible()) {
+        searchInput.focus();
       }
     }
   };
-})(Drupal);
+})(Drupal, once);
