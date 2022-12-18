@@ -1,9 +1,5 @@
 ((Drupal, once) => {
-  const searchType = document.getElementsByTagName('body')[0].getAttribute('data-search');
-  const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
   const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
-  const searchInput = searchContainer.querySelector('input[type="search"]');
-  const searchClose = searchContainer.querySelector('[data-drupal-selector="search-close"]');
 
   Drupal.behaviors.surfaceSearch = {
     attach: function attach(context) {
@@ -27,10 +23,21 @@
         e.preventDefault();
         this.toggleSearch();
       }));
+
+      // Close modal
+      once('surfaceCloseModal', '[data-drupal-selector="search-close"]', context).forEach(el => el.addEventListener('click', e => {
+        e.preventDefault();
+        this.collapseSearch();
+      }));
     },
 
     searchIsVisible: () => {
       return searchContainer.classList.contains('is-active');
+    },
+
+    modalIsVisible: () => {
+      const searchType = document.getElementsByTagName('body')[0].getAttribute('data-search');
+      return searchType === 'modal';
     },
 
     toggleSearch: () => {
@@ -64,7 +71,7 @@
     handleFocus: () => {
       const searchInput = searchContainer.querySelector('input[type="search"]');
 
-      if (Drupal.surfaceSearch.searchIsVisible()) {
+      if (Drupal.surfaceSearch.searchIsVisible() && !Drupal.surfaceSearch.modalIsVisible()) {
         searchInput.focus();
       }
     }
