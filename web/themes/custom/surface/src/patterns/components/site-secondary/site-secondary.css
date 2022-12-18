@@ -16,3 +16,9 @@
   min-height: 54px;
   position: relative;
 }
+
+.site-secondary__buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: var(--size-1);
+}

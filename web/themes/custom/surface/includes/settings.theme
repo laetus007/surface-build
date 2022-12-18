@@ -66,12 +66,19 @@ function surface_form_system_theme_settings_alter(&$form, FormStateInterface $fo
     ],
   ];
 
-  $form['surface_settings']['settings']['alert'] = [
+  $form['surface_settings']['settings']['site_alert'] = [
     '#type' => 'text_format',
     '#format' => 'restricted_html',
     '#title' => t('Alert'),
     '#description' => t("Add alert content that will be displayed globally."),
-    '#default_value' => theme_get_setting('alert')['value'],
+    '#default_value' => theme_get_setting('site_alert')['value'],
+  ];
+
+  $form['surface_settings']['settings']['site_give'] = [
+    '#type' => 'url',
+    '#title' => t('Give Url'),
+    '#description' => t("Enter Give url. Leave the url field blank to hide this button."),
+    '#default_value' => theme_get_setting('site_give'),
   ];
 
   $form['surface_settings']['settings']['header_logo'] = [
@@ -101,35 +108,35 @@ function surface_form_system_theme_settings_alter(&$form, FormStateInterface $fo
   ];
 
   $form['surface_settings']['settings']['facebook_url'] = [
-    '#type' => 'textfield',
+    '#type' => 'url',
     '#title' => t('Facebook Url'),
     '#description' => t("Enter Facebook url. Leave the url field blank to hide this icon."),
     '#default_value' => theme_get_setting('facebook_url'),
   ];
 
   $form['surface_settings']['settings']['twitter_url'] = [
-    '#type' => 'textfield',
+    '#type' => 'url',
     '#title' => t('Twitter Url'),
     '#description' => t("Enter Twitter url. Leave the url field blank to hide this icon."),
     '#default_value' => theme_get_setting('twitter_url'),
   ];
 
   $form['surface_settings']['settings']['instagram_url'] = [
-    '#type' => 'textfield',
+    '#type' => 'url',
     '#title' => t('Instagram Url'),
     '#description' => t("Enter Instagram url. Leave the url field blank to hide this icon."),
     '#default_value' => theme_get_setting('instagram_url'),
   ];
 
   $form['surface_settings']['settings']['youtube_url'] = [
-    '#type' => 'textfield',
+    '#type' => 'url',
     '#title' => t('Youtube Url'),
     '#description' => t("Enter Youtube url. Leave the url field blank to hide this icon."),
     '#default_value' => theme_get_setting('youtube_url'),
   ];
 
   $form['surface_settings']['settings']['linkedin_url'] = [
-    '#type' => 'textfield',
+    '#type' => 'url',
     '#title' => t('LinkedIn Url'),
     '#description' => t("Enter LinkedIn url. Leave the url field blank to hide this icon."),
     '#default_value' => theme_get_setting('linkedin_url'),

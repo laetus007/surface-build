@@ -15,8 +15,14 @@
 
 {% if content %}
   {% embed '@layout/site-footer/site-footer.twig' %}
-    {% block content %}
-      {{ content }}
+    {% block branding %}
+      {% include '@layout/site-branding/site-branding.twig' with {
+        'site_logo': footer_logo
+      } %}
+    {% endblock %}
+
+    {% block menu %}
+      {{ drupal_menu('footer', expand=true) }}
     {% endblock %}
   {% endembed %}
 {% endif %}

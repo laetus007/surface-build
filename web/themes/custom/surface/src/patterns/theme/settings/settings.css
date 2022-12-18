@@ -169,7 +169,7 @@
   }
 }
 
-[data-drupal-selector="edit-alert"] {
+[data-drupal-selector="edit-site-alert"] {
   .filter-wrapper {
     display: none;
   }

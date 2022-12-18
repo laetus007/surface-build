@@ -9,7 +9,3 @@ items:
     url: '#'
     in_active_trail: false
     below: false
-  - title: 'Give'
-    url: '#'
-    in_active_trail: false
-    below: false

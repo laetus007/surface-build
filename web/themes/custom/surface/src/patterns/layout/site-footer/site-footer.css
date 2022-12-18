@@ -8,17 +8,3 @@
   color: hsl(var(--gray-7));
   position: relative;
 }
-
-.site-footer__inner {
-  padding-block: var(--size-4);
-
-  @media (--toolbar) {
-    .gin--vertical-toolbar & {
-      padding-inline-start: calc(var(--size-4) + 60px);
-    }
-  }
-
-  @media (--xl) {
-    padding-block: var(--size-8) calc(13 * var(--size-2));
-  }
-}

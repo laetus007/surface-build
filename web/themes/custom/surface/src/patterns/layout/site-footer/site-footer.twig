@@ -1,6 +1,12 @@
 <footer class="site-footer">
-  <div class="site-footer__inner container">
-    {% block content %}
+  <div class="container">
+    {% block branding %}
+      {% include '@layout/site-branding/site-branding.twig' with {
+        'site_logo': '/dist/images/logo-inverse.svg'
+      } %}
+    {% endblock %}
+
+    {% block menu %}
       {{ content }}
     {% endblock %}
   </div>

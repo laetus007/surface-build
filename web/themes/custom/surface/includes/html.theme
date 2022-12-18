@@ -57,12 +57,18 @@ function surface_preprocess(&$variables) {
   }
 
   // Get alert
-  $alert = theme_get_setting('alert');
-  if (empty($alert['value'])) {
+  $site_alert = theme_get_setting('site_alert');
+  if (empty($site_alert['value'])) {
     $variables['data_alert'] = 'false';
   } else {
     $variables['data_alert'] = 'true';
-    $variables['alert'] = $alert['value'];
+    $variables['site_alert'] = $site_alert['value'];
+  }
+
+  // Get Give url
+  $site_give = theme_get_setting('site_give');
+  if ($site_give) {
+    $variables['give_url'] = $site_give;
   }
 
   // Set header logo

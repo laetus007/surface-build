@@ -6,6 +6,7 @@
   --bg-dark: hsl(var(--black));
   --bg-light: hsl(var(--white));
   --bg-ucla-blue: hsl(var(--ucla-blue));
+  --bg-ucla-yellow: hsl(var(--ucla-yellow));
   --bg-santa-barbara-sand: hsl(var(--santa-barbara-sand));
 
   /* Text */

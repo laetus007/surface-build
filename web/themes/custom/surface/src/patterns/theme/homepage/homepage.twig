@@ -1,6 +1,11 @@
 {% extends '@layout/page/page.twig' %}
   {% block header %}
-    {% include '@layout/site-header/site-header-dropdown.twig' %}
+    {% include '@layout/site-header/site-header.twig' with {
+      'site_logo': '/dist/images/logo.svg',
+      'menu': default,
+      'is_demo': true,
+      'items': main_menu
+    } %}
   {% endblock %}
 
   {% block main %}

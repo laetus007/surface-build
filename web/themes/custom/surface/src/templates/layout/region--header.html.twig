@@ -18,7 +18,7 @@
     {% block alert %}
       {% if data_alert == 'true' %}
         {% include '@components/site-alert/site-alert.twig' with {
-          'text': alert
+          'text': site_alert
         } %}
       {% endif %}
     {% endblock %}
@@ -27,12 +27,27 @@
       {{ drupal_menu('secondary') }}
     {% endblock %}
 
+    {% block buttons %}
+      {% include '@components/give-button/give-button.twig' with {
+        'url': give_url
+      } %}
+      {% include '@components/search-button/search-button.twig' with {
+        'is_demo': false
+      } %}
+    {% endblock %}
+
     {% block branding %}
-      {{ drupal_entity('block', 'surface_site_branding') }}
+      {% include '@layout/site-branding/site-branding.twig' with {
+        'site_logo': header_logo
+      } %}
     {% endblock %}
 
     {% block primary %}
-      {{ drupal_menu('main', expand=true) }}
+      {% embed '@layout/site-navigation/site-navigation.twig' %}
+        {% block menu %}
+          {{ drupal_menu('main', expand=true) }}
+        {% endblock %}
+      {% endembed %}
     {% endblock %}
 
     {% block search %}

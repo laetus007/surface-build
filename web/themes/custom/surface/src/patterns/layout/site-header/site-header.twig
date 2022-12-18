@@ -12,7 +12,15 @@
             'items': secondary_menu
           } %}
         {% endblock %}
-        {% include '@components/search-button/search-button.twig' %}
+
+        <div class="site-secondary__buttons">
+          {% block buttons %}
+            {% include '@components/give-button/give-button.twig' %}
+            {% include '@components/search-button/search-button.twig' with {
+              'is_demo': false
+            } %}
+          {% endblock %}
+        </div>
       </div>
     </div>
   </section>
@@ -22,24 +30,17 @@
       <div class="site-primary__content">
         {% block branding %}
           {% include '@layout/site-branding/site-branding.twig' with {
-            'site_logo': '/dist/images/logo.svg'
+            'site_logo': site_logo
           } %}
         {% endblock %}
 
-        <nav id="site-navigation" class="site-navigation" data-drupal-selector="site-navigation">
-          {% include '@components/mobile-button/mobile-button.twig' %}
-
-          <div class="site-navigation-container">
-            {% block primary %}
-              {% include '@components/menu-main/menu-main.twig' with {
-                'menu': 'default',
-                'is_demo': true,
-                'items': main_menu
-              } %}
-            {% endblock %}
-          </div>
-        </nav>
-
+        {% block primary %}
+          {% include '@layout/site-navigation/site-navigation.twig' with {
+            'menu': menu,
+            'is_demo': is_demo,
+            'items': items
+          } %}
+        {% endblock %}
       </div>
     </div>
   </section>

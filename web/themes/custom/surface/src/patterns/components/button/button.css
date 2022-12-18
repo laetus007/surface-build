@@ -115,3 +115,13 @@
 .button--large {
   font-size: var(--font-size-3);
 }
+
+.button--give {
+  background-color: transparent;
+  color: var(--bg-ucla-yellow);
+
+  &:visited {
+    background-color: transparent;
+    color: var(--bg-ucla-yellow);
+  }
+}

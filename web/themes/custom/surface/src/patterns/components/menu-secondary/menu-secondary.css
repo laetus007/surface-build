@@ -12,23 +12,23 @@
   margin-inline: 0;
   padding-block: 0;
   padding-inline: 0;
-}
 
-.menu-secondary__link {
-  color: var(--text-light);
-  padding-block: var(--size-05);
-  padding-inline: var(--size-2);
+  .menu__link {
+    color: var(--text-light);
+    padding-block: var(--size-05);
+    padding-inline: var(--size-2);
 
-  &:hover {
-    text-decoration: none;
-  }
+    &:hover {
+      text-decoration: none;
+    }
 
-  &:focus {
-    outline: auto 2px hsl(203, 72%, 50%);
-    outline-offset: 2px;
-  }
+    &:focus {
+      outline: auto 2px hsl(203, 72%, 50%);
+      outline-offset: 2px;
+    }
 
-  &:first-child {
-    padding-inline-start: 0;
+    &:first-child {
+      padding-inline-start: 0;
+    }
   }
 }

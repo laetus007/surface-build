@@ -1,6 +1,5 @@
 ---
-site_logo: '/dist/images/logo.svg'
-menu:  'default'
+menu: 'default'
 is_demo: true
 items:
   - title: 'Education'
@@ -23,4 +22,3 @@ items:
     url: '#'
     in_active_trail: false
     below: false
-
