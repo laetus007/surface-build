@@ -1,4 +1,4 @@
-(function (Drupal) {
+((Drupal) => {
   var isDesktopNav = Drupal.surface.isDesktopNav;
   var secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu-main__item--has-children"]');
 
