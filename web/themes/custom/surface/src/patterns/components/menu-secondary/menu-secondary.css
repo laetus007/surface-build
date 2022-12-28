@@ -5,13 +5,17 @@
 
 .menu-secondary {
   align-items: stretch;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   list-style: none;
   margin-block: 0;
   margin-inline: 0;
   padding-block: 0;
   padding-inline: 0;
+
+  @media (--xl) {
+    display: flex;
+  }
 
   .menu__link {
     color: var(--text-light);
@@ -29,6 +33,30 @@
 
     &:first-child {
       padding-inline-start: 0;
+    }
+  }
+
+  /* Secondary menu mobile */
+  .site-navigation-container & {
+    display: flex;
+    flex-direction: column;
+
+    @media (--xl) {
+      display: none;
+    }
+
+    .menu__item {
+      margin-block-end: var(--size-1);
+    }
+
+    .menu__link {
+      color: var(--text-dark);
+      display: block;
+      font-size: var(--font-size-2);
+
+      &:hover {
+        color: var(--text-ucla-blue);
+      }
     }
   }
 }

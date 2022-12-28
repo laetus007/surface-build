@@ -117,11 +117,12 @@
 }
 
 .button--give {
-  background-color: transparent;
-  color: var(--bg-ucla-yellow);
+  background-color: var(--bg-light);
+  color: var(--bg-ucla-blue);
+  text-transform: uppercase;
 
   &:visited {
-    background-color: transparent;
-    color: var(--bg-ucla-yellow);
+    background-color: var(--bg-light);
+    color: var(--bg-ucla-blue);
   }
 }

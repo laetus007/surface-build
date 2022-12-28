@@ -8,6 +8,11 @@
         'is_demo': is_demo,
         'items': items
       } %}
+
+      {% include '@components/menu-secondary/menu-secondary.twig' with {
+        'is_demo': is_demo,
+        'items': secondary_items
+      } %}
     {% endblock %}
   </div>
 </nav>

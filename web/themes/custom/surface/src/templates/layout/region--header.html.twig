@@ -46,6 +46,7 @@
       {% embed '@layout/site-navigation/site-navigation.twig' %}
         {% block menu %}
           {{ drupal_menu('main', expand=true) }}
+          {{ drupal_menu('secondary') }}
         {% endblock %}
       {% endembed %}
     {% endblock %}

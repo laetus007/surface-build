@@ -22,3 +22,12 @@ items:
     url: '#'
     in_active_trail: false
     below: false
+secondary_items:
+  - title: 'UCLA Health'
+    url: '#'
+    in_active_trail: false
+    below: false
+  - title: 'Departments'
+    url: '#'
+    in_active_trail: false
+    below: false

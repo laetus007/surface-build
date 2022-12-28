@@ -12,9 +12,13 @@
 .site-secondary__content {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   min-height: 54px;
   position: relative;
+
+  @media (--xl) {
+    justify-content: space-between;
+  }
 }
 
 .site-secondary__buttons {

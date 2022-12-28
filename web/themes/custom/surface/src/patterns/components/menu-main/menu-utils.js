@@ -1,4 +1,4 @@
-(function (Drupal) {
+((Drupal) => {
   Drupal.surface = {};
 
   function isDesktopNav() {
