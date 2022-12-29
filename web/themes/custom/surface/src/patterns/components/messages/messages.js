@@ -1,6 +1,6 @@
-!function (Drupal) {
-  'use strict';
+'use strict';
 
+((Drupal) => {
   Drupal.behaviors.messages = {
     attach: function attach(context) {
       const messages = context.querySelectorAll('.messages__close');
@@ -12,9 +12,11 @@
         });
       });
     },
+
     closeMessage(e) {
       const message = e.target.parentNode.parentNode.parentNode;
       message.classList.add('hidden');
     }
   };
-}(Drupal);
+
+})(Drupal);

@@ -1,13 +1,2 @@
 generators/app/templates/_src/styleguide/annotations/annotations.js
 generators/app/templates/eslintrc.json
-src/patterns/components/dropbutton/dropbutton.js
-src/patterns/components/form-boolean/form-boolean.js
-src/patterns/components/menu-main/menu-main-second-level.js
-src/patterns/components/menu-main/menu-main.js
-src/patterns/components/menu-main/menu-utils.js
-src/patterns/components/messages/messages.js
-src/patterns/components/messages/message.theme.js
-src/patterns/components/search-wide/search-wide.js
-src/patterns/components/search-button/search-button.js
-src/patterns/components/search-modal/search-modal.js
-src/patterns/components/tabs/tabs.js

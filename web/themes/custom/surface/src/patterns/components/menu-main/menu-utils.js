@@ -1,3 +1,5 @@
+'use strict';
+
 ((Drupal) => {
   Drupal.surface = {};
 

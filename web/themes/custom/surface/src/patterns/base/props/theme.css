@@ -8,12 +8,14 @@
   --bg-ucla-blue: hsl(var(--ucla-blue));
   --bg-ucla-yellow: hsl(var(--ucla-yellow));
   --bg-santa-barbara-sand: hsl(var(--santa-barbara-sand));
+  --bg-malibu-dolphin: hsl(var(--malibu-dolphin));
 
   /* Text */
   --text-dark: hsl(var(--black));
   --text-light: hsl(var(--white));
   --text-ucla-blue: hsl(var(--ucla-blue));
   --text-midnight-joshua-tree: hsl(var(--midnight-joshua-tree));
+  --text-malibu-dolphin: hsl(var(--malibu-dolphin));
 
   /* Containers */
   --max-width: 1440px;

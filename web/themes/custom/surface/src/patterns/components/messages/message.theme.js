@@ -1,4 +1,6 @@
-(function (Drupal) {
+'use strict';
+
+((Drupal) => {
   document.addEventListener('click', function(e) {
     if(e.target && e.target.classList.contains('messages__close')) {
       const message = e.target.parentNode.parentNode.parentNode;

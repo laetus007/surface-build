@@ -33,14 +33,14 @@
     {% set menu_classes = [
       'menu-main',
       menu_level > 0 ? 'menu-main--level-' ~ (menu_level + 1),
-      attributes ? attributes.class
+      attributes ? attributes.class,
     ]|join(' ')|trim %}
 
     {% if menu_level == 1 %}
       <span data-drupal-selector="menu-main--1" class="menu-main--1"></span>
     {% endif %}
 
-    <ul class="{{ menu_classes }}" data-type="{{ menu }}" data-drupal-selector="{{ drupal_selector_primary_nav_level }}" {{ attributes ? attributes|without('class') }}>
+    <ul class="{{ menu_classes }}" {% if menu_level > 0 %}id="{{ aria_id }}"{% endif %} {% if menu_level == 0 %}data-type="{{ menu }}"{% endif %} data-drupal-selector="{{ drupal_selector_primary_nav_level }}" {{ attributes ? attributes|without('class') }}>
       {% for item in items %}
 
         {% if item.url.isRouted and item.url.routeName == '<nolink>' %}
@@ -52,22 +52,20 @@
         {% endif %}
 
         {% set item_classes = [
-            'menu-main__item',
-            'menu-main__item--' ~ menu_item_type,
-            'menu-main__item--level-' ~ (menu_level + 1),
-            item.in_active_trail ? 'menu-main__item--active-trail',
-            item.below and menu != 'default' ? 'menu-main__item--has-children',
-          ]
-        %}
+          'menu-main__item',
+          'menu-main__item--' ~ menu_item_type,
+          'menu-main__item--level-' ~ (menu_level + 1),
+          item.in_active_trail ? 'menu-main__item--active-trail',
+          item.below and menu != 'default' ? 'menu-main__item--has-children',
+        ] %}
 
         {% set link_classes = [
-            'menu-main__link',
-            'menu-main__link--' ~ menu_item_type,
-            'menu-main__link--level-' ~ (menu_level + 1),
-            item.in_active_trail ? 'menu-main__link--active-trail',
-            item.below and menu != 'default' ? 'menu-main__link--has-children',
-          ]
-        %}
+          'menu-main__link',
+          'menu-main__link--' ~ menu_item_type,
+          'menu-main__link--level-' ~ (menu_level + 1),
+          item.in_active_trail ? 'menu-main__link--active-trail',
+          item.below and menu != 'default' ? 'menu-main__link--has-children',
+        ] %}
 
         {% set item_classes = item_classes|join(' ')|trim %}
         {% set link_classes = link_classes|join(' ')|trim %}
@@ -92,7 +90,7 @@
             {% if item.below and menu != "default" %}
 
               {% if is_top_level_menu %}
-                <button class="menu-toggle" data-drupal-selector="menu-toggle" aria-controls="{{ aria_id }}" aria-expanded="false" aria-hidden="true" tabindex="-1">
+                <button class="menu-toggle" data-drupal-selector="menu-toggle" aria-controls="{{ aria_id }}" aria-expanded="false" aria-hidden="true">
                   <span class="visually-hidden">{{ item.title ~ ' sub-navigation' }}</span>
                   <span class="icon--menu-toggle"></span>
                 </button>

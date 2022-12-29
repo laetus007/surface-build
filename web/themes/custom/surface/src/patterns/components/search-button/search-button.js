@@ -1,3 +1,5 @@
+'use strict';
+
 ((Drupal, once) => {
   const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
 
@@ -43,7 +45,8 @@
     toggleSearch: () => {
       if (Drupal.surfaceSearch.searchIsVisible()) {
         Drupal.surfaceSearch.collapseSearch();
-      } else {
+      }
+      else {
         Drupal.surfaceSearch.showSearch();
       }
     },

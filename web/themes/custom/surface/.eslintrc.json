@@ -16,7 +16,8 @@
   "globals": {
     // Let ESLint know about defined global variables.
     "Drupal": true,
-    "drupalSettings": true
+    "drupalSettings": true,
+    "once": true
   },
 
   "parserOptions": {
@@ -72,12 +73,16 @@
     "no-undef": "error",
 
     // Enforce line length to 80 characters.
-    "max-len": ["error", {
-      "ignoreUrls": true,
-      "ignoreStrings": true,
-      "ignoreRegExpLiterals": true,
-      "ignoreTemplateLiterals": true
-    }],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
 
     // Require capitalized names for constructor functions.
     "new-cap": "error",
@@ -138,7 +143,7 @@
     "no-underscore-dangle": "error",
 
     // Require JSDoc comment
-    "require-jsdoc": "error",
+    "require-jsdoc": 0,
 
     // Require Or Disallow Space Before Blocks
     "space-before-blocks": "error",

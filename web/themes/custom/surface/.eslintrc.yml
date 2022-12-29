@@ -10,6 +10,7 @@ globals:
   drupalSettings: true
   drupalTranslations: true
   jQuery: true
+  once: true
 overrides:
 - files:
   - gulpfile.js
@@ -38,7 +39,9 @@ rules:
   no-undef: error
   max-len:
   - error
-  - ignoreUrls: true
+  - code: 120
+    ignoreComments: true
+    ignoreUrls: true
     ignoreStrings: true
     ignoreRegExpLiterals: true
     ignoreTemplateLiterals: true
@@ -64,6 +67,6 @@ rules:
   eol-last: error
   no-trailing-spaces: error
   no-underscore-dangle: error
-  require-jsdoc: error
+  require-jsdoc: 0
   space-before-blocks: error
   yoda: error

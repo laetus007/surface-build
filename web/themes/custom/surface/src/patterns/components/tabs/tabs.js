@@ -1,36 +1,66 @@
-(function (Drupal, once) {
-  function init(el) {
-    var tabs = el.querySelector('.tabs');
-    var expandedClass = 'is-expanded';
-    var activeTab = tabs.querySelector('.is-active');
+'use strict';
 
-    function isTabsMobileLayout() {
-      return tabs.querySelector('.tabs__trigger').clientHeight > 0;
-    }
-
-    function handleTriggerClick(e) {
-      if (!tabs.classList.contains(expandedClass)) {
-        e.currentTarget.setAttribute('aria-expanded', 'true');
-        tabs.classList.add(expandedClass);
-      } else {
-        e.currentTarget.setAttribute('aria-expanded', 'false');
-        tabs.classList.remove(expandedClass);
-      }
-    }
-
-    if (isTabsMobileLayout() && !activeTab.matches('.tabs__tab:first-child')) {
-      var newActiveTab = activeTab.cloneNode(true);
-      var firstTab = tabs.querySelector('.tabs__tab:first-child');
-      tabs.insertBefore(newActiveTab, firstTab);
-      tabs.removeChild(activeTab);
-    }
-
-    tabs.querySelector('.tabs__trigger').addEventListener('click', handleTriggerClick);
-  }
+((Drupal, once) => {
 
   Drupal.behaviors.primaryTabs = {
     attach: function attach(context) {
-      once('surface-tabs', '[data-drupal-nav-primary-tabs]', context).forEach(init);
+      Drupal.primaryTabs.init(context);
+    }
+  };
+
+  Drupal.primaryTabs = {
+    init: function (context) {
+      once('surfaceTabsInit', '[data-drupal-nav-primary-tabs]', context).forEach((el) => {
+        const tabs = el.querySelector('.tabs');
+        const activeTab = tabs.querySelector('.is-active');
+
+        if (this.isTabsMobileLayout() && !activeTab.matches('.tabs__tab:first-child')) {
+          const newActiveTab = activeTab.cloneNode(true);
+          const firstTab = tabs.querySelector('.tabs__tab:first-child');
+          tabs.insertBefore(newActiveTab, firstTab);
+          tabs.removeChild(activeTab);
+        }
+      });
+
+      // Tabs click
+      once('surfaceTabs', '.tabs__trigger', context).forEach(el => el.addEventListener('click', e => {
+        e.preventDefault();
+        this.toggleTabs();
+      }));
+    },
+
+    // Tabs in mobile layout.
+    isTabsMobileLayout: () => {
+      const tabs = document.querySelector('.tabs');
+      return tabs.querySelector('.tabs__trigger').clientHeight > 0;
+    },
+
+    // Toggle tabs.
+    toggleTabs: () => {
+      const tabs = document.querySelector('.tabs');
+
+      if (tabs.classList.contains('is-expanded')) {
+        Drupal.primaryTabs.collapseTabs();
+      }
+      else {
+        Drupal.primaryTabs.showTabs();
+      }
+    },
+
+    // Collapse tabs.
+    collapseTabs: () => {
+      const tabs = document.querySelector('.tabs');
+      const tabsTrigger = document.querySelector('.tabs__trigger');
+      tabsTrigger.setAttribute('aria-expanded', 'false');
+      tabs.classList.remove('is-expanded');
+    },
+
+    // Show tabs.
+    showTabs: () => {
+      const tabs = document.querySelector('.tabs');
+      const tabsTrigger = document.querySelector('.tabs__trigger');
+      tabsTrigger.setAttribute('aria-expanded', 'true');
+      tabs.classList.add('is-expanded');
     }
   };
 })(Drupal, once);

@@ -1,3 +1,5 @@
+'use strict';
+
 ((Drupal, once) => {
   const menuContainer = document.querySelector('[data-drupal-selector="site-navigation"]');
 
@@ -11,18 +13,19 @@
     init: function (context) {
       once('surfaceMenuInit', '[data-drupal-selector="site-navigation"]', context).forEach(() => {
         document.addEventListener('keyup', e => {
-          if (Drupal.surfaceMenu.menuIsVisible() && e.key === 'Escape' || e.key === 'Esc') {
+          if (this.menuIsVisible() && e.key === 'Escape' || e.key === 'Esc') {
             if (Drupal.surface.areAnySubNavsOpen()) {
               Drupal.surface.closeAllSubNav();
-            } else {
+            }
+            else {
               this.toggleMenu();
             }
           }
         });
 
         // Handle resize
-        window.addEventListener('resize', e => {
-          if (Drupal.surfaceMenu.menuIsVisible()) {
+        window.addEventListener('resize', () => {
+          if (this.menuIsVisible()) {
             this.toggleMenu();
           }
 
@@ -46,7 +49,8 @@
     toggleMenu: () => {
       if (Drupal.surfaceMenu.menuIsVisible()) {
         Drupal.surfaceMenu.collapseMenu();
-      } else {
+      }
+      else {
         Drupal.surfaceMenu.showMenu();
       }
     },
