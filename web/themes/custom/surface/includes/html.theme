@@ -83,4 +83,17 @@ function surface_preprocess(&$variables) {
       $variables['header_logo'] = $url;
     }
   }
+
+  // Set footer logo
+  $file_id = theme_get_setting('footer_logo');
+
+  if ($file_id) {
+    $file = $file = \Drupal\file\Entity\File::load($file_id[0]);
+
+    if($file) {
+      $uri = $file->getFileUri();
+      $url = \Drupal\Core\Url::fromUri(file_create_url($uri))->toString();
+      $variables['footer_logo'] = $url;
+    }
+  }
 }

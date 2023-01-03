@@ -1,5 +1,5 @@
 ---
-site_logo: '/dist/images/logo.svg'
+logo: '/dist/images/logo.svg'
 menu:  'mega'
 is_demo: true
 items:

@@ -28,8 +28,9 @@
     {% endblock %}
 
     {% block buttons %}
-      {% include '@components/give-button/give-button.twig' with {
-        'url': give_url
+      {% include '@components/button/button.twig' with {
+        'url': give_url,
+        'text': 'Give'
       } %}
       {% include '@components/search-button/search-button.twig' with {
         'is_demo': false
@@ -37,9 +38,9 @@
     {% endblock %}
 
     {% block branding %}
-      {% include '@layout/site-branding/site-branding.twig' with {
-        'site_logo': header_logo
-      } %}
+      {% include '@components/site-branding/site-branding.twig' with {
+        'logo': header_logo
+      } only %}
     {% endblock %}
 
     {% block primary %}

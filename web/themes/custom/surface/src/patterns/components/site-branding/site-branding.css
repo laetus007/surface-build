@@ -1,11 +1,12 @@
 /**
  * @file
- * Site logo styles.
+ * Branding styles.
  */
 
-.site-logo {
-  flex-shrink: 0;
+.site-branding {
   max-width: 100%;
+  padding-block: var(--size-2);
+  padding-inline-end: var(--size-2);
   text-decoration: none;
 
   & img {

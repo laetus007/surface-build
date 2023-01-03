@@ -13,7 +13,15 @@ items:
           - title: 'DGSOM Pre-Health Guidance Center'
             url: '#'
             in_active_trail: false
-            below: false
+            below:
+            - title: 'DGSOM Pre-Health Child One'
+              url: '#'
+              in_active_trail: false
+              below: false
+            - title: 'DGSOM Pre-Health Child Two'
+              url: '#'
+              in_active_trail: false
+              below: false
       - title: 'MD Education'
         url: '#'
         in_active_trail: false

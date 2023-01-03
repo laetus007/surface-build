@@ -15,7 +15,10 @@
 
         <div class="site-secondary__buttons">
           {% block buttons %}
-            {% include '@components/give-button/give-button.twig' %}
+            {% include '@components/button/button.twig' with {
+              'url': '#',
+              'text': 'Give'
+            } %}
             {% include '@components/search-button/search-button.twig' with {
               'is_demo': false
             } %}
@@ -29,9 +32,9 @@
     <div class="container">
       <div class="site-primary__content">
         {% block branding %}
-          {% include '@layout/site-branding/site-branding.twig' with {
-            'site_logo': site_logo
-          } %}
+          {% include '@components/site-branding/site-branding.twig' with {
+            'logo': logo
+          } only %}
         {% endblock %}
 
         {% block primary %}

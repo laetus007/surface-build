@@ -1,0 +1,13 @@
+{{ attach_library('surface/site-branding') }}
+
+{% if is_demo %}
+  <div style="background-color: var(--bg-midnight-joshua-tree); padding: 20px;">
+{% endif %}
+
+<a href="{{ path('<front>') }}" rel="home" class="site-branding {{ modifier }}">
+  <img src="{{ logo }}" alt="{{ 'Home'|t }}" />
+</a>
+
+{% if is_demo %}
+  </div>
+{% endif %}

@@ -9,7 +9,13 @@
 
   Drupal.surfaceSidebar = {
     init: function (context) {
-
+      once('surfaceSidebarInit', '[data-drupal-selector="menu-sidebar--level-1"]', context).forEach(() => {
+        document.addEventListener('keyup', e => {
+          if (e.key === 'Escape' || e.key === 'Esc') {
+            this.closeAllMenus();
+          }
+        });
+      });
 
       // Menu toggle
       once('surfaceSidebarToggle', '[data-drupal-selector="menu-toggle"]', context).forEach(el => el.addEventListener('click', e => {

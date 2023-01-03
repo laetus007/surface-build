@@ -1,13 +1,22 @@
 <footer class="site-footer">
   <div class="container">
-    {% block branding %}
-      {% include '@layout/site-branding/site-branding.twig' with {
-        'site_logo': '/dist/images/logo-inverse.svg'
-      } %}
-    {% endblock %}
+    <div class="site-footer__content">
+      {% block branding %}
+        {% include '@components/site-branding/site-branding.twig' with {
+          'logo': '/dist/images/logo-inverse.svg'
+        } %}
+      {% endblock %}
 
-    {% block menu %}
-      {{ content }}
-    {% endblock %}
+      {% block menu %}
+        {% embed '@layout/nav/nav.twig' %}
+          {% block content %}
+            {% include '@components/menu-footer/menu-footer.twig' with {
+              'is_demo': true,
+              'items': items
+            } %}
+          {% endblock %}
+        {% endembed %}
+      {% endblock %}
+    </div>
   </div>
 </footer>

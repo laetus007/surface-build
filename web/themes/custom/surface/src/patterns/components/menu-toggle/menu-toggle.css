@@ -34,7 +34,7 @@
 
     &::before,
     &::after {
-      border-top: solid 3px hsl(var(--blue-5));
+      border-top: solid 3px var(--bg-midnight-joshua-tree);
       content: "";
       height: 0;
       left: 50%;
@@ -42,6 +42,14 @@
       top: 50%;
       transform: translate(-50%, -50%);
       width: var(--size-2);
+
+      .menu-sidebar--level-2 & {
+        border-top: solid 3px var(--bg-ucla-blue);
+      }
+
+      .menu-sidebar--level-3 & {
+        border-top: solid 3px var(--bg-malibu-dolphin);
+      }
     }
 
     &::after {

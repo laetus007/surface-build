@@ -16,9 +16,9 @@
 {% if content %}
   {% embed '@layout/site-footer/site-footer.twig' %}
     {% block branding %}
-      {% include '@layout/site-branding/site-branding.twig' with {
-        'site_logo': footer_logo
-      } %}
+      {% include '@components/site-branding/site-branding.twig' with {
+        'logo': footer_logo
+      } only %}
     {% endblock %}
 
     {% block menu %}

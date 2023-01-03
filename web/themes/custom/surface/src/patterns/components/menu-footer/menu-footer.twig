@@ -67,11 +67,7 @@
 
       <li class="{{ item_classes }}">
         {% if menu_item_type == 'nolink' %}
-          {% if is_demo %}
-            <span class="{{ link_classes }}">{{ item.title }}</span>
-          {% else %}
-            {{ link(item.title, item.url, { 'class': link_classes }) }}
-          {% endif %}
+          <h4 class="{{ link_classes }}">{{ item.title }}</h4>
         {% elseif menu_item_type == 'button' %}
           {% if is_demo %}
             <button class="{{ link_classes }}" type="button">{{ item.title }}</button>

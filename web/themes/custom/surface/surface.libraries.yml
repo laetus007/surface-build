@@ -15,7 +15,6 @@ global:
       dist/css/view.css: {}
     component:
       dist/css/breadcrumb.css: {}
-      dist/css/site-logo.css: {}
       dist/css/embedded-media.css: {}
       dist/css/site-footer.css: {}
       dist/css/button.css: {}
