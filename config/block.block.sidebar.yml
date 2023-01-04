@@ -1,0 +1,25 @@
+uuid: 3cd40e4e-54cf-4415-9bf8-7f09690543b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - surface
+id: sidebar
+theme: surface
+region: theme
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 4
+  expand_all_items: true
+visibility: {  }

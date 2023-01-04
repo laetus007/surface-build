@@ -18,12 +18,8 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  selection: categories
+  selection: blocks
   selection_settings:
-    categories:
-      Menus: Menus
-      Block: '0'
-      core: '0'
-      Forms: '0'
-      System: '0'
+    plugin_ids:
+      'menu_block:main': 'menu_block:main'
 field_type: block_field

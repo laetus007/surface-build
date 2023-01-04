@@ -15,7 +15,8 @@ site_theme: default
 site_menu: mega
 header_logo:
   - '34'
-footer_logo: {  }
+footer_logo:
+  - '35'
 facebook_url: 'https://www.facebook.com/DavidGeffenSchoolofMedicineUCLA'
 twitter_url: ''
 instagram_url: ''
@@ -27,7 +28,7 @@ alert:
 header_alert:
   value: '<p><span>Find the latest information on </span><a href="http://localhost:3000/patterns/theme-homepage/index.html?1670101316921#">COVID-19</a><span>, </span><a href="http://localhost:3000/patterns/theme-homepage/index.html?1670101316921#">monkeypox</a><span>, and </span><a href="http://localhost:3000/patterns/theme-homepage/index.html?1670101316921#">flu prevention</a><span>.</span></p>'
   format: basic_html
-site_search: modal
+site_search: default
 site_alert:
   value: '<p>Find the latest information on <a href="https://www.uclahealth.org/conditions-we-treat/coronavirus">COVID-19</a>, <a href="https://www.uclahealth.org/medical-services/infectious-diseases/monkeypox">monkeypox</a> and <a href="https://www.uclahealth.org/conditions-we-treat/patient-education/flu-prevention">flu prevention</a>.</p>'
   format: restricted_html

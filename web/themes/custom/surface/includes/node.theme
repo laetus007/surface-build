@@ -11,7 +11,6 @@ use Drupal\Core\Render\Element;
  * Implements hook_preprocess_HOOK() for node.html.twig.
  */
 function surface_preprocess_node(&$variables) {
-
   // Apply custom date formatter to "date" field.
   if (!empty($variables['date']) && !empty($variables['display_submitted']) && $variables['display_submitted'] === TRUE) {
     $variables['date'] = \Drupal::service('date.formatter')->format($variables['node']->getCreatedTime(), 'surface_medium');

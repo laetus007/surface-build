@@ -177,6 +177,13 @@ menu-secondary:
     component:
       dist/css/menu-secondary.css: {}
 
+menu-sidebar:
+  css:
+    component:
+      dist/css/menu-sidebar.css: {}
+  js:
+    dist/js/menu-sidebar.js: {}
+
 menu-quicklinks:
   css:
     component:

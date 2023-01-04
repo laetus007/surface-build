@@ -19,3 +19,8 @@ function surface_element_info_alter(&$info) {
     $info['status_messages']['#pre_render'][] = [SurfacePreRender::class, 'messagePlaceholder'];
   }
 }
+
+function surface_theme_registry_alter(&$theme_registry) {
+  $theme_registry['menu']['variables']['attributes']['menu_suggestion'] = [];
+}
+

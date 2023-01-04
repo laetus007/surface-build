@@ -4,3 +4,17 @@
  * @file
  * Paragraph-related hook implementations.
  */
+
+ function surface_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  $parentBundle = $paragraph->bundle();
+
+  if($parentBundle == 'sf_menu_embed') {
+    // dd($paragraph->get('field_sf_menu')->getValue()[0]);
+    $menu = $paragraph->get('field_sf_menu')->getValue()[0]['plugin_id'];
+
+    if($menu == 'system_menu_block:main') {
+      $variables['content']['#attributes']['data-block']['menu'] = 'sidebar';
+    }
+  }
+}
