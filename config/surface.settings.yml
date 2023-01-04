@@ -33,3 +33,6 @@ site_alert:
   value: '<p>Find the latest information on <a href="https://www.uclahealth.org/conditions-we-treat/coronavirus">COVID-19</a>, <a href="https://www.uclahealth.org/medical-services/infectious-diseases/monkeypox">monkeypox</a> and <a href="https://www.uclahealth.org/conditions-we-treat/patient-education/flu-prevention">flu prevention</a>.</p>'
   format: restricted_html
 site_give: 'http://giveto.ucla.edu/school/david-geffen-school-of-medicine/'
+site_credit:
+  value: '<p>Geffen Hall<br>885 Tiverton Drive<br>Los Angeles, CA 90095</p>'
+  format: restricted_html

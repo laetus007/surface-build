@@ -128,6 +128,14 @@ function surface_form_system_theme_settings_alter(&$form, FormStateInterface $fo
     ],
   ];
 
+  $form['surface_settings']['footer']['site_credit'] = [
+    '#type' => 'text_format',
+    '#format' => 'restricted_html',
+    '#title' => t('Site credit'),
+    '#description' => t("Add site credit content that will be displayed in footer."),
+    '#default_value' => theme_get_setting('site_credit')['value'],
+  ];
+
   $form['surface_settings']['footer']['facebook_url'] = [
     '#type' => 'url',
     '#title' => t('Facebook Url'),

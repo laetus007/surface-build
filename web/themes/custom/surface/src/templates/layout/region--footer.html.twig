@@ -17,8 +17,23 @@
   {% embed '@layout/site-footer/site-footer.twig' %}
     {% block branding %}
       {% include '@components/site-branding/site-branding.twig' with {
+        'modifier': 'site-branding--footer',
         'logo': footer_logo
       } only %}
+
+      {% include '@components/menu-social/menu-social.twig' with {
+        'facebook_url': facebook_url ? facebook_url,
+        'twitter_url': twitter_url ? twitter_url,
+        'instagram_url': instagram_url ? instagram_url,
+        'youtube_url': youtube_url ? youtube_url,
+        'linkedin_url': linkedin_url ? linkedin_url
+      } only %}
+
+      {% if site_credit %}
+        {% include '@components/site-credit/site-credit.twig' with {
+          'site_credit': site_credit
+        } only %}
+      {% endif %}
     {% endblock %}
 
     {% block menu %}

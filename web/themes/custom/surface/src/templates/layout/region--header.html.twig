@@ -16,7 +16,7 @@
 {% if content %}
   {% embed '@layout/site-header/site-header.twig' %}
     {% block alert %}
-      {% if data_alert == 'true' %}
+      {% if site_alert %}
         {% include '@components/site-alert/site-alert.twig' with {
           'text': site_alert
         } %}

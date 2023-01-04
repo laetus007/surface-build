@@ -1,0 +1,29 @@
+/**
+ * @file
+ * Social menu styling.
+ */
+
+.menu-social {
+  align-items: center;
+  display: flex;
+  gap: var(--size-205);
+  list-style: none;
+  margin-block-end: var(--size-2);
+  margin-block-start: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+
+  .menu__item {
+    margin-block-end: var(--size-1);
+    margin-block-start: var(--size-05);
+  }
+
+  .menu__link {
+    color: var(--text-silver-screen);
+
+    svg {
+      inline-size: var(--size-4);
+    }
+  }
+}

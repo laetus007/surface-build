@@ -1,22 +1,43 @@
 <footer class="site-footer">
   <div class="container">
     <div class="site-footer__content">
-      {% block branding %}
-        {% include '@components/site-branding/site-branding.twig' with {
-          'logo': '/dist/images/logo-inverse.svg'
-        } %}
-      {% endblock %}
+      <div class="site-footer__branding">
+        {% block branding %}
+          {% include '@components/site-branding/site-branding.twig' with {
+            'modifier': 'site-branding--footer',
+            'logo': '/dist/images/logo-inverse.svg'
+          } %}
 
-      {% block menu %}
-        {% embed '@layout/nav/nav.twig' %}
-          {% block content %}
-            {% include '@components/menu-footer/menu-footer.twig' with {
-              'is_demo': true,
-              'items': items
-            } %}
-          {% endblock %}
-        {% endembed %}
-      {% endblock %}
+          {% include '@components/menu-social/menu-social.twig' with {
+            'facebook_url': '#',
+            'twitter_url': '#',
+            'instagram_url': '#',
+            'youtube_url': '#',
+            'linkedin_url': '#',
+          } %}
+
+          {% include '@components/site-credit/site-credit.twig' with {
+            'site_credit': '<p>Geffen Hall<br>885 Tiverton Drive<br>Los Angeles, CA 90095</p>'
+          } %}
+        {% endblock %}
+      </div>
+
+      <div class="site-footer__menu">
+        {% block menu %}
+          {% embed '@layout/nav/nav.twig' %}
+            {% block content %}
+              {% include '@components/menu-footer/menu-footer.twig' with {
+                'is_demo': true,
+                'items': items
+              } %}
+            {% endblock %}
+          {% endembed %}
+        {% endblock %}
+      </div>
+    </div>
+    <div class="site-footer__utility">
+      {% include '@components/copyright/copyright.twig' %}
+      {% include '@components/menu-utility/menu-utility.twig' %}
     </div>
   </div>
 </footer>

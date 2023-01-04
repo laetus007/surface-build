@@ -189,6 +189,21 @@ menu-quicklinks:
     component:
       dist/css/menu-quicklinks.css: {}
 
+menu-footer:
+  css:
+    component:
+      dist/css/menu-footer.css: {}
+
+menu-utility:
+  css:
+    component:
+      dist/css/menu-utility.css: {}
+
+menu-social:
+  css:
+    component:
+      dist/css/menu-social.css: {}
+
 progress:
   css:
     component:

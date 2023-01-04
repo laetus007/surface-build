@@ -96,4 +96,40 @@ function surface_preprocess(&$variables) {
       $variables['footer_logo'] = $url;
     }
   }
+
+  // Get Site credit
+  $site_credit = theme_get_setting('site_credit');
+  if (!empty($site_credit['value'])) {
+    $variables['site_credit'] = $site_credit['value'];
+  }
+
+  // Get Facebook url
+  $facebook_url = theme_get_setting('facebook_url');
+  if ($facebook_url) {
+    $variables['facebook_url'] = $facebook_url;
+  }
+
+  // Get Twitter url
+  $twitter_url = theme_get_setting('twitter_url');
+  if ($twitter_url) {
+    $variables['twitter_url'] = $twitter_url;
+  }
+
+  // Get Instagram url
+  $instagram_url = theme_get_setting('instagram_url');
+  if ($instagram_url) {
+    $variables['instagram_url'] = $instagram_url;
+  }
+
+  // Get YouTube url
+  $youtube_url = theme_get_setting('youtube_url');
+  if ($youtube_url) {
+    $variables['youtube_url'] = $youtube_url;
+  }
+
+  // Get Linkedin url
+  $linkedin_url = theme_get_setting('linkedin_url');
+  if ($linkedin_url) {
+    $variables['linkedin_url'] = $linkedin_url;
+  }
 }

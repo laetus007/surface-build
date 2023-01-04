@@ -1,0 +1,11 @@
+/**
+ * @file
+ * Site credit styles.
+ */
+
+.site-credit {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: var(--text-silver-screen);
+  display: -webkit-box;
+}

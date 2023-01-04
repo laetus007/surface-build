@@ -4,13 +4,21 @@
  */
 
 .site-branding {
+  display: inline-block;
   max-width: 100%;
-  padding-block: var(--size-2);
   padding-inline-end: var(--size-2);
   text-decoration: none;
 
   & img {
     max-width: 100%;
-    width: 350px;
+    width: 355px;
+  }
+}
+
+.site-branding--footer {
+  margin-block-end: var(--size-5);
+
+  @media (--xl) {
+    margin-block-end: var(--size-3);
   }
 }
