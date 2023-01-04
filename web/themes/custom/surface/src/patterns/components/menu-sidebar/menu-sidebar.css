@@ -21,6 +21,11 @@
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-700);
     padding-block: var(--size-1);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--text-midnight-joshua-tree);
+    }
   }
 }
 
@@ -51,6 +56,10 @@
     color: var(--text-ucla-blue);
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-700);
+
+    &:hover {
+      color: var(--text-ucla-blue);
+    }
   }
 }
 
@@ -74,6 +83,10 @@
     color: var(--text-malibu-dolphin);
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-700);
+
+    &:hover {
+      color: var(--text-malibu-dolphin);
+    }
   }
 }
 
@@ -97,5 +110,9 @@
     color: var(--text-malibu-dolphin-light);
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-700);
+
+    &:hover {
+      color: var(--text-malibu-dolphin-light);
+    }
   }
 }

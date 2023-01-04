@@ -18,7 +18,7 @@
       });
 
       // Menu toggle
-      once('surfaceSidebarToggle', '[data-drupal-selector="menu-toggle"]', context).forEach(el => el.addEventListener('click', e => {
+      once('surfaceSidebarToggle', '[data-drupal-selector="sidebar-toggle"]', context).forEach(el => el.addEventListener('click', e => {
         e.preventDefault();
         this.toggleMenu(el);
       }));
@@ -54,7 +54,7 @@
 
     // Close all menus
     closeAllMenus: () => {
-      const menuToggles = document.querySelectorAll('[data-drupal-selector="menu-toggle"]');
+      const menuToggles = document.querySelectorAll('[data-drupal-selector="sidebar-toggle"]');
 
       menuToggles.forEach(el => {
         if (el.getAttribute('aria-expanded') === 'true') {

@@ -24,8 +24,7 @@
 {{ menus.menu_links(items, attributes, 0, 'menu__item-', item_class, link_class, is_demo) }}
 
 {% macro menu_links(items, attributes, menu_level, aria_id, item_class, link_class, is_demo) %}
-  {% set drupal_selector_primary_nav_level = menu_level <= 1 ? 'menu-sidebar--level-' ~ (menu_level + 1) : false %}
-  {% set is_top_level_menu = menu_level == 0 %}
+  {% set data_drupal_selector = menu_level <= 1 ? 'menu-sidebar--level-' ~ (menu_level + 1) : false %}
 
   {% import _self as menus %}
   {% if items %}
@@ -36,7 +35,7 @@
       attributes ? attributes.class
     ]|join(' ')|trim %}
 
-    <ul class="{{ menu_classes }}" {% if menu_level > 0 %}id="{{ aria_id }}"{% endif %} data-drupal-selector="{{ drupal_selector_primary_nav_level }}" {{ attributes ? attributes|without('class') }}>
+    <ul class="{{ menu_classes }}" {% if menu_level > 0 %}id="{{ aria_id }}"{% endif %} data-drupal-selector="{{ data_drupal_selector }}" {{ attributes ? attributes|without('class') }}>
       {% for item in items %}
 
         {% if item.url.isRouted and item.url.routeName == '<nolink>' %}
@@ -66,7 +65,7 @@
         {% set item_classes = item_classes|join(' ')|trim %}
         {% set link_classes = link_classes|join(' ')|trim %}
 
-        <li class="{{ item_classes }}" data-drupal-selector="{{ is_top_level_menu and item.below ? 'menu__item--has-children' }}">
+        <li class="{{ item_classes }}" data-drupal-selector="{{ menu_level == 0 and item.below ? 'menu__item--has-children' }}">
           {% set aria_id = (aria_id ~ loop.index )|clean_id %}
           {% set link_title %}
             <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
@@ -74,19 +73,19 @@
 
           {% if menu_item_type == 'link' or menu_item_type == 'nolink' %}
             {% if is_demo %}
-              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ is_top_level_menu ? 'menu__link--has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
+              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ menu_level == 0 ? 'menu__link--has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
             {% else %}
               {{ link(menu_item_type == 'link' ? link_title : item.title, item.url, {
                 'class': link_classes,
-                'data-drupal-selector': is_top_level_menu  ? 'menu__link--has-children' : false,
+                'data-drupal-selector': menu_level == 0  ? 'menu__link--has-children' : false,
                 })
               }}
             {% endif %}
 
             {% if item.below and menu_level < 3 %}
-              <button class="menu-toggle" data-drupal-selector="menu-toggle" aria-controls="{{ aria_id }}" aria-expanded="false">
+              <button class="sidebar-toggle" data-drupal-selector="sidebar-toggle" aria-controls="{{ aria_id }}" aria-expanded="false">
                 <span class="visually-hidden">{{ item.title ~ ' sub-navigation' }}</span>
-                <span class="icon--menu-toggle"></span>
+                <span class="icon"></span>
               </button>
 
               {% set attributes = attributes.setAttribute('id', aria_id) %}
@@ -95,13 +94,13 @@
 
           {% elseif menu_item_type == 'button' %}
             {% if is_demo %}
-              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ is_top_level_menu ? 'menu__link-has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
+              <a class="{{ link_classes }}" href="{{ item.url }}" data-drupal-selector="{{ menu_level == 0 ? 'menu__link-has-children' : false }}">{{ menu_item_type == 'link' ? link_title : item.title }}</a>
             {% else %}
               {{ link(link_title, item.url, {
                 'class': link_classes,
-                'aria-controls': is_top_level_menu and item.below ? aria_id : false,
-                'aria-expanded': is_top_level_menu and item.below ? 'false' : false,
-                'data-drupal-selector': is_top_level_menu and item.below ? 'primary-nav-submenu-toggle-button' : false,
+                'aria-controls': menu_level == 0 and item.below ? aria_id : false,
+                'aria-expanded': menu_level == 0 and item.below ? 'false' : false,
+                'data-drupal-selector': menu_level == 0 and item.below ? 'primary-nav-submenu-toggle-button' : false,
               }) }}
             {% endif %}
 
