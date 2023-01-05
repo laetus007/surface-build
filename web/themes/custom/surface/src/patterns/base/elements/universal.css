@@ -3,6 +3,12 @@
  * Universal styles.
  */
 
+:root {
+  --selection-background-color: hsl(var(--blue-9));
+  --selection-color: hsl(var(--white));
+  --placeholder-color: hsl(var(--gray-5));
+}
+
 *,
 *::before,
 *::after {
@@ -19,12 +25,12 @@
 }
 
 ::selection {
-  background-color: hsl(var(--blue-9));
-  color: hsl(0, 0%, 100%);
+  background-color: var(--selection-background-color);
+  color: var(--selection-color);
 }
 
 ::placeholder {
-  color: hsl(var(--gray-5));
+  color: var(--placeholder-color);
 }
 
 :where(:focus-visible) {

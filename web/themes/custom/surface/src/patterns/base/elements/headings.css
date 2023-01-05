@@ -3,8 +3,79 @@
  * Headings element styles.
  */
 
+:root {
+  /* Headings */
+  --font-headings: var(--font-sans);
+
+  /* H1 */
+  --h1-color: hsl(var(--gray-9));
+  --h1-font-size-mobile: var(--font-size-5);
+  --h1-font-size-desktop: var(--font-size-8);
+  --h1-font-weight: var(--font-weight-700);
+  --h1-letterspacing: var(--font-letterspacing-0);
+  --h1-lineheight-mobile: var(--font-lineheight-1);
+  --h1-lineheight-desktop: var(--font-lineheight-2);
+  --h1-margin-block-mobile: var(--size-2);
+  --h1-margin-block-desktop: var(--size-4);
+
+  /* H2 */
+  --h2-color: hsl(var(--gray-9));
+  --h2-font-size-mobile: var(--font-size-4);
+  --h2-font-size-desktop: var(--font-size-6);
+  --h2-font-weight: var(--font-weight-700);
+  --h2-letterspacing: var(--font-letterspacing-0);
+  --h2-lineheight-mobile: var(--font-lineheight-1);
+  --h2-lineheight-desktop: var(--font-lineheight-2);
+  --h2-margin-block-mobile: var(--size-2);
+  --h2-margin-block-desktop: var(--size-4);
+
+  /* H3 */
+  --h3-color: hsl(var(--gray-9));
+  --h3-font-size-mobile: var(--font-size-3);
+  --h3-font-size-desktop: var(--font-size-5);
+  --h3-font-weight: var(--font-weight-700);
+  --h3-letterspacing: var(--font-letterspacing-0);
+  --h3-lineheight-mobile: var(--font-lineheight-1);
+  --h3-lineheight-desktop: var(--font-lineheight-2);
+  --h3-margin-block-mobile: var(--size-2);
+  --h3-margin-block-desktop: var(--size-4);
+
+  /* H4 */
+  --h4-color: hsl(var(--gray-9));
+  --h4-font-size-mobile: var(--font-size-2);
+  --h4-font-size-desktop: var(--font-size-4);
+  --h4-font-weight: var(--font-weight-700);
+  --h4-letterspacing: var(--font-letterspacing-0);
+  --h4-lineheight-mobile: var(--font-lineheight-1);
+  --h4-lineheight-desktop: var(--font-lineheight-2);
+  --h4-margin-block-mobile: var(--size-2);
+  --h4-margin-block-desktop: var(--size-4);
+
+  /* H5 */
+  --h5-color: hsl(var(--gray-9));
+  --h5-font-size-mobile: var(--font-size-1);
+  --h5-font-size-desktop: var(--font-size-3);
+  --h5-font-weight: var(--font-weight-700);
+  --h5-letterspacing: var(--font-letterspacing-0);
+  --h5-lineheight-mobile: var(--font-lineheight-1);
+  --h5-lineheight-desktop: var(--font-lineheight-2);
+  --h5-margin-block-mobile: var(--size-2);
+  --h5-margin-block-desktop: var(--size-4);
+
+  /* H6 */
+  --h6-color: hsl(var(--gray-9));
+  --h6-font-size-mobile: var(--font-size-0);
+  --h6-font-size-desktop: var(--font-size-2);
+  --h6-font-weight: var(--font-weight-700);
+  --h6-letterspacing: var(--font-letterspacing-0);
+  --h6-lineheight-mobile: var(--font-lineheight-1);
+  --h6-lineheight-desktop: var(--font-lineheight-2);
+  --h6-margin-block-mobile: var(--size-2);
+  --h6-margin-block-desktop: var(--size-4);
+}
+
 :where(h1, h2, h3, h4, h5, h6) {
-  font-family: var(--font-sans);
+  font-family: var(--font-headings);
 
   /* Remove top margin for adjacent subheadings. */
   & + & {
@@ -13,31 +84,91 @@
 }
 
 :where(h1) {
-  color: hsl(var(--gray-9));
-  font-size: var(--font-size-5);
-  font-weight: var(--font-weight-700);
-  letter-spacing: var(--font-letterspacing-0);
-  line-height: var(--font-lineheight-1);
-  margin-block: var(--size-2);
+  color: var(--h1-color);
+  font-size: var(--h1-font-size-mobile);
+  font-weight: var(--h1-font-weight);
+  letter-spacing: var(--h1-letterspacing);
+  line-height: var(--h1-lineheight-mobile);
+  margin-block: var(--h1-margin-block-mobile);
 
   @media (--md) {
-    font-size: var(--font-size-12);
-    line-height: var(--font-lineheight-2);
-    margin-block: var(--size-4);
+    font-size: var(--h1-font-size-desktop);
+    line-height: var(--h1-lineheight-desktop);
+    margin-block: var(--h1-margin-block-desktop);
   }
 }
 
-:where(h2):not('messages__title') {
-  color: hsl(var(--gray-9));
-  font-size: var(--font-size-5);
-  font-weight: var(--font-weight-700);
-  letter-spacing: var(--font-letterspacing-0);
-  line-height: var(--font-lineheight-1);
-  margin-block: var(--size-2);
+:where(h2) {
+  color: var(--h2-color);
+  font-size: var(--h2-font-size-mobile);
+  font-weight: var(--h2-font-weight);
+  letter-spacing: var(--h2-letterspacing);
+  line-height: var(--h2-lineheight-mobile);
+  margin-block: var(--h2-margin-block-mobile);
 
   @media (--md) {
-    font-size: var(--font-size-8);
-    line-height: var(--font-lineheight-4);
-    margin-block: var(--size-4);
+    font-size: var(--h2-font-size-desktop);
+    line-height: var(--h2-lineheight-desktop);
+    margin-block: var(--h2-margin-block-desktop);
+  }
+}
+
+:where(h3) {
+  color: var(--h3-color);
+  font-size: var(--h3-font-size-mobile);
+  font-weight: var(--h3-font-weight);
+  letter-spacing: var(--h3-letterspacing);
+  line-height: var(--h3-lineheight-mobile);
+  margin-block: var(--h3-margin-block-mobile);
+
+  @media (--md) {
+    font-size: var(--h3-font-size-desktop);
+    line-height: var(--h3-lineheight-desktop);
+    margin-block: var(--h3-margin-block-desktop);
+  }
+}
+
+:where(h4) {
+  color: var(--h4-color);
+  font-size: var(--h4-font-size-mobile);
+  font-weight: var(--h4-font-weight);
+  letter-spacing: var(--h4-letterspacing);
+  line-height: var(--h4-lineheight-mobile);
+  margin-block: var(--h4-margin-block-mobile);
+
+  @media (--md) {
+    font-size: var(--h4-font-size-desktop);
+    line-height: var(--h4-lineheight-desktop);
+    margin-block: var(--h4-margin-block-desktop);
+  }
+}
+
+:where(h5) {
+  color: var(--h5-color);
+  font-size: var(--h5-font-size-mobile);
+  font-weight: var(--h5-font-weight);
+  letter-spacing: var(--h5-letterspacing);
+  line-height: var(--h5-lineheight-mobile);
+  margin-block: var(--h5-margin-block-mobile);
+
+  @media (--md) {
+    font-size: var(--h5-font-size-desktop);
+    line-height: var(--h5-lineheight-desktop);
+    margin-block: var(--h5-margin-block-desktop);
+  }
+}
+
+:where(h6) {
+  color: var(--h6-color);
+  font-size: var(--h6-font-size-mobile);
+  font-weight: var(--h6-font-weight);
+  letter-spacing: var(--h6-letterspacing);
+  line-height: var(--h6-lineheight-mobile);
+  margin-block: var(--h6-margin-block-mobile);
+
+  @media (--md) {
+    font-size: var(--h6-font-size-desktop);
+    line-height: var(--h6-lineheight-desktop);
+    margin-block: var(--h6-margin-block-desktop);
   }
 }

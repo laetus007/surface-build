@@ -33,7 +33,6 @@ global:
       dist/css/node.css: {}
       dist/css/node-teaser.css: {}
       dist/css/page-title.css: {}
-      dist/css/search-button.css: {}
       dist/css/site-header.css: {}
       dist/css/site-secondary.css: {}
       dist/css/site-primary.css: {}
@@ -52,7 +51,6 @@ global:
   js:
     dist/js/form-boolean.js: {}
     dist/js/menu-utils.js: {}
-    dist/js/search-button.js: {}
   dependencies:
     - core/drupal.element.closest
     - core/drupal.element.matches
@@ -208,6 +206,13 @@ progress:
   css:
     component:
       dist/css/progress.css: {}
+
+search-button:
+  css:
+    component:
+      dist/css/search-button.css: {}
+  js:
+    dist/js/search-button.js: {}
 
 search-block-form:
   css:

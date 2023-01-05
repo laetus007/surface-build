@@ -3,9 +3,14 @@
  * Select element styles.
  */
 
+:root {
+  --select-background-color: hsl(var(--gray-2));
+  --select-border-radius: var(--radius-2);
+}
+
 :where(select) {
-  background-color: hsl(var(--gray-2));
-  border-radius: var(--radius-2);
+  background-color: var(--select-background-color);
+  border-radius: var(--select-border-radius);
   color: inherit;
   cursor: pointer;
   font: inherit;

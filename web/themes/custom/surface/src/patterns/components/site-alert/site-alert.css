@@ -4,8 +4,8 @@
 */
 
 .site-alert {
-  background-color: var(--bg-ucla-blue);
-  color: var(--text-light);
+  background-color: var(--site-alert-bg);
+  color: var(--site-alert-text);
 }
 
 .site-alert__content {
@@ -26,9 +26,9 @@
 .site-alert__text {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  color: var(--text-light);
+  color: var(--site-alert-text);
   display: -webkit-box;
-  font-family: var(--font-sans);
+  font-family: var(--site-alert-font-family);
   font-size: var(--font-size-1);
   line-height: var(--size-3);
   overflow: hidden;

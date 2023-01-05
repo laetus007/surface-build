@@ -1,5 +1,5 @@
 ---
-menu: 'default'
+data_menu: 'default'
 is_demo: true
 items:
   - title: 'Education'

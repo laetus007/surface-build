@@ -1,6 +1,6 @@
 ---
 logo: '/dist/images/logo.svg'
-menu:  'mega'
+data_menu:  'mega'
 is_demo: true
 items:
   - title: 'Education'

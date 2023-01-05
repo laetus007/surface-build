@@ -3,18 +3,26 @@
  * Textarea element styles.
  */
 
+:root {
+  --textarea-background-color: hsl(var(--gray-2));
+  --textarea-border-radius: var(--radius-2);
+  --textarea-min-height: var(--size-18);
+  --textarea-padding-block: var(--size-1);
+  --textarea-padding-inline: var(--size-2);
+}
+
 :where(textarea) {
-  background-color: hsl(var(--gray-2));
-  border-radius: var(--radius-2);
+  background-color: var(--textarea-background-color);
+  border-radius: var(--textarea-border-radius);
   color: inherit;
   cursor: pointer;
   display: block;
   font: inherit;
   font-size: inherit;
   letter-spacing: inherit;
-  min-height: var(--size-18);
-  padding-block: var(--size-1);
-  padding-inline: var(--size-2);
+  min-height: var(--textarea-min-height);
+  padding-block: var(--textarea-padding-block);
+  padding-inline: var(--textarea-padding-inline);
   resize: block;
   touch-action: manipulation;
   width: 100%;

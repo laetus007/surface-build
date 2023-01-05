@@ -3,16 +3,29 @@
  * Details element styles.
  */
 
+:root {
+  --details-background-color: hsl(var(--gray-2));
+  --details-border-radius: var(--radius-2);
+  --details-padding-block: var(--size-2);
+  --details-padding-inline: var(--size-3);
+  --details-margin-block-end: var(--size-2);
+  --summary-background-color: hsl(var(--gray-3));
+  --summary-border-radius: var(--radius-2);
+  --summary-font-weight: var(--font-weight-700);
+  --summary-margin: calc(var(--size-2) * -1) calc(var(--size-3) * -1);
+  --summary-padding: var(--size-2) var(--size-3);
+}
+
 :where(details) {
-  background: hsl(var(--gray-2));
-  border-radius: var(--radius-2);
-  padding-block: var(--size-2);
-  padding-inline: var(--size-3);
+  background: var(--details-background-color);
+  border-radius: var(--details-border-radius);
+  padding-block: var(--details-padding-block);
+  padding-inline: var(--details-padding-inline);
 
   &[open] > summary {
     border-end-end-radius: 0;
     border-end-start-radius: 0;
-    margin-block-end: var(--size-2);
+    margin-block-end: var(--details-margin-block-end);
   }
 
   p:last-child {
@@ -21,11 +34,11 @@
 }
 
 :where(summary) {
-  background: hsl(var(--gray-3));
-  border-radius: var(--radius-2);
+  background: var(--summary-background-color);
+  border-radius: var(--summary-border-radius);
   cursor: pointer;
-  font-weight: var(--font-weight-700);
-  margin: calc(var(--size-2) * -1) calc(var(--size-3) * -1);
-  padding: var(--size-2) var(--size-3);
+  font-weight: var(--summary-font-weight);
+  margin: var(--summary-margin);
+  padding: var(--summary-padding);
   touch-action: manipulation;
 }

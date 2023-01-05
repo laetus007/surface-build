@@ -1,5 +1,5 @@
 ---
-menu: 'dropdown'
+data_menu: 'dropdown'
 is_demo: true
 items:
   - title: 'Education'

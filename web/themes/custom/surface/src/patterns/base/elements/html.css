@@ -5,24 +5,28 @@
 
 :root {
   --accent-color: hsl(var(--blue-6));
+  --background-color: hsl(var(--white));
   --caret-color: hsl(var(--blue-6));
-  --scrollbar-color: hsl(var(--blue-6));
   --text-color: hsl(var(--gray-9));
+  --font-body: var(--font-sans);
+  --font-body-lineheight: var(--font-lineheight-2);
+  --scroll-padding-top: 150px;
+  --scrollbar-color: hsl(var(--blue-6));
 }
 
 :where(html) {
   accent-color: var(--accent-color);
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--background-color);
   block-size: 100%;
   caret-color: var(--caret-color);
   color: var(--text-color);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
-  line-height: var(--font-lineheight-2);
+  line-height: var(--font-body-lineheight);
   min-height: 100%;
-  scroll-padding-top: 150px;
+  scroll-padding-top: var(--scroll-padding-top);
   scrollbar-color: var(--scrollbar-color) transparent;
   text-size-adjust: none;
 

@@ -1,0 +1,4 @@
+:where([data-theme="dgsom"]) {
+  /* Typography */
+  --font-sans: Karbon, Helvetica, sans-serif;
+}

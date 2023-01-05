@@ -3,9 +3,17 @@
  * Definition list element styles.
  */
 
+:root {
+  --dd-max-inline-size: var(--size-content-2);
+  --dt-font-weight: var(--font-weight-700);
+  --dt-max-inline-size: var(--size-header-3);
+  --dt-margin-block-start: var(--size-5);
+  --dl-font-size: var(--font-size-2);
+}
+
 :where(dd) {
   margin: 0;
-  max-inline-size: var(--size-content-2);
+  max-inline-size: var(--dd-max-inline-size);
 
   dt + & {
     margin-block-start: 0;
@@ -13,15 +21,15 @@
 }
 
 :where(dt) {
-  font-weight: var(--font-weight-700);
-  max-inline-size: var(--size-header-3);
+  font-weight: var(--dt-font-weight);
+  max-inline-size: var(--dt-max-inline-size);
 
   &:not(:first-of-type) {
-    margin-block-start: var(--size-5);
+    margin-block-start: var(--dt-margin-block-start);
   }
 }
 
 :where(dl) {
-  font-size: var(--font-size-2);
+  font-size: var(--dl-font-size);
   margin: 0;
 }

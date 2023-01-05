@@ -1,0 +1,32 @@
+:where([data-theme="surface"]) {
+  /* Backgrounds */
+  --bg-dark: hsl(var(--black));
+  --bg-light: hsl(var(--white));
+  --bg-ucla-blue: hsl(var(--ucla-blue));
+  --bg-ucla-yellow: hsl(var(--ucla-yellow));
+  --bg-midnight-joshua-tree: hsl(var(--midnight-joshua-tree));
+  --bg-santa-monica-sunset: hsl(var(--santa-monica-sunset));
+  --bg-santa-barbara-sand: hsl(var(--santa-barbara-sand));
+  --bg-malibu-dolphin: hsl(var(--malibu-dolphin));
+  --bg-silver-screen: hsl(var(--silver-screen));
+  --bg-topanga-creek: hsl(var(--topanga-creek));
+  --bg-venice-canal: hsl(var(--venice-canal));
+
+  /* Text */
+  --text-dark: hsl(var(--black));
+  --text-light: hsl(var(--white));
+  --text-ucla-blue: hsl(var(--ucla-blue));
+  --text-ucla-yellow: hsl(var(--ucla-yellow));
+  --text-midnight-joshua-tree: hsl(var(--midnight-joshua-tree));
+  --text-santa-monica-sunset: hsl(var(--santa-monica-sunset));
+  --text-malibu-dolphin: hsl(var(--malibu-dolphin));
+  --text-malibu-dolphin-light: hsl(var(--malibu-dolphin) / 70%);
+  --text-silver-screen: hsl(var(--silver-screen));
+  --text-topanga-creek: hsl(var(--topanga-creek));
+  --text-venice-canal: hsl(var(--venice-canal));
+
+  /* Site Alert */
+  --site-alert-bg: hsl(var(--ucla-blue));
+  --site-alert-text: hsl(var(--white));
+  --site-alert-font-family: var(--font-sans);
+}

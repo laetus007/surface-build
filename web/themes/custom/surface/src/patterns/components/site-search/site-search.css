@@ -94,6 +94,12 @@
     visibility: visible;
   }
 
+  /* Visible in Pattern Lab */
+  &.is-pl {
+    opacity: 1;
+    position: relative;
+  }
+
   .container {
     max-width: 125ch;
   }

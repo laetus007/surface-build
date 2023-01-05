@@ -3,6 +3,46 @@
  * Inline element styles.
  */
 
+:root {
+  /* Links */
+  --link-color: hsl(var(--blue-6));
+  --link-decoration-color: hsl(var(--blue-9));
+  --link-hover-color: hsl(var(--blue-5));
+  --link-hover-decoration-color: hsl(var(--blue-5));
+  --link-visited-color: hsl(var(--blue-9));
+  --link-visited-decoration-color: hsl(var(--blue-9));
+
+  /* Inline elements */
+  --abbr-text-decoration-color: hsl(var(--blue-5));
+  --abbr-text-underline-offset: var(--size-xs);
+  --b-font-weight: var(--font-weight-900);
+  --cite-color: hsl(var(--gray-6));
+  --cite-font-family: var(--font-sans);
+  --cite-font-size: var(--font-size-0);
+  --cite-font-weight: var(--font-weight-600);
+  --cite-letterspacing: var(--font-letterspacing-1);
+  --cite-lineheight: var(--font-lineheight-1);
+  --cite-padding-inline-start: var(--size-1);
+  --code-background-color: hsl(var(--gray-3));
+  --code-border-radius: var(--radius-2);
+  --code-padding: var(--size-05) var(--size-1);
+  --del-background-color: hsl(var(--red-9));
+  --del-color: hsl(var(--red-1));
+  --ins-background-color: hsl(var(--green-9));
+  --ins-color: hsl(var(--green-1));
+  --ins-text-underline-offset: var(--size-xs);
+  --kbd-border-radius: var(--radius-2);
+  --kbd-padding: var(--size-1) var(--size-2);
+  --mark-border-radius: var(--radius-2);
+  --mark-padding: var(--size-1);
+  --small-font-size: var(--font-size-0);
+  --strong-font-weight: var(--font-weight-700);
+  --u-text-underline-offset: var(--size-xs);
+  --var-border-radius: var(--radius-2);
+  --var-border-width: var(--border-size-1);
+  --var-padding: var(--size-1) var(--size-2);
+}
+
 :where(a) {
   background-color: transparent;
 
@@ -11,17 +51,17 @@
   }
 
   &:where([href]) {
-    color: hsl(var(--blue-9));
-    text-decoration-color: hsl(var(--blue-9));
+    color: var(--link-color);
+    text-decoration-color: var(--link-decoration-color);
 
     &:where(:hover) {
-      color: hsl(var(--blue-5));
-      text-decoration-color: hsl(var(--blue-5));
+      color: var(--link-hover-color);
+      text-decoration-color: var(--link-hover-decoration-color);
     }
 
     &:where(:visited) {
-      color: hsl(var(--blue-9));
-      text-decoration-color: hsl(var(--blue-9));
+      color: var(--link-visited-color);
+      text-decoration-color: var(--link-visited-decoration-color));
     }
   }
 
@@ -55,8 +95,8 @@
 }
 
 :where(abbr) {
-  text-decoration-color: hsl(var(--blue-5));
-  text-underline-offset: var(--size-xs);
+  text-decoration-color: var(--abbr-text-decoration-color);
+  text-underline-offset: var(--abbr-text-underline-offset);
 
   &:hover {
     cursor: help;
@@ -70,32 +110,32 @@
 }
 
 :where(b) {
-  font-weight: var(--font-weight-900);
+  font-weight: var(--b-font-weight);
 }
 
 :where(cite) {
-  color: hsl(var(--gray-6));
-  font-family: var(--font-sans);
-  font-size: var(--font-size-0);
-  font-weight: var(--font-weight-600);
-  letter-spacing: var(--font-letterspacing-1);
-  line-height: var(--font-lineheight-1);
+  color: var(--cite-color);
+  font-family: var(--cite-font-family);
+  font-size: var(--cite-font-size);
+  font-weight: var(--cite-font-weight);
+  letter-spacing: var(--cite-letterspacing);
+  line-height: var(--cite-lineheight);
   margin: 0;
-  padding-inline-start: var(--size-1);
+  padding-inline-start: var(--cite-padding-inline-start);
 }
 
 :where(code) {
-  background-color: hsl(var(--gray-3));
-  border-radius: var(--radius-2);
+  background-color: var(--code-background-color);
+  border-radius: var(--code-border-radius);
   font-family: var(--font-mono);
   margin: 0;
-  padding: var(--size-05) var(--size-1);
+  padding: var(--code-padding);
   white-space: nowrap;
 }
 
 :where(del) {
-  background-color: hsl(var(--red-9));
-  color: hsl(var(--red-1));
+  background-color: var(--del-background-color);
+  color: hsl(var(--del-color));
 }
 
 :where(dfn) {
@@ -103,27 +143,27 @@
 }
 
 :where(ins) {
-  background-color: var(--green-9);
-  color: var(--green-1);
-  text-underline-offset: var(--size-xs);
+  background-color: var(--ins-background-color);
+  color: var(--ins-color);
+  text-underline-offset: var(--ins-text-underline-offset);
 }
 
 :where(kbd) {
   border-color: hsl(var(--gray-4));
-  border-radius: var(--radius-2);
+  border-radius: var(--kbd-border-radius);
   border-style: solid;
   border-width: var(--border-size-1);
   font-family: var(--font-mono);
   margin: 0;
-  padding: var(--size-1) var(--size-2);
+  padding: var(--kbd-padding);
   white-space: nowrap;
 }
 
 :where(mark) {
-  border-radius: var(--radius-2);
+  border-radius: var(--mark-border-radius);
   border-style: solid;
   border-width: 0;
-  padding-inline: var(--size-1);
+  padding: var(--mark-padding);
 }
 
 :where(samp) {
@@ -131,12 +171,11 @@
 }
 
 :where(small) {
-  font-size: max(0.5em, var(--font-size-0));
-  max-inline-size: var(--size-content-1);
+  font-size: var(--small-font-size);
 }
 
 :where(strong) {
-  font-weight: var(--font-weight-700);
+  font-weight: var(--strong-font-weight);
 }
 
 :where(sub) {
@@ -156,15 +195,15 @@
 }
 
 :where(u) {
-  text-underline-offset: var(--size-xs);
+  text-underline-offset: var(--u-text-underline-offset);
 }
 
 :where(var) {
   border-color: hsl(var(--gray-4));
-  border-radius: var(--radius-2);
+  border-radius: var(--var-border-radius);
   border-style: solid;
-  border-width: var(--border-size-1);
+  border-width: var(--var-border-width);
   margin: 0;
-  padding: var(--size-1) var(--size-2);
+  padding: var(--var-padding);
   white-space: nowrap;
 }

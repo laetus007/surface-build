@@ -3,13 +3,20 @@
  * Dialog element styles.
  */
 
+:root {
+  --dialog-background-color: hsl(var(--gray-0));
+  --dialog-border-radius: var(--radius-3);
+  --dialog-box-shadow: var(--shadow-6);
+  --dialog-backdrop-filter: blur(25px);
+}
+
 :where(dialog) {
-  background-color: hsl(var(--gray-0));
+  background-color: var(--dialog-background-color));
   color: inherit;
-  border-radius: var(--radius-3);
-  box-shadow: var(--shadow-6);
+  border-radius: var(--dialog-border-radius);
+  box-shadow: var(--dialog-box-shadow);
 
   &::backdrop {
-    backdrop-filter: blur(25px);
+    backdrop-filter: var(--dialog-backdrop-filter);
   }
 }

@@ -3,9 +3,14 @@
  * Paragraph element styles.
  */
 
+:root {
+  --p-margin-block-end: var(--size-2);
+  --p-margin-block-start: var(--size-2);
+}
+
 :where(p) {
-  margin-block-end: var(--size-2);
-  margin-block-start: var(--size-2);
+  margin-block-end: var(--p-margin-block-end);
+  margin-block-start: var(--p-margin-block-start);
 
   &:first-child {
     margin-block-start: 0;

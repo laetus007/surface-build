@@ -10,3 +10,7 @@
 @import "borders";
 @import "brand";
 @import "theme";
+
+/* Custom themes */
+@import "theme-surface";
+@import "theme-dgsom";
