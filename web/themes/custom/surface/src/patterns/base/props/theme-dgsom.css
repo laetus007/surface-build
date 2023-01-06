@@ -6,6 +6,12 @@
   --site-alert-background-color: hsl(var(--ucla-blue));
   --site-alert-color: hsl(var(--white));
   --site-alert-font-size: var(--font-size-2);
+  --site-alert-lineheight: var(--font-lineheight-6);
+  --site-alert-link-color: hsl(var(--white));
+  --site-alert-link-color-hover: hsl(var(--ucla-blue));
+  --site-alert-link-padding-block-start: var(--size-05);
+  --site-alert-box-shadow: inset 0 -2px 0 0 hsl(var(--white));
+  --site-alert-box-shadow-hover: inset 0 -2em 0 0 hsl(var(--white));
 
   /* Site Secondary */
   --site-secondary-background-color: hsl(var(--midnight-joshua-tree));

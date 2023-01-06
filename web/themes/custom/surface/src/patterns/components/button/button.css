@@ -6,7 +6,7 @@
 .button {
   align-items: center;
   appearance: none;
-  background-color: var(--bg-light);
+  background-color: hsl(var(--white));
   border-color: hsl(var(--blue-9));
   border-style: solid;
   border-width: var(--border-size-2);
@@ -122,7 +122,7 @@
   text-transform: uppercase;
 
   &:visited {
-    background-color: var(--bg-light);
-    color: var(--bg-ucla-blue);
+    background-color: currentcolor;
+    color: currentcolor;
   }
 }

@@ -38,11 +38,19 @@
         {% endblock %}
 
         {% block primary %}
-          {% include '@layout/site-navigation/site-navigation.twig' with {
-            'data_menu': data_menu,
-            'is_demo': is_demo,
-            'items': items
-          } %}
+          {% embed '@layout/site-navigation/site-navigation.twig' %}
+            {% block menu %}
+              {% include '@components/menu-main/menu-main.twig' with {
+                'data_menu': data_menu,
+                'is_demo': is_demo,
+                'items': main_menu
+              } only %}
+              {% include '@components/menu-secondary/menu-secondary.twig' with {
+                'is_demo': true,
+                'items': secondary_menu
+              } only %}
+            {% endblock %}
+          {% endembed %}
         {% endblock %}
       </div>
     </div>

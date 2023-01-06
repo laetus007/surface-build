@@ -31,6 +31,7 @@
     font-size: var(--menu-secondary-link-font-size-mobile);
     font-weight: var(--menu-secondary-link-font-weight-mobile);
     padding-block: var(--size-05);
+    transition: all 0.2s ease;
 
     @media (--xl) {
       color: var(--menu-secondary-link-color-dekstop);
@@ -48,8 +49,8 @@
     }
 
     &:focus {
-      outline: solid 2px currentcolor;
-      outline-offset: 2px;
+      box-shadow: 0 0 0 2px currentcolor, 0 0 0 4px hsl(var(--gray-8) / 15%);
+      outline: none;
     }
 
     &:first-child {
