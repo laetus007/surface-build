@@ -38,6 +38,15 @@
     }
   }
 
+  /* Secondary menu mobile */
+  .menu-secondary {
+    display: block;
+
+    @media (--xl) {
+      display: none;
+    }
+  }
+
   @media (--xl) {
     height: auto;
     opacity: 1;

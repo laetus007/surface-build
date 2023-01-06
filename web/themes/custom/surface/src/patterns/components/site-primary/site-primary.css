@@ -9,7 +9,10 @@
 
 .site-primary__content {
   align-items: center;
+  background-color: var(--bg-light);
   display: flex;
+  min-height: 99px;
   justify-content: space-between;
   position: relative;
+  width: 100%;
 }

@@ -5,7 +5,7 @@
 
 .gin-secondary-toolbar__layout-container {
   margin-inline: auto;
-  max-width: var(--max-width);
+  max-width: var(--size-container);
   padding-inline: var(--size-2);
 
   @media (--toolbar) {

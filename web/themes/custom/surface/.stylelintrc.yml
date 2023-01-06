@@ -55,7 +55,6 @@ rules:
       - "--font-serif"
       - "--font-system"
       - "--font-mono"
-
   declaration-property-value-disallowed-list:
     //bborder\b/:
       - none

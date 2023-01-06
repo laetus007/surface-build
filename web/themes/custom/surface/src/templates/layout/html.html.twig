@@ -31,7 +31,7 @@
 ] %}
 
 <!DOCTYPE html>
-<html{{ html_attributes }}>
+<html{{ html_attributes }} data-theme="{{ data_theme }}">
   <head>
     <head-placeholder token="{{ placeholder_token }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
@@ -39,7 +39,7 @@
     <js-placeholder token="{{ placeholder_token }}">
     {{ noscript_styles }}
   </head>
-  <body{{ attributes.addClass(body_classes) }} data-theme="{{ data_theme }}" data-menu="{{ data_menu }}" data-search="{{ data_search }}" data-alert="{{ data_alert }}">
+  <body{{ attributes.addClass(body_classes) }} data-menu="{{ data_menu }}" data-search="{{ data_search }}" data-alert="{{ data_alert }}">
     {% include '@components/skip-link/skip-link.twig' %}
     {{ page_top }}
     {{ page }}

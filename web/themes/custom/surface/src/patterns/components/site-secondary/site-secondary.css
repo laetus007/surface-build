@@ -4,8 +4,8 @@
  */
 
 .site-secondary {
-  background-color: hsl(var(--midnight-joshua-tree));
-  color: hsl(0, 0%, 100%);
+  background-color: var(--site-secondary-background-color);
+  color: var(--site-secondary-color);
   width: 100%;
 }
 

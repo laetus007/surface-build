@@ -1,4 +1,23 @@
 :where([data-theme="dgsom"]) {
   /* Typography */
   --font-sans: Karbon, Helvetica, sans-serif;
+
+  /* Site Alert */
+  --site-alert-background-color: hsl(var(--ucla-blue));
+  --site-alert-color: hsl(var(--white));
+  --site-alert-font-size: var(--font-size-2);
+
+  /* Site Secondary */
+  --site-secondary-background-color: hsl(var(--midnight-joshua-tree));
+  --site-secondary-color: hsl(var(--white));
+
+  /* Menu Secondary */
+  --menu-secondary-link-color-desktop: hsl(var(--white));
+  --menu-secondary-link-color-hover-desktop: hsl(var(--silver-screen));
+  --menu-secondary-link-font-size-desktop: var(--font-size-2);
+  --menu-secondary-link-font-weight-desktop: var(--font-weight-400);
+  --menu-secondary-link-color-mobile: hsl(var(--midnight-joshua-tree));
+  --menu-secondary-link-color-hover-mobile: hsl(var(--ucla-blue));
+  --menu-secondary-link-font-size-mobile: var(--font-size-3);
+  --menu-secondary-link-font-weight-mobile: var(--font-weight-500);
 }

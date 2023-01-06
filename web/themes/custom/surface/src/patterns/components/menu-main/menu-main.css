@@ -439,7 +439,7 @@
       display: grid;
       grid-gap: var(--size-1);
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      max-width: var(--max-width);
+      max-width: var(--size-container);
       width: 100%;
     }
   }

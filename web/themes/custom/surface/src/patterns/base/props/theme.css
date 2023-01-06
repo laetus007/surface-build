@@ -1,7 +1,4 @@
 :where(html) {
   /* Typography */
   --font-sans: Helvetica, sans-serif;
-
-  /* Containers */
-  --max-width: 1440px;
 }
