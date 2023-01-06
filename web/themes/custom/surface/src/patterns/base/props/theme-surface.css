@@ -1,4 +1,9 @@
 :where([data-theme="surface"]) {
+  /* Typography */
+  --font-sans: Helvetica, sans-serif;
+  --font-body: var(--font-sans);
+  --font-headings: var(--font-sans);
+
   /* Backgrounds */
   --bg-dark: hsl(var(--black));
   --bg-light: hsl(var(--white));
@@ -29,12 +34,13 @@
   --site-alert-background-color: hsl(var(--ucla-blue));
   --site-alert-color: hsl(var(--white));
   --site-alert-font-size: var(--font-size-1);
-  --site-alert-lineheight: var(--font-lineheight-6);
+  --site-alert-lineheight: var(--font-lineheight-3);
   --site-alert-link-color: hsl(var(--white));
   --site-alert-link-color-hover: hsl(var(--ucla-blue));
   --site-alert-link-padding-block-start: 0;
   --site-alert-box-shadow: inset 0 -2px 0 0 hsl(var(--white));
   --site-alert-box-shadow-hover: inset 0 -2em 0 0 hsl(var(--white));
+  --site-alert-box-shadow-focus: 0 0 0 2px hsl(var(--white)), 0 0 0 4px hsl(var(--silver-screen) / 15%);
 
   /* Site Secondary */
   --site-secondary-background-color: hsl(var(--midnight-joshua-tree));
@@ -49,4 +55,39 @@
   --menu-secondary-link-color-hover-mobile: hsl(var(--ucla-blue));
   --menu-secondary-link-font-size-mobile: var(--font-size-3);
   --menu-secondary-link-font-weight-mobile: var(--font-weight-500);
+
+  /* Search button */
+  --search-button-color: hsl(var(--white));
+  --search-button-border-color: hsl(var(--white));
+  --search-button-box-shadow: 0 0 0 2px hsl(var(--white)), 0 0 0 4px hsl(var(--gray-8) / 15%);
+  --search-button-font-size: var(--font-size-1);
+
+  /* Mobile button */
+  --mobile-button-color: solid 2px hsl(var(--midnight-joshua-tree));
+  --mobile-button-font-size: var(--font-size-1);
+  --mobile-button-outline: solid 2px hsl(var(--midnight-joshua-tree));
+  --mobile-button-icon-background-color: hsl(var(--ucla-blue));
+
+  /* Menu toggle */
+  --menu-toggle-icon-color: hsl(var(--midnight-joshua-tree));
+
+  /* Menu main link */
+  --menu-main-link-color: hsl(var(--midnight-joshua-tree));
+  --menu-main-link-font-size-mobile: var(--font-size-6);
+  --menu-main-link-font-weight-mobile: var(--font-weight-700);
+  --menu-main-link-letterspacing-mobile: var(--font-letterspacing-0);
+  --menu-main-link-lineheight-mobile: var(--font-lineheight-2);
+  --menu-main-link-font-size-desktop: var(--font-size-2);
+  --menu-main-link-font-weight-desktop: var(--font-weight-700);
+  --menu-main-link-letterspacing-desktop: var(--font-letterspacing-0);
+  --menu-main-link-lineheight-desktop: var(--font-lineheight-4);
+
+  /* Menu main link inner */
+  --menu-main-link-inner-level-2-border-top: solid 5px hsl(var(--ucla-blue));
+
+  /* Menu Main 1 */
+  --menu-main-1-border-bottom: solid 10px hsl(var(--ucla-blue));
+
+  /* Menu Main - Level 2 */
+  --menu-main-level-2-border-top: solid hsl(var(--ucla-blue)) 9px;
 }

@@ -29,9 +29,11 @@
 
     {% block buttons %}
       {% include '@components/button/button.twig' with {
+        'modifier': 'button--give',
         'url': give_url,
         'text': 'Give'
-      } %}
+      } only %}
+
       {% include '@components/search-button/search-button.twig' with {
         'is_demo': false
       } %}

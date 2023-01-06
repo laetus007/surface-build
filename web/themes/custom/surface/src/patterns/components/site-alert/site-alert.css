@@ -51,5 +51,10 @@
         text-decoration-style: underline;
       }
     }
+
+    &:focus {
+      box-shadow: var(--site-alert-box-shadow-focus);
+      outline: none;
+    }
   }
 }

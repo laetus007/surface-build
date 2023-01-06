@@ -96,6 +96,7 @@
 
     & .icon--menu-toggle {
       background-color: hsl(0, 0%, 100%);
+      color: var(--menu-toggle-icon-color);
       border-radius: 4px;
       inset-inline-start: 3px;
       transform: translateY(-50%);

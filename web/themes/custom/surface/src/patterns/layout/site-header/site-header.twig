@@ -16,6 +16,7 @@
         <div class="site-secondary__buttons">
           {% block buttons %}
             {% include '@components/button/button.twig' with {
+              'modifier': 'button--give',
               'url': '#',
               'text': 'Give'
             } %}

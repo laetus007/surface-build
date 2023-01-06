@@ -1,6 +1,0 @@
----
-modifier: 'button--medium'
-button: true
-disabled: false
-url: '#'
-text: 'Button Medium'

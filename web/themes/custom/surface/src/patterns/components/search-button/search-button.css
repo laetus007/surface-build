@@ -8,7 +8,7 @@
   appearance: none;
   background: transparent;
   border: 0;
-  color: var(--text-light);
+  color: var(--search-button-color);
   cursor: pointer;
   display: inline-flex;
   position: relative;
@@ -18,13 +18,13 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px hsl(var(--white)), 0 0 0 4px hsl(var(--gray-8) / 15%);
+    box-shadow: var(--search-button-box-shadow);
     outline: none;
   }
 
   &[aria-expanded="true"] {
     &:focus::after {
-      border-color: hsl(0, 0%, 100%);
+      border-color: var(--search-button-border-color);
     }
   }
 
@@ -38,5 +38,10 @@
     & path {
       fill: ButtonText;
     }
+  }
+
+  & span {
+    font-size: var(--search-button-font-size);
+    padding-block-start: var(--size-05);
   }
 }
