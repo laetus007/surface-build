@@ -3,6 +3,45 @@
  * Main menu styling.
  */
 
+/* Menu Level 1 */
+.menu-main--level-1 {
+  list-style-type: none;
+  margin-block-end: var(--size-2);
+  margin-block-start: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+  width: 100%;
+
+  @media (--xl) {
+    align-items: stretch;
+    display: flex;
+    margin-block-end: 0;
+  }
+
+  /* Mobile menu active */
+  .is-active & {
+    margin-top: 120px;
+
+    /* Drupal toolbar present */
+    .gin--vertical-toolbar & {
+      margin-top: 110px;
+    }
+  }
+
+  /* Disable underline on items with children */
+  .menu__link--has-children {
+    .menu__link-inner--level-1 {
+      &::after {
+        @media (--xl) {
+          content: none;
+        }
+      }
+    }
+  }
+}
+
+/* Menu link underline effect */
 .menu__link-inner {
   align-items: center;
   display: inline-flex;
@@ -15,7 +54,7 @@
   }
 
   &::after {
-    border-top: solid 5px hsl(var(--midnight-joshua-tree));
+    border-top: solid 5px hsl(var(--ucla-blue));
     bottom: 0;
     content: "";
     height: 0;
@@ -33,13 +72,50 @@
   }
 }
 
-.menu-main--level-1 {
-  .menu__link--has-children {
-    .menu__link-inner--level-1 {
+/* Menu link level one */
+.menu__link--level-1 {
+  color: var(--menu-main-link-color);
+  font-size: var(--menu-main-link-font-size-mobile);
+  font-weight: var(--menu-main-link-font-weight-mobile);
+  letter-spacing: var(--menu-main-link-letterspacing-mobile);
+  line-height: var(--menu-main-link-lineheight-mobile);
+  position: relative;
+  text-decoration: none;
+
+  @media (--xl) {
+    font-size: var(--menu-main-link-font-size-desktop);
+    font-weight: var(--menu-main-link-font-weight-desktop);
+    letter-spacing: var(--menu-main-link-letterspacing-desktop);
+    line-height: var(--menu-main-link-lineheight-desktop);
+  }
+
+  &:hover {
+    color: hsl(var(--ucla-blue));
+
+    .menu__link-inner {
       &::after {
-        @media (--xl) {
-          content: none;
-        }
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &:focus {
+    @media (--xl) {
+      outline: 0;
+      position: relative;
+    }
+
+    &::before {
+      @media (--xl) {
+        border-radius: 0.25rem;
+        border: solid 2px hsl(var(--ucla-blue));
+        content: "";
+        height: 54px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% + 1.125rem);
       }
     }
   }
@@ -47,32 +123,6 @@
 
 /* Default menu */
 .menu-main--default {
-  &.menu-main--level-1 {
-    list-style-type: none;
-    margin-block-end: var(--size-2);
-    margin-block-start: 0;
-    margin-inline: 0;
-    padding-block: 0;
-    padding-inline: 0;
-    width: 100%;
-
-    @media (--xl) {
-      align-items: stretch;
-      display: flex;
-      margin-block-end: 0;
-    }
-
-    /* Mobile menu active */
-    .is-active & {
-      margin-top: 120px;
-
-      /* Drupal toolbar present */
-      .gin--vertical-toolbar & {
-        margin-top: 110px;
-      }
-    }
-  }
-
   .menu__item {
     margin-block-end: var(--size-1);
 
@@ -90,66 +140,13 @@
   }
 
   .menu__link {
-    color: var(--menu-main-link-color);
     display: inline-block;
-    font-size: var(--menu-main-link-font-size-mobile);
-    font-weight: var(--menu-main-link-font-weight-mobile);
-    letter-spacing: var(--menu-main-link-letterspacing-mobile);
-    line-height: var(--menu-main-link-lineheight-mobile);
-    position: relative;
-    text-decoration: none;
-
-    @media (--xl) {
-      font-size: var(--menu-main-link-font-size-desktop);
-      font-weight: var(--menu-main-link-font-weight-desktop);
-      letter-spacing: var(--menu-main-link-letterspacing-desktop);
-      line-height: var(--menu-main-link-lineheight-desktop);
-    }
-
-    &:hover {
-      color: hsl(var(--ucla-blue));
-
-      .menu__link-inner {
-        &::after {
-          transform: scaleX(1);
-        }
-      }
-    }
-  }
-
-  .menu__link-inner {
-    &::after {
-      border-top-color: hsl(var(--ucla-blue));
-    }
   }
 }
 
 /* Dropdown menu */
 .menu-main--dropdown {
   &.menu-main--level-1 {
-    list-style-type: none;
-    margin-block-end: var(--size-2);
-    margin-block-start: 0;
-    margin-inline: 0;
-    padding-block: 0;
-    padding-inline: 0;
-
-    @media (--xl) {
-      align-items: stretch;
-      display: flex;
-      margin-block-end: 0;
-    }
-
-    /* Mobile menu active */
-    .is-active & {
-      margin-top: 120px;
-
-      /* Drupal toolbar present */
-      .gin--vertical-toolbar & {
-        margin-top: 110px;
-      }
-    }
-
     .menu__item {
       display: flex;
       flex-basis: 100%;
@@ -174,54 +171,9 @@
     }
 
     .menu__link {
-      color: var(--menu-main-link-color);
       display: flex;
       flex-basis: auto;
       flex-grow: 1;
-      font-size: var(--menu-main-link-font-size-mobile);
-      font-weight: var(--menu-main-link-font-weight-mobile);
-      letter-spacing: var(--menu-main-link-letterspacing-mobile);
-      line-height: var(--menu-main-link-lineheight-mobile);
-      position: relative;
-      text-decoration: none;
-
-      @media (--xl) {
-        font-size: var(--menu-main-link-font-size-desktop);
-        font-weight: var(--menu-main-link-font-weight-desktop);
-        letter-spacing: var(--menu-main-link-letterspacing-desktop);
-        line-height: var(--menu-main-link-lineheight-desktop);
-      }
-
-      &:hover {
-        color: hsl(var(--ucla-blue));
-
-        .menu__link-inner {
-          &::after {
-            transform: scaleX(1);
-          }
-        }
-      }
-
-      &:focus {
-        @media (--xl) {
-          outline: 0;
-          position: relative;
-        }
-
-        &::before {
-          @media (--xl) {
-            border-radius: 0.25rem;
-            border: solid 2px hsl(var(--ucla-blue));
-            content: "";
-            height: 54px;
-            left: 50%;
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: calc(100% + 1.125rem);
-          }
-        }
-      }
     }
 
     .menu__link-inner {
@@ -299,6 +251,7 @@
       font-size: var(--font-size-1);
       font-weight: var(--font-weight-400);
       line-height: var(--font-lineheight-1);
+      text-decoration: none;
 
       @media (--xl) {
         display: block;
@@ -306,6 +259,12 @@
 
       &:hover {
         color: hsl(var(--midnight-joshua-tree));
+
+        .menu__link-inner {
+          &::after {
+            transform: scaleX(1);
+          }
+        }
       }
     }
 
@@ -326,29 +285,6 @@
 /* Mega menu */
 .menu-main--mega {
   &.menu-main--level-1 {
-    list-style-type: none;
-    margin-block-end: var(--size-2);
-    margin-block-start: 0;
-    margin-inline: 0;
-    padding-block: 0;
-    padding-inline: 0;
-
-    @media (--xl) {
-      align-items: stretch;
-      display: flex;
-      margin-block-end: 0;
-    }
-
-    /* Mobile menu active */
-    .is-active & {
-      margin-top: 120px;
-
-      /* Drupal toolbar present */
-      .gin--vertical-toolbar & {
-        margin-top: 110px;
-      }
-    }
-
     .menu__item {
       display: flex;
       flex-basis: 100%;
@@ -373,60 +309,9 @@
     }
 
     .menu__link {
-      color: var(--menu-main-link-color);
       display: flex;
       flex-basis: auto;
       flex-grow: 1;
-      font-size: var(--menu-main-link-font-size-mobile);
-      font-weight: var(--menu-main-link-font-weight-mobile);
-      letter-spacing: var(--menu-main-link-letterspacing-mobile);
-      line-height: var(--menu-main-link-lineheight-mobile);
-      position: relative;
-      text-decoration: none;
-
-      @media (--xl) {
-        font-size: var(--menu-main-link-font-size-desktop);
-        font-weight: var(--menu-main-link-font-weight-desktop);
-        letter-spacing: var(--menu-main-link-letterspacing-desktop);
-        line-height: var(--menu-main-link-lineheight-desktop);
-      }
-
-      &:hover {
-        color: hsl(var(--ucla-blue));
-
-        .menu__link-inner {
-          &::after {
-            transform: scaleX(1);
-          }
-        }
-      }
-
-      &:focus {
-        @media (--xl) {
-          outline: 0;
-          position: relative;
-        }
-
-        &::before {
-          @media (--xl) {
-            border-radius: 0.25rem;
-            border: solid 2px hsl(var(--ucla-blue));
-            content: "";
-            height: 54px;
-            left: 50%;
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: calc(100% + 1.125rem);
-          }
-        }
-      }
-    }
-
-    .menu__link-inner {
-      &::after {
-        border-top-color: hsl(var(--ucla-blue));
-      }
     }
 
     .is-active-mouseover-event {
@@ -504,9 +389,16 @@
       font-weight: var(--font-weight-600);
       line-height: var(--font-lineheight-1);
       margin-block-end: 4px;
+      text-decoration: none;
 
       &:hover {
         color: hsl(var(--midnight-joshua-tree));
+
+        .menu__link-inner {
+          &::after {
+            transform: scaleX(1);
+          }
+        }
       }
     }
 
@@ -536,6 +428,7 @@
       font-size: var(--font-size-0);
       font-weight: var(--font-weight-400);
       line-height: var(--font-lineheight-1);
+      text-decoration: none;
 
       @media (--xl) {
         display: block;
@@ -543,6 +436,12 @@
 
       &:hover {
         color: hsl(var(--malibu-dolphin));
+
+        .menu__link-inner {
+          &::after {
+            transform: scaleX(1);
+          }
+        }
       }
     }
 

@@ -51,59 +51,37 @@
           {% set menu_item_type = 'link' %}
         {% endif %}
 
-        {% if data_menu == 'dropdown' %}
-          {% set item_classes = [
-            'menu__item',
-            'menu__item--' ~ menu_item_type,
-            'menu__item--level-' ~ (menu_level + 1),
-            item.in_active_trail ? 'menu__item--active-trail',
-            item.below and data_menu != 'default' ? 'menu__item--has-children',
-          ] %}
-        {% elseif data_menu == 'mega' %}
-          {% set item_classes = [
-            'menu__item',
-            'menu__item--' ~ menu_item_type,
-            'menu__item--level-' ~ (menu_level + 1),
-            item.in_active_trail ? 'menu__item--active-trail',
-            item.below and data_menu != 'default' ? 'menu__item--has-children',
-          ] %}
-        {% else %}
-          {% set item_classes = [
-            'menu__item',
-            item.in_active_trail ? 'menu__item--active-trail',
-          ] %}
-        {% endif %}
+        {% set item_classes = [
+          'menu__item',
+          'menu__item--' ~ menu_item_type,
+          'menu__item--level-' ~ (menu_level + 1),
+          item.in_active_trail ? 'menu__item--active-trail',
+          item.below and data_menu != 'default' ? 'menu__item--has-children',
+        ] %}
 
-        {% if data_menu == 'dropdown' %}
+
+        {% if data_menu == 'default' %}
           {% set link_classes = [
             'menu__link',
             'menu__link--' ~ menu_item_type,
             'menu__link--level-' ~ (menu_level + 1),
             item.in_active_trail ? 'menu__link--active-trail',
-            item.below and data_menu != 'default' ? 'menu__link--has-children',
           ] %}
-          {% set link_title %}
-            <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
-          {% endset %}
-        {% elseif data_menu == 'mega' %}
-          {% set link_classes = [
-            'menu__link',
-            'menu__link--' ~ menu_item_type,
-            'menu__link--level-' ~ (menu_level + 1),
-            item.in_active_trail ? 'menu__link--active-trail',
-            item.below and data_menu != 'default' ? 'menu__link--has-children',
-          ] %}
-          {% set link_title %}
-            <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
-          {% endset %}
-        {% else %}
-          {% set link_classes = [
-            'menu__link',
-            'menu__link--' ~ menu_item_type,
-            item.in_active_trail ? 'menu__link--active-trail',
-          ] %}
+
           {% set link_title %}
             <span class="menu__link-inner">{{ item.title }}</span>
+          {% endset %}
+        {% else %}
+          {% set link_classes = [
+            'menu__link',
+            'menu__link--' ~ menu_item_type,
+            'menu__link--level-' ~ (menu_level + 1),
+            item.in_active_trail ? 'menu__link--active-trail',
+            item.below and data_menu != 'default' ? 'menu__link--has-children',
+          ] %}
+
+          {% set link_title %}
+            <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
           {% endset %}
         {% endif %}
 
