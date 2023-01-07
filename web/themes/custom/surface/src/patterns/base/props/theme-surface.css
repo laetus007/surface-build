@@ -85,8 +85,8 @@
   /* Menu main link inner */
   --menu-main-link-inner-level-2-border-top: solid 5px hsl(var(--ucla-blue));
 
-  /* Menu Main 1 */
-  --menu-main-1-border-bottom: solid 10px hsl(var(--ucla-blue));
+  /* Menu caret */
+  --menu-caret-border-bottom: solid 10px hsl(var(--ucla-blue));
 
   /* Menu Main - Level 2 */
   --menu-main-level-2-border-top: solid hsl(var(--ucla-blue)) 9px;

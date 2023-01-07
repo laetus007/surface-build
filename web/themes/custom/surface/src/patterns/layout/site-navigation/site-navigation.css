@@ -20,6 +20,17 @@
   width: 100%;
   will-change: transform;
 
+  @media (--xl) {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+    padding-inline: 0;
+    position: initial;
+    transform: none;
+    visibility: visible;
+    will-change: unset;
+  }
+
   .is-active & {
     visibility: visible;
     opacity: 1;
@@ -45,15 +56,5 @@
     @media (--xl) {
       display: none;
     }
-  }
-
-  @media (--xl) {
-    height: auto;
-    opacity: 1;
-    overflow: visible;
-    position: initial;
-    transform: none;
-    visibility: visible;
-    will-change: unset;
   }
 }

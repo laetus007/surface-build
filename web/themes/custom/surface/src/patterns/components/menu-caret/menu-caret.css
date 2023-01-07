@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Menu caret styling.
+ */
+
+/* Menu caret */
+.menu-caret {
+  @media (--xl) {
+    border-bottom: var(--menu-caret-border-bottom);
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    height: 0;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 74px;
+    transform: translate(-50%, -1.25rem);
+    transition: visibility 0.2s, transform 0.2s, opacity 0.2s;
+    visibility: hidden;
+    width: 0;
+  }
+
+  &.is-active-menu-parent {
+    @media (--xl) {
+      opacity: 1;
+      transform: translate(-50%, 0);
+      visibility: visible;
+    }
+  }
+}

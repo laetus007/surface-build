@@ -2,7 +2,7 @@
 
 ((Drupal) => {
   const isDesktopNav = Drupal.surface.isDesktopNav;
-  const secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu-main__item--has-children"]');
+  const secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu__item--has-children"]');
 
   function toggleSubNav(topLevelMenuItem, toState) {
     const buttonSelector = '[data-drupal-selector="menu-toggle"]';
@@ -14,19 +14,19 @@
         secondLevelNavMenus.forEach(function (el) {
           el.querySelector(buttonSelector).setAttribute('aria-expanded', 'false');
           el.querySelector('[data-drupal-selector="menu-main--level-2"]').classList.remove('is-active-menu-parent');
-          el.querySelector('[data-drupal-selector="menu-main--1"]').classList.remove('is-active-menu-parent');
+          el.querySelector('[data-drupal-selector="menu-caret"]').classList.remove('is-active-menu-parent');
         });
       }
 
       button.setAttribute('aria-expanded', 'true');
       topLevelMenuItem.querySelector('[data-drupal-selector="menu-main--level-2"]').classList.add('is-active-menu-parent');
-      topLevelMenuItem.querySelector('[data-drupal-selector="menu-main--1"]').classList.add('is-active-menu-parent');
+      topLevelMenuItem.querySelector('[data-drupal-selector="menu-caret"]').classList.add('is-active-menu-parent');
     }
     else {
       button.setAttribute('aria-expanded', 'false');
       topLevelMenuItem.classList.remove('is-touch-event');
       topLevelMenuItem.querySelector('[data-drupal-selector="menu-main--level-2"]').classList.remove('is-active-menu-parent');
-      topLevelMenuItem.querySelector('[data-drupal-selector="menu-main--1"]').classList.remove('is-active-menu-parent');
+      topLevelMenuItem.querySelector('[data-drupal-selector="menu-caret"]').classList.remove('is-active-menu-parent');
     }
   }
 
@@ -38,7 +38,7 @@
     }
 
     setTimeout(function () {
-      const menuParentItem = e.target.closest('[data-drupal-selector="menu-main__item--has-children"]');
+      const menuParentItem = e.target.closest('[data-drupal-selector="menu__item--has-children"]');
 
       if (!menuParentItem.contains(document.activeElement)) {
         toggleSubNav(menuParentItem, false);

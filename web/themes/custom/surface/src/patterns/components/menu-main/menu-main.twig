@@ -25,19 +25,19 @@
 
 {% macro menu_links(items, attributes, menu_level, aria_id, data_menu, item_class, link_class, is_demo) %}
   {% set drupal_selector_primary_nav_level = menu_level <= 1 ? 'menu-main--level-' ~ (menu_level + 1) : false %}
-  {% set is_top_level_menu = menu_level == 0 %}
 
   {% import _self as menus %}
   {% if items %}
 
     {% set menu_classes = [
       'menu-main',
-      menu_level > 0 ? 'menu-main--level-' ~ (menu_level + 1),
+      menu_level == 0 ? 'menu-main--' ~ data_menu,
+      'menu-main--level-' ~ (menu_level + 1),
       attributes ? attributes.class,
     ]|join(' ')|trim %}
 
-    {% if menu_level == 1 %}
-      <span data-drupal-selector="menu-main--1" class="menu-main--1"></span>
+    {% if menu_level == 1 and data_menu != 'default' %}
+      <span data-drupal-selector="menu-caret" class="menu-caret"></span>
     {% endif %}
 
     <ul class="{{ menu_classes }}" {% if menu_level > 0 %}id="{{ aria_id }}"{% endif %} {% if menu_level == 0 %}data-type="{{ data_menu }}"{% endif %} data-drupal-selector="{{ drupal_selector_primary_nav_level }}" {{ attributes ? attributes|without('class') }}>
@@ -51,48 +51,85 @@
           {% set menu_item_type = 'link' %}
         {% endif %}
 
-        {% set item_classes = [
-          'menu-main__item',
-          'menu-main__item--' ~ menu_item_type,
-          'menu-main__item--level-' ~ (menu_level + 1),
-          item.in_active_trail ? 'menu-main__item--active-trail',
-          item.below and data_menu != 'default' ? 'menu-main__item--has-children',
-        ] %}
+        {% if data_menu == 'dropdown' %}
+          {% set item_classes = [
+            'menu__item',
+            'menu__item--' ~ menu_item_type,
+            'menu__item--level-' ~ (menu_level + 1),
+            item.in_active_trail ? 'menu__item--active-trail',
+            item.below and data_menu != 'default' ? 'menu__item--has-children',
+          ] %}
+        {% elseif data_menu == 'mega' %}
+          {% set item_classes = [
+            'menu__item',
+            'menu__item--' ~ menu_item_type,
+            'menu__item--level-' ~ (menu_level + 1),
+            item.in_active_trail ? 'menu__item--active-trail',
+            item.below and data_menu != 'default' ? 'menu__item--has-children',
+          ] %}
+        {% else %}
+          {% set item_classes = [
+            'menu__item',
+            item.in_active_trail ? 'menu__item--active-trail',
+          ] %}
+        {% endif %}
 
-        {% set link_classes = [
-          'menu-main__link',
-          'menu-main__link--' ~ menu_item_type,
-          'menu-main__link--level-' ~ (menu_level + 1),
-          item.in_active_trail ? 'menu-main__link--active-trail',
-          item.below and data_menu != 'default' ? 'menu-main__link--has-children',
-        ] %}
+        {% if data_menu == 'dropdown' %}
+          {% set link_classes = [
+            'menu__link',
+            'menu__link--' ~ menu_item_type,
+            'menu__link--level-' ~ (menu_level + 1),
+            item.in_active_trail ? 'menu__link--active-trail',
+            item.below and data_menu != 'default' ? 'menu__link--has-children',
+          ] %}
+          {% set link_title %}
+            <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
+          {% endset %}
+        {% elseif data_menu == 'mega' %}
+          {% set link_classes = [
+            'menu__link',
+            'menu__link--' ~ menu_item_type,
+            'menu__link--level-' ~ (menu_level + 1),
+            item.in_active_trail ? 'menu__link--active-trail',
+            item.below and data_menu != 'default' ? 'menu__link--has-children',
+          ] %}
+          {% set link_title %}
+            <span class="menu__link-inner menu__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
+          {% endset %}
+        {% else %}
+          {% set link_classes = [
+            'menu__link',
+            'menu__link--' ~ menu_item_type,
+            item.in_active_trail ? 'menu__link--active-trail',
+          ] %}
+          {% set link_title %}
+            <span class="menu__link-inner">{{ item.title }}</span>
+          {% endset %}
+        {% endif %}
 
         {% set item_classes = item_classes|join(' ')|trim %}
         {% set link_classes = link_classes|join(' ')|trim %}
 
-        <li class="{{ item_classes }}" {{ menu_level < 1 and data_menu != 'default' and item.below ? 'data-drupal-selector="menu-main__item--has-children"' }}>
+        <li class="{{ item_classes }}" {{ menu_level < 1 and data_menu != 'default' and item.below ? 'data-drupal-selector="menu__item--has-children"' }}>
           {% set aria_id = (aria_id ~ loop.index )|clean_id %}
-          {% set link_title %}
-            <span class="menu-main__link-inner menu-main__link-inner--level-{{ menu_level + 1 }}">{{ item.title }}</span>
-          {% endset %}
 
           {% if menu_item_type == 'link' or menu_item_type == 'nolink' %}
             {% if is_demo %}
-              <a class="{{ link_classes }}" href="{{ item.url }}" {{ is_top_level_menu and data_menu != 'default' ? 'data-drupal-selector="menu-main__link--has-children"' : false }}>{{ menu_item_type == 'link' ? link_title : item.title }}</a>
+              <a class="{{ link_classes }}" href="{{ item.url }}" {{ item.below and menu_level < 1 and data_menu != 'default' ? 'data-drupal-selector="menu__link--has-children"' : false }}>{{ menu_item_type == 'link' ? link_title : item.title }}</a>
             {% else %}
               {{ link(menu_item_type == 'link' ? link_title : item.title, item.url, {
                 'class': link_classes,
-                'data-drupal-selector': is_top_level_menu and data_menu != "default"  ? 'menu-main__link--has-children' : false,
+                'data-drupal-selector': menu_level < 1 and data_menu != "default"  ? 'menu__link--has-children' : false,
                 })
               }}
             {% endif %}
 
             {% if item.below and data_menu != "default" %}
 
-              {% if is_top_level_menu %}
+              {% if menu_level == 0 %}
                 <button class="menu-toggle" data-drupal-selector="menu-toggle" aria-controls="{{ aria_id }}" aria-expanded="false" aria-hidden="true">
                   <span class="visually-hidden">{{ item.title ~ ' sub-navigation' }}</span>
-                  <span class="icon--menu-toggle"></span>
+                  <span class="icon"></span>
                 </button>
               {% endif %}
 
@@ -110,13 +147,13 @@
 
           {% elseif menu_item_type == 'button' %}
             {% if is_demo %}
-              <a class="{{ link_classes }}" href="{{ item.url }}" {{ is_top_level_menu ? 'data-drupal-selector="menu-main__link-has-children"' : false }}>{{ menu_item_type == 'link' ? link_title : item.title }}</a>
+              <a class="{{ link_classes }}" href="{{ item.url }}" {{ menu_level == 0 ? 'data-drupal-selector="menu__link-has-children"' : false }}>{{ menu_item_type == 'link' ? link_title : item.title }}</a>
             {% else %}
               {{ link(link_title, item.url, {
                 'class': link_classes,
-                'aria-controls': is_top_level_menu and item.below ? aria_id : false,
-                'aria-expanded': is_top_level_menu and item.below ? 'false' : false,
-                'data-drupal-selector': is_top_level_menu and item.below ? 'primary-nav-submenu-toggle-button' : false,
+                'aria-controls': menu_level == 0 and item.below ? aria_id : false,
+                'aria-expanded': menu_level == 0 and item.below ? 'false' : false,
+                'data-drupal-selector': menu_level == 0 and item.below ? 'primary-nav-submenu-toggle-button' : false,
               }) }}
             {% endif %}
 

@@ -117,28 +117,4 @@ items:
   - title: 'About'
     url: '#'
     in_active_trail: false
-    below:
-      - title: 'Culture and Mission'
-        url: '#'
-        in_active_trail: false
-        below: false
-      - title: 'Direct from the Dean'
-        url: '#'
-        in_active_trail: false
-        below: false
-      - title: 'History and Awards'
-        url: '#'
-        in_active_trail: false
-        below: false
-      - title: 'Leadership'
-        url: '#'
-        in_active_trail: false
-        below: false
-      - title: 'News'
-        url: '#'
-        in_active_trail: false
-        below: false
-      - title: 'Plan Your Visit'
-        url: '#'
-        in_active_trail: false
-        below: false
+    below: false

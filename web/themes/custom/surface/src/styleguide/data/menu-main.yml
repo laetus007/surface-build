@@ -11,6 +11,12 @@ main_menu:
           - title: 'DGSOM Pre-Health Guidance Center'
             url: '#'
             in_active_trail: false
+          - title: 'DGSOM Pre-Health Two'
+            url: '#'
+            in_active_trail: false
+          - title: 'DGSOM Pre-Health Three'
+            url: '#'
+            in_active_trail: false
             below: false
       - title: 'MD Education'
         url: '#'
@@ -175,52 +181,4 @@ main_menu:
   - title: 'About'
     url: '#'
     in_active_trail: false
-    below:
-      - title: 'Culture and Mission'
-        url: '#'
-        in_active_trail: false
-        below:
-          - title: 'Careers'
-            url: '#'
-            in_active_trail: false
-            below: false
-      - title: 'Direct from the Dean'
-        url: '#'
-        in_active_trail: false
-        below:
-          - title: 'Flexwork at DGSOM'
-            url: '#'
-            in_active_trail: false
-            below: false
-      - title: 'History and Awards'
-        url: '#'
-        in_active_trail: false
-        below:
-          - title: '70th Anniversary'
-            url: '#'
-            in_active_trail: false
-            below: false
-      - title: 'Leadership'
-        url: '#'
-        in_active_trail: false
-        below:
-          - title: 'Academic Leadership'
-            url: '#'
-            in_active_trail: false
-            below: false
-      - title: 'News'
-        url: '#'
-        in_active_trail: false
-        below:
-          - title: 'Social Media'
-            url: '#'
-            in_active_trail: false
-            below: false
-      - title: 'Plan Your Visit'
-        url: '#'
-        in_active_trail: false
-        below:
-          - title: 'COVID-19 Information'
-            url: '#'
-            in_active_trail: false
-            below: false
+    below: false
