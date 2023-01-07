@@ -392,7 +392,7 @@
       }
 
       &:hover {
-        color: var(--menu-main-link-color);
+        color: hsl(var(--ucla-blue));
 
         .menu__link-inner {
           &::after {
@@ -420,6 +420,12 @@
             width: calc(100% + 1.125rem);
           }
         }
+      }
+    }
+
+    .menu__link-inner {
+      &::after {
+        border-top-color: hsl(var(--ucla-blue));
       }
     }
 
