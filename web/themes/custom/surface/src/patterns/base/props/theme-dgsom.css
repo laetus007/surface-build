@@ -49,20 +49,24 @@
   /* Menu toggle */
   --menu-toggle-icon-color: hsl(var(--midnight-joshua-tree));
 
-  /* Menu Main */
-  --menu-main-link-color: hsl(var(--midnight-joshua-tree));
-  --menu-main-link-font-size-mobile: var(--font-size-6);
-  --menu-main-link-font-weight-mobile: var(--font-weight-500);
-  --menu-main-link-letterspacing-mobile: var(--font-letterspacing-0);
-  --menu-main-link-lineheight-mobile: var(--font-lineheight-2);
-  --menu-main-link-font-size-desktop: var(--font-size-3);
-  --menu-main-link-font-weight-desktop: var(--font-weight-500);
-  --menu-main-link-letterspacing-desktop: var(--font-letterspacing-0);
-  --menu-main-link-lineheight-desktop: var(--font-lineheight-4);
-
   /* Menu caret */
   --menu-caret-border-bottom: solid 10px hsl(var(--ucla-blue));
 
-  /* Menu Main - Level 2 */
-  --menu-main-level-2-border-top: solid 9px hsl(var(--ucla-blue));
+  /* Menu Main level 2 */
+  --menu-main-level-2-border-left: solid 18px hsl(var(--ucla-blue));
+  --menu-main-level-2-border-top: solid hsl(var(--ucla-blue)) 9px;
+
+  /* Menu link inner */
+  --menu-main-link-inner-border-top: solid 5px hsl(var(--ucla-blue));
+
+  /* Menu link level 1 */
+  --menu-main-link-level-1-color: hsl(var(--midnight-joshua-tree));
+  --menu-main-link-level-1-font-size-mobile: var(--font-size-6);
+  --menu-main-link-level-1-font-size-desktop: var(--font-size-3);
+  --menu-main-link-level-1-font-weight-mobile: var(--font-weight-500);
+  --menu-main-link-level-1-font-weight-desktop: var(--font-weight-500);
+  --menu-main-link-level-1-letterspacing-mobile: var(--font-letterspacing-0);
+  --menu-main-link-level-1-lineheight-mobile: var(--font-lineheight-2);
+  --menu-main-link-level-1-letterspacing-desktop: var(--font-letterspacing-0);
+  --menu-main-link-level-1-lineheight-desktop: var(--font-lineheight-4);
 }
