@@ -1,4 +1,4 @@
 ---
-logo: '/dist/images/logo.svg'
+logo: '../../dist/images/logo.svg'
 data_menu:  'default'
 is_demo: true
