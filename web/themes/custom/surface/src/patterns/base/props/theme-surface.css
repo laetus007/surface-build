@@ -7,6 +7,10 @@
   /* Page */
   --page-background-color: hsl(var(--white));
 
+  /* Site header */
+  --site-header-background-color: hsl(var(--white));
+  --site-header-box-shadow: -36px 1px 36px hsl(var(--black) / 8%);
+
   /* Node preview */
   --node-preview-background-color: hsl(var(--white));
 

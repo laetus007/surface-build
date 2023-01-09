@@ -4,50 +4,66 @@
  */
 
 .site-header {
-  background-color: hsl(var(--white));
-  box-shadow: -36px 1px 36px hsla(0, 0%, 0%, 8%);
+  background-color: var(--site-header-background-color);
+  box-shadow: var(--site-header-box-shadow);
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: -70px;
+  top: 0;
   width: 100%;
   z-index: var(--layer-1);
 
   /* Take into account pattern lab */
   .pl & {
     position: relative;
-    top: 0;
   }
 
-  /* Take into account no alert */
-  [data-alert="false"] & {
-    top: 0;
-  }
-
-  /* Take into account logged in user and no alert */
-  [data-alert="false"].gin--vertical-toolbar & {
+  /* Take into account logged in user */
+  .gin--vertical-toolbar & {
     top: 87px;
 
     @media (--toolbar) {
       top: 60px;
     }
   }
+}
 
-  /* Take into account logged in user and alert */
-  [data-alert="true"].gin--vertical-toolbar & {
-    top: 18px;
-
-    @media (--toolbar) {
-      top: -9px;
-    }
+/* Take into account site alert */
+[data-alert="true"] {
+  .site-header {
+    top: -70px;
   }
 
-  /* Take into account logged in user and node preview */
-  [data-once="node-preview"] & {
-    top: 18px;
+  /* Take into account logged in user */
+  .gin--vertical-toolbar {
+    .site-header {
+      top: 18px;
+
+      @media (--toolbar) {
+        top: -9px;
+      }
+    }
+  }
+}
+
+/* Take into account node preview */
+[data-once="node-preview"] {
+  .site-header {
+    top: 109px;
 
     @media (--toolbar) {
-      top: -10px;
+      top: 70px;
+    }
+  }
+}
+
+/* Take into account alert and node preview */
+[data-alert="true"][data-once="node-preview"] {
+  .site-header {
+    top: 40px;
+
+    @media (--toolbar) {
+      top: 0;
     }
   }
 }

@@ -33,9 +33,9 @@
   }
 }
 
-.l-grid--narrow,
-.l-grid--narrow > *,
-.l-grid--medium > * {
+.grid--narrow,
+.grid--narrow > *,
+.grid--medium > * {
   & .entity-moderation-form {
     margin-inline-start: 0;
     width: 100%;

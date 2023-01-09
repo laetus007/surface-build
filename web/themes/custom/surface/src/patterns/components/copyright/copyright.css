@@ -6,10 +6,12 @@
 .copyright {
   color: hsl(var(--silver-screen));
   display: flex;
+  grid-column: 1 / 7;
   order: 1;
   text-transform: uppercase;
 
   @media (--xl) {
+    grid-column: 1 / 6;
     order: 0;
   }
 }
