@@ -31,6 +31,7 @@
   font-size: var(--site-alert-font-size);
   line-height: var(--site-alert-lineheight);
   overflow: hidden;
+  padding-block-start: var(--size-05);
 
   a {
     color: var(--site-alert-link-color);

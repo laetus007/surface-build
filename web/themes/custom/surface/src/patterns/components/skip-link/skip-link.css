@@ -6,7 +6,7 @@
 .skip-link {
   align-items: center;
   background-color: hsl(var(--gray-9));
-  color: var(--text-light);
+  color: hsl(var(--white));
   display: flex;
   outline: none;
   padding-block: var(--size-1);

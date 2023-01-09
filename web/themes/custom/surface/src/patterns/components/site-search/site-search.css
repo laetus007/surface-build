@@ -4,7 +4,7 @@
  */
 
 .site-search {
-  background-color: hsl(var(--gray-9));
+  background-color: var(--site-search-background-color);
   display: block;
   height: var(--size-18);
   max-height: 0;
@@ -43,14 +43,14 @@
 
 .site-search__heading {
   h2 {
-    font-size: var(--font-size-11);
-    font-weight: var(--font-weight-400);
+    font-size: var(--site-search-heading-font-size);
+    font-weight: var(--site-search-heading-font-weight);
     margin-block: 0;
   }
 
   span {
     display: block;
-    font-size: var(--font-size-2);
+    font-size: var(--site-search-heading-span-font-size);
     margin-block-end: var(--size-2);
   }
 }
@@ -64,13 +64,13 @@
 
 .site-search__links {
   h3 {
-    font-size: var(--font-size-5);
+    font-size: var(--site-search-links-font-size);
   }
 }
 
 /* Search modal */
 .site-search--modal {
-  background-color: var(--bg-light);
+  background-color: var(--site-search-modal-background-color);
   height: 100vh;
   left: 0;
   max-width: 100%;

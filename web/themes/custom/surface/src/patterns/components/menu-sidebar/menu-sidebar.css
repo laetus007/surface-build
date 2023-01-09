@@ -15,7 +15,7 @@
   }
 
   .menu__link {
-    color: var(--text-midnight-joshua-tree);
+    color: hsl(var(--midnight-joshua-tree));
     display: flex;
     flex-basis: calc(100% - 32px);
     font-size: var(--font-size-2);
@@ -24,14 +24,14 @@
     text-decoration: none;
 
     &:hover {
-      color: var(--text-midnight-joshua-tree);
+      color: hsl(var(--midnight-joshua-tree));
     }
   }
 }
 
 /* Sidebar menu level 2 */
 .menu-sidebar--level-2 {
-  border-left: solid 8px var(--bg-midnight-joshua-tree);
+  border-left: solid 8px hsl(var(--midnight-joshua-tree));
   flex-basis: 100%;
   max-height: 0;
   opacity: 0;
@@ -53,19 +53,19 @@
   }
 
   .menu__link {
-    color: var(--text-ucla-blue);
+    color: hsl(var(--ucla-blue));
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-700);
 
     &:hover {
-      color: var(--text-ucla-blue);
+      color: hsl(var(--ucla-blue));
     }
   }
 }
 
 /* Sidebar menu level 3 */
 .menu-sidebar--level-3 {
-  border-left: solid 4px var(--bg-ucla-blue);
+  border-left: solid 4px hsl(var(--ucla-blue));
   flex-basis: 100%;
   max-height: 0;
   opacity: 0;
@@ -80,19 +80,19 @@
   }
 
   .menu__link {
-    color: var(--text-malibu-dolphin);
+    color: hsl(var(--malibu-dolphin));
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-700);
 
     &:hover {
-      color: var(--text-malibu-dolphin);
+      color: hsl(var(--malibu-dolphin));
     }
   }
 }
 
 /* Sidebar menu level 4 */
 .menu-sidebar--level-4 {
-  border-left: solid 4px var(--bg-malibu-dolphin);
+  border-left: solid 4px hsl(var(--malibu-dolphin));
   flex-basis: 100%;
   max-height: 0;
   opacity: 0;
@@ -107,12 +107,12 @@
   }
 
   .menu__link {
-    color: var(--text-malibu-dolphin-light);
+    color: hsl(var(--malibu-dolphin));
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-700);
 
     &:hover {
-      color: var(--text-malibu-dolphin-light);
+      color: hsl(var(--malibu-dolphin));
     }
   }
 }

@@ -4,7 +4,7 @@
  */
 
 .node-preview-container {
-  background: var(--bg-light);
+  background: var(--node-preview-background-color);
   height: 70px;
   opacity: 1;
 

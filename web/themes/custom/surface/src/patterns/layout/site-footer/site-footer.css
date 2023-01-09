@@ -4,8 +4,8 @@
  */
 
 .site-footer {
-  background-color: var(--bg-midnight-joshua-tree);
-  color: var(--text-light);
+  background-color: hsl(var(--midnight-joshua-tree));
+  color: hsl(var(--white));
   padding-block-end: var(--size-4);
   padding-block-start: var(--size-10);
   position: relative;

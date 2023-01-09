@@ -20,7 +20,7 @@
   }
 
   .menu__link {
-    color: var(--text-silver-screen);
+    color: hsl(var(--silver-screen));
 
     svg {
       inline-size: var(--size-4);

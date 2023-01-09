@@ -4,12 +4,12 @@
  */
 
 .site-primary {
-  background-color: var(--bg-light);
+  background-color: var(--site-primary-background-color);
 }
 
 .site-primary__content {
   align-items: center;
-  background-color: var(--bg-light);
+  background-color: var(--site-primary-content-background-color);
   display: flex;
   min-height: 92px;
   justify-content: space-between;

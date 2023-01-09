@@ -23,6 +23,6 @@
   }
 
   .menu__link {
-    color: var(--text-silver-screen);
+    color: hsl(var(--silver-screen));
   }
 }

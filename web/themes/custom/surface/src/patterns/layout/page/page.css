@@ -4,7 +4,7 @@
  */
 
 .page {
-  background: var(--bg-light);
+  background: var(--page-background-color);
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;

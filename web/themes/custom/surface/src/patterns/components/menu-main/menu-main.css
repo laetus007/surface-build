@@ -135,7 +135,7 @@
   }
 
   &:hover {
-    color: hsl(var(--ucla-blue));
+    color: var(--menu-main-link-level-1-hover-color);
 
     .menu__link-inner {
       &::after {
@@ -153,7 +153,7 @@
     &::before {
       @media (--xl) {
         border-radius: 0.25rem;
-        border: solid 2px hsl(var(--midnight-joshua-tree));
+        border: var(--menu-main-link-level-1-border);
         content: "";
         height: 54px;
         left: 50%;
@@ -168,14 +168,14 @@
 
 /* Menu link level two */
 .menu__link--level-2 {
-  color: hsl(var(--midnight-joshua-tree));
-  font-size: var(--font-size-1);
-  font-weight: var(--font-weight-400);
-  line-height: var(--font-lineheight-1);
+  color: var(--menu-main-link-level-2-color);
+  font-size: var(--menu-main-link-level-2-font-size);
+  font-weight: var(--menu-main-link-level-2-font-weight);
+  line-height: var(--menu-main-link-level-2-lineheight);
   text-decoration: none;
 
   &:hover {
-    color: hsl(var(--midnight-joshua-tree));
+    color: var(--menu-main-link-level-2-hover-color);
 
     .menu__link-inner {
       &::after {
@@ -187,14 +187,14 @@
 
 /* Menu link level three */
 .menu__link--level-3 {
-  color: hsl(var(--malibu-dolphin));
-  font-size: var(--font-size-0);
-  font-weight: var(--font-weight-400);
-  line-height: var(--font-lineheight-1);
+  color: var(--menu-main-link-level-3-color);
+  font-size: var(--menu-main-link-level-3-font-size);
+  font-weight: var(--menu-main-link-level-3-font-weight);
+  line-height: var(--menu-main-link-level-3-lineheight);
   text-decoration: none;
 
   &:hover {
-    color: hsl(var(--malibu-dolphin));
+    color: var(--menu-main-link-level-3-hover-color);
 
     .menu__link-inner {
       &::after {
@@ -261,7 +261,7 @@
 
     .is-active-mouseover-event {
       .menu__link--level-1 {
-        color: hsl(var(--ucla-blue));
+        color: var(--menu-main-dropdown-active-color);
       }
     }
   }
@@ -296,7 +296,7 @@
       }
 
       &::after {
-        border-top-color: hsl(var(--midnight-joshua-tree));
+        border-top-color: var(--menu-main-dropdown-border-top-color);
         border-top-width: 3px;
         transform-origin: left;
       }
@@ -338,7 +338,7 @@
 
     .is-active-mouseover-event {
       .menu__link--level-1 {
-        color: hsl(var(--ucla-blue));
+        color: var(--menu-main-mega-level-1-active-color);
       }
     }
 
@@ -368,7 +368,7 @@
 
     .menu__link {
       display: inline-block;
-      font-weight: var(--font-weight-600);
+      font-weight: var(--menu-main-mega-level-2-font-weight);
       margin-block-end: 4px;
     }
 
@@ -378,7 +378,7 @@
       }
 
       &::after {
-        border-top-color: hsl(var(--midnight-joshua-tree));
+        border-top-color: var(--menu-main-mega-level-2-border-top-color);
         border-top-width: 3px;
         transform-origin: left;
       }
@@ -403,7 +403,7 @@
       padding-block: 4px;
 
       &::after {
-        border-top-color: hsl(var(--malibu-dolphin));
+        border-top-color: var(--menu-main-mega-level-3-border-top-color);
         border-top-width: 2px;
       }
     }

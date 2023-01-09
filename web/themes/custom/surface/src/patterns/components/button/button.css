@@ -68,7 +68,7 @@
 
   &:active {
     background-color: hsl(var(--blue-9));
-    color: var(--text-light);
+    color: hsl(var(--white));
   }
 }
 

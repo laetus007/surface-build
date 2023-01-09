@@ -34,7 +34,7 @@
 
     &::before,
     &::after {
-      border-top: solid 3px var(--bg-midnight-joshua-tree);
+      border-top: solid 3px hsl(var(--midnight-joshua-tree));
       content: "";
       height: 0;
       left: 50%;
