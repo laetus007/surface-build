@@ -2,7 +2,7 @@
 
 ((Drupal) => {
   const isDesktopNav = Drupal.surface.isDesktopNav;
-  const secondLevelNavMenus = document.querySelectorAll('[data-drupal-selector="menu__item--has-children"]');
+  const secondLevelNavMenus = document.querySelectorAll('.menu-main [data-drupal-selector="menu__item--has-children"]');
 
   function toggleSubNav(topLevelMenuItem, toState) {
     const buttonSelector = '[data-drupal-selector="menu-toggle"]';

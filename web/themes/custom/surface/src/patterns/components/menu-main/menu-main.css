@@ -3,6 +3,38 @@
  * Main menu styling.
  */
 
+.menu-main {
+  .menu__link-inner {
+    align-items: center;
+    display: inline-flex;
+    padding-block: var(--size-1);
+    position: relative;
+
+    @media (--xl) {
+      padding-block: var(--size-4);
+      padding-inline: 0;
+    }
+
+    &::after {
+      border-top: var(--menu-main-link-inner-border-top);
+      bottom: 0;
+      content: "";
+      height: 0;
+      left: 0;
+      position: absolute;
+      transform-origin: left;
+      transform: scaleX(0);
+      transition: transform 0.2s;
+      width: 100%;
+
+      @media (--xl) {
+        border-top-width: 9px;
+        transform-origin: center;
+      }
+    }
+  }
+}
+
 /* Menu Level 1 */
 .menu-main--level-1 {
   list-style-type: none;
@@ -82,37 +114,6 @@
       opacity: 1;
       transform: translate(-50%, 0);
       visibility: visible;
-    }
-  }
-}
-
-/* Menu link underline effect */
-.menu__link-inner {
-  align-items: center;
-  display: inline-flex;
-  padding-block: var(--size-1);
-  position: relative;
-
-  @media (--xl) {
-    padding-block: var(--size-4);
-    padding-inline: 0;
-  }
-
-  &::after {
-    border-top: var(--menu-main-link-inner-border-top);
-    bottom: 0;
-    content: "";
-    height: 0;
-    left: 0;
-    position: absolute;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition: transform 0.2s;
-    width: 100%;
-
-    @media (--xl) {
-      border-top-width: 9px;
-      transform-origin: center;
     }
   }
 }

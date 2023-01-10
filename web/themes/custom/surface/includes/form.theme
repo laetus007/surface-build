@@ -22,6 +22,18 @@ use Drupal\views\Form\ViewsForm;
 // use Drupal\views\ViewExecutable;
 // use Drupal\views_ui\Form\Ajax\ViewsFormInterface;
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function surface_form_layout_paragraphs_component_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (isset($form['field_sf_menu'])) {
+    $is_main = $form["field_sf_menu"]["widget"][0]["settings"]["style"]["suggestion"]["#default_value"];
+    if ($is_main === "main") {
+      $form["field_sf_menu"]["widget"][0]["settings"]["style"]["suggestion"]["#default_value"] = "sidebar";
+    }
+  }
+}
+
  /**
  * Implements hook_theme_suggestions_HOOK_alter() for form templates.
  */

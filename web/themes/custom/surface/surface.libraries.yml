@@ -6,9 +6,7 @@ global:
     layout:
       dist/css/container.css: {}
       dist/css/block.css: {}
-      dist/css/site-branding.css: {}
       dist/css/grid.css: {}
-      dist/css/layout-footer.css: {}
       dist/css/main.css: {}
       dist/css/page.css: {}
       dist/css/region.css: {}
@@ -16,7 +14,6 @@ global:
     component:
       dist/css/breadcrumb.css: {}
       dist/css/embedded-media.css: {}
-      dist/css/site-footer.css: {}
       dist/css/button.css: {}
       dist/css/container-inline.module.css: {}
       dist/css/fieldset.css: {}
@@ -28,15 +25,10 @@ global:
       dist/css/form-item-upload.css: {}
       dist/css/form-text.css: {}
       dist/css/form-select.css: {}
-      dist/css/mobile-button.css: {}
       dist/css/links.css: {}
       dist/css/node.css: {}
       dist/css/node-teaser.css: {}
       dist/css/page-title.css: {}
-      dist/css/site-header.css: {}
-      dist/css/site-secondary.css: {}
-      dist/css/site-primary.css: {}
-      dist/css/site-navigation.css: {}
       dist/css/skip-link.css: {}
       dist/css/pager.css: {}
       dist/css/table.css: {}
@@ -50,14 +42,8 @@ global:
       dist/css/horizontal-toolbar.css: {}
   js:
     dist/js/form-boolean.js: {}
-    dist/js/menu-utils.js: {}
   dependencies:
-    - core/drupal.element.closest
-    - core/drupal.element.matches
-    - core/drupal.nodelist.foreach
     - core/drupal
-    - core/once
-    - core/tabbable
 
 cke-dialog:
   css:
@@ -158,27 +144,12 @@ messages:
   js:
     dist/js/messages.js: {}
     dist/js/message.theme.js: {}
-  dependencies:
-    - core/drupal.array.includes
-
-menu-main:
-  css:
-    component:
-      dist/css/menu-main.css: {}
-      dist/css/menu-toggle.css: {}
-  js:
-    dist/js/menu-main.js: {}
-    dist/js/menu-main-second-level.js: {}
-
-menu-secondary:
-  css:
-    component:
-      dist/css/menu-secondary.css: {}
 
 menu-sidebar:
   css:
     component:
       dist/css/menu-sidebar.css: {}
+      dist/css/sidebar-toggle.css: {}
   js:
     dist/js/menu-sidebar.js: {}
 
@@ -187,32 +158,10 @@ menu-quicklinks:
     component:
       dist/css/menu-quicklinks.css: {}
 
-menu-footer:
-  css:
-    component:
-      dist/css/menu-footer.css: {}
-
-menu-utility:
-  css:
-    component:
-      dist/css/menu-utility.css: {}
-
-menu-social:
-  css:
-    component:
-      dist/css/menu-social.css: {}
-
 progress:
   css:
     component:
       dist/css/progress.css: {}
-
-search-button:
-  css:
-    component:
-      dist/css/search-button.css: {}
-  js:
-    dist/js/search-button.js: {}
 
 search-block-form:
   css:
@@ -234,10 +183,37 @@ settings:
     theme:
       dist/css/settings.css: {}
 
-site-alert:
+site-footer:
   css:
     component:
+      dist/css/site-footer.css: {}
+      dist/css/menu-footer.css: {}
+      dist/css/menu-social.css: {}
+      dist/css/copyright.css: {}
+      dist/css/menu-utility.css: {}
+
+site-header:
+  css:
+    component:
+      dist/css/site-header.css: {}
       dist/css/site-alert.css: {}
+      dist/css/site-secondary.css: {}
+      dist/css/menu-secondary.css: {}
+      dist/css/search-button.css: {}
+      dist/css/site-primary.css: {}
+      dist/css/site-branding.css: {}
+      dist/css/site-navigation.css: {}
+      dist/css/mobile-button.css: {}
+      dist/css/menu-main.css: {}
+      dist/css/menu-toggle.css: {}
+  js:
+    dist/js/menu-utils.js: {}
+    dist/js/menu-main.js: {}
+    dist/js/menu-main-second-level.js: {}
+    dist/js/search-button.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
 
 tabs:
   css:
@@ -245,6 +221,9 @@ tabs:
       dist/css/tabs.css: {}
   js:
     dist/js/tabs.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
 
 tags:
   css:

@@ -15,6 +15,12 @@
   margin-block-end: var(--size-2);
 }
 
+.site-footer__utility {
+  @media (--xl) {
+    align-items: center;
+  }
+}
+
 .site-footer__branding {
   grid-column: 1 / 7;
   margin-block-end: var(--size-3);

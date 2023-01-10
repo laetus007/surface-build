@@ -125,3 +125,7 @@ details.details {
     }
   }
 }
+
+details.details[data-drupal-selector="edit-field-sf-menu-0-settings-style"] {
+  display: none;
+}
