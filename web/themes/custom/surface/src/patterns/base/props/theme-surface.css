@@ -127,7 +127,9 @@
 
   /* Site footer */
   --site-footer-background-color: hsl(var(--midnight-joshua-tree));
+  --site-footer-clip-path: none;
   --site-footer-color: hsl(var(--white));
+  --site-footer-padding-block-start: var(--size-10);
 
   /* Menu social */
   --menu-social-link-color: hsl(var(--silver-screen));

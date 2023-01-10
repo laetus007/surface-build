@@ -11,6 +11,10 @@
   /* Page */
   --page-background-color: hsl(var(--white));
 
+  /* Site header */
+  --site-header-background-color: hsl(var(--white));
+  --site-header-box-shadow: -36px 1px 36px hsl(var(--black) / 8%);
+
   /* Node preview */
   --node-preview-background-color: hsl(var(--white));
 
@@ -123,8 +127,10 @@
   --menu-quicklinks-hover-background-color: hsl(var(--silver-screen) / 30%);
 
   /* Site footer */
-  --site-footer-background-color: hsl(var(--midnight-joshua-tree));
+  --site-footer-background-color: hsl(var(--ucla-blue));
+  --site-footer-clip-path: polygon(0 80px, 100% 0, 100% 100%, 0 100%);
   --site-footer-color: hsl(var(--white));
+  --site-footer-padding-block-start: var(--size-15);
 
   /* Menu social */
   --menu-social-link-color: hsl(var(--silver-screen));

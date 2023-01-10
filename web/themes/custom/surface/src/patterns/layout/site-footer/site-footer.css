@@ -6,8 +6,9 @@
 .site-footer {
   background-color: var(--site-footer-background-color);
   color: var(--site-footer-color);
+  clip-path: var(--site-footer-clip-path);
   padding-block-end: var(--size-4);
-  padding-block-start: var(--size-10);
+  padding-block-start: var(--site-footer-padding-block-start);
   position: relative;
 }
 

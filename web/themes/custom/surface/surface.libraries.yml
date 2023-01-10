@@ -11,6 +11,7 @@ global:
       dist/css/page.css: {}
       dist/css/region.css: {}
       dist/css/view.css: {}
+      dist/css/layout-backgrounds.css: {}
     component:
       dist/css/breadcrumb.css: {}
       dist/css/embedded-media.css: {}

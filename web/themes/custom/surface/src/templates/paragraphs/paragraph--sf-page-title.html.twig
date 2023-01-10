@@ -1,0 +1,20 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'page-title'
+  ]
+%}
+
+<style>
+  [data-type="sf_page_title"] h1:empty::before,
+  .paragraph--type--sf-page-title h1:empty::before {
+    content: "Page title";
+  }
+</style>
+
+<div{{ attributes.addClass(classes) }}>
+  <h1>{{ drupal_title() }}</h1>
+</div>
