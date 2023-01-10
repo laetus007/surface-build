@@ -20,10 +20,10 @@
   }
 
   .menu__link {
-    color: hsl(var(--silver-screen));
+    color: var(--menu-social-link-color);
 
     svg {
-      inline-size: var(--size-4);
+      inline-size: var(--menu-social-inline-size);
     }
   }
 }

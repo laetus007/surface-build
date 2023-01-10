@@ -40,12 +40,12 @@
 
 .tabs__link {
   align-items: center;
-  background-color: hsl(var(--gray-2));
-  border: 1px solid hsl(var(--gray-3));
-  color: hsl(var(--gray-9));
+  background-color: var(--tabs-link-background-color);
+  border: var(--tabs-link-border);
+  color: var(--tabs-link-color);
   display: flex;
   flex-grow: 1;
-  font-size: var(--font-size-0);
+  font-size: var(--tabs-link-font-size);
   height: var(--size-7);
   letter-spacing: 1px;
   padding-block: 0;
@@ -55,21 +55,21 @@
 
   &:focus {
     outline-offset: -3px;
-    outline: solid 3px hsl(var(--blue-5));
+    outline: var(--tabs-link-outline);
     position: relative;
   }
 
   &:hover {
-    background-color: hsl(var(--gray-1));
+    background-color: var(--tabs-link-hover-background-color);
   }
 
   &.is-active {
-    color: hsl(var(--gray-9));
-    font-weight: var(--font-weight-600);
+    color: var(--tabs-link-active-color);
+    font-weight: var(--tabs-link-active-font-weight);
     position: relative;
 
     &::after {
-      border-inline-start: 6px solid hsl(var(--blue-5));
+      border-inline-start: var(--tabs-link-active-border-inline);
       content: "";
       height: calc(100% + 2px);
       inset-block-end: -1px;
@@ -77,7 +77,7 @@
       position: absolute;
 
       @media (--md) {
-        border-block-start: 6px solid hsl(var(--blue-5));
+        border-block-start: var(--tabs-link-active-border-block);
         border-inline-start: 0;
         height: auto;
         inset-inline-start: 0;
@@ -89,8 +89,8 @@
 
 .tabs__trigger {
   align-items: center;
-  background-color: hsl(var(--gray-2));
-  border: solid 1px hsl(var(--gray-1));
+  background-color: var(--tabs-trigger-background-color);
+  border: var(--tabs-trigger-border);
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -100,12 +100,12 @@
   width: var(--size-7);
 
   &:hover {
-    background-color: hsl(var(--gray-1));
+    background-color: var(--tabs-trigger-hover-background-color);
   }
 
   &:focus {
     position: relative;
-    border-color: hsl(var(--blue-5));
+    border-color: var(--tabs-trigger-hover-border-color);
     outline: none;
   }
 
@@ -122,7 +122,7 @@
   width: var(--size-2);
 
   & > span {
-    border-block-start: solid 2px hsl(var(--blue-5));
+    border-block-start: var(--tabs-trigger-icon-border-block);
     display: block;
     inset-inline-start: 0;
     position: absolute;

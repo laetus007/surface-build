@@ -4,13 +4,13 @@
  */
 
 .breadcrumb {
-  font-size: var(--font-size-0);
-  font-weight: var(--font-weight-700);
-  line-height: var(--font-lineheight-2);
+  font-size: var(--breadcrumb-font-size);
+  font-weight: var(--breadcrumb-font-weight);
+  line-height: var(--breadcrumb-lineheight);
   position: relative;
 
   &::after {
-    background: linear-gradient(to left, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 100%) 100%);
+    background: var(--breadcrumb-after-background);
     content: "";
     height: var(--size-2);
     inset-block-start: 0;
@@ -59,8 +59,8 @@
   display: inline-block;
 
   &:nth-child(n+2)::before {
-    border-block-start: 2px solid hsl(var(--gray-6));
-    border-inline-end: 2px solid hsl(var(--gray-6));
+    border-block-start: var(--breadcrumb-item-border);
+    border-inline-end: var(--breadcrumb-item-border);
     content: "";
     display: inline-block;
     height: 8px;
@@ -79,7 +79,7 @@
 }
 
 .breadcrumb__link {
-  color: hsl(var(--blue-9));
+  color: var(--breadcrumb-link-color);
   text-decoration: none;
 
   &:hover,

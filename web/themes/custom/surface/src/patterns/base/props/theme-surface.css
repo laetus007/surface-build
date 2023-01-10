@@ -124,4 +124,40 @@
   --menu-quicklinks-hover-color: var(--midnight-joshua-tree);
   --menu-quicklinks-hover-border-color: hsl(var(--silver-screen) / 30%);
   --menu-quicklinks-hover-background-color: hsl(var(--silver-screen) / 30%);
+
+  /* Site footer */
+  --site-footer-background-color: hsl(var(--midnight-joshua-tree));
+  --site-footer-color: hsl(var(--white));
+
+  /* Menu social */
+  --menu-social-link-color: hsl(var(--silver-screen));
+  --menu-social-inline-size: var(--size-4);
+
+  /* Site credit */
+  --site-credit-color: hsl(var(--silver-screen));
+
+  /* Tabs link */
+  --tabs-link-background-color: hsl(var(--gray-2));
+  --tabs-link-border: 1px solid hsl(var(--gray-3));
+  --tabs-link-color: hsl(var(--gray-9));
+  --tabs-link-font-size: var(--font-size-0);
+  --tabs-link-outline: 3px solid hsl(var(--ucla-blue));
+  --tabs-link-hover-background-color: hsl(var(--gray-1));
+  --tabs-link-active-color: hsl(var(--gray-9));
+  --tabs-link-active-font-weight: var(--font-weight-600);
+  --tabs-link-active-border-inline: 6px solid hsl(var(--ucla-blue));
+  --tabs-link-active-border-block: 6px solid hsl(var(--ucla-blue));
+  --tabs-trigger-background-color: hsl(var(--gray-2));
+  --tabs-trigger-border: 1px solid hsl(var(--gray-1));
+  --tabs-trigger-hover-background-color: hsl(var(--gray-1));
+  --tabs-trigger-hover-border-color: hsl(var(--ucla-blue));
+  --tabs-trigger-icon-border-block: 2px solid hsl(var(--ucla-blue));
+
+  /* Breadcrumb */
+  --breadcrumb-font-size: var(--font-size-0);
+  --breadcrumb-font-weight: var(--font-weight-700);
+  --breadcrumb-lineheight: var(--font-lineheight-2);
+  --breadcrumb-after-background: linear-gradient(to left, hsl(var(--white)) 0%, hsl(var(--white)) 100%);
+  --breadcrumb-item-border: 2px solid hsl(var(--gray-6));
+  --breadcrumb-link-color: hsl(var(--ucla-blue));
 }

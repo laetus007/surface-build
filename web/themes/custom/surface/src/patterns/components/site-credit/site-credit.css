@@ -6,6 +6,6 @@
 .site-credit {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  color: hsl(var(--silver-screen));
+  color: var(--site-credit-color);
   display: -webkit-box;
 }

@@ -49,3 +49,14 @@
     grid-column: 3 / 11;
   }
 }
+
+/* Full Grid */
+.grid--full,
+.grid--full > * {
+  grid-column: 1 / 7;
+  width: 100%;
+
+  @media (--md) {
+    grid-column: 1 / 13;
+  }
+}
