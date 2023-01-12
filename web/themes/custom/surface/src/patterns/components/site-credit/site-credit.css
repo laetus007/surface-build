@@ -8,4 +8,8 @@
   -webkit-line-clamp: 3;
   color: var(--site-credit-color);
   display: -webkit-box;
+
+  > p {
+    font-size: var(--site-credit-font-size);
+  }
 }

@@ -26,8 +26,8 @@
   }
 
   h4 {
-    color: hsl(var(--white));
-    font-size: var(--font-size-3);
+    color: var(--menu-footer-h4-color);
+    font-size: var(--menu-footer-h4-font-size);
     margin-block-end: var(--size-1);
     margin-block-start: 0;
   }
@@ -44,7 +44,8 @@
     }
 
     .menu__link {
-      color: hsl(var(--silver-screen));
+      color: var(--menu-footer-subnav-link-color);
+      font-size: var(--menu-footer-subnav-link-font-size);
       text-decoration: none;
     }
   }

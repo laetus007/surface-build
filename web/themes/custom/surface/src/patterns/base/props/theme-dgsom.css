@@ -137,7 +137,22 @@
   --menu-social-inline-size: var(--size-4);
 
   /* Site credit */
-  --site-credit-color: hsl(var(--silver-screen));
+  --site-credit-color: hsl(var(--white));
+  --site-credit-font-size: var(--font-size-2);
+
+  /* Menu footer */
+  --menu-footer-h4-color: hsl(var(--white));
+  --menu-footer-h4-font-size: var(--font-size-4);
+  --menu-footer-subnav-link-color: hsl(var(--white));
+  --menu-footer-subnav-link-font-size: var(--font-size-2);
+
+  /* Copyright */
+  --copyright-color: hsl(var(--white));
+  --copyright-font-size: var(--font-size-1);
+
+  /* Menu utility */
+  --menu-utility-link-color: hsl(var(--white));
+  --menu-utility-link-font-size: var(--font-size-1);
 
   /* Tabs link */
   --tabs-link-background-color: hsl(var(--gray-2));

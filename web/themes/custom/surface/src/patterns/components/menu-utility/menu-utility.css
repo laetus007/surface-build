@@ -25,6 +25,7 @@
   }
 
   .menu__link {
-    color: hsl(var(--silver-screen));
+    color: var(--menu-utility-link-color);
+    font-size: var(--menu-utility-link-font-size);
   }
 }

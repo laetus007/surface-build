@@ -188,8 +188,9 @@ site-footer:
   css:
     component:
       dist/css/site-footer.css: {}
-      dist/css/menu-footer.css: {}
       dist/css/menu-social.css: {}
+      dist/css/site-credit.css: {}
+      dist/css/menu-footer.css: {}
       dist/css/copyright.css: {}
       dist/css/menu-utility.css: {}
 
