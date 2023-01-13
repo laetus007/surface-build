@@ -28,6 +28,8 @@
     {% endblock %}
 
     {% block buttons %}
+      {{ drupal_entity('block', 'gtranslate') }}
+
       {% include '@components/button/button.twig' with {
         'modifier': 'button--give',
         'url': give_url,

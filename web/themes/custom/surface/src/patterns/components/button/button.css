@@ -45,6 +45,12 @@
   &:active {
     transform: translateY(2px);
   }
+
+  &[aria-expanded="true"] {
+    &:focus::after {
+      border-color: var(--button-border-color);
+    }
+  }
 }
 
 /* Button primary */
@@ -119,5 +125,16 @@
   &:visited {
     background-color: currentcolor;
     color: currentcolor;
+  }
+}
+
+.button--transparent {
+  background-color: transparent;
+  border-color: transparent;
+  color: hsl(var(--white));
+
+  &:hover {
+    border-color: transparent;
+    color: hsl(var(--white));
   }
 }

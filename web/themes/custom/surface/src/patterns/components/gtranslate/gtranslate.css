@@ -1,0 +1,63 @@
+.gtranslate {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: fit-content;
+
+  .button {
+    svg {
+      margin-inline-end: var(--size-1);
+      width: 32px;
+    }
+  }
+}
+
+.gtranslate__container {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 38px;
+  visibility: hidden;
+  z-index: 1;
+  width: 100%;
+
+  /* translate is active */
+  &.is-active {
+    visibility: visible;
+  }
+}
+
+.gtranslate__caret {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid hsl(var(--ucla-blue));
+  border-bottom: 9px solid transparent;
+  width: 0;
+  margin-inline: auto;
+  transform: scaleY(-1);
+}
+
+.gtranslate__menu {
+  background-color: hsl(var(--white));
+  border-top: 8px solid hsl(var(--ucla-blue));
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 10%), 0 5px 10px -5px rgba(0, 0, 0, 40%);
+  border-radius: 0.5rem;
+
+  > a {
+    border-radius: 0.5rem;
+    display: block;
+    font-size: 14px;
+    padding: 12px;
+
+    &:hover {
+      background-color: hsl(var(--santa-barbara-sand));
+    }
+
+    &.gt-current-lang {
+      background-color: hsl(var(--santa-barbara-sand));
+    }
+  }
+}

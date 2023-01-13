@@ -17,11 +17,8 @@
 
         <div class="site-secondary__buttons">
           {% block buttons %}
-            {% include '@components/button/button.twig' with {
-              'modifier': 'button--give',
-              'url': '#',
-              'text': 'Give'
-            } %}
+            {% include '@components/give-button/give-button.twig' %}
+            {% include '@components/gtranslate/gtranslate.twig' %}
             {% include '@components/search-button/search-button.twig' with {
               'is_demo': false
             } %}

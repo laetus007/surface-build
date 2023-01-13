@@ -22,7 +22,7 @@
 }
 
 .site-secondary__buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: var(--size-1);
+  align-items: center;
+  display: flex;
+  gap: var(--size-1);
 }
