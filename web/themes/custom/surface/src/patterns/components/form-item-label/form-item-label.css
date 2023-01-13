@@ -8,7 +8,7 @@
   font-family: var(--font-system);
   font-size: var(--font-size-0);
   font-weight: var(--font-weight-700);
-  line-height: var(--font-lineheight-1);
+  line-height: var(--font-line-height-1);
   margin-block: var(--size-05);
 
   &[for] {

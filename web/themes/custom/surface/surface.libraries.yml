@@ -93,6 +93,18 @@ filter.theme:
     theme:
       dist/css/filter.theme.css: {}
 
+give-button:
+  css:
+    theme:
+      dist/css/give-button.css: {}
+
+gtranslate:
+  css:
+    theme:
+      dist/css/gtranslate.css: {}
+  js:
+    dist/js/gtranslate.js: {}
+
 layout_onecol:
   css:
     layout:

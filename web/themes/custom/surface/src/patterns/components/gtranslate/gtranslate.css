@@ -9,6 +9,10 @@
       margin-inline-end: var(--size-1);
       width: 32px;
     }
+
+    span {
+      padding-block-start: var(--size-05);
+    }
   }
 }
 

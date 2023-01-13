@@ -28,17 +28,13 @@
     {% endblock %}
 
     {% block buttons %}
-      {{ drupal_entity('block', 'gtranslate') }}
-
-      {% include '@components/button/button.twig' with {
-        'modifier': 'button--give',
+      {% include '@components/give-button/give-button.twig' with {
         'url': give_url,
         'text': 'Give'
       } only %}
 
-      {% include '@components/search-button/search-button.twig' with {
-        'is_demo': false
-      } %}
+      {% include '@components/gtranslate/gtranslate.twig' only %}
+      {% include '@components/search-button/search-button.twig' only %}
     {% endblock %}
 
     {% block branding %}

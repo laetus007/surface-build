@@ -3,13 +3,9 @@
  * Blockquote element styles.
  */
 
-:root {
-  --blockquote-margin-block-start: var(--size-5);
-}
-
 :where(blockquote) {
   * + & {
-    margin-block-start: var(--blockquote-margin-block-start);
+    margin-block-start: var(--blockquote-margin-block-start, var(--size-5));
   }
 
   p {

@@ -4,6 +4,8 @@
  */
 
 .search-button {
+  padding-inline-end: 0;
+
   .is-pl & {
     color: hsl(var(--midnight-joshua-tree));
   }
@@ -11,14 +13,6 @@
   & svg {
     margin-inline-end: var(--size-1);
     width: 24px;
-  }
-
-  @media (forced-colors: active) {
-    background: ButtonFace;
-
-    & path {
-      fill: ButtonText;
-    }
   }
 
   & span {

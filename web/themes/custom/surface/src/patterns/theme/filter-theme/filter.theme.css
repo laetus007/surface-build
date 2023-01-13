@@ -21,7 +21,7 @@
 
 .filter-help {
   float: inline-end;
-  font-size: var(--font-size-00);
+  font-size: var(--font-size-sm);
   padding-block: var(--size-1);
 }
 
@@ -31,7 +31,7 @@
 
 .filter-guidelines__item {
   font-size: var(--font-size-0);
-  line-height: var(--font-lineheight-2);
+  line-height: var(--font-line-height-2);
   margin-block-start: var(--size-2);
 }
 

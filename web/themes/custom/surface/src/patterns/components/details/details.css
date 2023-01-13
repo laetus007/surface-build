@@ -25,7 +25,7 @@ details.details {
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-700);
   hyphens: auto;
-  line-height: var(--font-lineheight-1);
+  line-height: var(--font-line-height-1);
   list-style: none;
   padding-block: var(--size-1);
   padding-inline-end: var(--size-1);
@@ -102,7 +102,7 @@ details.details {
 .details__error {
   color: hsl(var(--red-9));
   font-size: var(--font-size-0);
-  line-height: var(--font-lineheight-2);
+  line-height: var(--font-line-height-2);
   margin-block-end: var(--size-1);
 }
 
@@ -110,7 +110,7 @@ details.details {
 .details__description {
   color: hsl(var(--gray-8));
   font-size: var(--font-size-0);
-  line-height: var(--font-lineheight-2);
+  line-height: var(--font-line-height-2);
   margin-block-end: var(--size-1);
 }
 

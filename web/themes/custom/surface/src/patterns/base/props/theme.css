@@ -14,7 +14,7 @@
   --button-color-hover: hsl(var(--blue-5));
   --button-font-size: var(--font-size-1);
   --button-font-weight: var(--font-weight-400);
-  --button-lineheight: var(--font-lineheight-3);
+  --button-lineheight: var(--font-line-height-3);
   --button-padding-block-end: var(--size-1);
   --button-padding-block-start: var(--size-1);
   --button-padding-inline: var(--size-2);

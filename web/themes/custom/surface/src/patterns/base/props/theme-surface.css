@@ -18,7 +18,7 @@
   --site-alert-background-color: hsl(var(--ucla-blue));
   --site-alert-color: hsl(var(--white));
   --site-alert-font-size: var(--font-size-1);
-  --site-alert-lineheight: var(--font-lineheight-3);
+  --site-alert-lineheight: var(--font-line-height-3);
   --site-alert-link-color: hsl(var(--white));
   --site-alert-link-color-hover: hsl(var(--ucla-blue));
   --site-alert-link-padding-block-start: 0;
@@ -83,26 +83,26 @@
   --menu-main-link-level-1-border: 2px solid hsl(var(--midnight-joshua-tree));
   --menu-main-link-level-1-font-size-mobile: var(--font-size-6);
   --menu-main-link-level-1-font-weight-mobile: var(--font-weight-700);
-  --menu-main-link-level-1-letterspacing-mobile: var(--font-letterspacing-0);
-  --menu-main-link-level-1-lineheight-mobile: var(--font-lineheight-2);
+  --menu-main-link-level-1-letterspacing-mobile: var(--font-letter-spacing-0);
+  --menu-main-link-level-1-lineheight-mobile: var(--font-line-height-2);
   --menu-main-link-level-1-font-weight-desktop: var(--font-weight-700);
   --menu-main-link-level-1-font-size-desktop: var(--font-size-2);
-  --menu-main-link-level-1-letterspacing-desktop: var(--font-letterspacing-0);
-  --menu-main-link-level-1-lineheight-desktop: var(--font-lineheight-4);
+  --menu-main-link-level-1-letterspacing-desktop: var(--font-letter-spacing-0);
+  --menu-main-link-level-1-lineheight-desktop: var(--font-line-height-4);
 
   /* Menu link level 2 */
   --menu-main-link-level-2-color: hsl(var(--midnight-joshua-tree));
   --menu-main-link-level-2-hover-color: hsl(var(--midnight-joshua-tree));
   --menu-main-link-level-2-font-size: var(--font-size-1);
   --menu-main-link-level-2-font-weight: var(--font-weight-400);
-  --menu-main-link-level-2-lineheight: var(--font-lineheight-1);
+  --menu-main-link-level-2-lineheight: var(--font-line-height-1);
 
   /* Menu link level 3 */
   --menu-main-link-level-3-color: hsl(var(--malibu-dolphin));
   --menu-main-link-level-3-hover-color: hsl(var(--malibu-dolphin));
   --menu-main-link-level-3-font-size: var(--font-size-0);
   --menu-main-link-level-3-font-weight: var(--font-weight-400);
-  --menu-main-link-level-3-lineheight: var(--font-lineheight-1);
+  --menu-main-link-level-3-lineheight: var(--font-line-height-1);
 
   /* Menu main link inner */
   --menu-main-link-inner-level-2-border-top: 5px solid hsl(var(--ucla-blue));
@@ -173,7 +173,7 @@
   /* Breadcrumb */
   --breadcrumb-font-size: var(--font-size-0);
   --breadcrumb-font-weight: var(--font-weight-700);
-  --breadcrumb-lineheight: var(--font-lineheight-2);
+  --breadcrumb-lineheight: var(--font-line-height-2);
   --breadcrumb-after-background: linear-gradient(to left, hsl(var(--white)) 0%, hsl(var(--white)) 100%);
   --breadcrumb-item-border: 2px solid hsl(var(--gray-6));
   --breadcrumb-link-color: hsl(var(--ucla-blue));

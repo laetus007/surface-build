@@ -16,8 +16,8 @@
 /* Form item description. */
 .form-item__description {
   color: hsl(var(--gray-7));
-  font-size: var(--font-size-00);
-  line-height: var(--font-lineheight-3);
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-3);
   margin-block: var(--size-1);
   max-width: 60ch;
 
@@ -30,9 +30,9 @@
 /* Error message (Inline form errors). */
 .form-item__error-message {
   color: hsl(var(--red-9));
-  font-size: var(--font-size-00);
+  font-size: var(--font-size-sm);
   font-weight: normal;
-  line-height: var(--font-lineheight-3);
+  line-height: var(--font-line-height-3);
   margin-block: var(--size-1);
 }
 
@@ -42,8 +42,8 @@
   background-repeat: no-repeat;
   background-size: var(--size-2) var(--size-2);
   color: hsl(var(--red-9));
-  font-size: var(--font-size-00);
-  line-height: var(--font-lineheight-2);
+  font-size: var(--font-size-sm);
+  line-height: var(--font-line-height-2);
   margin-block: var(--size-1);
   padding-inline-start: var(--size-3);
 }

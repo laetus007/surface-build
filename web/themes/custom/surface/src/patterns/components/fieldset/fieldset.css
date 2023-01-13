@@ -35,7 +35,7 @@
   float: left; /* Prevent sticking out of top of fieldset. */
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-700);
-  line-height: var(--font-lineheight-4);
+  line-height: var(--font-line-height-4);
   width: 100%;
 
   & + * {
@@ -80,7 +80,7 @@
 .fieldset__description {
   margin-block: var(--size-1);
   font-size: var(--font-size-0);
-  line-height: var(--font-lineheight-1);
+  line-height: var(--font-line-height-1);
 }
 
 .fieldset__description.is-disabled {
@@ -94,7 +94,7 @@
   background-size: var(--size-2) var(--size-2);
   color: hsl(var(--red-9));
   font-size: var(--font-size-0);
-  line-height: var(--font-lineheight-1);
+  line-height: var(--font-line-height-1);
   margin-block: var(--size-1);
   padding-inline-start: var(--size-3);
 

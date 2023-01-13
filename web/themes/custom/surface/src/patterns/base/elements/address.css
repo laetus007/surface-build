@@ -3,12 +3,8 @@
  * Address element styles.
  */
 
-:root {
-  --address-margin-block-end: var(--size-2);
-}
-
 :where(address) {
   font-style: normal;
   line-height: inherit;
-  margin-block-end: var(--address-margin-block-end);
+  margin-block-end: var(--address-margin-block-end, var(--size-2));
 }

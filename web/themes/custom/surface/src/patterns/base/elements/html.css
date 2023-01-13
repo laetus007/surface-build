@@ -9,7 +9,7 @@
   --caret-color: hsl(var(--blue-6));
   --text-color: hsl(var(--gray-9));
   --font-body: var(--font-sans);
-  --font-body-lineheight: var(--font-lineheight-2);
+  --font-body-lineheight: var(--font-line-height-2);
   --scroll-padding-top: 150px;
   --scrollbar-color: hsl(var(--blue-6));
 }

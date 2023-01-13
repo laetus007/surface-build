@@ -20,8 +20,8 @@
   --cite-font-family: var(--font-sans);
   --cite-font-size: var(--font-size-0);
   --cite-font-weight: var(--font-weight-600);
-  --cite-letterspacing: var(--font-letterspacing-1);
-  --cite-lineheight: var(--font-lineheight-1);
+  --cite-letter-spacing: var(--font-letter-spacing-1);
+  --cite-line-height: var(--font-line-height-1);
   --cite-padding-inline-start: var(--size-1);
   --code-background-color: hsl(var(--gray-3));
   --code-border-radius: var(--radius-2);
@@ -118,8 +118,8 @@
   font-family: var(--cite-font-family);
   font-size: var(--cite-font-size);
   font-weight: var(--cite-font-weight);
-  letter-spacing: var(--cite-letterspacing);
-  line-height: var(--cite-lineheight);
+  letter-spacing: var(--cite-letter-spacing);
+  line-height: var(--cite-line-height);
   margin: 0;
   padding-inline-start: var(--cite-padding-inline-start);
 }
