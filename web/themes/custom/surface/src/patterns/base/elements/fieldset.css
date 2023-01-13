@@ -3,13 +3,7 @@
  * Fieldset element styles.
  */
 
-:root {
-  --fieldset-border-radius: var(--radius-2);
-  --fieldset-border-size: var(--border-size-1);
-  --fieldset-border-color: hsl(var(--gray-4));
-}
-
 :where(fieldset) {
-  border-radius: var(--fieldset-border-radius);
-  border: var(--fieldset-border-size) solid var(--fieldset-border-color);
+  border-radius: var(--fieldset-border-radius, var(--radius-2));
+  border: var(--fieldset-border-size, var(--border-size-1)) solid var(--fieldset-border-color, hsl(var(--gray-4)));
 }

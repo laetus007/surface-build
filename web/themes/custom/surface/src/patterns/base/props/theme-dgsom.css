@@ -8,23 +8,10 @@
   --button-font-size: var(--font-size-2);
   --button-padding-block-end: var(--size-05);
 
-  /* Page */
-  --page-background-color: hsl(var(--white));
-
-  /* Site header */
-  --site-header-background-color: hsl(var(--white));
-  --site-header-box-shadow: -36px 1px 36px hsl(var(--black) / 8%);
-
-  /* Node preview */
-  --node-preview-background-color: hsl(var(--white));
-
   /* Site Alert */
-  --site-alert-background-color: hsl(var(--ucla-blue));
-  --site-alert-color: hsl(var(--white));
+  --site-alert-bg-color: hsl(var(--ucla-blue));
   --site-alert-font-size: var(--font-size-2);
   --site-alert-lineheight: var(--font-line-height-3);
-  --site-alert-link-color: hsl(var(--white));
-  --site-alert-link-color-hover: hsl(var(--ucla-blue));
   --site-alert-link-padding-block-start: var(--size-05);
   --site-alert-box-shadow: inset 0 -2px 0 0 hsl(var(--white));
   --site-alert-box-shadow-hover: inset 0 -2em 0 0 hsl(var(--white));

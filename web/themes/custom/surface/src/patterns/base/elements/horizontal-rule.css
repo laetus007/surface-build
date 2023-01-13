@@ -3,14 +3,8 @@
  * Horizontal rule element styles.
  */
 
-:root {
-  --hr-background-color: hsl(var(--gray-3));
-  --hr-height: var(--size-sm);
-  --hr-margin-block: var(--size-fluid-2);
-}
-
 :where(hr) {
-  background-color: var(--hr-background-color);
-  height: var(--hr-height);
-  margin-block: var(--hr-margin-block);
+  background-color: var(--hr-bg-color, hsl(var(--gray-3)));
+  height: var(--hr-height, var(--size-sm));
+  margin-block: var(--hr-margin-block, var(--size-fluid-2));
 }

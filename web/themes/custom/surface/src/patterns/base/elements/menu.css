@@ -3,12 +3,8 @@
  * Menu element styles.
  */
 
-:root {
-  --menu-gap: var(--size-3);
-}
-
 :where(menu) {
   display: flex;
-  gap: var(--menu-gap);
+  gap: var(--menu-gap, var(--size-3));
   padding-inline-start: 0;
 }

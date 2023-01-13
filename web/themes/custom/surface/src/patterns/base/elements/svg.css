@@ -3,10 +3,6 @@
  * SVG element styles.
  */
 
-:root {
-  --svg-inline-size: var(--size-10);
-}
-
 :where(svg) {
   block-size: auto;
   display: block;
@@ -15,6 +11,6 @@
   stroke: none;
 
   &:where(:not([width])) {
-    inline-size: var(--svg-inline-size);
+    inline-size: var(--svg-inline-size, var(--size-10));
   }
 }

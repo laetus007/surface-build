@@ -11,10 +11,4 @@
   padding-inline: 0;
   scrollbar-gutter: stable both-edges;
   word-wrap: break-word;
-
-  &.is-fixed {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-  }
 }

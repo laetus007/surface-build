@@ -3,24 +3,6 @@
  * Input element styles.
  */
 
-:root {
-  --input-background-color: hsl(var(--white));
-  --input-background-color-disabled: hsl(var(--gray-3));
-  --input-border-radius: var(--radius-1);
-  --input-border-size: var(--border-size-1);
-  --input-border-color: hsl(var(--gray-4));
-  --input-border-color-focus: hsl(var(--blue-5));
-  --input-border-color-error: hsl(var(--red-7));
-  --input-color: hsl(var(--gray-9));
-  --input-color-disabled: hsl(var(--gray-5));
-  --input-min-height: var(--size-6);
-  --input-min-height-small: var(--size-5);
-  --input-outline-color-focus: hsl(var(--blue-5));
-  --input-outline-color-error: hsl(var(--red-7));
-  --input-padding: 0 var(--size-2);
-  --input-file-padding-block: var(--size-105);
-}
-
 [type="color"],
 [type="date"],
 [type="datetime-local"],
@@ -37,19 +19,19 @@
 [type="week"],
 textarea {
   appearance: none;
-  background-color: var(--input-background-color);
-  border-radius: var(--input-border-radius);
-  border: var(--input-border-size) solid var(--input-border-color);
-  color: var(--input-color);
+  background-color: var(--input-bg-color, hsl(var(--white)));
+  border-radius: var(--input-border-radius, var(--radius-1));
+  border: var(--input-border-size, var(--border-size-1)) solid var(--input-border-color, hsl(var(--gray-4)));
+  color: var(--input-color, hsl(var(--gray-9)));
   font-family: inherit;
   font-size: inherit;
   max-width: 100%;
-  min-height: var(--input-min-height);
-  padding: var(--input-padding);
+  min-height: var(--input-min-height, var(--size-6));
+  padding: var(--input-padding, 0 var(--size-2));
 
   &:focus {
-    border: solid 2px var(--input-border-color-focus);
-    outline: solid 2px var(--input-outline-color-focus);
+    border: solid 2px var(--input-border-color-focus, hsl(var(--blue-5)));
+    outline: solid 2px var(--input-outline-color-focus, hsl(var(--blue-5)));
 
     @supports (outline-style: double) {
       border-width: 1px;
@@ -60,21 +42,21 @@ textarea {
   }
 
   &[disabled] {
-    background-color: var(--input-background-color-disabled));
-    color: var(--input-color-disabled);
+    background-color: var(--input-bg-color-disabled, hsl(var(--gray-3)));
+    color: var(--input-color-disabled, hsl(var(--gray-5)));
   }
 
   &.error {
-    border: solid 2px var(--input-border-color-error);
+    border: solid 2px var(--input-border-color-error, hsl(var(--red-7)));
 
     &:focus {
-      outline-color: var(--input-outline-color-error);
+      outline-color: var(--input-outline-color-error, hsl(var(--red-7)));
       outline-offset: -2px;
     }
   }
 
   &.form-element--small {
-    min-height: var(--input-min-height-small);
+    min-height: var(--input-min-height-small, var(--size-5));
   }
 
   @media (--sm) {
@@ -92,5 +74,5 @@ textarea {
 
 [type="file"] {
   height: auto;
-  padding-block: var(--input-file-padding-block);
+  padding-block: var(--input-file-padding-block, var(--size-105));
 }

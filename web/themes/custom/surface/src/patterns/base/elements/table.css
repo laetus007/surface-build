@@ -3,38 +3,26 @@
  * Table element styles.
  */
 
-:root {
-  --caption-color: hsl(var(--gray-5));
-  --caption-padding-block: var(--size-1);
-  --table-border-color: hsl(var(--gray-2));
-  --table-color: hsl(var(--gray-8));
-  --table-margin-block-end: var(--size-2);
-  --table-border-bottom-width: var(--border-size-1);
-  --table-border-top-width: var(--border-size-1);
-  --table-padding-block: var(--size-1);
-  --table-padding-inline: var(--size-1);
-}
-
 :where(caption) {
-  color: var(--caption-color);
-  padding-block: var(--caption-padding-block);
+  color: var(--caption-color, hsl(var(--gray-5)));
+  padding-block: var(--caption-padding-block, var(--size-1));
   text-align: left;
 }
 
 :where(table) {
   border-collapse: collapse;
-  border-color: var(--table-border-color);
+  border-color: var(--table-border-color, hsl(var(--gray-2)));
   caption-side: bottom;
-  color: var(--table-color);
-  margin-block-end: var(--table-margin-block-end);
+  color: var(--table-color, hsl(var(--gray-8)));
+  margin-block-end: var(--table-margin-block-end, var(--size-2));
   vertical-align: top;
   width: 100%;
 
   > :not(caption) > * > * {
     background-color: transparent;
-    border-bottom-width: var(--table-border-bottom-width);
-    padding-block: var(--table-padding-block);
-    padding-inline: var(--table-padding-inline);
+    border-bottom-width: var(--table-border-bottom-width, var(--border-size-1));
+    padding-block: var(--table-padding-block, var(--size-1));
+    padding-inline: var(--table-padding-inline, var(--size-1));
   }
 
   > tbody {
@@ -47,7 +35,7 @@
 
   > :not(:first-child) {
     border-top-color: currentcolor;
-    border-top-width: var(--table-border-top-width);
+    border-top-width: var(--table-border-top-width, var(--border-size-1));
   }
 }
 
