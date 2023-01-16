@@ -50,9 +50,9 @@ function surface_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $build_info = $form_state->getBuildInfo();
   $form_object = $form_state->getFormObject();
 
-  if (isset($form['actions']['submit']) && (count($form['actions'])) <= 2) {
-    $form['actions']['submit']['#attributes']['class'][] = 'button--primary';
-  }
+  // if (isset($form['actions']['submit']) && (count($form['actions'])) <= 2) {
+  //   $form['actions']['submit']['#attributes']['class'][] = 'button--primary';
+  // }
 
   if ($form_object instanceof ViewsForm && strpos($form_object->getBaseFormId(), 'views_form_media_library') === 0) {
     if (isset($form['header'])) {

@@ -17,9 +17,9 @@
 
         <div class="site-secondary__buttons">
           {% block buttons %}
-            {% include '@components/give-button/give-button.twig' %}
-            {% include '@components/gtranslate/gtranslate.twig' %}
-            {% include '@components/search-button/search-button.twig' with {
+            {% include '@components/button-give/button-give.twig' %}
+            {% include '@components/translate/translate.twig' %}
+            {% include '@components/button-search/button-search.twig' with {
               'is_demo': false
             } %}
           {% endblock %}

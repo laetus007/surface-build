@@ -32,6 +32,11 @@ libraries-override:
       theme:
         assets/vendor/jquery.ui/themes/base/theme.css: false
 
+  layout_paragraphs/component_list:
+    css:
+      layout:
+        css/component-list.css: dist/css/component-list.css
+
   claro/claro.drupal.dialog: false
   gin/ajax: false
   gin/dialog: false

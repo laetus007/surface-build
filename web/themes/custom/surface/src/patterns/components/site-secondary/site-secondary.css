@@ -18,11 +18,11 @@
 
   @media (--xl) {
     justify-content: space-between;
+    margin-inline-end: -16px;
   }
 }
 
 .site-secondary__buttons {
   align-items: center;
   display: flex;
-  gap: var(--size-1);
 }

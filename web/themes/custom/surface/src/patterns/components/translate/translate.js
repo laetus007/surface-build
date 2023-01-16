@@ -1,7 +1,7 @@
 'use strict';
 
 ((Drupal, once) => {
-  const translateContainer = document.querySelector('[data-drupal-selector="gtranslate-container"]');
+  const translateContainer = document.querySelector('[data-drupal-selector="translate-container"]');
 
   Drupal.behaviors.surfaceTranslate = {
     attach: function attach(context) {
@@ -11,7 +11,7 @@
 
   Drupal.surfaceTranslate = {
     init: function (context) {
-      once('surfaceTranslateInit', '[data-drupal-selector="gtranslate"]', context).forEach(() => {
+      once('surfaceTranslateInit', '[data-drupal-selector="translate"]', context).forEach(() => {
         document.addEventListener('keyup', e => {
           if (Drupal.surfaceTranslate.translateIsVisible() && e.key === 'Escape' || e.key === 'Esc') {
             e.preventDefault();
@@ -21,7 +21,7 @@
       });
 
       // Translate toggle
-      once('surfaceTranslateToggle', '[data-drupal-selector="gtranslate-button"]', context).forEach(el => el.addEventListener('click', e => {
+      once('surfaceTranslateToggle', '[data-drupal-selector="translate-button"]', context).forEach(el => el.addEventListener('click', e => {
         e.preventDefault();
         this.toggleTranslate();
       }));
@@ -41,16 +41,16 @@
     },
 
     showTranslate: () => {
-      const translateButton = document.querySelector('[data-drupal-selector="gtranslate-button"]');
-      const translateContainer = document.querySelector('[data-drupal-selector="gtranslate-container"]');
+      const translateButton = document.querySelector('[data-drupal-selector="translate-button"]');
+      const translateContainer = document.querySelector('[data-drupal-selector="translate-container"]');
 
       translateButton.setAttribute('aria-expanded', 'true');
       translateContainer.classList.add('is-active');
     },
 
     collapseTranslate: () => {
-      const translateButton = document.querySelector('[data-drupal-selector="gtranslate-button"]');
-      const translateContainer = document.querySelector('[data-drupal-selector="gtranslate-container"]');
+      const translateButton = document.querySelector('[data-drupal-selector="translate-button"]');
+      const translateContainer = document.querySelector('[data-drupal-selector="translate-container"]');
 
       translateButton.setAttribute('aria-expanded', 'false');
       translateContainer.classList.remove('is-active');

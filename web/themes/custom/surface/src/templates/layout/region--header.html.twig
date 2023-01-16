@@ -28,13 +28,13 @@
     {% endblock %}
 
     {% block buttons %}
-      {% include '@components/give-button/give-button.twig' with {
+      {% include '@components/button-give/button-give.twig' with {
         'url': give_url,
         'text': 'Give'
       } only %}
 
-      {% include '@components/gtranslate/gtranslate.twig' only %}
-      {% include '@components/search-button/search-button.twig' only %}
+      {% include '@components/translate/translate.twig' only %}
+      {% include '@components/button-search/button-search.twig' only %}
     {% endblock %}
 
     {% block branding %}

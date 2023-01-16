@@ -6,21 +6,21 @@
 .button {
   align-items: center;
   appearance: none;
-  background-color: var(--button-background-color);
-  border-color: var(--button-border-color);
-  border-style: solid;
-  border-width: var(--button-border-width);
-  color: var(--button-color);
+  background-color: var(--btn-bg-color, hsl(var(--gray-3)));
+  border: var(--btn-border-width, 1px) solid var(--btn-border-color, hsl(var(--gray-3)));
+  border-radius: var(--btn-border-radius, 0);
+  color: var(--btn-color, hsl(var(--black)));
   cursor: pointer;
   display: inline-flex;
-  font-family: inherit;
-  font-size: var(--button-font-size);
-  font-weight: var(--button-font-weight);
+  font-family: var(--btn-font-family, var(--font-system));
+  font-size: var(--btn-font-size, var(--font-size-1));
+  font-weight: var(--btn-font-weight, var(--font-weight-700));
   justify-content: center;
-  line-height: var(--button-lineheight);
-  padding-block-end: var(--button-padding-block-end);
-  padding-block-start: var(--button-padding-block-start);
-  padding-inline: var(--button-padding-inline);
+  line-height: var(--btn-line-height, var(--font-line-height-1));
+  margin-block: var(--btn-margin-block, var(--size-2));
+  margin-inline-end: var(--btn-maring-inline-end, var(--size-105));
+  padding-block: var(--btn-padding-block, var(--size-2));
+  padding-inline: var(--btn-padding-inline, var(--size-3));
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -29,16 +29,16 @@
   will-change: transform;
 
   &:visited {
-    color: var(--button-color-visited));
+    color: var(--btn-visited-color, hsl(var(--black))));
   }
 
   &:hover {
-    border-color: var(--button-border-color-hover);
-    color: var(--button-color-hover);
+    background-color: var(--btn-hover-bg-color, hsl(var(--gray-4)));
+    color: var(--btn-hover-color, hsl(var(--black)));
   }
 
   &:focus {
-    box-shadow: var(--button-box-shadow);
+    box-shadow: var(--btn-focus-box-shadow, 0 0 0 2px hsl(var(--white)), 0 0 0 4px hsl(var(--gray-8) / 15%));
     outline: none;
   }
 
@@ -48,33 +48,36 @@
 
   &[aria-expanded="true"] {
     &:focus::after {
-      border-color: var(--button-border-color);
+      border-color: var(--btn-border-color, hsl(var(--gray-3)));
     }
+  }
+
+  &:disabled {
+    background-color: var(--btn-disabled-bg-color, hsl(var(--gray-3)));
+    color: var(--btn-disabled-color, hsl(var(--gray-5)));
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
 /* Button primary */
 .button--primary {
-  background-color: var(--button-primary-background-color);
-  color: var(--button-primary-color);
+  background-color: var(--btn-primary-bg-color, hsl(var(--blue-6)));
+  color: var(--btn-primary-color, hsl(var(--white)));
 
   &:visited {
-    background-color: var(--button-primary-background-color-visited);
-    color: var(--button-primary-color-visited);
+    background-color: var(--btn-primary-visited-bg-color, hsl(var(--blue-6)));
+    color: var(--btn-primary-visited-color, hsl(var(--white)));
   }
 
   &:hover {
-    background-color: var(--button-primary-background-color-hover);
-    color: var(--button-primary-color-hover);
-  }
-
-  &:focus {
-    box-shadow: var(--button-primary-box-shadow);
+    background-color: var(--btn-primary-hover-bg-color, hsl(var(--blue-8)));
+    color: var(--btn-primary-hover-color, hsl(var(--white)));
   }
 
   &:active {
-    background-color: hsl(var(--blue-9));
-    color: hsl(var(--white));
+    background-color: var(--btn-primary-active-bg-color, hsl(var(--blue-8)));
+    color: var(--btn-primary-active-color, hsl(var(--white)));
   }
 }
 
@@ -104,37 +107,79 @@
   }
 }
 
-.button--disabled,
-.button[disabled],
-.button[readonly] {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-.button--small {
-  font-size: var(--font-size-0);
-}
-
-.button--large {
-  font-size: var(--font-size-3);
-}
-
+/* Give button */
 .button--give {
-  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  color: var(--btn-give-color, hsl(var(--white)));
+  font-family: var(--font-body);
+  margin-block: 0;
+  padding-block: 8px;
+  padding-inline: 16px;
 
-  &:visited {
-    background-color: currentcolor;
-    color: currentcolor;
+  &:hover {
+    background-color: transparent;
+    color: var(--btn-give-color, hsl(var(--gray-2)));
+  }
+
+  & svg {
+    inline-size: 24px;
+    margin-inline-end: var(--size-1);
+  }
+
+  & span {
+    padding-block-start: var(--size-05);
+    text-transform: uppercase;
   }
 }
 
-.button--transparent {
+/* Translate button */
+.button--translate {
   background-color: transparent;
-  border-color: transparent;
-  color: hsl(var(--white));
+  border: 0;
+  color: var(--btn-translate-color, hsl(var(--white)));
+  font-family: var(--font-body);
+  margin-block: 0;
+  padding-block: 8px;
+  padding-inline: 16px;
 
   &:hover {
-    border-color: transparent;
-    color: hsl(var(--white));
+    background-color: transparent;
+    color: var(--btn-translate-color, hsl(var(--gray-2)));
+  }
+
+  & svg {
+    inline-size: 28px;
+    margin-inline-end: var(--size-1);
+  }
+
+  & span {
+    padding-block-start: var(--size-05);
+  }
+}
+
+/* Search button */
+.button--search {
+  background-color: transparent;
+  border: 0;
+  color: var(--btn-search-color, hsl(var(--white)));
+  font-family: var(--font-body);
+  margin-block: 0;
+  margin-inline-end: 0;
+  padding-block: 8px;
+  padding-inline: 16px;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--btn-search-color, hsl(var(--gray-2)));
+  }
+
+  & svg {
+    inline-size: 22px;
+    margin-inline-end: var(--size-1);
+  }
+
+  & span {
+    padding-block-start: var(--size-05);
   }
 }

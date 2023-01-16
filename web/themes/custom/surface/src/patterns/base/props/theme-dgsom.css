@@ -5,8 +5,7 @@
   --font-headings: var(--font-sans);
 
   /* Buttons */
-  --button-font-size: var(--font-size-2);
-  --button-padding-block-end: var(--size-05);
+  --btn-font-size: var(--font-size-2);
 
   /* Site Alert */
   --site-alert-bg-color: hsl(var(--ucla-blue));

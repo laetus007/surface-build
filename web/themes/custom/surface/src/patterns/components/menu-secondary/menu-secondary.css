@@ -12,9 +12,7 @@
   padding-inline: 0;
 
   @media (--xl) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--size-3);
+    display: flex;
   }
 
   .menu__item {
@@ -30,7 +28,8 @@
     display: block;
     font-size: var(--menu-secondary-link-font-size-mobile);
     font-weight: var(--menu-secondary-link-font-weight-mobile);
-    padding-block: var(--size-05);
+    padding-block: 8px;
+    padding-inline: 16px;
     transition: all 0.2s ease;
 
     @media (--xl) {
@@ -51,10 +50,6 @@
     &:focus {
       box-shadow: 0 0 0 2px currentcolor, 0 0 0 4px hsl(var(--gray-8) / 15%);
       outline: none;
-    }
-
-    &:first-child {
-      padding-inline-start: 0;
     }
   }
 }

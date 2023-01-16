@@ -51,6 +51,11 @@ cke-dialog:
     component:
       dist/css/cke-dialog.css: {}
 
+component-list:
+  css:
+    component:
+      dist/css/component-list.css: {}
+
 content_moderation:
   css:
     component:
@@ -93,17 +98,12 @@ filter.theme:
     theme:
       dist/css/filter.theme.css: {}
 
-give-button:
+translate:
   css:
     theme:
-      dist/css/give-button.css: {}
-
-gtranslate:
-  css:
-    theme:
-      dist/css/gtranslate.css: {}
+      dist/css/translate.css: {}
   js:
-    dist/js/gtranslate.js: {}
+    dist/js/translate.js: {}
 
 layout_onecol:
   css:
@@ -139,11 +139,6 @@ layout-views-grid-vertical:
   css:
     layout:
       dist/css/layout-views-grid-vertical.css: {}
-
-local-actions:
-  css:
-    component:
-      dist/css/action-links.css: {}
 
 maintenance-page:
   css:
@@ -213,7 +208,7 @@ site-header:
       dist/css/site-alert.css: {}
       dist/css/site-secondary.css: {}
       dist/css/menu-secondary.css: {}
-      dist/css/search-button.css: {}
+      dist/css/button-search.css: {}
       dist/css/site-primary.css: {}
       dist/css/site-branding.css: {}
       dist/css/site-navigation.css: {}
@@ -224,7 +219,7 @@ site-header:
     dist/js/menu-utils.js: {}
     dist/js/menu-main.js: {}
     dist/js/menu-main-second-level.js: {}
-    dist/js/search-button.js: {}
+    dist/js/button-search.js: {}
   dependencies:
     - core/drupal
     - core/once

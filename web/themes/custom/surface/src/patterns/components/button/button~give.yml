@@ -1,6 +1,0 @@
----
-modifier: 'button--give'
-button: false
-disabled: false
-url: '#'
-text: 'Give'

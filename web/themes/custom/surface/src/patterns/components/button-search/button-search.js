@@ -21,7 +21,7 @@
       });
 
       // Search toggle
-      once('surfaceSearchToggle', '[data-drupal-selector="search-button"]', context).forEach(el => el.addEventListener('click', e => {
+      once('surfaceSearchToggle', '[data-drupal-selector="search-open"]', context).forEach(el => el.addEventListener('click', e => {
         e.preventDefault();
         this.toggleSearch();
       }));
@@ -52,7 +52,7 @@
     },
 
     showSearch: () => {
-      const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
+      const searchButton = document.querySelector('[data-drupal-selector="search-open"]');
       const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
 
       searchButton.setAttribute('aria-expanded', 'true');
@@ -64,7 +64,7 @@
     },
 
     collapseSearch: () => {
-      const searchButton = document.querySelector('[data-drupal-selector="search-button"]');
+      const searchButton = document.querySelector('[data-drupal-selector="search-open"]');
       const searchContainer = document.querySelector('[data-drupal-selector="site-search"]');
 
       searchButton.setAttribute('aria-expanded', 'false');

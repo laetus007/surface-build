@@ -70,13 +70,14 @@
   }
 
   .ui-icon.ui-icon-closethick {
-    background-image: url("../images/ex.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height: 100%;
+    background-image: none;
+    background-color: white;
+    display: block;
+    height: 16px;
     margin: 0;
+    mask: url("../images/ex.svg");
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 16px;
   }
 
   > .ui-dialog-content {

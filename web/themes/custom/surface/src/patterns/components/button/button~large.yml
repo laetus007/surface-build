@@ -1,6 +1,0 @@
----
-modifier: 'button--large'
-button: true
-disabled: false
-url: '#'
-text: 'Button Large'
