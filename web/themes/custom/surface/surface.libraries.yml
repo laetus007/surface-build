@@ -66,13 +66,6 @@ details:
     theme:
       dist/css/details.css: {}
 
-dialog:
-  css:
-    component:
-      dist/css/ui-dialog.css: {}
-    theme:
-      dist/css/jquery.ui.css: {}
-
 dialog.off_canvas:
   css:
     component:

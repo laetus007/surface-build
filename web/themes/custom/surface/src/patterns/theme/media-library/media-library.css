@@ -203,6 +203,7 @@
   padding: 0;
 
   .media-library-add-form__remove-button.button--extrasmall {
+    align-self: flex-start;
     margin: var(--size-1) 0;
     padding: calc(0.25rem - 1px) calc(0.75rem - 1px) calc(0.25rem - 1px) 1.5rem;
   }

@@ -28,9 +28,10 @@ libraries-override:
   core/drupal.dialog:
     css:
       component:
-        assets/vendor/jquery.ui/themes/base/dialog.css: false
+        assets/vendor/jquery.ui/themes/base/dialog.css: dist/css/ui-dialog.css
+        assets/vendor/jquery.ui/themes/base/button.css: dist/css/ui-button.css
       theme:
-        assets/vendor/jquery.ui/themes/base/theme.css: false
+        assets/vendor/jquery.ui/themes/base/theme.css: dist/css/jquery.ui.css
 
   layout_paragraphs/component_list:
     css:
@@ -38,12 +39,19 @@ libraries-override:
         css/component-list.css: dist/css/component-list.css
 
   claro/claro.drupal.dialog: false
+  claro/media_library.theme:
+    css:
+      theme:
+        css/theme/media-library.css: dist/css/media-library.css
+  claro/media_library.ui:
+    css:
+      component:
+        css/components/media-library.ui.css: dist/css/media-library.ui.css
+
   gin/ajax: false
   gin/dialog: false
 
 libraries-extend:
-  core/drupal.dialog:
-    - surface/dialog
   core/drupal.message:
     - surface/messages
   node/drupal.node.preview:

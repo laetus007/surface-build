@@ -21,7 +21,7 @@
 
     &:where(:visited) {
       color: var(--link-visited-color, hsl(var(--blue-9)));
-      text-decoration-color: var(--link-visited-decoration-color, hsl(var(--blue-9))));
+      text-decoration-color: var(--link-visited-decoration-color, hsl(var(--blue-9)));
     }
   }
 

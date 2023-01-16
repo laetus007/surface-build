@@ -30,11 +30,6 @@
   flex-wrap: wrap;
   margin-block: var(--size-1);
 
-  .button,
-  .action-link {
-    margin-block: var(--size-1);
-  }
-
   .ajax-progress--throbber {
     align-self: center;
   }

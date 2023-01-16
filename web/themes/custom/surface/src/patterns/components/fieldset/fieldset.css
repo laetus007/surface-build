@@ -29,8 +29,6 @@
 
 .fieldset__legend {
   background-color: hsl(var(--gray-9));
-  border-top-left-radius: var(--radius-1);
-  border-top-right-radius: var(--radius-1);
   color: inherit;
   float: left; /* Prevent sticking out of top of fieldset. */
   font-size: var(--font-size-2);

@@ -24,10 +24,12 @@
 }
 
 .messages__container {
+  align-items: center;
   display: flex;
 }
 
 .messages__header {
+  display: flex;
   flex-shrink: 0;
   margin-inline-end: var(--size-2);
 

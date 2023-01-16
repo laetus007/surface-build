@@ -25,7 +25,7 @@ details.details {
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-700);
   hyphens: auto;
-  line-height: var(--font-line-height-1);
+  line-height: normal;
   list-style: none;
   padding-block: var(--size-1);
   padding-inline-end: var(--size-1);

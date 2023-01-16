@@ -4,7 +4,7 @@
  */
 
 .copyright {
-  color: var(--copyright-color));
+  color: var(--copyright-color);
   display: flex;
   font-size: var(--copyright-font-size);
   grid-column: 1 / 7;
