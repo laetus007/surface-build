@@ -3,10 +3,6 @@
  * Media library styling.
  */
 
-/**
- * Negative margins compensate for modal dialog padding and compensate for
- * positioning that would otherwise hide the active tab indicator on the left.
- */
 .media-library-wrapper {
   display: flex;
 
@@ -15,32 +11,12 @@
     margin-bottom: var(--size-3);
     margin-top: 0;
   }
+}
 
-  .views-display-link {
-    color: hsl(0, 0%, 20%);
-    font-size: 15px;
-    line-height: 16px;
-    margin: 0;
-    padding-left: 22px;
-
-    &.is-active {
-      color: hsl(var(--blue-9));
-      font-weight: bold;
-    }
-  }
-
-  .views-display-link-widget {
-    margin-right: 15px;
-    background-image: url("../images/grid.svg");
-    background-repeat: no-repeat;
-    background-position: left 0;
-  }
-
-  .views-display-link-widget_table {
-    background-image: url("../images/table.svg");
-    background-repeat: no-repeat;
-    background-position: left 0;
-  }
+.media-library-content {
+  outline: none;
+  padding: 1em;
+  width: 100%;
 }
 
 .media-library-view {
@@ -50,7 +26,6 @@
   position: relative;
 
   .view-header {
-    align-self: flex-end;
     border: 1px solid hsl(var(--gray-2));
     margin-block: var(--size-3);
     padding: var(--size-2);
@@ -61,6 +36,68 @@
   .view-content {
     flex: 0 0 100%;
     margin-block-end: 0;
+  }
+
+  .views-display-link {
+    align-items: center;
+    color: hsl(var(--black));
+    display: inline-flex;
+    font-size: var(--font-size-1);
+    line-height: normal;
+    margin: 0;
+    padding-inline: 4px;
+    text-decoration: none;
+
+    &:hover {
+      color: hsl(var(--blue-9));
+    }
+
+    &.is-active {
+      color: hsl(var(--blue-9));
+      font-weight: var(--font-weight-700);
+    }
+  }
+
+  .views-display-link-widget {
+    &:hover,
+    &.is-active {
+      &::before {
+        background-color: hsl(var(--blue-9));
+      }
+    }
+
+    &::before {
+      aspect-ratio: 1/1;
+      background-color: hsl(var(--gray-9));
+      content: "";
+      display: inline-flex;
+      block-size: 16px;
+      inline-size: 16px;
+      margin-right: 4px;
+      mask: url("../images/grid.svg");
+      mask-repeat: no-repeat;
+    }
+  }
+
+  .views-display-link-widget_table {
+    &:hover,
+    &.is-active {
+      &::before {
+        background-color: hsl(var(--blue-9));
+      }
+    }
+
+    &::before {
+      aspect-ratio: 1/1;
+      background-color: hsl(var(--gray-9));
+      content: "";
+      display: inline-flex;
+      block-size: 16px;
+      inline-size: 16px;
+      margin-right: 4px;
+      mask: url("../images/table.svg");
+      mask-repeat: no-repeat;
+    }
   }
 }
 
@@ -175,38 +212,78 @@
   margin: 0 1.5rem;
 }
 
-.media-library-content {
-  outline: none;
-  padding: 1em;
-  width: 100%;
-}
-
 .media-library-menu + .media-library-content {
   border-left: 1px solid hsl(230, 10%, 88%);
   box-shadow: 0 2px 4px hsla(0, 0%, 0%, 10%);
   z-index: 0;
 }
 
-/* Generic media add form styles. */
-.media-library-add-form--without-input .form-item {
-  margin-right: 1rem;
+/* Media library add form. */
+.media-library-add-form {
+  .media-library-add-form__added-media {
+    margin: 0;
+    outline: none;
+    padding: 0;
+  }
+
+  .media-library-add-form__media {
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (--lg) {
+      flex-direction: row;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .media-library-add-form__preview {
+    align-items: flex-start;
+    display: flex;
+    flex-shrink: 0;
+    margin-block-end: 20px;
+    width: 220px;
+
+    @media (--lg) {
+      margin-right: 20px;
+    }
+  }
+
+  .media-library-add-form__fields {
+    width: 100%;
+  }
+
+  .media-library-add-form__remove-button {
+    background-color: hsl(var(--white));
+    background-image: url("../images/ex.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    border: 1px solid hsl(230, 7%, 84%) !important;
+    border-radius: var(--radius-round);
+    color: transparent;
+    font-size: 0;
+    height: 28px;
+    left: 180px;
+    margin: 5px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.2s border-color;
+    width: 28px;
+  }
 }
 
-/**
- * Remove outline from added media list.
- *
- * The added media list receives focus after adding new media, but since it is
- * not an interactive element, it does not need an outline.
- */
-.media-library-add-form__added-media {
-  margin: 0;
-  outline: none;
-  padding: 0;
-
-  .media-library-add-form__remove-button.button--extrasmall {
-    align-self: flex-start;
-    margin: var(--size-1) 0;
-    padding: calc(0.25rem - 1px) calc(0.75rem - 1px) calc(0.25rem - 1px) 1.5rem;
+/* Generic media add form styles. */
+.media-library-add-form--without-input {
+  .form-item {
+    margin-right: 1rem;
   }
 }
 
@@ -226,11 +303,6 @@
 .media-library-add-form--upload.media-library-add-form--with-input .form-managed-file__main,
 .media-library-add-form--upload.media-library-add-form--with-input .form-managed-file.no-upload {
   display: block;
-}
-
-/* Adjust the focus border on this element so it is not too close to buttons. */
-.media-library-add-form__added-media:focus {
-  box-shadow: 0 0 0 4px hsl(0, 0%, 100%), 0 0 0 7px hsl(151, 63%, 40%);
 }
 
 .media-library-add-form .file-upload-help {
@@ -298,14 +370,6 @@
   flex-basis: 100%;
 }
 
-.media-library-views-form__header {
-  flex-basis: 100%;
-}
-
-.media-library-views-form__header .form-item {
-  margin-right: 8px;
-}
-
 .media-library-views-form__rows {
   display: flex;
   flex-basis: 100%;
@@ -313,9 +377,7 @@
   margin: 0 -8px;
 }
 
-/**
- * Style the media library grid items.
- */
+/* Media library item */
 .media-library-item {
   position: relative;
 
@@ -360,8 +422,67 @@
   .ajax-progress__message {
     display: none;
   }
+
+  /* Media library widget edit and delete button styles. */
+  .media-library-item__edit {
+    background-color: white;
+    background-image: url("../images/pencil.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    border: 1px solid hsl(230, 7%, 84%) !important;
+    color: transparent;
+    cursor: pointer;
+    font-size: 0;
+    height: 28px;
+    margin: 5px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    pointer-events: auto;
+    right: 40px;
+    text-shadow: none;
+    top: 10px;
+    transition: 0.2s border-color;
+    width: 28px;
+    z-index: 1;
+
+    &:active {
+      background-image: url("../images/pencil.svg");
+    }
+  }
+
+  .media-library-item__remove {
+    background-color: white;
+    background-image: url("../images/ex.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    border: 1px solid hsl(230, 7%, 84%) !important;
+    border-radius: var(--radius-round);
+    color: transparent;
+    cursor: pointer;
+    font-size: 0;
+    height: 28px;
+    margin: 5px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    pointer-events: auto;
+    right: 10px;
+    text-shadow: none;
+    top: 10px;
+    transition: 0.2s border-color;
+    width: 28px;
+    z-index: 1;
+
+    &:active {
+      border-color: hsl(222, 100%, 40%) !important;
+    }
+  }
 }
 
+/* Media library item grid */
 .media-library-item--grid {
   background: none;
   border-radius: 16px;
@@ -402,11 +523,6 @@
     background-color: hsl(222, 100%, 70%);
     border-color: hsl(222, 100%, 70%);
   }
-}
-
-/* The selected items in the add form should be shown a bit smaller. */
-.media-library-add-form__selected-media .media-library-item--small {
-  width: 33.3%;
 }
 
 .media-library-widget-modal {
@@ -642,130 +758,4 @@
 .media-library-item--disabled {
   opacity: 0.5;
   pointer-events: none;
-}
-
-/* Media library widget styles. */
-.media-library-widget {
-  position: relative;
-}
-
-.media-library-widget__toggle-weight.media-library-widget__toggle-weight {
-  position: absolute;
-  right: var(--size-2);
-  text-decoration: none;
-  top: var(--size-105);
-}
-
-/**
- * Media library widget edit and delete button styles.
- *
- * We have to override the .button styles since buttons make heavy use of
- * background and border property changes.
- */
-.media-library-item__edit,
-.media-library-item__edit:hover,
-.media-library-item__edit:focus,
-.media-library-item__remove,
-.media-library-item__remove:hover,
-.media-library-item__remove:focus,
-.media-library-item__remove.button,
-.media-library-item__remove.button:first-child,
-.media-library-item__remove.button:disabled,
-.media-library-item__remove.button:disabled:active,
-.media-library-item__remove.button:hover,
-.media-library-item__remove.button:focus {
-  background-color: white;
-  background-size: 12px;
-  color: transparent;
-  font-size: 0;
-  height: 28px;
-  margin: 5px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  text-shadow: none;
-  top: 10px;
-  transition: 0.2s border-color;
-  width: 28px;
-  z-index: 1;
-}
-
-.media-library-item__remove {
-  right: 10px;
-}
-
-.media-library-item__edit {
-  background-image: url("../images/pencil.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 12px;
-  border: 1px solid hsl(230, 7%, 84%) !important;
-  right: 40px;
-
-  &:active {
-    background-image: url("../images/pencil.svg");
-  }
-}
-
-.media-library-item__remove,
-.media-library-item__remove.button,
-.media-library-item__remove.button:first-child,
-.media-library-item__remove.button:disabled,
-.media-library-item__remove.button:disabled:active,
-.media-library-item__remove.button:hover,
-.media-library-item__remove.button:focus {
-  background-image: url("../images/ex.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 12px;
-  border: 1px solid hsl(230, 7%, 84%) !important;
-  border-radius: var(--radius-round);
-}
-
-.media-library-item__remove:active,
-.media-library-item__remove.button:active,
-.media-library-item__remove.button:disabled:active {
-  background-image: url("../images/ex.svg");
-  border-color: hsl(222, 100%, 40%) !important;
-}
-
-/* Style the added media item container. */
-.media-library-add-form__media {
-  border-bottom: 1px solid hsl(0, 0%, 75%);
-  display: flex;
-  position: relative;
-
-  &:last-child {
-    border-bottom: 0;
-    padding-bottom: 0;
-  }
-}
-
-.media-library-add-form__preview {
-  align-items: flex-start;
-  display: flex;
-  margin-right: 20px;
-  width: 220px;
-}
-
-.media-library-add-form__fields {
-  flex-grow: 1;
-}
-
-.media-library-add-form__remove-button {
-  background-image: url("../images/ex.svg");
-  background-position: var(--size-1) center;
-  background-repeat: no-repeat;
-  background-size: var(--size-105);
-  position: absolute;
-  right: 0;
-}
-
-.media-library-add-form__remove-button.button:disabled {
-  background-image: url("../images/ex.svg");
-}
-
-/* @todo Remove in https://www.drupal.org/project/drupal/issues/3064914 */
-.views-live-preview .media-library-view div.views-row + div.views-row {
-  margin-top: 0;
 }

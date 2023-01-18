@@ -63,10 +63,6 @@ textarea {
   &.form-element--small {
     min-height: var(--size-5);
   }
-
-  @media (--sm) {
-    width: auto;
-  }
 }
 
 [type="date"] {
@@ -80,6 +76,7 @@ textarea {
   flex: 1 1 auto;
   height: auto;
   padding-block: var(--size-105);
+  width: auto;
 }
 
 [type="color"] {
