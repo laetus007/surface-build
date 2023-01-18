@@ -4,6 +4,7 @@
  */
 
 .views-exposed-form {
+  align-items: center;
   background-color: hsl(0, 0%, 100%);
   border-radius: 2px;
   border: 1px solid hsl(var(--gray-2));
@@ -15,14 +16,18 @@
   padding-block-start: var(--size-1);
   padding-block-end: var(--size-3);
   padding-inline: var(--size-3);
-}
 
-.views-exposed-form__item {
-  margin-block-start: var(--size-105);
-  margin-inline-end: var(--size-1);
-  max-width: 100%;
-}
+  > * {
+    margin-inline-end: var(--size-1);
+  }
 
-.views-exposed-form__item--actions {
-  margin-block-start: var(--size-5);
+  .form-wrapper {
+    margin-block-start: 20px;
+  }
+
+  .form-submit {
+    font-family: var(--font-system);
+    font-size: var(--font-size-0);
+    margin-block: 0;
+  }
 }

@@ -404,7 +404,6 @@ function surface_form_views_exposed_form_alter(&$form, FormStateInterface $form_
 
   // Add a label so screenreaders can identify the purpose of the exposed form without having to scan content that appears further down the page.
   $form['#attributes']['aria-label'] = t('Filter the contents of the %view_title view', ['%view_title' => $view_title]);
-  $form['#attributes']['class'][] = 'form--inline';
 }
 
 /**
