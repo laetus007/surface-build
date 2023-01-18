@@ -14,7 +14,7 @@
     },
 
     closeMessage(e) {
-      const message = e.target.parentNode.parentNode.parentNode;
+      const message = e.target.closest('.messages');
       message.classList.add('hidden');
     }
   };

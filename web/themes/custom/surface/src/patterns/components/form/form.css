@@ -28,11 +28,14 @@
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
-  margin-block: var(--size-1);
 
   .ajax-progress--throbber {
     align-self: center;
   }
+}
+
+.form-actions:not(.ui-dialog-buttonset) {
+  margin-block: var(--size-1);
 }
 
 .form--inline {
@@ -56,5 +59,6 @@
   & .button {
     margin-block: 0;
     margin-inline-end: 0;
+    max-height: 48px;
   }
 }

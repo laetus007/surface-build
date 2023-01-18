@@ -19,12 +19,6 @@
   vertical-align: middle;
   white-space: nowrap;
 
-  .ui-dialog & {
-    background: none;
-    border: 0;
-    box-shadow: none;
-  }
-
   .throbber {
     animation: surface-throbber 0.75s linear infinite;
     border-style: solid dotted solid solid;

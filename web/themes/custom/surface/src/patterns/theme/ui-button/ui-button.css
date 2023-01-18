@@ -10,7 +10,6 @@
   display: inline-flex;
   justify-content: center;
   line-height: normal;
-  margin-inline-end: var(--size-105);
   padding-block: var(--size-2);
   padding-inline: var(--size-3);
   position: relative;

@@ -52,7 +52,9 @@
 
   .view-header {
     align-self: flex-end;
-    margin: 1em 0;
+    border: 1px solid hsl(var(--gray-2));
+    margin-block: var(--size-3);
+    padding: var(--size-2);
     text-align: right;
   }
 
@@ -172,6 +174,11 @@
       z-index: 1; /* The blue active-tab indication should be on a higher level than the green focus border. */
     }
   }
+}
+
+.media-library-selected-count {
+  font-family: var(--font-system);
+  margin: 0 1.5rem;
 }
 
 .media-library-content {
@@ -327,18 +334,21 @@
     background-position: 0 0, 0.5rem 0.5rem, 0.5rem 0.5rem, 0 0;
   }
 
-  .ajax-progress.ajax-progress.ajax-progress {
-    background: hsl(0, 0%, 100%);
+  .ajax-progress {
+    align-items: center;
+    background: hsl(var(--white));
     border-radius: 3.5rem;
     border: 1px solid hsla(233, 11%, 86%, 80%);
     box-shadow: 0 0.25rem 0.625rem hsla(236, 17%, 16%, 10%);
-    box-sizing: border-box;
+    display: inline-flex;
     height: 3rem;
     left: 50%;
     margin: -1.5rem;
+    padding: var(--size-105);
     position: absolute;
     top: 50%;
-    width: 3rem; /* 56px */
+    transform: translate(-50%, -50%);
+    width: fit-content;
     z-index: 1;
   }
 
@@ -494,12 +504,26 @@
   border-color: hsl(222, 100%, 35%);
 }
 
+.media-library-item--grid.is-hover {
+  .media-library-item__preview {
+    border-color: hsl(var(--black));
+    box-shadow: 0 0 0 2px hsl(var(--black));
+  }
+}
+
 .media-library-item--grid.is-focus::before {
   border-color: hsl(222, 100%, 35%);
 }
 
 .media-library-item--grid.checked::before {
   border-color: hsl(151, 63%, 40%);
+}
+
+.media-library-item--grid.checked {
+  .media-library-item__preview {
+    border-color: hsl(var(--blue-9));
+    box-shadow: 0 0 0 2px hsl(var(--blue-9));
+  }
 }
 
 .media-library-item__click-to-select-checkbox {
@@ -638,11 +662,6 @@
   top: var(--size-105);
 }
 
-/* Add negative margin for flex grid. */
-.media-library-selection {
-  margin: 1em -8px;
-}
-
 /**
  * Media library widget edit and delete button styles.
  *
@@ -661,10 +680,11 @@
 .media-library-item__remove.button:disabled:active,
 .media-library-item__remove.button:hover,
 .media-library-item__remove.button:focus {
+  background-color: white;
   background-size: 12px;
   color: transparent;
   font-size: 0;
-  height: 24px;
+  height: 28px;
   margin: 5px;
   overflow: hidden;
   padding: 0;
@@ -672,7 +692,7 @@
   text-shadow: none;
   top: 10px;
   transition: 0.2s border-color;
-  width: 24px;
+  width: 28px;
   z-index: 1;
 }
 
@@ -705,6 +725,7 @@
   background-repeat: no-repeat;
   background-size: 12px;
   border: 1px solid hsl(230, 7%, 84%) !important;
+  border-radius: var(--radius-round);
 }
 
 .media-library-item__remove:active,
@@ -727,10 +748,8 @@
 }
 
 .media-library-add-form__preview {
-  align-items: center;
-  background: hsla(230, 33%, 96%, 40%);
+  align-items: flex-start;
   display: flex;
-  justify-content: center;
   margin-right: 20px;
   width: 220px;
 }

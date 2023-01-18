@@ -46,10 +46,11 @@ libraries-override:
   claro/media_library.ui:
     css:
       component:
-        css/components/media-library.ui.css: dist/css/media-library.ui.css
+        css/components/media-library.ui.css: false
 
   gin/ajax: false
   gin/dialog: false
+  gin/media_library: false
 
 libraries-extend:
   core/drupal.message:

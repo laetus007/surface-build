@@ -3,7 +3,7 @@
  * jQuery UI Styling.
  */
 
-.ui-widget-content {
+.ui-widget-content:not(.ui-dialog-buttonpane) {
   border: none;
 }
 

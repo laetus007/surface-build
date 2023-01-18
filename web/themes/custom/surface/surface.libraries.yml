@@ -201,7 +201,6 @@ site-header:
       dist/css/site-alert.css: {}
       dist/css/site-secondary.css: {}
       dist/css/menu-secondary.css: {}
-      dist/css/button-search.css: {}
       dist/css/site-primary.css: {}
       dist/css/site-branding.css: {}
       dist/css/site-navigation.css: {}
