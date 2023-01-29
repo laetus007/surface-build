@@ -101,7 +101,7 @@
     color: hsl(var(--ucla-blue));
   }
 
-  @media (--md) {
+  @media (--tablet) {
     width: 80px;
   }
 

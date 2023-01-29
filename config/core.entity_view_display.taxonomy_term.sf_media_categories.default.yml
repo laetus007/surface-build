@@ -1,0 +1,13 @@
+uuid: a82ffdd9-9840-4cf2-a0cd-f501ce7a4b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_media_categories
+id: taxonomy_term.sf_media_categories.default
+targetEntityType: taxonomy_term
+bundle: sf_media_categories
+mode: default
+content: {  }
+hidden:
+  description: true

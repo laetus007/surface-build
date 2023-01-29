@@ -1,0 +1,8 @@
+uuid: 63c52936-1f7b-4833-aee9-487f5ae38035
+langcode: en
+status: true
+dependencies: {  }
+name: 'Site access'
+vid: sf_permissions_category
+description: 'Manage Site Sections'
+weight: 0

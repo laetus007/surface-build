@@ -54,7 +54,7 @@
     }
   }
 
-  @media (--xl) {
+  @media (--desktop) {
     display: none;
   }
 }
@@ -70,7 +70,7 @@
   width: 1px;
   word-wrap: normal;
 
-  @media (--sm) {
+  @media (--mobile) {
     clip: auto;
     font-size: 14px;
     font-weight: 600;

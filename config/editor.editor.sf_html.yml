@@ -1,0 +1,208 @@
+uuid: 5a68419f-d361-4157-aaa3-c34e0a8bb2dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.sf_html
+  module:
+    - ckeditor5
+format: sf_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - style
+      - bold
+      - italic
+      - '|'
+      - removeFormat
+      - '|'
+      - link
+      - drupalMedia
+      - insertTable
+      - '|'
+      - bulletedList
+      - numberedList
+      - indent
+      - outdent
+      - '|'
+      - alignment
+      - horizontalLine
+      - blockQuote
+      - specialCharacters
+      - '|'
+      - undo
+      - redo
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Primary heading'
+          element: '<h2 class="heading--primary">'
+        -
+          label: 'Secondary heading'
+          element: '<h2 class="heading--secondary">'
+        -
+          label: 'Bar heading'
+          element: '<h2 class="heading--bar">'
+        -
+          label: 'Highlight heading'
+          element: '<h2 class="heading--highlight">'
+        -
+          label: 'Ribbon branding heading'
+          element: '<h2 class="heading--ribbon-branding">'
+        -
+          label: 'Ribbon highlight heading'
+          element: '<h2 class="heading--ribbon-highlight">'
+        -
+          label: 'Lead text'
+          element: '<p class="lead">'
+        -
+          label: 'Primary button'
+          element: '<a class="button">'
+        -
+          label: 'Primary download button'
+          element: '<a class="button button--icon button--icon-download">'
+        -
+          label: 'Primary external button'
+          element: '<a class="button button--icon button--icon-external">'
+        -
+          label: 'Primary internal button'
+          element: '<a class="button button--icon button--icon-internal">'
+        -
+          label: 'Primary play button'
+          element: '<a class="button button--icon button--icon-play">'
+        -
+          label: 'Secondary button'
+          element: '<a class="button button--secondary">'
+        -
+          label: 'Secondary download button'
+          element: '<a class="button button--secondary button--icon button--icon-download">'
+        -
+          label: 'Secondary external button'
+          element: '<a class="button button--secondary button--icon button--icon-external">'
+        -
+          label: 'Secondary Internal button'
+          element: '<a class="button button--secondary button--icon button--icon-internal">'
+        -
+          label: 'Secondary play button'
+          element: '<a class="button button--secondary button--icon button--icon-play">'
+        -
+          label: 'Tertiary button'
+          element: '<a class="button button--tertiary">'
+        -
+          label: 'Tertiary download button'
+          element: '<a class="button button--tertiary button--icon button--icon-download">'
+        -
+          label: 'Tertiary external button'
+          element: '<a class="button button--tertiary button--icon button--icon-external">'
+        -
+          label: 'Tertiary internal button'
+          element: '<a class="button button--tertiary button--icon button--icon-internal">'
+        -
+          label: 'Tertiary play button'
+          element: '<a class="button button--tertiary button--icon button--icon-play">'
+        -
+          label: 'Inverted button'
+          element: '<a class="button button--invert">'
+        -
+          label: 'Inverted download button'
+          element: '<a class="button button--invert button--icon button--icon-download">'
+        -
+          label: 'Inverted external button'
+          element: '<a class="button button--invert button--icon button--icon-external">'
+        -
+          label: 'Inverted Internal button'
+          element: '<a class="button button--invert button--icon button--icon-internal">'
+        -
+          label: 'Inverted play button'
+          element: '<a class="button button--invert button--icon button--icon-play">'
+        -
+          label: 'Icon link download'
+          element: '<a class="icon-link icon-link--download">'
+        -
+          label: 'Icon link external'
+          element: '<a class="icon-link icon-link--external">'
+        -
+          label: 'Icon link internal'
+          element: '<a class="icon-link icon-link--internal">'
+        -
+          label: 'Flush list'
+          element: '<ul class="list list--flush">'
+        -
+          label: 'Pipe list'
+          element: '<ul class="list list--pipe">'
+        -
+          label: 'Link list'
+          element: '<ul class="list list--link">'
+        -
+          label: 'Link icon list'
+          element: '<ul class="list list--link-icon">'
+        -
+          label: 'Orange highlight list'
+          element: '<ul class="list list--highlight list--highlight-orange">'
+        -
+          label: 'Red highlight list'
+          element: '<ul class="list list--highlight list--highlight-red">'
+        -
+          label: 'Berry highlight list'
+          element: '<ul class="list list--highlight list--highlight-berry">'
+        -
+          label: 'Purple highlight list'
+          element: '<ul class="list list--highlight list--highlight-purple">'
+        -
+          label: 'Indigo highlight list'
+          element: '<ul class="list list--highlight list--highlight-indigo">'
+        -
+          label: 'Teal highlight list'
+          element: '<ul class="list list--highlight list--highlight-teal">'
+        -
+          label: 'Moss highlight list'
+          element: '<ul class="list list--highlight list--highlight-moss">'
+        -
+          label: 'Olive highlight list'
+          element: '<ul class="list list--highlight list--highlight-olive">'
+        -
+          label: 'Brown highlight list'
+          element: '<ul class="list list--highlight list--highlight-brown">'
+        -
+          label: 'Unstyled unordered list'
+          element: '<ul class="list list--unstyled">'
+        -
+          label: 'Upper Roman list'
+          element: '<ol class="list list--upper-roman">'
+        -
+          label: 'Upper Alpha list'
+          element: '<ol class="list list--upper-alpha">'
+        -
+          label: 'Lower Roman list'
+          element: '<ol class="list list--lower-roman">'
+        -
+          label: 'Lower Alpha list'
+          element: '<ol class="list list--lower-alpha">'
+        -
+          label: 'Unstyled ordered list'
+          element: '<ol class="list list--unstyled">'
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+        - justify
+    media_media:
+      allow_view_mode_override: false
+image_upload: {  }

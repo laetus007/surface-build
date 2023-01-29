@@ -1,10 +1,10 @@
-uuid: b9fb906e-58bc-47d3-a34b-1545db1d5953
+uuid: 29b749db-6ef3-4608-908c-5ec1bf2c5834
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_sf_video
-    - media.type.remote_video
+    - media.type.sf_video_media_type
     - paragraphs.paragraphs_type.sf_media_callout
 id: paragraph.sf_media_callout.field_sf_video
 field_name: field_sf_video
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      remote_video: remote_video
+      sf_video_media_type: sf_video_media_type
     sort:
       field: name
       direction: ASC

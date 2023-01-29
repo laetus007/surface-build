@@ -10,7 +10,7 @@
     padding-block: var(--size-1);
     position: relative;
 
-    @media (--xl) {
+    @media (--desktop) {
       padding-block: var(--size-4);
       padding-inline: 0;
     }
@@ -27,7 +27,7 @@
       transition: transform 0.2s;
       width: 100%;
 
-      @media (--xl) {
+      @media (--desktop) {
         border-top-width: 9px;
         transform-origin: center;
       }
@@ -45,7 +45,7 @@
   padding-inline: 0;
   width: 100%;
 
-  @media (--xl) {
+  @media (--desktop) {
     align-items: stretch;
     display: flex;
     margin-block-end: 0;
@@ -65,7 +65,7 @@
   .menu__link--has-children {
     .menu__link-inner--level-1 {
       &::after {
-        @media (--xl) {
+        @media (--desktop) {
           content: none;
         }
       }
@@ -85,7 +85,7 @@
   visibility: hidden;
   width: 100%;
 
-  @media (--xl) {
+  @media (--desktop) {
     background: hsl(var(--white));
     border-left: solid 1px transparent;
     border-top: var(--menu-main-level-2-border-top);
@@ -109,7 +109,7 @@
     opacity: 1;
     visibility: visible;
 
-    @media (--xl) {
+    @media (--desktop) {
       margin-block-start: 0;
       opacity: 1;
       transform: translate(-50%, 0);
@@ -128,7 +128,7 @@
   position: relative;
   text-decoration: none;
 
-  @media (--xl) {
+  @media (--desktop) {
     font-size: var(--menu-main-link-level-1-font-size-desktop);
     font-weight: var(--menu-main-link-level-1-font-weight-desktop);
     letter-spacing: var(--menu-main-link-level-1-letterspacing-desktop);
@@ -146,13 +146,13 @@
   }
 
   &:focus {
-    @media (--xl) {
+    @media (--desktop) {
       outline: 0;
       position: relative;
     }
 
     &::before {
-      @media (--xl) {
+      @media (--desktop) {
         border-radius: 0.25rem;
         border: var(--menu-main-link-level-1-border);
         content: "";
@@ -210,14 +210,14 @@
   .menu__item {
     margin-block-end: var(--size-1);
 
-    @media (--xl) {
+    @media (--desktop) {
       margin-block-end: 0;
       margin-inline-end: var(--size-4);
       width: max-content;
     }
 
     &:last-child {
-      @media (--xl) {
+      @media (--desktop) {
         margin-inline-end: 0;
       }
     }
@@ -238,7 +238,7 @@
       margin-block-end: var(--size-1);
       position: relative;
 
-      @media (--xl) {
+      @media (--desktop) {
         align-items: center;
         flex-basis: auto;
         flex-wrap: nowrap;
@@ -248,7 +248,7 @@
       }
 
       &:last-child {
-        @media (--xl) {
+        @media (--desktop) {
           margin-inline-end: 0;
         }
       }
@@ -269,7 +269,7 @@
 
   /* Second level menu */
   .menu-main--level-2 {
-    @media (--xl) {
+    @media (--desktop) {
       display: flex;
       flex-wrap: wrap;
       width: 250px;
@@ -280,19 +280,19 @@
       flex-wrap: wrap;
       margin-inline-end: 0;
 
-      @media (--xl) {
+      @media (--desktop) {
         display: block;
       }
     }
 
     .menu__link {
-      @media (--xl) {
+      @media (--desktop) {
         display: block;
       }
     }
 
     .menu__link-inner {
-      @media (--xl) {
+      @media (--desktop) {
         padding-block: var(--size-1);
       }
 
@@ -314,7 +314,7 @@
       flex-wrap: wrap;
       margin-block-end: var(--size-1);
 
-      @media (--xl) {
+      @media (--desktop) {
         align-items: center;
         flex-basis: auto;
         flex-wrap: nowrap;
@@ -325,7 +325,7 @@
       }
 
       &:last-child {
-        @media (--xl) {
+        @media (--desktop) {
           margin-inline-end: 0;
         }
       }
@@ -344,7 +344,7 @@
     }
 
     .menu-caret {
-      @media (--xl) {
+      @media (--desktop) {
         display: none;
       }
     }
@@ -352,7 +352,7 @@
 
   /* Second level menu */
   .menu-main--level-2 {
-    @media (--xl) {
+    @media (--desktop) {
       display: grid;
       grid-gap: var(--size-1);
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -374,7 +374,7 @@
     }
 
     .menu__link-inner {
-      @media (--xl) {
+      @media (--desktop) {
         padding-block: var(--size-1);
       }
 
@@ -395,7 +395,7 @@
     padding-inline: 0;
 
     .menu__link {
-      @media (--xl) {
+      @media (--desktop) {
         display: block;
       }
     }

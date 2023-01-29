@@ -1,0 +1,27 @@
+uuid: c54ed6d4-e866-4dd7-8497-f14d7f4a0bd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_audio_file
+    - media.type.sf_audio_media_type
+  module:
+    - file
+id: media.sf_audio_media_type.field_media_audio_file
+field_name: field_media_audio_file
+entity_type: media
+bundle: sf_audio_media_type
+label: 'Audio file'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'mp3 wav aac'
+  max_filesize: ''
+  description_field: false
+field_type: file

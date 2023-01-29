@@ -1,10 +1,10 @@
-uuid: 77d6e4f0-f1ca-42ea-b6e3-12af30459303
+uuid: bede2c83-43a9-4290-af39-82770efeba9a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_sf_image
-    - media.type.image
+    - media.type.sf_image_media_type
     - paragraphs.paragraphs_type.sf_highlight
 id: paragraph.sf_highlight.field_sf_image
 field_name: field_sf_image
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      sf_image_media_type: sf_image_media_type
     sort:
       field: name
       direction: ASC

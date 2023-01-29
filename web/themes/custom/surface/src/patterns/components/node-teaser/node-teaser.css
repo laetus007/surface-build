@@ -22,7 +22,7 @@
     flex-wrap: wrap;
     margin: 0;
 
-    @media (--lg) {
+    @media (--laptop) {
       position: relative; /* Anchor the image */
     }
   }
@@ -37,7 +37,7 @@
     & + .node__title {
       flex-basis: calc(100% - calc(4.5 * var(--size-2)));
 
-      @media (--lg) {
+      @media (--laptop) {
         flex-basis: auto;
       }
     }
@@ -52,13 +52,13 @@
       object-fit: cover;
       width: 3.9375rem;
 
-      @media (--lg) {
+      @media (--laptop) {
         height: calc(7.1429vw - 2.317rem);
         width: calc(7.1429vw - 2.317rem);
       }
     }
 
-    @media (--lg) {
+    @media (--laptop) {
       position: absolute;
       inset-block-start: 0;
       inset-inline-start: calc(-7.1429vw - -1.0714px);
@@ -73,7 +73,7 @@
     margin-block-end: var(--size-2);
     margin: 0;
 
-    @media (--lg) {
+    @media (--laptop) {
       font-size: var(--size-4);
       line-height: var(--size-6);
     }
@@ -87,12 +87,12 @@
     padding-block: 0;
     padding-inline: 0;
 
-    @media (--lg) {
+    @media (--laptop) {
       margin-block-start: var(--size-4);
     }
   }
 
-  @media (--lg) {
+  @media (--laptop) {
     margin-block-end: var(--size-6);
   }
 }

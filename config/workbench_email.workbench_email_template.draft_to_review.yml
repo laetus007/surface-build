@@ -1,0 +1,34 @@
+uuid: 48e043e3-3e84-40c3-b77e-0f35c5c342b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sf_article
+    - node.type.sf_event
+    - node.type.sf_paragraph_page
+    - node.type.sf_person
+    - user.role.site_manager
+    - workflows.workflow.standard_workflow
+id: draft_to_review
+label: 'Draft to Review'
+format: plain_text
+subject: 'Content on [site:name] is ready for your review'
+recipient_types:
+  role:
+    id: role
+    provider: workbench_email
+    status: true
+    settings:
+      roles:
+        site_manager: site_manager
+bundles:
+  'node:sf_article': 'node:sf_article'
+  'node:sf_event': 'node:sf_event'
+  'node:sf_paragraph_page': 'node:sf_paragraph_page'
+  'node:sf_person': 'node:sf_person'
+body:
+  value: "Hello,\r\n\r\nThere is content waiting for your review on the [site:name] website. The content's title is [node:title]. It can be accessed here: [node:edit-url].\r\n\r\nThank you,\r\n[site:name]"
+  format: plain_text
+replyTo: ''
+transitions:
+  standard_workflow: {  }

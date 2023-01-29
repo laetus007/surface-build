@@ -11,7 +11,7 @@
     flex: 1 0 100%;
     margin-block-end: 1.125rem;
 
-    @media (--lg) {
+    @media (--laptop) {
       flex-grow: 0;
       flex-shrink: 0;
       margin-block-end: 0;
@@ -19,7 +19,7 @@
   }
 }
 
-@media (--lg) {
+@media (--laptop) {
   .layout--threecol-section {
     & > .layout__region--first {
       margin-inline-end: 1.125rem;

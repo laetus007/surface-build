@@ -4,26 +4,42 @@ status: true
 dependencies:
   config:
     - field.field.node.sf_person.body
+    - field.field.node.sf_person.field_sf_address
     - field.field.node.sf_person.field_sf_courses
     - field.field.node.sf_person.field_sf_credentials
     - field.field.node.sf_person.field_sf_education_and_degrees
     - field.field.node.sf_person.field_sf_emails
+    - field.field.node.sf_person.field_sf_feature_status
     - field.field.node.sf_person.field_sf_first_name
+    - field.field.node.sf_person.field_sf_hide_from_lists
     - field.field.node.sf_person.field_sf_honors_and_awards
     - field.field.node.sf_person.field_sf_last_name
     - field.field.node.sf_person.field_sf_m_documents
     - field.field.node.sf_person.field_sf_m_primary_image
+    - field.field.node.sf_person.field_sf_membership_service
+    - field.field.node.sf_person.field_sf_meta_description
+    - field.field.node.sf_person.field_sf_meta_keyword
+    - field.field.node.sf_person.field_sf_meta_share
+    - field.field.node.sf_person.field_sf_meta_tags
     - field.field.node.sf_person.field_sf_middle_initial
     - field.field.node.sf_person.field_sf_name_prefix
     - field.field.node.sf_person.field_sf_office_hours
     - field.field.node.sf_person.field_sf_office_location
+    - field.field.node.sf_person.field_sf_orcid
+    - field.field.node.sf_person.field_sf_permissions
+    - field.field.node.sf_person.field_sf_person_type
     - field.field.node.sf_person.field_sf_phone_numbers_
     - field.field.node.sf_person.field_sf_position_title
+    - field.field.node.sf_person.field_sf_publications
+    - field.field.node.sf_person.field_sf_research_interests
+    - field.field.node.sf_person.field_sf_tags
     - field.field.node.sf_person.field_sf_units
     - field.field.node.sf_person.field_sf_websites
     - node.type.sf_person
   module:
+    - address
     - link
+    - metatag
     - telephone
     - text
     - user
@@ -38,6 +54,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 14
+    region: content
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_sf_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
     region: content
   field_sf_courses:
     type: string
@@ -70,6 +98,16 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
+  field_sf_feature_status:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 21
+    region: content
   field_sf_first_name:
     type: string
     label: above
@@ -77,6 +115,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 7
+    region: content
+  field_sf_hide_from_lists:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 22
     region: content
   field_sf_honors_and_awards:
     type: string
@@ -101,16 +149,56 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 16
+    weight: 20
     region: content
   field_sf_m_primary_image:
     type: entity_reference_entity_view
-    label: hidden
+    label: above
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 26
+    region: content
+  field_sf_membership_service:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_sf_meta_description:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_sf_meta_keyword:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 32
+    region: content
+  field_sf_meta_share:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_sf_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 25
     region: content
   field_sf_middle_initial:
     type: string
@@ -143,6 +231,34 @@ content:
     third_party_settings: {  }
     weight: 13
     region: content
+  field_sf_orcid:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 33
+    region: content
+  field_sf_permissions:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_sf_person_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 19
+    region: content
   field_sf_phone_numbers_:
     type: telephone_link
     label: hidden
@@ -158,6 +274,29 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_sf_publications:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  field_sf_research_interests:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_sf_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 31
     region: content
   field_sf_units:
     type: entity_reference_label

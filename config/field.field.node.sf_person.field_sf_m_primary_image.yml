@@ -1,16 +1,16 @@
-uuid: cb9ecd3b-3392-47dc-953b-a2ef7fe56387
+uuid: 93ca34ab-26f8-43ad-b419-f2ff135d629e
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_sf_m_primary_image
-    - media.type.image
+    - media.type.sf_image_media_type
     - node.type.sf_person
 id: node.sf_person.field_sf_m_primary_image
 field_name: field_sf_m_primary_image
 entity_type: node
 bundle: sf_person
-label: 'Portrait image'
+label: 'Portrait Image'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      sf_image_media_type: sf_image_media_type
     sort:
       field: name
       direction: ASC

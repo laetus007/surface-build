@@ -17,7 +17,7 @@ mode: default
 content:
   field_sf_image:
     type: media_library_widget
-    weight: 2
+    weight: 4
     region: content
     settings:
       media_types: {  }
@@ -40,7 +40,7 @@ content:
     third_party_settings: {  }
   field_sf_video:
     type: media_library_widget
-    weight: 3
+    weight: 5
     region: content
     settings:
       media_types: {  }

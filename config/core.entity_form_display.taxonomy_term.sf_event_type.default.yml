@@ -1,0 +1,32 @@
+uuid: 3d339977-a462-4231-ac3b-7e5bc78fc6d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_event_type
+id: taxonomy_term.sf_event_type.default
+targetEntityType: taxonomy_term
+bundle: sf_event_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  publish_on: true
+  publish_state: true
+  status: true
+  unpublish_on: true
+  unpublish_state: true

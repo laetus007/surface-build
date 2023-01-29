@@ -1,0 +1,17 @@
+uuid: f92ecd23-52c6-42af-85a6-57e6b0532bb9
+langcode: en
+status: true
+dependencies: {  }
+id: sf_video_media_type
+label: Video
+description: 'External (Remote) Video media entity type for handling videos from sources like YouTube and Vimeo.'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_oembed_video
+  thumbnails_directory: 'public://oembed_thumbnails/[date:custom:Y-m]'
+  providers:
+    - YouTube
+    - Vimeo
+field_map: {  }

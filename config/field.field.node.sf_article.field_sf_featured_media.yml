@@ -1,0 +1,31 @@
+uuid: b12b463d-5ba6-40ef-b51a-5bd75206b0d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_featured_media
+    - media.type.sf_image_media_type
+    - media.type.sf_video_media_type
+    - node.type.sf_article
+id: node.sf_article.field_sf_featured_media
+field_name: field_sf_featured_media
+entity_type: node
+bundle: sf_article
+label: 'Featured media'
+description: 'A video or image that will be presented prominently on the piece of content you are adding.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      sf_image_media_type: sf_image_media_type
+      sf_video_media_type: sf_video_media_type
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: sf_image_media_type
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 1f2d7aa2-c817-4e6a-9647-4b02a0e2b7b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_permissions
+    - node.type.sf_person
+    - taxonomy.vocabulary.sf_permissions_category
+id: node.sf_person.field_sf_permissions
+field_name: field_sf_permissions
+entity_type: node
+bundle: sf_person
+label: 'Site access'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sf_permissions_category: sf_permissions_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

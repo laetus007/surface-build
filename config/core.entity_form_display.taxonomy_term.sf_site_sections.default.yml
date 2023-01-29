@@ -1,0 +1,102 @@
+uuid: afae8efc-ed6e-41bd-988c-6df45eddf43f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sf_site_sections.field_sf_meta_tags
+    - field.field.taxonomy_term.sf_site_sections.field_sf_permissions
+    - field.field.taxonomy_term.sf_site_sections.field_sf_person_reference
+    - field.field.taxonomy_term.sf_site_sections.field_sf_section_content
+    - field.field.taxonomy_term.sf_site_sections.field_sf_section_hero
+    - field.field.taxonomy_term.sf_site_sections.field_sf_site_section_menu
+    - field.field.taxonomy_term.sf_site_sections.field_sf_tags
+    - taxonomy.vocabulary.sf_site_sections
+  module:
+    - media_library
+    - metatag
+    - path
+id: taxonomy_term.sf_site_sections.default
+targetEntityType: taxonomy_term
+bundle: sf_site_sections
+mode: default
+content:
+  field_sf_meta_tags:
+    type: metatag_firehose
+    weight: 8
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_sf_permissions:
+    type: options_buttons
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sf_person_reference:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sf_section_hero:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_sf_site_section_menu:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_sf_tags:
+    type: entity_reference_autocomplete_tags
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  field_sf_section_content: true
+  publish_on: true
+  publish_state: true
+  unpublish_on: true
+  unpublish_state: true

@@ -1,0 +1,29 @@
+uuid: 61668282-101d-4557-b333-49ba84f00210
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.sf_audio_media_type.field_media_audio_file
+    - field.field.media.sf_audio_media_type.field_sf_media_category
+    - media.type.sf_audio_media_type
+id: media.sf_audio_media_type.media_library
+targetEntityType: media
+bundle: sf_audio_media_type
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_audio_file: true
+  field_sf_media_category: true
+  path: true
+  status: true
+  uid: true

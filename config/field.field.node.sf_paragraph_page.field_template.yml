@@ -1,0 +1,24 @@
+uuid: 35a5ae1b-4c28-4d93-90e6-c2d306c182c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_template
+    - node.type.sf_paragraph_page
+  module:
+    - template_whisperer
+id: node.sf_paragraph_page.field_template
+field_name: field_template
+entity_type: node
+bundle: sf_paragraph_page
+label: Template
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler:
+    suggestions:
+      site_section: site_section
+field_type: template_whisperer

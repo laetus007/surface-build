@@ -20,7 +20,7 @@
   line-height: var(--h1-line-height-mobile, var(--font-line-height-1));
   margin-block: var(--h1-margin-block-mobile, var(--size-2));
 
-  @media (--md) {
+  @media (--tablet) {
     font-size: var(--h1-font-size-desktop, var(--font-size-8));
     line-height: var(--h1-line-height-desktop, var(--font-line-height-2));
     margin-block: var(--h1-margin-block-desktop, var(--size-4));
@@ -35,7 +35,7 @@
   line-height: var(--h2-line-height-mobile, var(--font-line-height-1));
   margin-block: var(--h2-margin-block-mobile, var(--size-2));
 
-  @media (--md) {
+  @media (--tablet) {
     font-size: var(--h2-font-size-desktop, var(--font-size-6));
     line-height: var(--h2-line-height-desktop, var(--font-line-height-2));
     margin-block: var(--h2-margin-block-desktop, var(--size-4));
@@ -50,7 +50,7 @@
   line-height: var(--h3-line-height-mobile, var(--font-line-height-1));
   margin-block: var(--h3-margin-block-mobile, var(--size-2));
 
-  @media (--md) {
+  @media (--tablet) {
     font-size: var(--h3-font-size-desktop, var(--font-size-5));
     line-height: var(--h3-line-height-desktop, var(--font-line-height-2));
     margin-block: var(--h3-margin-block-desktop, var(--size-4));
@@ -65,7 +65,7 @@
   line-height: var(--h4-line-height-mobile, var(--font-line-height-1));
   margin-block: var(--h4-margin-block-mobile, var(--size-2));
 
-  @media (--md) {
+  @media (--tablet) {
     font-size: var(--h4-font-size-desktop, var(--font-size-4));
     line-height: var(--h4-line-height-desktop, var(--font-line-height-2));
     margin-block: var(--h4-margin-block-desktop, var(--size-4));
@@ -80,7 +80,7 @@
   line-height: var(--h5-line-height-mobile, var(--font-line-height-1));
   margin-block: var(--h5-margin-block-mobile, var(--size-2));
 
-  @media (--md) {
+  @media (--tablet) {
     font-size: var(--h5-font-size-desktop, var(--font-size-3));
     line-height: var(--h5-line-height-desktop, var(--font-line-height-2));
     margin-block: var(--h5-margin-block-desktop, var(--size-4));
@@ -95,7 +95,7 @@
   line-height: var(--h6-line-height-mobile, var(--font-line-height-1));
   margin-block: var(--h6-margin-block-mobile, var(--size-2));
 
-  @media (--md) {
+  @media (--tablet) {
     font-size: var(--h6-font-size-desktop, var(--font-size-2));
     line-height: var(--h6-line-height-desktop, var(--font-line-height-2));
     margin-block: var(--h6-margin-block-desktop, var(--size-4));

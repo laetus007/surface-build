@@ -1,0 +1,29 @@
+uuid: 34b0c262-e26d-4380-8fc0-470c84166943
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sf_tags
+    - taxonomy.vocabulary.sf_site_sections
+    - taxonomy.vocabulary.sf_tags
+id: taxonomy_term.sf_site_sections.field_sf_tags
+field_name: field_sf_tags
+entity_type: taxonomy_term
+bundle: sf_site_sections
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sf_tags: sf_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

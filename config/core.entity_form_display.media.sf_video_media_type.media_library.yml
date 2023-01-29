@@ -1,0 +1,29 @@
+uuid: c2d6a3be-9da3-46bc-871c-66245681803b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.sf_video_media_type.field_media_oembed_video
+    - field.field.media.sf_video_media_type.field_sf_media_category
+    - media.type.sf_video_media_type
+id: media.sf_video_media_type.media_library
+targetEntityType: media
+bundle: sf_video_media_type
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_oembed_video: true
+  field_sf_media_category: true
+  path: true
+  status: true
+  uid: true

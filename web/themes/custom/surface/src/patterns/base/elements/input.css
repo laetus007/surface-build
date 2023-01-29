@@ -59,7 +59,7 @@ textarea {
     min-height: var(--input-min-height-small, var(--size-5));
   }
 
-  @media (--sm) {
+  @media (--mobile) {
     width: auto;
   }
 }

@@ -1,0 +1,13 @@
+uuid: e668f799-6792-47e2-b8b8-700167664827
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_event_type
+id: taxonomy_term.sf_event_type.default
+targetEntityType: taxonomy_term
+bundle: sf_event_type
+mode: default
+content: {  }
+hidden:
+  description: true

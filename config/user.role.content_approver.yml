@@ -1,0 +1,9 @@
+uuid: 10c51183-baba-4088-a654-6b282c1589e9
+langcode: en
+status: true
+dependencies: {  }
+id: content_approver
+label: 'Content Approver'
+weight: -8
+is_admin: null
+permissions: {  }

@@ -1,10 +1,15 @@
 uuid: 7f40ad49-3202-4014-8ee5-430e923b3843
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - layout_paragraphs
 id: sf_slider_item
 label: 'Slider item'
 icon_uuid: null
 icon_default: null
 description: 'The slider item is a subcomponent of the slider component.  This is not meant to be used by itself.'
-behavior_plugins: {  }
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,39 @@
+uuid: aa1f986b-3c4d-4093-9949-b0696d381406
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sf_article
+    - node.type.sf_event
+    - node.type.sf_paragraph_page
+    - node.type.sf_person
+    - user.role.site_manager
+    - workflows.workflow.standard_workflow
+id: anything_to_published
+label: 'Anything to Published'
+format: plain_text
+subject: 'Content has been published on [site:name]'
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: true
+    settings: {  }
+  role:
+    id: role
+    provider: workbench_email
+    status: true
+    settings:
+      roles:
+        site_manager: site_manager
+bundles:
+  'node:sf_article': 'node:sf_article'
+  'node:sf_event': 'node:sf_event'
+  'node:sf_paragraph_page': 'node:sf_paragraph_page'
+  'node:sf_person': 'node:sf_person'
+body:
+  value: "Hello,\r\n\r\nContent titled [node:title] has been published on [site:name]. It can be accessed here: [node:url].\r\n\r\nThank you,\r\n[site:name]"
+  format: plain_text
+replyTo: ''
+transitions:
+  standard_workflow: {  }

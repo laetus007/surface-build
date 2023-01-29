@@ -15,7 +15,7 @@
     font-weight: bold;
   }
 
-  @media (--sm) {
+  @media (--mobile) {
     margin-block-end: var(--size-4);
   }
 }
@@ -50,7 +50,7 @@
 .node__content {
   padding-block-end: var(--size-3);
 
-  @media (--lg) {
+  @media (--laptop) {
     padding-block-end: var(--size-6);
   }
 }

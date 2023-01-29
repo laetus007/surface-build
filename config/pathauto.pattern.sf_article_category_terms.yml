@@ -1,0 +1,22 @@
+uuid: e2523098-8a2b-4a60-a86a-908e182ea69c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: sf_article_category_terms
+label: 'Article Category Terms'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'article-category/[term:name]'
+selection_criteria:
+  8159888c-3bda-4c75-8c5d-d4494eb1fc52:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 8159888c-3bda-4c75-8c5d-d4494eb1fc52
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      sf_article_category: sf_article_category
+selection_logic: and
+weight: -5
+relationships: {  }

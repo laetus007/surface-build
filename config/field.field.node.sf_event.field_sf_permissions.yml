@@ -1,0 +1,29 @@
+uuid: 78438fcb-c29b-44cf-a948-598e3a747a01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_permissions
+    - node.type.sf_event
+    - taxonomy.vocabulary.sf_permissions_category
+id: node.sf_event.field_sf_permissions
+field_name: field_sf_permissions
+entity_type: node
+bundle: sf_event
+label: 'Site access'
+description: 'Manages Site Access'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sf_permissions_category: sf_permissions_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

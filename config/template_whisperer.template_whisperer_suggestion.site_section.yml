@@ -1,0 +1,7 @@
+uuid: cda4d44a-12f3-467d-bbdb-07d3d1c2f914
+langcode: en
+status: true
+dependencies: {  }
+id: site_section
+name: 'Site section'
+suggestion: site_section

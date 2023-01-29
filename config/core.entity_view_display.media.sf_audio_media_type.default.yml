@@ -1,0 +1,46 @@
+uuid: 6bbe5bf1-db1a-4ce9-92fc-1764b01ee7f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.sf_audio_media_type.field_media_audio_file
+    - field.field.media.sf_audio_media_type.field_sf_media_category
+    - media.type.sf_audio_media_type
+  module:
+    - file
+id: media.sf_audio_media_type.default
+targetEntityType: media
+bundle: sf_audio_media_type
+mode: default
+content:
+  field_media_audio_file:
+    type: file_audio
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sf_media_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  thumbnail: true
+  uid: true

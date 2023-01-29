@@ -5,6 +5,7 @@ dependencies:
   content:
     - 'file:file:98cc03f0-6764-41d7-9306-42ef0bd241f4'
   module:
+    - layout_paragraphs
     - paragraphs_library
     - style_options
 third_party_settings:
@@ -16,5 +17,8 @@ icon_uuid: 98cc03f0-6764-41d7-9306-42ef0bd241f4
 icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OTUuOTYgNDQ4Ij48ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIj48ZyBpZD0iTGF5ZXJfMS0yIiBkYXRhLW5hbWU9IkxheWVyIDEiPjxwYXRoIGQ9Ik00ODkuNDQsMzcwLjE2bC0xOTYtMzQ0LjRDMjg0LjQ4LDkuNTIsMjY3LjY4LDAsMjQ4LjA4LDBzLTM1Ljg0LDkuNTItNDUuMzYsMjUuNzZsLTE5NiwzNDQuNGE1My44MSw1My44MSwwLDAsMCwwLDUyLjA4YzksMTYuMjQsMjUuNzYsMjUuNzYsNDQuOCwyNS43Nkg0NDNjMTksMCwzNS44NC05LjUyLDQ0LjgtMjUuNzYsMTAuNjQtMTYuMjQsMTAuNjQtMzUuODQsMS42OC01Mi4wOFpNMjc3LjA4LDM2NmgtNTJWMzIxaDUyWm0wLTcxaC01MlYxNjVoNTJaIi8+PC9nPjwvZz48L3N2Zz4='
 description: 'The alert component allows users to add a specific alert to a page that calls attention to content.'
 behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }
   style_options:
     enabled: true

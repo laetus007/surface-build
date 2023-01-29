@@ -1,0 +1,20 @@
+uuid: d3f8dfbf-f8a7-4ac1-ab3f-c05415c2691b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_sf_section_hero
+field_name: field_sf_section_hero
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

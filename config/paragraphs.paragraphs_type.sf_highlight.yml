@@ -5,6 +5,7 @@ dependencies:
   content:
     - 'file:file:adb5186c-d4ea-4c6d-becb-04a2b15b9976'
   module:
+    - layout_paragraphs
     - paragraphs_library
     - style_options
 third_party_settings:
@@ -16,5 +17,8 @@ icon_uuid: adb5186c-d4ea-4c6d-becb-04a2b15b9976
 icon_default: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MzkgMzUwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGwtcnVsZTpldmVub2RkO308L3N0eWxlPjwvZGVmcz48ZyBpZD0iTGF5ZXJfMS0yIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik0zNS41NiwwSDUwMy40NEM1MjMsMCw1MzksMTYsNTM5LDM1LjU2VjMxNC40NGMwLDE5LjU2LTE2LDM1LjU2LTM1LjU2LDM1LjU2SDM1LjU2Yy0xOS41NiwwLTM1LjU2LTE2LTM1LjU2LTM1LjU2VjM1LjU2QzAsMTYsMTYsMCwzNS41NiwwaDBabTM4LjQ0LDI0MGgyMjN2MjlINzR2LTI5Wm0wLTc5aDIyM3YyOUg3NHYtMjlabTAtODBoMjIzdjI5SDc0di0yOVptMjc1LTEwaDEyMnYxMjJoLTEyMlY3MVptMjksMzBoNjN2NjNoLTYzdi02M1pNMzUuMTIsMzVINTAyLjg4Yy42MSwwLDEuMTIsLjUsMS4xMiwxLjEyVjMxNC44OWMwLC42MS0uNSwxLjExLTEuMTEsMS4xMUgzNS4xMmMtLjYxLDAtMS4xMi0uNS0xLjEyLTEuMTJWMzYuMTFjMC0uNjEsLjUtMS4xMSwxLjEyLTEuMTFoMFoiLz48L2c+PC9zdmc+'
 description: 'The highlight component allows for users to highlight content with an Image, Title, Teaser and link'
 behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }
   style_options:
     enabled: true

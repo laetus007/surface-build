@@ -1,0 +1,29 @@
+uuid: 5803907d-599e-4130-a8c2-ce364b9a787b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_permissions
+    - node.type.sf_paragraph_page
+    - taxonomy.vocabulary.sf_permissions_category
+id: node.sf_paragraph_page.field_sf_permissions
+field_name: field_sf_permissions
+entity_type: node
+bundle: sf_paragraph_page
+label: 'Site access'
+description: 'Manages site section access'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sf_permissions_category: sf_permissions_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

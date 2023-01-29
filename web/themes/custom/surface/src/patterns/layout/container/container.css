@@ -9,7 +9,7 @@
   padding-inline: var(--size-2);
   width: 100%;
 
-  @media (--xl) {
+  @media (--desktop) {
     padding-inline: var(--size-4);
   }
 

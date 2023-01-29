@@ -1,0 +1,29 @@
+uuid: f2f0fbcd-431b-47bf-8d5e-66032d40a1b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_tags
+    - node.type.sf_paragraph_page
+    - taxonomy.vocabulary.sf_tags
+id: node.sf_paragraph_page.field_sf_tags
+field_name: field_sf_tags
+entity_type: node
+bundle: sf_paragraph_page
+label: Tags
+description: 'Enter a comma-separated list of keywords which will help to classify this page. As you type an autocomplete dropdown will show matching terms already saved on the site.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sf_tags: sf_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

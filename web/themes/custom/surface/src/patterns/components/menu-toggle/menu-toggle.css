@@ -60,7 +60,7 @@
   }
 }
 
-@media (--xl) {
+@media (--desktop) {
   .menu-toggle {
     align-self: stretch;
     display: flex;

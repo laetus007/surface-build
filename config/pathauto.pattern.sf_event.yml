@@ -1,0 +1,22 @@
+uuid: 14f17c78-eabb-4d50-a495-e249a7ce7c89
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sf_event
+label: Event
+type: 'canonical_entities:node'
+pattern: 'events/[node:title]'
+selection_criteria:
+  5cf89ecf-26ba-4e81-854d-c8ed06880919:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5cf89ecf-26ba-4e81-854d-c8ed06880919
+    context_mapping:
+      node: node
+    bundles:
+      sf_event: sf_event
+selection_logic: and
+weight: -5
+relationships: {  }

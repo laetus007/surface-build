@@ -232,7 +232,7 @@
     flex-direction: column;
     position: relative;
 
-    @media (--lg) {
+    @media (--laptop) {
       flex-direction: row;
     }
 
@@ -249,7 +249,7 @@
     margin-block-end: 20px;
     width: 220px;
 
-    @media (--lg) {
+    @media (--laptop) {
       margin-right: 20px;
     }
   }

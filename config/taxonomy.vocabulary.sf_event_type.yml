@@ -1,0 +1,8 @@
+uuid: d352cd3c-4d33-4c3f-b9f7-5e772aa7bf23
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event type'
+vid: sf_event_type
+description: 'A categorization of events'
+weight: 0

@@ -1,0 +1,89 @@
+uuid: 0b8ca175-82d8-4aa3-a95e-b4137f2048f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sf_event.body
+    - field.field.node.sf_event.field_sf_dates
+    - field.field.node.sf_event.field_sf_event_location
+    - field.field.node.sf_event.field_sf_event_map_link
+    - field.field.node.sf_event.field_sf_event_type
+    - field.field.node.sf_event.field_sf_featured_media
+    - field.field.node.sf_event.field_sf_m_documents
+    - field.field.node.sf_event.field_sf_meta_description
+    - field.field.node.sf_event.field_sf_meta_keyword
+    - field.field.node.sf_event.field_sf_meta_share
+    - field.field.node.sf_event.field_sf_meta_tags
+    - field.field.node.sf_event.field_sf_permissions
+    - field.field.node.sf_event.field_sf_person_reference
+    - field.field.node.sf_event.field_sf_tags
+    - node.type.sf_event
+  module:
+    - datetime_range
+    - link
+    - text
+    - user
+id: node.sf_event.teaser
+targetEntityType: node
+bundle: sf_event
+mode: teaser
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sf_dates:
+    type: daterange_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sf_event_location:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_sf_event_map_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_sf_featured_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_sf_event_type: true
+  field_sf_m_documents: true
+  field_sf_meta_description: true
+  field_sf_meta_keyword: true
+  field_sf_meta_share: true
+  field_sf_meta_tags: true
+  field_sf_permissions: true
+  field_sf_person_reference: true
+  field_sf_tags: true
+  links: true

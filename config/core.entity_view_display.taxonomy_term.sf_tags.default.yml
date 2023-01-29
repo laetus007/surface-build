@@ -1,0 +1,13 @@
+uuid: b9ef1094-d136-41a7-852a-08a23770c398
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_tags
+id: taxonomy_term.sf_tags.default
+targetEntityType: taxonomy_term
+bundle: sf_tags
+mode: default
+content: {  }
+hidden:
+  description: true

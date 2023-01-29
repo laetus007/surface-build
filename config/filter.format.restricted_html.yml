@@ -16,7 +16,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p> <strong> <a href>'
+      allowed_html: '<br> <p> <strong> <a href> <em> <ul> <li> <ol>'
       filter_html_help: true
       filter_html_nofollow: false
   filter_autop:
@@ -40,3 +40,9 @@ filters:
     settings:
       tablesaw_type: stack
       tablesaw_persist: '1'
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }

@@ -1,0 +1,19 @@
+uuid: 62626e00-6d36-404b-b442-68a712d2c5da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_sf_media_caption
+    - media.type.sf_image_media_type
+id: media.sf_image_media_type.field_sf_media_caption
+field_name: field_sf_media_caption
+entity_type: media
+bundle: sf_image_media_type
+label: Caption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

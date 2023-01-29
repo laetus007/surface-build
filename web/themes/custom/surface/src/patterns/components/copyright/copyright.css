@@ -11,7 +11,7 @@
   order: 1;
   text-transform: uppercase;
 
-  @media (--xl) {
+  @media (--desktop) {
     grid-column: 1 / 6;
     order: 0;
   }

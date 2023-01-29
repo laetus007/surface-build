@@ -1,0 +1,29 @@
+uuid: 640eae56-94f4-4b09-b0de-1a425f64da26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_meta_share
+    - media.type.sf_image_media_type
+    - node.type.sf_person
+id: node.sf_person.field_sf_meta_share
+field_name: field_sf_meta_share
+entity_type: node
+bundle: sf_person
+label: 'Social Media Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      sf_image_media_type: sf_image_media_type
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

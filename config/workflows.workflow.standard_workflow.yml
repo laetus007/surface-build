@@ -1,0 +1,97 @@
+uuid: 6c43f38d-0f82-440b-bcca-b75566c7f295
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sf_article
+    - node.type.sf_event
+    - node.type.sf_paragraph_page
+    - node.type.sf_person
+  module:
+    - content_moderation
+id: standard_workflow
+label: 'Standard Workflow'
+type: content_moderation
+type_settings:
+  states:
+    archived:
+      label: Archived
+      weight: 1
+      published: false
+      default_revision: true
+    draft:
+      label: Draft
+      weight: -2
+      published: false
+      default_revision: false
+    in_review:
+      label: 'In Review'
+      weight: -1
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 0
+      published: true
+      default_revision: true
+    unpublished:
+      label: Unpublished
+      weight: 2
+      published: false
+      default_revision: true
+  transitions:
+    archive:
+      label: Archive
+      from:
+        - draft
+        - in_review
+        - published
+      to: archived
+      weight: 4
+    create_new_draft:
+      label: 'Create New Draft'
+      from:
+        - archived
+        - draft
+        - published
+      to: draft
+      weight: 0
+    publish:
+      label: Publish
+      from:
+        - archived
+        - draft
+        - in_review
+        - published
+        - unpublished
+      to: published
+      weight: 1
+    reject:
+      label: Reject
+      from:
+        - in_review
+      to: draft
+      weight: 3
+    review:
+      label: Review
+      from:
+        - draft
+        - unpublished
+      to: in_review
+      weight: 2
+    unpublished:
+      label: Unpublished
+      from:
+        - archived
+        - draft
+        - in_review
+        - published
+      to: unpublished
+      weight: 5
+  entity_types:
+    node:
+      - sf_article
+      - sf_event
+      - sf_paragraph_page
+      - sf_person
+  default_moderation_state: draft

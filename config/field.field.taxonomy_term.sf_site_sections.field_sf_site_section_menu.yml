@@ -1,0 +1,23 @@
+uuid: 03f628a7-8bb6-419a-9067-fcc8b6fd3f97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sf_site_section_menu
+    - taxonomy.vocabulary.sf_site_sections
+id: taxonomy_term.sf_site_sections.field_sf_site_section_menu
+field_name: field_sf_site_section_menu
+entity_type: taxonomy_term
+bundle: sf_site_sections
+label: 'Site Section Menu'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:menu'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

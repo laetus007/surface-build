@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.restricted_html
+    - filter.format.sf_html
   module:
     - filter
     - media
@@ -13,10 +15,12 @@ _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
 label: 'Authenticated user'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
   - 'access content'
   - 'search content'
   - 'use text format basic_html'
+  - 'use text format restricted_html'
+  - 'use text format sf_html'
   - 'view media'

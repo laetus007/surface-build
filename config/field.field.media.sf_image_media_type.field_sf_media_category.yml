@@ -1,0 +1,29 @@
+uuid: 8a566697-f867-47f9-922b-76f30797e8b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_sf_media_category
+    - media.type.sf_image_media_type
+    - taxonomy.vocabulary.sf_media_categories
+id: media.sf_image_media_type.field_sf_media_category
+field_name: field_sf_media_category
+entity_type: media
+bundle: sf_image_media_type
+label: 'Media category'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sf_media_categories: sf_media_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

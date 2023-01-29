@@ -1,0 +1,29 @@
+uuid: b0f3d169-e5a4-4105-b6eb-8bb55e9bf968
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  description: '[node:field_sf_meta_description|node:summary]'
+  keywords: '[node:field_sf_meta_keyword|node:field_sf_tags]'
+  og_description: '[node:field_sf_meta_description|node:summary]'
+  og_image_alt: '[node:field_sf_meta_share:entity:field_media_image:alt|node:field_sf_featured_media:entity:field_media_image:alt]'
+  og_image_height: '[node:field_sf_meta_share:entity:field_media_image:sf_social_share:height|node:field_sf_featured_media:entity:field_media_image:sf_social_share:height]'
+  og_image_url: '[node:field_sf_meta_share:entity:field_media_image:sf_social_share:url|node:field_sf_featured_media:entity:field_media_image:sf_social_share:url]'
+  og_image_width: '[node:field_sf_meta_share:entity:field_media_image:sf_social_share:width|node:field_sf_featured_media:entity:field_media_image:sf_social_share:width]'
+  og_title: '[site:name]'
+  shortlink: '[site:url]'
+  title: '[node:field_sf_meta_keyword|current-page:title] | [site:name]'
+  twitter_cards_description: '[node:field_sf_meta_description|node:summary]'
+  twitter_cards_donottrack: 'on'
+  twitter_cards_image: '[node:field_sf_meta_share:entity:field_media_image:sf_social_share:url|node:field_sf_featured_media:entity:field_media_image:sf_social_share:url]'
+  twitter_cards_image_alt: '[node:field_sf_meta_share:entity:field_media_image:alt|node:field_sf_featured_media:entity:field_media_image:alt]'
+  twitter_cards_image_height: '[node:field_sf_meta_share:entity:field_media_image:sf_social_share:height|node:field_sf_featured_media:entity:field_media_image:sf_social_share:height]'
+  twitter_cards_image_width: '[node:field_sf_meta_share:entity:field_media_image:sf_social_share:width|node:field_sf_featured_media:entity:field_media_image:sf_social_share:width]'
+  twitter_cards_page_url: '[site:url]'
+  twitter_cards_title: '[node:field_sf_meta_keyword|current-page:title] | [site:name]'
+  twitter_cards_type: summary_large_image

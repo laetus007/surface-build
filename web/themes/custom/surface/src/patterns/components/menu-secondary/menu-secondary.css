@@ -11,14 +11,14 @@
   padding-block: 0;
   padding-inline: 0;
 
-  @media (--xl) {
+  @media (--desktop) {
     display: flex;
   }
 
   .menu__item {
     margin-block-end: var(--size-1);
 
-    @media (--xl) {
+    @media (--desktop) {
       margin-block-end: 0;
     }
   }
@@ -32,7 +32,7 @@
     padding-inline: 16px;
     transition: all 0.2s ease;
 
-    @media (--xl) {
+    @media (--desktop) {
       color: var(--menu-secondary-link-color-dekstop);
       font-size: var(--menu-secondary-link-font-size-desktop);
       font-weight: var(--menu-secondary-link-font-weight-desktop);
@@ -42,7 +42,7 @@
       color: var(--menu-secondary-link-color-hover-mobile);
       text-decoration: none;
 
-      @media (--xl) {
+      @media (--desktop) {
         color: var(--menu-secondary-link-color-hover-desktop);
       }
     }

@@ -1,0 +1,8 @@
+uuid: debde507-1f5f-4117-b424-5a4a281f37fc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Media category'
+vid: sf_media_categories
+description: 'A categorization of media'
+weight: 0

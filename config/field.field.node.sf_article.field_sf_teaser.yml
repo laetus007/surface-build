@@ -1,0 +1,19 @@
+uuid: 2d6d9d04-927a-49fd-9989-b0e5d2632c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_teaser
+    - node.type.sf_article
+id: node.sf_article.field_sf_teaser
+field_name: field_sf_teaser
+entity_type: node
+bundle: sf_article
+label: Teaser
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

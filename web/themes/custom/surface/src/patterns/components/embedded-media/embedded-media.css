@@ -17,7 +17,7 @@ figcaption {
   padding-block: var(--size-1);
   padding-inline: var(--size-1);
 
-  @media (--sm) {
+  @media (--mobile) {
     padding-block: var(--size-2);
     padding-inline: var(--size-2);
   }
@@ -29,7 +29,7 @@ figcaption {
   margin-block: var(--size-6);
   margin-inline: 0;
 
-  @media (--md) {
+  @media (--tablet) {
     float: inline-end;
     max-width: 50%;
     margin-block: var(--size-2);
@@ -44,7 +44,7 @@ figcaption {
   margin-inline: 0;
   max-width: 100%;
 
-  @media (--md) {
+  @media (--tablet) {
     float: inline-start;
     max-width: 50%;
     margin-block: var(--size-2);

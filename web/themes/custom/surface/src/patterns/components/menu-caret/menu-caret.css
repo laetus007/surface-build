@@ -5,7 +5,7 @@
 
 /* Menu caret */
 .menu-caret {
-  @media (--xl) {
+  @media (--desktop) {
     border-bottom: var(--menu-caret-border-bottom);
     border-left: solid 10px transparent;
     border-right: solid 10px transparent;
@@ -21,7 +21,7 @@
   }
 
   &.is-active-menu-parent {
-    @media (--xl) {
+    @media (--desktop) {
       opacity: 1;
       transform: translate(-50%, 0);
       visibility: visible;

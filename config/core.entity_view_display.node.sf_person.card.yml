@@ -5,21 +5,35 @@ dependencies:
   config:
     - core.entity_view_mode.node.card
     - field.field.node.sf_person.body
+    - field.field.node.sf_person.field_sf_address
     - field.field.node.sf_person.field_sf_courses
     - field.field.node.sf_person.field_sf_credentials
     - field.field.node.sf_person.field_sf_education_and_degrees
     - field.field.node.sf_person.field_sf_emails
+    - field.field.node.sf_person.field_sf_feature_status
     - field.field.node.sf_person.field_sf_first_name
+    - field.field.node.sf_person.field_sf_hide_from_lists
     - field.field.node.sf_person.field_sf_honors_and_awards
     - field.field.node.sf_person.field_sf_last_name
     - field.field.node.sf_person.field_sf_m_documents
     - field.field.node.sf_person.field_sf_m_primary_image
+    - field.field.node.sf_person.field_sf_membership_service
+    - field.field.node.sf_person.field_sf_meta_description
+    - field.field.node.sf_person.field_sf_meta_keyword
+    - field.field.node.sf_person.field_sf_meta_share
+    - field.field.node.sf_person.field_sf_meta_tags
     - field.field.node.sf_person.field_sf_middle_initial
     - field.field.node.sf_person.field_sf_name_prefix
     - field.field.node.sf_person.field_sf_office_hours
     - field.field.node.sf_person.field_sf_office_location
+    - field.field.node.sf_person.field_sf_orcid
+    - field.field.node.sf_person.field_sf_permissions
+    - field.field.node.sf_person.field_sf_person_type
     - field.field.node.sf_person.field_sf_phone_numbers_
     - field.field.node.sf_person.field_sf_position_title
+    - field.field.node.sf_person.field_sf_publications
+    - field.field.node.sf_person.field_sf_research_interests
+    - field.field.node.sf_person.field_sf_tags
     - field.field.node.sf_person.field_sf_units
     - field.field.node.sf_person.field_sf_websites
     - node.type.sf_person
@@ -39,14 +53,10 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
-  field_sf_m_primary_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: square
-      link: false
+  content_moderation_control:
+    settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: -20
     region: content
   field_sf_position_title:
     type: string
@@ -65,18 +75,33 @@ content:
     weight: 2
     region: content
 hidden:
+  field_sf_address: true
   field_sf_courses: true
   field_sf_credentials: true
   field_sf_education_and_degrees: true
   field_sf_emails: true
+  field_sf_feature_status: true
   field_sf_first_name: true
+  field_sf_hide_from_lists: true
   field_sf_honors_and_awards: true
   field_sf_last_name: true
   field_sf_m_documents: true
+  field_sf_m_primary_image: true
+  field_sf_membership_service: true
+  field_sf_meta_description: true
+  field_sf_meta_keyword: true
+  field_sf_meta_share: true
+  field_sf_meta_tags: true
   field_sf_middle_initial: true
   field_sf_name_prefix: true
   field_sf_office_hours: true
   field_sf_office_location: true
+  field_sf_orcid: true
+  field_sf_permissions: true
+  field_sf_person_type: true
   field_sf_phone_numbers_: true
+  field_sf_publications: true
+  field_sf_research_interests: true
+  field_sf_tags: true
   field_sf_websites: true
   links: true

@@ -1,0 +1,8 @@
+uuid: 36d1d6d6-f1ef-43be-a123-466b5a9bdb8d
+langcode: en
+status: true
+dependencies: {  }
+name: Tags
+vid: sf_tags
+description: 'Keywords which help to classify an piece of content.'
+weight: 0

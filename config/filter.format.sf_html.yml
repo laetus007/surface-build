@@ -1,0 +1,72 @@
+uuid: 3dd1f2e3-df90-4f61-b4c4-a6a9f4edcde1
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+    - media
+    - responsive_tables_filter
+name: HTML
+format: sf_html
+weight: 0
+filters:
+  filter_responsive_tables_filter:
+    id: filter_responsive_tables_filter
+    provider: responsive_tables_filter
+    status: true
+    weight: 0
+    settings:
+      tablesaw_type: stack
+      tablesaw_persist: '1'
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <p class="lead text-align-left text-align-center text-align-right text-align-justify"> <h2 class="heading--primary heading--secondary heading--bar heading--highlight heading--ribbon-branding heading--ribbon-highlight text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify"> <a class="button button--icon button--icon-download button--icon-external button--icon-internal button--icon-play button--secondary button--tertiary button--invert icon-link icon-link--download icon-link--external icon-link--internal" href> <ul class="list list--flush list--pipe list--link list--link-icon list--highlight list--highlight-orange list--highlight-red list--highlight-berry list--highlight-purple list--highlight-indigo list--highlight-teal list--highlight-moss list--highlight-olive list--highlight-brown list--unstyled"> <ol class="list list--upper-roman list--upper-alpha list--lower-roman list--lower-alpha list--unstyled" reversed start> <strong> <em> <blockquote> <li> <hr> <table> <tr> <td rowspan colspan> <th rowspan colspan> <thead> <tbody> <tfoot> <caption> <drupal-media data-entity-type data-entity-uuid alt data-caption data-align>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes: {  }
+      allowed_media_types:
+        sf_audio_media_type: sf_audio_media_type
+        sf_document_media_type: sf_document_media_type
+        sf_image_media_type: sf_image_media_type
+        sf_video_media_type: sf_video_media_type
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }

@@ -5,6 +5,7 @@ dependencies:
   content:
     - 'file:file:fe6e0884-bc95-4cf8-8ea7-bcc2b5dd76f4'
   module:
+    - layout_paragraphs
     - paragraphs_library
     - style_options
 third_party_settings:
@@ -16,5 +17,8 @@ icon_uuid: fe6e0884-bc95-4cf8-8ea7-bcc2b5dd76f4
 icon_default: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MzIgNDg4LjQiPjxnIGlkPSJMYXllcl8xLTIiPjxwYXRoIGQ9Ik01MzIsMjI5LjRoLTExOXYtMjQuMDhjMC01MC40LDQwLjk1LTkxLjg0LDkyLTkxLjg0VjBDMzkxLjYyLDAsMjk5LDkyLjYxLDI5OSwyMDZWNDg4LjRoMjMzVjIyOS40WiIvPjxwYXRoIGQ9Ik0yMzMsNDg4LjRWMjI5LjRIMTE0di0yNC4wOGMwLTUwLjQsNDAuOTUtOTEuODQsOTItOTEuODRWMEM5Mi42MiwwLDAsOTIuNjEsMCwyMDZWNDg4LjRIMjMzWiIvPjwvZz48L3N2Zz4='
 description: 'The quote component allows users to add text and author to form a Blockquote and citation to a page.'
 behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }
   style_options:
     enabled: true

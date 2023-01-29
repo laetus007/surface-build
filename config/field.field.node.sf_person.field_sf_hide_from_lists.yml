@@ -1,0 +1,23 @@
+uuid: 834b9da6-76a5-4e7b-a9a4-afd01820c93b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_hide_from_lists
+    - node.type.sf_person
+id: node.sf_person.field_sf_hide_from_lists
+field_name: field_sf_hide_from_lists
+entity_type: node
+bundle: sf_person
+label: 'Hide from Directory'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

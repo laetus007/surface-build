@@ -17,7 +17,7 @@
 }
 
 .site-footer__utility {
-  @media (--xl) {
+  @media (--desktop) {
     align-items: center;
   }
 }
@@ -26,7 +26,7 @@
   grid-column: 1 / 7;
   margin-block-end: var(--size-3);
 
-  @media (--xl) {
+  @media (--desktop) {
     grid-column: 1 / 6;
   }
 }
@@ -34,7 +34,7 @@
 .site-footer__menu {
   grid-column: 1 / 7;
 
-  @media (--xl) {
+  @media (--desktop) {
     grid-column: 6 / 13;
   }
 }

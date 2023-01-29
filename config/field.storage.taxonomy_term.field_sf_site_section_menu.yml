@@ -1,0 +1,20 @@
+uuid: 17ee57e1-0464-4753-804b-4c7878b9cf57
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - taxonomy
+id: taxonomy_term.field_sf_site_section_menu
+field_name: field_sf_site_section_menu
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: menu
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

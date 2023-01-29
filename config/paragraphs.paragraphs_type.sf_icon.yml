@@ -5,6 +5,7 @@ dependencies:
   content:
     - 'file:file:20c505b0-2d62-4a25-a7de-5cb175c9cec1'
   module:
+    - layout_paragraphs
     - paragraphs_library
     - style_options
 third_party_settings:
@@ -16,5 +17,8 @@ icon_uuid: 20c505b0-2d62-4a25-a7de-5cb175c9cec1
 icon_default: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MzIgNTMyIj48ZyBpZD0iTGF5ZXJfMS0yIj48Zz48cGF0aCBkPSJNMjY2LDBDMTE5LjI4LDAsMCwxMTkuMjgsMCwyNjZzMTE5LjI4LDI2NiwyNjYsMjY2LDI2Ni0xMTkuMjgsMjY2LTI2NlM0MTIuNzIsMCwyNjYsMFptMCw0ODMuMjhjLTExOS44NCwwLTIxNy4yOC05Ny40NC0yMTcuMjgtMjE3LjI4UzE0Ni4xNiw0OC43MiwyNjYsNDguNzJzMjE3LjI4LDk3LjQ0LDIxNy4yOCwyMTcuMjgtOTcuNDQsMjE3LjI4LTIxNy4yOCwyMTcuMjhoMFoiLz48cGF0aCBkPSJNMzU2LjE2LDE3MS45MmMwLDE3LjYzLTE0LjI5LDMxLjkyLTMxLjkyLDMxLjkycy0zMS45Mi0xNC4yOS0zMS45Mi0zMS45MiwxNC4yOS0zMS45MiwzMS45Mi0zMS45MiwzMS45MiwxNC4yOSwzMS45MiwzMS45MiIvPjxwYXRoIGQ9Ik0zNTIuOCwyNTMuNDRjLTcuMjgtMTAuMDgtMjIuNC0xMC4wOC0yOS42OCwwbC0xMi4zMiwxNi44Yy0yLjI0LDMuMzYtNy44NCwzLjM2LTEwLjA4LDBsLTUyLjY0LTczLjM2Yy03LjI4LTEwLjA4LTIyLjQtMTAuMDgtMjkuNjgsMGwtODkuNiwxMjYuNTZjLTguNCwxMS43NiwwLDI4LjU2LDE0LjU2LDI4LjU2aDI0NC43MmMxNC41NiwwLDIzLjUyLTE2LjgsMTQuNTYtMjguNTZsLTQ5Ljg0LTcwWiIvPjwvZz48L2c+PC9zdmc+'
 description: 'The icon component allows users to place an icon with an optional link and text on a page.'
 behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }
   style_options:
     enabled: true

@@ -8,7 +8,7 @@
   max-width: 100%;
   text-decoration: none;
 
-  @media (--xl) {
+  @media (--desktop) {
     padding-inline-end: var(--size-2);
   }
 

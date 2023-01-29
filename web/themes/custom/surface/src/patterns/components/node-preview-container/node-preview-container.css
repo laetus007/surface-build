@@ -21,7 +21,7 @@
     max-width: var(--size-container);
     padding-inline: var(--size-2);
 
-    @media (--xl) {
+    @media (--desktop) {
       padding-inline: var(--size-4);
     }
   }

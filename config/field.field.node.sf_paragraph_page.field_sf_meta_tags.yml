@@ -1,0 +1,21 @@
+uuid: bace88e9-9802-4e05-87fe-d68481bcc869
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_meta_tags
+    - node.type.sf_paragraph_page
+  module:
+    - metatag
+id: node.sf_paragraph_page.field_sf_meta_tags
+field_name: field_sf_meta_tags
+entity_type: node
+bundle: sf_paragraph_page
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,19 @@
+uuid: ce0812b2-8536-45a8-88a6-75f263c785ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sf_person.field_sf_permissions
+    - taxonomy.vocabulary.sf_permissions_category
+id: sections
+plural_label: sections
+label: Sections
+scheme: taxonomy
+scheme_settings:
+  vocabularies:
+    - sf_permissions_category
+  fields:
+    -
+      entity_type: node
+      bundle: sf_person
+      field: field_sf_permissions

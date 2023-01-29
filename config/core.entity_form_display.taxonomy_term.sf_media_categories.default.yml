@@ -1,0 +1,32 @@
+uuid: 948d4a6c-dbe2-4a3a-a7ac-061d72086d1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_media_categories
+id: taxonomy_term.sf_media_categories.default
+targetEntityType: taxonomy_term
+bundle: sf_media_categories
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  publish_on: true
+  publish_state: true
+  status: true
+  unpublish_on: true
+  unpublish_state: true

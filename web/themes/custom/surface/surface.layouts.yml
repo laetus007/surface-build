@@ -1,11 +1,11 @@
 # One column.
 one_column:
-  label: 'One column [1]'
+  label: 'One Column [1]'
   path: src/templates/layout
   template: layout--onecol
   library: surface/layout_onecol
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 1'
   default_region: content
   icon_map:
     - [content]
@@ -15,12 +15,12 @@ one_column:
 
 # Two column 50/50.
 two_column:
-  label: 'Two column [1:1]'
+  label: 'Two Column [1:1]'
   path: src/templates/layout
   template: layout--twocol
   library: surface/layout_twocol
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 2'
   default_region: first
   icon_map:
     - [first, second]
@@ -32,12 +32,12 @@ two_column:
 
 # Two column 30/70.
 two_column_30_70:
-  label: 'Two column [1:2]'
+  label: 'Two Column [1:2]'
   path: src/templates/layout
   template: layout--twocol-30-70
   library: surface/layout_twocol_30_70
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 2'
   default_region: second
   icon_map:
     - [first, second, second]
@@ -49,12 +49,12 @@ two_column_30_70:
 
 # Two column 70/30.
 two_column_70_30:
-  label: 'Two column [2:1]'
+  label: 'Two Column [2:1]'
   path: src/templates/layout
   template: layout--twocol-70-30
   library: surface/layout_twocol_70_30
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 2'
   default_region: first
   icon_map:
     - [first, first, second]
@@ -66,12 +66,12 @@ two_column_70_30:
 
 # Three column 33/33/33.
 three_column:
-  label: 'Three column [1:1:1]'
+  label: 'Three Column [1:1:1]'
   path: src/templates/layout
   template: layout--threecol
   library: surface/layout_threecol
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 3'
   default_region: first
   icon_map:
     - [first, second, third]
@@ -85,12 +85,12 @@ three_column:
 
 # Three column 25/50/25.
 three_column_25_50_25:
-  label: 'Three column [1:2:1]'
+  label: 'Three Column [1:2:1]'
   path: src/templates/layout
   template: layout--threecol-25-50-25
   library: surface/layout_threecol_25_50_25
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 3'
   default_region: second
   icon_map:
     - [first, second, second, third]
@@ -104,12 +104,12 @@ three_column_25_50_25:
 
 # Three column 25/25/50.
 three_column_25_25_50:
-  label: 'Three column [1:1:2]'
+  label: 'Three Column [1:1:2]'
   path: src/templates/layout
   template: layout--threecol-25-25-50
   library: surface/layout_threecol_25_25_50
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 3'
   default_region: third
   icon_map:
     - [first, second, third, third]
@@ -123,12 +123,12 @@ three_column_25_25_50:
 
 # Three column 50/25/20.
 three_column_50_25_25:
-  label: 'Three column [2:1:1]'
+  label: 'Three Column [2:1:1]'
   path: src/templates/layout
   template: layout--threecol-50-25-25
   library: surface/layout_threecol_50_25_25
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 3'
   default_region: third
   icon_map:
     - [first, first, second, third]
@@ -142,12 +142,12 @@ three_column_50_25_25:
 
 # Four column.
 four_column:
-  label: 'Four column [1:1:1:1]'
+  label: 'Four Column [1:1:1:1]'
   path: src/templates/layout
   template: layout--fourcol
   library: surface/layout_fourcol
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
-  category: Surface Layouts
+  category: 'Columns: 4'
   default_region: first
   icon_map:
     - [first, second, third, fourth]
@@ -163,11 +163,11 @@ four_column:
 
 # Six column.
 six_column:
-  label: 'Six column [1:1:1:1:1:1]'
+  label: 'Six Column [1:1:1:1:1:1]'
   path: src/templates/layout
   template: layout--sixcol
   library: surface/layout_sixcol
-  category: Surface Layouts
+  category: 'Columns: 6'
   class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
   default_region: first
   icon_map:

@@ -1,67 +1,61 @@
-uuid: 3505e208-a4eb-445d-be84-8c418132e29b
+uuid: 9113e8b0-4c7d-4217-87a4-51d589f97496
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.basic_html
   module:
-    - ckeditor5
-_core:
-  default_config_hash: nEsc5IFqfZ8nECQQvtxnZvbdo-zEzhPNQjogBJkcb78
+    - ckeditor
 format: basic_html
-editor: ckeditor5
+editor: ckeditor
 settings:
   toolbar:
-    items:
-      - bold
-      - italic
-      - '|'
-      - link
-      - '|'
-      - bulletedList
-      - numberedList
-      - '|'
-      - blockQuote
-      - drupalInsertImage
-      - '|'
-      - heading
-      - code
-      - '|'
-      - sourceEditing
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Format
+            - Styles
+            - Bold
+            - Italic
+            - RemoveFormat
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+            - DrupalMediaLibrary
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - Outdent
+            - Indent
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - Blockquote
+            - SpecialChar
+        -
+          name: Tools
+          items:
+            - Undo
+            - Redo
+            - Source
+            - Maximize
   plugins:
-    ckeditor5_heading:
-      enabled_headings:
-        - heading2
-        - heading3
-        - heading4
-        - heading5
-        - heading6
-    ckeditor5_sourceEditing:
-      allowed_tags:
-        - '<cite>'
-        - '<dl>'
-        - '<dt>'
-        - '<dd>'
-        - '<a hreflang>'
-        - '<blockquote cite>'
-        - '<ul type>'
-        - '<ol start type>'
-        - '<h2 id>'
-        - '<h3 id>'
-        - '<h4 id>'
-        - '<h5 id>'
-        - '<h6 id>'
-        - '<span>'
-    ckeditor5_list:
-      reversed: false
-      startIndex: true
-    ckeditor5_imageResize:
-      allow_resize: true
+    stylescombo:
+      styles: "h2.heading--primary|Primary heading\r\nh2.heading--secondary|Secondary heading\r\nh2.heading--bar|Bar heading\r\nh2.heading--highlight|Highlight heading\r\nh2.heading--ribbon-branding|Ribbon branding heading\r\nh2.heading--ribbon-highlight|Ribbon highlight heading\r\np.lead|Lead text\r\na.button|Primary button\r\na.button.button--icon.button--icon-download|Primary download button\r\na.button.button--icon.button--icon-external|Primary external button\r\na.button.button--icon.button--icon-internal|Primary internal button\r\na.button.button--icon.button--icon-play|Primary play button\r\na.button.button--secondary|Secondary button\r\na.button.button--secondary.button--icon.button--icon-download|Secondary download button\r\na.button.button--secondary.button--icon.button--icon-external|Secondary external button\r\na.button.button--secondary.button--icon.button--icon-internal|Secondary Internal button\r\na.button.button--secondary.button--icon.button--icon-play|Secondary play button\r\na.button.button--tertiary|Tertiary button\r\na.button.button--tertiary.button--icon.button--icon-download|Tertiary download button\r\na.button.button--tertiary.button--icon.button--icon-external|Tertiary external button\r\na.button.button--tertiary.button--icon.button--icon-internal|Tertiary internal button\r\na.button.button--tertiary.button--icon.button--icon-play|Tertiary play button\r\na.button.button--invert|Inverted button\r\na.button.button--invert.button--icon.button--icon-download|Inverted download button\r\na.button.button--invert.button--icon.button--icon-external|Inverted external button\r\na.button.button--invert.button--icon.button--icon-internal|Inverted Internal button\r\na.button.button--invert.button--icon.button--icon-play|Inverted play button\r\na.icon-link.icon-link--download|Icon link download\r\na.icon-link.icon-link--external|Icon link external\r\na.icon-link.icon-link--internal|Icon link internal\r\nul.list.list--flush|Flush list\r\nul.list.list--pipe|Pipe list\r\nul.list.list--link|Link list\r\nul.list.list--link-icon|Link icon list\r\nul.list.list--highlight.list--highlight-orange|Orange highlight list\r\nul.list.list--highlight.list--highlight-red|Red highlight list\r\nul.list.list--highlight.list--highlight-berry|Berry highlight list\r\nul.list.list--highlight.list--highlight-purple|Purple highlight list\r\nul.list.list--highlight.list--highlight-indigo|Indigo highlight list\r\nul.list.list--highlight.list--highlight-teal|Teal highlight list\r\nul.list.list--highlight.list--highlight-moss|Moss highlight list\r\nul.list.list--highlight.list--highlight-olive|Olive highlight list\r\nul.list.list--highlight.list--highlight-brown|Brown highlight list\r\nul.list.list--unstyled|Unstyled unordered list\r\nol.list.list--upper-roman|Upper Roman list\r\nol.list.list--upper-alpha|Upper Alpha list\r\nol.list.list--lower-roman|Lower Roman list\r\nol.list.list--lower-alpha|Lower Alpha list\r\nol.list.list--unstyled|Unstyled ordered list"
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

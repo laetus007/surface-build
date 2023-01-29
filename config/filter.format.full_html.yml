@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - responsive_tables_filter
 _core:
   default_config_hash: WNeK5FbcY8pXgEpbD_KgRzlF1-5PL3BJXwqaBctPTqw
 name: 'Full HTML'
@@ -34,3 +35,11 @@ filters:
     status: true
     weight: 11
     settings: {  }
+  filter_responsive_tables_filter:
+    id: filter_responsive_tables_filter
+    provider: responsive_tables_filter
+    status: false
+    weight: 0
+    settings:
+      tablesaw_type: stack
+      tablesaw_persist: '1'

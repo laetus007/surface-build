@@ -1,0 +1,8 @@
+uuid: 17dd5a17-0ca8-4021-bd31-914fbec256dc
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article category'
+vid: sf_article_category
+description: 'A categorization of articles'
+weight: 0

@@ -12,7 +12,7 @@
   padding-block: 0;
   padding-inline: 0;
 
-  @media (--xl) {
+  @media (--desktop) {
     display: flex;
     gap: var(--size-3);
     grid-column: 6 / 13;

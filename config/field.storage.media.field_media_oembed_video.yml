@@ -1,11 +1,9 @@
-uuid: 8b12aefa-34ff-4fcc-a683-8892e0a9404c
+uuid: 8e369119-889f-44db-8c77-31ce57d4536e
 langcode: en
 status: true
 dependencies:
   module:
     - media
-_core:
-  default_config_hash: cNf_852Dq-fNnSaMI4LxL-J6N7bLkHuDbD9EUqOn4_U
 id: media.field_media_oembed_video
 field_name: field_media_oembed_video
 entity_type: media

@@ -1,0 +1,19 @@
+uuid: ff96b211-d1ea-45f2-be4f-ceef5e8ac0f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - template_whisperer
+id: node.field_template
+field_name: field_template
+entity_type: node
+type: template_whisperer
+settings: {  }
+module: template_whisperer
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

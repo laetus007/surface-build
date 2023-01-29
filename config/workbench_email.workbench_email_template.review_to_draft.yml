@@ -1,0 +1,34 @@
+uuid: 44d6cf11-8ce0-4105-91f8-c934afd48491
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sf_article
+    - node.type.sf_event
+    - node.type.sf_paragraph_page
+    - node.type.sf_person
+    - user.role.editor
+    - workflows.workflow.standard_workflow
+id: review_to_draft
+label: 'Review to Draft'
+format: plain_text
+subject: 'Content has been moved back to draft on [site:name]'
+recipient_types:
+  role:
+    id: role
+    provider: workbench_email
+    status: true
+    settings:
+      roles:
+        editor: editor
+bundles:
+  'node:sf_article': 'node:sf_article'
+  'node:sf_event': 'node:sf_event'
+  'node:sf_paragraph_page': 'node:sf_paragraph_page'
+  'node:sf_person': 'node:sf_person'
+body:
+  value: "Hello,\r\n\r\nThe content you authored, [node:title], has been moved from In Review back to Draft on [site:name].\r\nThe content can be accessed here: [node:edit-url].\r\n\r\nThank you,\r\n[site:name]"
+  format: plain_text
+replyTo: ''
+transitions:
+  standard_workflow: {  }

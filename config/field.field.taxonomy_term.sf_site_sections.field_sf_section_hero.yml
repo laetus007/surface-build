@@ -1,0 +1,29 @@
+uuid: b0890d40-5c1d-4526-9dec-5b936cb396fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sf_section_hero
+    - media.type.sf_image_media_type
+    - taxonomy.vocabulary.sf_site_sections
+id: taxonomy_term.sf_site_sections.field_sf_section_hero
+field_name: field_sf_section_hero
+entity_type: taxonomy_term
+bundle: sf_site_sections
+label: 'Section hero'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      sf_image_media_type: sf_image_media_type
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,113 @@
+uuid: e0bbeb16-cdf4-4d58-a822-db467b5386cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sf_section_content
+    - paragraphs.paragraphs_type.sf_hero
+    - paragraphs.paragraphs_type.sf_slider_item
+    - paragraphs.paragraphs_type.sf_tab
+    - taxonomy.vocabulary.sf_site_sections
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.sf_site_sections.field_sf_section_content
+field_name: field_sf_section_content
+entity_type: taxonomy_term
+bundle: sf_site_sections
+label: 'Section content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      sf_hero: sf_hero
+      sf_slider_item: sf_slider_item
+      sf_tab: sf_tab
+    negate: 1
+    target_bundles_drag_drop:
+      from_library:
+        weight: 28
+        enabled: false
+      sf_accordion:
+        weight: 29
+        enabled: false
+      sf_alert:
+        weight: 30
+        enabled: false
+      sf_block_embed:
+        weight: 31
+        enabled: false
+      sf_breadcrumb:
+        weight: 32
+        enabled: false
+      sf_call_to_action:
+        weight: 34
+        enabled: false
+      sf_callout:
+        weight: 33
+        enabled: false
+      sf_carousel:
+        weight: 35
+        enabled: false
+      sf_hero:
+        weight: 36
+        enabled: true
+      sf_highlight:
+        weight: 37
+        enabled: false
+      sf_icon:
+        weight: 38
+        enabled: false
+      sf_image:
+        weight: 39
+        enabled: false
+      sf_media_callout:
+        weight: 40
+        enabled: false
+      sf_media_quote:
+        weight: 41
+        enabled: false
+      sf_menu_embed:
+        weight: 42
+        enabled: false
+      sf_metric:
+        weight: 43
+        enabled: false
+      sf_page_title:
+        weight: 44
+        enabled: false
+      sf_quote:
+        weight: 45
+        enabled: false
+      sf_section:
+        weight: 46
+        enabled: false
+      sf_slider:
+        weight: 47
+        enabled: false
+      sf_slider_item:
+        weight: 48
+        enabled: true
+      sf_tab:
+        weight: 49
+        enabled: true
+      sf_table:
+        weight: 50
+        enabled: false
+      sf_tabs:
+        weight: 51
+        enabled: false
+      sf_text:
+        weight: 52
+        enabled: false
+      sf_video:
+        weight: 53
+        enabled: false
+      sf_view_embed:
+        weight: 54
+        enabled: false
+field_type: entity_reference_revisions

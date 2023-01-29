@@ -16,7 +16,7 @@
   min-height: 54px;
   position: relative;
 
-  @media (--xl) {
+  @media (--desktop) {
     justify-content: space-between;
     margin-inline-end: -16px;
   }

@@ -20,7 +20,7 @@
   width: 100%;
   will-change: transform;
 
-  @media (--xl) {
+  @media (--desktop) {
     height: auto;
     opacity: 1;
     overflow: visible;
@@ -53,7 +53,7 @@
   .menu-secondary {
     display: block;
 
-    @media (--xl) {
+    @media (--desktop) {
       display: none;
     }
   }

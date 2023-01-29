@@ -1,0 +1,63 @@
+uuid: 60a36376-36b8-447a-867a-7535200d46e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sf_site_sections.field_sf_meta_tags
+    - field.field.taxonomy_term.sf_site_sections.field_sf_permissions
+    - field.field.taxonomy_term.sf_site_sections.field_sf_person_reference
+    - field.field.taxonomy_term.sf_site_sections.field_sf_section_content
+    - field.field.taxonomy_term.sf_site_sections.field_sf_section_hero
+    - field.field.taxonomy_term.sf_site_sections.field_sf_site_section_menu
+    - field.field.taxonomy_term.sf_site_sections.field_sf_tags
+    - taxonomy.vocabulary.sf_site_sections
+  module:
+    - layout_paragraphs
+    - metatag
+id: taxonomy_term.sf_site_sections.default
+targetEntityType: taxonomy_term
+bundle: sf_site_sections
+mode: default
+content:
+  field_sf_meta_tags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_sf_section_content:
+    type: layout_paragraphs_builder
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+      preview_view_mode: default
+      nesting_depth: 1
+      require_layouts: 1
+      empty_message: 'You have not created any content yet'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_sf_section_hero:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_site_section_menu:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  description: true
+  field_sf_permissions: true
+  field_sf_person_reference: true
+  field_sf_tags: true

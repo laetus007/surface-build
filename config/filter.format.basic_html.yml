@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - editor
+    - media
+    - responsive_tables_filter
 _core:
   default_config_hash: UZfNHYvC3Z06A-Vbg14hqNoNez8ABIGYVsSADcYwVHE
 name: 'Basic HTML'
@@ -13,10 +15,10 @@ filters:
   filter_html:
     id: filter_html
     provider: filter
-    status: true
+    status: false
     weight: -10
     settings:
-      allowed_html: '<br> <p> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <a hreflang href> <blockquote cite> <ul type> <ol start type> <strong> <em> <code> <li> <span> <img src alt data-entity-uuid data-entity-type height width data-caption data-align>'
+      allowed_html: '<br> <h3 id> <h4 id> <h5 id> <h6 id> <cite> <dl> <dt> <dd> <blockquote cite> <strong> <em> <code> <li> <span> <img src alt data-entity-uuid data-entity-type height width data-caption data-align> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <p class="lead"> <h2 id class="heading--primary heading--secondary heading--bar heading--highlight heading--ribbon-branding heading--ribbon-highlight"> <a hreflang href class="button button button--icon button--icon-download button button--icon button--icon-external button button--icon button--icon-internal button button--icon button--icon-play button button--secondary button button--secondary button--icon button--icon-download button button--secondary button--icon button--icon-external button button--secondary button--icon button--icon-internal button button--secondary button--icon button--icon-play button button--tertiary button button--tertiary button--icon button--icon-download button button--tertiary button--icon button--icon-external button button--tertiary button--icon button--icon-internal button button--tertiary button--icon button--icon-play button button--invert button button--invert button--icon button--icon-download button button--invert button--icon button--icon-external button button--invert button--icon button--icon-internal button button--invert button--icon button--icon-play icon-link icon-link--download icon-link icon-link--external icon-link icon-link--internal"> <ul type class="list list--flush list list--pipe list list--link list list--link-icon list list--highlight list--highlight-orange list list--highlight list--highlight-red list list--highlight list--highlight-berry list list--highlight list--highlight-purple list list--highlight list--highlight-indigo list list--highlight list--highlight-teal list list--highlight list--highlight-moss list list--highlight list--highlight-olive list list--highlight list--highlight-brown list list--unstyled"> <ol start type class="list list--upper-roman list list--upper-alpha list list--lower-roman list list--lower-alpha list list--unstyled"> <h1> <pre>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -42,4 +44,32 @@ filters:
     provider: editor
     status: true
     weight: 11
+    settings: {  }
+  filter_responsive_tables_filter:
+    id: filter_responsive_tables_filter
+    provider: responsive_tables_filter
+    status: false
+    weight: 0
+    settings:
+      tablesaw_type: stack
+      tablesaw_persist: '1'
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes:
+        default: default
+      allowed_media_types:
+        sf_audio_media_type: sf_audio_media_type
+        sf_document_media_type: sf_document_media_type
+        sf_image_media_type: sf_image_media_type
+        sf_video_media_type: sf_video_media_type
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
     settings: {  }

@@ -1,10 +1,10 @@
-uuid: f85f719f-d5e2-49cb-9860-173da1b51fd5
+uuid: 5a083704-2e39-4d17-befc-80baab327512
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_sf_image
-    - media.type.image
+    - media.type.sf_image_media_type
     - paragraphs.paragraphs_type.sf_callout
 id: paragraph.sf_callout.field_sf_image
 field_name: field_sf_image
@@ -13,14 +13,14 @@ bundle: sf_callout
 label: Image
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      image: image
+      sf_image_media_type: sf_image_media_type
     sort:
       field: name
       direction: ASC

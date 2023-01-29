@@ -1,0 +1,29 @@
+uuid: e3dc1790-a48e-4575-82c6-5c1dcc8cbbd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_authors
+    - node.type.sf_article
+    - node.type.sf_person
+id: node.sf_article.field_sf_authors
+field_name: field_sf_authors
+entity_type: node
+bundle: sf_article
+label: 'Author Profile'
+description: 'Select the Author of this Article from existing Person content. This will be shown instead of the original content creator. For Site Managers+ this field can be changed in the Additional Options menu.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sf_person: sf_person
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

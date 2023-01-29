@@ -1,0 +1,37 @@
+uuid: 555cd5b9-df35-4610-b7b5-2859ba071c8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.sf_video_media_type.field_media_oembed_video
+    - field.field.media.sf_video_media_type.field_sf_media_category
+    - media.type.sf_video_media_type
+  module:
+    - media
+id: media.sf_video_media_type.default
+targetEntityType: media
+bundle: sf_video_media_type
+mode: default
+content:
+  field_media_oembed_video:
+    type: oembed
+    label: visually_hidden
+    settings:
+      max_width: 0
+      max_height: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sf_media_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

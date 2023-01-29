@@ -1,0 +1,13 @@
+uuid: 19185330-9e80-4c0d-bfc5-6cab650dff71
+langcode: en
+status: true
+dependencies: {  }
+id: sf_audio_media_type
+label: Audio
+description: 'Handles audio media files.'
+source: audio_file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_audio_file
+field_map: {  }

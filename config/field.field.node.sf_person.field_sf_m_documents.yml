@@ -1,10 +1,10 @@
-uuid: 60729426-4030-4999-a01d-ecb69138b093
+uuid: 8a8962a4-c26d-4513-8717-37562e2ee684
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_sf_m_documents
-    - media.type.document
+    - media.type.sf_document_media_type
     - node.type.sf_person
 id: node.sf_person.field_sf_m_documents
 field_name: field_sf_m_documents
@@ -20,7 +20,7 @@ settings:
   handler: 'default:media'
   handler_settings:
     target_bundles:
-      document: document
+      sf_document_media_type: sf_document_media_type
     sort:
       field: name
       direction: ASC

@@ -1,0 +1,22 @@
+uuid: ae66a306-2908-4725-93c8-8dc09762223d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sf_article
+label: Article
+type: 'canonical_entities:node'
+pattern: '[node:field_sf_article_type]/[node:title]'
+selection_criteria:
+  d0a933f4-3c2f-4e4c-8828-253e860fca35:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: d0a933f4-3c2f-4e4c-8828-253e860fca35
+    context_mapping:
+      node: node
+    bundles:
+      sf_article: sf_article
+selection_logic: and
+weight: -5
+relationships: {  }

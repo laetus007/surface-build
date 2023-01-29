@@ -1,0 +1,13 @@
+uuid: 14c271c8-5036-4206-aac8-ace17cc7c15f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_article_type
+id: taxonomy_term.sf_article_type.default
+targetEntityType: taxonomy_term
+bundle: sf_article_type
+mode: default
+content: {  }
+hidden:
+  description: true

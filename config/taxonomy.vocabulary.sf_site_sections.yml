@@ -1,0 +1,8 @@
+uuid: 6cd13a8b-6d09-451b-a034-038162faf04b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Site Sections'
+vid: sf_site_sections
+description: 'A categorization of site sections'
+weight: 0

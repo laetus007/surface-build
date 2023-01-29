@@ -22,7 +22,7 @@
     content: ":";
   }
 
-  @media (--md) {
+  @media (--tablet) {
     line-height: 2;
   }
 }

@@ -5,6 +5,7 @@ dependencies:
   content:
     - 'file:file:eec5e638-076d-4d8b-8453-9ed5bdfef45a'
   module:
+    - layout_paragraphs
     - paragraphs_library
     - style_options
 third_party_settings:
@@ -16,5 +17,8 @@ icon_uuid: eec5e638-076d-4d8b-8453-9ed5bdfef45a
 icon_default: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MDQgNTA0Ij48ZyBpZD0iTGF5ZXJfMS0yIj48cGF0aCBkPSJNMCwwVjUwNEg1MDRWMEgwWk0yOTgsMjA1djk0aC05M3YtOTRoOTNabTAtMTQ5djk0aC05M1Y1Nmg5M1ptLTI0MiwwaDk0djk0SDU2VjU2Wm0wLDE0OWg5NHY5NEg1NnYtOTRabTAsMjQzdi05NGg5NHY5NEg1NlptMTQ5LDB2LTk0aDk0djk0aC05NFptMjQzLDBoLTk0di05NGg5NHY5NFptMC0xNTBoLTk0di05M2g5NHY5M1ptMC0yNDJ2OTRoLTk0VjU2aDk0WiIvPjwvZz48L3N2Zz4='
 description: 'The table component allows users to add tables to pages.'
 behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }
   style_options:
     enabled: true

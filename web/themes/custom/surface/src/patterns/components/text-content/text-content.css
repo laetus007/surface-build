@@ -41,7 +41,7 @@
       margin-block-end: 0;
     }
 
-    @media (--md) {
+    @media (--tablet) {
       margin-block: var(--size-4);
     }
   }
@@ -69,7 +69,7 @@
     position: relative;
 
     .grid--narrow & {
-      @media (--md) {
+      @media (--tablet) {
         margin-block: 3.375rem;
         padding-inline-start: 0;
       }
@@ -84,28 +84,28 @@
       position: absolute;
 
       .grid--narrow & {
-        @media (--md) {
+        @media (--tablet) {
           left: -7.1429vw;
         }
 
-        @media (--lg) {
+        @media (--laptop) {
           left: calc(-7.1429vw - -1.0714px);
         }
       }
     }
 
-    @media (--md) {
+    @media (--tablet) {
       font-size: var(--font-size-7);
       line-height: var(--font-line-height-1);
     }
 
-    @media (--lg) {
+    @media (--laptop) {
       font-size: var(--font-size-9);
       line-height: var(--font-line-height-4);
     }
   }
 
-  @media (--md) {
+  @media (--tablet) {
     font-size: var(--font-size-2);
     line-height: var(--font-line-height-6);
   }

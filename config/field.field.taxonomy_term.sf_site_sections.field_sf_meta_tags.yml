@@ -1,0 +1,21 @@
+uuid: 62f1959a-a7e0-4e88-b774-641295a0ad2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sf_meta_tags
+    - taxonomy.vocabulary.sf_site_sections
+  module:
+    - metatag
+id: taxonomy_term.sf_site_sections.field_sf_meta_tags
+field_name: field_sf_meta_tags
+entity_type: taxonomy_term
+bundle: sf_site_sections
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

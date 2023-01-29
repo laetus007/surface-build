@@ -1,0 +1,19 @@
+uuid: 70e01db1-7d9d-4955-8080-41d589dadb4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_meta_keyword
+    - node.type.sf_article
+id: node.sf_article.field_sf_meta_keyword
+field_name: field_sf_meta_keyword
+entity_type: node
+bundle: sf_article
+label: 'Target Keyword'
+description: "<strong>Definition:</strong> The search term or phrase people will Google to find this web page.\r\n<br><br><strong>Example:</strong> The owner of an online pet shop might target the keyword “Organic Dog Food”<br><br><strong>Tip:</strong> Use the target keyword in the page title, meta description, headings & subheadings, image alt tags, introductory paragraph and throughout the rest of the text."
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

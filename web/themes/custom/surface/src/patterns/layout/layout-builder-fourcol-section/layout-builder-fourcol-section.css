@@ -11,7 +11,7 @@
     flex: 1 0 100%;
     margin-block-end: 1.125rem;
 
-    @media (--md) {
+    @media (--tablet) {
       flex-basis: calc(50% - 1.125rem);
       flex-grow: 0;
       flex-shrink: 0;
@@ -20,7 +20,7 @@
   }
 
   /* Two column layout. */
-  @media (--md) {
+  @media (--tablet) {
     & > .layout__region--first,
     & > .layout__region--second {
       margin-block-end: 2.25rem;
@@ -38,7 +38,7 @@
   }
 
   /* Four column layout. */
-  @media (--lg) {
+  @media (--laptop) {
     & > .layout__region {
       flex-basis: calc(25% - 1.6875rem);
     }

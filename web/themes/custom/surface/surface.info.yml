@@ -33,6 +33,8 @@ libraries-override:
       theme:
         assets/vendor/jquery.ui/themes/base/theme.css: dist/css/jquery.ui.css
 
+  content_moderation/content_moderation: surface/content_moderation
+
   layout_paragraphs/component_list:
     css:
       layout:

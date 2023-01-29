@@ -8,14 +8,14 @@
   margin-block-end: var(--size-4);
   margin-inline: 0;
 
-  @media (--md) {
+  @media (--tablet) {
     margin-block-end: 4.5rem;
     margin-inline-start: -7.1429vw;
     margin-block-start: 2.25rem;
     width: calc(100vw - 2.25rem);
   }
 
-  @media (--lg) {
+  @media (--laptop) {
     margin-inline-start: calc(-7.1429vw - -1.0714px);
     width: calc(85.7143vw - 3.0536rem);
   }

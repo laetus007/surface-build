@@ -1,0 +1,19 @@
+uuid: 3b6992b7-93a1-4200-9ee1-193ab5d3df72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_meta_description
+    - node.type.sf_paragraph_page
+id: node.sf_paragraph_page.field_sf_meta_description
+field_name: field_sf_meta_description
+entity_type: node
+bundle: sf_paragraph_page
+label: 'Meta Description'
+description: '<strong>Definition:</strong> The short summary displayed underneath the URL in Google’s search results.<br><br><strong>Example:</strong> "Only the best for your pet! Find organic dog food, treats, and more at Switzer Pet Shop. Get deep discounts, next day delivery and free returns."<br><br><strong>Tip:</strong> Be descriptive and compelling. Keep it short (155 characters maximum) but not too short (110 characters minimum). Use the target keyword (or a variation) in the text.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

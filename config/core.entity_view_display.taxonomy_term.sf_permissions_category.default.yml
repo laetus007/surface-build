@@ -1,0 +1,13 @@
+uuid: fcfbef69-5536-40d1-a922-ecdf12d5c2db
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_permissions_category
+id: taxonomy_term.sf_permissions_category.default
+targetEntityType: taxonomy_term
+bundle: sf_permissions_category
+mode: default
+content: {  }
+hidden:
+  description: true

@@ -1,0 +1,8 @@
+uuid: 005fd089-7e4d-4f71-a509-6356310ae342
+langcode: en
+status: true
+dependencies: {  }
+name: 'Article type'
+vid: sf_article_type
+description: 'A categorization of Article types'
+weight: 0

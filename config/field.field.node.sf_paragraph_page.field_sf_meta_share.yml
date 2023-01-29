@@ -1,0 +1,29 @@
+uuid: 2321d6d7-c1c7-4da5-b4d1-036501d9fab1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_meta_share
+    - media.type.sf_image_media_type
+    - node.type.sf_paragraph_page
+id: node.sf_paragraph_page.field_sf_meta_share
+field_name: field_sf_meta_share
+entity_type: node
+bundle: sf_paragraph_page
+label: 'Social Media Image'
+description: '<strong>Definition:</strong> The image displayed when this page is shared to sites like Facebook, Twitter, etc.<br><br><strong>Tip:</strong> The image should grab attention. Use the target keyword in the alt tag and describe the picture for accessibility.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      sf_image_media_type: sf_image_media_type
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: d3d61a71-1f41-4e55-9673-10fe2b0a1831
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sf_person_reference
+    - node.type.sf_person
+    - taxonomy.vocabulary.sf_site_sections
+id: taxonomy_term.sf_site_sections.field_sf_person_reference
+field_name: field_sf_person_reference
+entity_type: taxonomy_term
+bundle: sf_site_sections
+label: 'Person Reference'
+description: 'Add a person who is associated with this basic page. As you type an autocomplete dropdown will show matching people already saved on the site. If the person does not exist yet, you can <a href="/node/add/sf_person">add a person here</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sf_person: sf_person
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

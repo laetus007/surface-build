@@ -1,0 +1,22 @@
+uuid: c3493e35-ed28-462f-96fb-6cb77ac1191b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sf_paragraph_page
+label: Page
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  34d77d85-4814-45f9-9389-9c2258403595:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 34d77d85-4814-45f9-9389-9c2258403595
+    context_mapping:
+      node: node
+    bundles:
+      sf_paragraph_page: sf_paragraph_page
+selection_logic: and
+weight: -5
+relationships: {  }

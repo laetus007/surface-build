@@ -1,0 +1,22 @@
+uuid: 4d37703c-d1a3-4356-a77f-5c31e8c9f6fc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: sf_person
+label: Person
+type: 'canonical_entities:node'
+pattern: 'people/[node:field_sf_first_name]-[node:field_sf_last_name]'
+selection_criteria:
+  637344de-5acc-482a-90ca-9f9bc6ebf86c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 637344de-5acc-482a-90ca-9f9bc6ebf86c
+    context_mapping:
+      node: node
+    bundles:
+      sf_person: sf_person
+selection_logic: and
+weight: -5
+relationships: {  }

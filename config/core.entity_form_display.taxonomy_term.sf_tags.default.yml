@@ -1,0 +1,32 @@
+uuid: 1d0149a1-2361-48d9-91cf-c8669bd54005
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sf_tags
+id: taxonomy_term.sf_tags.default
+targetEntityType: taxonomy_term
+bundle: sf_tags
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  publish_on: true
+  publish_state: true
+  status: true
+  unpublish_on: true
+  unpublish_state: true

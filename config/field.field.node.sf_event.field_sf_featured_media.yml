@@ -1,0 +1,31 @@
+uuid: 93d88227-14cb-4f76-b965-b2371beacd2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_featured_media
+    - media.type.sf_image_media_type
+    - media.type.sf_video_media_type
+    - node.type.sf_event
+id: node.sf_event.field_sf_featured_media
+field_name: field_sf_featured_media
+entity_type: node
+bundle: sf_event
+label: 'Featured media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      sf_image_media_type: sf_image_media_type
+      sf_video_media_type: sf_video_media_type
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: sf_image_media_type
+field_type: entity_reference

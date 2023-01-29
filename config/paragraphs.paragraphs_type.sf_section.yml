@@ -15,13 +15,13 @@ behavior_plugins:
   layout_paragraphs:
     enabled: true
     available_layouts:
-      one_column: 'One column [1]'
-      two_column: 'Two column [1:1]'
-      two_column_30_70: 'Two column [1:2]'
-      two_column_70_30: 'Two column [2:1]'
-      three_column: 'Three column [1:1:1]'
-      three_column_25_50_25: 'Three column [1:2:1]'
-      three_column_25_25_50: 'Three column [1:1:2]'
-      three_column_50_25_25: 'Three column [2:1:1]'
-      four_column: 'Four column [1:1:1:1]'
-      six_column: 'Six column [1:1:1:1:1:1]'
+      one_column: 'One Column [1]'
+      two_column: 'Two Column [1:1]'
+      two_column_30_70: 'Two Column [1:2]'
+      two_column_70_30: 'Two Column [2:1]'
+      three_column: 'Three Column [1:1:1]'
+      three_column_25_50_25: 'Three Column [1:2:1]'
+      three_column_25_25_50: 'Three Column [1:1:2]'
+      three_column_50_25_25: 'Three Column [2:1:1]'
+      four_column: 'Four Column [1:1:1:1]'
+      six_column: 'Six Column [1:1:1:1:1:1]'

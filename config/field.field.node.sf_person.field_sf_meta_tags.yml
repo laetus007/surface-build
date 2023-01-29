@@ -1,0 +1,21 @@
+uuid: 66cc83f9-a204-44e3-bf9a-96155c65a4c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sf_meta_tags
+    - node.type.sf_person
+  module:
+    - metatag
+id: node.sf_person.field_sf_meta_tags
+field_name: field_sf_meta_tags
+entity_type: node
+bundle: sf_person
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
