@@ -40,7 +40,7 @@
 .ajax-progress-fullscreen {
   background-color: hsl(0, 0%, 100%);
   border-radius: 1e5px;
-  border: 1px solid hsl(var(--gray-5));
+  border: 1px solid var(--gray-5);
   box-shadow: 0 0.25rem 0.625rem hsla(236, 17%, 16%, 10%);
   height: 3.5rem;
   inset-block-start: 50%;

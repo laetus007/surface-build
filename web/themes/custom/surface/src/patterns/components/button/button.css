@@ -6,10 +6,10 @@
 .button {
   align-items: center;
   appearance: none;
-  background-color: var(--btn-bg-color, hsl(var(--gray-3)));
-  border: var(--btn-border-width, 1px) solid var(--btn-border-color, hsl(var(--gray-3)));
+  background-color: var(--btn-bg-color, var(--gray-3));
+  border: var(--btn-border-width, 1px) solid var(--btn-border-color, var(--gray-3));
   border-radius: var(--btn-border-radius, 0);
-  color: var(--btn-color, hsl(var(--black)));
+  color: var(--btn-color, var(--black));
   cursor: pointer;
   display: inline-flex;
   font-family: var(--btn-font-family, var(--font-system));
@@ -29,16 +29,16 @@
   will-change: transform;
 
   &:visited {
-    color: var(--btn-visited-color, hsl(var(--black)));
+    color: var(--btn-visited-color, var(--black));
   }
 
   &:hover {
-    background-color: var(--btn-hover-bg-color, hsl(var(--gray-4)));
-    color: var(--btn-hover-color, hsl(var(--black)));
+    background-color: var(--btn-hover-bg-color, var(--gray-4));
+    color: var(--btn-hover-color, var(--black));
   }
 
   &:focus {
-    box-shadow: var(--btn-focus-box-shadow, 0 0 0 2px hsl(var(--white)), 0 0 0 4px hsl(var(--gray-8) / 15%));
+    box-shadow: var(--btn-focus-box-shadow, 0 0 0 2px var(--white), 0 0 0 4px hsl(var(--gray-8) / 15%));
     outline: none;
   }
 
@@ -48,13 +48,13 @@
 
   &[aria-expanded="true"] {
     &:focus::after {
-      border-color: var(--btn-border-color, hsl(var(--gray-3)));
+      border-color: var(--btn-border-color, var(--gray-3));
     }
   }
 
   &:disabled {
-    background-color: var(--btn-disabled-bg-color, hsl(var(--gray-3)));
-    color: var(--btn-disabled-color, hsl(var(--gray-5)));
+    background-color: var(--btn-disabled-bg-color, var(--gray-3));
+    color: var(--btn-disabled-color, var(--gray-5));
     cursor: not-allowed;
     pointer-events: none;
   }
@@ -63,21 +63,21 @@
 /* Button primary */
 .button--primary {
   background-color: var(--btn-primary-bg-color, hsl(var(--blue-6)));
-  color: var(--btn-primary-color, hsl(var(--white)));
+  color: var(--btn-primary-color, var(--white));
 
   &:visited {
     background-color: var(--btn-primary-visited-bg-color, hsl(var(--blue-6)));
-    color: var(--btn-primary-visited-color, hsl(var(--white)));
+    color: var(--btn-primary-visited-color, var(--white));
   }
 
   &:hover {
     background-color: var(--btn-primary-hover-bg-color, hsl(var(--blue-8)));
-    color: var(--btn-primary-hover-color, hsl(var(--white)));
+    color: var(--btn-primary-hover-color, var(--white));
   }
 
   &:active {
     background-color: var(--btn-primary-active-bg-color, hsl(var(--blue-8)));
-    color: var(--btn-primary-active-color, hsl(var(--white)));
+    color: var(--btn-primary-active-color, var(--white));
   }
 }
 
@@ -111,7 +111,7 @@
 .button--give {
   background-color: transparent;
   border: 0;
-  color: var(--btn-give-color, hsl(var(--white)));
+  color: var(--btn-give-color, var(--white));
   font-family: var(--font-body);
   margin-block: 0;
   padding-block: 8px;
@@ -119,12 +119,12 @@
 
   &:visited {
     background-color: transparent;
-    color: var(--btn-give-visited-color, hsl(var(--white)));
+    color: var(--btn-give-visited-color, var(--white));
   }
 
   &:hover {
     background-color: transparent;
-    color: var(--btn-give-color, hsl(var(--gray-2)));
+    color: var(--btn-give-color, var(--gray-2));
   }
 
   & svg {
@@ -142,7 +142,7 @@
 .button--translate {
   background-color: transparent;
   border: 0;
-  color: var(--btn-translate-color, hsl(var(--white)));
+  color: var(--btn-translate-color, var(--white));
   font-family: var(--font-body);
   margin-block: 0;
   padding-block: 8px;
@@ -150,7 +150,7 @@
 
   &:hover {
     background-color: transparent;
-    color: var(--btn-translate-color, hsl(var(--gray-2)));
+    color: var(--btn-translate-color, var(--gray-2));
   }
 
   & svg {
@@ -167,7 +167,7 @@
 .button--search {
   background-color: transparent;
   border: 0;
-  color: var(--btn-search-color, hsl(var(--white)));
+  color: var(--btn-search-color, var(--white));
   font-family: var(--font-body);
   margin-block: 0;
   margin-inline-end: 0;
@@ -176,7 +176,7 @@
 
   &:hover {
     background-color: transparent;
-    color: var(--btn-search-color, hsl(var(--gray-2)));
+    color: var(--btn-search-color, var(--gray-2));
   }
 
   & svg {

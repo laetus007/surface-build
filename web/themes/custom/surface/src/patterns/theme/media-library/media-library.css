@@ -26,7 +26,7 @@
   position: relative;
 
   .view-header {
-    border: 1px solid hsl(var(--gray-2));
+    border: 1px solid var(--gray-2);
     margin-block: var(--size-3);
     padding: var(--size-2);
     text-align: right;
@@ -40,7 +40,7 @@
 
   .views-display-link {
     align-items: center;
-    color: hsl(var(--black));
+    color: var(--black);
     display: inline-flex;
     font-size: var(--font-size-1);
     line-height: normal;
@@ -68,7 +68,7 @@
 
     &::before {
       aspect-ratio: 1/1;
-      background-color: hsl(var(--gray-9));
+      background-color: var(--gray-9);
       content: "";
       display: inline-flex;
       block-size: 16px;
@@ -89,7 +89,7 @@
 
     &::before {
       aspect-ratio: 1/1;
-      background-color: hsl(var(--gray-9));
+      background-color: var(--gray-9);
       content: "";
       display: inline-flex;
       block-size: 16px;
@@ -259,7 +259,7 @@
   }
 
   .media-library-add-form__remove-button {
-    background-color: hsl(var(--white));
+    background-color: var(--white);
     background-image: url("../images/ex.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -392,7 +392,7 @@
 
   .ajax-progress {
     align-items: center;
-    background: hsl(var(--white));
+    background: var(--white);
     border-radius: 3.5rem;
     border: 1px solid hsla(233, 11%, 86%, 80%);
     box-shadow: 0 0.25rem 0.625rem hsla(236, 17%, 16%, 10%);
@@ -616,8 +616,8 @@
 
 .media-library-item--grid.is-hover {
   .media-library-item__preview {
-    border-color: hsl(var(--black));
-    box-shadow: 0 0 0 2px hsl(var(--black));
+    border-color: var(--black);
+    box-shadow: 0 0 0 2px var(--black);
   }
 }
 

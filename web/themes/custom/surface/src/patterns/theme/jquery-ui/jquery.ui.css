@@ -29,7 +29,7 @@
 .ui-widget-content .ui-state-error {
   background: hsl(16, 85%, 57%);
   border-color: hsl(16, 73%, 50%);
-  color: hsl(var(--white));
+  color: var(--white);
 }
 
 .ui-state-disabled,

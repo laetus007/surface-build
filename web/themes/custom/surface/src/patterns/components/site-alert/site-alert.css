@@ -5,7 +5,7 @@
 
 .site-alert {
   background-color: var(--site-alert-bg-color, hsl(var(--blue-9)));
-  color: var(--site-alert-color, hsl(var(--white)));
+  color: var(--site-alert-color, var(--white));
 }
 
 .site-alert__content {
@@ -34,10 +34,10 @@
   padding-block-start: var(--size-05);
 
   a {
-    color: var(--site-alert-link-color, hsl(var(--white)));
+    color: var(--site-alert-link-color, var(--white));
     overflow-wrap: break-word;
     padding-block-start: var(--site-alert-link-padding-block-start);
-    text-decoration-color: var(--site-alert-text-decoration-color, hsl(var(--white)));
+    text-decoration-color: var(--site-alert-text-decoration-color, var(--white));
     text-decoration-thickness: 2px;
 
     @supports (box-shadow: none) {

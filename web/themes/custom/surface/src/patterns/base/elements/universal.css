@@ -20,11 +20,11 @@
 
 ::selection {
   background-color: var(--selection-bg-color, hsl(var(--blue-9)));
-  color: var(--selection-color, hsl(var(--white)));
+  color: var(--selection-color, var(--white));
 }
 
 ::placeholder {
-  color: var(--placeholder-color, hsl(var(--gray-5)));
+  color: var(--placeholder-color, var(--gray-5));
 }
 
 :where(:focus-visible) {

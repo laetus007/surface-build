@@ -16,7 +16,7 @@
 
 .vertical-tabs__menu {
   align-self: flex-start;
-  border-color: hsl(var(--gray-1));
+  border-color: var(--gray-1);
   border-style: solid;
   border-width: var(--vertical-tabs-menu-border-width);
   list-style: none;
@@ -60,7 +60,7 @@
 }
 
 .vertical-tabs__menu-item a {
-  background-color: hsl(var(--gray-0));
+  background-color: var(--gray-0);
   color: hsl(var(--blue-9));
   display: block;
   padding-block: var(--size-1);
@@ -70,7 +70,7 @@
   &:focus,
   &:hover,
   &:active {
-    background-color: hsl(var(--gray-2));
+    background-color: var(--gray-2);
   }
 }
 

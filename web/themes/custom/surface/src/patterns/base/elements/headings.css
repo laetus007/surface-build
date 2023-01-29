@@ -13,7 +13,7 @@
 }
 
 :where(h1) {
-  color: var(--h1-color, hsl(var(--gray-9)));
+  color: var(--h1-color, var(--gray-9));
   font-size: var(--h1-font-size-mobile, var(--font-size-5));
   font-weight: var(--h1-font-weight, var(--font-weight-700));
   letter-spacing: var(--h1-letter-spacing, var(--font-letter-spacing-0));
@@ -28,7 +28,7 @@
 }
 
 :where(h2) {
-  color: var(--h2-color, hsl(var(--gray-9)));
+  color: var(--h2-color, var(--gray-9));
   font-size: var(--h2-font-size-mobile, var(--font-size-4));
   font-weight: var(--h2-font-weight, var(--font-weight-700));
   letter-spacing: var(--h2-letter-spacing, var(--font-letter-spacing-0));
@@ -43,7 +43,7 @@
 }
 
 :where(h3) {
-  color: var(--h3-color, hsl(var(--gray-9)));
+  color: var(--h3-color, var(--gray-9));
   font-size: var(--h3-font-size-mobile, var(--font-size-3));
   font-weight: var(--h3-font-weight, var(--font-weight-700));
   letter-spacing: var(--h3-letter-spacing, var(--font-letter-spacing-0));
@@ -58,7 +58,7 @@
 }
 
 :where(h4) {
-  color: var(--h4-color, hsl(var(--gray-9)));
+  color: var(--h4-color, var(--gray-9));
   font-size: var(--h4-font-size-mobile, var(--font-size-2));
   font-weight: var(--h4-font-weight, var(--font-weight-700));
   letter-spacing: var(--h4-letter-spacing, var(--font-letter-spacing-0));
@@ -73,7 +73,7 @@
 }
 
 :where(h5) {
-  color: var(--h5-color, hsl(var(--gray-9)));
+  color: var(--h5-color, var(--gray-9));
   font-size: var(--h5-font-size-mobile, var(--font-size-1));
   font-weight: var(--h5-font-weight, var(--font-weight-700));
   letter-spacing: var(--h5-letter-spacing, var(--font-letter-spacing-0));
@@ -88,7 +88,7 @@
 }
 
 :where(h6) {
-  color: var(--h6-color, hsl(var(--gray-9)));
+  color: var(--h6-color, var(--gray-9));
   font-size: var(--h6-font-size-mobile, var(--font-size-0));
   font-weight: var(--h6-font-weight, var(--font-weight-700));
   letter-spacing: var(--h6-letter-spacing, var(--font-letter-spacing-0));

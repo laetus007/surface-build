@@ -4,12 +4,12 @@
  */
 
 figure {
-  background: hsl(var(--gray-2));
+  background: var(--gray-2);
 }
 
 figcaption {
-  background: hsl(var(--gray-2));
-  color: hsl(var(--gray-8));
+  background: var(--gray-2);
+  color: var(--gray-8);
   font-family: var(--font-serif);
   font-size: 14px;
   font-style: italic;

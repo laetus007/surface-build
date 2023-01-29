@@ -17,7 +17,7 @@
   padding-inline-end: var(--size-6);
 
   &:disabled {
-    background-color: hsl(var(--gray-1));
+    background-color: var(--gray-1);
   }
 
   &.ui-autocomplete-loading {

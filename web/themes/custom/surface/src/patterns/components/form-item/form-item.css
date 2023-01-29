@@ -15,14 +15,14 @@
 
 /* Form item description. */
 .form-item__description {
-  color: hsl(var(--gray-7));
+  color: var(--gray-7);
   font-size: var(--font-size-sm);
   line-height: var(--font-line-height-3);
   margin-block: var(--size-1);
   max-width: 60ch;
 
   &.is-disabled {
-    color: hsl(var(--gray-6));
+    color: var(--gray-6);
     cursor: default;
   }
 }

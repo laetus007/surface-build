@@ -19,10 +19,10 @@
 [type="week"],
 textarea {
   appearance: none;
-  background-color: var(--input-bg-color, hsl(var(--white)));
+  background-color: var(--input-bg-color, var(--white));
   border-radius: var(--input-border-radius, var(--radius-1));
-  border: var(--input-border-size, var(--border-size-1)) solid var(--input-border-color, hsl(var(--gray-4)));
-  color: var(--input-color, hsl(var(--gray-9)));
+  border: var(--input-border-size, var(--border-size-1)) solid var(--input-border-color, var(--gray-4));
+  color: var(--input-color, var(--gray-9));
   font-family: inherit;
   font-size: inherit;
   max-width: 100%;
@@ -42,8 +42,8 @@ textarea {
   }
 
   &[disabled] {
-    background-color: var(--input-bg-color-disabled, hsl(var(--gray-3)));
-    color: var(--input-color-disabled, hsl(var(--gray-5)));
+    background-color: var(--input-bg-color-disabled, var(--gray-3));
+    color: var(--input-color-disabled, var(--gray-5));
   }
 
   &.error {

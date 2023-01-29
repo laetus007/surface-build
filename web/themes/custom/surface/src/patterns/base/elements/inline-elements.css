@@ -74,7 +74,7 @@
 }
 
 :where(cite) {
-  color: var(--cite-color, hsl(var(--gray-6)));
+  color: var(--cite-color, var(--gray-6));
   font-family: var(--cite-font-family, var(--font-sans));
   font-size: var(--cite-font-size, var(--font-size-0));
   font-weight: var(--cite-font-weight, var(--font-weight-600));
@@ -85,7 +85,7 @@
 }
 
 :where(code) {
-  background-color: var(--code-bg-color, hsl(var(--gray-3)));
+  background-color: var(--code-bg-color, var(--gray-3));
   border-radius: var(--code-border-radius, var(--radius-2));
   font-family: var(--code-font-family, var(--font-mono));
   margin: 0;
@@ -109,7 +109,7 @@
 }
 
 :where(kbd) {
-  border-color: var(--kbd-border-color, hsl(var(--gray-4)));
+  border-color: var(--kbd-border-color, var(--gray-4));
   border-radius: var(--kbd-border-radius, var(--radius-2));
   border-style: solid;
   border-width: var(--kbd-border-size, var(--border-size-1));
@@ -159,7 +159,7 @@
 }
 
 :where(var) {
-  border-color: var(--var-border-color, hsl(var(--gray-4)));
+  border-color: var(--var-border-color, var(--gray-4));
   border-radius: var(--var-border-radius, var(--radius-2));
   border-style: solid;
   border-width: var(--var-border-width, var(--border-size-1));

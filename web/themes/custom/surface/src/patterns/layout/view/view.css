@@ -21,7 +21,7 @@
   .views-form {
     background-color: white;
     border-radius: 2px;
-    border: 1px solid hsl(var(--gray-2));
+    border: 1px solid var(--gray-2);
     box-shadow: 0 2px 4px hsla(0, 0%, 0%, 10%);
     box-sizing: border-box;
     margin-top: 0;

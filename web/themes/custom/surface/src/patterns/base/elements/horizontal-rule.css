@@ -4,7 +4,7 @@
  */
 
 :where(hr) {
-  background-color: var(--hr-bg-color, hsl(var(--gray-3)));
+  background-color: var(--hr-bg-color, var(--gray-3));
   height: var(--hr-height, var(--size-sm));
   margin-block: var(--hr-margin-block, var(--size-fluid-2));
 }

@@ -31,7 +31,7 @@
 }
 
 .translate__menu {
-  background-color: hsl(var(--white));
+  background-color: var(--white);
   border-top: 8px solid hsl(var(--ucla-blue));
   display: flex;
   flex-direction: column;

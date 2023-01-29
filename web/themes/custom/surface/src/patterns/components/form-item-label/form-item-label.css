@@ -21,7 +21,7 @@
   }
 
   &.is-disabled {
-    color: hsl(var(--gray-6));
+    color: var(--gray-6);
     cursor: default;
   }
 

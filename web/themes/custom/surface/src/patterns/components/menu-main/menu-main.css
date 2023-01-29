@@ -86,7 +86,7 @@
   width: 100%;
 
   @media (--desktop) {
-    background: hsl(var(--white));
+    background: var(--white);
     border-left: solid 1px transparent;
     border-top: var(--menu-main-level-2-border-top);
     box-shadow: 0 1px 36px rgba(0, 0, 0, 8%);

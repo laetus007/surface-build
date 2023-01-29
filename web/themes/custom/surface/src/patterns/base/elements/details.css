@@ -4,7 +4,7 @@
  */
 
 :where(details) {
-  background: var(--details-bg-color, hsl(var(--gray-2)));
+  background: var(--details-bg-color, var(--gray-2));
   border-radius: var(--details-border-radius, var(--radius-2));
   padding-block: var(--details-padding-block, var(--size-2));
   padding-inline: var(--details-padding-inline, var(--size-3));
@@ -21,7 +21,7 @@
 }
 
 :where(summary) {
-  background: var(--summary-bg-color, hsl(var(--gray-3)));
+  background: var(--summary-bg-color, var(--gray-3));
   border-radius: var(--summary-border-radius, var(--radius-2));
   cursor: pointer;
   font-weight: var(--summary-font-weight, var(--font-weight-700));

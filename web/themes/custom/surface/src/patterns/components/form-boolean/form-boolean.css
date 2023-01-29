@@ -10,7 +10,7 @@ input[type="radio"] {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  border-color: hsl(var(--gray-5));
+  border-color: var(--gray-5);
   border-radius: var(--radius-2);
   border-style: solid;
   border-width: var(--border-size-1);

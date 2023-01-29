@@ -9,14 +9,14 @@
   border-collapse: collapse;
   border-spacing: 0;
   border: 0;
-  color: hsl(var(--gray-8));
+  color: var(--gray-8);
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: var(--size-3);
   margin-block: var(--size-4);
 
   & caption {
-    color: hsl(var(--gray-8));
+    color: var(--gray-8);
     font-family: var(--font-serif);
     font-size: 14px;
     font-style: italic;
@@ -43,7 +43,7 @@
 
   & th {
     border-block-end: 2px solid hsl(var(--blue-5));
-    color: hsl(var(--gray-9));
+    color: var(--gray-9);
     font-family: var(--font-sans);
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -73,7 +73,7 @@
   }
 
   & td {
-    border-block-end: 2px solid hsl(var(--gray-4));
+    border-block-end: 2px solid var(--gray-4);
     white-space: normal;
   }
 

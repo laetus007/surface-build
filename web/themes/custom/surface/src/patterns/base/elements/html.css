@@ -5,10 +5,10 @@
 
 :where(html) {
   accent-color: var(--accent-color, hsl(var(--blue-6)));
-  background-color: var(--bg-color, hsl(var(--white)));
+  background-color: var(--bg-color, var(--white));
   block-size: 100%;
   caret-color: var(--caret-color, hsl(var(--blue-6)));
-  color: var(--color, hsl(var(--gray-9)));
+  color: var(--color, var(--gray-9));
   font-family: var(--font-body, var(--font-sans));
   font-size: 100%;
   font-weight: normal;

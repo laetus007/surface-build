@@ -7,7 +7,7 @@
 
 .feed-icon {
   align-items: center;
-  color: hsl(var(--gray-7));
+  color: var(--gray-7);
   display: flex;
   text-decoration: none;
 

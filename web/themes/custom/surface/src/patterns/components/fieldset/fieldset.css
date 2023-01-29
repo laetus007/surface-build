@@ -6,7 +6,7 @@
 .fieldset {
   background-color: hsl(0, 0%, 100%);
   border-radius: var(--radius-1);
-  border: solid 2px hsl(var(--gray-9));
+  border: solid 2px var(--gray-9);
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -28,7 +28,7 @@
 }
 
 .fieldset__legend {
-  background-color: hsl(var(--gray-9));
+  background-color: var(--gray-9);
   color: inherit;
   float: left; /* Prevent sticking out of top of fieldset. */
   font-size: var(--font-size-2);
@@ -72,7 +72,7 @@
 }
 
 .fieldset__label.is-disabled {
-  color: hsl(var(--gray-9));
+  color: var(--gray-9);
 }
 
 .fieldset__description {
@@ -82,7 +82,7 @@
 }
 
 .fieldset__description.is-disabled {
-  color: hsl(var(--gray-3));
+  color: var(--gray-3);
 }
 
 .fieldset__error-message {
@@ -111,7 +111,7 @@
 }
 
 .fieldset--group .fieldset__legend--visible ~ .fieldset__wrapper {
-  border: solid 2px hsl(var(--gray-9));
+  border: solid 2px var(--gray-9);
   border-bottom-right-radius: var(--radius-1);
   border-bottom-left-radius: var(--radius-1);
 }

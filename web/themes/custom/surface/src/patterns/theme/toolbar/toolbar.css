@@ -4,7 +4,7 @@
  */
 
 :root {
-  --toolbar-background-color: hsl(var(--white));
+  --toolbar-background-color: var(--white);
 }
 
 [dir="ltr"] body.gin--vertical-toolbar,

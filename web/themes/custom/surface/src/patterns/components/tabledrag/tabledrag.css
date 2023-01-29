@@ -4,19 +4,19 @@
  */
 
 .draggable:hover {
-  background-color: hsl(var(--gray-1));
+  background-color: var(--gray-1);
 }
 
 .draggable.drag {
-  background-color: hsl(var(--gray-2));
+  background-color: var(--gray-2);
 }
 
 .draggable.drag-previous {
-  background-color: hsl(var(--gray-3));
+  background-color: var(--gray-3);
 }
 
 .drag-previous a {
-  color: hsl(var(--gray-8)); /* Ensure proper contrast. */
+  color: var(--gray-8); /* Ensure proper contrast. */
 }
 
 a.tabledrag-handle,

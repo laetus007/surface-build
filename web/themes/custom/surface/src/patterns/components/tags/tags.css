@@ -9,7 +9,7 @@
 }
 
 .field--tags__label {
-  color: hsl(var(--gray-7));
+  color: var(--gray-7);
   font-size: var(--font-size-0);
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -68,7 +68,7 @@
 
 .node--view-mode-full {
   & .field--tags {
-    background-color: hsl(var(--gray-1));
+    background-color: var(--gray-1);
     margin-block: var(--size-9);
     padding-block: var(--size-3);
     padding-inline: var(--size-4);

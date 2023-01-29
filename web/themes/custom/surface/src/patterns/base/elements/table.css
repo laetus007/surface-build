@@ -4,16 +4,16 @@
  */
 
 :where(caption) {
-  color: var(--caption-color, hsl(var(--gray-5)));
+  color: var(--caption-color, var(--gray-5));
   padding-block: var(--caption-padding-block, var(--size-1));
   text-align: left;
 }
 
 :where(table) {
   border-collapse: collapse;
-  border-color: var(--table-border-color, hsl(var(--gray-2)));
+  border-color: var(--table-border-color, var(--gray-2));
   caption-side: bottom;
-  color: var(--table-color, hsl(var(--gray-8)));
+  color: var(--table-color, var(--gray-8));
   margin-block-end: var(--table-margin-block-end, var(--size-2));
   vertical-align: top;
   width: 100%;
