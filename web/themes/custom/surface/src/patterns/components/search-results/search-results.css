@@ -23,7 +23,7 @@
 
   & a {
     background-color: transparent;
-    background-image: linear-gradient(hsl(var(--blue-5)), hsl(var(--blue-5))); /* Two values are needed for IE11 support. */
+    background-image: linear-gradient(var(--blue-5), var(--blue-5)); /* Two values are needed for IE11 support. */
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 0 3px;
@@ -32,7 +32,7 @@
     transition: background-size 0.2s, color 0.2s;
 
     &:hover {
-      color: hsl(var(--blue-9));
+      color: var(--blue-9);
     }
   }
 
@@ -60,7 +60,7 @@
   margin-block-end: var(--size-2);
 
   & a {
-    color: hsl(var(--blue-9));
+    color: var(--blue-9);
     font-weight: bold;
   }
 }

@@ -5,7 +5,7 @@
 
 .views-exposed-form {
   align-items: center;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   border-radius: 2px;
   border: 1px solid var(--gray-2);
   box-shadow: 0 2px 4px hsla(0, 0%, 0%, 10%);

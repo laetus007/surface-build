@@ -19,7 +19,7 @@
 }
 
 ::selection {
-  background-color: var(--selection-bg-color, hsl(var(--blue-9)));
+  background-color: var(--selection-bg-color, var(--blue-9));
   color: var(--selection-color, var(--white));
 }
 

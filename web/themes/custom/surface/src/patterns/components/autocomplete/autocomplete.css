@@ -10,7 +10,7 @@
 }
 
 .form-autocomplete {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   background-image: var(--autocomplete-search-icon-url);
   background-position: right var(--autocomplete-icon-right-offset) center;
   background-repeat: no-repeat;

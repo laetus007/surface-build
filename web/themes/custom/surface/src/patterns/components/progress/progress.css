@@ -5,12 +5,12 @@
 
 .progress__track {
   border-radius: var(--border-size-2);
-  border: 1px solid hsl(var(--blue-9));
+  border: 1px solid var(--blue-9);
   height: 18px;
   overflow: hidden;
 }
 
 .progress__bar {
-  background-color: hsl(var(--blue-9));
+  background-color: var(--blue-9);
   height: 18px;
 }

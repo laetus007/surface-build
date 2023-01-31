@@ -11,17 +11,17 @@
   }
 
   &:where([href]) {
-    color: var(--link-color, hsl(var(--blue-6)));
-    text-decoration-color: var(--link-decoration-color, hsl(var(--blue-9)));
+    color: var(--link-color, var(--blue-6));
+    text-decoration-color: var(--link-decoration-color, var(--blue-9));
 
     &:where(:hover) {
-      color: var(--link-hover-color, hsl(var(--blue-5)));
-      text-decoration-color: var(--link-hover-decoration-color, hsl(var(--blue-5)));
+      color: var(--link-hover-color, var(--blue-5));
+      text-decoration-color: var(--link-hover-decoration-color, var(--blue-5));
     }
 
     &:where(:visited) {
-      color: var(--link-visited-color, hsl(var(--blue-9)));
-      text-decoration-color: var(--link-visited-decoration-color, hsl(var(--blue-9)));
+      color: var(--link-visited-color, var(--blue-9));
+      text-decoration-color: var(--link-visited-decoration-color, var(--blue-9));
     }
   }
 
@@ -55,7 +55,7 @@
 }
 
 :where(abbr) {
-  text-decoration-color: var(--abbr-text-decoration-color, hsl(var(--blue-5)));
+  text-decoration-color: var(--abbr-text-decoration-color, var(--blue-5));
   text-underline-offset: var(--abbr-text-underline-offset, var(--size-xs));
 
   &:hover {
@@ -94,8 +94,8 @@
 }
 
 :where(del) {
-  background-color: var(--del-bg-color, hsl(var(--red-9)));
-  color: var(--del-color, hsl(var(--red-1)));
+  background-color: var(--del-bg-color, var(--red-9));
+  color: var(--del-color, var(--red-1));
 }
 
 :where(dfn) {
@@ -103,8 +103,8 @@
 }
 
 :where(ins) {
-  background-color: var(--ins-bg-color, hsl(var(--green-9)));
-  color: var(--ins-color, hsl(var(--green-1)));
+  background-color: var(--ins-bg-color, var(--green-9));
+  color: var(--ins-color, var(--green-1));
   text-underline-offset: var(--ins-text-underline-offset, var(--size-xs));
 }
 

@@ -16,7 +16,7 @@
   width: 100%;
 
   &:hover {
-    color: hsl(0, 0%, 100%);
+    color: var(--white);
     text-decoration: underline;
   }
 

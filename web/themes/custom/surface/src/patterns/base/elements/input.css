@@ -30,8 +30,8 @@ textarea {
   padding: var(--input-padding, 0 var(--size-2));
 
   &:focus {
-    border: solid 2px var(--input-border-color-focus, hsl(var(--blue-5)));
-    outline: solid 2px var(--input-outline-color-focus, hsl(var(--blue-5)));
+    border: solid 2px var(--input-border-color-focus, var(--blue-5));
+    outline: solid 2px var(--input-outline-color-focus, var(--blue-5));
 
     @supports (outline-style: double) {
       border-width: 1px;
@@ -47,10 +47,10 @@ textarea {
   }
 
   &.error {
-    border: solid 2px var(--input-border-color-error, hsl(var(--red-7)));
+    border: solid 2px var(--input-border-color-error, var(--red-7));
 
     &:focus {
-      outline-color: var(--input-outline-color-error, hsl(var(--red-7)));
+      outline-color: var(--input-outline-color-error, var(--red-7));
       outline-offset: -2px;
     }
   }

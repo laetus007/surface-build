@@ -23,7 +23,7 @@
 .translate__caret {
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 9px solid hsl(var(--ucla-blue));
+  border-top: 9px solid var(--ucla-blue);
   border-bottom: 9px solid transparent;
   width: 0;
   margin-inline: auto;
@@ -32,7 +32,7 @@
 
 .translate__menu {
   background-color: var(--white);
-  border-top: 8px solid hsl(var(--ucla-blue));
+  border-top: 8px solid var(--ucla-blue);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -46,11 +46,11 @@
     padding: 12px;
 
     &:hover {
-      background-color: hsl(var(--santa-barbara-sand));
+      background-color: var(--santa-barbara-sand);
     }
 
     &.gt-current-lang {
-      background-color: hsl(var(--santa-barbara-sand));
+      background-color: var(--santa-barbara-sand);
     }
   }
 }

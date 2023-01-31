@@ -24,7 +24,7 @@
 
   & select,
   & input:not([type="submit"]) {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--white);
   }
 
   @media (--tablet) {

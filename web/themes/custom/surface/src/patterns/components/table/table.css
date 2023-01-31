@@ -42,7 +42,7 @@
   }
 
   & th {
-    border-block-end: 2px solid hsl(var(--blue-5));
+    border-block-end: 2px solid var(--blue-5);
     color: var(--gray-9);
     font-family: var(--font-sans);
     font-size: 14px;
@@ -96,7 +96,7 @@
 }
 
 .sticky-header {
-  border-block-end: 4px solid hsl(var(--blue-5));
+  border-block-end: 4px solid var(--blue-5);
   margin: 0;
   z-index: 0;
 }

@@ -61,7 +61,7 @@
 
 .vertical-tabs__menu-item a {
   background-color: var(--gray-0);
-  color: hsl(var(--blue-9));
+  color: var(--blue-9);
   display: block;
   padding-block: var(--size-1);
   padding-inline: var(--size-105);
@@ -75,7 +75,7 @@
 }
 
 .vertical-tabs__menu-item.is-selected {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
 
   @media (--laptop) {
     margin-inline-end: calc(var(--vertical-tabs-menu-border-width) * -1);

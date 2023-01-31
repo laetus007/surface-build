@@ -4,14 +4,15 @@
  */
 
 :root {
-  --details-border-width: 1px;
+  --details-border: 1px solid var(--gray-1);
+  --details-box-shadow: 0 1px 4px var(--gray-0);
   --details-summary-transition: background-color 0.12s ease-in-out;
 }
 
 details.details {
   border-radius: var(--border-size-2);
-  border: var(--details-border-width) solid var(--gray-1);
-  box-shadow: 0 1px 4px var(--gray-0);
+  border: var(--details-border);
+  box-shadow: var(--details-box-shadow);
   color: inherit;
   display: block;
   margin-block: var(--size-1);
@@ -51,9 +52,9 @@ details.details {
   /* Pseudo-selector to manage focus styles */
   &::after {
     border-radius: var(--border-size-2);
-    box-shadow: inset 0 0 0 2px hsl(var(--blue-4));
+    box-shadow: inset 0 0 0 2px var(--blue-4);
     content: "";
-    inset: calc(var(--details-border-width) * -1);
+    inset: -1px;
     opacity: 0;
     pointer-events: none;
     position: absolute;
@@ -100,7 +101,7 @@ details.details {
 
 /* Error */
 .details__error {
-  color: hsl(var(--red-9));
+  color: var(--red-9);
   font-size: var(--font-size-0);
   line-height: var(--font-line-height-2);
   margin-block-end: var(--size-1);

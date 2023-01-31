@@ -19,7 +19,7 @@
 [type="week"],
 textarea {
   appearance: none;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   border-radius: var(--radius-1);
   border: 1px solid var(--gray-5);
   color: var(--gray-8);
@@ -31,8 +31,8 @@ textarea {
   width: 100%;
 
   &:focus {
-    border: solid 2px hsl(var(--blue-5));
-    outline: solid 2px hsl(var(--blue-5));
+    border: solid 2px var(--blue-5);
+    outline: solid 2px var(--blue-5);
 
     @supports (outline-style: double) {
       border-width: 1px;
@@ -52,10 +52,10 @@ textarea {
   }
 
   &.error {
-    border: solid 2px hsl(var(--red-9));
+    border: solid 2px var(--red-9);
 
     &:focus {
-      outline-color: hsl(var(--red-9));
+      outline-color: var(--red-9);
       outline-offset: -2px;
     }
   }

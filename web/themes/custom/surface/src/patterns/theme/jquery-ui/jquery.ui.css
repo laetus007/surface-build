@@ -75,7 +75,7 @@
 
 /* Autocomplete */
 .ui-autocomplete {
-  background: hsl(0, 0%, 100%);
+  background: var(--white);
   border-radius: 0 0 0.125rem 0.125rem;
   border-top: 0;
   border: 1px solid hsla(233, 11%, 86%, 80%);
@@ -102,7 +102,7 @@
 
 .ui-autocomplete .ui-menu-item-wrapper.ui-state-active {
   background: hsl(222, 100%, 40%);
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
   margin: 0;
 }
 
@@ -114,5 +114,5 @@
 
 .ui-autocomplete .ui-state-focus a,
 .autocomplete .ui-state-hover a {
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
 }

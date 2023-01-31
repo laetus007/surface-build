@@ -11,20 +11,20 @@
   line-height: var(--font-line-height-6);
 
   & a {
-    color: hsl(var(--blue-8));
+    color: var(--blue-8);
     overflow-wrap: break-word;
-    text-decoration-color: hsl(var(--blue-8));
+    text-decoration-color: var(--blue-8);
     text-decoration-thickness: 2px;
 
     @supports (box-shadow: none) {
-      box-shadow: inset 0 -2px 0 0 hsl(var(--blue-5));
+      box-shadow: inset 0 -2px 0 0 var(--blue-5);
       text-decoration: none;
       transition: box-shadow 0.3s cubic-bezier(0.55, 0.085, 0, 0.99);
 
       &:hover {
-        box-shadow: inset 0 -2em 0 0 hsl(var(--blue-2));
+        box-shadow: inset 0 -2em 0 0 var(--blue-2);
         color: var(--gray-9);
-        text-decoration-color: hsl(var(--blue-2));
+        text-decoration-color: var(--blue-2);
         text-decoration-style: underline;
       }
     }
@@ -76,7 +76,7 @@
     }
 
     &::before {
-      color: hsl(var(--blue-4));
+      color: var(--blue-4);
       content: "“";
       font-size: var(--font-size-11);
       inset-block-start: 0;

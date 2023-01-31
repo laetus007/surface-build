@@ -4,7 +4,7 @@
  */
 
 .fieldset {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   border-radius: var(--radius-1);
   border: solid 2px var(--gray-9);
   box-sizing: border-box;
@@ -63,7 +63,7 @@
 }
 
 .fieldset__label {
-  color: hsl(0, 0%, 100%);
+  color: var(--white);
   display: block;
   font-size: var(--font-size-1);
   line-height: normal;
@@ -90,7 +90,7 @@
   background-position: left top;
   background-repeat: no-repeat;
   background-size: var(--size-2) var(--size-2);
-  color: hsl(var(--red-9));
+  color: var(--red-9);
   font-size: var(--font-size-0);
   line-height: var(--font-line-height-1);
   margin-block: var(--size-1);

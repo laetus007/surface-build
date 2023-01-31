@@ -31,7 +31,7 @@
 .node__title {
   & a {
     background-color: transparent;
-    background-image: linear-gradient(hsl(var(--blue-5)), hsl(var(--blue-5))); /* Two values are needed for IE11 support. */
+    background-image: linear-gradient(var(--blue-5), var(--blue-5)); /* Two values are needed for IE11 support. */
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 0 3px;
@@ -42,7 +42,7 @@
 
     &:hover,
     &:focus {
-      color: hsl(var(--blue-9));
+      color: var(--blue-9);
     }
   }
 }
@@ -56,5 +56,5 @@
 }
 
 .node--unpublished {
-  background-color: hsl(var(--santa-barbara-sand));
+  background-color: var(--santa-barbara-sand);
 }

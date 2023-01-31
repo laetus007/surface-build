@@ -49,7 +49,7 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px currentcolor, 0 0 0 4px hsl(var(--gray-8) / 15%);
+      box-shadow: 0 0 0 2px currentcolor, 0 0 0 4px var(--gray-7);
       outline: none;
     }
   }

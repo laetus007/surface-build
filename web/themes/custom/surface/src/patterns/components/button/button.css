@@ -38,7 +38,7 @@
   }
 
   &:focus {
-    box-shadow: var(--btn-focus-box-shadow, 0 0 0 2px var(--white), 0 0 0 4px hsl(var(--gray-8) / 15%));
+    box-shadow: var(--btn-focus-box-shadow, 0 0 0 2px var(--white), 0 0 0 4px var(--gray-7));
     outline: none;
   }
 
@@ -62,21 +62,21 @@
 
 /* Button primary */
 .button--primary {
-  background-color: var(--btn-primary-bg-color, hsl(var(--blue-6)));
+  background-color: var(--btn-primary-bg-color, var(--blue-6));
   color: var(--btn-primary-color, var(--white));
 
   &:visited {
-    background-color: var(--btn-primary-visited-bg-color, hsl(var(--blue-6)));
+    background-color: var(--btn-primary-visited-bg-color, var(--blue-6));
     color: var(--btn-primary-visited-color, var(--white));
   }
 
   &:hover {
-    background-color: var(--btn-primary-hover-bg-color, hsl(var(--blue-8)));
+    background-color: var(--btn-primary-hover-bg-color, var(--blue-8));
     color: var(--btn-primary-hover-color, var(--white));
   }
 
   &:active {
-    background-color: var(--btn-primary-active-bg-color, hsl(var(--blue-8)));
+    background-color: var(--btn-primary-active-bg-color, var(--blue-8));
     color: var(--btn-primary-active-color, var(--white));
   }
 }

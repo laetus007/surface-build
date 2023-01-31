@@ -56,7 +56,7 @@
 
 .field--tags__item a {
   align-items: center;
-  color: hsl(var(--blue-9));
+  color: var(--blue-9);
   display: flex;
   font-size: var(--font-size-1);
   font-weight: var(--font-weight-700);

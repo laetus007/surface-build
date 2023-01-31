@@ -11,7 +11,7 @@
     margin-block-end: var(--size-2);
 
     & a {
-      color: hsl(var(--blue-9));
+      color: var(--blue-9);
       font-weight: var(--font-weight-700);
     }
   }

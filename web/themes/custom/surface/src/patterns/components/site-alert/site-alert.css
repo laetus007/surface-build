@@ -4,7 +4,7 @@
 */
 
 .site-alert {
-  background-color: var(--site-alert-bg-color, hsl(var(--blue-9)));
+  background-color: var(--site-alert-bg-color, var(--blue-9));
   color: var(--site-alert-color, var(--white));
 }
 
@@ -47,7 +47,7 @@
 
       &:hover {
         box-shadow: var(--site-alert-box-shadow-hover);
-        color: var(--site-alert-link-color-hover, hsl(var(--ucla-blue)));
+        color: var(--site-alert-link-color-hover, var(--ucla-blue));
         text-decoration-color: var(--site-alert-link-color);
         text-decoration-style: underline;
       }

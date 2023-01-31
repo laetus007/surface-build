@@ -29,7 +29,7 @@
 
 /* Error message (Inline form errors). */
 .form-item__error-message {
-  color: hsl(var(--red-9));
+  color: var(--red-9);
   font-size: var(--font-size-sm);
   font-weight: normal;
   line-height: var(--font-line-height-3);
@@ -41,7 +41,7 @@
   background-position: left top;
   background-repeat: no-repeat;
   background-size: var(--size-2) var(--size-2);
-  color: hsl(var(--red-9));
+  color: var(--red-9);
   font-size: var(--font-size-sm);
   line-height: var(--font-line-height-2);
   margin-block: var(--size-1);

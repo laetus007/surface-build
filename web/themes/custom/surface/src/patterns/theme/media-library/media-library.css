@@ -49,11 +49,11 @@
     text-decoration: none;
 
     &:hover {
-      color: hsl(var(--blue-9));
+      color: var(--blue-9);
     }
 
     &.is-active {
-      color: hsl(var(--blue-9));
+      color: var(--blue-9);
       font-weight: var(--font-weight-700);
     }
   }
@@ -62,7 +62,7 @@
     &:hover,
     &.is-active {
       &::before {
-        background-color: hsl(var(--blue-9));
+        background-color: var(--blue-9);
       }
     }
 
@@ -83,7 +83,7 @@
     &:hover,
     &.is-active {
       &::before {
-        background-color: hsl(var(--blue-9));
+        background-color: var(--blue-9);
       }
     }
 
@@ -184,7 +184,7 @@
   }
 
   &.active {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--white);
     border-color: hsl(230, 10%, 88%) transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 10%);
     color: hsl(222, 100%, 40%);
@@ -288,7 +288,7 @@
 }
 
 .media-library-add-form__input-wrapper {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--white);
   border-radius: 2px;
   border: 1px solid hsl(230, 10%, 88%);
   box-shadow: 0 2px 4px hsla(0, 0%, 0%, 10%);
@@ -631,8 +631,8 @@
 
 .media-library-item--grid.checked {
   .media-library-item__preview {
-    border-color: hsl(var(--blue-9));
-    box-shadow: 0 0 0 2px hsl(var(--blue-9));
+    border-color: var(--blue-9);
+    box-shadow: 0 0 0 2px var(--blue-9);
   }
 }
 
