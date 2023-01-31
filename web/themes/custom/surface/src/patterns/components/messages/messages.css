@@ -38,6 +38,10 @@
   }
 }
 
+.messages__title {
+  color: var(--white);
+}
+
 .messages__content {
   flex: 1;
   overflow: auto;

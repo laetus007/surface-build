@@ -40,6 +40,7 @@ rules:
   no-invalid-double-slash-comments: true
   property-no-unknown: true
   selector-class-pattern: null
+  selector-id-pattern: null
   selector-pseudo-class-no-unknown: true
   selector-pseudo-element-no-unknown: true
   selector-type-no-unknown: true

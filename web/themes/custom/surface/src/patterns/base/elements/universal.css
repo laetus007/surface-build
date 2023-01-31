@@ -10,6 +10,8 @@
 }
 
 * {
+  margin: 0;
+
   @media print {
     background-color: transparent !important;
     box-shadow: none !important;
@@ -35,4 +37,8 @@
 :where([tabindex]:not([tabindex*="-"])) {
   cursor: pointer;
   touch-action: manipulation;
+}
+
+:is(#root, #__next) {
+  isolation: isolate;
 }

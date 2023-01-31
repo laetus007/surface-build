@@ -23,8 +23,7 @@ textarea {
   border-radius: var(--input-border-radius, var(--radius-1));
   border: var(--input-border-size, var(--border-size-1)) solid var(--input-border-color, var(--gray-4));
   color: var(--input-color, var(--gray-9));
-  font-family: inherit;
-  font-size: inherit;
+  font: inherit;
   max-width: 100%;
   min-height: var(--input-min-height, var(--size-6));
   padding: var(--input-padding, 0 var(--size-2));

@@ -13,6 +13,7 @@
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
+  height: 100%;
   line-height: var(--font-body-line-height, var(--font-line-height-2));
   min-height: 100%;
   scroll-padding-top: var(--scroll-padding-top, 150px);

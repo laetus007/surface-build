@@ -35,6 +35,11 @@ libraries-override:
 
   content_moderation/content_moderation: surface/content_moderation
 
+  media_library_edit/admin:
+    css:
+      component:
+        css/media_library_edit.admin.css: dist/css/media-library.css
+
   layout_paragraphs/component_list:
     css:
       layout:

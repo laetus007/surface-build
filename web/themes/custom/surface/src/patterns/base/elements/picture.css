@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Picture element styles.
+ */
+
+:where(picture) {
+  block-size: auto;
+  display: block;
+  max-inline-size: 100%;
+}

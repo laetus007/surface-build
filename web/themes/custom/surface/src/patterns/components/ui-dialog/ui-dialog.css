@@ -7,7 +7,7 @@
   background: transparent;
   border-radius: 4px;
   border: 0;
-  box-shadow: 0 0 1rem -0.25rem var(--black));
+  box-shadow: var(--shadow-1);
   left: 0;
   max-width: var(--size-container);
   padding: 0;
@@ -30,7 +30,7 @@
 
 .ui-dialog-titlebar {
   align-items: center;
-  background-color: var(--black));
+  background-color: var(--black);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   box-sizing: border-box;

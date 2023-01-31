@@ -425,7 +425,7 @@
 
   /* Media library widget edit and delete button styles. */
   .media-library-item__edit {
-    background-color: white;
+    background-color: var(--white);
     background-image: url("../images/pencil.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -453,12 +453,12 @@
   }
 
   .media-library-item__remove {
-    background-color: white;
+    background-color: var(--white);
     background-image: url("../images/ex.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 12px;
-    border: 1px solid hsl(230, 7%, 84%) !important;
+    border: 1px solid var(--gray-0);
     border-radius: var(--radius-round);
     color: transparent;
     cursor: pointer;
@@ -476,10 +476,57 @@
     width: 28px;
     z-index: 1;
 
+    &:hover {
+      background-color: var(--white);
+    }
+
     &:active {
-      border-color: hsl(222, 100%, 40%) !important;
+      border-color: hsl(222, 100%, 40%);
     }
   }
+}
+
+/* Media library edit button */
+.media-library-edit__link {
+  background-color: var(--white);
+  background-image: url("../images/pencil.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  border-radius: 20px;
+  border: 2px solid var(--gray-0);
+  box-sizing: border-box;
+  color: transparent;
+  height: 24px;
+  margin: 5px;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  text-shadow: none;
+  top: 40px;
+  transition: 0.2s border-color;
+  width: 24px;
+  z-index: 1;
+
+  &:hover {
+    color: transparent;
+  }
+}
+
+.media-library-edit__modal::before {
+  background: rgba(0, 0, 0, 30%);
+  content: "";
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+/* Hide media library edit modal backdrop if wrapped inside .ui-dialog */
+.ui-dialog .media-library-edit__modal::before {
+  display: none;
 }
 
 /* Media library item grid */

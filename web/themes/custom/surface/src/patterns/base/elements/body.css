@@ -4,8 +4,9 @@
  */
 
 :where(body) {
-  margin-block: 0;
-  margin-inline: 0;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  line-height: 1.5;
   min-block-size: 100%;
   padding-block: 0;
   padding-inline: 0;

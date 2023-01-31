@@ -6,6 +6,7 @@
 :where(p) {
   margin-block-end: var(--p-margin-block-end, var(--size-2));
   margin-block-start: var(--p-margin-block-start, var(--size-2));
+  overflow-wrap: break-word;
 
   &:first-child {
     margin-block-start: 0;
