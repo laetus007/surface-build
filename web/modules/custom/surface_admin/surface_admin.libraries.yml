@@ -1,0 +1,4 @@
+admin:
+  css:
+    theme:
+      /themes/custom/surface/dist/css/admin.css: { preprocess: false, minified: false, weight: 100 }

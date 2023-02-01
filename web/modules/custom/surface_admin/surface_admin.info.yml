@@ -1,0 +1,5 @@
+name: Surface Admin
+type: module
+description: 'Provide ability to override admin theme.'
+package: Surface
+core_version_requirement: ^9.2 || ^10

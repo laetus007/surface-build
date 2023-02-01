@@ -81,20 +81,6 @@
   }
 }
 
-/* Button icon back */
-.button--icon-back {
-  &::before {
-    border-block-end: solid 2px currentcolor;
-    border-inline-start: solid 2px currentcolor;
-    content: "";
-    display: block;
-    height: 0.5em;
-    margin-inline-end: 0.5em;
-    transform: rotate(45deg);
-    width: 0.5em;
-  }
-}
-
 /* Button toggle */
 .button--toggle {
   &::after {

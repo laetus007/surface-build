@@ -1,0 +1,45 @@
+/**
+ * @file
+ * Admin theme styling.
+ */
+
+.gin--edit-form {
+  .ui-dialog {
+    .ui-dialog-titlebar {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      &::after,
+      &::before {
+        content: none;
+      }
+    }
+
+    .ui-dialog-titlebar-close {
+      opacity: inherit;
+      position: relative;
+      right: 0 !important;
+      top: inherit;
+    }
+  }
+
+  .media-form {
+    .messages-list {
+      margin-block-start: 16px;
+    }
+  }
+
+  .media-library-wrapper {
+    margin-block: 0;
+  }
+
+  .media-library-menu {
+    padding-block-start: 0;
+
+    .media-library-menu__item {
+      margin-block: 0;
+      padding-block: 0;
+    }
+  }
+}

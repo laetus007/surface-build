@@ -59,6 +59,11 @@ libraries-override:
   gin/dialog: false
   gin/media_library: false
 
+  gin/node_preview:
+    css:
+      component:
+        dist/css/components/node_preview.css: dist/css/node-preview-container.css
+
 libraries-extend:
   core/drupal.message:
     - surface/messages
@@ -77,6 +82,7 @@ regions:
 
 ckeditor_stylesheets:
   - dist/css/global.css
+  - dist/css/admin.css
   - dist/css/embedded-media.css
   - dist/css/table.css
   - dist/css/text-content.css
@@ -84,6 +90,7 @@ ckeditor_stylesheets:
 
 ckeditor5-stylesheets:
   - dist/css/global.css
+  - dist/css/admin.css
   - dist/css/embedded-media.css
   - dist/css/table.css
   - dist/css/text-content.css

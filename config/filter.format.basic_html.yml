@@ -45,14 +45,12 @@ filters:
     status: true
     weight: 11
     settings: {  }
-  filter_responsive_tables_filter:
-    id: filter_responsive_tables_filter
-    provider: responsive_tables_filter
-    status: false
-    weight: 0
-    settings:
-      tablesaw_type: stack
-      tablesaw_persist: '1'
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
   media_embed:
     id: media_embed
     provider: media
@@ -67,9 +65,11 @@ filters:
         sf_document_media_type: sf_document_media_type
         sf_image_media_type: sf_image_media_type
         sf_video_media_type: sf_video_media_type
-  filter_htmlcorrector:
-    id: filter_htmlcorrector
-    provider: filter
-    status: true
-    weight: 10
-    settings: {  }
+  filter_responsive_tables_filter:
+    id: filter_responsive_tables_filter
+    provider: responsive_tables_filter
+    status: false
+    weight: 0
+    settings:
+      tablesaw_type: stack
+      tablesaw_persist: '1'

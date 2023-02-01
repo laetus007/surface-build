@@ -33,12 +33,12 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 0
     region: content
   field_sf_article_byline:
     type: string
@@ -46,7 +46,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_sf_article_category:
     type: entity_reference_label
@@ -54,7 +54,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_sf_article_date:
     type: datetime_default
@@ -63,7 +63,7 @@ content:
       timezone_override: ''
       format_type: medium
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_sf_authors:
     type: entity_reference_label
@@ -71,7 +71,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_sf_featured_media:
     type: entity_reference_entity_view
@@ -80,7 +80,7 @@ content:
       view_mode: default
       link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_sf_tags:
     type: entity_reference_label
@@ -88,7 +88,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
 hidden:
   field_sf_article_type: true

@@ -1,0 +1,11 @@
+<?php
+
+ /**
+ * Implements hook_page_attachments().
+ */
+function surface_admin_page_attachments(array &$attachments) {
+  $admin_context = \Drupal::service('router.admin_context');
+  if ($admin_context->isAdminRoute()) {
+    $attachments['#attached']['library'][] = 'surface_admin/admin';
+  }
+}

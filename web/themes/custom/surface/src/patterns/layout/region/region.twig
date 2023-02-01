@@ -6,8 +6,14 @@
   attributes ? attributes.class
 ]|join(' ')|trim %}
 
-<section class="{{ classes }}" {{ attributes ? attributes|without('class') }} {% if id %}id={{ id }}{% endif %}>
+{% if region_wrapper %}
+  <section class="{{ classes }}" {{ attributes ? attributes|without('class') }} {% if id %}id="{{ id }}"{% endif %}>
+{% endif %}
+
   {% block content %}
     {{ content }}
   {% endblock %}
-</section>
+
+{% if region_wrapper %}
+  </section>
+{% endif %}

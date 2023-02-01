@@ -15,15 +15,28 @@
   content_attributes ? content_attributes.class
 ]|join(' ')|trim %}
 
-<div class="{{ classes }}" {{ attributes ? attributes|without('class', 'id') }}>
+{% if block_wrapper %}
+  <div class="{{ classes }}" {{ attributes ? attributes|without('class', 'id') }}>
+{% endif %}
+
   {{ title_prefix }}
   {% if label %}
     <h2 class="{{ title_classes }}" {{ title_attributes ? title_attributes|without('class') }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-  <div class="{{ content_classes }}" {{ content_attributes ? content_attributes|without('class') }}>
+
+  {% if content_wrapper %}
+    <div class="{{ content_classes }}" {{ content_attributes ? content_attributes|without('class') }}>
+  {% endif %}
+
     {% block content %}
       {{ content }}
     {% endblock %}
+
+  {% if content_wrapper %}
+    </div>
+  {% endif %}
+
+{% if block_wrapper %}
   </div>
-</div>
+{% endif %}

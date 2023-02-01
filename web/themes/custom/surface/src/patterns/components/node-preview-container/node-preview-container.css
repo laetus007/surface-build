@@ -4,9 +4,13 @@
  */
 
 .node-preview-container {
-  background: var(--node-preview-bg-color, var(--white));
-  height: 70px;
-  opacity: 1;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--black);
+  height: 62px;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
 
   .gin--vertical-toolbar & {
     top: 39px;
@@ -16,18 +20,65 @@
     }
   }
 
+  .js-hide {
+    display: none;
+  }
+
+  /* Hide Secondary Toolbar while in Preview mode. */
+  ~ .gin-secondary-toolbar--frontend {
+    display: none;
+  }
+
   .node-preview-form-select {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
     margin-inline: auto;
     max-width: var(--size-container);
     padding-inline: var(--size-2);
+    width: auto;
 
     @media (--desktop) {
       padding-inline: var(--size-4);
+    }
+
+    .form-item {
+      align-items: center;
+      display: flex;
+    }
+
+    label {
+      color: var(--gray-7);
+      padding-right: var(--size-1);
     }
   }
 
   .node-preview-backlink {
     background: transparent;
-    border: 0;
+    border: 1px solid transparent;
+    color: var(--gray-7);
+    font-size: var(--font-size-0);
+    margin-block: 0;
+    margin-inline-start: calc(var(--size-3) * -1);
+    text-decoration: none;
+
+    &:hover {
+      border: 1px solid var(--gray-7);
+    }
+
+    &::before {
+      background-color: var(--gray-7);
+      background-size: cover;
+      content: "";
+      display: inline-block;
+      height: 16px;
+      margin-inline-end: var(--size-1);
+      mask-image: url("../images/circle-left.svg");
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      width: 16px;
+    }
   }
 }

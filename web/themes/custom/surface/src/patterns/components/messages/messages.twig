@@ -3,6 +3,9 @@
 {% set classes = [
   'messages',
   type ? 'messages--' ~ type,
+  'container',
+  'grid',
+  'grid--medium',
 ]|join(' ')|trim %}
 
 <div data-drupal-messages class="{{ classes }}" data-drupal-selector="messages" role="contentinfo" aria-label="{{ heading }}">

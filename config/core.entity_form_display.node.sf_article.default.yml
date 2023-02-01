@@ -29,7 +29,6 @@ dependencies:
     - path
     - scheduler
     - scheduler_content_moderation_integration
-    - text
 third_party_settings:
   field_group:
     group_search_engine_optimization:
@@ -40,7 +39,7 @@ third_party_settings:
       label: 'Search Engine Optimization (SEO)'
       region: content
       parent_name: ''
-      weight: 4
+      weight: 3
       format_type: details
       format_settings:
         classes: ''
@@ -55,7 +54,7 @@ third_party_settings:
       label: Sections
       region: content
       parent_name: ''
-      weight: 5
+      weight: 4
       format_type: details
       format_settings:
         classes: ''
@@ -72,7 +71,7 @@ third_party_settings:
       label: 'Authoring information'
       region: content
       parent_name: ''
-      weight: 6
+      weight: 5
       format_type: details
       format_settings:
         classes: ''
@@ -89,7 +88,7 @@ third_party_settings:
       label: Categorizing
       region: content
       parent_name: ''
-      weight: 7
+      weight: 6
       format_type: details
       format_settings:
         classes: ''
@@ -104,7 +103,7 @@ third_party_settings:
       label: 'Related Content'
       region: content
       parent_name: ''
-      weight: 8
+      weight: 7
       format_type: details
       format_settings:
         classes: ''
@@ -118,19 +117,9 @@ targetEntityType: node
 bundle: sf_article
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 2
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 18
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -172,11 +161,15 @@ content:
     third_party_settings: {  }
   field_sf_featured_media:
     type: media_library_widget
-    weight: 3
+    weight: 2
     region: content
     settings:
-      media_types: {  }
-    third_party_settings: {  }
+      media_types:
+        - sf_image_media_type
+        - sf_video_media_type
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
   field_sf_meta_description:
     type: string_textfield
     weight: 27
@@ -202,7 +195,7 @@ content:
     third_party_settings: {  }
   field_sf_meta_tags:
     type: metatag_firehose
-    weight: 14
+    weight: 13
     region: content
     settings:
       sidebar: true
@@ -244,41 +237,41 @@ content:
     third_party_settings: {  }
   moderation_state:
     type: moderation_state_default
-    weight: 19
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 16
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 10
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_state:
     type: scheduler_moderation
-    weight: 11
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   simple_sitemap:
-    weight: 15
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 20
+    weight: 19
     region: content
     settings:
       display_label: true
@@ -293,7 +286,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 17
+    weight: 16
     region: content
     settings:
       match_operator: CONTAINS
@@ -303,16 +296,17 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 12
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   unpublish_state:
     type: scheduler_moderation
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   promote: true
   sticky: true
