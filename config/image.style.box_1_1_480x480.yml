@@ -1,0 +1,15 @@
+uuid: 794936ba-5630-4a0e-9821-ae4f722b449d
+langcode: en
+status: true
+dependencies: {  }
+name: box_1_1_480x480
+label: 'Box 1:1 (480x480)'
+effects:
+  859e049f-91f7-4d68-827f-c8b941e7da46:
+    uuid: 859e049f-91f7-4d68-827f-c8b941e7da46
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 480
+      anchor: center-center

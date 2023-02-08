@@ -1,0 +1,36 @@
+uuid: fd85704a-cddf-4022-9ee5-73c884ed0d05
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.photo_3_2_1200x800
+    - image.style.photo_3_2_480x320
+    - image.style.photo_3_2_768x512
+    - image.style.photo_3_2_992x661
+  theme:
+    - surface
+id: photo_3_2
+label: 'Photo 3:2'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: photo_3_2_1200x800
+    breakpoint_id: surface.dekstop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: photo_3_2_992x661
+    breakpoint_id: surface.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: photo_3_2_768x512
+    breakpoint_id: surface.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: photo_3_2_480x320
+    breakpoint_id: surface.mobile
+    multiplier: 1x
+breakpoint_group: surface
+fallback_image_style: photo_3_2_480x320

@@ -10,8 +10,8 @@ id: node.sf_article.field_sf_authors
 field_name: field_sf_authors
 entity_type: node
 bundle: sf_article
-label: 'Author Profile'
-description: 'Select the Author of this Article from existing Person content. This will be shown instead of the original content creator. For Site Managers+ this field can be changed in the Additional Options menu.'
+label: 'Author Profile(s)'
+description: 'Select one or more Authors from existing Person content. This will be shown instead of the original content creator.'
 required: false
 translatable: false
 default_value: {  }

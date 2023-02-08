@@ -3,6 +3,7 @@
   --font-sans: Karbon, Helvetica, sans-serif;
   --font-body: var(--font-sans);
   --font-headings: var(--font-sans);
+  --font-size-base: var(--font-size-3);
 
   /* Buttons */
   --btn-font-size: var(--font-size-2);

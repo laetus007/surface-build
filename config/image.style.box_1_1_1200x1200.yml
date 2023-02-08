@@ -1,0 +1,15 @@
+uuid: 90b779b4-4f9c-4240-9e36-02008de9d2ee
+langcode: en
+status: true
+dependencies: {  }
+name: box_1_1_1200x1200
+label: 'Box 1:1 (1200x1200)'
+effects:
+  48311a97-e1b7-487c-ad63-3aa22cca3ef9:
+    uuid: 48311a97-e1b7-487c-ad63-3aa22cca3ef9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 1200
+      anchor: center-center

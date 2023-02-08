@@ -1,0 +1,15 @@
+uuid: 5c707860-ebd0-4490-a182-07fab5d1660f
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_3_4_992x1324
+label: 'Portrait 3:4 (992x1324)'
+effects:
+  48b08aac-a68f-4295-bb37-70503ec209e1:
+    uuid: 48b08aac-a68f-4295-bb37-70503ec209e1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 1324
+      anchor: center-center

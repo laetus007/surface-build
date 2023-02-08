@@ -38,7 +38,3 @@
   cursor: pointer;
   touch-action: manipulation;
 }
-
-:is(#root, #__next) {
-  isolation: isolate;
-}

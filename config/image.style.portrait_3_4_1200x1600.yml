@@ -1,0 +1,15 @@
+uuid: 410c3054-0f77-40bc-bf66-a05bc22e60bd
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_3_4_1200x1600
+label: 'Portrait 3:4 (1200x1600)'
+effects:
+  d9ce55b3-b4f9-48b5-a436-c55b1ca24c10:
+    uuid: d9ce55b3-b4f9-48b5-a436-c55b1ca24c10
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 1600
+      anchor: center-center

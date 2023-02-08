@@ -1,0 +1,15 @@
+uuid: 72aa42a1-c1ad-44a5-9d27-8ceccc0bf169
+langcode: en
+status: true
+dependencies: {  }
+name: photo_3_2_768x512
+label: 'Photo 3:2 (768x512)'
+effects:
+  375f73cb-6752-40de-8686-04096dcba4a0:
+    uuid: 375f73cb-6752-40de-8686-04096dcba4a0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 512
+      anchor: center-center

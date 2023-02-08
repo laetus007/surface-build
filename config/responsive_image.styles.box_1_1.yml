@@ -1,0 +1,36 @@
+uuid: 59aad79d-1597-4ff3-9975-34b1b8955ed2
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.box_1_1_1200x1200
+    - image.style.box_1_1_480x480
+    - image.style.box_1_1_768x768
+    - image.style.box_1_1_992x992
+  theme:
+    - surface
+id: box_1_1
+label: 'Box 1:1'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: box_1_1_1200x1200
+    breakpoint_id: surface.dekstop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: box_1_1_992x992
+    breakpoint_id: surface.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: box_1_1_768x768
+    breakpoint_id: surface.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: box_1_1_480x480
+    breakpoint_id: surface.mobile
+    multiplier: 1x
+breakpoint_group: surface
+fallback_image_style: box_1_1_480x480

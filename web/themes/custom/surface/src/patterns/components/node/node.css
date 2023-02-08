@@ -29,6 +29,9 @@
 }
 
 .node__title {
+  color: var(--white);
+  font-size: var(--font-size-10);
+
   & a {
     background-color: transparent;
     background-image: linear-gradient(var(--blue-5), var(--blue-5)); /* Two values are needed for IE11 support. */
@@ -48,13 +51,9 @@
 }
 
 .node__content {
-  padding-block-end: var(--size-3);
+  padding-block: var(--size-4);
 
   @media (--laptop) {
     padding-block-end: var(--size-6);
   }
-}
-
-.node--unpublished {
-  background-color: var(--santa-barbara-sand);
 }

@@ -1,0 +1,15 @@
+uuid: f7f45e59-4a40-45af-8717-0fc708771c15
+langcode: en
+status: true
+dependencies: {  }
+name: widescreen_16_9_480x270
+label: 'Widescreen 16:9 (480x270)'
+effects:
+  1be485ef-faae-4942-ab11-f23df1884437:
+    uuid: 1be485ef-faae-4942-ab11-f23df1884437
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 270
+      anchor: center-center

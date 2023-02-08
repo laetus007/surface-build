@@ -1,0 +1,15 @@
+uuid: 036d4b79-1cb2-4dae-9844-c644124441ba
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_4x3_480x360
+label: 'Landscape 4x3 (480x360)'
+effects:
+  9b4786d9-0ac7-41e5-9882-2b400fe9d72b:
+    uuid: 9b4786d9-0ac7-41e5-9882-2b400fe9d72b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 360
+      anchor: center-center

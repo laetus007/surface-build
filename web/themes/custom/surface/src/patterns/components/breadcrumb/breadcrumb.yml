@@ -1,5 +1,6 @@
 ---
-heading: ''
+theme-class: ''
+heading: 'Breadcrumb'
 breadcrumb:
   -
     url: '#'
@@ -10,5 +11,3 @@ breadcrumb:
   -
     url: '#'
     text: 'Support'
-  -
-    text: 'Current item'

@@ -1,0 +1,19 @@
+uuid: 607c4c68-6395-4182-a3b6-a5e0c01520ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - estimated_read_time
+    - node
+id: node.field_sf_estimated_read_time
+field_name: field_sf_estimated_read_time
+entity_type: node
+type: estimated_read_time
+settings: {  }
+module: estimated_read_time
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

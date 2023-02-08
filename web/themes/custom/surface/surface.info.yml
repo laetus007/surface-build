@@ -82,7 +82,6 @@ regions:
 
 ckeditor_stylesheets:
   - dist/css/global.css
-  - dist/css/admin.css
   - dist/css/embedded-media.css
   - dist/css/table.css
   - dist/css/text-content.css
@@ -90,7 +89,6 @@ ckeditor_stylesheets:
 
 ckeditor5-stylesheets:
   - dist/css/global.css
-  - dist/css/admin.css
   - dist/css/embedded-media.css
   - dist/css/table.css
   - dist/css/text-content.css

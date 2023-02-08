@@ -1,0 +1,36 @@
+uuid: 7e1604a4-a551-4aa6-95aa-942c7550decc
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.landscape_4x3_1200x900
+    - image.style.landscape_4x3_480x360
+    - image.style.landscape_4x3_768x576
+    - image.style.landscape_4x3_992x744
+  theme:
+    - surface
+id: landscape_4_3
+label: 'Landscape 4:3'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_4x3_1200x900
+    breakpoint_id: surface.dekstop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_4x3_992x744
+    breakpoint_id: surface.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_4x3_768x576
+    breakpoint_id: surface.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: landscape_4x3_480x360
+    breakpoint_id: surface.mobile
+    multiplier: 1x
+breakpoint_group: surface
+fallback_image_style: landscape_4x3_480x360

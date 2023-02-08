@@ -42,4 +42,8 @@
       padding-block: 0;
     }
   }
+
+  .messages__title {
+    color: inherit;
+  }
 }

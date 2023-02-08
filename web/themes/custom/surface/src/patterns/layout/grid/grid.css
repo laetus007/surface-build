@@ -5,6 +5,7 @@
 
 .grid {
   display: grid;
+  grid-auto-flow: column;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   grid-column-gap: var(--size-2);

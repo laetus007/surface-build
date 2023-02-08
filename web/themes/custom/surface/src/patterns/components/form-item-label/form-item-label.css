@@ -10,6 +10,7 @@
   font-weight: var(--font-weight-700);
   line-height: var(--font-line-height-1);
   margin-block: var(--size-05);
+  padding-block-end: var(--size-05);
 
   &[for] {
     cursor: pointer;

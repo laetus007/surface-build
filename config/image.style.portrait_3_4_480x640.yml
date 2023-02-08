@@ -1,0 +1,15 @@
+uuid: 5196292c-25b7-43be-8867-176c73bdb30c
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_3_4_480x640
+label: 'Portrait 3:4 (480x640)'
+effects:
+  9d231fde-de21-4447-8d9a-b2a1e918ddb3:
+    uuid: 9d231fde-de21-4447-8d9a-b2a1e918ddb3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 640
+      anchor: center-center

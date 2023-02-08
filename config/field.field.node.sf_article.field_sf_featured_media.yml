@@ -7,6 +7,8 @@ dependencies:
     - media.type.sf_image_media_type
     - media.type.sf_video_media_type
     - node.type.sf_article
+  content:
+    - 'media:sf_image_media_type:917613e4-4ec2-4ca2-804d-8acb54eca6f9'
 id: node.sf_article.field_sf_featured_media
 field_name: field_sf_featured_media
 entity_type: node
@@ -15,7 +17,10 @@ label: 'Featured media'
 description: 'A video or image that will be presented prominently on the piece of content you are adding.'
 required: false
 translatable: true
-default_value: {  }
+default_value:
+  -
+    target_uuid: 917613e4-4ec2-4ca2-804d-8acb54eca6f9
+    weight: 0
 default_value_callback: ''
 settings:
   handler: 'default:media'

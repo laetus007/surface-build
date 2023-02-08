@@ -11,6 +11,12 @@
  * Adds body classes if certain regions have content.
  */
 function surface_preprocess_html(&$variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    if ($node->status->value == 0) {
+      $variables['attributes']['class'][] = 'node-unpublished';
+    }
+  }
+
   // Determine if the site has a site alert.
   if (array_key_exists('surface_site_alert', $variables['page']['header'])) {
     $variables['attributes']['class'][] = 'has-alert';

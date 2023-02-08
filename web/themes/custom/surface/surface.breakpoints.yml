@@ -1,48 +1,24 @@
-surface.sm:
-  label: Small
-  mediaQuery: 'all and (min-width: 500px)'
+surface.mobile:
+  label: Mobile
+  mediaQuery: 'all and (min-width: 480px)'
   weight: 0
   multipliers:
     - 1x
-surface.md:
-  label: Medium
-  mediaQuery: 'all and (min-width: 700px)'
+surface.tablet:
+  label: Tablet
+  mediaQuery: 'all and (min-width: 768px)'
   weight: 1
   multipliers:
     - 1x
-surface.lg:
-  label: Large
-  mediaQuery: 'all and (min-width: 1000px)'
+surface.laptop:
+  label: Laptop
+  mediaQuery: 'all and (min-width: 992px)'
   weight: 2
   multipliers:
     - 1x
-surface.xl:
-  label: X-Large
-  mediaQuery: 'all and (min-width: 1300px)'
-  weight: 3
-  multipliers:
-    - 1x
-surface.nav-md:
-  label: Nav Medium
-  mediaQuery: 'all and (min-width: 500px)'
-  weight: 4
-  multipliers:
-    - 1x
-surface.nav:
-  label: Nav
+surface.dekstop:
+  label: Desktop
   mediaQuery: 'all and (min-width: 1200px)'
-  weight: 5
-  multipliers:
-    - 1x
-surface.grid-md:
-  label: Grid Medium
-  mediaQuery: 'all and (min-width: 700px)'
-  weight: 6
-  multipliers:
-    - 1x
-surface.grid-max:
-  label: Grid Max
-  mediaQuery: 'all and (min-width: 1440px)'
-  weight: 7
+  weight: 3
   multipliers:
     - 1x

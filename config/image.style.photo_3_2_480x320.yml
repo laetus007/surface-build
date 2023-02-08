@@ -1,0 +1,15 @@
+uuid: 0251dcf3-376d-465d-bb21-7b0e72171d38
+langcode: en
+status: true
+dependencies: {  }
+name: photo_3_2_480x320
+label: 'Photo 3:2 (480x320)'
+effects:
+  96da74c0-c4af-489e-8474-08202ef6fdd9:
+    uuid: 96da74c0-c4af-489e-8474-08202ef6fdd9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 320
+      anchor: center-center

@@ -27,8 +27,4 @@
   &:has(dialog[open]) {
     overflow: hidden;
   }
-
-  &:has(.user-logged-in) {
-    overflow-x: hidden;
-  }
 }

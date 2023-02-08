@@ -1,0 +1,36 @@
+uuid: 846d5a53-b0a9-42bc-a73d-be704400a1da
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.portrait_3_4_1200x1600
+    - image.style.portrait_3_4_480x640
+    - image.style.portrait_3_4_768x1024
+    - image.style.portrait_3_4_992x1324
+  theme:
+    - surface
+id: portrait_3_4
+label: 'Portrait 3:4'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_3_4_1200x1600
+    breakpoint_id: surface.dekstop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_3_4_992x1324
+    breakpoint_id: surface.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_3_4_768x1024
+    breakpoint_id: surface.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: portrait_3_4_480x640
+    breakpoint_id: surface.mobile
+    multiplier: 1x
+breakpoint_group: surface
+fallback_image_style: portrait_3_4_480x640

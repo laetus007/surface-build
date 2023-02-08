@@ -1,0 +1,36 @@
+uuid: cb55ef35-7bcd-4589-8b41-8bf5d9665e6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.widescreen_16_9_1200x675
+    - image.style.widescreen_16_9_480x270
+    - image.style.widescreen_16_9_768x432
+    - image.style.widescreen_16_9_992x558
+  theme:
+    - surface
+id: widescreen_16_9
+label: 'Widescreen 16:9'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: widescreen_16_9_1200x675
+    breakpoint_id: surface.dekstop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: widescreen_16_9_992x558
+    breakpoint_id: surface.laptop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: widescreen_16_9_768x432
+    breakpoint_id: surface.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: widescreen_16_9_480x270
+    breakpoint_id: surface.mobile
+    multiplier: 1x
+breakpoint_group: surface
+fallback_image_style: widescreen_16_9_480x270

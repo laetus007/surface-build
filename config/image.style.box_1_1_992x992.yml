@@ -1,0 +1,15 @@
+uuid: 3cb47a34-39bd-4520-b601-277980fdc18c
+langcode: en
+status: true
+dependencies: {  }
+name: box_1_1_992x992
+label: 'Box 1:1 (992x992)'
+effects:
+  ec3a8864-4c18-48eb-a021-df3a1721bd6a:
+    uuid: ec3a8864-4c18-48eb-a021-df3a1721bd6a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 992
+      anchor: center-center

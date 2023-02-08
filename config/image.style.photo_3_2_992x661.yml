@@ -1,0 +1,15 @@
+uuid: 8acfd48f-1a35-47d4-8e6d-9abd65df392f
+langcode: en
+status: true
+dependencies: {  }
+name: photo_3_2_992x661
+label: 'Photo 3:2 (992x661)'
+effects:
+  1dc37f74-8e90-4d13-8a8c-f9e29b98e149:
+    uuid: 1dc37f74-8e90-4d13-8a8c-f9e29b98e149
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 661
+      anchor: center-center

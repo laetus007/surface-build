@@ -1,0 +1,15 @@
+uuid: 15cd5971-b696-446d-9e6b-0208ef94750e
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_4x3_992x744
+label: 'Landscape 4x3 (992x744)'
+effects:
+  bd9953cc-2282-4735-b298-05c091b08f3c:
+    uuid: bd9953cc-2282-4735-b298-05c091b08f3c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 744
+      anchor: center-center

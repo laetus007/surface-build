@@ -5,6 +5,7 @@
 
 :where(body) {
   -webkit-font-smoothing: antialiased;
+  font-size: var(--font-size-base, var(--font-size-1));
   line-height: 1.5;
   min-block-size: 100%;
   padding-block: 0;

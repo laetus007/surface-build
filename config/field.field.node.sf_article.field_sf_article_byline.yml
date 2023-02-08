@@ -10,10 +10,12 @@ field_name: field_sf_article_byline
 entity_type: node
 bundle: sf_article
 label: Byline
-description: 'Byline listing the authors of this article. This will be shown instead of the Authored By and Author Profile values set above.'
+description: 'Byline listing the authors of this article.'
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 'UCLA Health Sciences'
 default_value_callback: ''
 settings: {  }
 field_type: string

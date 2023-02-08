@@ -4,56 +4,29 @@
  */
 
 .entity-moderation-form {
-  background: #fff;
-  border: 1px dashed #bbb;
+  background: var(--white);
+  border: 1px dashed var(--gray-5);
+  color: var(--black);
   display: grid;
-  grid-template-columns: max-content min-content max-content min-content;
   list-style: none;
-  margin: 2em 0;
-  padding-left: 1em;
-
-  .form-item {
-    margin-top: 1em;
-    margin-bottom: 1em;
-
-    label {
-      display: table;
-      padding-bottom: 0.25em;
-    }
-  }
-
-  & select,
-  & input:not([type="submit"]) {
-    background-color: var(--white);
-  }
+  margin-block: var(--size-4);
+  padding-inline: var(--size-2);
+  width: 100%;
 
   @media (--tablet) {
     grid-template-columns: max-content min-content max-content min-content;
   }
-}
 
-.entity-moderation-form__item {
-  margin-right: 2em;
-
-  &:last-child {
-    align-self: flex-start;
-    margin-inline-end: 0;
-
-    @media (--tablet) {
-      align-self: flex-end;
-    }
+  @media (--desktop) {
+    width: max-content;
   }
 }
 
-.grid--narrow,
-.grid--narrow > *,
-.grid--medium > * {
-  & .entity-moderation-form {
-    margin-inline-start: 0;
-    width: 100%;
+.entity-moderation-form__item {
+  margin-inline-end: var(--size-4);
 
-    @supports (width: max-content) {
-      width: max-content;
-    }
+  &:last-child {
+    align-self: flex-end;
+    margin-inline-end: 0;
   }
 }

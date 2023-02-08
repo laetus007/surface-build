@@ -1,0 +1,15 @@
+uuid: c9ff9c06-0a7c-4b5b-96a5-e39ee73e9e97
+langcode: en
+status: true
+dependencies: {  }
+name: portrait_3_4_768x1024
+label: 'Portrait 3:4 (768x1024)'
+effects:
+  62281419-c4d5-4521-9444-98571389bede:
+    uuid: 62281419-c4d5-4521-9444-98571389bede
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 1024
+      anchor: center-center

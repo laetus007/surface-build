@@ -39,6 +39,7 @@
       "meta": "./src/styleguide/meta/",
       "annotations": "./src/styleguide/annotations/",
       "styleguide": "./dist/",
+      "drupal": "./src/styleguide/drupal/",
       "patternlabFiles": {
         "general-header": "views/partials/general-header.mustache",
         "general-footer": "views/partials/general-footer.mustache",
@@ -57,6 +58,7 @@
       "data": "./patternlab/styleguide/data/",
       "annotations": "./patternlab/annotations/",
       "styleguide": "./patternlab/styleguide/",
+      "drupal": "./patternlab/dist/drupal/",
       "css": "./patternlab/dist/css",
       "fonts": "./patternlab/dist/fonts",
       "images": "./patternlab/dist/images",

@@ -4,6 +4,7 @@ global:
     base:
       dist/css/global.css: {}
     layout:
+      dist/css/article.css: {}
       dist/css/block.css: {}
       dist/css/main.css: {}
       dist/css/page.css: {}

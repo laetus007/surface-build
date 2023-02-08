@@ -1,0 +1,15 @@
+uuid: 58e7703b-e0be-4514-a85e-2acedfd95608
+langcode: en
+status: true
+dependencies: {  }
+name: widescreen_16_9_1200x675
+label: 'Widescreen 16:9 (1200x675)'
+effects:
+  f56536ab-8937-442f-abe4-c7a9674644b7:
+    uuid: f56536ab-8937-442f-abe4-c7a9674644b7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 675
+      anchor: center-center

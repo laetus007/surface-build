@@ -1,0 +1,15 @@
+uuid: edf866ef-a060-476d-95db-a8c33ca187f4
+langcode: en
+status: true
+dependencies: {  }
+name: landscape_4x3_768x576
+label: 'Landscape 4x3 (768x576)'
+effects:
+  ed08b7b6-8761-4673-a5e1-bc7947f6356e:
+    uuid: ed08b7b6-8761-4673-a5e1-bc7947f6356e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 576
+      anchor: center-center

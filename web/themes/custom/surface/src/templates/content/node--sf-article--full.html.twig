@@ -1,33 +1,53 @@
 {% set classes = [
-  'node',
-  'container',
-  'grid',
-  'grid--full',
-  'node--type-' ~ node.bundle|clean_class,
-  not node.isPublished() ? 'node--unpublished',
-  view_mode ? 'node--view-mode-' ~ view_mode|clean_class
+  'article',
+  'article--' ~ view_mode|clean_class,
 ]|join(' ')|trim %}
 
 {% set title_classes = [
-  'node__title',
+  'article__title',
   title_attributes ? title_attributes.class
 ]|join(' ')|trim %}
 
 {% set content_classes = [
-  'node__content',
+  'article__main',
   content_attributes ? content_attributes.class
 ]|join(' ')|trim %}
 
 <article class="{{ classes }}" {{ attributes ? attributes|without('class', 'id') }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h1 class="{{ title_classes }}" {{ title_attributes ? title_attributes|without('class') }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h1>
-  {% endif %}
-  {{ title_suffix }}
+  <header class="article__header">
+    <div class="container">
+      {{ content.content_moderation_control }}
+      {{ drupal_breadcrumb() }}
 
-  <div class="{{ content_classes }}" {{ content_attributes ? content_attributes|without('class') }}>
-    {{ content }}
-  </div>
+      {{ title_prefix }}
+      {% if label %}
+        <h1 class="{{ title_classes }}" {{ title_attributes ? title_attributes|without('class') }}>
+          {{ label }}
+        </h1>
+      {% endif %}
+      {{ title_suffix }}
+
+      {% if content.field_sf_subtitle|field_value is not empty %}
+        <h2>{{ content.field_sf_subtitle|field_value }}</h2>
+      {% endif %}
+    </div>
+  </header>
+
+  <main class="{{ content_classes }}" {{ content_attributes ? content_attributes|without('class') }}>
+    <div class="container">
+      <div class="grid">
+        <div class="article__media">
+          {{ content.field_sf_featured_media|field_value }}
+          {{ content.field_sf_article_date }}
+          {{ content.field_sf_article_byline }}
+          {{ content.field_sf_estimated_read_time }}
+          {{ content.field_sf_article_tags }}
+          {{ content.field_sf_authors }}
+        </div>
+        <div class="article__content">
+          {{ content.body }}
+        </div>
+      </div>
+    </div>
+  </main>
 </article>

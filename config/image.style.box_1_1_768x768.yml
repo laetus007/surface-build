@@ -1,0 +1,15 @@
+uuid: 088644de-4ef8-4229-ba91-c7c375c150bf
+langcode: en
+status: true
+dependencies: {  }
+name: box_1_1_768x768
+label: 'Box 1:1 (768x768)'
+effects:
+  0e66aa54-488b-470a-a2e2-1d58f1949433:
+    uuid: 0e66aa54-488b-470a-a2e2-1d58f1949433
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 768
+      height: 768
+      anchor: center-center
