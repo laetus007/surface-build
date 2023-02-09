@@ -5,4 +5,5 @@
 
 :where(embed) {
   display: block;
+  vertical-align: middle;
 }

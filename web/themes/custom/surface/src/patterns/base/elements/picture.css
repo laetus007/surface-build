@@ -7,4 +7,5 @@
   block-size: auto;
   display: block;
   max-inline-size: 100%;
+  vertical-align: middle;
 }

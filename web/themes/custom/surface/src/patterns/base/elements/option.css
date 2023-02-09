@@ -3,12 +3,12 @@
  * Option element styles.
  */
 
-/* :where(option) {} */
-
-:where(optgroup) {
+optgroup {
+  color: inherit;
   font-family: inherit;
   font-size: 100%;
-  font-weight: var(--optgroup-font-weight, var(--font-weight-700));
-  line-height: var(--optgroup-line-height, var(--line-height-1));
+  font-weight: inherit;
+  line-height: inherit;
   margin: 0;
+  padding: 0;
 }

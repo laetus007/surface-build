@@ -3,6 +3,16 @@
  * Input element styles.
  */
 
+:where(input, textarea) {
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 [type="color"],
 [type="date"],
 [type="datetime-local"],
@@ -22,11 +32,8 @@ textarea {
   background-color: var(--input-bg-color, var(--white));
   border-radius: var(--input-border-radius, var(--radius-1));
   border: var(--input-border-size, var(--border-size-1)) solid var(--input-border-color, var(--gray-4));
-  color: var(--input-color, var(--gray-9));
-  font: inherit;
   max-width: 100%;
   min-height: var(--input-min-height, var(--size-6));
-  padding: var(--input-padding, 0 var(--size-2));
 
   &:focus {
     border: solid 2px var(--input-border-color-focus, var(--blue-5));
@@ -74,4 +81,12 @@ textarea {
 [type="file"] {
   height: auto;
   padding-block: var(--input-file-padding-block, var(--size-105));
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: button;
+  background-color: transparent;
+  background-image: none;
 }

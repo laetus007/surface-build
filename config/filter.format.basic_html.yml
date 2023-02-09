@@ -5,7 +5,6 @@ dependencies:
   module:
     - editor
     - media
-    - responsive_tables_filter
 _core:
   default_config_hash: UZfNHYvC3Z06A-Vbg14hqNoNez8ABIGYVsSADcYwVHE
 name: 'Basic HTML'
@@ -65,11 +64,3 @@ filters:
         sf_document_media_type: sf_document_media_type
         sf_image_media_type: sf_image_media_type
         sf_video_media_type: sf_video_media_type
-  filter_responsive_tables_filter:
-    id: filter_responsive_tables_filter
-    provider: responsive_tables_filter
-    status: false
-    weight: 0
-    settings:
-      tablesaw_type: stack
-      tablesaw_persist: '1'

@@ -5,4 +5,5 @@
 
 :where(object) {
   display: block;
+  vertical-align: middle;
 }

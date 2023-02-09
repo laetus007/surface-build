@@ -37,10 +37,24 @@ layout_option_definitions:
     layout: false
     regions: true
 
+  background:
+    title: 'Background color'
+    description: ''
+    default: ''
+    multi: false
+    plugin: layout_options_class_select
+    inline: true
+    options:
+      bg-ucla-blue: 'UCLA Blue'
+      bg-midnight-joshua-tree: 'Midnight Joshua Tree'
+    layout: true
+    regions: false
+
 # Assign the layout options to a layout.
 layout_options:
   global:
     spacer: {}
   one_column:
     contraints: {}
+    background: {}
     display: {}

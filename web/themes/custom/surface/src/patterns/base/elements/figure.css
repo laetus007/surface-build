@@ -3,4 +3,6 @@
  * Figure element styles.
  */
 
-/* :where(figure) {} */
+:where(figure) {
+  margin: 0;
+}

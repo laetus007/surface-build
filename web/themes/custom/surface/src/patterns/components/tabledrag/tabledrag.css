@@ -50,3 +50,21 @@ a.tabledrag-handle .handle {
 .touchevents .draggable .menu-item__link {
   padding: 0;
 }
+
+.draggable-table {
+  width: 100%;
+}
+
+.draggable-table .form-item {
+  margin-block-start: 0;
+}
+
+.tablesort {
+  vertical-align: middle;
+}
+
+.sticky-header {
+  border-block-end: 4px solid var(--blue-5);
+  margin: 0;
+  z-index: 0;
+}

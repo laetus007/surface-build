@@ -5,23 +5,21 @@
 
 :where(a) {
   background-color: transparent;
-
-  &:where(:not(:hover)) {
-    text-decoration: inherit;
-  }
+  color: inherit;
+  text-decoration: inherit;
 
   &:where([href]) {
     color: var(--link-color, var(--blue-6));
-    text-decoration-color: var(--link-decoration-color, var(--blue-9));
-
-    &:where(:hover) {
-      color: var(--link-hover-color, var(--blue-5));
-      text-decoration-color: var(--link-hover-decoration-color, var(--blue-5));
-    }
 
     &:where(:visited) {
       color: var(--link-visited-color, var(--blue-9));
       text-decoration-color: var(--link-visited-decoration-color, var(--blue-9));
+    }
+
+    &:where(:hover) {
+      color: var(--link-hover-color, var(--blue-5));
+      text-decoration-color: var(--link-hover-decoration-color, var(--blue-5));
+      text-decoration-line: underline;
     }
   }
 
@@ -54,23 +52,12 @@
   }
 }
 
-:where(abbr) {
-  text-decoration-color: var(--abbr-text-decoration-color, var(--blue-5));
-  text-underline-offset: var(--abbr-text-underline-offset, var(--size-xs));
-
-  &:hover {
-    cursor: help;
-  }
-
-  @media print {
-    &[title]::after {
-      content: " (" attr(title) ")";
-    }
-  }
+abbr:where([title]) {
+  text-decoration: underline dotted;
 }
 
-:where(b) {
-  font-weight: var(--b-font-weight, var(--font-weight-900));
+:where(b, strong) {
+  font-weight: bolder;
 }
 
 :where(cite) {
@@ -84,10 +71,14 @@
   padding-inline-start: var(--cite-padding-inline-start, var(--size-1));
 }
 
+:where(code, kbd, samp, pre) {
+  font-family: var(--font-mono);
+  font-size: 1em;
+}
+
 :where(code) {
   background-color: var(--code-bg-color, var(--gray-3));
   border-radius: var(--code-border-radius, var(--radius-2));
-  font-family: var(--code-font-family, var(--font-mono));
   margin: 0;
   padding: var(--code-padding, var(--size-05) var(--size-1));
   white-space: nowrap;
@@ -113,7 +104,6 @@
   border-radius: var(--kbd-border-radius, var(--radius-2));
   border-style: solid;
   border-width: var(--kbd-border-size, var(--border-size-1));
-  font-family: var(--kbd-font-family, var(--font-mono));
   margin: 0;
   padding: var(--kbd-padding, var(--size-1) var(--size-2));
   white-space: nowrap;
@@ -126,32 +116,23 @@
   padding: var(--mark-padding, var(--size-1));
 }
 
-:where(samp) {
-  font-family: var(--samp-font-family, var(--font-mono));
-}
-
 :where(small) {
-  font-size: var(--small-font-size, var(--font-size-0));
+  font-size: 80%;
 }
 
-:where(strong) {
-  font-weight: var(--strong-font-weight, var(--font-weight-700));
+:where(sub, sup) {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 
 :where(sub) {
   bottom: -0.25em;
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
 }
 
 :where(sup) {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
   top: -0.5em;
-  vertical-align: baseline;
 }
 
 :where(u) {

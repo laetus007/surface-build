@@ -32,7 +32,6 @@ global:
       dist/css/page-title.css: {}
       dist/css/skip-link.css: {}
       dist/css/pager.css: {}
-      dist/css/table.css: {}
       dist/css/text-content.css: {}
       dist/css/tabledrag.css: {}
       dist/css/views-exposed-form.css: {}
@@ -225,6 +224,11 @@ tabs:
   dependencies:
     - core/drupal
     - core/once
+
+table:
+  css:
+    theme:
+      dist/css/table.css: {}
 
 tags:
   css:

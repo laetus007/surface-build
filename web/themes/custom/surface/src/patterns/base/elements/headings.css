@@ -5,6 +5,8 @@
 
 :where(h1, h2, h3, h4, h5, h6) {
   font-family: var(--font-headings, var(--font-sans));
+  font-size: inherit;
+  font-weight: inherit;
   overflow-wrap: break-word;
 
   /* Remove top margin for adjacent subheadings. */

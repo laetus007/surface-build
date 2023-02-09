@@ -3,105 +3,172 @@
  * User generated tables.
  */
 
-.text-content table,
-.views-table,
-.draggable-table {
+table {
+  border-color: inherit;
   border-collapse: collapse;
-  border-spacing: 0;
-  border: 0;
+  caption-side: bottom;
   color: var(--gray-8);
-  font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: var(--size-3);
-  margin-block: var(--size-4);
+  text-indent: 0;
+  vertical-align: top;
+  width: 100%;
 
-  & caption {
-    color: var(--gray-8);
-    font-family: var(--font-serif);
-    font-size: 14px;
+  caption {
+    color: var(--gray-5);
+    font-size: var(--font-size-0);
     font-style: italic;
-    line-height: var(--size-2);
-    margin-block-end: var(--size-2);
-    text-align: start;
+    margin: 0;
+    padding-block: var(--size-105);
+    padding-inline: var(--size-3);
+    text-align: left;
+  }
+}
+
+:where(thead) {
+  background-color: var(--gray-1);
+
+  @media print {
+    display: table-header-group;
+  }
+}
+
+:where(tr) {
+  @media print {
+    page-break-inside: avoid;
+  }
+}
+
+:where(th) {
+  padding-block: var(--size-105);
+  padding-inline: var(--size-3);
+  text-align: inherit;
+}
+
+tbody {
+  tr {
+    background-color: var(--white);
+    border-bottom-width: 1px;
+  }
+}
+
+td {
+  padding-block: var(--size-105);
+  padding-inline: var(--size-3);
+}
+
+/* Table no border */
+.table--no-border {
+  thead {
+    background-color: transparent;
   }
 
-  & tr {
-    &:last-child {
-      & td {
-        border-block-end: 0;
+  tbody {
+    tr {
+      background-color: transparent;
+      border-bottom-width: 0;
+    }
+  }
+}
+
+/* Table striped */
+.table--striped {
+  tbody {
+    tr:nth-child(odd) {
+      background-color: var(--white);
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--gray-1);
+    }
+  }
+}
+
+/* Table hover */
+.table--hover {
+  tbody {
+    tr {
+      &:hover {
+        background-color: var(--gray-1);
       }
     }
   }
+}
 
-  & td,
-  & th {
-    padding-block: var(--size-2);
-    padding-inline-end: var(--size-2);
-    padding-inline-start: 0;
-    vertical-align: top;
-  }
+/* Table primary */
+.table--primary {
+  border-radius: var(--radius-2);
+  overflow-x: auto;
 
-  & th {
-    border-block-end: 2px solid var(--blue-5);
-    color: var(--gray-9);
-    font-family: var(--font-sans);
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: var(--size-2);
-    margin-block: 0;
-    margin-inline: 0;
-    text-align: start;
+  thead {
+    background-color: var(--blue-7);
 
-    /**
-    * Fixes for styles injected by CKEditor
-    */
-    &.text-align-left {
-      text-align: start;
-    }
-
-    &.text-align-right {
-      text-align: end;
-    }
-
-    &.text-align-center {
-      text-align: center;
-    }
-
-    &.text-align-justify {
-      text-align: justify;
+    th {
+      color: var(--white);
     }
   }
 
-  & td {
-    border-block-end: 2px solid var(--gray-4);
-    white-space: normal;
+  tbody {
+    tr {
+      background-color: var(--blue-5);
+      border-bottom-color: var(--blue-4);
+    }
   }
 
-  & th.checkbox,
-  & td.checkbox {
-    text-align: center;
+  td {
+    color: var(--white);
   }
 }
 
-.draggable-table {
+/* Table primary and striped */
+.table--primary.table--striped {
+  tbody {
+    tr:nth-child(odd) {
+      background-color: var(--blue-6);
+    }
+
+    tr:nth-child(even) {
+      background-color: var(--blue-7);
+    }
+  }
+}
+
+/* Table primary and hover */
+.table--primary.table--hover {
+  thead {
+    tr {
+      border-bottom-color: var(--blue-4);
+      border-bottom-width: 1px;
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: var(--blue-7);
+
+      &:hover {
+        background-color: var(--blue-6);
+      }
+    }
+  }
+}
+
+/* Table responsive */
+.table--responsive {
+  display: block;
+  overflow-x: auto;
   width: 100%;
+
+  @media print {
+    display: table;
+    overflow-x: visible;
+  }
 }
 
-.draggable-table .form-item {
-  margin-block-start: 0;
-}
-
-.tablesort {
-  vertical-align: middle;
-}
-
-.sticky-header {
-  border-block-end: 4px solid var(--blue-5);
-  margin: 0;
-  z-index: 0;
-}
-
-/* Properly align VBO checkboxes. */
-.views-field-node-bulk-form .form-item {
-  margin: 0;
+/* Table has background */
+.tablefield {
+  .bg-ucla-blue &,
+  .bg-midnight-joshua-tree & {
+    > * {
+      color: var(--white);
+    }
+  }
 }

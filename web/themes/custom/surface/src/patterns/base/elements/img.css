@@ -7,6 +7,7 @@
   block-size: auto;
   display: block;
   max-inline-size: 100%;
+  vertical-align: middle;
 
   @media print {
     max-width: 100% !important;

@@ -60,7 +60,6 @@ module:
   path_alias: 0
   rebuild_cache_access: 0
   responsive_image: 0
-  responsive_tables_filter: 0
   scheduler: 0
   scheduler_content_moderation_integration: 0
   search: 0

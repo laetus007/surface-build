@@ -61,10 +61,11 @@ content:
     weight: 4
     region: content
   field_sf_authors:
-    type: entity_reference_label
+    type: entity_reference_entity_view
     label: hidden
     settings:
-      link: true
+      view_mode: author
+      link: false
     third_party_settings: {  }
     weight: 7
     region: content

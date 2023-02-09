@@ -6,8 +6,10 @@
 :where(body) {
   -webkit-font-smoothing: antialiased;
   font-size: var(--font-size-base, var(--font-size-1));
-  line-height: 1.5;
+  line-height: inherit;
+  margin: 0;
   min-block-size: 100%;
+  overflow-x: hidden;
   padding-block: 0;
   padding-inline: 0;
   scrollbar-gutter: stable both-edges;

@@ -5,19 +5,10 @@ dependencies:
   module:
     - editor
     - media
-    - responsive_tables_filter
 name: HTML
 format: sf_html
 weight: 0
 filters:
-  filter_responsive_tables_filter:
-    id: filter_responsive_tables_filter
-    provider: responsive_tables_filter
-    status: true
-    weight: 0
-    settings:
-      tablesaw_type: stack
-      tablesaw_persist: '1'
   filter_html:
     id: filter_html
     provider: filter

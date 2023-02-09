@@ -6,4 +6,5 @@
 :where(canvas) {
   display: block;
   max-inline-size: 100%;
+  vertical-align: middle;
 }

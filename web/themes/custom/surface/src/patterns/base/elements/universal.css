@@ -7,6 +7,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  border-color: var(--gray-3);
+  border-style: solid;
+  border-width: 0;
 }
 
 * {
@@ -37,4 +40,8 @@
 :where([tabindex]:not([tabindex*="-"])) {
   cursor: pointer;
   touch-action: manipulation;
+}
+
+:disabled {
+  cursor: default;
 }

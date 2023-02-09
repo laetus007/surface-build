@@ -27,9 +27,6 @@
 @import "list-item";
 @import "definition-list";
 
-/* Table */
-@import "table";
-
 /* Forms */
 @import "button";
 @import "datalist";
@@ -47,7 +44,6 @@
 @import "textarea";
 
 /* Media */
-@import "area";
 @import "audio";
 @import "canvas";
 @import "embed";

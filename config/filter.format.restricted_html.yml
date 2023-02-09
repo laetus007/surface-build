@@ -1,9 +1,7 @@
 uuid: db038170-df64-40df-87fd-fb45a22837ca
 langcode: en
 status: true
-dependencies:
-  module:
-    - responsive_tables_filter
+dependencies: {  }
 _core:
   default_config_hash: oz6NyPDAB4HB6N9hgH2LwNVtCd-sXbMG1fbn5KsRIDI
 name: 'Restricted HTML'
@@ -32,14 +30,6 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
-  filter_responsive_tables_filter:
-    id: filter_responsive_tables_filter
-    provider: responsive_tables_filter
-    status: false
-    weight: 0
-    settings:
-      tablesaw_type: stack
-      tablesaw_persist: '1'
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter

@@ -5,6 +5,7 @@
 
 :where(iframe) {
   display: block;
+  vertical-align: middle;
 
   @media print {
     display: none;

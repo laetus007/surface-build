@@ -181,19 +181,31 @@ options:
       -
         label: 5
         class: border-size-5
-  octagon:
+  table_type:
     plugin: css_class
-    label: 'Octagon style'
+    label: 'Table type'
     multiple: false
     options:
       -
-        label: None
+        label: Default
       -
-        label: Solid
-        class: has-octagon-solid
+        label: No Border
+        class: table--no-border
       -
-        label: Outline
-        class: has-octagon-outline
+        label: Hover
+        class: table--hover
+      -
+        label: Striped
+        class: table--striped
+      -
+        label: Primary
+        class: table--primary
+      -
+        label: Primary hover
+        class: table--primary table--hover
+      -
+        label: Primary striped
+        class: table--primary table--striped
 contexts:
   paragraphs:
     sf_accordion:
@@ -258,7 +270,6 @@ contexts:
         spacer: true
     sf_page_title:
       options:
-        octagon: true
         spacer: true
     sf_quote:
       options:
@@ -269,6 +280,7 @@ contexts:
     sf_table:
       options:
         spacer: true
+        table_type: true
     sf_tabs:
       options:
         spacer: true

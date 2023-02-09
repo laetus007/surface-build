@@ -4,7 +4,6 @@
  */
 
 :where(pre) {
-  font-family: var(--pre-font-family, var(--font-mono));
   margin: 0;
   max-inline-size: max-content;
   min-inline-size: 0;
