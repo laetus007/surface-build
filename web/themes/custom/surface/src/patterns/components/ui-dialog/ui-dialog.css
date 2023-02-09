@@ -90,7 +90,7 @@
 
 .ui-dialog-content {
   background: var(--white);
-  color: var(--black));
+  color: var(--black);
   overflow: auto;
   padding-block: var(--size-2);
   padding-inline: var(--size-3);
