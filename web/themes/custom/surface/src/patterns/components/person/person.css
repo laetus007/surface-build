@@ -1,0 +1,9 @@
+.person--author {
+  margin-block: var(--size-1);
+}
+
+.person__title {
+  color: var(--gray-9);
+  font-weight: var(--font-weight-600);
+  text-decoration: none;
+}

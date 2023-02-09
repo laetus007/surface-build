@@ -17,7 +17,7 @@
 .form-item__description {
   color: var(--gray-7);
   font-size: var(--font-size-sm);
-  line-height: var(--font-line-height-3);
+  line-height: var(--line-height-3);
   margin-block: var(--size-1);
   max-width: 60ch;
 
@@ -32,7 +32,7 @@
   color: var(--red-9);
   font-size: var(--font-size-sm);
   font-weight: normal;
-  line-height: var(--font-line-height-3);
+  line-height: var(--line-height-3);
   margin-block: var(--size-1);
 }
 
@@ -43,7 +43,7 @@
   background-size: var(--size-2) var(--size-2);
   color: var(--red-9);
   font-size: var(--font-size-sm);
-  line-height: var(--font-line-height-2);
+  line-height: var(--line-height-2);
   margin-block: var(--size-1);
   padding-inline-start: var(--size-3);
 }

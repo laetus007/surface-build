@@ -1,0 +1,24 @@
+{% set classes = [
+  'person',
+  'person--' ~ view_mode|clean_class,
+]|join(' ')|trim %}
+
+{% set title_classes = [
+  'person__title',
+  title_attributes ? title_attributes.class
+]|join(' ')|trim %}
+
+<article class="{{ classes }}" {{ attributes ? attributes|without('class', 'id') }}>
+  <header class="person__header">
+    {{ title_prefix }}
+    {% if label %}
+      <a href="{{ url }}" class="{{ title_classes }}" {{ title_attributes ? title_attributes|without('class') }}>
+        {{ label }}
+      </a>
+    {% endif %}
+    {{ title_suffix }}
+    <div class="person__position">
+      {{ content.field_sf_position_title|field_value }}
+    </div>
+  </header>
+</article>

@@ -11,7 +11,7 @@
   /* Site Alert */
   --site-alert-bg-color: var(--ucla-blue);
   --site-alert-font-size: var(--font-size-2);
-  --site-alert-lineheight: var(--font-line-height-3);
+  --site-alert-lineheight: var(--line-height-3);
   --site-alert-link-padding-block-start: var(--size-05);
   --site-alert-box-shadow: inset 0 -2px 0 0 var(--white);
   --site-alert-box-shadow-hover: inset 0 -2em 0 0 var(--white);
@@ -74,26 +74,26 @@
   --menu-main-link-level-1-border: 2px solid var(--midnight-joshua-tree);
   --menu-main-link-level-1-font-size-mobile: var(--font-size-6);
   --menu-main-link-level-1-font-weight-mobile: var(--font-weight-500);
-  --menu-main-link-level-1-letterspacing-mobile: var(--font-letter-spacing-0);
-  --menu-main-link-level-1-lineheight-mobile: var(--font-line-height-2);
+  --menu-main-link-level-1-letterspacing-mobile: var(--letter-spacing-0);
+  --menu-main-link-level-1-lineheight-mobile: var(--line-height-2);
   --menu-main-link-level-1-font-size-desktop: var(--font-size-3);
   --menu-main-link-level-1-font-weight-desktop: var(--font-weight-500);
-  --menu-main-link-level-1-letterspacing-desktop: var(--font-letter-spacing-0);
-  --menu-main-link-level-1-lineheight-desktop: var(--font-line-height-4);
+  --menu-main-link-level-1-letterspacing-desktop: var(--letter-spacing-0);
+  --menu-main-link-level-1-lineheight-desktop: var(--line-height-4);
 
   /* Menu link level 2 */
   --menu-main-link-level-2-color: var(--midnight-joshua-tree);
   --menu-main-link-level-2-hover-color: var(--midnight-joshua-tree);
   --menu-main-link-level-2-font-size: var(--font-size-1);
   --menu-main-link-level-2-font-weight: var(--font-weight-400);
-  --menu-main-link-level-2-lineheight: var(--font-line-height-1);
+  --menu-main-link-level-2-lineheight: var(--line-height-1);
 
   /* Menu link level 3 */
   --menu-main-link-level-3-color: var(--malibu-dolphin);
   --menu-main-link-level-3-hover-color: var(--malibu-dolphin);
   --menu-main-link-level-3-font-size: var(--font-size-0);
   --menu-main-link-level-3-font-weight: var(--font-weight-400);
-  --menu-main-link-level-3-lineheight: var(--font-line-height-1);
+  --menu-main-link-level-3-lineheight: var(--line-height-1);
 
   /* Menu main - dropdown */
   --menu-main-dropdown-active-color: var(--ucla-blue);
@@ -161,7 +161,7 @@
   /* Breadcrumb */
   --breadcrumb-font-size: var(--font-size-0);
   --breadcrumb-font-weight: var(--font-weight-700);
-  --breadcrumb-lineheight: var(--font-line-height-2);
+  --breadcrumb-lineheight: var(--line-height-2);
   --breadcrumb-after-background: linear-gradient(to left, var(--white) 0%, var(--white) 100%);
   --breadcrumb-item-border: 2px solid var(--gray-6);
   --breadcrumb-link-color: var(--ucla-blue);

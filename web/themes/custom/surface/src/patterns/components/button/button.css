@@ -16,7 +16,7 @@
   font-size: var(--btn-font-size, var(--font-size-1));
   font-weight: var(--btn-font-weight, var(--font-weight-700));
   justify-content: center;
-  line-height: var(--btn-line-height, var(--font-line-height-1));
+  line-height: var(--btn-line-height, var(--line-height-1));
   margin-block: var(--btn-margin-block, var(--size-2));
   margin-inline-end: var(--btn-maring-inline-end, var(--size-105));
   padding-block: var(--btn-padding-block, var(--size-2));

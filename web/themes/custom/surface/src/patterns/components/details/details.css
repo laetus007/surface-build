@@ -103,7 +103,7 @@ details.details {
 .details__error {
   color: var(--red-9);
   font-size: var(--font-size-0);
-  line-height: var(--font-line-height-2);
+  line-height: var(--line-height-2);
   margin-block-end: var(--size-1);
 }
 
@@ -111,7 +111,7 @@ details.details {
 .details__description {
   color: var(--gray-8);
   font-size: var(--font-size-0);
-  line-height: var(--font-line-height-2);
+  line-height: var(--line-height-2);
   margin-block-end: var(--size-1);
 }
 

@@ -31,7 +31,7 @@
 
 .filter-guidelines__item {
   font-size: var(--font-size-0);
-  line-height: var(--font-line-height-2);
+  line-height: var(--line-height-2);
   margin-block-start: var(--size-2);
 }
 

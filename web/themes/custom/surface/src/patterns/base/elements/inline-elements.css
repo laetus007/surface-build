@@ -78,8 +78,8 @@
   font-family: var(--cite-font-family, var(--font-sans));
   font-size: var(--cite-font-size, var(--font-size-0));
   font-weight: var(--cite-font-weight, var(--font-weight-600));
-  letter-spacing: var(--cite-letter-spacing, var(--font-letter-spacing-1));
-  line-height: var(--cite-line-height, var(--font-line-height-1));
+  letter-spacing: var(--cite-letter-spacing, var(--letter-spacing-1));
+  line-height: var(--cite-line-height, var(--line-height-1));
   margin: 0;
   padding-inline-start: var(--cite-padding-inline-start, var(--size-1));
 }
