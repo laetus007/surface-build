@@ -34,8 +34,11 @@
   @media (--laptop) {
     grid-column-end: 13;
     grid-column-start: 7;
-    margin-top: calc(var(--size-12) * -1);
     order: 2;
+  }
+
+  .media {
+    margin-top: calc(var(--size-12) * -1);
   }
 
   img {
