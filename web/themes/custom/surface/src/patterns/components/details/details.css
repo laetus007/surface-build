@@ -4,8 +4,8 @@
  */
 
 :root {
-  --details-border: 1px solid var(--gray-1);
-  --details-box-shadow: 0 1px 4px var(--gray-0);
+  --details-border: 1px solid var(--gray-100);
+  --details-box-shadow: 0 1px 4px var(--gray-50);
   --details-summary-transition: background-color 0.12s ease-in-out;
 }
 
@@ -15,12 +15,12 @@ details.details {
   box-shadow: var(--details-box-shadow);
   color: inherit;
   display: block;
-  margin-block: var(--size-1);
+  margin-block: var(--size-2);
 }
 
 /* Details summary styles */
 .details__summary {
-  background-color: var(--gray-2);
+  background-color: var(--gray-200);
   color: inherit;
   cursor: pointer;
   font-size: var(--font-size-1);
@@ -28,9 +28,9 @@ details.details {
   hyphens: auto;
   line-height: normal;
   list-style: none;
-  padding-block: var(--size-1);
-  padding-inline-end: var(--size-1);
-  padding-inline-start: var(--size-4);
+  padding-block: var(--size-2);
+  padding-inline-end: var(--size-2);
+  padding-inline-start: var(--size-8);
   position: relative;
   transition: var(--details-summary-transition);
   word-wrap: break-word;
@@ -43,7 +43,7 @@ details.details {
     display: block;
     height: 10px;
     inset-block-start: 50%;
-    inset-inline-start: var(--size-105);
+    inset-inline-start: var(--size-3);
     position: absolute;
     transform: translateY(-50%) rotate(45deg);
     width: 10px;
@@ -52,7 +52,7 @@ details.details {
   /* Pseudo-selector to manage focus styles */
   &::after {
     border-radius: var(--border-size-2);
-    box-shadow: inset 0 0 0 2px var(--blue-4);
+    box-shadow: inset 0 0 0 2px var(--blue-400);
     content: "";
     inset: -1px;
     opacity: 0;
@@ -73,7 +73,7 @@ details.details {
 
   /* Details summary, hover state */
   &:hover {
-    background-color: var(--gray-1);
+    background-color: var(--gray-100);
   }
 
   /* Details summary, focus and active states */
@@ -92,27 +92,27 @@ details.details {
 
 /* Details content wrapper */
 .details__wrapper {
-  margin: var(--size-1);
+  margin: var(--size-2);
 
   .details {
-    border-color: var(--gray-5);
+    border-color: var(--gray-500);
   }
 }
 
 /* Error */
 .details__error {
-  color: var(--red-9);
+  color: var(--red-900);
   font-size: var(--font-size-0);
-  line-height: var(--line-height-2);
-  margin-block-end: var(--size-1);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--size-2);
 }
 
 /* Description */
 .details__description {
-  color: var(--gray-8);
+  color: var(--gray-800);
   font-size: var(--font-size-0);
-  line-height: var(--line-height-2);
-  margin-block-end: var(--size-1);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--size-2);
 }
 
 /* Details Dropbutton */
@@ -121,7 +121,7 @@ details.details {
 
   .details__summary {
     &::before {
-      inset-inline-end: var(--size-105);
+      inset-inline-end: var(--size-3);
       inset-inline-start: auto;
     }
   }

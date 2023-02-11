@@ -1,15 +1,20 @@
+/**
+ * @file
+ * Layout utility classes.
+ */
+
 .is-full-width {
   left: 50%;
   margin-inline: -50vw;
-  max-width: 100vw;
+  max-inline-size: 100vw;
   position: relative;
   right: 50%;
   width: 100vw;
 
   .paragraph--type--sf-table {
     margin-inline: auto;
-    max-width: var(--size-container);
-    padding-block: var(--size-4);
-    padding-inline: var(--size-4);
+    max-inline-size: var(--size-container);
+    padding-block: var(--size-8);
+    padding-inline: var(--size-8);
   }
 }

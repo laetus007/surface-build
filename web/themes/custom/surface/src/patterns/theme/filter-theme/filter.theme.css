@@ -12,7 +12,7 @@
 }
 
 .filter-wrapper {
-  margin-block: var(--size-2) var(--size-1);
+  margin-block: var(--size-4) var(--size-2);
 }
 
 .filter-wrapper .form-item {
@@ -22,21 +22,21 @@
 .filter-help {
   float: inline-end;
   font-size: var(--font-size-sm);
-  padding-block: var(--size-1);
+  padding-block: var(--size-2);
 }
 
 .compose-tips__item {
-  margin-block: var(--size-3);
+  margin-block: var(--size-6);
 }
 
 .filter-guidelines__item {
   font-size: var(--font-size-0);
-  line-height: var(--line-height-2);
-  margin-block-start: var(--size-2);
+  line-height: var(--leading-tight);
+  margin-block-start: var(--size-4);
 }
 
 .filter-guidelines p {
-  margin-block: var(--size-05) 0;
+  margin-block: var(--size-1) 0;
 }
 
 /**
@@ -46,14 +46,14 @@
 * below a text format input.
 */
 .filter-tips--long {
-  margin-block-end: var(--size-3);
+  margin-block-end: var(--size-6);
 }
 
 .filter-tips__item,
 .filter-tips--long p {
-  margin-block: var(--size-1);
+  margin-block: var(--size-2);
 }
 
 .filter-tips__item--short {
-  margin-block: var(--size-05) 0;
+  margin-block: var(--size-1) 0;
 }

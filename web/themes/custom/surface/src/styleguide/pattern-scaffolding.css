@@ -1,19 +1,7 @@
-:where(html) {
-  --link: var(--indigo-7);
-  --link-visited: var(--grape-7);
-  --text-1: var(--gray-9);
-  --text-2: var(--gray-7);
-  --surface-1: var(--gray-0);
-  --surface-2: var(--gray-2);
-  --surface-3: var(--gray-3);
-  --surface-4: var(--gray-4);
-  --max-inline-body: calc(100vw - (var(--size-8) * 2));
-}
-
 /* Default Pattern Lab Styling */
 .pl {
-  padding-block: var(--size-4);
-  padding-inline: var(--size-4);
+  padding-block: var(--size-8);
+  padding-inline: var(--size-8);
 }
 
 .pl-c-category {
@@ -33,7 +21,7 @@
 }
 
 .pl-c-tabs__list-item {
-  padding-inline-end: var(--size-2);
+  padding-inline-end: var(--size-4);
   padding-inline-start: 0;
 }
 
@@ -57,22 +45,22 @@
 /* Aspect Ratio Demos */
 .pl-aspect-ratio {
   display: grid;
-  gap: var(--size-4);
+  gap: var(--size-8);
   justify-items: flex-start;
-  padding-block: var(--size-6);
+  padding-block: var(--size-12);
 
   .aspect-demo {
     display: flex;
     flex-flow: row wrap;
-    gap: var(--size-4);
+    gap: var(--size-6);
 
     > div {
-      block-size: var(--size-20);
-      border-color: var(--surface-4);
-      border-width: var(--border-size-3);
+      block-size: var(--size-40);
+      border-color: var(--gray-300);
+      border-width: var(--border-size-1);
       box-shadow: var(--shadow-3);
       display: grid;
-      max-inline-size: var(--max-inline-body);
+      max-inline-size: calc(100vw - (var(--size-16) * 2));
       place-content: center;
     }
   }
@@ -81,23 +69,23 @@
 /* Border Demos */
 .pl-borders {
   display: grid;
-  gap: var(--size-4);
+  gap: var(--size-8);
   justify-items: flex-start;
-  padding-block: var(--size-6);
+  padding-block: var(--size-12);
 
   .border-demo {
     display: flex;
     flex-flow: row wrap;
-    gap: var(--size-5);
+    gap: var(--size-6);
 
     > div {
       aspect-ratio: var(--ratio-square);
-      border-color: var(--gray-3);
+      border-color: var(--gray-300);
       border-style: solid;
-      border-width: var(--size-05);
+      border-width: var(--border-size-1);
       display: grid;
       font-size: var(--font-size-4);
-      inline-size: var(--size-20);
+      inline-size: var(--size-40);
       place-content: center;
     }
   }
@@ -107,37 +95,37 @@
 .pl-brands,
 .pl-colors {
   display: grid;
-  gap: var(--size-4);
+  gap: var(--size-8);
   justify-items: flex-start;
-  padding-block: var(--size-6);
+  padding-block: var(--size-12);
 
   .brand-demo,
   .color-demo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max(var(--size-20), 10rem), 1fr));
-    gap: var(--size-2);
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--size-40), 10rem), 1fr));
+    gap: var(--size-4);
   }
 
   .brand-demo__swatch,
   .color-demo__swatch {
     .swatch {
       aspect-ratio: var(--ratio-square);
-      border-color: var(--gray-3);
+      border-color: var(--gray-300);
       border-radius: var(--radius-1);
-      border-width: var(--size-05);
+      border-width: var(--border-size-1);
       display: grid;
-      inline-size: var(--size-20);
+      inline-size: var(--size-40);
     }
 
     .meta {
-      padding-block: var(--size-1);
-      padding-inline: var(--size-1);
+      padding-block: var(--size-2);
+      padding-inline: var(--size-2);
     }
 
     span {
-      color: black;
+      color: var(--black);
       display: block;
-      font-size: var(--font-size-00);
+      font-size: var(--font-size-sm);
 
       &.name {
         font-size: var(--font-size-0);
@@ -150,14 +138,14 @@
 /* Font Demo */
 .pl-fonts {
   display: grid;
-  gap: var(--size-4);
+  gap: var(--size-8);
   justify-items: flex-start;
-  padding-block: var(--size-6);
+  padding-block: var(--size-12);
 
   .font-demo {
     @media (min-width: 768px) {
       display: grid;
-      gap: var(--size-3);
+      gap: var(--size-6);
       grid-template-columns: 35% 65%;
     }
 
@@ -165,7 +153,7 @@
       flex-shrink: 0;
       font-size: var(--font-size-13);
       font-weight: var(--font-weight-400);
-      line-height: var(--font-line-height-1);
+      line-height: var(--line-height-1);
       width: 100%;
     }
 
@@ -179,30 +167,30 @@
     }
 
     .font-meta__alpha {
-      color: var(--gray-7);
+      color: var(--gray-700);
       width: 100%;
     }
 
     .font-meta__label {
-      color: var(--gray-6);
+      color: var(--gray-600);
     }
 
     .font-meta__preview {
-      border-top: var(--border-size-1) solid var(--gray-3);
-      margin: var(--size-2) 0 0;
-      padding: var(--size-2) 0 0;
+      border-top: var(--border-size-1) solid var(--gray-300);
+      margin: var(--size-4) 0 0;
+      padding: var(--size-4) 0 0;
       width: fit-content;
 
       @media (min-width: 768px) {
-        border-left: var(--border-size-1) solid var(--gray-3);
+        border-left: var(--border-size-1) solid var(--gray-300);
         border-top: 0;
-        margin: 0 0 0 var(--size-2);
-        padding: 0 0 0 var(--size-2);
+        margin: 0 0 0 var(--size-4);
+        padding: 0 0 0 var(--size-4);
       }
 
       > div {
         font-size: var(--font-size-0);
-        line-height: var(--font-lineheight-4);
+        line-height: var(--line-height-4);
       }
     }
   }
@@ -211,22 +199,22 @@
 /* Shadow Demo */
 .pl-shadows {
   display: grid;
-  gap: var(--size-4);
+  gap: var(--size-8);
   justify-items: flex-start;
-  padding-block: var(--size-6);
+  padding-block: var(--size-12);
 
   .shadow-demo {
     display: flex;
     flex-flow: row wrap;
-    gap: var(--size-5);
+    gap: var(--size-6);
 
     > div {
       aspect-ratio: var(--ratio-square);
-      border-color: var(--gray-3);
+      border-color: var(--gray-300);
       border-radius: var(--radius-3);
-      border-width: var(--size-00);
+      border-width: var(--border-size-1);
       display: grid;
-      inline-size: var(--size-20);
+      inline-size: var(--size-40);
       place-content: center;
     }
   }
@@ -237,12 +225,12 @@
   .size-demo {
     display: flex;
     flex-wrap: wrap;
-    padding-block-start: var(--size-6);
+    padding-block-start: var(--size-12);
 
     > div {
       flex-grow: 1;
       font-weight: var(--font-weight-300);
-      outline: 1px solid hsl(0, 0%, 87%);
+      outline: 1px solid var(--gray-100);
       overflow: hidden;
       padding: 0.8em 1.2em;
       width: calc(25% - 1px);
@@ -257,8 +245,8 @@
 /* General formatting */
 .just-for-gap {
   display: grid;
-  gap: var(--size-4);
-  margin-bottom: var(--size-2);
+  gap: var(--size-8);
+  margin-bottom: var(--size-4);
   width: 100%;
 
   h3 {

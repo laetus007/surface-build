@@ -9,7 +9,7 @@
   border: 0;
   box-shadow: var(--shadow-1);
   left: 0;
-  max-width: var(--size-container);
+  max-inline-size: var(--size-container);
   padding: 0;
   position: absolute;
   top: 0;
@@ -23,7 +23,7 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px var(--blue-9);
+    box-shadow: 0 0 0 3px var(--blue-900);
     outline: 2px dotted transparent;
   }
 }
@@ -38,8 +38,8 @@
   display: flex;
   justify-content: space-between;
   line-height: 2rem;
-  padding-block: var(--size-2);
-  padding-inline: var(--size-3);
+  padding-block: var(--size-4);
+  padding-inline: var(--size-6);
   position: relative;
 
   &::before,
@@ -71,7 +71,7 @@
   }
 
   &:focus {
-    border-color: var(--blue-9);
+    border-color: var(--blue-900);
     box-shadow: none;
     outline: 2px dotted transparent;
   }
@@ -92,8 +92,8 @@
   background: var(--white);
   color: var(--black);
   overflow: auto;
-  padding-block: var(--size-2);
-  padding-inline: var(--size-3);
+  padding-block: var(--size-4);
+  padding-inline: var(--size-6);
   position: static;
 
   .form-actions {
@@ -103,10 +103,10 @@
 }
 
 .ui-dialog-buttonpane {
-  background-color: var(--gray-1);
+  background-color: var(--gray-100);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-top: 1px solid var(--gray-2);
+  border-top: 1px solid var(--gray-200);
   color: var(--black);
 
   &::before,

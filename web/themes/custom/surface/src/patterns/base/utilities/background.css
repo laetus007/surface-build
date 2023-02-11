@@ -1,3 +1,8 @@
+/**
+ * @file
+ * Background utility classes.
+ */
+
 .bg-ucla-blue {
   background-color: var(--ucla-blue);
 }

@@ -4,6 +4,7 @@
  */
 
 :where(ul) {
+  list-style-type: none;
   margin: 0;
-  padding-inline-start: var(--ul-padding-inline-start, var(--size-4));
+  padding: 0;
 }

@@ -12,6 +12,6 @@
   vertical-align: middle;
 
   &:where(:not([width])) {
-    inline-size: var(--svg-inline-size, var(--size-10));
+    inline-size: var(--size-20);
   }
 }

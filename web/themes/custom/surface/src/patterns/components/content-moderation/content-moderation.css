@@ -5,12 +5,12 @@
 
 .entity-moderation-form {
   background: var(--white);
-  border: 1px dashed var(--gray-5);
+  border: 1px dashed var(--gray-500);
   color: var(--black);
   display: grid;
   list-style: none;
-  margin-block: var(--size-4);
-  padding-inline: var(--size-2);
+  margin-block: var(--size-8);
+  padding-inline: var(--size-4);
   width: 100%;
 
   @media (--tablet) {
@@ -23,7 +23,7 @@
 }
 
 .entity-moderation-form__item {
-  margin-inline-end: var(--size-4);
+  margin-inline-end: var(--size-8);
 
   &:last-child {
     align-self: flex-end;

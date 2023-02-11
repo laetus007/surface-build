@@ -4,13 +4,13 @@
  */
 
 :where(textarea) {
-  background-color: var(--textarea-bg-color, var(--gray-2));
-  border-radius: var(--textarea-border-radius, var(--radius-2));
+  background-color: var(--gray-200);
+  border-radius: var(--radius-2);
   cursor: pointer;
   display: block;
   letter-spacing: inherit;
-  min-height: var(--textarea-min-height, var(--size-18));
-  resize: block;
+  min-height: var(--size-36);
+  resize: vertical;
   touch-action: manipulation;
   width: 100%;
 }

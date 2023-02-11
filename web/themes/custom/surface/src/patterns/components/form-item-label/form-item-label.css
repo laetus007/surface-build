@@ -8,9 +8,9 @@
   font-family: var(--font-system);
   font-size: var(--font-size-0);
   font-weight: var(--font-weight-700);
-  line-height: var(--line-height-1);
-  margin-block: var(--size-05);
-  padding-block-end: var(--size-05);
+  line-height: var(--leading-none);
+  margin-block: var(--size-1);
+  padding-block-end: var(--size-1);
 
   &[for] {
     cursor: pointer;
@@ -22,7 +22,7 @@
   }
 
   &.is-disabled {
-    color: var(--gray-6);
+    color: var(--gray-600);
     cursor: default;
   }
 

@@ -4,6 +4,8 @@
  */
 
 :where(fieldset) {
-  border-radius: var(--fieldset-border-radius, var(--radius-2));
-  border: var(--fieldset-border-size, var(--border-size-1)) solid var(--fieldset-border-color, var(--gray-4));
+  border-radius: var(--radius-2);
+  border: var(--border-size-1) solid var(--gray-400);
+  margin: 0;
+  padding: 0;
 }

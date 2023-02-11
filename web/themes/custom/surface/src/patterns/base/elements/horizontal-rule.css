@@ -7,5 +7,5 @@
   border-top-width: 1px;
   color: inherit;
   height: 0;
-  margin-block: var(--hr-margin-block, var(--size-fluid-2));
+  margin: 0;
 }

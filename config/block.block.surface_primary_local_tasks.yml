@@ -11,7 +11,7 @@ _core:
 id: surface_primary_local_tasks
 theme: surface
 region: highlighted
-weight: -4
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

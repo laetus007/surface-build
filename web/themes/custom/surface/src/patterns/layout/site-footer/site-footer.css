@@ -7,13 +7,13 @@
   background-color: var(--site-footer-background-color);
   color: var(--site-footer-color);
   clip-path: var(--site-footer-clip-path);
-  padding-block-end: var(--size-4);
+  padding-block-end: var(--size-8);
   padding-block-start: var(--site-footer-padding-block-start);
   position: relative;
 }
 
 .site-footer__content {
-  margin-block-end: var(--size-2);
+  margin-block-end: var(--size-4);
 }
 
 .site-footer__utility {
@@ -24,7 +24,7 @@
 
 .site-footer__branding {
   grid-column: 1 / 7;
-  margin-block-end: var(--size-3);
+  margin-block-end: var(--size-6);
 
   @media (--desktop) {
     grid-column: 1 / 6;

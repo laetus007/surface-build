@@ -8,7 +8,7 @@
 }
 
 .lpb-component-list__search {
-  margin-block-end: var(--size-205);
+  margin-block-end: var(--size-5);
 
   .lpb-component-list-search-input {
     width: 100%;
@@ -19,7 +19,7 @@
   .lpb-component-list__group--layout {
     display: flex;
     flex-wrap: wrap;
-    margin-block-end: var(--size-1);
+    margin-block-end: var(--size-2);
     width: 100%;
   }
 
@@ -34,7 +34,7 @@
   align-items: center;
   display: flex;
   height: 24px;
-  margin-block-end: var(--size-1);
+  margin-block-end: var(--size-2);
   width: 100%;
 
   a {
@@ -45,6 +45,6 @@
 
   img {
     margin-right: 10px;
-    max-width: 24px;
+    max-inline-size: 24px;
   }
 }

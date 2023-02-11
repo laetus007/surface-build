@@ -18,16 +18,16 @@
 .pager__item {
   align-items: center;
   background-color: var(--white);
-  color: var(--gray-7);
+  color: var(--gray-700);
   cursor: default;
   display: flex;
-  height: var(--size-6);
+  height: var(--size-12);
   justify-content: center;
-  width: var(--size-6);
+  width: var(--size-12);
 
   @media (--mobile) {
-    height: var(--size-7);
-    width: var(--size-7);
+    height: var(--size-14);
+    width: var(--size-14);
   }
 
   & svg {
@@ -42,13 +42,13 @@
 }
 
 .pager__item--active {
-  background-color: var(--blue-9);
+  background-color: var(--blue-900);
   color: var(--white);
 }
 
 .pager__link {
   align-items: center;
-  color: var(--gray-7);
+  color: var(--gray-700);
   display: flex;
   height: 100%;
   justify-content: center;
@@ -56,12 +56,12 @@
   width: 100%;
 
   &:hover {
-    background-color: var(--gray-1);
+    background-color: var(--gray-100);
   }
 
   &:focus {
-    color: var(--blue-9);
-    outline: solid 2px var(--blue-9);
+    color: var(--blue-900);
+    outline: solid 2px var(--blue-900);
     outline-offset: -2px;
   }
 }

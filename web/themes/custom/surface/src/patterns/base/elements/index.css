@@ -2,11 +2,6 @@
 @import "html";
 @import "body";
 @import "main";
-@import "section";
-@import "article";
-@import "header";
-@import "footer";
-@import "aside";
 @import "menu";
 @import "nav";
 @import "details";
@@ -29,16 +24,11 @@
 
 /* Forms */
 @import "button";
-@import "datalist";
 @import "dialog";
 @import "fieldset";
-@import "form";
 @import "input";
-@import "label";
 @import "legend";
-@import "meter";
 @import "option";
-@import "output";
 @import "progress";
 @import "select";
 @import "textarea";

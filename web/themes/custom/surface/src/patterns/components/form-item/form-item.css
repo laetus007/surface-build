@@ -4,48 +4,48 @@
  */
 
 .form-item {
-  margin-block: var(--size-2);
+  margin-block: var(--size-4);
 
   /* When a table row or a container-inline has a single form item, prevent it from adding unnecessary extra spacing. */
   tr &,
   .container-inline & {
-    margin-block: var(--size-1);
+    margin-block: var(--size-2);
   }
 }
 
 /* Form item description. */
 .form-item__description {
-  color: var(--gray-7);
+  color: var(--gray-700);
   font-size: var(--font-size-sm);
-  line-height: var(--line-height-3);
-  margin-block: var(--size-1);
-  max-width: 60ch;
+  line-height: var(--leading-snug);
+  margin-block: var(--size-2);
+  max-inline-size: 60ch;
 
   &.is-disabled {
-    color: var(--gray-6);
+    color: var(--gray-600);
     cursor: default;
   }
 }
 
 /* Error message (Inline form errors). */
 .form-item__error-message {
-  color: var(--red-9);
+  color: var(--red-900);
   font-size: var(--font-size-sm);
   font-weight: normal;
-  line-height: var(--line-height-3);
-  margin-block: var(--size-1);
+  line-height: var(--leading-snug);
+  margin-block: var(--size-2);
 }
 
 .form-item--error-message {
   background-image: url("../images/inline-error.svg");
   background-position: left top;
   background-repeat: no-repeat;
-  background-size: var(--size-2) var(--size-2);
-  color: var(--red-9);
+  background-size: var(--size-4) var(--size-4);
+  color: var(--red-900);
   font-size: var(--font-size-sm);
-  line-height: var(--line-height-2);
-  margin-block: var(--size-1);
-  padding-inline-start: var(--size-3);
+  line-height: var(--leading-tight);
+  margin-block: var(--size-2);
+  padding-inline-start: var(--size-6);
 }
 
 /* Custom label placement for editor filter format select. */
@@ -53,7 +53,7 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
+  max-inline-size: 100%;
 
   .form-item__label,
   .form-item__prefix,
@@ -65,7 +65,7 @@
   .form-item__label,
   .form-item__prefix,
   .form-item__suffix {
-    margin-inline-end: var(--size-1);
+    margin-inline-end: var(--size-2);
   }
 
   .form-item__description,

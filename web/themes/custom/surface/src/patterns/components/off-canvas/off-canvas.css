@@ -5,16 +5,16 @@
 
 #drupal-off-canvas {
   & .form-type-boolean {
-    line-height: var(--line-height-2);
+    line-height: var(--leading-tight);
     margin-inline-start: 0;
 
     & input[type="checkbox"],
     & input[type="radio"] {
       float: none;
-      height: var(--size-105);
+      height: var(--size-3);
       transform: none;
       vertical-align: middle;
-      width: var(--size-105);
+      width: var(--size-3);
     }
 
     & .form-item__description {

@@ -9,16 +9,16 @@
   text-decoration: inherit;
 
   &:where([href]) {
-    color: var(--link-color, var(--blue-6));
+    color: var(--link-color, var(--blue-600));
 
     &:where(:visited) {
-      color: var(--link-visited-color, var(--blue-9));
-      text-decoration-color: var(--link-visited-decoration-color, var(--blue-9));
+      color: var(--link-visited-color, var(--blue-900));
+      text-decoration-color: var(--link-visited-decoration-color, var(--blue-900));
     }
 
     &:where(:hover) {
-      color: var(--link-hover-color, var(--blue-5));
-      text-decoration-color: var(--link-hover-decoration-color, var(--blue-5));
+      color: var(--link-hover-color, var(--blue-500));
+      text-decoration-color: var(--link-hover-decoration-color, var(--blue-500));
       text-decoration-line: underline;
     }
   }
@@ -61,14 +61,14 @@ abbr:where([title]) {
 }
 
 :where(cite) {
-  color: var(--cite-color, var(--gray-6));
-  font-family: var(--cite-font-family, var(--font-sans));
-  font-size: var(--cite-font-size, var(--font-size-0));
-  font-weight: var(--cite-font-weight, var(--font-weight-600));
-  letter-spacing: var(--cite-letter-spacing, var(--letter-spacing-1));
-  line-height: var(--cite-line-height, var(--line-height-1));
+  color: var(--gray-600);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-600);
+  letter-spacing: var(--tracking-wide);
+  line-height: var(--leading-none);
   margin: 0;
-  padding-inline-start: var(--cite-padding-inline-start, var(--size-1));
+  padding-inline-start: var(--size-2);
 }
 
 :where(code, kbd, samp, pre) {
@@ -77,16 +77,16 @@ abbr:where([title]) {
 }
 
 :where(code) {
-  background-color: var(--code-bg-color, var(--gray-3));
-  border-radius: var(--code-border-radius, var(--radius-2));
+  background-color: var(--gray-300);
+  border-radius: var(--radius-2);
   margin: 0;
-  padding: var(--code-padding, var(--size-05) var(--size-1));
+  padding: var(--size-1) var(--size-2);
   white-space: nowrap;
 }
 
 :where(del) {
-  background-color: var(--del-bg-color, var(--red-9));
-  color: var(--del-color, var(--red-1));
+  background-color: var(--red-600);
+  color: var(--red-100);
 }
 
 :where(dfn) {
@@ -94,26 +94,26 @@ abbr:where([title]) {
 }
 
 :where(ins) {
-  background-color: var(--ins-bg-color, var(--green-9));
-  color: var(--ins-color, var(--green-1));
-  text-underline-offset: var(--ins-text-underline-offset, var(--size-xs));
+  background-color: var(--green-600);
+  color: var(--green-100);
+  text-underline-offset: var(--size-px);
 }
 
 :where(kbd) {
-  border-color: var(--kbd-border-color, var(--gray-4));
-  border-radius: var(--kbd-border-radius, var(--radius-2));
+  border-color: var(--gray-400);
+  border-radius: var(--radius-2);
   border-style: solid;
-  border-width: var(--kbd-border-size, var(--border-size-1));
+  border-width: var(--border-size-1);
   margin: 0;
-  padding: var(--kbd-padding, var(--size-1) var(--size-2));
+  padding: var(--size-2) var(--size-4);
   white-space: nowrap;
 }
 
 :where(mark) {
-  border-radius: var(--mark-border-radius, var(--radius-2));
+  border-radius: var(--radius-2);
   border-style: solid;
   border-width: 0;
-  padding: var(--mark-padding, var(--size-1));
+  padding: var(--size-2);
 }
 
 :where(small) {
@@ -136,15 +136,15 @@ abbr:where([title]) {
 }
 
 :where(u) {
-  text-underline-offset: var(--u-text-underline-offset, var(--size-xs));
+  text-underline-offset: var(--size-px);
 }
 
 :where(var) {
-  border-color: var(--var-border-color, var(--gray-4));
-  border-radius: var(--var-border-radius, var(--radius-2));
+  border-color: var(--gray-400);
+  border-radius: var(--radius-2);
   border-style: solid;
-  border-width: var(--var-border-width, var(--border-size-1));
+  border-width: var(--border-size-1);
   margin: 0;
-  padding: var(--var-padding, var(--size-1) var(--size-2));
+  padding: var(--size-2) var(--size-4);
   white-space: nowrap;
 }

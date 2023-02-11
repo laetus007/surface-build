@@ -4,11 +4,11 @@
  */
 
 :where(html) {
-  accent-color: var(--accent-color, var(--blue-6));
+  accent-color: var(--accent-color, var(--blue-600));
   background-color: var(--bg-color, var(--white));
   block-size: 100%;
-  caret-color: var(--caret-color, var(--blue-6));
-  color: var(--color, var(--gray-9));
+  caret-color: var(--caret-color, var(--blue-600));
+  color: var(--color, var(--gray-900));
   font-family: var(--font-body, var(--font-sans));
   font-size: 100%;
   font-weight: normal;
@@ -17,7 +17,7 @@
   line-height: 1.5;
   min-height: 100%;
   scroll-padding-top: var(--scroll-padding-top, 150px);
-  scrollbar-color: var(--scrollbar-color, var(--blue-6)) transparent;
+  scrollbar-color: var(--scrollbar-color, var(--blue-600)) transparent;
   text-size-adjust: none;
 
   @media screen and (prefers-reduced-motion: no-preference) {

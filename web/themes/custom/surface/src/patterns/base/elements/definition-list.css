@@ -5,7 +5,7 @@
 
 :where(dd) {
   margin: 0;
-  max-inline-size: var(--dd-max-inline-size, var(--size-content-2));
+  max-inline-size: var(--size-content-2);
 
   dt + & {
     margin-block-start: 0;
@@ -13,15 +13,15 @@
 }
 
 :where(dt) {
-  font-weight: var(--dt-font-weight, var(--font-weight-700));
-  max-inline-size: var(--dt-max-inline-size, var(--size-header-3));
+  font-weight: var(--font-weight-700);
+  max-inline-size: var(--size-header-3);
 
   &:not(:first-of-type) {
-    margin-block-start: var(--dt-margin-block-start, var(--size-5));
+    margin-block-start: var(--size-10);
   }
 }
 
 :where(dl) {
-  font-size: var(--dl-font-size, var(--font-size-2));
+  font-size: var(--font-size-2);
   margin: 0;
 }

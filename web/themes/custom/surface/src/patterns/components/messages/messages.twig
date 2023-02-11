@@ -3,9 +3,7 @@
 {% set classes = [
   'messages',
   type ? 'messages--' ~ type,
-  'container',
-  'grid',
-  'grid--medium',
+  'fade',
 ]|join(' ')|trim %}
 
 <div data-drupal-messages class="{{ classes }}" data-drupal-selector="messages" role="contentinfo" aria-label="{{ heading }}">
@@ -13,7 +11,9 @@
     {% if heading %}
       <div class="messages__header">
         <h2 class="visually-hidden">{{ heading }}</h2>
-        <div class="messages__icon"></div>
+        <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+        </svg>
       </div>
     {% endif %}
 
@@ -30,10 +30,10 @@
     </div>
 
     <button type="button" class="messages__close">
+      <span class="visually-hidden">Close message</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
         <path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
       </svg>
-      <span class="visually-hidden">Close message</span>
     </button>
   </div>
 </div>

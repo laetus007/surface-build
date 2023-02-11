@@ -10,8 +10,8 @@
   display: inline-flex;
   justify-content: center;
   line-height: normal;
-  padding-block: var(--size-2);
-  padding-inline: var(--size-3);
+  padding-block: var(--size-4);
+  padding-inline: var(--size-6);
   position: relative;
   text-align: center;
   text-decoration: none;

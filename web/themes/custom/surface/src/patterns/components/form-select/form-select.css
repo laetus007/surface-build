@@ -4,28 +4,28 @@
  */
 
 .form-select {
-  height: var(--size-6);
-  max-width: 100%;
+  height: var(--size-12);
+  max-inline-size: 100%;
   padding-block: 0;
 }
 
 select {
   &:focus {
-    box-shadow: 0 0 var(--white), 0 0 0 2px var(--blue-4), 0 0 var(--white);
+    box-shadow: 0 0 var(--white), 0 0 0 2px var(--blue-400), 0 0 var(--white);
     outline: 2px solid transparent;
     outline-offset: 2px;
   }
 
   &[disabled] {
-    background-color: var(--gray-1);
-    color: var(--gray-5);
+    background-color: var(--gray-100);
+    color: var(--gray-500);
   }
 
   &.error {
-    border: solid 2px var(--red-9);
+    border: solid 2px var(--red-900);
 
     &:focus {
-      outline-color: var(--red-9);
+      outline-color: var(--red-900);
     }
   }
 
@@ -33,14 +33,14 @@ select {
     background-image: none;
     height: auto;
     line-height: 1;
-    padding: var(--size-1);
+    padding: var(--size-2);
 
     & option {
-      padding: var(--size-1);
+      padding: var(--size-2);
     }
   }
 
   &.form-element--small {
-    height: var(--size-5);
+    height: var(--size-10);
   }
 }

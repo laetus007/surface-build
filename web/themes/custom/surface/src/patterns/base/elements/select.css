@@ -7,10 +7,10 @@
   appearance: none;
   background-color: var(--white);
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E");
-  background-position: right var(--size-05) center;
+  background-position: right var(--size-1) center;
   background-repeat: no-repeat;
-  background-size: var(--size-3) var(--size-3);
-  border: 1px solid var(--gray-5);
+  background-size: var(--size-6) var(--size-6);
+  border: 1px solid var(--gray-500);
   color: inherit;
   font-family: inherit;
   font-size: 100%;
@@ -18,7 +18,8 @@
   letter-spacing: inherit;
   line-height: inherit;
   margin: 0;
-  padding-inline-end: var(--size-5);
-  padding-inline-start: var(--size-1);
+  padding-inline-end: var(--size-10);
+  padding-inline-start: var(--size-2);
   touch-action: manipulation;
+  text-transform: none;
 }

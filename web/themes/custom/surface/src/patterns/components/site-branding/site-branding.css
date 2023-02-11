@@ -5,19 +5,19 @@
 
 .site-branding {
   display: inline-block;
-  max-width: 100%;
+  max-inline-size: 100%;
   text-decoration: none;
 
   @media (--desktop) {
-    padding-inline-end: var(--size-2);
+    padding-inline-end: var(--size-4);
   }
 
   & img {
-    max-width: 100%;
+    max-inline-size: 100%;
     width: 355px;
   }
 }
 
 .site-branding--footer {
-  margin-block-end: var(--size-3);
+  margin-block-end: var(--size-6);
 }

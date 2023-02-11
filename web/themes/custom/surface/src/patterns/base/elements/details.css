@@ -4,15 +4,15 @@
  */
 
 :where(details) {
-  background: var(--details-bg-color, var(--gray-2));
-  border-radius: var(--details-border-radius, var(--radius-2));
-  padding-block: var(--details-padding-block, var(--size-2));
-  padding-inline: var(--details-padding-inline, var(--size-3));
+  background: var(--gray-200);
+  border-radius: var(--radius-2);
+  padding-block: var(--size-4);
+  padding-inline: var(--size-6);
 
   &[open] > summary {
     border-end-end-radius: 0;
     border-end-start-radius: 0;
-    margin-block-end: var(--details-margin-block-end, var(--size-2));
+    margin-block-end: var(--size-4);
   }
 
   p:last-child {
@@ -21,11 +21,12 @@
 }
 
 :where(summary) {
-  background: var(--summary-bg-color, var(--gray-3));
-  border-radius: var(--summary-border-radius, var(--radius-2));
+  background: var(--gray-300);
+  border-radius: var(--radius-2);
   cursor: pointer;
-  font-weight: var(--summary-font-weight, var(--font-weight-700));
-  margin: var(--summary-margin, calc(var(--size-2) * -1) calc(var(--size-3) * -1));
-  padding: var(--summary-padding, var(--size-2) var(--size-3));
+  display: list-item;
+  font-weight: var(--font-weight-700);
+  margin: calc(var(--size-4) * -1) calc(var(--size-6) * -1);
+  padding: var(--size-4) var(--size-6);
   touch-action: manipulation;
 }

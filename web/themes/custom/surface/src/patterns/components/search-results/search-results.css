@@ -5,25 +5,25 @@
 
 .search-results {
   list-style: none;
-  margin-block-end: var(--size-4);
+  margin-block-end: var(--size-8);
   padding-block: 0;
   padding-inline: 0;
 
   @media (--tablet) {
-    margin-block-end: var(--size-6);
+    margin-block-end: var(--size-12);
   }
 }
 
 .search-result__title {
-  color: var(--gray-9);
+  color: var(--gray-900);
   font-size: 20px;
-  line-height: var(--line-height-4);
+  line-height: var(--leading-normal);
   margin-block: 0;
   margin-inline: 0;
 
   & a {
     background-color: transparent;
-    background-image: linear-gradient(var(--blue-5), var(--blue-5)); /* Two values are needed for IE11 support. */
+    background-image: linear-gradient(var(--blue-500), var(--blue-500)); /* Two values are needed for IE11 support. */
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 0 3px;
@@ -32,45 +32,45 @@
     transition: background-size 0.2s, color 0.2s;
 
     &:hover {
-      color: var(--blue-9);
+      color: var(--blue-900);
     }
   }
 
   @media (--laptop) {
-    margin-block-end: var(--size-2);
+    margin-block-end: var(--size-4);
     font-size: 30px;
-    line-height: var(--line-height-3);
+    line-height: var(--leading-snug);
   }
 }
 
 .search-result__snippet {
-  padding-block-end: calc(var(--size-3) - 2px);
+  padding-block-end: calc(var(--size-6) - 2px);
 
   @media (--laptop) {
-    padding-block-end: var(--size-6);
+    padding-block-end: var(--size-12);
   }
 }
 
 .search-result__meta {
   align-items: center;
-  color: var(--gray-7);
+  color: var(--gray-700);
   display: flex;
   font-size: 14px;
-  line-height: var(--line-height-1);
-  margin-block-end: var(--size-2);
+  line-height: var(--leading-none);
+  margin-block-end: var(--size-4);
 
   & a {
-    color: var(--blue-9);
+    color: var(--blue-900);
     font-weight: bold;
   }
 }
 
 .search-results__item {
-  margin-block-end: var(--size-3);
+  margin-block-end: var(--size-6);
   position: relative; /* Anchor after pseudo-element. */
 
   &::after {
-    border-top: solid 2px var(--gray-1);
+    border-top: solid 2px var(--gray-100);
     content: "";
     height: 0;
     inset-block-end: 0;
@@ -83,6 +83,6 @@
   }
 
   @media (--laptop) {
-    margin-block-end: var(--size-7);
+    margin-block-end: var(--size-14);
   }
 }

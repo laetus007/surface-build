@@ -5,6 +5,6 @@
 
 :where(menu) {
   display: flex;
-  gap: var(--menu-gap, var(--size-3));
+  gap: var(--size-6);
   padding-inline-start: 0;
 }

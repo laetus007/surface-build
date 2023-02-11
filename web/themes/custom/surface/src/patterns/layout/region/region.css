@@ -2,15 +2,3 @@
  * @file
  * Region styles.
  */
-
-.region > * {
-  margin-block-end: var(--size-2);
-
-  @media (--tablet) {
-    margin-block-end: var(--size-4);
-  }
-
-  @media (--laptop) {
-    margin-block-end: var(--size-6);
-  }
-}

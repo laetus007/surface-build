@@ -4,13 +4,13 @@
  */
 
 .layout {
-  margin-block-end: var(--size-2);
+  margin-block-end: var(--size-4);
 
   @media (--tablet) {
-    margin-block-end: var(--size-4);
+    margin-block-end: var(--size-8);
   }
 
   @media (--laptop) {
-    margin-block-end: var(--size-6);
+    margin-block-end: var(--size-12);
   }
 }

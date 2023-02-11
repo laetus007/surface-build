@@ -4,7 +4,7 @@
  */
 
 .search-block-form {
-  background-color: var(--gray-9);
+  background-color: var(--gray-900);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -20,24 +20,24 @@
     background-image: linear-gradient(var(--ucla-blue), var(--ucla-blue));
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-size: 0% var(--size-1);
+    background-size: 0% var(--size-2);
     border: solid 1px transparent;
     box-shadow: none;
     color: var(--white);
     font-family: var(--font-serif);
     font-size: var(--font-size-7);
-    height: var(--size-18);
+    height: var(--size-36);
     padding-block: 0;
     padding-inline-end: 0;
-    padding-inline-start: var(--size-4);
+    padding-inline-start: var(--size-8);
     transition: background-size 0.4s;
-    width: calc(100% + var(--size-4));
+    width: calc(100% + var(--size-8));
 
     /* Search block form in modal. */
     .site-search--modal & {
       background-image: none;
       border-color: var(--silver-screen);
-      border-radius: var(--size-1);
+      border-radius: var(--size-2);
       color: var(--midnight-joshua-tree);
       height: 70px;
       padding-inline-end: 80px;
@@ -46,7 +46,7 @@
     }
 
     &:focus {
-      background-size: 100% var(--size-1);
+      background-size: 100% var(--size-2);
       outline: none;
 
       /* Search block form in modal. */

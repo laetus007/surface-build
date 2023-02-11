@@ -15,7 +15,7 @@
     var messagesTypes = Drupal.Message.getMessageTypeLabels();
     var messageWrapper = document.createElement('div');
 
-    messageWrapper.setAttribute('class', 'messages messages--'.concat(type));
+    messageWrapper.setAttribute('class', 'fade messages messages--'.concat(type));
     messageWrapper.setAttribute('role', type === 'error' || type === 'warning' ? 'alert' : 'status');
     messageWrapper.setAttribute('data-drupal-message-id', id);
     messageWrapper.setAttribute('data-drupal-message-type', type);

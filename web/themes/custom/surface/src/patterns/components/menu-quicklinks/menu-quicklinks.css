@@ -10,7 +10,7 @@
   padding: 0;
 
   .menu__item {
-    margin-inline-end: var(--size-1);
+    margin-inline-end: var(--size-2);
 
     &:last-child {
       margin-inline-end: 0;
@@ -24,8 +24,8 @@
     color: var(--menu-quicklinks-color);
     cursor: pointer;
     display: inline-block;
-    padding-block: var(--size-105);
-    padding-inline: var(--size-205);
+    padding-block: var(--size-3);
+    padding-inline: var(--size-5);
     text-decoration: none;
     text-transform: none;
     transition-duration: 200ms;

@@ -12,7 +12,7 @@
 
   @media (--tablet) {
     display: grid;
-    grid-column-gap: var(--size-4);
+    grid-column-gap: var(--size-8);
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -21,14 +21,14 @@
   }
 
   .menu__item {
-    margin-block-end: var(--size-3);
-    margin-block-start: var(--size-05);
+    margin-block-end: var(--size-6);
+    margin-block-start: var(--size-1);
   }
 
   h4 {
     color: var(--menu-footer-h4-color);
     font-size: var(--menu-footer-h4-font-size);
-    margin-block-end: var(--size-1);
+    margin-block-end: var(--size-2);
     margin-block-start: 0;
   }
 
@@ -40,7 +40,7 @@
     padding-inline: 0;
 
     .menu__item {
-      margin-block: var(--size-1);
+      margin-block: var(--size-2);
     }
 
     .menu__link {

@@ -8,7 +8,7 @@
   grid-auto-flow: column;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  grid-column-gap: var(--size-2);
+  grid-column-gap: var(--size-4);
   width: 100%;
 
   /* .grid classes nested 3 or more deep go full width. */
@@ -18,7 +18,7 @@
 
   @media (--laptop) {
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-column-gap: var(--size-4);
+    grid-column-gap: var(--size-8);
   }
 }
 

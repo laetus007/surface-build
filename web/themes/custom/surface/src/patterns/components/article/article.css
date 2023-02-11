@@ -1,8 +1,29 @@
+.article__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-column-gap: var(--size-10);
+
+  .article__media {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  .article__content {
+    grid-column: 1/1;
+    grid-row: 1/4;
+  }
+
+  .article__meta {
+    grid-column: 2/3;
+  }
+}
+
 .article__header {
   background-color: var(--midnight-joshua-tree);
   color: var(--white);
-  padding-block-end: var(--size-10);
-  padding-block-start: var(--size-4);
+  padding-block-end: var(--size-20);
+  padding-block-start: var(--size-8);
 
   :is(h1, h2) {
     color: inherit;
@@ -15,15 +36,15 @@
 
   h2 {
     font-family: var(--font-body);
-    margin-block-start: var(--size-1);
+    margin-block-start: var(--size-2);
   }
 }
 
 .article__main {
-  padding-block: var(--size-4);
+  padding-block: var(--size-8);
 
   @media (--laptop) {
-    padding-block-end: var(--size-6);
+    padding-block-end: var(--size-12);
   }
 }
 
@@ -38,7 +59,7 @@
   }
 
   .media {
-    margin-top: calc(var(--size-12) * -1);
+    margin-top: calc(var(--size-24) * -1);
   }
 
   img {
@@ -47,8 +68,8 @@
   }
 }
 
-.article__meta {
-  margin-block-start: var(--size-5);
+.article__media-meta {
+  margin-block-start: var(--size-10);
 
   svg {
     font-size: inherit;
@@ -58,12 +79,12 @@
   }
 
   span {
-    margin-inline-start: var(--size-05);
+    margin-inline-start: var(--size-1);
   }
 }
 
 .article__tags {
-  margin-block-start: var(--size-5);
+  margin-block-start: var(--size-10);
 
   h3 {
     margin-block: 0;
@@ -71,7 +92,7 @@
 }
 
 .article__authors {
-  margin-block-start: var(--size-5);
+  margin-block-start: var(--size-10);
 
   h3 {
     margin-block: 0;
@@ -79,23 +100,25 @@
 }
 
 .article__share {
-  margin-block-start: var(--size-5);
+  align-items: flex-start;
+  display: flex;
+  margin-block-start: var(--size-10);
 
   h3 {
     display: inline-block;
     margin-block: 0;
-    margin-inline-end: var(--size-1);
+    margin-inline-end: var(--size-2);
   }
 
   a {
     font-size: var(--font-size-4);
-    display: inline-block;
-    margin-inline-end: var(--size-1);
+    display: inline-flex;
+    margin-inline-end: var(--size-2);
     text-decoration: none;
   }
 
   svg {
-    color: var(--gray-9);
+    color: var(--gray-900);
     font-size: inherit;
     display: inline-block;
     vertical-align: -0.125em;

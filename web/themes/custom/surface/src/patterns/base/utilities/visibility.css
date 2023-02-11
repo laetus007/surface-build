@@ -1,6 +1,6 @@
 /**
  * @file
- * Utility classes to hide elements in different ways.
+ * Visibility utility classes.
  */
 
 .hidden,
@@ -26,6 +26,14 @@
   width: auto;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
+}
+
+.collapse {
+  visibility: collapse;
 }

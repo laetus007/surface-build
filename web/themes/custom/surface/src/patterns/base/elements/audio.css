@@ -6,7 +6,7 @@
 :where(audio) {
   display: block;
   height: auto;
-  max-width: 100%;
+  max-inline-size: 100%;
   vertical-align: middle;
 
   &:not([controls]) {

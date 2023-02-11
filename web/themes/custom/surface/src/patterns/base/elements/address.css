@@ -5,5 +5,5 @@
 
 :where(address) {
   font-style: normal;
-  margin-block-end: var(--size-2);
+  margin-block-end: var(--size-4);
 }

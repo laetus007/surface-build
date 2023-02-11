@@ -4,7 +4,7 @@
 */
 
 .site-alert {
-  background-color: var(--site-alert-bg-color, var(--blue-9));
+  background-color: var(--site-alert-bg-color, var(--blue-900));
   color: var(--site-alert-color, var(--white));
 }
 
@@ -14,12 +14,12 @@
   flex-direction: row;
   height: 70px;
   justify-content: center;
-  padding-block: var(--size-05);
+  padding-block: var(--size-1);
 
   svg {
     flex-shrink: 0;
-    margin-inline-end: var(--size-105);
-    width: var(--size-3);
+    margin-inline-end: var(--size-3);
+    width: var(--size-6);
   }
 }
 
@@ -31,7 +31,7 @@
   font-size: var(--site-alert-font-size);
   line-height: var(--site-alert-lineheight);
   overflow: hidden;
-  padding-block-start: var(--size-05);
+  padding-block-start: var(--size-1);
 
   a {
     color: var(--site-alert-link-color, var(--white));

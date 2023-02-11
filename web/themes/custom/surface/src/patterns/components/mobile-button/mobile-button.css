@@ -11,7 +11,7 @@
   border: none;
   cursor: pointer;
   display: inline-flex;
-  height: var(--size-4);
+  height: var(--size-8);
   position: relative;
   width: auto;
 
@@ -88,7 +88,7 @@
   display: block;
   height: 3px;
   position: relative;
-  width: var(--size-4);
+  width: var(--size-8);
 
   &::before {
     background-color: var(--mobile-button-icon-background-color);

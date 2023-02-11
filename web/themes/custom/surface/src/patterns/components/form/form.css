@@ -35,5 +35,5 @@
 }
 
 .form-actions:not(.ui-dialog-buttonset) {
-  margin-block: var(--size-1);
+  margin-block: var(--size-2);
 }

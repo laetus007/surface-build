@@ -6,8 +6,8 @@
 .button {
   align-items: center;
   appearance: none;
-  background-color: var(--btn-bg-color, var(--gray-3));
-  border: var(--btn-border-width, 1px) solid var(--btn-border-color, var(--gray-3));
+  background-color: var(--btn-bg-color, var(--gray-300));
+  border: var(--btn-border-width, 1px) solid var(--btn-border-color, var(--gray-300));
   border-radius: var(--btn-border-radius, 0);
   color: var(--btn-color, var(--black));
   cursor: pointer;
@@ -16,11 +16,11 @@
   font-size: var(--btn-font-size, var(--font-size-1));
   font-weight: var(--btn-font-weight, var(--font-weight-700));
   justify-content: center;
-  line-height: var(--btn-line-height, var(--line-height-1));
-  margin-block: var(--btn-margin-block, var(--size-2));
-  margin-inline-end: var(--btn-maring-inline-end, var(--size-105));
-  padding-block: var(--btn-padding-block, var(--size-2));
-  padding-inline: var(--btn-padding-inline, var(--size-3));
+  line-height: var(--btn-line-height, var(--leading-none));
+  margin-block: var(--btn-margin-block, var(--size-4));
+  margin-inline-end: var(--btn-maring-inline-end, var(--size-3));
+  padding-block: var(--btn-padding-block, var(--size-4));
+  padding-inline: var(--btn-padding-inline, var(--size-6));
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -33,12 +33,12 @@
   }
 
   &:hover {
-    background-color: var(--btn-hover-bg-color, var(--gray-4));
+    background-color: var(--btn-hover-bg-color, var(--gray-400));
     color: var(--btn-hover-color, var(--black));
   }
 
   &:focus {
-    box-shadow: var(--btn-focus-box-shadow, 0 0 0 2px var(--white), 0 0 0 4px var(--gray-7));
+    box-shadow: var(--btn-focus-box-shadow, 0 0 0 2px var(--white), 0 0 0 4px var(--gray-700));
     outline: none;
   }
 
@@ -48,13 +48,13 @@
 
   &[aria-expanded="true"] {
     &:focus::after {
-      border-color: var(--btn-border-color, var(--gray-3));
+      border-color: var(--btn-border-color, var(--gray-300));
     }
   }
 
   &:disabled {
-    background-color: var(--btn-disabled-bg-color, var(--gray-3));
-    color: var(--btn-disabled-color, var(--gray-5));
+    background-color: var(--btn-disabled-bg-color, var(--gray-300));
+    color: var(--btn-disabled-color, var(--gray-500));
     cursor: not-allowed;
     pointer-events: none;
   }
@@ -62,21 +62,21 @@
 
 /* Button primary */
 .button--primary {
-  background-color: var(--btn-primary-bg-color, var(--blue-6));
+  background-color: var(--btn-primary-bg-color, var(--blue-600));
   color: var(--btn-primary-color, var(--white));
 
   &:visited {
-    background-color: var(--btn-primary-visited-bg-color, var(--blue-6));
+    background-color: var(--btn-primary-visited-bg-color, var(--blue-600));
     color: var(--btn-primary-visited-color, var(--white));
   }
 
   &:hover {
-    background-color: var(--btn-primary-hover-bg-color, var(--blue-8));
+    background-color: var(--btn-primary-hover-bg-color, var(--blue-800));
     color: var(--btn-primary-hover-color, var(--white));
   }
 
   &:active {
-    background-color: var(--btn-primary-active-bg-color, var(--blue-8));
+    background-color: var(--btn-primary-active-bg-color, var(--blue-800));
     color: var(--btn-primary-active-color, var(--white));
   }
 }
@@ -89,7 +89,7 @@
     border-right: 0.3em solid transparent;
     border-top: 0.3em solid;
     content: "";
-    margin-inline-start: var(--size-05);
+    margin-inline-start: var(--size-1);
   }
 }
 
@@ -110,16 +110,16 @@
 
   &:hover {
     background-color: transparent;
-    color: var(--btn-give-color, var(--gray-2));
+    color: var(--btn-give-color, var(--gray-200));
   }
 
   & svg {
     inline-size: 24px;
-    margin-inline-end: var(--size-1);
+    margin-inline-end: var(--size-2);
   }
 
   & span {
-    padding-block-start: var(--size-05);
+    padding-block-start: var(--size-1);
     text-transform: uppercase;
   }
 }
@@ -136,16 +136,16 @@
 
   &:hover {
     background-color: transparent;
-    color: var(--btn-translate-color, var(--gray-2));
+    color: var(--btn-translate-color, var(--gray-200));
   }
 
   & svg {
     inline-size: 28px;
-    margin-inline-end: var(--size-1);
+    margin-inline-end: var(--size-2);
   }
 
   & span {
-    padding-block-start: var(--size-05);
+    padding-block-start: var(--size-1);
   }
 }
 
@@ -162,15 +162,15 @@
 
   &:hover {
     background-color: transparent;
-    color: var(--btn-search-color, var(--gray-2));
+    color: var(--btn-search-color, var(--gray-200));
   }
 
   & svg {
     inline-size: 22px;
-    margin-inline-end: var(--size-1);
+    margin-inline-end: var(--size-2);
   }
 
   & span {
-    padding-block-start: var(--size-05);
+    padding-block-start: var(--size-1);
   }
 }

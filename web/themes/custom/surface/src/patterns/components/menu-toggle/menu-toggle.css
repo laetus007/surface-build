@@ -8,17 +8,17 @@
   background: transparent;
   border: 0;
   cursor: pointer;
-  height: var(--size-4);
-  margin-block-start: var(--size-1); /* Visually align button with menu link text. */
+  height: var(--size-8);
+  margin-block-start: var(--size-2); /* Visually align button with menu link text. */
   overflow: hidden;
   padding-block: 0;
   padding-inline: 0;
   position: relative;
   text-indent: -999px;
-  width: var(--size-4);
+  width: var(--size-8);
 
   &:focus {
-    outline: auto 2px var(--blue-5);
+    outline: auto 2px var(--blue-500);
     outline-offset: 2px;
   }
 
@@ -41,7 +41,7 @@
       position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: var(--size-2);
+      width: var(--size-4);
     }
 
     &::after {
@@ -67,15 +67,15 @@
     flex-shrink: 0;
     height: auto;
     margin-block-start: 0;
-    margin-inline-end: calc(var(--size-4) * -1);
-    width: calc(var(--size-4) + 8px);
+    margin-inline-end: calc(var(--size-8) * -1);
+    width: calc(var(--size-8) + 8px);
 
     &:focus {
       border: 0;
       outline: 0;
 
       & .icon {
-        border: solid 2px var(--blue-9);
+        border: solid 2px var(--blue-900);
       }
     }
 

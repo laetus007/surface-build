@@ -4,17 +4,12 @@
   --border-size-3: 5px;
   --border-size-4: 10px;
   --border-size-5: 25px;
-  --radius-1: 2px;
-  --radius-2: 4px;
-  --radius-3: 1rem;
-  --radius-4: 2rem;
-  --radius-5: 4rem;
-  --radius-6: 8rem;
+  --radius-1: 0.125rem; /* 2px */
+  --radius-2: 0.25rem; /* 4px */
+  --radius-3: 0.375rem; /* 6px */
+  --radius-4: 0.5rem; /* 8px */
+  --radius-5: 0.75rem; /* 12px */
+  --radius-6: 1rem; /* 16px */
+  --radius-7: 1.5rem; /* 24px */
   --radius-round: 1e5px;
-  --radius-conditional-1: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-1));
-  --radius-conditional-2: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-2));
-  --radius-conditional-3: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-3));
-  --radius-conditional-4: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-4));
-  --radius-conditional-5: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-5));
-  --radius-conditional-6: clamp(0px, calc(100vw - 100%) * 1e5, var(--radius-6));
 }

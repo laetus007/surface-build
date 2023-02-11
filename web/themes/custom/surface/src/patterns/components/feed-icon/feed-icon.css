@@ -7,12 +7,12 @@
 
 .feed-icon {
   align-items: center;
-  color: var(--gray-7);
+  color: var(--gray-700);
   display: flex;
   text-decoration: none;
 
   &:hover {
-    color: var(--blue-5);
+    color: var(--blue-500);
   }
 }
 
@@ -25,6 +25,6 @@
 
 .feed-icon__icon {
   @include svg-icon("../images/rss.svg", 28px, 28px, white);
-  background-color: var(--blue-5);
-  margin-inline-start: var(--size-1);
+  background-color: var(--blue-500);
+  margin-inline-start: var(--size-2);
 }

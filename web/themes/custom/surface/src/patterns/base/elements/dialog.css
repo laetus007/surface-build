@@ -4,12 +4,12 @@
  */
 
 :where(dialog) {
-  background-color: var(--dialog-bg-color, var(--gray-0));
+  background-color: var(--gray-50);
   color: inherit;
-  border-radius: var(--dialog-border-radius, var(--radius-3));
-  box-shadow: var(--dialog-box-shadow, var(--shadow-6));
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-6);
 
   &::backdrop {
-    backdrop-filter: var(--dialog-backdrop-filter, blur(25px));
+    backdrop-filter: blur(25px);
   }
 }

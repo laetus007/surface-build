@@ -4,19 +4,19 @@
  */
 
 .draggable:hover {
-  background-color: var(--gray-1);
+  background-color: var(--gray-100);
 }
 
 .draggable.drag {
-  background-color: var(--gray-2);
+  background-color: var(--gray-200);
 }
 
 .draggable.drag-previous {
-  background-color: var(--gray-3);
+  background-color: var(--gray-300);
 }
 
 .drag-previous a {
-  color: var(--gray-8); /* Ensure proper contrast. */
+  color: var(--gray-800); /* Ensure proper contrast. */
 }
 
 a.tabledrag-handle,
@@ -31,20 +31,20 @@ a.tabledrag-handle,
 
 a.tabledrag-handle .handle {
   background-position: 50% 5px;
-  height: var(--size-4);
+  height: var(--size-8);
   margin: 0;
-  width: var(--size-4);
+  width: var(--size-8);
 }
 
 .touchevents a.tabledrag-handle .handle {
   background-position: 50% 5px;
-  height: var(--size-4);
+  height: var(--size-8);
 }
 
 .touchevents .draggable td {
-  padding-block: var(--size-1);
+  padding-block: var(--size-2);
   padding-inline-start: 0;
-  padding-inline-end: var(--size-1);
+  padding-inline-end: var(--size-2);
 }
 
 .touchevents .draggable .menu-item__link {
@@ -64,7 +64,7 @@ a.tabledrag-handle .handle {
 }
 
 .sticky-header {
-  border-block-end: 4px solid var(--blue-5);
+  border-block-end: 4px solid var(--blue-500);
   margin: 0;
   z-index: 0;
 }
