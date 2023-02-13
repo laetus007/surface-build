@@ -3,7 +3,7 @@ favicon:
 features:
   comment_user_picture: false
   comment_user_verification: false
-  favicon: true
+  favicon: false
   node_user_picture: false
 logo:
   use_default: true
