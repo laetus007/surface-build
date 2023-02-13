@@ -1,25 +1,30 @@
-uuid: 703a9622-7429-4891-9e2d-eb2526e561fd
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.footer
   module:
-    - system
+    - menu_block
   theme:
     - surface
-id: footer
+id: surface_footer_menu
 theme: surface
 region: footer
 weight: 0
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'menu_block:footer'
 settings:
-  id: 'system_menu_block:footer'
+  id: 'menu_block:footer'
   label: Footer
   label_display: '0'
-  provider: system
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
   level: 1
   depth: 0
   expand_all_items: false
+  parent: 'footer:'
+  suggestion: footer
 visibility: {  }
