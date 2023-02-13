@@ -5,16 +5,12 @@
 
 .fieldset {
   background-color: var(--white);
+  border-color: var(--gray-900);
   border-radius: var(--radius-1);
-  border: solid 2px var(--gray-900);
-  box-sizing: border-box;
+  border-width: 2px;
   color: inherit;
   display: table;
-  margin-block: var(--size-4);
-  margin-inline: 0;
   min-width: 0;
-  padding-block: 0;
-  padding-inline: 0;
   width: 100%;
 }
 
@@ -29,11 +25,9 @@
 
 .fieldset__legend {
   background-color: var(--gray-900);
-  color: inherit;
   float: left; /* Prevent sticking out of top of fieldset. */
   font-size: var(--font-size-2);
   font-weight: var(--font-weight-700);
-  line-height: var(--leading-normal);
   width: 100%;
 
   & + * {
@@ -66,7 +60,6 @@
   color: var(--white);
   display: block;
   font-size: var(--font-size-1);
-  line-height: normal;
   padding-block: var(--size-3);
   padding-inline: var(--size-4);
 }

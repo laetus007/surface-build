@@ -16,7 +16,6 @@ input[type="radio"] {
   border-width: var(--border-size-1);
   display: inline-block;
   height: var(--size-6);
-  margin: 0;
   vertical-align: text-bottom;
   width: var(--size-6);
 

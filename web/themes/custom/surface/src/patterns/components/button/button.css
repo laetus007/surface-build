@@ -38,8 +38,9 @@
   }
 
   &:focus {
-    box-shadow: var(--btn-focus-box-shadow, 0 0 0 2px var(--white), 0 0 0 4px var(--gray-700));
-    outline: none;
+    box-shadow: 0 0 var(--white), 0 0 0 2px var(--blue-400), 0 0 var(--white);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
   }
 
   &:active {

@@ -5,11 +5,8 @@
 
 .ui-button {
   align-items: center;
-  appearance: none;
-  cursor: pointer;
   display: inline-flex;
   justify-content: center;
-  line-height: normal;
   padding-block: var(--size-4);
   padding-inline: var(--size-6);
   position: relative;
@@ -20,7 +17,6 @@
 }
 
 .ui-button-icon-only {
-  box-sizing: border-box;
   text-indent: -9999px;
   white-space: nowrap;
   width: 2em;

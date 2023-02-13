@@ -34,15 +34,13 @@
  */
 #}
 
-{%
-  set classes = [
-    'views-table',
-    'views-view-table',
-    'cols-' ~ header|length,
-    responsive ? 'responsive-enabled',
-    sticky ? 'sticky-enabled',
-  ]
-%}
+{% set classes = [
+  'views-table',
+  'views-view-table',
+  'cols-' ~ header|length,
+  responsive ? 'responsive-enabled',
+  sticky ? 'sticky-enabled',
+] %}
 
 <div class="gin-table-scroll-wrapper">
   <table{{ attributes.addClass(classes) }}>

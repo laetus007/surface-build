@@ -5,7 +5,6 @@
 
 :where(legend) {
   border: 0;
-  box-sizing: border-box;
   color: inherit;
   display: table;
   margin: 0;

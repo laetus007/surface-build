@@ -11,35 +11,50 @@
  */
 #}
 
-{% set drupal_community = 'https://www.drupal.org/community' %}
-{% set drupal_values = 'https://www.drupal.org/about/values-and-principles' %}
-{% set drupal_user_guide = 'https://www.drupal.org/docs/user_guide/en/index.html' %}
-{% set create_content = '/node/add' %}
-{% set drupal_extend = 'https://www.drupal.org/docs/extending-drupal' %}
-{% set drupal_global_training_days = 'https://groups.drupal.org/global-training-days' %}
-{% set drupal_events = 'https://www.drupal.org/community/events' %}
-{% set drupal_slack = 'https://www.drupal.org/slack' %}
-{% set drupal_chat = 'https://www.drupal.org/drupalchat' %}
-{% set drupal_answers = 'https://drupal.stackexchange.com/' %}
+{% set platform_front_page = 'https://webplatform.healthsciences.ucla.edu/knowledge-base/managing-site/creating-front-page-home-page' %}
+{% set platform_quick_start = 'https://webplatform.healthsciences.ucla.edu/knowledge-base/everyone/quick-start-guide' %}
+{% set platform_everyone = 'https://webplatform.healthsciences.ucla.edu/knowledge-base/everyone' %}
+{% set platform_manage = 'https://webplatform.healthsciences.ucla.edu/knowledge-base/managing-site' %}
+{% set platform_course = 'https://webplatform.healthsciences.ucla.edu/courses' %}
+{% set platform_seo = 'https://webplatform.healthsciences.ucla.edu/node/1306' %}
+{% set platform_test_sites = 'https://webplatform.healthsciences.ucla.edu/support/test-site' %}
+{% set platform_teams = 'https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fteam%2F19%3AWmOPNo9j2t4sqP1hF7l-pVJSZkKrlVk6rjJDAbbXLNc1%40thread.tacv2%2Fconversations%3FgroupId%3D63832456-d6b8-4000-97eb-9b5cf5da8388%26tenantId%3D39c3716b-6471-4fd5-ac04-a7dbaa32782b&type=team&deeplinkId=e425fccc-9587-4435-8abd-13e83de4737a&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true' %}
+{% set platform_support = 'https://uclahs.az1.qualtrics.com/jfe/form/SV_cCu6gcOCI3rCNtI' %}
+{% set platform_access = 'https://webplatform.healthsciences.ucla.edu/knowledge-base/everyone/roles-and-permissions' %}
+{% set platform_sessions = 'https://uclahs.fyi/3y0Gpac' %}
+{% set platform_support = 'https://uclahs.fyi/3z1cCOT' %}
 
 <div class="text-content">
-  <p>{% trans %}<em>You haven’t created any frontpage content yet.</em>{% endtrans %}</p>
-  <h2>{% trans %}Congratulations and welcome to the Drupal community!{% endtrans %}</h2>
-  <p>{% trans %}Drupal is an open source platform for building amazing digital experiences. It’s made, used, taught, documented, and marketed by the <a href="{{ drupal_community }}">Drupal community</a>. Our community is made up of people from around the world with a shared set of <a href="{{ drupal_values }}">values</a>, collaborating together in a respectful manner. As we like to say:{% endtrans %}</p>
-  <blockquote>{% trans %}Come for the code, stay for the community.{% endtrans %}</blockquote>
-  <h2>{% trans %}Get Started{% endtrans %}</h2>
-  <p>{% trans %}There are a few ways to get started with Drupal:{% endtrans %}</p>
+  <p{% trans %}<em>You haven’t created a <a href="{{ platform_front_page }}">Front Page (Home Page)</a>	yet. Please review this page to learn how to get started.</em>{% endtrans %}</p>
+	<h2>{% trans %}Congratulations and welcome to your new Web Platform site!{% endtrans %}</h2>
+	<p>{% trans %}Welcome to the Web Platform community! We are excited to help you get your message out to the UCLA community and beyond. We have many resources for you. The Web Platform is constantly growing and improving with changes driven by your feedback and input. We want to hear from you.{% endtrans %}</p>
+	<h2>{% trans %}Get Started{% endtrans %}</h2>
+	<p>{% trans %}We have created a dedicated site for anyone creating content on the Web Platform and some key sections are:{% endtrans %}</p>
+	<ol>
+		<li>{% trans %}<a href="{{ platform_quick_start }}">Quick Start Guide:</a> Reviews the basics like creating content and how to use the main navigation bar.{% endtrans %}</li>
+		<li>{% trans %}<a href="{{ platform_everyone }}">For Everyone:</a> This section includes information on the types of pages you can create and/or edit along with best practices.{% endtrans %}</li>
+		<li>{% trans %}<a href="{{ platform_manage }}">Managing a Site:</a> Provides information on configuring your site, general functionality, and user accounts.{% endtrans %}</li>
+	</ol>
+	<h2>{% trans %}Next Steps{% endtrans %}</h2>
+	<p>{% trans %}Bookmark these links to our active Drupal community groups and support resources.{% endtrans %}</p>
+	<ul>
+		<li>{% trans %}<a href="{{ platform_course }}">Take a Web Platform course</a>.{% endtrans %}</li>
+		<li>{% trans %}<a href="{{ platform_seo }}">Learn more about SEO</a> and how to improve your site's ranking.{% endtrans %}</li>
+		<li>{% trans %}Test your content on our	<a href="{{ platform_test_sites }}">test site</a>	before you publish.{% endtrans %}</li>
+		<li>{% trans %}Get support and chat with the Web Platform community on our <a href="{{ platform_teams }}">Teams channel</a>.{% endtrans %}</li>
+		<li>{% trans %}Found a bug, would like an enhancement, need more support or want to make your site live? <a href="{{ platform_support }}">Complete a support form</a>.{% endtrans %}</li>
+	</ul>
+  <h2>{% trans %}New Users (Content Creators){% endtrans %}</h2>
+  <p>{% trans %}Looking to have new users create or approve content? Follow these steps:{% endtrans %}</p>
   <ol>
-    <li>{% trans %}<a href="{{ drupal_user_guide }}">User Guide:</a> Includes installing, administering, site building, and maintaining the content of a Drupal website.{% endtrans %}</li>
-    <li>{% trans %}<a href="{{ create_content }}">Create Content:</a> Want to get right to work? Start adding content. <strong>Note:</strong> the information on this page will go away once you add content to your site. Read on and bookmark resources of interest.{% endtrans %}</li>
-    <li>{% trans %}<a href="{{ drupal_extend }}">Extend Drupal:</a> Drupal’s core software can be extended and customized in remarkable ways. Install additional functionality and change the look of your site using addons contributed by our community.{% endtrans %}</li>
+    <li>{% trans %}Learn about the different <a href="{{ platform_access }}">access levels</a>.{% endtrans %}</li>
+    <li>{% trans %}Have the new user attend the required <a href="{{ platform_course }}">101 and 201 courses</a>.{% endtrans %}</li>
+    <li>{% trans %}Site owners receive an email requesting approval for new users.{% endtrans %}</li>
+    <li>{% trans %}New users receive notification of their access.{% endtrans %}</li>
   </ol>
-  <h2>{% trans %}Next Steps{% endtrans %}</h2>
-  <p>{% trans %}Bookmark these links to our active Drupal community groups and support resources.{% endtrans %}</p>
+  <h2>{% trans %}Still looking for help or have questions?{% endtrans %}</h2>
   <ul>
-    <li>{% trans %}<a href="{{ drupal_global_training_days }}">Global Training Days:</a> Helpful information for evaluating Drupal as a framework and as a career path. Taught in your local language.{% endtrans %}</li>
-    <li>{% trans %}<a href="{{ drupal_events }}">Upcoming Events:</a> Learn and connect with others at conferences and events held around the world.{% endtrans %}</li>
-    <li>{% trans %}<a href="{{ drupal_community }}">Community Page:</a> List of key Drupal community groups with their own content.{% endtrans %}</li>
-    <li>{% trans %}Get support and chat with the Drupal community on <a href="{{ drupal_slack }}">Slack</a> or <a href="{{ drupal_chat }}">DrupalChat</a>. When you’re looking for a solution to a problem, go to <a href="{{ drupal_answers }}">Drupal Answers on Stack Exchange</a>.{% endtrans %}</li>
+	  <li>{% trans %}<a href="{{ platform_sessions }}">Join a Co-Working session</a>.{% endtrans %}</li>
+	  <li>{% trans %}<a href="{{ platform_support }}">Book a One-on-One support session</a>.{% endtrans %}</li>
   </ul>
 </div>
