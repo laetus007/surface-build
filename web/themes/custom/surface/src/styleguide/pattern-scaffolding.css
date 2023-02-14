@@ -249,8 +249,10 @@
   margin-bottom: var(--size-4);
   width: 100%;
 
-  h3 {
-    font-family: var(--font-system);
-    margin: 0;
+  article:not(.prose) {
+    h3 {
+      font-family: var(--font-system);
+      margin: 0;
+    }
   }
 }
